@@ -194,13 +194,13 @@ voice:
     service: ibm
 
 rest:
-  host: 0.0.0.0
+  host: 127.0.0.1
   port: 8989
   debug: false
   workers: 4
 
 webchat:
-  host: 0.0.0.0
+  host: 127.0.0.1
   port: 8080
   debug: false
 
