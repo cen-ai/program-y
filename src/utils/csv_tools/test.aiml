@@ -4,7 +4,7 @@
 <category>
 	<pattern>HELLO</pattern>
 	<template>
-		Hello there
+		Hello there test
 	</template>
 </category>
 

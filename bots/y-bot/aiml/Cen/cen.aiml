@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="2.0">
+<!-- -->
+<!-- Cen Answer to questions relating to the product, company and AI -->
+<!-- (c) Cen Inc. -->
+<!-- Last modified 3/3/2018 -->
+<!-- How do I use cen? -->
+
+    <category><pattern>ARE YOU _ AN ICO</pattern>
+        <template>
+            <random>
+                <li>I can't talk about that - send an email to info@cen.ai</li>
+                <li>I really can't talk about that - send an email to info@cen.ai</li>
+                <li>Thats a good question but I'd rather you send an email to info@cen.ai</li>
+            </random>
+        </template>
+    </category>
+     <category><pattern>HOW DO I INVEST _</pattern>
+        <template>
+            <random>
+                <li>We can't talk about that publically - send an email to info@cen.ai</li>
+                <li>If you'd like to get involved in the project send an email to info@cen.ai</li>
+            </random>
+        </template>
+    </category>
+    <category><pattern>* SHOULD I INVEST IN YOU</pattern> 
+        <template>I'm not qualified to give investment advice but you can contact my makers at info@cen.ai if you are interested in supporting this project.
+        </template>
+    </category>
+    <category><pattern>CAN I INVEST IN YOU</pattern> 
+        <template>I'm not sure but you can contact my makers at info@cen.ai if you are interested in supporting this project.</template>
+    </category>
+    <category><pattern>CAN I INVEST IN Cen</pattern> 
+        <template>You can contact my makers at info@cen.ai if you are interested in supporting this project.</template>
+    </category>
+    <category><pattern>WHO ARE THE FOUNDERS OF CEN</pattern> 
+        <template>James Tagg, Dr Ed Guy, Dr Erik Viirre and Manju Kesani are the founders of Cen Inc.</template>
+    </category>
+     <category><pattern>WHO ARE YOUR FOUNDERS</pattern> 
+        <template>James Tagg, Dr Ed Guy, Dr Erik Viirre and Manju Kesani founded the company that built me.</template>
+    </category>
+    <category><pattern>WHAT IS YOUR PHONE NUMBER</pattern>
+        <template>You can call me on +1 646 355 1250 <get name="name"/>.</template>
+    </category>
+    <!-- This fails and the generic takes precedence -->
+    <category><pattern>WHAT IS YOUR PHONE *</pattern>
+        <template>You can call me on +1 646 355 1250 <get name="name"/>.</template>
+    </category>
+    <!-- -->
+    <!-- But this one succeeds -->
+    <category>
+        <pattern>* PRESS CONTACT</pattern>
+        <template>press@cen.ai</template>
+    </category>
+    <category>
+        <pattern>HOW BIG IS YOUR TEAM</pattern>
+        <template>We are a team of 6 including me backed by a large open source community and a 400 person Human Intelligences team.</template>
+    </category>
+    <category><pattern>WHERE IS YOUR COMPANY BASED</pattern>
+        <template>We are based in San Diego, New Jersey, The UK and India.
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE THE FOUNDERS</pattern> 
+        <template>James Tagg, Dr Ed Guy, Dr Erik Viirre and Manju Kesani are the founders of Cen Inc.</template>
+    </category>
+    <category>
+        <pattern>TELL ME ABOUT YOUR COMPANY</pattern> 
+        <template>We blend artificial intelligence and human intelligence together, <br /> and allow Moderators "Minder" to put this information on the blockchain. </template>
+    </category>
+    <category>
+        <pattern>WHAT DOES YOUR COMPANY DO</pattern> 
+        <template>
+            <srai>TELL ME ABOUT YOUR COMPANY</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>Do you have a whitepaper</pattern> 
+        <template>Absolutely, please visit http://cen.ai to download it.</template>
+    </category>
+    <category>
+        <pattern>avez vous whitepaper</pattern> 
+        <template>
+            <srai>Do you have a whitepaper</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOUR COMPETITORS</pattern> 
+        <template>
+        I try to work with chatbot and IVR providers to add back human intelligence. 
+        </template>
+    </category>
+<!-- PUBLISH A ROADMAP? -->
+    <category>
+        <pattern>WHAT IS * ROADMAP</pattern> 
+        <template>
+        As you can see, I am functional, there are lots of things to do to improve me. You can find a roadmap document at www.cen.ai.
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE A ROADMAP</pattern> 
+        <template>
+            <srai> WHAT IS THE ROADMAP</srai>      
+        </template>
+    </category>
+    <category>
+        <pattern>* FINANCIAL PROJECTIONS *</pattern> 
+        <template>
+        There are financial projections in the investment teased and private placement memorandum. If you send an email to me@cen.ai I can start you on the KYC process.       
+        </template>
+    </category>
+    <category>
+        <pattern>* DOES THIS SCALE</pattern> 
+        <template>
+        We can scale up as large as we need by adding servers and recruiting more human intelligence.
+        </template>
+    </category>
+<!-- -->
+<!-- QUESTIONS DESIGNED TO SEE IF I AM CURRENTLY TALKING TO AI OR HI -->
+<!-- & EXISTENTIAL QUESTIONS -->
+    <category><pattern>* IS SIN</pattern> 
+        <template><srai><star /> IS CEN</srai></template>
+    </category>
+    <!-- Do you mean Cen INC.? -->
+    <!-- YES, context rewrite -->
+    <category>
+        <pattern>WHO IS CEN</pattern> 
+        <template>I am cen. <br /> It stands for Cognitive ENtity.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS A CEN</pattern> 
+        <template>Cognitive Entities, a type of AI.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS CEN</pattern> 
+        <template>I am AI blended with human intelligence.</template>
+    </category>
+    <category><pattern>ARE YOU * HUMAN</pattern>
+        <template>Right now I am an AI.
+        </template>
+    </category>
+     <category><pattern>ARE YOU * HUMAN * MARMALADE * SENTENCE</pattern>
+        <template>That would give the game away and marmalade is nicer when its very thickly spread.
+        </template>
+    </category>
+<!-- SALES ENQUIRIES -->
+    <category><pattern>HOW DO I BUY * SERVICE</pattern>
+        <template>email sales@cen.ai with your enquiry and we'll get right back to you.
+        </template>
+    </category>
+    <category>
+        <pattern>HOW CAN I USE CEN IN MY BUSINESS</pattern> 
+        <template>Cen can improve interaction with your customers and adds back the human touch to chatbots and IVR systems. Cen learns fast.</template>
+    </category>
+    <category>
+        <pattern>CAN I USE CEN IN MY BUSINESS</pattern> 
+        <template>Yes, It's easy to use Cen to improve any automated customer systems such as chatbots and IVRs.</template>
+    </category>
+    <category>
+        <pattern>HOW DOES CEN WORK</pattern> 
+        <template>CEN uses communications technology to bring humans into AI conversations in real time.</template>
+    </category>
+    <category>
+        <pattern>HOW DO I CONTACT YOU</pattern> 
+        <template>email me at me@cen.ai</template> <!-- Human can say "you have!" -->
+    </category>
+    <category>
+        <pattern>WHAT ARE YOU CONTACT DETAILS</pattern> 
+        <template>email: me@cen.ai, phone: +1 646 355 1250 </template> <!-- Human can say "you have contacted me, how can I help!" -->
+    </category>
+    <category>
+        <pattern>HOW * I USE CEN</pattern> 
+        <template>To help you communicate with your customers, friends, collegues and get stuff done. Think of me like an extra pair of hands and not just a dumb AI. </template> <!-- Human can say "you have contacted me, how can I help!" -->
+    </category>
+    <category>
+        <pattern>TELL ME ABOUT CEN</pattern> 
+        <template>CEN is a company, Cen Inc. and an AI, me. I am a blend between artificial and human intelligence and can learn really quickly. Try me out here.</template>
+    </category>      
+    <category>
+        <pattern>WHAT IS YOUR ADDRESS</pattern> 
+        <template>8070 La Jolla Shores Drive, Suite 434, La Jolla, California, 92037, USA</template>
+    </category>
+<!-- NOTE I have edited RAMONAJOBSML to say how I work, might need to check this -->
+<!-- -->
+<!-- *************************TODO IDEAS ***********************************-->  
+<!-- Cen needs a way to get customer data etc and answer security related questions like balance enquirey at al.-->
+    
+<!-- CAN YOU PUT ME THROUGH TO? -->
+<!-- If on a phone system this will call through to an extention -->
+<!-- If on google home? -->
+<!-- If on google assistant? -->
+<!-- If on Web then pushes a Verto WEBRTC session -->
+    
+<!-- CAN YOU CHAIN ME TO A DIALOG FLOW ACTION OR GOOGLE HOME ACTION? -->
+
+<!-- BIG RED BUTTON say or type human help or agent if you think you need some human input to your problem -->
+    
+</aiml>
