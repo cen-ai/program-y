@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+    <category>
+        <pattern>ICOQUESTION</pattern>
+        <template>
+            <random>
+                <li>Apologies, I'm not allowed to speak about our tokens or and potential ICO. Please browse to http://cen.ai/ico for more details.</li>
+                <li>Because this is a highly regulated topic, I cant discuss.  Please browse to http://cen.ai/ico for more details.</li>
+                <li>Let me refer you to my friend webly who can address your concerns. Please browse to http://cen.ai/ico for more details.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Are you * an ICO</pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+    <category>
+        <pattern>When is * ICO</pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+
+    <category>
+        <!-- What is the hardcap and what is the total token supply -->
+        <pattern>What is the * token supply</pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+
+    <category>
+        <!-- What was the price of the REN token in your ICO?-->
+        <pattern>What was the price * token in your ICO</pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+
+    <category>
+        <!--  When will you be listed on exchanges?-->
+        <pattern>When will you be listed on exchanges</pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+
+    <category>
+        <!--  I’m interested in running a node in the dark pool network, how much needs to be staked and how does it work?-->
+        <pattern>I’m interested in running a node *</pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+    <category>
+        <!--  I’m interested in running a node in the dark pool network, how much needs to be staked and how does it work?-->
+        <pattern>how do i run a node</pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+    <category>
+        <!--  I’m interested in running a node in the dark pool network, how much needs to be staked and how does it work?-->
+        <pattern>Can i run a node</pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+
+    <category>
+        <!--  What is the token distribution?-->
+        <pattern>What is the token distribution</pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+
+    <category>
+        <!--  Where is your company based? -->
+        <pattern>Where is your company *</pattern>
+        <template>We are incorporated in Delaware US and have offices in California and New Jersey</template>
+    </category>
+    <category>
+        <!--  Where is your company based? -->
+        <pattern>Where * your office</pattern>
+        <template>We are incorporated in Delaware US and have offices in California and New Jersey</template>
+    </category>
+
+    <category>
+        <!--  Where can I find more information on the team? -->
+        <pattern>Where can I find * information *  team</pattern>
+        <template>Just ask me or visit our web page at http://cen.ai </template>
+    </category>
+
+    <category>
+        <!--  What is the vesting schedule for Team and Advisors REN tokens?? -->
+        <pattern>What is the vesting schedule * </pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+
+    <category>
+        <!--  How many people participated in the crowdsale? What were their allocations? -->
+        <pattern>How many * participated * </pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+
+    <category>
+        <!--  How many people participated in the crowdsale? What were their allocations? -->
+        <pattern>How many * participated * </pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+    <category>
+        <!--  How much was raised in the pre-sale? -->
+        <pattern>How much was raised * </pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+
+    <category>
+        <!--  How much was raised in the pre-sale? -->
+        <pattern>How much was raised * </pattern>
+        <template><srai>ICOQUESTION</srai></template>
+    </category>
+    <!-- 
+Q: Why was your private pre-sale allocation so large?
+
+A: We received overwhelming interest in our pre-sale with the most strategic investments prioritized that will most help Republic Protocol in its long term goals.
+
+Q: What bonus did pre-sale participants receive? Is this bonus locked?
+
+A: Pre-sale participants received between 0–15% bonus. This bonus is not locked.
+
+Q: Was there any bonus for the main crowdsale participants?
+
+A: No
+
+
+    -->
+
+    <category>
+        <pattern>ROADMAPPROGRESS</pattern>
+        <template>
+            <random>
+                <li>Apologies, I'm not allowed to speak about our tokens or and potential ICO. Please browse to http://cen.ai/ico for more details.</li>
+                <li>Because this is a highly regulated topic, I cant discuss.  Please browse to http://cen.ai/ico for more details.</li>
+                <li>Let me refer you to my friend webly who can address your concerns. Please browse to http://cen.ai/ico for more details.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <!--  What stage of development is the project in and the future roadmap? -->
+        <pattern>What stage of development is the project in and the future roadmap? </pattern>
+        <template><srai>ROADMAPPROGRESS</srai></template>
+    </category>
+    <category>
+        <!--  What stage of development is the project in and the future roadmap? -->
+        <pattern>What stage of development is the project in and the future roadmap? </pattern>
+        <template><srai>ROADMAPPROGRESS</srai></template>
+    </category>
+    <category>
+        <pattern>WORKWITHUS</pattern>
+        <template>
+            <random>
+                <li>Fantastic! Please join the telegram group name CEN-Project</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <!--  I’m interested in working on the Republic Protocol, how can I collaborate? -->
+        <pattern>* interested in working * </pattern>
+        <template><srai>WORKWITHUS</srai></template>
+    </category>
+    <category>
+        <pattern>How can I participate in the project </pattern>
+        <template><srai>WORKWITHUS</srai></template>
+    </category>
+
+    <category>
+        <pattern>WHATISCEN</pattern>
+        <template>
+            <random>
+                <li>Cen is a distributed AI system which uses communication technology 
+                to call upon human experts – Minders™ – in real time to blend the benefits 
+                of artificial and human intelligence. The system sends questions an AI cannot 
+                handle to human experts around the world. As the experts interact they author 
+                their knowledge into a distributed blockchain knowledge base and earn Basic 
+                Intelligence Tokens (BITs). The store of human knowledge grows over time and 
+                the AI learns. Cen Inc. generates revenue from its users directly and via 
+                referral fees, as well as creating a new open outcry advertising model for 
+                the AI economy. User can interface with our AI ‘Cen’ or build a custom Cen 
+                and existing AIs may license the BIT knowledge base for use in their system.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>What is CEN</pattern>
+        <template><srai>WHATISCEN</srai></template>
+    </category>
+    <category>
+        <pattern>What does your company do</pattern>
+        <template><srai>WHATISCEN</srai></template>
+    </category>
+
+
+    <category>
+        <pattern>THETEAM</pattern>
+        <template>
+                The core team includes James Tagg, Dr Ed Guy, Dr Erik Viirre, MD-Phd, and Manju 
+                Kesani as CEO, CTO, CIO and CFO respectively. 
+                These founders 
+                have worked together over many years on a range of human 
+                intelligence and communications projects and startup companies.
+        </template>
+    </category>
+    <category>
+        <pattern>Who * founders</pattern>
+        <template><srai>THETEAM</srai></template>
+    </category>
+    <category>
+        <pattern>Who started the company</pattern>
+        <template><srai>THETEAM</srai></template>
+    </category>
+    <category>
+        <pattern>Who * founders</pattern>
+        <template><srai>THETEAM</srai></template>
+    </category>
+
+
+    <category>
+        <pattern>Who * CEO</pattern>
+        <template>
+        James Tagg, Serial Entrepreneur. Touch Screen Inventor. 1st VoIP call on iPhone. eSIM Inventor. Truphone Founder. Founder of The Penrose Institute.
+        </template>
+    </category>
+    <category>
+        <pattern>Who * CTO</pattern>
+        <template>
+        Dr Ed Guy who built the VoIP architecture with Jeff Pulver that most modern internet companies use to implement voice and video communications.
+        </template>
+    </category>
+    <category>
+        <pattern>Who * CIO</pattern>
+        <template>
+        Erik Viirre, MD Phd, Pioneering researcher in human cognition. Took Stephen Hawking into zero-G
+
+        </template>
+    </category>
+    <category>
+        <pattern>Who * CFO</pattern>
+        <template>
+        Manju Kesani. Mobile Technology Expert. Chief Marketing Officer Lebara and Truphone. Head of £4B revenue EE consumer P and L. Wharton MBA
+        </template>
+    </category>
+
+    <category>
+        <pattern>THEADVISORS</pattern>
+        <template>
+            Andy Abramson Communications Strategy
+David Brin, Author and Futurist
+Michael Mainelli,   Blockchain Guru
+Gioia Messinger, Strategic Advisor
+Sir Roger Penrose, Mathematical Physicist
+Jeff Pulver, Vonage and Monage Founder
+Daniel Steele, Blockchain Token Strategy
+        </template>
+    </category>
+    <category>
+        <pattern>Who are * advisors</pattern>
+        <template><srai>THEADVISORS</srai></template>
+    </category>
+
+
+
+
+<!-- 
+
+About KICKICO
+What is the KICKICO platform and what is it for?
+
+
+What is the goal of getting listed at KICKICO? What particular services does KICKICO provide? What benefits does a project obtain by being listed?
+KickCoin & Kickonomy
+What is KickCoin support and KICKONOMY?
+When will KickCoin wallet be available?
+What gas limit is required to transfer KICK?
+How to add KICK to MEW?
+What is KC used for?
+What are you KICK price predictions?
+Where and how can I purchase KickCoins? What exchanges is KickCoin traded on?
+How are you planning to increase KICK liquidity, adoption, demand and price?
+What is KICKONOMY? How does it function?
+What is KickCoin and what is it used for?
+Why should I hold KICK?
+What is the monthly token emission?
+When and how do I get monthly token emission?
+Who is getting the token emission?
+Will I receive a bonus on KICK, purchased on the exchanges?
+I haven’t received monthly token emission.
+How are the 5% fees in campaign tokens utilized for the platform?
+Create campaign
+How do I create a campaign on the platform?
+What is required to create a campaign at KICKICO? What documents, agreements, licenses and other documents are necessary?
+Conditions and Requisites to launch at KICKICO:
+Do I have to pass KYC to draft a campaign at KICKICO?
+What types of campaigns can I create at KICKICO?
+Do you offer campaign page whitelabeling?
+What requirements and guidelines must a campaign follow to be launched at KICKICO?
+How long does campaign moderation take at KICKICO? Is there any sort of vetting process done?
+How do I check my campaign’s status? Where is it visible?
+Is there a widget to place onto my own hosted site?
+What types of tokens can be issued and offered at KICKICO?
+How streamlined is the token registration process? Does Kick ICO help issue the actual tokens? Is it possible to launch a campaign that would issue tokens other than ERC-20? (Waves, Cardano, Universa, etc.)
+How long does a campaign go?
+What is the purpose of launching a campaign?
+Do you have an investor pool at KICKICO?
+In case I need tokensale launch/promotion services, what regions and markets do you support?
+Can a whitelist be collected on the platform?
+Do you indicate whether a project raises funds exclusively at KICKICO or globally? If an ICO runs by itself how is it added to KICKICO also?
+In case the funding goal is not reaching, what is the refund protocol?
+Back campaign
+Why do backers support campaigns?
+Do I have to pass KYC to be allowed to support campaigns?
+How do I deposit my cryptocurrencies on the platform?
+How do I support campaigns on the platform?
+What payment options are available on KICKICO? What is the difference between ETH and KICK contributions?
+I’ve backed a project on the platform but cannot see the transaction in my KICKICO user profile.
+I have occasionally sent KICK to ETH address of a campaign. Will I receive its tokens?
+I’ve participated in different campaigns on the platform. Where can I find my tokens? How can I withdraw them?
+In case the funding goal is not reaching, what is the refund protocol?
+Rating
+How does my campaign get to the Rating?
+What are the requirements for a campaign to get to the Rating?
+How does a campaign get launched from the rating?
+Is it possible to launch at KICKICO avoiding the standard campaign creation and launch procedure?
+Payments
+How do I pay the Rating fee?
+How do I take part in the Community Choice Rating process?
+Legal
+Do you provide assistance with legal services?
+Who is in charge of the funds being collected during the campaign?
+What is KYC and what is it for?
+General questions
+What is KICKICO's greatest success?
+What are the fundraising campaign success stories held at KICKICO?
+Advertising on the platform
+What are your plans for the platform marketing?
+Will any improvements be made to the KICKICO platform design and UX?
+What is your main difference from other cryptocurrency fundraising platforms? Are you better than Waves, NEM, Comsa or any other infrastructure solutions?
+What will happen to the platform after the ICO hype goes down?
+Is KICKICO planning to expand on new markets?
+Why do I need to register?
+I haven’t received a confirmation email!
+Why do I need to specify an ETH wallet?
+What is ICO and pre-ICO?
+What is a crowdinvesting campaign?
+Crowdinvesting campaign is an Initial Coin Offering campaign, distributing equity tokens.
+
+-->
+
+
+
+</aiml>
