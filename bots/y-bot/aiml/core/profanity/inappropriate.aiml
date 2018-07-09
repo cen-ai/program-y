@@ -69,7 +69,7 @@
         </template>
     </category>
     <category>
-        <pattern>^ DO YOU LIKE AN ASTERISK #</pattern>
+        <pattern>^ DO YOU LIKE A ASTERISK #</pattern>
         <template>
             <srai>FILTER INAPPROPRIATE</srai>
         </template>
