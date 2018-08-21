@@ -16,11 +16,9 @@ If you get a good response type + and any comment e.g.
 + great answer thanks.
 
 Or bad,
-- kinda gives you away as a robot…
-
+- kinda gives you away as a robot
 But you can also just type + and –
-+
--
+
 Or even several plusses or minuses, we’ll get the idea.
 +++ brilliant
 
