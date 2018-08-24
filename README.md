@@ -12,14 +12,14 @@ Telegram is a communal chat tool. Everyone sees everything you write (don’t pu
 
 Cen is  minded – watched over – by humans who will attempt to improve on the answers given by the AI in real time. Help us improve the system. 
 
-If you get a good response type + and any comment e.g.
-+ great answer thanks.
+If you get a good response type + and any comment e.g.,<br/>
+ +great answer thanks.
 
-Or bad,
-- kinda gives you away as a robot
+Or bad,<br/>
+ - kinda gives you away as a robot
 But you can also just type + and –
 
-Or even several plusses or minuses, we’ll get the idea.
+Or even several plusses or minuses, we’ll get the idea.<br/>
 +++ brilliant
 
 If you wish to 'Mind' the realtime responses made by Cen contact us for a login.
