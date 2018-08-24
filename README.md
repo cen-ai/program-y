@@ -13,14 +13,14 @@ Telegram is a communal chat tool. Everyone sees everything you write (don’t pu
 Cen is  minded – watched over – by humans who will attempt to improve on the answers given by the AI in real time. Help us improve the system. 
 
 If you get a good response type + and any comment e.g.,<br/>
- +great answer thanks.
+\+ great answer thanks.
 
 Or bad,<br/>
- - kinda gives you away as a robot
+\- kinda gives you away as a robot
 But you can also just type + and –
 
 Or even several plusses or minuses, we’ll get the idea.<br/>
-+++ brilliant
+\+++ brilliant
 
 If you wish to 'Mind' the realtime responses made by Cen contact us for a login.
 
@@ -111,7 +111,8 @@ Full documentation is available on [Program Y Wiki](https://github.com/keiffster
 After installation from the Github repository you can chat with your Program Y by running one of the many bots found in the 
 \bot folder. These include
 
-* Y-Bot - My own bot under development
+* cen - cen's bot built for minders
+* Y-Bot - Keith Sterling's bot under development
 * Professor - A huge knowledge base of questions and answers
 * Alice2 - AIML 2 version of the famous Alice chat bot
 * Roise - An AIML base set of grammars for creating your own bot
