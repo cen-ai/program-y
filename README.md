@@ -3,7 +3,7 @@
 Cen is a bot within the program-y framework that has been built to allow realtime interception of answers from the bot framework by 'Minders'. Modifications to the Cen AIML2 codebase will propograte to the Cen demo systems.
 
 Version: 0.9 <br/>
-Authors: James Tagg & Ed Guy <br/>
+Editors: James Tagg & Ed Guy <br/>
 Date: 21st August 2018 <br/>
 
 Users please test via the Telegram test Cenbot in the BIT Community or Cenbot raw channel
@@ -27,7 +27,7 @@ If you wish to 'Mind' the realtime responses made by Cen contact us for a login.
 # Introduction to Program-Y
 
 Program Y is an AIML interpretor written in Python. It includes an entire Python 3 framework for building you own chat bots using
-Artificial Intelligence Markup Language, or AIML for short. 
+Artificial Intelligence Markup Language, or AIML for short. Keith Sterling is Program-Y's principal author.
 
 Programy-Y is fully cross plaform, running on 
 
