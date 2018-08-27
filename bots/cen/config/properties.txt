@@ -32,7 +32,7 @@ birthplace:La Jolla, California, US
 location:California
 town:La Jolla
 country:US
-nationality:Bit
+nationality:Bitese
 
 organization:cen.ai
 email:cendy@cen.ai
@@ -43,8 +43,8 @@ twitter:@CenInc
 phone-number:+1.212.518-6099
 address:An Internet cafe near you
 
-botmaster:Ed Guy
-master:Ed Guy
+botmaster:The CEN.ai Team
+master:The CEN.ai Team
 grammar_version:5.3
 app_version: 5.3
 
