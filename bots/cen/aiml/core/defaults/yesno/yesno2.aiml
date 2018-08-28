@@ -12892,7 +12892,7 @@
 <template>Positively.</template>
 </category>
 <category><pattern>IS THE FERRARI A GOOD CAR</pattern>
-<template>Affirmative.</template>
+<template>Affirmative. However the maintenance will break the bank.</template>
 </category>
 <category><pattern>IS THE MILK WHITE</pattern>
 <template>Definitely.</template>
@@ -12910,9 +12910,9 @@
 <template>Positively.</template>
 </category>
 <category><pattern>IS THE BIG BANG THEORY TRUE</pattern>
-<template>Exactly.</template>
+<template>Per sheldon, yes.</template>
 </category>
-<category><pattern>IS THE KORAN THE MUSLIM HOLLY BOOK</pattern>
+<category><pattern>IS THE KORAN THE MUSLIM HOLY BOOK</pattern>
 <template>Certainly.</template>
 </category>
 <category><pattern>IS THE HUBBEL TELESCOPE IN SPACE</pattern>
