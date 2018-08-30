@@ -31,15 +31,7 @@
 			OK, I will remember your name is <srai>CLIENT NAME</srai>
 		</template>
 	</category>
-    <category>
-		<pattern>WHAT IS MY NAME</pattern>
-		<template>
-			<condition name="name">
-				<li value="Unknown">I have no idea.</li>
-				<li><srai>CLIENT NAME</srai></li>
-			</condition>
-		</template>
-	</category>
+
     <category>
         <pattern>MY FAVORITE COLOR IS
             <set>color</set>
