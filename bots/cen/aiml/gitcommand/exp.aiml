@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>WHAT IS YOUR GIT STATUS</pattern>
+        <template>
+            <system>git status</system>
+        </template>
+    </category>
+    <category>
+        <pattern>PULL CHANGES FROM GIT</pattern>
+        <template>
+            <system>git pull</system>
+        </template>
+    </category>
+</aiml>
