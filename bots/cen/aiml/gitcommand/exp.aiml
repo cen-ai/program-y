@@ -2,13 +2,19 @@
 <aiml version="2.0">
 
     <category>
-        <pattern>WHAT IS YOUR GIT STATUS</pattern>
+        <pattern>WHAT * GIT STATUS</pattern>
         <template>
             <system>git status</system>
         </template>
     </category>
     <category>
         <pattern>PULL CHANGES FROM GIT</pattern>
+        <template>
+            <system>git pull</system>
+        </template>
+    </category>
+    <category>
+        <pattern>UPDATE * SELF</pattern>
         <template>
             <system>git pull</system>
         </template>

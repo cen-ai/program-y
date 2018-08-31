@@ -89,24 +89,12 @@
         <pattern>How many * participated * </pattern>
         <template><srai>ICOQUESTION</srai></template>
     </category>
-
-    <category>
-        <!--  How many people participated in the crowdsale? What were their allocations? -->
-        <pattern>How many * participated * </pattern>
-        <template><srai>ICOQUESTION</srai></template>
-    </category>
     <category>
         <!--  How much was raised in the pre-sale? -->
         <pattern>How much was raised * </pattern>
         <template><srai>ICOQUESTION</srai></template>
     </category>
-
-    <category>
-        <!--  How much was raised in the pre-sale? -->
-        <pattern>How much was raised * </pattern>
-        <template><srai>ICOQUESTION</srai></template>
-    </category>
-    <!-- 
+    <!--
 Q: Why was your private pre-sale allocation so large?
 
 A: We received overwhelming interest in our pre-sale with the most strategic investments prioritized that will most help Republic Protocol in its long term goals.
@@ -133,11 +121,7 @@ A: No
         </template>
     </category>
 
-    <category>
-        <!--  What stage of development is the project in and the future roadmap? -->
-        <pattern>What stage of development is the project in and the future roadmap? </pattern>
-        <template><srai>ROADMAPPROGRESS</srai></template>
-    </category>
+
     <category>
         <!--  What stage of development is the project in and the future roadmap? -->
         <pattern>What stage of development is the project in and the future roadmap? </pattern>
@@ -165,15 +149,15 @@ A: No
         <pattern>WHATISCEN</pattern>
         <template>
             <random>
-                <li>Cen is a distributed AI system which uses communication technology 
-                to call upon human experts – Minders™ – in real time to blend the benefits 
-                of artificial and human intelligence. The system sends questions an AI cannot 
-                handle to human experts around the world. As the experts interact they author 
-                their knowledge into a distributed blockchain knowledge base and earn Basic 
-                Intelligence Tokens (BITs). The store of human knowledge grows over time and 
-                the AI learns. Cen Inc. generates revenue from its users directly and via 
-                referral fees, as well as creating a new open outcry advertising model for 
-                the AI economy. User can interface with our AI ‘Cen’ or build a custom Cen 
+                <li>Cen is a distributed AI system which uses communication technology
+                to call upon human experts – Minders™ – in real time to blend the benefits
+                of artificial and human intelligence. The system sends questions an AI cannot
+                handle to human experts around the world. As the experts interact they author
+                their knowledge into a distributed blockchain knowledge base and earn Basic
+                Intelligence Tokens (BITs). The store of human knowledge grows over time and
+                the AI learns. Cen Inc. generates revenue from its users directly and via
+                referral fees, as well as creating a new open outcry advertising model for
+                the AI economy. User can interface with our AI ‘Cen’ or build a custom Cen
                 and existing AIs may license the BIT knowledge base for use in their system.</li>
             </random>
         </template>
@@ -191,23 +175,23 @@ A: No
     <category>
         <pattern>THETEAM</pattern>
         <template>
-                The core team includes James Tagg, Dr Ed Guy, Dr Erik Viirre, MD-Phd, and Manju 
-                Kesani as CEO, CTO, CIO and CFO respectively. 
-                These founders 
-                have worked together over many years on a range of human 
+                The core team includes James Tagg, Dr Ed Guy, Dr Erik Viirre, MD-Phd, and Manju
+                Kesani as CEO, CTO, CIO and CFO respectively.
+                These founders
+                have worked together over many years on a range of human
                 intelligence and communications projects and startup companies.
         </template>
     </category>
-    <category>
+    <category><pattern>WHO ARE THE FOUNDERS OF CEN</pattern>
+        <template>James Tagg, Dr Ed Guy, Dr Erik Viirre and Manju Kesani are the founders of Cen Inc.</template>
+    </category>
+     <category>
         <pattern>Who * founders</pattern>
         <template><srai>THETEAM</srai></template>
     </category>
+
     <category>
         <pattern>Who started the company</pattern>
-        <template><srai>THETEAM</srai></template>
-    </category>
-    <category>
-        <pattern>Who * founders</pattern>
         <template><srai>THETEAM</srai></template>
     </category>
 
@@ -238,6 +222,7 @@ A: No
         </template>
     </category>
 
+
     <category>
         <pattern>THEADVISORS</pattern>
         <template>
@@ -258,7 +243,7 @@ Daniel Steele, Blockchain Token Strategy
 
 
 
-<!-- 
+<!--
 
 About KICKICO
 What is the KICKICO platform and what is it for?
