@@ -131,6 +131,7 @@
             <srai>WHAT IS ME S PHONE NUMBER</srai>
         </template>
     </category>
+
     <category>
         <pattern>WHAT IS * S NUMBER</pattern>
         <template>
@@ -149,12 +150,7 @@
             </srai>
         </template>
     </category>
-    <category>
-        <pattern>WHAT IS YOUR PHONE NUMBER</pattern>
-        <template>
-            <srai>PHONE NUMBER</srai>
-        </template>
-    </category>
+
 
 
 

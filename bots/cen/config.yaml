@@ -84,10 +84,10 @@ brain:
               delete_on_start: true
             duplicates:
               #file: /tmp/cen_duplicates.txt
-              file: /tmp/cen_duplicates.csv
-              format: csv
+              file: /tmp/cen_duplicates.txt
+              format: txt
               encoding: utf-8
-              delete_on_start: true
+              delete_on_start: false
             conversation:
               #file: /tmp/cen-conversation.txt
               file: /tmp/cen-conversation.csv

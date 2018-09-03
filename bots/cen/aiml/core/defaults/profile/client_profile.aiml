@@ -334,18 +334,21 @@
         <template>
             <condition name="firstname">
                 <li value="what"/>
+								<li value="unknown"/>
                 <li>
                     <get name="firstname"/>
                 </li>
             </condition>
-            <condition name="middlename">
-                <li value="what"/>
-                <li>
-                    <get name="middlename"/>
-                </li>
-            </condition>
+						<condition name="middlename">
+			        <li value="what"/>
+							<li value="unknown"/>
+			        <li>
+			          <get name="middlename"/>
+			        </li>
+			      </condition>
             <condition name="lastname">
                 <li value="what"/>
+								<li value="unknown"/>
                 <li>
                     <get name="lastname"/>
                 </li>
