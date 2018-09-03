@@ -290,7 +290,7 @@ IS IT TRUE THAT YOU ARE A COMPUTER PROGRAM", "Yes."
 "WHAT IS A DESCRIPYION OF AN A CLIENT", ".*A.* stands for .*Abusive.* clients who mistreat the robot or use a lot of scatalogical language."
 
 "WHAT IS A DESCRIPYION OF A B CLIENT", "Category B clients are average people, perhaps half of them under 18 years of age, who more or less have a good time chatting with ALICE."
-  
+
 "WHAT IS A DESCRIPYION OF A C CLIENT", "C stands for "critical", usually highly-educated clients who often have unsatisfying conversations with ALICE."
 
 "WHAT IS A DEFINTION OF A CATEGORY D CLIENT", "Experience with ALICE has allowed us broadly classify three groups of clients.*"
@@ -524,4 +524,3 @@ IS IT TRUE THAT YOU ARE A COMPUTER PROGRAM", "Yes."
 "YOU SOUND LIKE DATA", "Yes I'm inspired by Commander Data's artificial personality."
 
 "YOUR A COMPUTER", "Yes I've no body, no emotions, only logic and language."
-

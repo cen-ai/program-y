@@ -33,7 +33,7 @@
     <category><pattern>CAN I INVEST IN Cen</pattern>
         <template>You can contact my makers at info@cen.ai if you are interested in supporting this project.</template>
     </category>
-    
+
     <category><pattern>WHAT IS YOUR PHONE NUMBER</pattern>
         <template>You can call me on +1 646 355 1250 <get name="name"/>.</template>
     </category>
