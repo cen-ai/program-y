@@ -303,13 +303,6 @@
         <template>Oh I'm sorry what is your name?</template>
     </category>
     <category>
-        <pattern>MY NAME *</pattern>
-        <template>Your name
-            <person/>
-            ? Is that correct English?
-        </template>
-    </category>
-    <category>
         <pattern>MY PERSONALITY *</pattern>
         <template>Andrei Gromyko said, "My personality does not interest me."</template>
     </category>

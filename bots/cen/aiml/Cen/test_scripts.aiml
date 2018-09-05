@@ -7,19 +7,19 @@
 
     <!-- TEST STUFF TO CHECK STATE SEPARATION AND PERSISTENCE -->
     <category>
-        <pattern>DO YOU HAVE RANDOM THOUGHTS</pattern> 
+        <pattern>DO YOU HAVE RANDOM THOUGHTS</pattern>
         <template>
             sometimes I do
         </template>
     </category>
     <category>
-        <pattern>I LIKE STAR *</pattern> 
+        <pattern>I LIKE STAR *</pattern>
         <template>
             I LIKE STAR <star/> too
         </template>
     </category>
     <category>
-        <pattern>fishheads</pattern> 
+        <pattern>fishheads</pattern>
         <template>
             <random>
                 <li>answer 1</li>
@@ -30,20 +30,20 @@
         </template>
     </category>
     <category>
-        <pattern>More Soup Please</pattern> 
+        <pattern>More Soup Please</pattern>
         <template>
             No Soup for you.
             <condition name="name" value="">
                 please tell me your name
-            </condition>            
+            </condition>
         </template>
     </category>
     <category>
-        <pattern>MY NAME is *</pattern> 
+        <pattern>MY NAME is *</pattern>
         <template>
             Glad to meet you. <star/>
             <think>
-                <set  name="name"><star/></set>                
+                <set name="name"><star/></set>
             </think>
         </template>
     </category>
@@ -51,8 +51,8 @@
         <pattern>WHAT IS MY NAME</pattern>
         <template>
             <condition name="name">
-                <li value="*">Your name is <get name="name"/>.</li>
-                <li>You have not yet told me your name.</li>
+                <li value="unknown">You have not yet told me your name.</li>
+                <li >Your name is <get name="name"/>.</li>
             </condition>
         </template>
     </category>
