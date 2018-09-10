@@ -375,6 +375,12 @@
         </template>
     </category>
     <category>
+        <pattern>BUSINESS NEWS</pattern>
+        <template>
+            <srai>NEWS business MAX 10 SORT False REVERSE False</srai>
+        </template>
+    </category>
+    <category>
         <pattern>ENTERTAINMENT NEWS</pattern>
         <template>
             <srai>NEWS entertainment MAX 10 SORT False REVERSE False</srai>
