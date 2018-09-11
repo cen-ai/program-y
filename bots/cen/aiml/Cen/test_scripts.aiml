@@ -39,7 +39,7 @@
         </template>
     </category>
     <category>
-        <pattern>MY NAME is *</pattern>
+        <pattern>MY NAME IS *</pattern>
         <template>
             Glad to meet you. <star/>
             <think>
@@ -47,6 +47,7 @@
             </think>
         </template>
     </category>
+    
     <category>
         <pattern>WHAT IS MY NAME</pattern>
         <template>
@@ -57,7 +58,7 @@
         </template>
     </category>
     <category>
-        <pattern>xDOES THIS CONTAIN RED *</pattern>
+        <pattern>DOES THIS CONTAIN RED *</pattern>
         <template>
             <think>
                 <set name="compare">

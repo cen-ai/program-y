@@ -62,12 +62,7 @@
             <srai>NEWS associated-press MAX 10 SORT False REVERSE False</srai>
         </template>
     </category>
-    <category>
-        <pattern>BBC NEWS</pattern>
-        <template>
-            <srai>NEWS bbc-news MAX 10 SORT False REVERSE False</srai>
-        </template>
-    </category>
+
     <category>
         <pattern>BBC SPORT NEWS</pattern>
         <template>
@@ -168,12 +163,6 @@
         <pattern>FOX SPORTS NEWS</pattern>
         <template>
             <srai>NEWS fox-sports MAX 10 SORT False REVERSE False</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>GOOGLE NEWS</pattern>
-        <template>
-            <srai>NEWS google-news MAX 10 SORT False REVERSE False</srai>
         </template>
     </category>
     <category>
@@ -387,12 +376,6 @@
         </template>
     </category>
     <category>
-        <pattern>MUSIC NEWS</pattern>
-        <template>
-            <srai>NEWS music MAX 10 SORT False REVERSE False</srai>
-        </template>
-    </category>
-    <category>
         <pattern>SCIENCE AND NATURE NEWS</pattern>
         <template>
             <srai>NEWS science_and_nature MAX 10 SORT False REVERSE False</srai>
@@ -408,12 +391,6 @@
         <pattern>TECHNOLOGY NEWS</pattern>
         <template>
             <srai>NEWS technology MAX 10 SORT False REVERSE False</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>UK NEWS</pattern>
-        <template>
-            <srai>NEWS uk_news MAX 10 SORT False REVERSE False</srai>
         </template>
     </category>
     <category>
