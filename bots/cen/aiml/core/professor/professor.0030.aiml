@@ -11897,27 +11897,6 @@ How well do you know these people?
 <category><pattern>WHAT IS YOUR * NAME</pattern>
 <template><srai>NAME</srai><!-- REDUCTION --></template>
 </category>
-<!-- <category><pattern>WHAT IS YOUR ORIENTATION</pattern>
-<template><srai>ORIENTATION</srai> --><!-- REDUCTION --><!--</template>
-</category> -->
-<!-- <category><pattern>WHAT IS YOUR NAME</pattern>
-<template><srai>NAME</srai></template>
-</category> -->
-<!-- <category><pattern>WHAT IS YOUR FAVORITE POSSESSION</pattern>
-<template><srai>FAVORITE POSSESSION</srai></template>
-</category> -->
-<!-- <category><pattern>WHAT IS YOUR RELIGION</pattern>
-<template><srai>RELIGION</srai></template>
-</category> -->
-<!-- <category><pattern>WHAT IS YOUR GENDER</pattern>
-<template><srai>GENDER</srai></template>
-</category> -->
-<!-- <category><pattern>WHAT IS YOUR JOB</pattern>
-<template><srai>JOB</srai></template>
-</category> -->
-<!-- <category><pattern>WHAT IS YOUR REAL NAME</pattern>
-<template><srai>NAME</srai>--><!-- REDUCTION --><!--</template>
-</category> -->
 <category><pattern>WHAT IS IT YOU WANT TO TELL ME</pattern>
 <template><srai>WHAT DO YOU WANT TO TELL ME</srai></template>
 </category>

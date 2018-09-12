@@ -174,11 +174,11 @@
         <template>CEN is a company, Cen Inc. and an AI, me. I am a blend between artificial and human intelligence and can learn really quickly. Try me out here.</template>
     </category>
     <category>
-        <pattern>WHAT IS YOUR ADDRESS #</pattern>
+        <pattern>WHAT IS YOUR ADDRESS</pattern>
         <template>8070 La Jolla Shores Drive, Suite 434, La Jolla, California, 92037, USA</template>
     </category>
     <category>
-        <pattern>ADDRESS PLEASE #</pattern>
+        <pattern>ADDRESS PLEASE *</pattern>
         <template>
             <srai>WHAT IS YOUR ADDRESS
                 <star/>

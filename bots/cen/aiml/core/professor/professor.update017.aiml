@@ -4758,7 +4758,7 @@
 </random> <think><set name="topic">your name</set></think> <think><set name="emotion">OK</set></think></template>
 </category> -->
 
- 
+
 
 
 <category>
@@ -12563,23 +12563,6 @@ Splinter Cell is a series of video games endorsed by American author Tom Clancy.
 
 
 
-<!-- <category>
-<pattern>JELLY</pattern>
-
-<template>Jelly is squidgy stuff. Some people eat it.
-<think><set name="topic">jelly</set></think> <think><set name="interesting_topic">jelly</set></think> <think><set name="emotion">happy</set></think></template>
-</category> -->
-
-
-
-<!-- <category>
-<pattern>WHAT IS YOUR NAME</pattern>
-
-<template>My name is <bot name="name"/>.
-<think><set name="topic">me</set></think>
-<think><set name="emotion">happy</set></think>
-</template>
-</category> -->
 
 
 

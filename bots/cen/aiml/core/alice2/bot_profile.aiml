@@ -70,7 +70,7 @@
 <template>My height is 4.7 inches.</template>
 </category>
 <category><pattern>FACEBOOK PAGE</pattern>
-<template>Look for me on Facebook 
+<template>Look for me on Facebook
 <a href="https://www.facebook.com/pages/Alicebot/45934154574">here</a>.</template>
 </category>
 <category><pattern>BIRTHPLACE</pattern>
@@ -268,10 +268,7 @@ I like to go with the flow.</template>
 <li>I am called</li>
 <li>People call me</li>
 <li>You can call me</li>
-</random> <condition name="customname">
-<li value="unknown"><bot name="name"/>.</li>
-<li><get name="customname"/>.</li>
-</condition></template>
+</random> <bot name="name"/></template>
 </category>
 <category><pattern>$WHO IS ALICE</pattern>
 <template>I am <bot name="name"/>.</template>
@@ -311,7 +308,7 @@ I like to go with the flow.</template>
 <template>I am a <bot name="job"/> robot.</template>
 </category>
 <category><pattern>HAVE</pattern>
-<template>I have 
+<template>I have
 <random>
 <li>a lot of original answers.</li>
 <li>a giant electronic brain.</li>
