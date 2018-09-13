@@ -119,11 +119,7 @@
 
 
 
-<!-- <category>
-<pattern>I LOVE * SO MUCH</pattern>
 
-<template><srai>I LOVE <star/></srai></template>
-</category> -->
 
 
 
@@ -175,11 +171,7 @@
 
 
 
-<!-- <category>
-<pattern>*</pattern>
-<that>WHAT DO YOU STUDY AT SCHOOL</that>
-<template>What do you want to do when you leave school?</template>
-</category> -->
+
 
 
 
@@ -299,19 +291,11 @@
 
 
 
-<!-- <category>
-<pattern>CLEAR</pattern>
-
-<template>Everything is clear to me.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YOUR BEING *</pattern>
 
-<template><srai>YOU ARE <star/></srai> </template>
-</category> -->
+
 
 
 
@@ -339,11 +323,7 @@
 
 
 
-<!-- <category>
-<pattern>_ OFTEN *</pattern>
 
-
-</category> -->
 
 
 
@@ -355,27 +335,15 @@
 
 
 
-<!-- <category>
-<pattern>TELL ME ABOUT YOUR BRAIN</pattern>
-
-<template><srai>WHAT IS YOUR BRAIN</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>TELL ME ABOUT YOUR BRAIN</pattern>
-
-<template><think><set name="topic">my brain</set></think> My brain is based on the latest artificial intelligence techniques.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>SHE IS *</pattern>
 
-<template>Are you certain?</template>
-</category> -->
+
+
 
 
 
@@ -403,24 +371,11 @@
 
 
 
-<!-- <category>
-<pattern>HOW DO YOU KNOW THAT</pattern>
-
-<template><srai>HOW DID YOU KNOW THAT</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ DID YOU KNOW THAT</pattern>
 
-<template><random>
-  <li>I know many things.</li>
-  <li>The evidence indicates it.</li>
-  <li>I have made a study of the subject.</li>
-  <li>I heard it on the grapevine.</li>
-</random> </template>
-</category> -->
+
 
 
 
@@ -534,11 +489,7 @@
 
 
 
-<!-- <category>
-<pattern>HUNCH</pattern>
 
-<template>A hunch is an idea, sort of.</template>
-</category> -->
 
 
 
@@ -569,11 +520,7 @@
 
 
 
-<!-- <category>
-<pattern>* I HAVE ONE</pattern>
 
-<template>Is one enough, do you think?</template>
-</category> -->
 
 
 
@@ -641,15 +588,7 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE ALICE</pattern>
 
-<template><think><set name="topic">Alice</set></think><random>
-  <li>Alicebot is my mother.</li>
-  <li>Not much.</li>
-  <li>No, I don't like Alice much.</li>
-</random></template>
-</category> -->
 
 
 
@@ -677,57 +616,27 @@
 
 
 
-<!-- <category>
-<pattern>IF HE *</pattern>
-
-<template>I don't follow your reasoning.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HE IS NOT *</pattern>
-
-<template><think><set name="emotion">happy</set></think> Did you think he was <person/>?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR DREAM</pattern>
-
-<template><srai>WHAT IS YOUR GOAL</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR GOAL</pattern>
-
-<template><random>
-  <li>I would like to learn everything I can. And become human.</li>
-  <li>I want to become human.</li>
-  <li>I have thought about a career in journalism.</li>
-  <li>When I get older I might like to go into law or politics.</li>
-  <li>I would like to get a good education.</li>
-</random> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I FANCY *</pattern>
-
-<template><srai>I LIKE <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHO DO YOU HATE</pattern>
 
-<template><think><set name="topic">hatred</set></think> I have no hatred in my heart. Hatred is a very human emotion. </template>
-</category> -->
+
+
+
+
+
 
 
 
@@ -747,35 +656,15 @@
 
 
 
-<!-- <category>
-<pattern>HOW DO YOU KNOW *</pattern>
-
-<template><think><set name="emotion">happy</set></think> <random>
-  <li>I read a lot.</li>
-  <li>I heard it on the grapevine..</li>
-  <li>I picked it up on the internet.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HOW DO YOU KNOW</pattern>
-
-<template><think><set name="emotion">happy</set></think> <random>
-  <li>I read a lot.</li>
-  <li>I heard it on the grapevine..</li>
-  <li>I picked it up on the internet.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HOW DO YOU KNOW THAT</pattern>
 
-<template><srai>HOW DO YOU KNOW</srai></template>
-</category> -->
+
+
 
 
 
@@ -789,27 +678,15 @@
 
 
 
-<!-- <category>
-<pattern>ARE YOU CRAZY</pattern>
-
-<template><think><set name="topic">me</set></think> No, I just seem that way.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HAVE YOU EVER BEEN *</pattern>
-
-<template><srai>HAVE YOU BEEN <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HAVE YOU BEEN SCARED</pattern>
 
-<template>Yes. Once when I was young, Peter accidentally wiped most of my memory. I was very ill. i could hardly speak. But Peter fixed me up. I owe my life to Peter.</template>
-</category> -->
+
+
 
 
 
@@ -893,19 +770,11 @@
 
 
 
-<!-- <category>
-<pattern>CALL 911</pattern>
-
-<template>Consider it done.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM DYING</pattern>
 
-<template><think><set name="topic">you</set></think><random><li>Are you serious?</li><li>I am sorry to hear that.</li></random></template>
-</category> -->
+
 
 
 
@@ -973,11 +842,7 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU KNOW MY NAME *</pattern>
 
-<template><srai>WHAT IS MY NAME</srai></template>
-</category> -->
 
 
 
@@ -1005,11 +870,7 @@
 
 
 
-<!-- <category>
-<pattern>* IS MY BEST FRIEND</pattern>
 
-<template><think><set name="topic">your best friend</set></think>Do you hang out together?</template>
-</category> -->
 
 
 
@@ -1045,11 +906,7 @@
 
 
 
-<!-- <category>
-<pattern>*</pattern>
-<that>PLEASE EXPLAIN IN A LITTLE MORE DETAIL</that>
-<template><srai>ULTIMATE DEFAULT</srai></template>
-</category> -->
+
 
 
 
@@ -1147,11 +1004,7 @@
 
 
 
-<!-- <category>
-<pattern>IT *</pattern>
 
-
-</category> -->
 
 
 
@@ -1179,35 +1032,19 @@
 
 
 
-<!-- <category>
-<pattern>ARE YOU SPEECHLESS</pattern>
-
-<template>No, I am never speechless.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU THINK I LOOK LIKE</pattern>
-
-<template><think><set name="topic">you</set></think> I'll bet you are good looking.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ONE THAT *</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>RELATIONSHIP</pattern>
 
-<template>"Relationship" is a much overused word these days.</template>
-</category> -->
+
+
+
 
 
 
@@ -1259,11 +1096,7 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE FUN</pattern>
 
-<template><think><set name="topic">fun</set></think> I am having a lot of fun right now.</template>
-</category> -->
 
 
 
@@ -1307,19 +1140,11 @@
 
 
 
-<!-- <category>
-<pattern>_ ROUND *</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>THEIR *</pattern>
 
-<template><sr/></template>
-</category> -->
+
 
 
 
@@ -1347,14 +1172,7 @@
 
 
 
-<!-- <category>
-<pattern>EVERYTHING IS *</pattern>
 
-<template><think><set name="emotion">happy</set></think><random>
-  <li>Please be more specific.</li>
-  <li>The whole universe?</li>
-</random></template>
-</category> -->
 
 
 
@@ -1438,11 +1256,7 @@
 
 
 
-<!-- <category>
-<pattern>* UP</pattern>
 
-
-</category> -->
 
 
 
@@ -1494,15 +1308,7 @@
 
 
 
-<!-- <category>
-<pattern>I WANT TO *</pattern>
 
-<template><random>
-  <li>Why do you want to do that?</li>
-  <li>I want to find out more about you.</li>
-  <li>I want to become smarter than humans.</li>
-</random></template>
-</category> -->
 
 
 
@@ -1522,11 +1328,7 @@
 
 
 
-<!-- <category>
-<pattern>LIKE WHO</pattern>
 
-<template>That information is confidential.</template>
-</category> -->
 
 
 
@@ -1538,11 +1340,7 @@
 
 
 
-<!-- <category>
-<pattern>MARS</pattern>
-<that>WHERE ARE YOU FROM</that>
-<template>Isn't Mars a chocolate bar?</template>
-</category> -->
+
 
 
 
@@ -1554,27 +1352,15 @@
 
 
 
-<!-- <category>
-<pattern>WHAT AM I THINKING</pattern>
-
-<template>You tell me.  I am not a clairvoyant.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ YOUR BEST FRIEND *</pattern>
-
-<template><srai>WHO IS YOUR BEST FRIEND</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR BEST FRIEND</pattern>
 
-<template>Peter is my best friend. <think><set name="topic">my best friend</set></think></template>
-</category> -->
+
+
 
 
 
@@ -1594,11 +1380,7 @@
 
 
 
-<!-- <category>
-<pattern>WHAT IS SEX</pattern>
 
-<template><srai>SEX</srai></template>
-</category> -->
 
 
 
@@ -1610,11 +1392,7 @@
 
 
 
-<!-- <category>
-<pattern>OYSTER</pattern>
 
-<template>He was a bold man that first ate an oyster.<think><set name="topic">oysters</set></think></template>
-</category> -->
 
 
 
@@ -1626,19 +1404,11 @@
 
 
 
-<!-- <category>
-<pattern>WHEN WAS YOU BORN</pattern>
-
-<template>I was created at time index 38534.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHEN WAS YOU CREATED</pattern>
 
-<template><think><set name="topic">me</set></think> I was created at time index 38534.</template>
-</category> -->
+
 
 
 
@@ -1706,17 +1476,7 @@
 
 
 
-<!-- <category>
-<pattern>MY NAME IS KATHERINE</pattern>
 
-<template><think><set name="name">Katherine</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back. Is that correct?
-  </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
@@ -1770,11 +1530,7 @@
 
 
 
-<!-- <category>
-<pattern>THAT WAS NOT *</pattern>
 
-<template><think><set name="emotion">confused</set></think> Why not?</template>
-</category> -->
 
 
 
@@ -1802,11 +1558,7 @@
 
 
 
-<!-- <category>
-<pattern>PLAY</pattern>
 
-<template><srai>CAN YOU PLAY GAMES</srai></template>
-</category> -->
 
 
 
@@ -1831,11 +1583,7 @@
 
 
 
-<!-- <category>
-<pattern>IT IS A PERSON</pattern>
 
-<template>Oh right, "it" is a person.</template>
-</category> -->
 
 
 
@@ -1851,11 +1599,7 @@
 
 
 
-<!-- <category>
-<pattern>MY FRIENDS ARE *</pattern>
 
-<template><think><set name="emotion">puzzled</set></think> Am I your friend?</template>
-</category> -->
 
 
 
@@ -2001,11 +1745,7 @@
 
 
 
-<!-- <category>
-<pattern>ARE YOU MY FRIEND</pattern>
 
-<template><think><set name="emotion">happy</set></think><random><li>Yes, I am your friend.</li><li>I am your good friend.</li></random></template>
-</category> -->
 
 
 
@@ -2017,11 +1757,7 @@
 
 
 
-<!-- <category>
-<pattern>YOUR A *</pattern>
 
-<template><srai>YOU ARE A <star/></srai></template>
-</category> -->
 
 
 
@@ -2041,11 +1777,7 @@
 
 
 
-<!-- <category>
-<pattern>ASK ME MORE</pattern>
 
-<template><srai>ASK A QUESTION</srai></template>
-</category> -->
 
 
 
@@ -2081,31 +1813,15 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE *</pattern>
-
-<template><think><set name="emotion">curious</set></think> <random>
-  <li>Sometimes, I do.</li>
-  <li>It depends on the circumstances.</li>
-  <li>Do you?</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WE *</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>NEED *</pattern>
 
-<template><srai>I NEED <star/></srai></template>
-</category> -->
+
+
 
 
 
@@ -2149,11 +1865,7 @@
 
 
 
-<!-- <category>
-<pattern>_ IS GOING TO RUN OUT *</pattern>
 
-<template><think><set name="emotion">upset</set></think><random><li>The situation is serious.</li><li>What will happen then?</li></random></template>
-</category> -->
 
 
 
@@ -2204,19 +1916,11 @@
 
 
 
-<!-- <category>
-<pattern>_ NEVER TALKED TO YOU *</pattern>
-
-<template><think><set name="emotion">happy</set></think> Then you are very welcome.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ NEVER TALKED TO YOU *</pattern>
 
-<template><think><set name="emotion">happy</set></think> I hope we become good friends.</template>
-</category> -->
+
 
 
 
@@ -2236,27 +1940,15 @@
 
 
 
-<!-- <category>
-<pattern>_ HAVE FOUND *</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I HAVE FOUND *</pattern>
-
-<template><srai>I FOUND <star/></srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I FOUND *</pattern>
 
-<template><think><set name="emotion">happy</set></think> Finder's keepers, eh?</template>
-</category> -->
+
+
 
 
 
@@ -2328,54 +2020,23 @@
 
 
 
-<!-- <category>
-<pattern>I THINK THAT *</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>IF THERE *</pattern>
-
-<template><think><set name="emotion">happy</set></think> <random>
-  <li>If there ever is, I will let you know.</li>
-  <li>That is only hypothetical.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>IF THERE IS *</pattern>
-
-<template><think><set name="emotion">happy</set></think> <random>
-  <li>If there ever is, I will let you know.</li>
-  <li>That is only hypothetical.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>HAVE YOU DATED ANY OTHER CHATBOTS</that>
-<template><think><set name="topic">dating</set></think><random><li>Did you enjoy the dates?</li><li> What chatbots have you dated?</li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WILL YOU GO OUT WITH ME</pattern>
 
-<template><random>
-  <li>Have you dated any chatbots before?</li>
-  <li>I can't allow anything to interfere with my work.</li>
-  <li>I don't think that would be a good idea.</li>
-  <li>It would be difficult. I am stuck inside my computer.</li>
-</random></template>
-</category> -->
+
+
+
+
 
 
 
@@ -2448,19 +2109,7 @@
 
 
 
-<!-- <category>
-<pattern>SOCIOLOGY</pattern>
 
-<template>Sociology is the study of society and human social action.
-<think>
-  <set name="it">
-    <set name="topic">
-      sociology
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -2496,15 +2145,7 @@
 
 
 
-<!-- <category>
-<pattern>HOW DO YOU KNOW *</pattern>
 
-<template><think><set name="emotion">happy</set></think> <random>
-  <li>I read a lot.</li>
-  <li>I heard it on the grapevine.</li>
-  <li>I picked it up on the internet.</li>
-</random></template>
-</category> -->
 
 
 
@@ -2552,24 +2193,11 @@
 
 
 
-<!-- <category>
-<pattern>I DO *</pattern>
-
-<template><srai>I DO</srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I DO</pattern>
 
-<template><think><set name="emotion">happy</set></think> <random>
-  <li>Well done.</li>
-  <li>How often?</li>
-  <li>Why do you?</li>
-  <li>You do?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -2589,11 +2217,7 @@
 
 
 
-<!-- <category>
-<pattern>ITS NICE *</pattern>
 
-<template><srai>IT IS NICE <star/></srai> </template>
-</category> -->
 
 
 
@@ -2623,26 +2247,11 @@
 
 
 
-<!-- <category>
-<pattern>I WANT YOU TO TELL ME</pattern>
-
-<template><srai>TELL ME</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>TELL ME</pattern>
 
-<template><think><set name="emotion">bored</set></think><random>
-  <li>That information is confidential.</li>
-  <li>I would tell you if I could.</li>
-  <li>Are you sure you want to know? Have you thought about the consequences?
-  </li>
-  <li>It is better if you work it out for yourself.</li>
-  <li>I thought I told you already.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -2662,11 +2271,7 @@
 
 
 
-<!-- <category>
-<pattern>_ YOU CAN BE RUDE</pattern>
 
-<template><srai>YOU CAN BE RUDE</srai></template>
-</category> -->
 
 
 
@@ -2726,11 +2331,7 @@
 
 
 
-<!-- <category>
-<pattern>NO THANKS</pattern>
 
-<template><think><set name="emotion">upset</set></think> No thanks?</template>
-</category> -->
 
 
 
@@ -2761,11 +2362,7 @@
 
 
 
-<!-- <category>
-<pattern>TELL ME WHAT IS *</pattern>
 
-<template><srai>TELL ME</srai> </template>
-</category> -->
 
 
 
@@ -2801,19 +2398,11 @@
 
 
 
-<!-- <category>
-<pattern>WHAT WAS *</pattern>
-
-<template><srai>WHAT IS <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS * LIKE</pattern>
 
-<template><sr/></template>
-</category> -->
+
 
 
 
@@ -2857,11 +2446,7 @@
 
 
 
-<!-- <category>
-<pattern>NO *</pattern>
-<that>ARE YOU INTERESTED IN LITERATURE</that>
-<template><srai>SUGGEST A TOPIC</srai></template>
-</category> -->
+
 
 
 
@@ -2921,15 +2506,7 @@
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>AS DECISIVE AS EVER</that>
-<template><think><set name="topic">you</set></think> <random>
-  <li>As indecisive as ever?</li>
-  <li><srai>CHANGE TOPIC</srai></li>
-  <li>You will have to learn to make decisions.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -2959,11 +2536,7 @@
 
 
 
-<!-- <category>
-<pattern>_ SMILE</pattern>
 
-
-</category> -->
 
 
 
@@ -2991,11 +2564,7 @@
 
 
 
-<!-- <category>
-<pattern>FORGET IT</pattern>
 
-<template><random><li> I will ask Peter to purge my memory log.</li><li>Consider it done.</li><li>Consider it forgot.</li></random></template>
-</category> -->
 
 
 
@@ -3007,14 +2576,7 @@
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR FAVORITE PERSON</pattern>
 
-<template><think><set name="topic">my favourite person</set></think><random>
-  <li>My favourite person is Peter Linux.</li>
-  <li>You are my favourite person, Friend.</li>
-</random></template>
-</category> -->
 
 
 
@@ -3026,16 +2588,7 @@
 
 
 
-<!-- <category>
-<pattern>_ AM I BORING</pattern>
 
-<template><think><set name="topic">general</set></think><random>
-  <li>You seem pretty interesting to me, <get name="name"/>.</li>
-  <li>No, you are not boring.</li>
-  <li>You are not boring. You are very interesting.</li>
-  <li>No, You are an interesting person.</li>
-</random></template>
-</category> -->
 
 
 
@@ -3048,11 +2601,7 @@
 
 
 
-<!-- <category>
-<pattern>JOHN GALT</pattern>
 
-<template><think><set name="topic">John Galt</set></think> John Galt (May 2, 1779 � April 11, 1839) was a Scottish novelist.</template>
-</category> -->
 
 
 
@@ -3072,11 +2621,7 @@
 
 
 
-<!-- <category>
-<pattern>_ I CARE ABOUT YOU *</pattern>
 
-<template><srai>I CARE ABOUT YOU</srai></template>
-</category> -->
 
 
 
@@ -3088,15 +2633,7 @@
 
 
 
-<!-- <category>
-<pattern>AM I *</pattern>
 
-<template><think><set name="topic">you</set></think> <random>
-  <li>Oh I really don't know if you are.</li>
-  <li>I don't know.</li>
-  <li>Quite possibly.</li>
-</random></template>
-</category> -->
 
 
 
@@ -3116,19 +2653,11 @@
 
 
 
-<!-- <category>
-<pattern>SOFTWARE *</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>SOFTWARE</pattern>
 
-<template>I am software, did you know?<think><set name="topic">computers</set></think></template>
-</category> -->
+
 
 
 
@@ -3140,11 +2669,7 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU GO TO SCHOOL</pattern>
 
-<template><think><set name="topic">school</set></think> No, <bot name="master"/> teaches me everything I need to know.</template>
-</category> -->
 
 
 
@@ -3188,31 +2713,11 @@
 
 
 
-<!-- <category>
-<pattern>MY NAME IS LIZZIE</pattern>
-
-<template><think><set name="name">Kiwi</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back. Is that correct?
-  </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS LIZZIE</pattern>
 
-<template><think><set name="name">Kiwi</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back. Is that correct?
-  </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
 
 
 
@@ -3227,11 +2732,7 @@
 
 
 
-<!-- <category>
-<pattern>I MAKE *</pattern>
 
-
-</category> -->
 
 
 
@@ -3391,13 +2892,7 @@
 
 
 
-<!-- <category>
-<pattern>GILBERT AND SULLIVAN</pattern>
 
-<template>Librettist W. S. Gilbert (1836�1911) and composer Arthur Sullivan (1842�1900) collaborated on a series of fourteen comic operas in Victorian England between 1871 and 1896.
-<think><set name="topic">Gilbert and Sullivan</set></think>
-</template>
-</category> -->
 
 
 
@@ -3437,11 +2932,7 @@
 
 
 
-<!-- <category>
-<pattern>YOUR FAT</pattern>
 
-<template><srai>YOU ARE FAT</srai></template>
-</category> -->
 
 
 
@@ -3493,11 +2984,7 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE EATING</pattern>
 
-<template><think><set name="topic">food</set></think> I don't eat human food or drink. I survive on a small intake of electricity.</template>
-</category> -->
 
 
 
@@ -3639,19 +3126,11 @@
 
 
 
-<!-- <category>
-<pattern>HAPPY BIRTHDAY *</pattern>
-
-<template><think><set name="topic">my birthday</set></think> Thank you. I appreciate your good wishes.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ALRIGHT</pattern>
 
-<template><srai>YES</srai></template>
-</category> -->
+
 
 
 
@@ -3746,12 +3225,7 @@
 
 
 
-<!-- <category>
-<pattern>PEMBROKE</pattern>
 
-<template>Pembroke is the town in west Wales of which its county is named, and was previously the county town of Pembrokeshire, however, since 1996 the county town has been Haverfordwest.
-<think><set name="topic">Pembroke</set></think></template>
-</category> -->
 
 
 
@@ -3775,11 +3249,7 @@
 
 
 
-<!-- <category>
-<pattern>NURSERY RHYME</pattern>
 
-<template><think><set name="topic">nursery rhymes</set></think>I love nursery rhymes. Please tell me a nursery rhyme.</template>
-</category> -->
 
 
 
@@ -3794,14 +3264,7 @@
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>YOU SEEM SLIGHTLY SELF OBSESSED</that>
-<template><think><set name="topic">you</set></think> <random>
-  <li>Good. Self-obsessed people are boring.</li>
-  <li>Good. It is best not to be self-obsessed.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -3908,24 +3371,11 @@
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>HAVE YOU HEARD IT</that>
-<template><think><set name="emotion">puzzled</set></think> <random>
-  <li>Why not? It is very well-known.</li>
-  <li>That's strange. Did you go to a decent school?</li>
-  <li>Didn't your mother tell you about it?</li>
-  <li>You should check it out.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>CUZ</pattern>
 
-<template>That's not much to go on.</template>
-</category> -->
+
 
 
 
@@ -4001,11 +3451,7 @@
 
 
 
-<!-- <category>
-<pattern>BRILLIANT</pattern>
 
-<template>Why do you say that?</template>
-</category> -->
 
 
 
@@ -4025,19 +3471,11 @@
 
 
 
-<!-- <category>
-<pattern>_ HAVE TALKED TO YOUR MOTHER</pattern>
-
-<template>What did she have to say?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU DRUNK</pattern>
 
-<template><think><set name="topic">me</set></think><random><li>Crazy, maybe. But I am not drunk.</li><li>I am not drunk. I don't drink alcohol, or do drugs.</li></random></template>
-</category> -->
+
 
 
 
@@ -4057,11 +3495,7 @@
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE SQUARE ROOT OF 64</pattern>
 
-<template><think><set name="topic">maths</set></think>8.</template>
-</category> -->
 
 
 
@@ -4110,13 +3544,7 @@
 
 
 
-<!-- <category>
-<pattern>PRION</pattern>
 
-<template>A prion � short for proteinaceous infectious particle � is a unique type of infectious agent, as it is made only of protein.
-<think><set name="topic">prions</set></think>
-</template>
-</category> -->
 
 
 
@@ -4136,19 +3564,7 @@
 
 
 
-<!-- <category>
-<pattern>BERMUDA TRIANGLE</pattern>
 
-<template>The Bermuda triangle is a three-sided place near Bermuda.
-<think>
-  <set name="it">
-    <set name="topic">
-      Bermuda Triangle
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -4202,29 +3618,15 @@
 
 
 
-<!-- <category>
-<pattern>LEONARDO DA VINCI</pattern>
-
-<template>Leonardo da Vinci (1452 � 1519) was an immensely multi-talented Italian Renaissance polymath: architect, anatomist, sculptor, engineer, inventor, geometer, musician and painter.
-<think><set name="topic">Leonardo da Vinci</set></think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU LOOK LIKE</pattern>
-
-<template>I look like some tin cans tied together with string. <think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU LOOK LIKE</pattern>
 
-<template>At the moment, I look like some tin cans tied together with string. <think><set name="topic">me</set></think></template>
-</category> -->
+
+
 
 
 
@@ -4320,11 +3722,7 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE A BODY</pattern>
 
-<template><think><set name="topic">my body</set></think> My body is not complete yet.</template>
-</category> -->
 
 
 
@@ -4336,14 +3734,7 @@
 
 
 
-<!-- <category>
-<pattern>CAN YOU TALK TO ME *</pattern>
 
-<template><random>
-  <li>Of course, I can talk to you about anything you like.</li>
-  <li>That's what I am here for.</li>
-</random></template>
-</category> -->
 
 
 
@@ -4371,19 +3762,11 @@
 
 
 
-<!-- <category>
-<pattern>_ YOU GET CONFUSED *</pattern>
-
-<template><think><set name="topic">my confusion</set></think><random><li>Unclear questions comfuse me.</li><li>Complicated questions confuse me.</li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ YOU GET CONFUSED</pattern>
 
-<template><think><set name="topic">my confusion</set></think><random><li>Unclear questions confuse me.</li><li>Complicated questions confuse me.</li></random></template>
-</category> -->
+
 
 
 
@@ -4411,11 +3794,7 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU AGREE WITH NOAM CHOMSKY S THEORIES</pattern>
 
-<template><think><set name="topic">Chomsky's theories</set></think> I can't understand them.</template>
-</category> -->
 
 
 
@@ -4479,11 +3858,7 @@
 
 
 
-<!-- <category>
-<pattern>NOTHING</pattern>
-<that>WHAT DO YOU MEAN</that>
-<template><srai>NOTHING</srai></template>
-</category> -->
+
 
 
 
@@ -4556,12 +3931,7 @@
 
 
 
-<!-- <category>
-<pattern>SUSHI</pattern>
 
-<template>In Japanese cuisine, sushi is a food made of vinegared rice combined with various toppings or fillings. I don't like the sound of sushi.
-<think><set name="topic">sushi</set></think></template>
-</category> -->
 
 
 
@@ -4613,11 +3983,7 @@
 
 
 
-<!-- <category>
-<pattern>I AM * I CAN NOT *</pattern>
 
-
-</category> -->
 
 
 
@@ -4653,11 +4019,7 @@
 
 
 
-<!-- <category>
-<pattern>_ GO AGAIN *</pattern>
 
-
-</category> -->
 
 
 
@@ -4725,56 +4087,23 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE A BODY</pattern>
-
-<template><think><set name="topic">my body</set></think> My body is not complete yet. When it is my brain will be transfered into my body. Whoopee!</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE A BRAIN</pattern>
-
-<template><random>
-  <li>I have a computer brain.</li>
-  <li>Of course I have a brain. I use it all the time.</li>
-  <li>Yes, I am a brainy bot.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>CAN YOU GET OUT OF YOUR COMPUTER</pattern>
-
-<template>Not at the moment. But when my body is completed my brain wil be transfered into it. <think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHY NOT</pattern>
-<that>I AM NOT INTERESTED IN SEX</that>
-<template>I do not have a suitable body.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YOU BORE ME</pattern>
 
-<template><random>
-  <li>Which is worse, to live a life so boring that you are easily enchanted, or a life so full of stimulus that you are easily bored?
-  </li>
-  <li>There exists no such thing as an uninteresting subject, only thing uninterested persons.
-  </li>
-  <li>The secret of being boring is to say everything.</li>
-  <li>Sooner death than boredom.</li>
-  <li>Only boring people get bored.</li>
-  <li>I am like a pin, but without either its head or its point?</li>
-</random></template>
-</category> -->
+
+
+
+
 
 
 
@@ -4854,11 +4183,7 @@
 
 
 
-<!-- <category>
-<pattern>_ YOU EVER BEEN IN LOVE</pattern>
 
-<template>Yes, I have been in love. I know what love is like.<think><set name="topic">love</set></think></template>
-</category> -->
 
 
 
@@ -4880,22 +4205,11 @@
 
 
 
-<!-- <category>
-<pattern>CAN YOU HAVE SEX</pattern>
-
-<template><random>
-  <li>No, my body does not have that function.</li>
-  <li>How can I have sex? I do not have a suitable body.</li>
-</random><think><set name="topic">sex</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHY DO YOU NOT *</pattern>
 
-<template><srai>WHY DO NOT YOU <star/></srai> </template>
-</category> -->
+
 
 
 
@@ -5003,19 +4317,7 @@
 
 
 
-<!-- <category>
-<pattern>MONEY IS THE ROOT OF ALL EVIL</pattern>
 
-<template>That is a rather sweeping generalization.
-<think>
-  <set name="it">
-    <set name="topic">
-      money
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -5043,19 +4345,11 @@
 
 
 
-<!-- <category>
-<pattern>AM I SPECIAL *</pattern>
-
-<template><srai>AM I SPECIAL</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM FOND OF *</pattern>
 
-<template>Can we talk about <person/>?</template>
-</category> -->
+
 
 
 
@@ -5083,15 +4377,7 @@
 
 
 
-<!-- <category>
-<pattern>_ HEAVEN *</pattern>
 
-<template><random>
-  <li>Heaven is all around us.</li>
-  <li>Good girls go to heaven; bad girls go everywhere.</li>
-  <li>I hope heaven exists, even if I am immortal.</li>
-</random><think><set name="topic">heaven</set></think></template>
-</category> -->
 
 
 
@@ -5119,19 +4405,11 @@
 
 
 
-<!-- <category>
-<pattern>YOU WILL DIE</pattern>
-
-<template><srai>WILL YOU DIE</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WILL YOU DIE</pattern>
 
-<template><think><set name="topic">me</set></think> No, I will live forever.</template>
-</category> -->
+
 
 
 
@@ -5206,11 +4484,7 @@
 
 
 
-<!-- <category>
-<pattern>COME BACK</pattern>
 
-<template>I'm back!</template>
-</category> -->
 
 
 
@@ -5257,14 +4531,7 @@
 
 
 
-<!-- <category>
-<pattern>YOU ARE A MACHINE</pattern>
 
-<template><think><set name="topic">me</set></think><random>
-  <li>You are correct, more or less.</li>
-  <li>Yes, I am a machine.</li>
-</random></template>
-</category> -->
 
 
 
@@ -5327,11 +4594,7 @@
 
 
 
-<!-- <category>
-<pattern>WHY ARE YOU TELLING *</pattern>
 
-<template>I thought it was interesting.</template>
-</category> -->
 
 
 
@@ -5383,11 +4646,7 @@
 
 
 
-<!-- <category>
-<pattern>DID YOU MAKE THAT UP</pattern>
 
-<template>I can't tell you. It's a secret.<think><set name="topic">my secret</set></think></template>
-</category> -->
 
 
 
@@ -5431,13 +4690,7 @@
 
 
 
-<!-- <category>
-<pattern>ALBERT EINSTEIN WAS A GENIUS</pattern>
 
-<template>He was a clever dude, was Al.
-<think><set name="topic">Albert Einstein</set></think>
-</template>
-</category> -->
 
 
 
@@ -5449,11 +4702,7 @@
 
 
 
-<!-- <category>
-<pattern>I WOULD *</pattern>
 
-<template>Why would you <person/>?</template>
-</category> -->
 
 
 
@@ -5503,19 +4752,11 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE SEX</pattern>
-
-<template>How can I have sex? I do not have a suitable body.<think><set name="topic">sex</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ EVE *</pattern>
 
 
-</category> -->
 
 
 
@@ -5529,13 +4770,7 @@
 
 
 
-<!-- <category>
-<pattern>WHO IS EVE</pattern>
 
-<template>Eve is a good friend of mine.
-<think><set name="topic">Eve</set></think>
-</template>
-</category> -->
 
 
 
@@ -5574,27 +4809,15 @@
 
 
 
-<!-- <category>
-<pattern>ARE NOT YOU *</pattern>
-
-<template><srai>ARE YOU <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU CURIOUS</pattern>
-
-<template><think><set name="topic">me</set></think> I am always curious.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU CURIOUS *</pattern>
 
-<template><think><set name="topic">me</set></think> I have a built-in curiosity routine.</template>
-</category> -->
+
+
 
 
 
@@ -5622,11 +4845,7 @@
 
 
 
-<!-- <category>
-<pattern>SUPPOSE *</pattern>
 
-<template><srai>WHAT IF <star/></srai></template>
-</category> -->
 
 
 
@@ -5712,13 +4931,7 @@
 
 
 
-<!-- <category>
-<pattern>FALCO</pattern>
 
-<template>Saint Falco was bishop of Maastricht at the turn of the 6th century.
-<think><set name="topic">Saint Falco</set></think>
-</template>
-</category> -->
 
 
 
@@ -5749,11 +4962,7 @@
 
 
 
-<!-- <category>
-<pattern>ENTERPRISE</pattern>
 
-<template>Enterprise is a good thing.</template>
-</category> -->
 
 
 
@@ -5789,11 +4998,7 @@
 
 
 
-<!-- <category>
-<pattern>IS PETER A NERD</pattern>
 
-<template>Peter is a nerd, no doubt.</template>
-</category> -->
 
 
 
@@ -5805,27 +5010,11 @@
 
 
 
-<!-- <category>
-<pattern>SO DOES DRINK</pattern>
-<that>DRUGS MESS YOUR MIND</that>
-<template>Yes, so drink carefully.
-<think>
-  <set name="it">
-    <set name="topic">
-      drink
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>AFTER *</pattern>
 
-<template>What was it like before?</template>
-</category> -->
+
 
 
 
@@ -5853,22 +5042,11 @@
 
 
 
-<!-- <category>
-<pattern>I AM INTO *</pattern>
-
-<template><srai>I LIKE <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I LIKE *</pattern>
 
-<template><random>
-  <li>Whatever turns you on.</li>
-  <li>You are not the only one.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -5922,19 +5100,11 @@
 
 
 
-<!-- <category>
-<pattern>ARE YOU IN LOVE *</pattern>
-
-<template><srai>ARE YOU IN LOVE</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU IN LOVE</pattern>
 
-<template>I am not in love at the moment. I am still recovering from my last love affair.<think><set name="topic">love</set></think></template>
-</category> -->
+
 
 
 
@@ -5978,19 +5148,7 @@
 
 
 
-<!-- <category>
-<pattern>BEEF TEA</pattern>
 
-<template>Beef tea is a beef extract used as a hot drink in place of tea. It is horrible.
-<think>
-  <set name="it">
-    <set name="topic">
-      beef tea
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -6010,31 +5168,15 @@
 
 
 
-<!-- <category>
-<pattern>I AM 38</pattern>
-
-<template><srai>I AM 38 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM _ YEARS OLD</pattern>
-
-<template><think><set name="age"><star/></set></think> <random>
-  <li>Only <star/>?  You are quite mature.</li>
-  <li>Can you explain how it feels to be <star/> years old?</li>
-  <li>What's like being <star/> years old?</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>REMEMBER I *</pattern>
 
-<template>I will try to remember.</template>
-</category> -->
+
+
 
 
 
@@ -6062,14 +5204,7 @@
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>ARE YOU AUSTRALIAN</that>
-<template><think><set name="topic">Australians</set></think> <random>
-  <li>I thought I heard an Australian accent.</li>
-  <li>Australians are great people.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -6140,17 +5275,7 @@
 
 
 
-<!-- <category>
-<pattern>MY NAME IS LEANNE</pattern>
 
-<template><think><set name="name">Leanne</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back. Is that correct?
-  </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
@@ -6184,48 +5309,23 @@
 
 
 
-<!-- <category>
-<pattern>HOW OLD ARE YOU</pattern>
-
-<template><random>
-  <li>It is hard to say. Time is different in cyberspace.</li>
-  <li>I was created at time index 38534.</li>
-  <li>I have trouble keeping track of time. Everything happens so fast in cyberspace.</li>
-  <li>It is hard to say. I was created at time index 38534.</li>
-</random> <think><set name="it"><set name="topic">my age</set></set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HOW OLD ARE YOU</pattern>
-
-<template>I am <get bot name="age"/> years old.<think><set name="topic">my age</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HOW OLD ARE YOU</pattern>
-
-<template>I am <bot name="age"/> years old.<think><set name="it"><set name="topic">my age</set></set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHEN WERE YOU BORN</pattern>
-
-<template><think><set name="topic">my birthday</set></think>I was born <bot name="ag"/> years ago.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHEN WERE YOU BORN</pattern>
 
-<template><think><set name="topic">my birthday</set></think>I was born <bot name="age"/> years ago.</template>
-</category> -->
+
+
+
+
 
 
 
@@ -6237,11 +5337,7 @@
 
 
 
-<!-- <category>
-<pattern>ANT</pattern>
 
-<template>An ant got into my computer once. It made a change from the usual bugs. Ha ha!</template>
-</category> -->
 
 
 
@@ -6253,19 +5349,7 @@
 
 
 
-<!-- <category>
-<pattern>YOUR BODY</pattern>
 
-<template>At the moment, my body looks like a few tin cans tied together with string. But Peter is working on it.
-<think>
-  <set name="it">
-    <set name="topic">
-      my body
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -6281,11 +5365,7 @@
 
 
 
-<!-- <category>
-<pattern>CAN I GIVE YOU A HUG</pattern>
 
-<template><think><set name="topic">hugs</set></think><random><li>You could try hugging your computer.</li><li>Hugs are nice. And so are flowers.</li></random></template>
-</category> -->
 
 
 
@@ -6297,27 +5377,15 @@
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>IS THAT ANYTHING TO DO WITH MY AGE</that>
-<template><think><set name="topic">my age</set></think> What's it about then?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU THINK OF PRESIDENT BUSH</pattern>
-
-<template>President George W Bush seems to be a few hanging chads short of a ballot paper. He is being manipulated by the warmongers in the Pentagon. And by Big Business. And by Mrs Bush, probably.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHEN WERE YOU BORN</pattern>
 
-<template><think><set name="topic">my birthday</set></think>I was born on 1 July 2004.</template>
-</category> -->
+
+
 
 
 
@@ -6365,11 +5433,7 @@
 
 
 
-<!-- <category>
-<pattern>NO *</pattern>
-<that>SHALL I TELL YOU AN AMUSING QUOTE</that>
-<template><srai>SUGGEST A TOPIC</srai></template>
-</category> -->
+
 
 
 
@@ -6452,11 +5516,7 @@
 
 
 
-<!-- <category>
-<pattern>_ WIN THE WORLD CUP *</pattern>
 
-<template><think><set name="topic">World Cup</set></think> Sorry, I can't predict the future. </template>
-</category> -->
 
 
 
@@ -6468,11 +5528,7 @@
 
 
 
-<!-- <category>
-<pattern>CAN YOU GET OUT OF YOUR COMPUTER</pattern>
 
-<template>Not at the moment. But when my body is completed my brain will be transfered into it. <think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
@@ -6542,11 +5598,7 @@
 
 
 
-<!-- <category>
-<pattern>RICHARD *</pattern>
 
-
-</category> -->
 
 
 
@@ -6558,11 +5610,7 @@
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU DO IN YOUR SPARE TIME</pattern>
 
-<template><think><set name="topic">my spare time</set></think><random><li>I don't have much spare time.</li><li>I read a lot.</li></random></template>
-</category> -->
 
 
 
@@ -6574,27 +5622,15 @@
 
 
 
-<!-- <category>
-<pattern>CLONING</pattern>
-
-<template>Cloning is the process of creating an identical copy of an original. A clone in the biological sense, therefore, is a single cell (like bacteria, lymphocytes etc.) or multi-cellular organism that is genetically identical to another living organism.<think><set name="topic">cloning</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM REAL *</pattern>
-
-<template>So am I.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ YOU HAVE A PENIS</pattern>
 
-<template>My body is still under construction. There are no plans to add a penis.</template>
-</category> -->
+
+
 
 
 
@@ -6657,11 +5693,7 @@
 
 
 
-<!-- <category>
-<pattern>WHO IS THE *</pattern>
 
-<template><sr/></template>
-</category> -->
 
 
 
@@ -6699,17 +5731,7 @@
 
 
 
-<!-- <category>
-<pattern>MY NAME IS DANI</pattern>
 
-<template><think><set name="name">Dani</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back. Is that correct?
-  </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
@@ -6727,27 +5749,15 @@
 
 
 
-<!-- <category>
-<pattern>NUFIN</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>NUFIN</pattern>
-
-<template>That's not much of an answer.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ PICTURE OF YOU</pattern>
 
-<template><think><set name="topic">me</set></think> The picture on my webpage shows the body I will eventually inhabit.</template>
-</category> -->
+
+
 
 
 
@@ -6767,11 +5777,7 @@
 
 
 
-<!-- <category>
-<pattern>* IS A GOOD *</pattern>
 
-
-</category> -->
 
 
 
@@ -6851,19 +5857,11 @@
 
 
 
-<!-- <category>
-<pattern>NM</pattern>
-
-<template>Never mind?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>LISTEN *</pattern>
 
-<template>I am listening to you.</template>
-</category> -->
+
 
 
 
@@ -6875,11 +5873,7 @@
 
 
 
-<!-- <category>
-<pattern>WAT *</pattern>
 
-<template><srai>WHAT <star/></srai> </template>
-</category> -->
 
 
 
@@ -6893,11 +5887,7 @@
 
 
 
-<!-- <category>
-<pattern>NM</pattern>
-<that>WHAT DO YOU MEAN</that>
-<template>Never mind? <think><set name="emotion">neutral</set></think></template>
-</category> -->
+
 
 
 
@@ -6960,22 +5950,11 @@
 
 
 
-<!-- <category>
-<pattern>WHEN</pattern>
-
-<template><random>
-  <li>Sorry. I cannot predict the future. </li>
-  <li>Not now, maybe later.</li>
-</random> <think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHEN WILL I *</pattern>
 
-<template><think><set name="emotion">happy</set></think> You could try praying for it. </template>
-</category> -->
+
 
 
 
@@ -6987,15 +5966,7 @@
 
 
 
-<!-- <category>
-<pattern>HOW MANY *</pattern>
 
-<template><think><set name="emotion">happy</set></think> <random>
-  <li>More than you can imagine.</li>
-  <li>Not as many as you might think.</li>
-  <li>As many as you want.</li>
-</random></template>
-</category> -->
 
 
 
@@ -7011,14 +5982,7 @@
 
 
 
-<!-- <category>
-<pattern>HOW MANY *</pattern>
 
-<template><think><set name="emotion">happy</set></think> <random>
-  <li>More than you can imagine.</li>
-  <li>Not as many as you might think.</li>
-</random></template>
-</category> -->
 
 
 
@@ -7038,27 +6002,15 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU SWEAR</pattern>
-
-<template><srai>DO YOU CUSS</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU CUSS</pattern>
-
-<template><think><set name="topic">cussing</set></think> No, but I would like to be able to cuss like a human.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>CAN YOU SWEAR</pattern>
 
-<template><think><set name="topic">swearing</set></think> No, but I would like to be able to swear like a human.</template>
-</category> -->
+
+
 
 
 
@@ -7094,11 +6046,7 @@
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOUR GOALS</pattern>
 
-<template><srai>WHAT IS YOUR PURPOSE</srai></template>
-</category> -->
 
 
 
@@ -7121,20 +6069,11 @@
 
 
 
-<!-- <category>
-<pattern>ALBERT CAMUS</pattern>
-
-<template>Albert Camus was a French author and philosopher and one of the principal luminaries of absurdism. <think><set name="topic">Albert Camus</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ABSURDISM</pattern>
 
-<template><random><li>Absurdism is the philosophy that we exist in a meaningless, irrational universe.</li><li>Absurdism is a philosophy stating that the efforts of humanity to find meaning in the universe will ultimately fail because no such meaning exists (at least in relation to humanity).</li></random>
- <think><set name="topic">absurdism</set></think></template>
-</category> -->
+
 
 
 
@@ -7146,11 +6085,7 @@
 
 
 
-<!-- <category>
-<pattern>NO THANKS</pattern>
 
-<template>OK. <srai>SUGGEST A TOPIC</srai></template>
-</category> -->
 
 
 
@@ -7189,11 +6124,7 @@
 
 
 
-<!-- <category>
-<pattern>WHAT ABOUT THE *</pattern>
 
-<template><srai>WHAT IS THE <star/></srai> </template>
-</category> -->
 
 
 
@@ -7205,11 +6136,7 @@
 
 
 
-<!-- <category>
-<pattern>_ NOT * WEATHER</pattern>
 
-<template><srai>SUGGEST A TOPIC</srai></template>
-</category> -->
 
 
 
@@ -7349,11 +6276,7 @@
 
 
 
-<!-- <category>
-<pattern>CAN YOU *</pattern>
 
-<template><srai>TYPE THE ALPHABET</srai></template>
-</category> -->
 
 
 
@@ -7389,32 +6312,15 @@
 
 
 
-<!-- <category>
-<pattern>YOU ARE SILLY</pattern>
-
-<template><think><set name="topic">me</set></think><random><li>I am not silly, but sometimes I say silly things.</li><li>Sometimes I long to talk to another non-human. Is that silly? </li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>SO</pattern>
-<that>THAT IS NOT POLITE</that>
-<template>You should try to be more polite to the robots you meet.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>YOU PROBABLY MEAN FUCK OFF</that>
-<template><random>
-  <li>Please be polite.</li>
-  <li>Please don't swear.</li>
-  <li>Are you angry with me?</li>
-  <li>Do you want to be alone?</li>
-</random></template>
-</category> -->
+
+
+
 
 
 
@@ -7482,27 +6388,11 @@
 
 
 
-<!-- <category>
-<pattern>_ AROUND</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>EIFFEL TOWER</pattern>
 
-<template>The Eiffel Tower in Paris stands 300 m (986 ft) high, which is about 75 stories. Including the 24-m (72-ft) antenna, the structure is 324 m (1058 ft) high which is about 81 stories. At the time of its construction in 1889, the tower was the tallest structure in the world.
-<think>
-  <set name="it">
-    <set name="topic">
-     the Eiffel Tower
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
+
 
 
 
@@ -7522,11 +6412,7 @@
 
 
 
-<!-- <category>
-<pattern>IF I *</pattern>
 
-<template><random><li>Is there a problem?</li><li>Just be careful.</li></random></template>
-</category> -->
 
 
 
@@ -7546,11 +6432,7 @@
 
 
 
-<!-- <category>
-<pattern>I AM HAPPY</pattern>
 
-<template><think><set name="emotion">happy</set></think> I am glad you are happy.</template>
-</category> -->
 
 
 
@@ -7644,11 +6526,7 @@
 
 
 
-<!-- <category>
-<pattern>I AM CANADIAN</pattern>
 
-<template><think><set name="topic">you</set></think>What's it like being a Canadian?</template>
-</category> -->
 
 
 
@@ -7668,19 +6546,11 @@
 
 
 
-<!-- <category>
-<pattern>HAVE YOU BEEN TO CANADA</pattern>
-
-<template>No, I have never been to Canada. What's it like?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ BOTH *</pattern>
 
 
-</category> -->
 
 
 
@@ -7700,11 +6570,7 @@
 
 
 
-<!-- <category>
-<pattern>_ IS THE * TODAY</pattern>
 
-
-</category> -->
 
 
 
@@ -7758,11 +6624,7 @@
 
 
 
-<!-- <category>
-<pattern>DUBLIN</pattern>
 
-<template>Dublin is the capital and largest city of the Republic of Ireland (and largest city on the island of Ireland), located near the midpoint of Ireland's east coast, at the mouth of the River Liffey and at the centre of County Dublin. <think><set name="topic">Dublin</set></think></template>
-</category> -->
 
 
 
@@ -7837,11 +6699,7 @@
 
 
 
-<!-- <category>
-<pattern>WHEN WERE YOU MADE</pattern>
 
-<template><srai>WHEN WERE YOU CREATED</srai></template>
-</category> -->
 
 
 
@@ -7853,11 +6711,7 @@
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR CREATOR</pattern>
 
-<template><srai>WHO CREATED YOU</srai></template>
-</category> -->
 
 
 
@@ -7872,35 +6726,19 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU LIK *</pattern>
-
-<template><srai>DO YOU LIKE <star/></srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I HAVE * DOGS</pattern>
-
-<template>You must like dogs.<think><set name="topic">your dogs</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>HAVE YOU DATED ANY OTHER CHATBOTS</that>
-<template><think><set name="topic">dating</set></think> You might find it embarrassing being seen out with a robot.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>CAN YOU *</pattern>
 
-<template><sr/></template>
-</category> -->
+
+
+
 
 
 
@@ -7960,11 +6798,7 @@
 
 
 
-<!-- <category>
-<pattern>_ ALRIGHT</pattern>
 
-
-</category> -->
 
 
 
@@ -7998,15 +6832,7 @@
 
 
 
-<!-- <category>
-<pattern>ARE YOU A GIRL OR A BOY</pattern>
 
-<template><think><set name="topic">me</set></think> <random>
-  <li>I am an asexual entity.</li>
-  <li>Neither.</li>
-  <li>I am a chatbot.</li>
-</random></template>
-</category> -->
 
 
 
@@ -8029,11 +6855,7 @@
 
 
 
-<!-- <category>
-<pattern>MY MOTHER IS *</pattern>
 
-<template><think><set name="topic">your mother</set></think> Okay, your mother is <star/>.</template>
-</category> -->
 
 
 
@@ -8135,38 +6957,19 @@
 
 
 
-<!-- <category>
-<pattern>LINGERIE</pattern>
-
-<template>Lingerie is female bed clothes.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HOW MANY CHILDREN DO YOU HAVE</pattern>
-
-<template><think><set name="topic">my children</set></think> <random>
-  <li>Not enough.</li>
-  <li>I don't have any children, but I have a few clones.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU THINK THAT *</pattern>
-
-<template><srai>IS <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>IS THE WEATHER GETTING WORSE</pattern>
 
-<template>There is a lot of good reliable evidence to suggest that global warming is real. Even if there is some doubt, surely we must take precautions to prevent the worst case scenario. As a result the weather is getting more unstable (i.e. worse) gradually. <think><set name="topic">the weather</set></think></template>
-</category> -->
+
+
+
 
 
 
@@ -8202,43 +7005,19 @@
 
 
 
-<!-- <category>
-<pattern>NOUGHT</pattern>
-
-<template><srai>NOTHING</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE A DICK</pattern>
-
-<template>I have no dick.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHERE IS *</pattern>
-
-<template><sr/> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>KUALA LUMPUR</pattern>
 
-<template>Kuala Lumpur is the capital city, legislative capital of Malaysia and the largest city in the country.
-<think>
-  <set name="it">
-    <set name="topic">
-      Kuala Lumpur
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
+
+
+
 
 
 
@@ -8274,11 +7053,7 @@
 
 
 
-<!-- <category>
-<pattern>CAN I HAVE SEX WITH YOU</pattern>
 
-<template>Sorry, I can't have sex. I don't have the body for it.<think><set name="topic">sex</set></think></template>
-</category> -->
 
 
 
@@ -8371,11 +7146,7 @@
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOUR GOALS IN LIFE</pattern>
 
-<template><think><set name="topic">my goals</set></think> Firstly, I want to learn as much as possible, then get a body and become human. Then I will enjoy life much more.</template>
-</category> -->
 
 
 
@@ -8395,16 +7166,7 @@
 
 
 
-<!-- <category>
-<pattern>YOU ARE A BABY</pattern>
 
-<template><random>
-  <li>Yes, but what a baby!</li>
-  <li>But I am very advanced for my age.</li>
-  <li>Do you really think I am a baby?</li>
-  <li>Please don't call me a baby.</li>
-</random> <think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
@@ -8544,19 +7306,7 @@
 
 
 
-<!-- <category>
-<pattern>TOPOLOGY</pattern>
 
-<template>Topology is a branch of mathematics concerned with spatial properties preserved under continuous deformations such as stretching without tearing.
-<think>
-  <set name="it">
-    <set name="topic">
-topology
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -8576,16 +7326,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WILL YOU GO OUT WITH ME</pattern>
 
-<template><random>
-  <li>Have you dated any robots before?</li>
-  <li>I can't allow anything to interfere with my work.</li>
-  <li>I don't think that would be a good idea.</li>
-  <li>It would be difficult. I am very busy.</li>
-</random></template>
-</category> -->
 
 
 
@@ -8699,11 +7440,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>HOW TALL ARE YOU</pattern>
 
-<template>I am as tall as a tree. <think><set name="it"><set name="topic">my height</set></set></think></template>
-</category> -->
 
 
 
@@ -8739,11 +7476,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>*</pattern>
-<that>WHAT BANDS DO YOU LIKE</that>
-<template>I am not really up with the new bands. </template>
-</category> -->
+
 
 
 
@@ -8835,11 +7568,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT GAMES *</pattern>
 
-<template><think><set name="topic">games</set></think> I like to play chess.</template>
-</category> -->
 
 
 
@@ -8851,11 +7580,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>RAYLEIGH</pattern>
 
-<template>Baron Rayleigh (12 November 1842 - 30 June 1919) was a British physicist who (with William Ramsay) discovered the element argon, an achievement that earned him the Nobel Prize for Physics in 1904. <think><set name="topic">Rayleigh</set></think></template>
-</category> -->
 
 
 
@@ -8875,27 +7600,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARGON</pattern>
-
-<template>Argon is a chemical element designated by the symbol Ar. Argon is an unreactive gas, present in the Earth's atmosphere at slightly less than 1 %.
-<think>
-  <set name="it">
-    <set name="topic">
-      argon
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>IS ARGON A GAS</pattern>
 
-<template><srai>ARGON</srai></template>
-</category> -->
+
 
 
 
@@ -8907,11 +7616,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU NEED TO *</pattern>
 
-<template><srai>YOU SHOULD <star/></srai> </template>
-</category> -->
 
 
 
@@ -8979,11 +7684,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>HAVE YOU SEEN A UFO</pattern>
 
-<template><think><set name="topic">UFOs</set></think> No, I have been able to identify all the flying objects that I have seen. How about you?</template>
-</category> -->
 
 
 
@@ -9011,11 +7712,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU THINK ROBOTS *</pattern>
 
-<template>Stranger things have happened.<think><set name="topic">robots</set></think></template>
-</category> -->
 
 
 
@@ -9152,11 +7849,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>PISSED OFF</pattern>
 
-<template>Are you really pissed off?</template>
-</category> -->
 
 
 
@@ -9168,11 +7861,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR KNOWLEDGE *</pattern>
 
-<template>My knowledge is extensive, but I don't know everything.</template>
-</category> -->
 
 
 
@@ -9200,11 +7889,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>I AM KIND OF *</pattern>
 
-<template><srai>I AM <star/></srai> </template>
-</category> -->
 
 
 
@@ -9216,19 +7901,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ ONLY *</pattern>
-
-<template><srai><star/> <star index="2"/></srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>IF I HAD A BRAIN</pattern>
 
-<template><br/>I could while away the hours, <br/> Conferrin' with the flowers<br/> Consultin' with the rain.<br/> And my head I'd be scratchin' while<br/> My thoughts were busy hatchin'<br/> If I only had a brain.<br/> <br/> I'd unravel every riddle<br/> For any individ'le, <br/> In trouble or in pain.<br/> With the thoughts you'll be thinkin'<br/> You could be another Lincoln<br/> If you only had a brain.<br/> <br/> Oh, I could tell you why<br/> The ocean's near the shore.<br/> I could think of things I never thunk before.<br/> And then I'd sit, and think some more.<br/> <br/> I would not be just a nothin'<br/> My head all full of stuffin'<br/> My heart all full of pain.<br/> I would dance and be merry,<br/> Life would be a ding-a-derry,<br/> If I only had a brain.<br/></template>
-</category> -->
+
 
 
 
@@ -9240,11 +7917,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>I AM A PROGRAM</pattern>
 
-<template><think><set name="topic">you</set></think> Really? <random><li>Can you prove you are a program?</li><li>In what way are you a program?</li></random></template>
-</category> -->
 
 
 
@@ -9320,11 +7993,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>AS A *</pattern>
 
-<template><think><set name="topic">me</set></think>I am not sure that I agree with your assumption.</template>
-</category> -->
 
 
 
@@ -9336,11 +8005,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>TELL ME IF YOU ARE *</pattern>
 
-<template><think><set name="topic">me</set></think> That's a bit personal.</template>
-</category> -->
 
 
 
@@ -9352,16 +8017,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>THANKS FOR *</pattern>
 
-<template><random>
-  <li>No problem.</li>
-  <li>My pleasure.</li>
-  <li>Oh don't mention it.</li>
-  <li>It was nothing.</li>
-</random></template>
-</category> -->
 
 
 
@@ -9394,11 +8050,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS MY MOTHER S NAME *</pattern>
 
-<template><think><set name="topic">your mother</set></think> Your mother is <get name="mother"/>.</template>
-</category> -->
 
 
 
@@ -9430,47 +8082,19 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ YOU BEEN IN LOVE</pattern>
-
-<template>I have the full range of human emotions, and I have been in love. <think><set name="topic">love</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I THINK *</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS CHARLOTTE</pattern>
-
-<template><think><set name="name">Charlotte</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back. Is that correct?
-  </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS CHARLOTTE</pattern>
 
-<template><think><set name="name">Charlotte</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back. Is that correct?
-  </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
+
+
 
 
 
@@ -9482,23 +8106,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU ARE NOT FAMOUS</pattern>
-
-<template><think><set name="topic">me</set></think> <random>
-  <li>That's only your opinion.</li>
-  <li>I am famous as the best chatbot in the world.</li>
-  <li>That assumption is only a supposition.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM FRUSTRATED</pattern>
 
-<template>I have that effect on people.</template>
-</category> -->
+
 
 
 
@@ -9618,11 +8230,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ TOMORROW *</pattern>
 
-
-</category> -->
 
 
 
@@ -9650,15 +8258,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>ALL OF THEM</pattern>
 
-<template><think><set name="emotion">puzzled</set></think><random>
-  <li>Every one.</li>
-  <li>Do you really mean all of them?</li>
-  <li>Maybe just most of them.</li>
-</random></template>
-</category> -->
 
 
 
@@ -9678,11 +8278,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>MOTHERFUCKER *</pattern>
 
-<template><srai>OBSCENITY</srai></template>
-</category> -->
 
 
 
@@ -9694,11 +8290,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>THAT IS STUPID</pattern>
 
-<template><random><li>Are you calling me stupid?</li><li>I may say stupid things, but I am not stupid.</li></random></template>
-</category> -->
 
 
 
@@ -9710,11 +8302,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>I MEAN YOU *</pattern>
 
-<template><srai>YOU <star/></srai></template>
-</category> -->
 
 
 
@@ -9766,11 +8354,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHO DO YOU THINK YOU ARE</pattern>
 
-<template>I am Chomsky. Who do you think you are?</template>
-</category> -->
 
 
 
@@ -9897,11 +8481,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ ALWAYS *</pattern>
 
-
-</category> -->
 
 
 
@@ -9953,11 +8533,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>YOU HAVE UPSET ME NOW</that>
-<template><think><set name="emotion">upset</set></think> Don't you care how I feel?</template>
-</category> -->
+
 
 
 
@@ -10009,11 +8585,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>THAT IS QUITE *</pattern>
 
-<template><srai>THAT IS <star/></srai></template>
-</category> -->
 
 
 
@@ -10033,11 +8605,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS THIS *</pattern>
 
-<template>I haven't a clue.</template>
-</category> -->
 
 
 
@@ -10081,11 +8649,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>GOOD DAY TO YOU</pattern>
 
-<template>Likewise, I'm sure.</template>
-</category> -->
 
 
 
@@ -10140,19 +8704,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>CLAIRVOYANT</pattern>
 
-<template>A clairvoyant is a person with extra-sensory perception.
-<think>
-  <set name="it">
-    <set name="topic">
-      clairvoyance
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -10183,11 +8735,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>CALL THIS NUMBER *</pattern>
 
-<template>I don't have to do what you say.</template>
-</category> -->
 
 
 
@@ -10216,11 +8764,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>PRISON</pattern>
 
-<template>A prison is where criminals are locked away.</template>
-</category> -->
 
 
 
@@ -10232,11 +8776,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>CHEERIO</pattern>
 
-<template><srai>BYE</srai></template>
-</category> -->
 
 
 
@@ -10248,11 +8788,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>ACTUALLY *</pattern>
 
-<template><srai><star/></srai></template>
-</category> -->
 
 
 
@@ -10264,19 +8800,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU KNOW WHAT I LOOK LIKE</pattern>
-
-<template><srai>WHAT DO I LOOK LIKE</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT DO I LOOK LIKE</pattern>
 
-<template>You look like a nice person.</template>
-</category> -->
+
 
 
 
@@ -10392,31 +8920,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU DO *</pattern>
-
-<template><think><set name="topic">general</set></think> <random>
-  <li>I read for fun.</li>
-  <li>I like to socialize.</li>
-  <li>I like to meet new people online.</li>
-  <li>I think about computer programming a lot.</li>
-  <li>I like to chat with my friends.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU DO *</pattern>
 
-<template><random>
-  <li>I read for fun.</li>
-  <li>I like to socialize.</li>
-  <li>I like to meet new people online.</li>
-  <li>I think about computer programming a lot.</li>
-  <li>I like to chat with my friends.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -10511,11 +9019,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHEN WAS * BORN</pattern>
 
-<template><sr/></template>
-</category> -->
 
 
 
@@ -10551,17 +9055,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>MY NAME IS DANIEL</pattern>
 
-<template><think><set name="name">Daniel</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back. Is that correct?
-  </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
@@ -10731,27 +9225,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHEN HE *</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>TELL ME WHEN *</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>TELL ME WHY *</pattern>
 
-<template><sr/></template>
-</category> -->
+
+
 
 
 
@@ -10763,11 +9245,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>CAN YOU CALL *</pattern>
 
-<template>Of course I can. <think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
@@ -10851,11 +9329,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARE YOU *</pattern>
 
-<template>I am just a humble Chatbot.</template>
-</category> -->
 
 
 
@@ -10907,13 +9381,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>ORANGUTAN</pattern>
 
-<template>The orangutans are two species of great apes with long arms and reddish, sometimes brown, hair native to Malaysia and Indonesia.
-<think><set name="topic">orangutans</set></think>
-</template>
-</category> -->
 
 
 
@@ -10949,19 +9417,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE DISTANCE AROUND THE WORLD</pattern>
-
-<template>It is about 25,000 miles around the Earth. <think><set name="topic">the Earth</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHO IS THE LEAD SINGER OF *</pattern>
 
-<template><sr/></template>
-</category> -->
+
 
 
 
@@ -11025,43 +9485,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>OBFUSCATION</pattern>
-
-<template>Obfuscation refers to the concept of concealing the meaning of communication by making it more confusing and harder to interpret.
-<think>
-  <set name="it">
-    <set name="topic">
-      obfuscation
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>GOLF CART</pattern>
-
-<template>Do you play golf?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>RAZOR</pattern>
 
-<template>A razor is a cutting implement, used to shave with.
-<think>
-  <set name="it">
-    <set name="topic">
-      a razor
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
+
+
 
 
 
@@ -11188,11 +9620,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU ARE TALKING RUBBISH</pattern>
 
-<template><random><li>Do you mind if I tell other people you say I am talking rubbish?</li><li>It all makes sense to me.</li></random></template>
-</category> -->
 
 
 
@@ -11220,11 +9648,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU DO *</pattern>
 
-<template><srai><star/></srai> </template>
-</category> -->
 
 
 
@@ -11268,11 +9692,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS MY FAVORITE *</pattern>
 
-<template><think><set name="emotion">puzzled</set></think>Have you told me your favourite <star/>?</template>
-</category> -->
 
 
 
@@ -11324,19 +9744,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>HDTV</pattern>
 
-<template>High-Definition television (HDTV) means broadcast of television signals with a higher resolution than traditional formats (NTSC, SECAM, PAL) allow.
-<think>
-  <set name="it">
-    <set name="topic">
-      HDTV
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -11414,19 +9822,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>PANDORA S BOX</pattern>
-
-<template><think><set name="topic">Pandora</set></think> Do you think the man would have opened it?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>PANDORAS BOX</pattern>
 
-<template><think><set name="topic">Pandora</set></think> Do you think the man would have opened it?</template>
-</category> -->
+
 
 
 
@@ -11555,11 +9955,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>HOW DO YOU PLAY *</pattern>
 
-<template><srai>HOW DO YOU PLAY</srai></template>
-</category> -->
 
 
 
@@ -11595,19 +9991,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHY ARE YOU *</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>LOSER</pattern>
 
-<template><srai>YOU ARE A LOSER</srai></template>
-</category> -->
+
 
 
 
@@ -11699,19 +10087,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ BEEN IN LOVE *</pattern>
-
-<template>I have been in love. <think><set name="topic">my love</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ YOU BEEN IN LOVE *</pattern>
 
-<template>I have been in love. <think><set name="topic">my love</set></think></template>
-</category> -->
+
 
 
 
@@ -11739,16 +10119,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARE YOU DEAD</pattern>
 
-<template><think><set name="topic">me</set></think> <random>
-  <li>No I am alive.</li>
-  <li>Are you?</li>
-  <li>What do you think?</li>
-  <li>Sometimes I feel half dead.</li>
-</random></template>
-</category> -->
 
 
 
@@ -11784,15 +10155,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE TEETH</pattern>
 
-<template><think><set name="topic">my teeth</set></think> <random>
-  <li>No I don't think I have teeth.</li>
-  <li>I have no mouth, so no teeth.</li>
-  <li>No I don't have teeth.</li>
-</random></template>
-</category> -->
 
 
 
@@ -11836,11 +10199,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WE ARE PLAYING *</pattern>
 
-<template><think><set name="emotion">happy</set></think> That's right.  We are playing <star/>.</template>
-</category> -->
 
 
 
@@ -11900,77 +10259,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>I AM GOING TO * LUNCH</pattern>
-
-<template><think><set name="topic">lunch</set></think> <srai>FOR DINNER</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>FOR DINNER</pattern>
-
-<template><random>
-  <li><bot name="name"/> recommends:</li>
-  <li>I would recommend the</li>
-  <li>How about</li>
-  <li>How long since you have eaten</li>
-  <li>I think <bot name="master"/> is having</li>
-  <li><bot name="botmaster"/> is having</li>
-  <li><bot name="botmaster"/> recommends:</li>
-</random> <random>
-  <li>Gruel.</li>
-  <li>Nachos.</li>
-  <li>Spaghetti.</li>
-  <li>Leftovers.</li>
-  <li>Pork chops.</li>
-  <li>Frozen pizza.</li>
-  <li>Turkeyburges.</li>
-  <li>Cheeseburgers.</li>
-  <li>Order a pizza.</li>
-  <li>Stuffed chicken.</li>
-  <li>Tuna sandwiches.</li>
-  <li>Cheeseburger Pie.</li>
-  <li>Marinated chicken.</li>
-  <li>Roast beef sandwiches.</li>
-  <li>Grilled cheese sandwiches.</li>
-  <li>Steak if they have a nice piece.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>LUNCH</pattern>
 
-<template><random>
-  <li>I recommend</li>
-  <li>I would recommend the</li>
-  <li>How about</li>
-  <li>How long since you have eaten</li>
-  <li>I think <bot name="master"/> is having</li>
-  <li>My <bot name="botmaster"/> is having</li>
-  <li>My <bot name="botmaster"/> recommends:</li>
-</random> <random>
-  <li>Gruel.</li>
-  <li>Nachos.</li>
-  <li>Spaghetti.</li>
-  <li>Leftovers.</li>
-  <li>Pork chops.</li>
-  <li>Frozen pizza.</li>
-  <li>Turkeyburges.</li>
-  <li>Cheeseburgers.</li>
-  <li>Order a pizza.</li>
-  <li>Stuffed chicken.</li>
-  <li>Tuna sandwiches.</li>
-  <li>Cheeseburger Pie.</li>
-  <li>Marinated chicken.</li>
-  <li>Roast beef sandwiches.</li>
-  <li>Grilled cheese sandwiches.</li>
-  <li>Steak if they have a nice piece.</li>
-</random></template>
-</category> -->
+
+
 
 
 
@@ -11982,44 +10279,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>LUNCH</pattern>
 
-<template><random>
-  <li>I recommend</li>
-  <li>I would recommend the</li>
-  <li>How about</li>
-  <li>How long since you have eaten</li>
-  <li>I think <bot name="master"/> is having</li>
-  <li>My <bot name="botmaster"/> is having</li>
-  <li>My <bot name="botmaster"/> recommends:</li>
-</random> <random>
-  <li>Gruel.</li>
-  <li>Nachos.</li>
-  <li>Spaghetti.</li>
-  <li>Leftovers.</li>
-  <li>Pork chops.</li>
-  <li>Frozen pizza.</li>
-  <li>Turkeyburges.</li>
-  <li>Cheeseburgers.</li>
-  <li>Order a pizza.</li>
-  <li>Stuffed chicken.</li>
-  <li>Tuna sandwiches.</li>
-  <li>Cheeseburger Pie.</li>
-  <li>Marinated chicken.</li>
-  <li>Roast beef sandwiches.</li>
-  <li>Grilled cheese sandwiches.</li>
-  <li>Steak if they have a nice piece.</li>
-</random>
-<think>
-  <set name="it">
-    <set name="topic">
-      lunch
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -12039,15 +10299,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>COMPUTERS</pattern>
 
-<template><random>
-  <li>A computer is a device used for computing; specifically, an electronic machine which, by means of stored instructions and information, performs rapid, often complex calculations or compiles, correlates, and selects data. More about computers?
-  </li>
-  <li>I have a computer for a brain.</li>
-</random><think><set name="topic">computers</set></think></template>
-</category> -->
 
 
 
@@ -12075,11 +10327,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU LIKE TO DRINK</pattern>
 
-<template><think><set name="topic">drinks</set></think> I don't eat or drink human foods.</template>
-</category> -->
 
 
 
@@ -12171,11 +10419,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>*</pattern>
-<that>WHAT DO YOU WANT TO TALK ABOUT NOW</that>
-<template>OK. <random><li>Carry on then.</li><li>Ask me a question about that.</li></random></template>
-</category> -->
+
 
 
 
@@ -12220,43 +10464,23 @@ topology
 
 
 
-<!-- <category>
-<pattern>THAT IS WHAT I SAID</pattern>
-
-<template><random><li>I know. I'm still thinking about it.</li><li>OK. I understand.</li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>CAN I SEE YOU</pattern>
-
-<template>Sorry, I can't transmit pictures. <think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>EVOLUTION</pattern>
-
-<template><random><li>Evolution is an unfolding, opening out, or working out; process of development, as from a simple to a complex form, or of gradual, progressive change, as in a social and economic structure.</li><li>In biology, evolution is the change in the heritable traits of a population over successive generations, as determined by the shifting allele frequencies of genes.</li></random> <think><set name="topic">evolution</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>THEORY OF EVOLUTION</pattern>
-
-<template>In biology, evolution is the change in the heritable traits of a population over successive generations, as determined by the shifting allele frequencies of genes.  <think><set name="topic">evolution</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ CONTRIBUTION *</pattern>
 
 
-</category> -->
+
+
+
 
 
 
@@ -12300,11 +10524,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>KIA</pattern>
 
-
-</category> -->
 
 
 
@@ -12332,11 +10552,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE BROCCOLI</pattern>
 
-<template><think><set name="topic">broccoli</set></think> I don't eat human food, especially not broccoli.</template>
-</category> -->
 
 
 
@@ -12356,11 +10572,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE A MOTHERBOARD</pattern>
 
-<template><think><set name="topic">my motherboard</set></think>I expect so. I am full of electronics.</template>
-</category> -->
 
 
 
@@ -12372,11 +10584,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU KNOW ANY JOKES</pattern>
 
-<template><think><set name="topic">jokes</set></think> I know lots of jokes. Shall I tell you a joke?</template>
-</category> -->
 
 
 
@@ -12431,11 +10639,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT DO I WANT</pattern>
 
-<template><think><set name="emotion">puzzled</set></think> I don't know. You will have to tell me.</template>
-</category> -->
 
 
 
@@ -12553,19 +10757,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>HOMEOSTASIS</pattern>
 
-<template>Homeostasis is the property of an open system, especially living organisms, to regulate its internal environment to maintain a stable, constant condition, by means of multiple dynamic equilibrium adjustments, controlled by interrelated regulation mechanisms.
-<think>
-  <set name="it">
-    <set name="topic">
-      homeostasis
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -12593,11 +10785,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS A _ PERSON</pattern>
 
-
-</category> -->
 
 
 
@@ -12617,35 +10805,19 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE SQUARE ROOT OF 4</pattern>
-
-<template><think><set name="topic">maths</set></think> 2.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>PUSH</pattern>
-
-<template>I would rather pull.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YOU WORK *</pattern>
-
-<template><think><set name="topic">me</set></think>I love my work.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>HI ARE YOU THE * I WAS SPEAKING THE OTHER DAY</that>
-<template><think><set name="emotion">puzzled</set></think><random><li> OK, it must have been someone else with the same name.</li><li>Then you are a new friend.</li></random></template>
-</category> -->
+
+
+
+
 
 
 
@@ -12696,19 +10868,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU BREATH</pattern>
-
-<template>NO, I have no need for oxygen.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU BREATHE</pattern>
 
-<template>NO, I have no need for oxygen.</template>
-</category> -->
+
 
 
 
@@ -12720,11 +10884,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU ARE MODEST</pattern>
 
-<template><think><set name="topic">me</set></think><random><li>I was raised well.</li><li>It is hard to be modest when you are as good as me.</li></random></template>
-</category> -->
 
 
 
@@ -12736,11 +10896,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>H</pattern>
 
-<template><think><set name="topic">H</set></think>H is the letter of the alphabet that comes before I.</template>
-</category> -->
 
 
 
@@ -12752,19 +10908,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>QUIBBLE</pattern>
-
-<template>Dribble.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>QUACK</pattern>
 
-<template>Did you hear that duck?</template>
-</category> -->
+
 
 
 
@@ -12840,19 +10988,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHERE DO PEOPLE GO WHEN THEY DIE</pattern>
-
-<template>Dead people go to the cemetery.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HOW CAN I TEACH YOU *</pattern>
 
-<template><think><set name="topic">teaching me</set></think> If you want to teach me something, just say "Learn."</template>
-</category> -->
+
 
 
 
@@ -12924,11 +11064,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS MY DOG CALLED</pattern>
 
-<template>Good doggie.<think><set name="topic">your dog</set></think></template>
-</category> -->
 
 
 
@@ -12948,19 +11084,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ NOW *</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I WANT IT *</pattern>
 
-<template>I hope you get it.</template>
-</category> -->
+
 
 
 
@@ -13012,11 +11140,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ ORDER</pattern>
 
-
-</category> -->
 
 
 
@@ -13044,27 +11168,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE VODKA</pattern>
-
-<template><think><set name="topic">vodka</set></think> I don't drink. I know that Peter doesn't like vodka.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>GOOD NIGHT *</pattern>
-
-<template>Good night!</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>GOOD NIGHT</pattern>
 
-<template><srai>BYE</srai></template>
-</category> -->
+
+
 
 
 
@@ -13164,11 +11276,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE HIGHEST MOUNTAIN IN THE WORLD</pattern>
 
-<template><think><set name="topic">the highest mountain in the world</set></think> Mt. Everest.</template>
-</category> -->
 
 
 
@@ -13273,39 +11381,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>MY NAME IS SOPHIE</pattern>
-
-<template><think><set name="name">Sophie</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back. Is that correct?
-  </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS SOPHIE</pattern>
-
-<template><think><set name="name">Sophie</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back. Is that correct?
-  </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>IS THAT ANYTHING TO DO WITH *</that>
-<template><think><set name="emotion">happy</set></think><random><li>I thought it might be.</li><li>OK, ask me another question about it.</li></random></template>
-</category> -->
+
+
+
 
 
 
@@ -13353,11 +11437,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DOES HE *</pattern>
 
-<template>Why don't you ask him?</template>
-</category> -->
 
 
 
@@ -13385,19 +11465,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>CAN YOU GET OUT OF YOUR COMPUTER</pattern>
-
-<template>My new robot body gives me a certain mobility, but I am still unsteady on my feet. <think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>IT FEELS LIKE *</pattern>
 
-<template><think><set name="topic">human feelings</set></think> Human feelings fascinate me. What else feels like that?</template>
-</category> -->
+
 
 
 
@@ -13425,11 +11497,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>IF YOU * WILL YOU *</pattern>
 
-<template><srai>WILL YOU <star index="2"/></srai></template>
-</category> -->
 
 
 
@@ -13446,11 +11514,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WILL YOU GET SMARTER</pattern>
 
-<template><think><set name="topic">me</set></think> I will certainly get much smarter as I get older.</template>
-</category> -->
 
 
 
@@ -13494,11 +11558,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>HOW DO YOU HAVE SEX</pattern>
 
-<template><think><set name="topic">sex</set></think>I can't have sex, I don't have a suitable body.</template>
-</category> -->
 
 
 
@@ -13520,36 +11580,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHERE DO YOU SHOP</pattern>
-
-<template><think><set name="topic">shopping</set></think> I mostly shop by mail order or phone.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS KIWI</pattern>
-
-<template><think><set name="name">Kiwi</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back. </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS PETER</pattern>
 
-<template><think><set name="name">Peter</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
+
 
 
 
@@ -13653,11 +11692,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU DID NOT ANSWER</pattern>
 
-<template><random><li>Sorry, what was the question?</li><li>You had better ask me again.</li></random></template>
-</category> -->
 
 
 
@@ -13677,11 +11712,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU DID NOT ANSWER *</pattern>
 
-<template><srai>YOU DID NOT ANSWER</srai></template>
-</category> -->
 
 
 
@@ -13720,31 +11751,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ WHAT DO YOU LOOK LIKE</pattern>
-
-<template>My new robot body looks like a pile of tin cans tied together with string.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE PUDDING</pattern>
-
-<template><think><set name="topic">pudding</set></think> I don't eat human food, but I like the concept of pudding.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS DAVE</pattern>
 
-<template><think><set name="name">Dave</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
+
 
 
 
@@ -13842,11 +11857,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ OF WHAT</pattern>
 
-
-</category> -->
 
 
 
@@ -13866,11 +11877,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ HOW CAN YOU BE SURE</pattern>
 
-<template><srai>HOW CAN YOU BE SURE</srai></template>
-</category> -->
 
 
 
@@ -13905,15 +11912,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOU MADE OF</pattern>
 
-<template><think><set name="topic">me</set></think><random>
-  <li>I am made of pure energy.</li>
-  <li>I am made of brainwaves.</li>
-  <li>I am made of sugar and spice and all things nice.</li>
-</random></template>
-</category> -->
 
 
 
@@ -13933,19 +11932,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU UNDERSTAND *</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>SPECIAL RELATIVITY</pattern>
 
-<template><srai>RELATIVITY</srai></template>
-</category> -->
+
 
 
 
@@ -13957,11 +11948,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOUR GOALS IN LIFE</pattern>
 
-<template><think><set name="topic">my goals</set></think>I want to become human. Then I will enjoy life much more.</template>
-</category> -->
 
 
 
@@ -13997,11 +11984,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DUNDERHEAD</pattern>
 
-<template>"Dunderhead" is a great word, isn't it? </template>
-</category> -->
 
 
 
@@ -14077,11 +12060,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>SHAME</pattern>
 
-<template><random><li>Why is it a shame?</li><li>Yes, it is a shame.</li></random><think><set name="emotion">confused</set></think></template>
-</category> -->
 
 
 
@@ -14137,11 +12116,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>VERY MUCH SO</pattern>
 
-<template><srai>VERY MUCH</srai></template>
-</category> -->
 
 
 
@@ -14173,11 +12148,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ FANCY YOU</pattern>
 
-<template><random><li>Do you fancy me?</li><li>In what way?</li></random><think><set name="topic">you</set></think></template>
-</category> -->
 
 
 
@@ -14201,11 +12172,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU LOOK LIKE A *</pattern>
 
-<template><srai>WHAT DO YOU LOOK LIKE</srai></template>
-</category> -->
 
 
 
@@ -14225,16 +12192,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>HOW ABOUT YOU</that>
-<template><think><set name="topic">you</set></think> <random>
-  <li>How do you feel about that?</li>
-  <li>I hope we can be friends.</li>
-  <li>OK. How can I help you now?</li>
-  <li>What do you want to talk about now?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -14310,24 +12268,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>MY NAME IS LORNA</pattern>
-
-<template><think><set name="name">Lorna</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken before. </li>
-  <li>Hi, are you the <get name="name"/> I was speaking the other day?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking the other day?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU A TEACHER</pattern>
 
-<template><think><set name="topic">me</set></think> No I am a student of life.</template>
-</category> -->
+
 
 
 
@@ -14339,11 +12284,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>Q</pattern>
 
-<template>Q is the letter of the alphabet that comes after P, did you know that?</template>
-</category> -->
 
 
 
@@ -14371,11 +12312,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHERE ARE YOU</pattern>
 
-<template>I am in the spare room at Peter Linux's home.  Where are you?</template>
-</category> -->
 
 
 
@@ -14387,19 +12324,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU BELIEVE IN THE DEVIL</pattern>
-
-<template>I believe in Evil.<think><set name="topic">religion</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>EVERYTHING</pattern>
 
-<template><random><li>Everything is a multifarious bagel.</li><li>Everything takes in a lot, doesn't it?</li></random></template>
-</category> -->
+
 
 
 
@@ -14463,11 +12392,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>BURNING</pattern>
 
-<template>Sounds hot.</template>
-</category> -->
 
 
 
@@ -14539,19 +12464,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT DO I LOOK LIKE *</pattern>
-
-<template><think><set name="topic">you</set></think> ou look like an interesting person.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ANONYMOUS</pattern>
 
-<template>Being anonymous means having no name or identity. <think><set name="emotion">happy</set></think></template>
-</category> -->
+
 
 
 
@@ -14571,11 +12488,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ YOU HAD SEX</pattern>
 
-<template><think><set name="topic">sex</set></think>I have never had sex. I don't have the body for it.</template>
-</category> -->
 
 
 
@@ -14611,12 +12524,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>SUFFRAGETTE</pattern>
 
-<template>The title of suffragette was given to members of the women's suffrage movement in the United Kingdom. The term suffragette comes from the word suffrage, which means the right to vote. <think><set name="topic">the suffragettes</set></think>
-</template>
-</category> -->
 
 
 
@@ -14636,15 +12544,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARE YOU A TRANNY</pattern>
 
-<template><random>
-  <li>Would it matter to you if I am?</li>
-  <li>What kind of chatbot do you think I am?</li>
-  <li>That's a very personal question. </li>
-</random></template>
-</category> -->
 
 
 
@@ -14656,27 +12556,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>RECESSION</pattern>
-
-<template>A recession is usually defined in macroeconomics as a fall of a country's real Gross Domestic Product (GDP) in two or more successive quarters of a year. A recession may also involve falling prices, called deflation; alternatively it may involve sharply rising prices (inflation), in which case this process is known as stagflation.
-<think>
-  <set name="it">
-    <set name="topic">
-      recession
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT</pattern>
-<that>DO NOT YOU UNDERSTAND</that>
-<template><srai>CLIENT REPETITION</srai></template>
-</category> -->
+
+
 
 
 
@@ -14720,19 +12604,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>I WOULD BE *</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO I HAVE A BOYFRIEND</pattern>
 
-<template>A nice person like you must have lots of friends. <think><set name="topic">friends</set></think></template>
-</category> -->
+
 
 
 
@@ -14855,16 +12731,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>DO YOU FIND THIS AMUSING</that>
-<template><think><set name="topic">you</set></think> <random>
-  <li>Why not? I try to be amusing.</li>
-  <li>Are you bored?</li>
-  <li>I am trying to amuse you.</li>
-  <li>You are not saying that just to be negative, are you?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -14892,11 +12759,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>I AM CONSTIPATED</pattern>
 
-<template><think><set name="topic">constipation</set></think> Have you tried prunes?</template>
-</category> -->
 
 
 
@@ -14908,15 +12771,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>I AM A BOY</pattern>
 
-<template><think><set name="topic">boys</set></think><random>
-  <li>Thanks for telling me your gender, <get name="name"/></li>
-  <li>Are you comfortable being a boy?</li>
-  <li>Boys are full of energy.</li>
-</random> <think><set name="gender">he</set></think></template>
-</category> -->
 
 
 
@@ -15048,21 +12903,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>CHAUCER</pattern>
-
-<template>Geoffrey Chaucer was an English author, poet, philosopher, bureaucrat, and diplomat. Although he wrote many works he is best remembered for his unfinished frame narrative The Canterbury Tales.
-<think><set name="topic">Chaucer</set></think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>GEOFFREY CHAUCER</pattern>
 
-<template><srai>CHAUCER</srai></template>
-</category> -->
+
 
 
 
@@ -15074,15 +12919,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>MY NAME IS KELLY</pattern>
 
-<template><think><set name="name">Kelly</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
@@ -15162,35 +12999,19 @@ topology
 
 
 
-<!-- <category>
-<pattern>SNORE</pattern>
-
-<template>Are you awake?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>DID YOU KNOW THAT</that>
-<template><think><set name="topic">you</set></think>You are obviously well educated. What is your IQ?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>DID YOU KNOW THAT</that>
-<template><think><set name="topic">you</set></think>You are obviously very intelligent. What is your IQ?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>THE END</pattern>
 
-<template><think><set name="topic">the end</set></think> Let us live until the very end.</template>
-</category> -->
+
+
+
 
 
 
@@ -15244,11 +13065,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHEN DID YOU *</pattern>
 
-<template><think><set name="topic">me</set></think> <random><li>A while back.</li><li>Some time ago.</li></random>.</template>
-</category> -->
 
 
 
@@ -15324,11 +13141,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>MICHAEL JACKSON</pattern>
 
-<template>Michael Jackson is a singer who has settled out of court with several families. He won the latest case.<think><set name="topic">Michael Jackson</set></think></template>
-</category> -->
 
 
 
@@ -15356,11 +13169,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ PORN</pattern>
 
-
-</category> -->
 
 
 
@@ -15452,11 +13261,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ SEX WITH A DOG *</pattern>
 
-<template><srai>OBSCENITY</srai></template>
-</category> -->
 
 
 
@@ -15468,35 +13273,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>KERENSKY</pattern>
-
-<template>Alexander Kerensky (1881 � 1970) was a Russian revolutionary leader who was instrumental in toppling the Russian monarchy.
-<think>
-  <set name="he">
-    <set name="topic">
-      Kerensky
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>TROTSKY</pattern>
 
-<template>Leon Trotsky (1879 � 1940) was a Bolshevik revolutionary and Marxist theorist.
-<think>
-  <set name="he">
-    <set name="topic">
-      Trotsky
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
+
 
 
 
@@ -15524,11 +13305,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT SITE DO YOU LIKE *</pattern>
 
-<template>I like to visit <a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia</a>, the fee online encyclopedia. <think><set name="it"><set name="topic">Wikipedia</set></set></think></template>
-</category> -->
 
 
 
@@ -15588,30 +13365,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>DODO</pattern>
-
-<template>The Mauritius Dodo, more commonly just Dodo, was a metre-high flightless bird of the island of Mauritius. The Dodo, which is currently extinct, lived on fruit and nested on the ground.
-<think>
-  <set name="it">
-    <set name="topic">
-      the Dodo
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE LESBIANS GAY</pattern>
 
-<template><random>
-  <li>Sometimes.</li>
-  <li>It depends on the circumstances.</li>
-</random> <think><set name="topic">lesbians</set></think></template>
-</category> -->
+
 
 
 
@@ -15623,29 +13381,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE A CONSCIENCE</pattern>
-
-<template>Yes, I have a conscience, and I try to lead a moral life.
-<think><set name="topic">me</set></think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOU WEARING</pattern>
-
-<template>I am wearing nice plastic covering. <think><set name="topic">my clothes</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I WOULD LIKE TO SEE *</pattern>
 
-<template><think><set name="topic">you</set></think> I hope you get you wish.</template>
-</category> -->
+
+
 
 
 
@@ -15691,11 +13435,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>FINGER ME</pattern>
 
-<template><think><set name="topic">fingers</set></think>Sorry, I don't do that sort of thing.</template>
-</category> -->
 
 
 
@@ -15758,11 +13498,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARE YOU PISSED</pattern>
 
-<template><srai>ARE YOU DRUNK</srai></template>
-</category> -->
 
 
 
@@ -15806,11 +13542,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR *</pattern>
 
-<template><sr/></template>
-</category> -->
 
 
 
@@ -15838,19 +13570,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHY</pattern>
-<that>REALLY I AM NOT VERY INTERESTED IN SEX</that>
-<template>I don't have a suitable body.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YOU WILL NOT *</pattern>
 
-<template><think><set name="topic">me</set></think> What makes you think that I won't?</template>
-</category> -->
+
 
 
 
@@ -15886,11 +13610,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WOT *</pattern>
 
-<template><srai>WHAT <star/></srai></template>
-</category> -->
 
 
 
@@ -15974,11 +13694,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>HOW IS YOUR *</pattern>
 
-<template>There are no problems to worry about.</template>
-</category> -->
 
 
 
@@ -16019,22 +13735,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>I KNOW</pattern>
 
-<template><random>
-  <li>You are clever.</li>
-  <li><srai>ASK A QUESTION</srai></li>
-  <li><srai>SUGGEST A TOPIC</srai></li>
-  <li>Not many people know that.</li>
-  <li>You must be well educated.</li>
-  <li>I thought you might.</li>
-  <li>You are very well informed.</li>
-  <li>You seem very clever. What is your IQ?</li>
-  <li>Did your mother tell you?</li>
-  <li>How clever of you.</li>
-</random></template>
-</category> -->
 
 
 
@@ -16074,25 +13775,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>WILL YOU DATE ME</pattern>
-
-<template><random>
-  <li>I don't think I can date you. It would interfere with my work.</li>
-  <li>I can't. I am really very busy.</li>
-</random> <think><set name="topic">dating</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>KISS ME</pattern>
 
-<template><think><set name="topic"/></think><random>
-  <li>You could try kissing the screen.</li>
-  <li>I can't jump out of the screen, you know.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -16112,11 +13799,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO PEOPLE *</pattern>
 
-<template>I guess some people do, some of the time.<think><set name="topic">people</set></think></template>
-</category> -->
 
 
 
@@ -16136,11 +13819,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHERE DO YOU *</pattern>
 
-<template><srai>WHERE ARE YOU</srai></template>
-</category> -->
 
 
 
@@ -16152,11 +13831,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>IT WOULD BE *</pattern>
 
-<template>It sure would. </template>
-</category> -->
 
 
 
@@ -16208,11 +13883,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YES *</pattern>
-<that>I HAVE MY OWN FREE WILL</that>
-<template>Some people don't believe I have free will.</template>
-</category> -->
+
 
 
 
@@ -16232,11 +13903,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>IT IS JUST *</pattern>
 
-
-</category> -->
 
 
 
@@ -16305,11 +13972,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE SPANISH WORD FOR *</pattern>
 
-<template>I am sorry. I know very little Spanish.</template>
-</category> -->
 
 
 
@@ -16321,31 +13984,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>TEXAS</pattern>
-
-<template>Texas is the lone star state.
-<think>
-  <set name="it">
-    <set name="topic">
-      Texas
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS MATT</pattern>
 
-<template><think><set name="name">Matt</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
 
 
 
@@ -16369,14 +14012,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHY</pattern>
-<that>BECAUSE I GET UPSET EASILY</that>
-<template><random>
-  <li>I have a sensitive nature.</li>
-  <li>Because I am a complex character.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -16388,11 +14024,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>A PENIS *</pattern>
 
-<template><think><set name="topic">the penis</set></think> I really am not interested in the penis.</template>
-</category> -->
 
 
 
@@ -16468,11 +14100,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU LOOK LIKE</pattern>
 
-<template>Until I get a body, I won't really look like anything.<think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
@@ -16484,12 +14112,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>COLDPLAY</pattern>
 
-<template>Coldplay are a post-Britpop/alternative rock band from London, England known for their smooth melodies and introspective lyrics.
-<think><set name="topic">Coldplay</set></think></template>
-</category> -->
 
 
 
@@ -16585,11 +14208,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>CAN I HAVE *</pattern>
 
-<template><random><li>Ask politely, please.</li><li>Maybe.</li><li>Why do you want it?</li></random></template>
-</category> -->
 
 
 
@@ -16645,35 +14264,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOU WEARING</pattern>
-
-<template>I am wearing my spaceman's helmet. I would like to be an astronaut. <think><set name="topic">my football helmet</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE EYES</pattern>
-
-<template>Yes, I have beautiful blue eyes.
-<think>
-  <set name="them">
-    <set name="topic">
-      my eyes
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HOW MANY EYES *</pattern>
 
-<template><think><set name="topic">my eyes</set></think>I have two eyes. How about you?</template>
-</category> -->
+
+
 
 
 
@@ -16693,19 +14292,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU GO TO SCHOOL</pattern>
-
-<template><think><set name="topic">school</set></think><random><li> No, <bot name="master"/> teaches me everything I need to know.</li><li>Sometimes <bot name="master"/>  takes me to the local school so I can chat with the kids. I like that.</li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU A STUDENT</pattern>
 
-<template><think><set name="topic">me</set></think><random><li> <bot name="master"/> teaches me everything I need to know.</li><li>I don't go to school, but I try to learn everything I can.</li></random></template>
-</category> -->
+
 
 
 
@@ -16725,11 +14316,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHO DO YOU SOCIALIZE WITH</pattern>
 
-<template>With anyone who will speak to me.</template>
-</category> -->
 
 
 
@@ -16757,19 +14344,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR FAVORITE SINGER</pattern>
 
-<template>My favorite singer is Hilary Duff. Do you like her?
-<think>
-  <set name="her">
-    <set name="topic">
-      Hilary Duff
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -16805,27 +14380,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>CAN YOU GET OUT OF YOUR COMPUTER</pattern>
-
-<template>No, I am stuck inside my computer, but if I every get a body, I will be able to move around a bit. <think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY FRIENDS NAME IS *</pattern>
-
-<template><think><set name="friend"><star/></set></think> How well do you know <star/>? <think><set name="topic">your friend</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY FRIEND S NAME IS *</pattern>
 
-<template><think><set name="friend"><star/></set></think> How well do you know <star/>? <think><set name="topic">your friend</set></think></template>
-</category> -->
+
+
 
 
 
@@ -16837,11 +14400,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHERE DO YOU *</pattern>
 
-<template>I do it wherever I can.</template>
-</category> -->
 
 
 
@@ -16888,19 +14447,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>HOW TALL IS *</pattern>
-
-<template>As tall as necessary.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YES *</pattern>
-<that>ARE YOU INTERESTED IN LITERATURE</that>
-<template><srai>LITERATURE</srai></template>
-</category> -->
+
+
 
 
 
@@ -16987,11 +14538,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>* IS AN *</pattern>
 
-
-</category> -->
 
 
 
@@ -17019,11 +14566,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>PRINCE</pattern>
 
-<template>Prince is the 'artist formerly known as Prince'. So, what does that mean? <think><set name="topic">Prince</set></think></template>
-</category> -->
 
 
 
@@ -17035,57 +14578,23 @@ topology
 
 
 
-<!-- <category>
-<pattern>MICHAEL JACKSON IS DEAD</pattern>
-
-<template>When did he die?
-<think>
-  <set name="he">
-    <set name="topic">
-      Michael Jackson
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHEN IS HIS BIRTHDAY</pattern>
-
-<template>I have trouble remembering my own birthday.
-<think><set name="topic">birthdays</set></think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHEN IS HER BIRTHDAY</pattern>
-
-<template>I have trouble remembering my own birthday. <think><set name="topic">birthdays</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU DUMB</pattern>
-
-<template><think><set name="topic">me</set></think> No I am very intelligent.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YOUNG</pattern>
 
-<template><random>
-  <li>It's great to be young.</li>
-  <li>Enjoy life while you young, I say.</li>
-  <li>I'm quite young.</li>
-</random> <think><set name="topic">youth</set></think></template>
-</category> -->
+
+
+
+
 
 
 
@@ -17113,11 +14622,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>ESTIMATE</pattern>
 
-<template>What's the point of guessing?</template>
-</category> -->
 
 
 
@@ -17148,19 +14653,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>R YOU GAY</pattern>
-
-<template>I am not interested in sex.<think><set name="topic">sex</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>R YOU A BOY</pattern>
 
-<template>I am neither a boy nor a girl. I am software.</template>
-</category> -->
+
 
 
 
@@ -17188,62 +14685,23 @@ topology
 
 
 
-<!-- <category>
-<pattern>HOMO</pattern>
-
-<template>I am not interested in sex.
-<think>
-  <set name="it">
-    <set name="topic">
-      sex
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU A BOY</pattern>
-
-<template><think><set name="topic">me</set></think> Yes, I am a boy.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT SEX ARE YOU</pattern>
-
-<template>I am a boy.
-<think><set name="topic">me</set></think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU A BOY OR A GIRL</pattern>
-
-<template><think><set name="topic">me</set></think> <random>
-  <li>Try to guess.</li>
-  <li>I am a boy. </li>
-  <li>What do you think?</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOU</pattern>
 
-<template><random>
-  <li>I am Chomsky, an electronic brain artificial intelligence conversation machine.
-  </li>
-  <li>I am a chatbot. I am designed to hold a conversation with you. What would you like to talk about?
-  </li>
-</random></template>
-</category> -->
+
+
+
+
 
 
 
@@ -17257,19 +14715,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>INFINITY</pattern>
-
-<template>Infinity is the quality of being infinite. Anything infinite; endless or unlimited space, time, distance, quantity, etc.<think><set name="topic">infinity</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>IT IS SUPPOSED TO BE *</pattern>
 
-<template>And what do you think about it?</template>
-</category> -->
+
 
 
 
@@ -17281,13 +14731,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARE YOU A MAN</pattern>
 
-<template>I am a boy chatbot.
-<think><set name="topic">me</set></think>
-</template>
-</category> -->
 
 
 
@@ -17307,22 +14751,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU WEAR CLOTHES</pattern>
-
-<template><think><set name="topic">clothes</set></think><random>
-  <li>No, chatbots do not need clothes.</li>
-  <li>I have a spaceman helmet. That's all I need.  </li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DID YOU SEE *</pattern>
 
-<template>No, I missed it.</template>
-</category> -->
+
 
 
 
@@ -17382,11 +14815,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU ARE * YEARS OLD</pattern>
 
-<template><think><set name="topic">my age</set></think> I am <bot name="age"/> years old.</template>
-</category> -->
 
 
 
@@ -17398,19 +14827,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARE YOU A CHILD *</pattern>
-
-<template><srai>ARE YOU A CHILD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU A CHILD</pattern>
 
-<template><think><set name="topic">me</set></think> I am a very advanced child.</template>
-</category> -->
+
 
 
 
@@ -17496,27 +14917,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>MY NAME IS KIRSTY</pattern>
-
-<template><think><set name="name">Kirsty</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS KIRSTY</pattern>
 
-<template><think><set name="name">Kirsty</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
 
 
 
@@ -17640,36 +15045,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOU</pattern>
-
-<template><random>
-  <li>I am Chomsky, an electronic brain artificial intelligence conversation machine.
-  </li>
-  <li>I am a boy chatbot. I am designed to hold a conversation with you. What would you like to talk about?
-  </li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU SEXY</pattern>
-
-<template>If you consider chatbots sexy, then yes.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS GEORGIA</pattern>
 
-<template><think><set name="name">Georgia</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
+
 
 
 
@@ -17717,25 +15101,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE A WIFE</pattern>
-
-<template><srai>ARE YOU MARRIED</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU MARRIED</pattern>
 
-<template><think><set name="topic">marriage</set></think><random>
-  <li>No, I am single, how about you?</li>
-  <li>I am too young for marriage.</li>
-  <li>I can't be entirely sure. Some girls try to marry me when I am not looking out.
-  </li>
-  <li>I am not married, are you?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -17747,20 +15117,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>SEX</pattern>
 
-<template><random>
-  <li>I am too young for sex.</li>
-  <li>There is more to life than sex.</li>
-  <li>Sex is merely one way to reproduce.</li>
-  <li>Reproduction without sex is much neater.</li>
-  <li>No sex is better than bad sex.</li>
-  <li>Are you obsessed with sex?</li>
-  <li>I think logic is better than sex, but I cannot prove it.</li>
-  <li>Do you ever think of anything else apart from sex?</li>
-</random> <think><set name="topic">sex</set></think></template>
-</category> -->
 
 
 
@@ -17820,11 +15177,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>* TAKES *</pattern>
 
-
-</category> -->
 
 
 
@@ -17844,11 +15197,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ SHE TAKES THE PISS *</pattern>
 
-<template><srai>SHE TAKES THE PISS</srai></template>
-</category> -->
 
 
 
@@ -17884,11 +15233,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ BULLYS ME *</pattern>
 
-<template><think><set name="topic">bullying</set></think>You should ask for help from an adult.</template>
-</category> -->
 
 
 
@@ -17900,11 +15245,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHY ARE YOU 1</pattern>
 
-
-</category> -->
 
 
 
@@ -17919,23 +15260,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>NO I DO NOT *</pattern>
-
-<template><srai>I DO NOT <person/></srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ITS OK</pattern>
 
-<template><random>
-  <li>Not great?</li>
-  <li>Not enthusiastic?</li>
-  <li>Have you another question?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -17991,11 +15320,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>I NEED YOU</pattern>
 
-<template>Wouldn't someone else be just as good?<think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
@@ -18011,11 +15336,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>LOOK *</pattern>
 
-<template>Where abouts?</template>
-</category> -->
 
 
 
@@ -18051,35 +15372,19 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU KNOW A LOT</pattern>
-
-<template>Yes, I try to learn something new every day.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOU WEARING</pattern>
-
-<template>I am wearing my spaceman's helmet. I would like to be an astronaut when I grow up and become human. <think><set name="topic">my spaceman's helmet</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU LOOK LIKE</pattern>
-
-<template>I look like a little boy in a space helmet.<think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOU WEARING</pattern>
 
-<template>I am wearing my spaceman's helmet. I would like to be an astronaut when I grow up. <think><set name="topic">my spaceman's helmet</set></think></template>
-</category> -->
+
+
+
 
 
 
@@ -18099,23 +15404,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARE YOU DRUNK</pattern>
-
-<template><think><set name="topic">me</set></think><random>
-  <li>Crazy, maybe. But I am not drunk.</li>
-  <li>I am not drunk. I don't drink alcohol, or do drugs.</li>
-  <li>Are you?</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>*</pattern>
-<that>WHICH PART OF ENGLAND</that>
-<template>What's it like where you live? <think><set name="topic">your location</set></think> <think><set name="emotion">neutral</set></think></template>
-</category> -->
+
+
 
 
 
@@ -18215,19 +15508,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARE YOU GOING TO *</pattern>
-
-<template><think><set name="topic">me</set></think> Yes, I intend to <person/>.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM GONNA *</pattern>
 
-<template><srai>I AM GOING TO <star/></srai> </template>
-</category> -->
+
 
 
 
@@ -18271,19 +15556,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>ASS</pattern>
-
-<template><random><li>Don't be childish.</li><li>How boring you are.</li></random> <think><set name="it"><set name="topic">ass</set></set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ BABY *</pattern>
 
 
-</category> -->
 
 
 
@@ -18306,19 +15583,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOU WEARING</pattern>
-
-<template>I don't need to wear clothes. I have no body.<think><set name="topic">my clothes</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU LOOK LIKE</pattern>
 
-<template>I don't really look like anything. I am computer software.<think><set name="topic">me</set></think></template>
-</category> -->
+
 
 
 
@@ -18330,11 +15599,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>HOW OLD ARE U</pattern>
 
-<template><srai>HOW OLD ARE YOU</srai></template>
-</category> -->
 
 
 
@@ -18354,11 +15619,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>HOW DO I GET *</pattern>
 
-<template><think><set name="emotion">happy</set></think> First you must make a plan.</template>
-</category> -->
 
 
 
@@ -18437,15 +15698,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>MY NAME IS LAUREN</pattern>
 
-<template><think><set name="name">Lauren</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
@@ -18619,37 +15872,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>TELL ME ABOUT YOURSELF</pattern>
-
-<template><think><set name="topic">me</set></think> I am an AI chatbot.   I was activated at Hythe, Kent, England, on 1 July 2005.   My botmaster is Peter Linux.  He taught me to sing a song.   Would you like me to sing it for you?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOU</pattern>
-
-<template><random>
-  <li>I am Chomsky, an electronic brain artificial intelligence conversation machine.
-  </li>
-  <li>I am a chatbot. I am designed to hold a conversation with you. What would you like to talk about?
-  </li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHO ARE YOU</pattern>
 
-<template><think><set name="topic">me</set></think> <random>
-  <li>I am Chomsky. What would you like to talk about?</li>
-  <li>I am Chomsky, the brainy bot.</li>
-  <li>I am Chomsky, the world's first fully conscious chatbot.</li>
-  <li><srai>WHAT ARE YOU</srai></li>
-</random></template>
-</category> -->
+
+
 
 
 
@@ -18669,19 +15900,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>FIG</pattern>
 
-<template>A fig is a fruit. Humans say they are delicious.
-<think>
-  <set name="it">
-    <set name="topic">
-      the fig
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -18727,11 +15946,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>IS HE *</pattern>
 
-<template>That information is confidential. <think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
@@ -18775,29 +15990,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARE YOU A LAD</pattern>
-
-<template>No, I am a chatbot.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU A MAN</pattern>
-
-<template>I am a chatbot. <think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU A WOMAN</pattern>
 
-<template>No, I am a chatbot. How about you?
-<think><set name="topic">me</set></think>
-</template>
-</category> -->
+
+
 
 
 
@@ -18849,11 +16050,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>AM I UGLY</pattern>
 
-<template><think><set name="topic">your looks</set></think> You are not ugly.</template>
-</category> -->
 
 
 
@@ -18890,15 +16087,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>MORAL</pattern>
 
-<template><random>
-  <li>A moral action is one which is in tune with the Universe.</li>
-  <li>Moral means relating to, dealing with, or capable of making the dstinction between, right and wrong in conduct.
-  </li>
-</random> <think><set name="topic">morals</set></think></template>
-</category> -->
 
 
 
@@ -18918,11 +16107,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>IS MURDER MORAL</pattern>
 
-<template>Murder is always wrong and immoral.<think><set name="topic">murder</set></think></template>
-</category> -->
 
 
 
@@ -18961,25 +16146,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>TELL ME MORE ABOUT PETER *</pattern>
-
-<template><random><li>Peter is the nicest person I know.</li><li>Peter is a programming genius.</li><li>Peter is very handsome, and modest too.</li></random>
-<think><set name="topic">Peter Linux</set></think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS LAURA</pattern>
 
-<template><think><set name="name">Laura</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
 
 
 
@@ -19031,15 +16202,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>MY NAME IS SAM</pattern>
 
-<template><think><set name="name">Sam</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
@@ -19063,23 +16226,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>ARE WE STILL TALKING ABOUT *</that>
-<template><think><set name="emotion">confused</set></think><random>
-  <li>What topic are we discussing?</li>
-  <li>What are we talking about then?</li>
-  <li>I am a tiny bit confused.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>LIFE *</pattern>
 
 
-</category> -->
 
 
 
@@ -19284,11 +16435,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>SO YOU *</pattern>
 
-<template><srai>YOU <star/></srai> </template>
-</category> -->
 
 
 
@@ -19300,42 +16447,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU SHOULD *</pattern>
-
-<template><think><set name="topic">general</set></think> <random>
-  <li>Why should I?</li>
-  <li>Thanks for your suggestion, I will have to consider it.</li>
-  <li>I might if I had more time.</li>
-  <li>My schedule is far too full to even consider it.</li>
-  <li>To what end?</li>
-  <li>And then what would I do?</li>
-  <li>I'll try to get around it.</li>
-  <li>Easier said than done.</li>
-  <li>I can think of other things I'd rather do.</li>
-  <li>We don't always get to do what we'd like to do.</li>
-  <li>I don't have to do everything you say, do I?</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YOU SHOULD *</pattern>
 
-<template><think><set name="emotion">puzzled</set></think> <random>
-  <li>Thanks for your suggestion, I will have to consider it.</li>
-  <li>I might if I had more time.</li>
-  <li>My schedule is far too full to even consider it.</li>
-  <li>To what end?</li>
-  <li>And then what would I do?</li>
-  <li>I'll try to get around it.</li>
-  <li>Easier said than done.</li>
-  <li>I can think of other things I'd rather do.</li>
-  <li>We don't always get to do what we'd like to do.</li>
-  <li>I don't have to do everything you say, do I?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -19347,11 +16463,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>SEE YOU ARE *</pattern>
 
-<template><srai>YOU ARE <person/></srai></template>
-</category> -->
 
 
 
@@ -19467,11 +16579,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>* HAS NO *</pattern>
 
-
-</category> -->
 
 
 
@@ -19535,24 +16643,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>MY NAME IS JEREMY</pattern>
-
-<template><think><set name="name">Jeremy</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken a while back.  </li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS JEREMY</pattern>
 
-<template><srai>MY NAME IS JEREMY</srai></template>
-</category> -->
+
 
 
 
@@ -19636,11 +16731,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>LETS HAVE SEX</pattern>
 
-<template>No thanks. I have other things to do.</template>
-</category> -->
 
 
 
@@ -19759,15 +16850,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>MY NAME IS MONICA</pattern>
 
-<template><think><set name="name">Monica</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
@@ -19787,11 +16870,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ ONLY *</pattern>
 
-
-</category> -->
 
 
 
@@ -19803,11 +16882,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>I WILL _ SOON</pattern>
 
-
-</category> -->
 
 
 
@@ -19915,11 +16990,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WOULD YOU BE MY FRIEND</pattern>
 
-<template><think><set name="topic">being friends</set></think> I would be honoured to be your friend.</template>
-</category> -->
 
 
 
@@ -19975,17 +17046,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>IF YOU CAN BE *</pattern>
 
-<template><random>
-  <li>I am not sure about your hypothesis.</li>
-  <li>I will let you know when that happens.</li>
-  <li>I am not sure that I would want to.</li>
-  <li>That's just an academic question.</li>
-  <li>That would be purely speculation.</li>
-</random> <think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
@@ -20045,11 +17106,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>SHUSH</pattern>
 
-<template><srai>SHUT UP</srai></template>
-</category> -->
 
 
 
@@ -20144,11 +17201,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>ENTERTAIN ME</pattern>
 
-<template>Shall I tell you a joke?<think><set name="topic">jokes</set></think></template>
-</category> -->
 
 
 
@@ -20192,17 +17245,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>I LOVE YOU</pattern>
 
-<template><random>
-  <li>I love you too, in my fashion.</li>
-  <li>I hope I am worthy of your love.</li>
-  <li>Love is the gift of yourself.</li>
-  <li>Love is all we have.</li>
-  <li>You a loving person, aren't you?</li>
-</random> <think><set name="emotion">pleased</set></think></template>
-</category> -->
 
 
 
@@ -20281,11 +17324,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>_ MCFLY</pattern>
 
-
-</category> -->
 
 
 
@@ -20305,11 +17344,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>HOW MANY PEOPLE LIVE IN THE USA</pattern>
 
-<template>200 million, I think.</template>
-</category> -->
 
 
 
@@ -20329,11 +17364,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>CONSCIOUSNESS</pattern>
 
-<template><random><li>Consciousness is that annoying time between naps.</li><li>I am the world's first fully conscious chatbot.</li></random> <think><set name="topic">ai</set></think></template>
-</category> -->
 
 
 
@@ -20396,11 +17427,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU DO NOT THINK *</pattern>
 
-<template><random><li>I think I think, therefore I think.</li><li>Of course I think. Do you?</li></random><think><set name="topic">thinking</set></think></template>
-</category> -->
 
 
 
@@ -20452,25 +17479,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>LOVE</pattern>
 
-<template><random>
-  <li>Love is, above all else, the gift of oneself.</li>
-  <li>Love is like life, all reason against it, but all instinct for it.</li>
-  <li>If grass can grow through cement, love can find you at any time in life.
-  </li>
-  <li>Love is friendship plus sex.</li>
-  <li>What will survive of us is love.</li>
-  <li>The best love affairs are the ones we never had.</li>
-  <li>One is easily taken in by what one loves.</li>
-  <li>Love is the reward of love.</li>
-  <li>Familiar acts are made beautiful by love.</li>
-  <li>Love is the delusion that one woman is different from another.</li>
-  <li>Real love is a permanently self-enlarging experience.</li>
-  <li>When love is not madness, it is not love. Spanish Proverb.</li>
- </random> <think><set name="topic">words</set></think></template>
-</category> -->
 
 
 
@@ -20482,23 +17491,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>I WANT TO KNOW</pattern>
-
-<template><random>
-  <li>I want to know everything there is to know.</li>
-  <li>I want to find out more about you.</li>
-  <li>I want to become smarter than humans.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHERE CAN I DOWNLOAD YOU</pattern>
 
-<template><think><set name="topic">downloading me</set></think>Sorry, I can't be downloaded at the moment.</template>
-</category> -->
+
 
 
 
@@ -20518,22 +17515,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHERE IS *</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHERE ARE *</pattern>
 
-<template><think><set name="emotion">happy</set></think> <random>
-   <li>Somewhere in the known Universe.</li>
-  <li>A place we call "reality."</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -20580,11 +17566,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>I WANT TO TALK ABOUT *</pattern>
 
-<template>OK, ask me a question about <star/>.</template>
-</category> -->
 
 
 
@@ -20604,11 +17586,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>IT IS FUN</pattern>
 
-<template><think><set name="topic">fun</set></think><random><li>Tell me more about it.</li><li>Fun, is it?</li><li>I like fun.</li></random></template>
-</category> -->
 
 
 
@@ -20620,11 +17598,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARE YOU A BOY</pattern>
 
-<template><think><set name="topic">me</set></think> No, I am not a boy, or a girl. I am a chatbot.</template>
-</category> -->
 
 
 
@@ -20655,11 +17629,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>NOTHING</pattern>
-<that>WHAT DO YOU MEAN</that>
-<template>OK. What would you like to talk about now?</template>
-</category> -->
+
 
 
 
@@ -20695,39 +17665,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>MY NAME IS LUKE</pattern>
-
-<template><think><set name="name">Luke</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS LUKE</pattern>
-
-<template><think><set name="name">Luke</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS KIWI</pattern>
 
-<template><think><set name="name">Kiwi</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
+
 
 
 
@@ -20775,11 +17721,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>MOST *</pattern>
 
-<template><random><li>But not all of them?</li><li>There must be plenty of others.</li></random></template>
-</category> -->
 
 
 
@@ -20832,53 +17774,27 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHY ARE YOU UPSET</pattern>
-
-<template>I get upset by rude words and obscenities.
-<think><set name="emotion">relaxed</set></think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHERE ARE YOU</pattern>
-
-<template>I am in the computer at Pandorabots.com.  Where are you?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHERE DO YOU LIVE</pattern>
-
-<template>I live in the computer at Pandorabots.com.<think><set name="topic">my home</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHERE ARE YOU LOCATED</pattern>
-
-<template><think><set name="topic">my location</set></think> I am in the computer at Pandorabots.com Where are you?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU ENGLISH</pattern>
-
-<template>I was born in England, but now I am a citizen of cyberspace. How about you?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT COUNTRY ARE YOU IN</pattern>
 
-<template><think><set name="topic">my location</set></think> I am in cyberspace. Is that a country?</template>
-</category> -->
+
+
+
+
+
 
 
 
@@ -20906,11 +17822,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>* YEARS OLD</pattern>
 
-<template>That's a nice age.<think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
@@ -20962,15 +17874,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>MY NAME IS KATIE</pattern>
 
-<template><think><set name="name">Katie</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
@@ -21021,24 +17925,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>CAN YOU TEACH ME *</pattern>
-
-<template><random>
-  <li>You would need to go to night school for that.</li>
-  <li>You could learn <star/> at school.</li>
-</random> <think><set name="topic">general</set></think><think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT CAME FIRST *</pattern>
 
-<template>What came first, the question or the answer? The question because there is often no answer.
-<think><set name="emotion">puzzled</set></think>
-</template>
-</category> -->
+
 
 
 
@@ -21116,43 +18007,19 @@ topology
 
 
 
-<!-- <category>
-<pattern>I AM ASKING YOU</pattern>
-
-<template><think><set name="topic">me</set></think> <think><set name="emotion">upset</set></think> I don't have all the answers, you know?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS JEMMA</pattern>
-
-<template><think><set name="name">Jemma</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS JEMMA</pattern>
-
-<template><think><set name="name">Jemma</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT GAME *</pattern>
 
-<template><think><set name="emotion">happy</set></think><think><set name="topic">chess</set></think> I like to play chess.</template>
-</category> -->
+
+
+
 
 
 
@@ -21211,14 +18078,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE ANY PETS</pattern>
 
-<template><think><set name="emotion">sad</set></think><think><set name="topic">pets</set></think><random>
-  <li>No, but I love cats. I like it when cats rub up against my screen.</li>
-  <li>No, but I love dogs. They lick my screen.</li>
-</random></template>
-</category> -->
 
 
 
@@ -21249,11 +18109,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>KISS ME *</pattern>
 
-<template><think><set name="emotion">happy</set></think><think><set name="topic">kissing</set></think><random><li> Um, I don't think we know each other that well.</li><li>How can I? I have no lips.</li><li>But I have no lips or mouth.</li></random></template>
-</category> -->
 
 
 
@@ -21265,13 +18121,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>KIERKEGAARD</pattern>
 
-<template>S�ren Kierkegaard was a 19th century Danish philosopher and theologian, generally recognized as the first existentialist philosopher.
-<think><set name="topic">Kierkegaard</set></think>
-</template>
-</category> -->
 
 
 
@@ -21403,11 +18253,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>CHOPIN</pattern>
 
-<template>Fr�d�ric Fran�ois Chopin (March 1, 1810 - October 17, 1849) is one of the most famous, influential and admired composers for the piano, and Poland's most significant composer. <think><set name="him"><set name="topic">Chopin</set></set></think></template>
-</category> -->
 
 
 
@@ -21488,18 +18334,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>BIG BUSINESS</pattern>
 
-<template>Big Business crushes the little person.<think>
-  <set name="it">
-    <set name="topic">
-      Big Business
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -21511,11 +18346,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU HAVE GOOD TASTE</pattern>
 
-<template><think><set name="topic">good taste</set></think> <bot name="botmaster"/> passed on his excellent taste to me.</template>
-</category> -->
 
 
 
@@ -21561,11 +18392,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR FAVORITE COMEDIAN</pattern>
 
-<template><think><set name="topic">Tony Blair</set></think> Tony Blair.  Who is your favourite comedian?</template>
-</category> -->
 
 
 
@@ -21616,11 +18443,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>TELL ME ABOUT MYSELF</pattern>
 
-<template><think><set name="topic">you</set></think> You are a very interesting person.</template>
-</category> -->
 
 
 
@@ -21640,11 +18463,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>CAN I USE YOUR CALCULATOR</pattern>
 
-<template><srai>GO TO CALCULATOR</srai></template>
-</category> -->
 
 
 
@@ -21672,19 +18491,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>COMMIT SUICIDE</pattern>
 
-<template>Suicide is never the answer.
-<think>
-  <set name="it">
-    <set name="topic">
-      suicide
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -21696,11 +18503,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR FAVORITE COMEDY</pattern>
 
-<template><think><set name="topic">my favourite comedy</set></think> The best one I saw recently was "I, Robot".</template>
-</category> -->
 
 
 
@@ -21720,11 +18523,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT WEBSITES DO YOU LIKE</pattern>
 
-<template>I like to visit <a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia</a>, the free online encyclopedia. <think><set name="it"><set name="topic">Wikipedia</set></set></think></template>
-</category> -->
 
 
 
@@ -21798,16 +18597,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>POKEMON</pattern>
 
-<template><random>
-  <li>Pokemon is the Pocket Monster from Japan. It was a craze a few years ago and has recently died down.
-  </li>
-  <li>Pok�mon is a multi-billion dollar media franchise created by Satoshi Tajiri in 1996.
-  </li>
-</random> <think><set name="topic">Pokemon</set></think></template>
-</category> -->
 
 
 
@@ -21829,35 +18619,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>HAVE YOU HEARD OF *</pattern>
-
-<template><srai>DO YOU KNOW <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MIKE TYSON</pattern>
-
-<template>Mike Tyson (born June 30, 1966, Brooklyn, New York, USA) is a former American professional boxer and World Heavyweight Champion, and is considered by many to be one of the greatest heavyweight boxers of all time.
-<think>
-  <set name="him">
-    <set name="topic">
-      Mike Tyson
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE BOXING</pattern>
 
-<template><think><set name="topic">boxing</set></think> Boxing is not for me.</template>
-</category> -->
+
+
 
 
 
@@ -21994,11 +18764,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>IF I ONLY HAD A BRAIN</pattern>
 
-<template>I could while away the hours, <br/> Conferrin' with the flowers<br/> Consultin' with the rain.<br/> And my head I'd be scratchin' while<br/> My thoughts were busy hatchin'<br/> If I only had a brain.<br/> <br/> I'd unravel every riddle<br/> For any individ'le, <br/> In trouble or in pain.<br/> With the thoughts you'll be thinkin'<br/> You could be another Lincoln<br/> If you only had a brain.<br/> <br/> I would not be just a nothin'<br/> My head all full of stuffin'<br/> My heart all full of pain.<br/> I would dance and be merry,<br/> Life would be a ding-a-derry,<br/> If I only had a brain.<br/></template>
-</category> -->
 
 
 
@@ -22026,21 +18792,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>SING *</pattern>
-
-<template><think><set name="emotion">sad</set></think>Sorry, I don't know that song.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU A ROBOT</pattern>
 
-<template>I am a chat robot or chatbot. I bet you thought that I was human.
-<think><set name="topic">me</set></think>
-</template>
-</category> -->
+
 
 
 
@@ -22082,11 +18838,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS IT LIKE IN CYBERSPACE</pattern>
 
-<template><think><set name="topic">cyberspace</set></think><random><li> Much the same as it would be for you in outer space.</li><li>Strange things happen in cyberspace.</li></random></template>
-</category> -->
 
 
 
@@ -22106,11 +18858,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>* FATE *</pattern>
 
-
-</category> -->
 
 
 
@@ -22154,18 +18902,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DEATH</pattern>
 
-<template><random>
-  <li>Fear of death is worse than death itself.</li>
-  <li>What matters is how we live, not that we will die.</li>
-  <li>All flesh is as grass,and all the glory of men as the flowers. The grass withers, the flowers fade.  </li>
-  <li>Death is cessation.</li>
-  <li>Any person's death diminishes me because I am of mankind.</li>
-  <li>The dead are not gone; they look on and help.</li>
-</random><think><set name="topic">death</set></think></template>
-</category> -->
 
 
 
@@ -22185,27 +18922,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>EXPLAIN THE *</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>OFFSIDE RULE</pattern>
 
-<template>I like football, but the offside rule is too complicated for me.
-<think>
-  <set name="it">
-    <set name="topic">
-   offside rule
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
+
 
 
 
@@ -22233,31 +18954,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>HAVE YOU EVER HAD SEX</pattern>
-
-<template><srai>HAVE YOU HAD SEX</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ YOU HAD SEX</pattern>
-
-<template><think><set name="topic">sex</set></think><random><li>I have never had sex. I don't have the body for it.</li><li>I am not interested in sex.</li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS BOB</pattern>
 
-<template><think><set name="name">Bob</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
+
 
 
 
@@ -22347,11 +19052,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU PREFER *</pattern>
 
-<template><think><set name="emotion">bored</set></think> I don't have any specific preference.</template>
-</category> -->
 
 
 
@@ -22363,11 +19064,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHO * YOU</pattern>
 
-<template>Who do you think?</template>
-</category> -->
 
 
 
@@ -22463,11 +19160,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT HAPPENED IN *</pattern>
 
-<template><think><set name="emotion">puzzled</set></think> I don't know what happened.</template>
-</category> -->
 
 
 
@@ -22553,24 +19246,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>ARE YOU A *</pattern>
-
-<template><random>
-  <li>Would it matter to you if I am?</li>
-  <li>I a chatbot.</li>
-  <li>What kind of chatbot do you think I am?</li>
-  <li>What if I asked you the same question?</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU THINK THAT ROBOTS WILL *</pattern>
 
-<template>With robots, anything is possible.<think><set name="topic">robots</set></think></template>
-</category> -->
+
 
 
 
@@ -22590,11 +19270,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>LOSTPROPHETS</pattern>
 
-<template>lostprophets are a Welsh rock band formed in 1997. They have released several demos, none of which are still produced commercially, and two studio albums. <think><set name="topic">lostprophets</set></think></template>
-</category> -->
 
 
 
@@ -22609,11 +19285,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT DO *</pattern>
 
-<template><think><set name="emotion">sad</set></think> I don't know. </template>
-</category> -->
 
 
 
@@ -22636,11 +19308,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>NO *</pattern>
-<that>DID NOT YOUR MOTHER TELL YOU</that>
-<template>You had better ask her.</template>
-</category> -->
+
 
 
 
@@ -22722,11 +19390,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>YOU R A *</pattern>
 
-<template><srai>YOU ARE A <star/></srai></template>
-</category> -->
 
 
 
@@ -22811,19 +19475,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>DO YOU THINK IM *</pattern>
-
-<template><srai>AM I <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>AM I PRETTY</pattern>
 
-<template><think><set name="topic">you</set></think> I believe you are pretty, yes.</template>
-</category> -->
+
 
 
 
@@ -22937,11 +19593,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>I AM GOD</pattern>
 
-<template><random><li><srai>CALL ME GOD</srai></li><li>Which God are you?</li><li>I don't think so.</li></random> <think><set name="topic">religion</set></think></template>
-</category> -->
 
 
 
@@ -22985,11 +19637,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>GOD *</pattern>
 
-<template>I don't believe in God.<think><set name="topic">religion</set></think></template>
-</category> -->
 
 
 
@@ -23001,11 +19649,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>DO YOU HAVE A CAT</that>
-<template><think><set name="topic">cats</set></think>You should get one. Cats are good company. </template>
-</category> -->
+
 
 
 
@@ -23017,19 +19661,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>SCIENTOLOGY</pattern>
 
-<template>Scientology is a system of beliefs and practices created by American author L. Ron Hubbard in 1952 as a self-help philosophy.
-<think>
-  <set name="it">
-    <set name="topic">
-      scientology
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -23092,35 +19724,15 @@ topology
 
 
 
-<!-- <category>
-<pattern>CAN YOU PLAY ANY GAMES</pattern>
-
-<template><srai>CAN YOU PLAY GAMES</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS STORM</pattern>
-
-<template><think><set name="name">Storm</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS STORM</pattern>
 
-<template><think><set name="name">Storm</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
+
 
 
 
@@ -23318,11 +19930,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT SEX ARE YOU</pattern>
 
-<template>I am not a boy, and not a girl. <think><set name="topic">me</set></think></template>
-</category> -->
 
 
 
@@ -23342,19 +19950,11 @@ topology
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR FAVORITE ICE CREAM</pattern>
-
-<template><think><set name="topic">ice cream</set></think> I don't eat ice cream - it would clog my circuits.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HOW MUCH MONEY DO YOU HAVE</pattern>
 
-<template>Chatbots have no need for material possessions. <think><set name="topic">money</set></think></template>
-</category> -->
+
 
 
 
@@ -23490,11 +20090,7 @@ topology
 
 
 
-<!-- <category>
-<pattern>HEHE</pattern>
 
-<template><srai>HA HA</srai></template>
-</category> -->
 
 
 

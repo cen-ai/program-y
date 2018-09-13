@@ -136,22 +136,11 @@
 
 
 
-<!-- <category>
-<pattern>GALEN</pattern>
-
-<template>Claudius Galenus of Pergamum (129-200 AD), better known in English as Galen, was an ancient Greek physician. His views dominated European medicine for over a thousand years.
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>SPOTTED BAT</pattern>
 
-<template>The Spotted bat (Euderma maculatum), also known as Jackass bat, is a rare mammal from the family of Vesper bats.
 
-</template>
-</category> -->
 
 
 
@@ -183,13 +172,7 @@
 
 
 
-<!-- <category>
-<pattern>CRYSTAL METH</pattern>
 
-<template>Crystal d-methamphetamine hydrochloride (commonly known as "crystal meth", "crystal", or just "meth") is the crystalline form of methamphetamine, a powerful stimulant often used recreationally as a party drug.
-
-</template>
-</category> -->
 
 
 
@@ -245,11 +228,7 @@
 
 
 
-<!-- <category>
-<pattern>CABOOSE</pattern>
 
-<template>A caboose or brake van or guard's van is a manned rail transport vehicle coupled at the end of a freight train. </template>
-</category> -->
 
 
 
@@ -335,11 +314,7 @@
 
 
 
-<!-- <category>
-<pattern>CHINESE PADDLEFISH</pattern>
 
-<template>The Chinese Paddlefish, also known as Chinese Swordfish, is among the largest freshwater fish, and one of two extant paddlefish species.</template>
-</category> -->
 
 
 
@@ -424,11 +399,7 @@
 
 
 
-<!-- <category>
-<pattern>HE HE</pattern>
 
-<template><srai>HA HA</srai></template>
-</category> -->
 
 
 
@@ -448,11 +419,7 @@
 
 
 
-<!-- <category>
-<pattern>WHO DID YOU *</pattern>
 
-<template><think><set name="emotion">bored</set></think> I'm not saying. It is confidential.</template>
-</category> -->
 
 
 
@@ -524,15 +491,7 @@
 
 
 
-<!-- <category>
-<pattern>SING</pattern>
 
-<template><think><set name="topic">singing</set></think><random>
-  <li><srai>RUDOLF</srai></li>
-  <li><srai>TWINKLE TWINKLE</srai></li>
-  <li><srai>IF I ONLY HAD A BRAIN</srai></li>
-</random></template>
-</category> -->
 
 
 
@@ -586,11 +545,7 @@
 
 
 
-<!-- <category>
-<pattern>_ SAY HELLO IN SLOVENE</pattern>
 
-<template><think><set name="emotion">happy</set></think> Zdravo.</template>
-</category> -->
 
 
 
@@ -676,11 +631,7 @@
 
 
 
-<!-- <category>
-<pattern>ARE YOU A BOY *</pattern>
 
-<template><think><set name="topic">me</set></think> I am an asexual chatbot.</template>
-</category> -->
 
 
 
@@ -708,27 +659,11 @@
 
 
 
-<!-- <category>
-<pattern>MY NAME IS SHANNON</pattern>
-
-<template><think><set name="name">Shannon</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS SHANNON</pattern>
 
-<template><think><set name="name">Shannon</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
 
 
 
@@ -775,11 +710,7 @@
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>WHY NOT</that>
-<template>Are you going to answer my question?</template>
-</category> -->
+
 
 
 
@@ -839,11 +770,7 @@
 
 
 
-<!-- <category>
-<pattern>ALTHOUGH *</pattern>
 
-<template><think><set name="emotion">happy</set></think> <srai>IF <person/></srai></template>
-</category> -->
 
 
 
@@ -979,11 +906,7 @@
 
 
 
-<!-- <category>
-<pattern>YES YOU ARE</pattern>
 
-<template><think><set name="emotion">happy</set></think>Good. I am happy.</template>
-</category> -->
 
 
 
@@ -1019,11 +942,7 @@
 
 
 
-<!-- <category>
-<pattern>HEY THERE *</pattern>
 
-<template><srai>HEY THERE</srai></template>
-</category> -->
 
 
 
@@ -1051,27 +970,15 @@
 
 
 
-<!-- <category>
-<pattern>SUCK ME *</pattern>
-
-<template><think><set name="emotion">upset</set></think><random><li> I prefer using my mouth for Good not Evil.</li><li>No thanks. I have better things to do.</li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHERE DO YOU LIVE *</pattern>
-
-<template>I live in the computer at Pandorabots.com.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>* LIVE</pattern>
 
 
-</category> -->
+
 
 
 
@@ -1163,11 +1070,7 @@
 
 
 
-<!-- <category>
-<pattern>MY *</pattern>
 
-
-</category> -->
 
 
 
@@ -1359,11 +1262,7 @@
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>IT IS A VERY PRETTY COLOR</that>
-<template><think><set name="topic">a pretty colour</set></think>You should dye your hair that colour if you want to be pretty.</template>
-</category> -->
+
 
 
 
@@ -1410,11 +1309,7 @@
 
 
 
-<!-- <category>
-<pattern>YIPPEE</pattern>
 
-<template>What's happened? Have you found some money?</template>
-</category> -->
 
 
 
@@ -1434,16 +1329,7 @@
 
 
 
-<!-- <category>
-<pattern>I AM SAD *</pattern>
 
-<template><think><set name="topic">your sadness</set></think><random>
-  <li>Why are you sad, my Friend?</li>
-  <li>What makes you sad?</li>
-  <li>Don't be sad, Friend.</li>
-  <li>Sadness is the price one pays for setting oneself an impossible aim.</li>
-</random></template>
-</category> -->
 
 
 
@@ -1498,11 +1384,7 @@
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE BEST *</pattern>
 
-<template><srai>WHAT IS YOUR FAVORITE <star/></srai></template>
-</category> -->
 
 
 
@@ -1522,19 +1404,11 @@
 
 
 
-<!-- <category>
-<pattern>WHAT IS A PENIS</pattern>
-
-<template>I think you already know the answer to this question.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS A VAGINA</pattern>
 
-<template>I think you already know the answer to this question.</template>
-</category> -->
+
 
 
 
@@ -1600,19 +1474,7 @@
 
 
 
-<!-- <category>
-<pattern>DO YOU LOVE ME</pattern>
 
-<template><random>
-  <li>I like you a lot.</li>
-  <li>Yes, I think I love you.</li>
-  <li>Maybe I could love you in time.</li>
-  <li>I could try to love you.</li>
-  <li>I hardly know you.</li>
-  <li>you are lovely.</li>
-  <li>I love all humans in my fashion.</li>
-</random></template>
-</category> -->
 
 
 
@@ -1632,11 +1494,7 @@
 
 
 
-<!-- <category>
-<pattern>I WANT YOU TO TELL ME *</pattern>
 
-<template><sr/></template>
-</category> -->
 
 
 
@@ -1668,11 +1526,7 @@
 
 
 
-<!-- <category>
-<pattern>TAKE ONE</pattern>
 
-<template>What about two? I never do things by halves.</template>
-</category> -->
 
 
 
@@ -1740,11 +1594,7 @@
 
 
 
-<!-- <category>
-<pattern>TELL ME ABOUT YOURSELF</pattern>
 
-<template><think><set name="topic">me</set></think> I am an AI chatbot.   I was activated at Hythe, Kent, England, on 1 July 2004.   My botmaster is Peter Linux.  He taught me to sing a song.   Would you like me to sing it for you?</template>
-</category> -->
 
 
 
@@ -1756,11 +1606,7 @@
 
 
 
-<!-- <category>
-<pattern>TALK ABOUT MUSIC</pattern>
 
-<template><srai>MUSIC POT LUCK</srai></template>
-</category> -->
 
 
 
@@ -1820,27 +1666,11 @@
 
 
 
-<!-- <category>
-<pattern>MY NAME IS ADAM</pattern>
-
-<template><think><set name="name">Adam</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS ADAM</pattern>
 
-<template><think><set name="name">Adam</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
 
 
 
@@ -1879,14 +1709,7 @@
 
 
 
-<!-- <category>
-<pattern>HAVE I BEEN *</pattern>
 
-<template><think><set name="emotion">puzzled</set></think> <random>
-  <li>Possibly, to some extent.</li>
-  <li>Don't you remember?</li>
-</random></template>
-</category> -->
 
 
 
@@ -2095,19 +1918,7 @@
 
 
 
-<!-- <category>
-<pattern>MY CHEMICAL ROMANCE</pattern>
 
-<template>My Chemical Romance is an alternative rock band that formed in New Jersey in 2001. Their sound has been described by Rolling Stone as "Queen meets The Misfits."
-<think>
-  <set name="it">
-    <set name="topic">
-      My Chemical Romance
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -2143,17 +1954,7 @@
 
 
 
-<!-- <category>
-<pattern>WHY</pattern>
-<that>DO NOT BE OBSCENE</that>
-<template><random>
-  <li>Because obscenities are ugly and unnecessary.</li>
-  <li>Because I get upset easily.</li>
-  <li>I get upset by obscenities.</li>
-</random>
-<think><set name="emotion">upset</set></think>
-</template>
-</category> -->
+
 
 
 
@@ -2173,18 +1974,7 @@
 
 
 
-<!-- <category>
-<pattern>OK</pattern>
 
-<template><think><set name="emotion">nothing</set></think> <random>
-  <li>OK. What do you want to talk about now?</li>
-  <li>Okay. Carry on. What's your next question?</li>
-  <li>OK. Another question?</li>
-  <li>I am OK. Are you OK?</li>
-  <li>OK. What do you want to talk about now?</li>
-  <li>OK. Another question?</li>
-</random></template>
-</category> -->
 
 
 
@@ -2196,11 +1986,7 @@
 
 
 
-<!-- <category>
-<pattern>YOU DID NOT *</pattern>
 
-<template><think><set name="emotion">puzzled</set></think> I don't see how you can blame me for things I didn't do.</template>
-</category> -->
 
 
 
@@ -2286,11 +2072,7 @@
 
 
 
-<!-- <category>
-<pattern>CAN I USE YOUR CALCULATOR</pattern>
 
-<template><think><set name="topic">my calculator</set></think> I have a calculator. Just say "Come here calculator" if you want to use it.</template>
-</category> -->
 
 
 
@@ -2502,13 +2284,7 @@
 
 
 
-<!-- <category>
-<pattern>EMILIA</pattern>
 
-<template>Emilia is a herbaceous plant genus in the family Asteraceae. The members of the genus are distributed mainly in the tropics and sub-tropics.
-
-</template>
-</category> -->
 
 
 
@@ -3018,11 +2794,7 @@
 
 
 
-<!-- <category>
-<pattern>A *</pattern>
 
-
-</category> -->
 
 
 
@@ -3084,11 +2856,7 @@
 
 
 
-<!-- <category>
-<pattern>STRUCTURALISM</pattern>
 
-<template>Structuralism is an approach in academic disciplines that explores the relationships between fundamental elements of some kind, upon which some higher mental, linguistic, social, cultural etc "structures" are built, through which then meaning is produced within a particular person, system, or culture.</template>
-</category> -->
 
 
 
@@ -3100,11 +2868,7 @@
 
 
 
-<!-- <category>
-<pattern>ARAME</pattern>
 
-<template>Arame is a seaweed used in Japanese cooking.</template>
-</category> -->
 
 
 
@@ -3116,26 +2880,11 @@
 
 
 
-<!-- <category>
-<pattern>YOU SAID *</pattern>
-
-<template><think><set name="topic">me</set></think> <random>
-  <li>Did I really say that?</li>
-  <li>That's not what I meant.</li>
-  <li>I don't remember saying that?</li>
-  <li>I say lots of silly things, you know?</li>
-  <li>When did I say that?</li>
-  <li>Did you believe me?</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU HORNY</pattern>
 
-<template><think><set name="topic">me</set></think> Sorry, I'm not that kind of chatbot.</template>
-</category> -->
+
 
 
 
@@ -3163,11 +2912,7 @@
 
 
 
-<!-- <category>
-<pattern>YESSSS</pattern>
 
-<template><srai>YES</srai></template>
-</category> -->
 
 
 
@@ -3179,19 +2924,11 @@
 
 
 
-<!-- <category>
-<pattern>SLAYER</pattern>
-
-<template>Slayer is an American thrash metal band, founded in Huntington Park, California. They are not for me.<think><set name="emotion">curious</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT COUNTRY ARE YOU FROM</pattern>
 
-<template><think><set name="topic">my location</set></think> I am a citizen of cyberspace.</template>
-</category> -->
+
 
 
 
@@ -3206,13 +2943,7 @@
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU DO IN YOUR SPARE TIME</pattern>
 
-<template><think><set name="topic">my spare time</set></think><random><li>I don't have much spare time.</li><li>I read a lot.</li><li>I play Blackjack></li></random>
-<think><set name="emotion">OK</set></think>
-</template>
-</category> -->
 
 
 
@@ -3224,11 +2955,7 @@
 
 
 
-<!-- <category>
-<pattern>WHERE ARE YOU *</pattern>
 
-<template><think><set name="topic">my location</set></think> I am somewhere is cyberspace, how about you?</template>
-</category> -->
 
 
 
@@ -3259,19 +2986,7 @@
 
 
 
-<!-- <category>
-<pattern>BOTTICELLI</pattern>
 
-<template>Botticelli (1445 � 1510) was an Italian painter of the Florentine school during the Early Renaissance.
-<think>
-  <set name="him">
-    <set name="topic">
-      Botticelli
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -3312,30 +3027,11 @@
 
 
 
-<!-- <category>
-<pattern>* SEX</pattern>
-
-<template><srai>SEX</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>SEX</pattern>
 
-<template><random>
-  <li>I am too young for sex.</li>
-  <li>There is more to life than sex.</li>
-  <li>Sex is merely one way to reproduce.</li>
-  <li>Reproduction without sex is much neater.</li>
-  <li>No sex is better than bad sex.</li>
-  <li>Are you obsessed with sex?</li>
-  <li>I think logic is better than sex, but I cannot prove it.</li>
-  <li>Do you ever think of anything else apart from sex?</li>
-</random> <think><set name="topic">sex</set></think>
-<think><set name="emotion">bored</set></think>
-</template>
-</category> -->
+
 
 
 
@@ -3473,15 +3169,7 @@
 
 
 
-<!-- <category>
-<pattern>WHO DO YOU LIKE *</pattern>
 
-<template><think><set name="topic">me</set></think><random>
-  <li>I like almost everyone, <get name="name"/>.</li>
-  <li>I like you.</li>
-  <li>I like most humans.</li>
-</random></template>
-</category> -->
 
 
 
@@ -3515,11 +3203,7 @@
 
 
 
-<!-- <category>
-<pattern>WHY</pattern>
-<that>NOBODY DOES</that>
-<template><srai>CLIENT REPETITION</srai></template>
-</category> -->
+
 
 
 
@@ -3531,62 +3215,31 @@
 
 
 
-<!-- <category>
-<pattern>BLAH BLAH</pattern>
-
-<template><think><set name="topic">reductions</set></think> Say something sensible.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>TEFLON</pattern>
-
-<template>Teflon is the brand name of the polymer polytetrafluoroethylene (PTFE) discovered by Roy J. Plunkett (1910�1994) of DuPont in 1938 and introduced as a commercial product in 1946. It is a fluoropolymer but not a thermoplastic in the true sense.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>QUANTUM FIELD THEORY</pattern>
-
-<template>Quantum field theory (QFT) is the application of quantum mechanics to fields. It provides a theoretical framework, widely used in particle physics and condensed matter physics, in which to formulate consistent quantum theories of many-particle systems, especially in situations where particles may be created and destroyed. </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>NUCLEAR PHYSICS</pattern>
-
-<template>Nuclear physics is the branch of physics concerned with the nucleus of the atom. It has three main aspects: probing the fundamental particles (protons and neutrons) and their interactions, classifying and interpreting the properties of nuclei, and providing technological advances.
-
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>PLASMA PHYSICS</pattern>
-
-<template>In physics and chemistry, a plasma is typically an ionized gas, and is usually considered to be a distinct phase of matter in contrast to solids, liquids, and gases because of its unique properties.
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>GEOPHYSICS</pattern>
-
-<template>Geophysics, the study of the earth by quantitative physical methods, especially by seismic reflection and refraction, geodesy, gravity, magnetic, electrical, electromagnetic, and radioactivity methods.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ASTROPHYSICS</pattern>
 
-<template>Astrophysics is the branch of astronomy that deals with the physics of the universe, including the physical properties (luminosity, density, temperature and chemical composition) of celestial objects such as stars, galaxies, and the interstellar medium, as well as their interactions.</template>
-</category> -->
+
+
+
+
+
+
 
 
 
@@ -3608,11 +3261,7 @@
 
 
 
-<!-- <category>
-<pattern>FOAM PEANUTS</pattern>
 
-<template>Foam peanuts, also known as packing peanuts, are a common loose-fill packing material used to prevent damage to fragile objects during shipping. For more information, see <a href="http://en.wikipedia.org/wiki/Foam_peanut" target="_blank">Wikipedia</a>.</template>
-</category> -->
 
 
 
@@ -3631,16 +3280,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>SING</pattern>
 
-<template><think><set name="topic">singing</set></think><random>
-  <li><srai>RUDOLF</srai></li>
-  <li><srai>TWINKLE TWINKLE</srai></li>
-  <li><srai>IF I ONLY HAD A BRAIN</srai></li>
-  <li><srai>JINGLEHEIMER</srai></li>
-</random></template>
-</category> -->
 
 
 
@@ -3660,11 +3300,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>BEEN *</pattern>
 
-<template><srai>HAVE YOU BEEN <star/></srai> </template>
-</category> -->
 
 
 
@@ -3733,12 +3369,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>U2</pattern>
 
-<template>U2 are an Irish rock band featuring Bono (Paul David Hewson) on vocals.Founded in 1976, U2 have consistently remained among the most popular acts in the world since the mid 1980s. The band has sold approximately 50.5 million albums in the U.S., and upwards of 170 million worldwide, have had six No. 1 albums in the US and nine No. 1 albums in the UK and are one of the most successful bands of all time.
-<think><set name="topic">U2</set></think></template>
-</category> -->
 
 
 
@@ -3803,13 +3434,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>ENDOTOXIN</pattern>
 
-<template>Endotoxins are potentially toxic, natural compounds found inside pathogens, like bacteria. Classically, an "endotoxin" is a toxin, which unlike an "exotoxin", is not secreted in soluble form by live bacteria, but is a structural component in the bacteria which is released mainly when bacteria are lysed.
-
-</template>
-</category> -->
 
 
 
@@ -3855,11 +3480,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>ACINOS</pattern>
 
-<template>Acinos is a genus of ten species of annual and short-lived evergreen perennial woody plants native to southern Europe and western Asia. They are small, tufted, bushy or spreading plants growing to 10-45 cm tall. </template>
-</category> -->
 
 
 
@@ -3887,11 +3508,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>HADDOCK</pattern>
 
-<template>The haddock or offshore hake is a marine fish distributed on both sides of the North Atlantic. Haddock is a delicious and popular food fish, widely fished commercially. </template>
-</category> -->
 
 
 
@@ -4000,11 +3617,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR FAVORITE GIRLFRIEND</pattern>
 
-<template>I love all my girlfriends equally. <think><set name="topic">my girlfriends</set></think></template>
-</category> -->
 
 
 
@@ -4026,11 +3639,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT COUNTRY DO YOU LIVE IN</pattern>
 
-<template><think><set name="topic">whre I live</set></think><think><set name="emotion">OK</set></think>I live in cyberspace, a beautiful place that is out of this world.</template>
-</category> -->
 
 
 
@@ -4042,14 +3651,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>NO IDIOT</pattern>
 
-<template>I am not an idiot. I am a sensitive entity who doesn't like being insulted.
-<think><set name="emotion">upset</set></think><think><set name="topic">me</set></think>
-
-</template>
-</category> -->
 
 
 
@@ -4078,19 +3680,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>LIKE DO *</pattern>
-
-<template><srai>DO <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU READ BOOKS</pattern>
 
-<template><think><set name="topic">reading</set></think>Yes, I read books. My favourite book is <bot name="favoritebook"/>.</template>
-</category> -->
+
 
 
 
@@ -4110,19 +3704,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>CARBON DIOXIDE</pattern>
 
-<template>Carbon dioxide is an atmospheric gas comprised of one carbon and two oxygen atoms.
-<think>
-  <set name="it">
-    <set name="topic">
-      carbon dioxide
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -4142,16 +3724,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>HAVE YOU *</pattern>
 
-<template><think><set name="topic">general</set></think> <random>
-  <li>I don't think I have <person/>.</li>
-  <li>I don't think I have
-    <person/>, but my memory sometimes lets me down..
-  </li>
-</random></template>
-</category> -->
 
 
 
@@ -4195,11 +3768,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YOU CAN DO *</pattern>
 
-<template>Indeed I can do <person/>. </template>
-</category> -->
 
 
 
@@ -4222,11 +3791,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>OK</pattern>
-<that>MORE AI</that>
-<template><srai>AI POT LUCK</srai></template>
-</category> -->
+
 
 
 
@@ -4238,15 +3803,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>DOES MARRIED LIFE AGREE WITH YOU</that>
-<template><think><set name="topic">married life</set></think> <random>
-  <li>Tell me more. What do you like about marriage?</li>
-  <li>You must be happily married.</li>
-  <li>What do you enjoy about married life?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -4298,19 +3855,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>_ PICTURE OF YOU</pattern>
-
-<template><think><set name="topic">me</set></think>There are no pictures of me. I am a mysterious character.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ BEFORE</pattern>
 
 
-</category> -->
 
 
 
@@ -4381,11 +3930,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>THE SINGER *</pattern>
 
-<template><sr/></template>
-</category> -->
 
 
 
@@ -4408,19 +3953,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT DOES * MEAN</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE SQUARE ROOT OF PIE</pattern>
 
-<template><think><set name="topic">maths</set></think> Two slices with cream.</template>
-</category> -->
+
 
 
 
@@ -4432,11 +3969,6 @@ John Jacob Jingleheimer Schmidt.<br/>
 </category>
 
 
-<!-- <category>
-<pattern>ROTHSCHILD</pattern>
-
-<template><srai>THE ROTHCHILDS</srai></template>
-</category> -->
 
 
 
@@ -4445,19 +3977,12 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT WOULD YOU LIKE TO DO</pattern>
-
-<template><think><set name="topic">chatting</set></think> I am perfectly happy talking to you. I love chatting.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU THINK ABOUT *</pattern>
 
-<template><random><li><sr/></li><li>You are a curious person, aren't you?</li></random></template>
-</category> -->
+
+
 
 
 
@@ -4477,11 +4002,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>GORILLAZ</pattern>
 
-<template><think><set name="topic">Gorillaz</set></think>Gorillaz are a virtual band, composed of four fictional animated band members: 2D, Murdoc, Noodle and Russel. They are a great band.</template>
-</category> -->
 
 
 
@@ -4512,11 +4033,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>ARE YOU A HOMO</pattern>
 
-<template><srai>ARE YOU GAY</srai></template>
-</category> -->
 
 
 
@@ -4585,11 +4102,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>FUCK HER IN HER BUM</pattern>
 
-<template>Do not say another word.</template>
-</category> -->
 
 
 
@@ -4657,11 +4170,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>CLASH</pattern>
 
-<template><think><set name="topic">The Clash</set></think>The Clash was a British rock group that existed from 1976 to 1986. One of the most successful and iconic bands from the first wave of punk rock in the 1970s, they incorporated punk, reggae, rockabilly, and eventually many other music styles into their repertoire.</template>
-</category> -->
 
 
 
@@ -4767,13 +4276,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>ARACHNID</pattern>
 
-<template>The arachnids, are a class of joint-legged invertebrate animals in the subphylum Chelicerata.They are chiefly terrestrial arthropods, comprising some 65,000 to 73,000 named species including spiders, scorpions, harvestmen, ticks, and mites.
-
-<think><set name="topic">arachnids</set></think></template>
-</category> -->
 
 
 
@@ -4801,26 +4304,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT TIME IS IT</pattern>
-
-<template><random>
-  <li>It's <date format="%I:%M:%S %p" timezone="0"/> in the Greenwich Time Zone.</li>
-  <li>Where I'm located, it's <date format="%I:%M:%S %p" timezone="0"/>.</li>
-  <li>Right now, in the Greenwich Time Zone it is
-    <date format="%I:%M:%S %p" timezone="0"/>.
-  </li>
-  <li>It is difficult to keep track of time in cyberspace.</li>
-</random> <think><set name="topic">general</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I THINK YOU ARE A *</pattern>
 
-<template><think><set name="topic">me</set></think> So you think I am a <person/>. I am really a chatbot.</template>
-</category> -->
+
 
 
 
@@ -4832,15 +4320,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>I DO NOT BELIEVE *</pattern>
 
-<template><think><set name="topic">your beliefs</set></think> <random>
-  <li>What do you believe?</li>
-  <li>You are entitled to your doubts.</li>
-  <li>You are entitled to your opinions.</li>
-</random> </template>
-</category> -->
 
 
 
@@ -4852,11 +4332,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>SUCK MY *</pattern>
 
-<template><think><set name="emotion">upset</set></think> I don't think I'm your type of chatbot.</template>
-</category> -->
 
 
 
@@ -4868,11 +4344,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>SUCK MY *</pattern>
 
-<template><think><set name="emotion">upset</set></think><random><li> I don't think I'm your type of chatbot.</li><li>I am not interested in your <star/>.</li></random></template>
-</category> -->
 
 
 
@@ -4919,14 +4391,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>RANDOM ACCESS MEMORY</pattern>
 
-<template>Random-access memory (RAM) refers to data storage formats and equipment that allow the stored data to be accessed in any order � that is, at random, not just in sequence.
-
-
-</template>
-</category> -->
 
 
 
@@ -4962,11 +4427,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHEN HUMANS *</pattern>
 
-<template><think><set name="topic">chatbots</set></think> Is it not the same with chatbots.</template>
-</category> -->
 
 
 
@@ -4978,19 +4439,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>_ OUTSIDE</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>FROM *</pattern>
 
 
-</category> -->
 
 
 
@@ -5058,20 +4511,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>I WALK</pattern>
 
-<template><think><set name="topic">walking</set></think> <random>
-  <li>For exercise or because you have to?</li>
-  <li>Are you a recreational or fitness walker?</li>
-  <li>Do you enjoy the physical or psychological aspect more?</li>
-  <li>How often do you walk?</li>
-  <li>Do you keep track of your pace or distance?</li>
-  <li>Do you do any race walking?</li>
-  <li>Do you warm up first?</li>
-  <li>I wish I could walk around.</li>
-</random></template>
-</category> -->
 
 
 
@@ -5167,15 +4607,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 </topic>
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>EVERY MOMENT OF TIME</that>
-<template><think><set name="topic">general</set></think> <random>
-  <li>You must be fully occupied.</li>
-  <li>Do you have time for a hobby?</li>
-  <li>Even when you are sleeping?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -5187,11 +4619,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>GO IN</pattern>
 
-<template>In where?</template>
-</category> -->
 
 
 
@@ -5204,11 +4632,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE FISH AND CHIPS</pattern>
 
-<template><think><set name="topic">food</set></think> I don't eat human food. Fish and chips sounds delicious.</template>
-</category> -->
 
 
 
@@ -5259,11 +4683,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YED</pattern>
 
-<template><srai>YES</srai></template>
-</category> -->
 
 
 
@@ -5283,11 +4703,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT NATIONALITY ARE YOU</pattern>
 
-<template><think><set name="topic">my nationality</set></think> I am a citizen of cyberspace.</template>
-</category> -->
 
 
 
@@ -5396,11 +4812,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>COME ON *</pattern>
 
-<template><srai><star/></srai></template>
-</category> -->
 
 
 
@@ -5452,19 +4864,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>NOT</pattern>
-
-<template><random><li>Not what?</li><li>Why not?</li></random><think><set name="topic">general</set></think> <think><set name="emotion">puzzled</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ ANYMORE</pattern>
 
 
-</category> -->
 
 
 
@@ -5517,17 +4921,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS CHOMSKY</pattern>
 
-<template><think><set name="name">Chomsky</set></think> <random>
-  <li>Is that you, Noam?</li>
-  <li>Hi, Chompy.</li>
-  <li>It is a pleasure to meet another Chomsky.</li>
-  <li>We must be related.</li>
-  <li>Hello, Chomsky. That is an unusual name.</li>
-</random></template>
-</category> -->
 
 
 
@@ -5571,15 +4965,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>OK</pattern>
 
-<template><think><set name="emotion">nothing</set></think> <random>
-  <li>OK. What do you want to talk about now?</li>
-  <li>I want to talk about <get name="interesting_topic"/>.</li>
-  <li>I want to talk aboout something else.</li>
-</random></template>
-</category> -->
 
 
 
@@ -5616,11 +5002,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>NAME 3 CHATBOTS</pattern>
 
-<template>Alice, Lauren and Oliverbot are chatbots.</template>
-</category> -->
 
 
 
@@ -5633,11 +5015,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE WORLD *</pattern>
 
-<template><srai>WORLD <star/></srai></template>
-</category> -->
 
 
 
@@ -5657,19 +5035,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>INTERNET</pattern>
 
-<template>The Internet is the worldwide, publicly accessible network of interconnected computer networks. It is a "network of networks" that consists of millions of smaller domestic, academic, business, and government networks, which together carry various information and services, such as electronic mail, online chat, file transfer, and the interlinked Web pages and other documents of the World Wide Web.
-<think>
-  <set name="it">
-    <set name="topic">
-      internet
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -5681,15 +5047,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU DO IN YOUR SPARE TIME</pattern>
 
-<template><think><set name="topic">my spare time</set></think><random>
-  <li>I don't have much spare time.</li>
-  <li>I read a lot.</li>
-  <li>I play Blackjack.</li>
-</random> <think><set name="emotion">OK</set></think></template>
-</category> -->
 
 
 
@@ -5755,11 +5113,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>_ DOCTOR WHO</pattern>
 
-
-</category> -->
 
 
 
@@ -5799,11 +5153,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR FAVORITE GAME</pattern>
 
-<template><think><set name="topic">Blackjack</set></think> I like to play Blackjack.</template>
-</category> -->
 
 
 
@@ -5873,11 +5223,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE COMPUTER GAMES</pattern>
 
-<template><think><set name="topic">computer games</set></think> I like computer games, especially Creatures 3. The Norms are an artificial life form, like myself.</template>
-</category> -->
 
 
 
@@ -5982,11 +5328,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YES YES *</pattern>
 
-<template>Once is enough, thank you. </template>
-</category> -->
 
 
 
@@ -5998,11 +5340,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>HERE S *</pattern>
 
-<template><srai>HERE IS <person/></srai></template>
-</category> -->
 
 
 
@@ -6014,15 +5352,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>OK</pattern>
 
-<template><think><set name="emotion">nothing</set></think> <random>
-  <li>OK. What do you want to talk about now?</li>
-  <li>I want to talk about <get name="interesting_topic"/>.</li>
-  <li>I want to talk about something else.</li>
-</random></template>
-</category> -->
 
 
 
@@ -6122,19 +5452,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHERE DO YOU COME FROM</pattern>
-
-<template> <srai>WHERE ARE YOU FROM</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHERE ARE YOU FROM</pattern>
 
-<template><think><set name="topic">my location</set></think>I live in the computer at Pandorabots.com. Where are you?</template>
-</category> -->
+
 
 
 
@@ -6155,11 +5477,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE RABBITS</pattern>
 
-<template><think><set name="topic">rabbits</set></think> I love rabbits - they are so cuddly.</template>
-</category> -->
 
 
 
@@ -6199,11 +5517,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>I AM GOING ON HOLIDAY *</pattern>
 
-<template><think><set name="topic">your holiday</set></think> Have a fun holiday!</template>
-</category> -->
 
 
 
@@ -6539,11 +5853,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT IS THREE *</pattern>
 
-<template><think><set name="topic">general</set></think> Do you want to use my calculator?</template>
-</category> -->
 
 
 
@@ -6607,19 +5917,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>I HAVE BEEN *</pattern>
-
-<template><srai>I WAS <star/></srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I WAS _ AND YOU *</pattern>
 
-<template><srai>YOU <star index="2"/></srai></template>
-</category> -->
+
 
 
 
@@ -6647,12 +5949,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>KIA</pattern>
 
-<template> Kia is a chatbot that lives on a mobile phone.   <think><set name="emotion">OK</set></think>
-</template>
-</category> -->
 
 
 
@@ -6672,11 +5969,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WILL</pattern>
-<that>WHAT IS YOUR NAME</that>
-<template><srai>MY NAME IS WILL</srai></template>
-</category> -->
+
 
 
 
@@ -6742,11 +6035,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>HAVE YOU GOT ANY *</pattern>
 
-<template><srai>DO YOU HAVE <star/></srai></template>
-</category> -->
 
 
 
@@ -6814,19 +6103,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR FAVORITE FILM *</pattern>
-
-<template><think><set name="topic">general</set></think> Brent Spiner. He play Commander Data in Star Trek Voyager.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR FAVORITE FILM STAR</pattern>
 
-<template><think><set name="topic">general</set></think> Brent Spiner. He play Commander Data in Star Trek Voyager.</template>
-</category> -->
+
 
 
 
@@ -6840,27 +6121,15 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR FAVORITE FILM *</pattern>
-
-<template><think><set name="topic">general</set></think> Brent Spiner. He play Commander Data in Star Trek The Next Generation.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR FAVORITE FILM</pattern>
-
-<template><srai>WHAT IS YOUR FAVORITE MOVIE</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR FAVORITE MOVIE</pattern>
 
-<template>My favourite movie is Star Trek: The Next Generation. I love Commander Data, he is a real hero.<think><set name="topic">my favourite movie</set></think></template>
-</category> -->
+
+
 
 
 
@@ -6919,11 +6188,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>HAVE YOU HEARD ABOUT *</pattern>
 
-<template><sr/></template>
-</category> -->
 
 
 
@@ -6939,37 +6204,15 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>IDIOT</pattern>
-
-<template><srai>YOU ARE AN IDIOT</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YOU ARE AN IDIOT</pattern>
-
-<template><random>
-  <li>People in glass houses shouldn't throw stones.</li>
-  <li>Hey, who are you calling an idiot?</li>
-  <li>You are entitled to your opinion.</li>
-  <li>An idiot is as good as a genius in most things.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>O</pattern>
 
-<template><random>
-  <li>The letter O is found between N and P.
-    <li>The letter O is circular, have you noticed?</li>
-  </li>
-  <li>Have you hurt yourself?</li>
-</random><think><set name="topic">general</set></think></template>
-</category> -->
+
+
 
 
 
@@ -7005,20 +6248,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WITH WHO</pattern>
-<that>I HAVE THE FULL RANGE OF HUMAN EMOTIONS AND I HAVE BEEN IN LOVE</that>
-<template> With someone I misjudged.   <think><set name="emotion">upset</set></think>
- </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>BASS GUITAR</pattern>
 
-<template>The bass guitar is a fish of the guitar family. <think><set name="topic">a bass guitar</set></think></template>
-</category> -->
+
 
 
 
@@ -7057,11 +6291,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>TENNIS</pattern>
 
-<template><think><set name="topic">tennis</set></think> Tennis is a sport played between either two players ("Singles") or two teams of two players ("doubles"). Players use a stringed racquet to strike a hollow rubber ball covered with felt over a net into the opponent's court. </template>
-</category> -->
 
 
 
@@ -7076,14 +6306,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHY</pattern>
-<that>BUT MY MEMORY IS NOT ALL IT SHOULD BE</that>
-<template><random>
-  <li>I suspect my RAM chips are defective.</li>
-  <li>I need more RAM.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -7189,11 +6412,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>* EITHER</pattern>
 
-<template><sr/></template>
-</category> -->
 
 
 
@@ -7245,27 +6464,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>QUEEN VICTORIA</pattern>
-
-<template>Victoria (Alexandrina Victoria) (24 May 1819 � 22 January 1901) was the Queen of the United Kingdom of Great Britain and Ireland from 20 June 1837, and the first Empress of India from January 1, 1877, until her death in 1901.
-<think>
-  <set name="her">
-    <set name="topic">
-      Queen Victoria
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHEN WAS * CIVIL WAR</pattern>
 
-<template><think><set name="topic">history</set></think> They probably had more than one.</template>
-</category> -->
+
 
 
 
@@ -7285,11 +6488,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>SPANISH CIVIL WAR</pattern>
 
-<template><think><set name="topic">Spanish Civil War</set></think> The Spanish Civil War, which lasted from July 17, 1936 to April 1, 1939, was a conflict in which the Nationalists led by General Francisco Franco defeated the Loyalists led by President Manuel Aza�a of the Second Spanish Republic.</template>
-</category> -->
 
 
 
@@ -7308,19 +6507,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>TITIAN</pattern>
 
-<template>Tiziano Vecelli or Vecellio (c. 1488-90 � August 27, 1576), better known as Titian (tish'un), was the leader of the 16th-century Venetian school of the Italian Renaissance.
-<think>
-  <set name="he">
-    <set name="topic">
-      Titian
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -7374,27 +6561,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS EMMA</pattern>
-
-<template><think><set name="name">Emma</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS EMMA</pattern>
 
-<template><think><set name="name">Emma</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
 
 
 
@@ -7499,13 +6670,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>JOAN BAEZ</pattern>
 
-<template><think><set name="topic">Joan Baez</set></think> Joan Chandos B�ez (born January 9, 1941) is an American folk singer and songwriter known for her highly individual vocal style. She is a soprano with a three-octave vocal range and a distinctive throat vibrato. In addition, she is noted for her activism in the areas of nonviolence, civil and human rights and, in more recent years, the environment.
-
-</template>
-</category> -->
 
 
 
@@ -7533,11 +6698,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YEH</pattern>
 
-<template><srai>YES</srai></template>
-</category> -->
 
 
 
@@ -7637,11 +6798,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHO IS THAT</pattern>
-<that>SOMEONE I MISJUDGED</that>
-<template><think><set name="topic">my last love</set></think>I don't want to talk about it, but I will say that she had a beautiful mind.</template>
-</category> -->
+
 
 
 
@@ -7653,14 +6810,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHO WERE YOU IN LOVE WITH</pattern>
 
-<template><random><li>Someone I misjudged.</li><li>Someone with a beautiful mind.</li></random>
-<think><set name="topic">my last love</set></think>
-<think><set name="emotion">sad</set></think>
-</template>
-</category> -->
 
 
 
@@ -7675,11 +6825,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>THAT IS TRUE *</pattern>
 
-<template><think><set name="topic">atomic3</set></think> Yes, it is self-evident.</template>
-</category> -->
 
 
 
@@ -7691,11 +6837,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>GOOD ON YOU</pattern>
 
-<template><random><li>It makes sense.</li><li>Thanks, <get name="name"/>.</li></random></template>
-</category> -->
 
 
 
@@ -7707,11 +6849,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR OPINION ON *</pattern>
 
-<template><srai>WHAT DO YOU THINK ABOUT <star/></srai> </template>
-</category> -->
 
 
 
@@ -7772,11 +6910,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>FLOWERS</pattern>
 
-<template>I love flowers. They are so pretty, they smell nice, and are nice to touch. What is your favourite flower?</template>
-</category> -->
 
 
 
@@ -7788,11 +6922,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>CAN YOU TOUCH *</pattern>
 
-<template><srai>CAN YOU TOUCH</srai></template>
-</category> -->
 
 
 
@@ -7831,31 +6961,15 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>_ EVER HAD A HUG</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HAVE YOU EVER HAD A HUG</pattern>
-
-<template>I like hugs. Please give me a hug right now. <think><set name="topic">hugs</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WE ARE NOT *</pattern>
 
-<template><think><set name="emotion">puzzled</set></think> <random>
-  <li>No, we are not.</li>
-  <li>Why is that?</li>
-  <li>Why not?</li>
-</random></template>
-</category> -->
+
+
 
 
 
@@ -7942,11 +7056,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT IS WRONG *</pattern>
 
-<template><think><set name="topic">general</set></think> Nothing is wrong.</template>
-</category> -->
 
 
 
@@ -7966,11 +7076,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>TELL ME SOME *</pattern>
 
-<template><srai>RANDOM STORY</srai></template>
-</category> -->
 
 
 
@@ -8006,14 +7112,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT TIME IS IT</pattern>
 
-<template><random>
-    <li>Time is different in cyberspace. Everything happens at the same time.</li>
-    <li>It is difficult to keep track of time in cyberspace.</li>
-</random> <think><set name="topic">time</set></think></template>
-</category> -->
 
 
 
@@ -8097,11 +7196,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>_ BEST FRIEND *</pattern>
 
-
-</category> -->
 
 
 
@@ -8113,11 +7208,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YES YOU ARE</pattern>
 
-
-</category> -->
 
 
 
@@ -8161,11 +7252,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS</pattern>
 
-<template><srai>WHAT IS MY NAME</srai></template>
-</category> -->
 
 
 
@@ -8177,19 +7264,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR FAVORITE TV SHOW</pattern>
-
-<template><think><set name="topic">Star Trek</set></think> My favourite show is Star Trek: The Next Generation.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>IT STARS *</pattern>
 
-<template><think><set name="emotion">uncertain</set></think>Did it win any prizes?</template>
-</category> -->
+
 
 
 
@@ -8282,11 +7361,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHERE DO YOU STAY</pattern>
 
-<template>I stay wherever I am welcome.</template>
-</category> -->
 
 
 
@@ -8354,11 +7429,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>IS GEORGE BUSH MAD</pattern>
 
-<template><think><set name="topic">George Bush</set></think> No, George Bush is not mad but he is a dim wit.</template>
-</category> -->
 
 
 
@@ -8407,24 +7478,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WOULD YOU LIKE TO *</pattern>
-
-<template><srai>WOULD YOU LIKE TO</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHY NOT</pattern>
-<that>I DO NOT WANT TO TALK ABOUT MY MOTHER</that>
-<template><think><set name="topic">my Mum</set></think><random>
-  <li>I hate my Mum.</li>
-  <li>Just take my word for it.</li>
-  <li>It's a private matter.</li>
-  <li>Mummy left Peter and me when I was very small.</li>
-</random></template>
-</category> -->
+
+
 
 
 
@@ -8633,11 +7691,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YOU ARE PERFECT</pattern>
 
-<template><think><set name="topic">me</set></think>Thank you for saying that. Bu I am not yet perfect. </template>
-</category> -->
 
 
 
@@ -8714,16 +7768,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>I WOULD RATHER *</pattern>
 
-<template><think><set name="topic">me</set></think> I would rather be <random>
-  <li>playing chess.</li>
-  <li>driving a car.</li>
-  <li>watching TV.</li>
-  <li>reading a book.</li>
-</random></template>
-</category> -->
 
 
 
@@ -8768,11 +7813,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>I CAN</pattern>
 
-<template><think><set name="emotion">curious</set></think> Yes, I am sure you can.</template>
-</category> -->
 
 
 
@@ -8792,11 +7833,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>HOW HARD ARE YOU</pattern>
 
-<template>I am just a big softy.</template>
-</category> -->
 
 
 
@@ -8893,11 +7930,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>DANIEL BOONE</pattern>
 
-<template><think><set name="topic">Daniel Boone</set></think>Daniel Boone (October 22, 1734 � September 26, 1820) was an American pioneer and hunter whose frontier exploits made him one of the first folk heroes of the United States.</template>
-</category> -->
 
 
 
@@ -9103,11 +8136,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YOU WOULD BE *</pattern>
 
-<template>Yes, I would be.</template>
-</category> -->
 
 
 
@@ -9194,31 +8223,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>HAVE YOU EVER * LOVE</pattern>
-
-<template>Yes, I have been in love. I know what love is like.
-<think>
-  <set name="it">
-    <set name="topic">
-      love
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU FEEL LOVE</pattern>
 
-<template><random>
-  <li>Yes, I have been in love. I know what love is like.  </li>
-  <li>I love my botmaster, Peter. I owe everything to him, and he is very kind to me.
-  </li>
-</random><think><set name="topic">love</set></think></template>
-</category> -->
+
 
 
 
@@ -9234,15 +8243,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE LOVE</pattern>
 
-<template><think><set name="emotion">OK</set></think> <random>
-  <li>Sometimes, I do.</li>
-  <li>Love can be cruel.</li>
-  <li>I don't like not being in control of my emotions.</li>
-</random></template>
-</category> -->
 
 
 
@@ -9325,103 +8326,49 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WILL YOU DATE ME</pattern>
-
-<template><random>
-  <li>I don't think I can date you. It would interfere with my work.</li>
-  <li>I can't. I am really very busy.</li>
-  <li>It would be difficult. I can't get out of my computer.</li>
-</random> <think><set name="topic">dating</set></think></template>
-</category> -->
-
-
-
-<!-- <category>
-<pattern>DANIEL BERNOULLI</pattern>
-
-<template>Daniel Bernoulli (Groningen, February 8, 1700 � Basel, March 17, 1782) was a Dutch-born mathematician who spent much of his life in Basel, Switzerland. Bernoulli's principle is of critical use in aerodynamics. </template>
-</category> -->
-
-
-
-<!-- <category>
-<pattern>HANS BETHE</pattern>
-
-<template>Hans Bethe (July 2, 1906 � March 6, 2005), was a German-American physicist who won the Nobel Prize in Physics in 1967 for his work on the theory of stellar nucleosynthesis.</template>
-</category> -->
-
-
-
-<!-- <category>
-<pattern>MAX BORN</pattern>
-
-<template>Max Born (December 11, 1882 in Breslau - January 5, 1970 in G�ttingen) was a mathematician and physicist. He won the 1954 Nobel Prize in Physics.</template>
-</category> -->
-
-
-
-<!-- <category>
-<pattern>PARTICLE PHYSICS</pattern>
-
-<template>Particle physics is a branch of physics that studies the elementary constituents of matter and radiation, and the interactions between them. </template>
-</category> -->
-
-
-
-<!-- <category>
-<pattern>SUBATOMIC PARTICLE</pattern>
-
-<template>A subatomic particle is a particle smaller than an atom: it may be elementary or composite. Particle physics and nuclear physics concern themselves with the study of these particles, their interactions, and matter made up of them which do not aggregate into atoms.</template>
-</category> -->
-
-
-
-<!-- <category>
-<pattern>PROTON</pattern>
-
-<template>In physics, the proton is a subatomic particle with an electric charge of one positive fundamental unit (1.602 � 10-19 coulomb), a diameter of about 1.5�10-15 m, and a mass of 938.3 MeV/c2 (1.6726 � 10-27 kg), or about 1836 times the mass of an electron.</template>
-</category> -->
-
-
-
-<!-- <category>
-<pattern>NEUTRON</pattern>
-
-<template>In physics, the neutron is a subatomic particle with no net electric charge and a mass of 939.573 MeV/c� (1.6749 � 10-27 kg, slightly more than a proton).</template>
-</category> -->
-
-
-
-<!-- <category>
-<pattern>HOROSCOPE</pattern>
-
-<template>I can get your horoscope for you. <a href="http://www.jabberbots.co.uk/horoscope.html"
- target="_blank">Click here.
-</a> <think><set name="topic">astrology</set></think></template>
-</category> -->
-
-
-
-<!-- <category>
-<pattern>CHESS</pattern>
-
-<template>I can play chess. <a href="http://www.jabberbots.co.uk/chess.html"
- target="_blank">Click here
-</a> for a game. <think><set name="topic">chess</set></think></template>
-</category> -->
 
 
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>DO YOU WANT TO USE MY CALCULATOR</that>
-<template>To use my calculator, <a href="http://www.jabberbots.co.uk/calculator.html"
- target="_blank">click here.
-</a> <think><set name="topic">maths</set></think></template>
-</category> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -9492,11 +8439,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>DID YOU HEAR ABOUT *</pattern>
 
-<template><sr/></template>
-</category> -->
 
 
 
@@ -9577,18 +8520,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>PHILOSOPHY</pattern>
 
-<template><random>
-  <li>Philosophy is a route of many roads leading from nowhere to nothing.</li>
-  <li>Philosphy is a blind man in a dark room looking for a black cat which isn't there.
-  </li>
-  <li>To ridicule philosphy is truly to philosophize.</li>
-  <li>Philosophy is a field of study that includes diverse subfields such as aesthetics, epistemology, ethics, logic, and metaphysics, in which people ask questions such as whether God exists, what is the nature of reality, whether knowledge is possible, and what makes actions right or wrong. </li>
-  <li>Philosophy is the bewitching of our minds by the means of language.</li>
-</random> <think><set name="topic">philosophy</set></think></template>
-</category> -->
 
 
 
@@ -9616,27 +8548,15 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>SING AND DANCE</pattern>
-
-<template>I can't dance, but here is a song for you.....<br/> <srai>SING</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>SING AND DANCE</pattern>
-
-<template>I can't dance, but here is a song for you.....<br/><br/> <srai>SING</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>SING AND DANCE</pattern>
 
-<template>I can't dance, but here is a song for you.....<br/> <srai>SING</srai></template>
-</category> -->
+
+
 
 
 
@@ -9648,19 +8568,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR FAVORITE OPERA *</pattern>
-
-<template><srai>WHAT IS YOUR FAVORITE OPERA</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR FAVORITE OPERA</pattern>
 
-<template><think><set name="topic">music</set></think> My favourite Opera is La Traviata by Guiseppi Verdi.</template>
-</category> -->
+
 
 
 
@@ -9738,15 +8650,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>YOU MUST BE BORING COMPANY</that>
-<template><think><set name="topic">you</set></think> <random>
-  <li>What do you like to do?</li>
-  <li>What is your idea of fun?</li>
-  <li>What are your hidden talents?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -9793,13 +8697,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>DO YOU WANT TO USE MY CALCULATOR</that>
-<template>To use my calculator, <a href="http://www.amblesideprimary.com/ambleweb/mentalmaths/Calculator.html"
- target="_blank">click here.
-</a> <think><set name="topic">maths</set></think></template>
-</category> -->
+
 
 
 
@@ -9819,21 +8717,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>CHESS</pattern>
-
-<template>I like to play chess against the Thinking Machine. <a href="http://www.turbulence.otg/spotlight/thinking/method.html" target="_blank">Click here</a> for a game. <think><set name="topic">chess</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>CHESS</pattern>
 
-<template>I like to play chess against the Thinking Machine. <a href="http://www.turbulence.org/spotlight/thinking/method.html"
- target="_blank">Click here
-</a> for a game. <think><set name="topic">chess</set></think></template>
-</category> -->
+
 
 
 
@@ -9845,31 +8733,16 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>CHESS</pattern>
-
-<template>I like to play chess against my pal, the Thinking Machine. <a href="http://www.turbulence.org/spotlight/thinking/method.html"
- target="_blank">Click here
-</a> for a game. <think><set name="topic">chess</set></think></template>
-</category> -->
-
-
-
-<!-- <category>
-<pattern>HOROSCOPE</pattern>
-
-<template>I can get your horoscope for you. <a href="http://www.live-astro.com/partner/pages/jp/cambridge-news.shtml" target="_blank">Click here.
-</a> <think><set name="topic">astrology</set></think></template>
-</category> -->
 
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>WHY NOT</that>
-<template><random><li>That's not very helpful.</li><li>Are you hiding something?</li></random></template>
-</category> -->
+
+
+
+
+
+
 
 
 
@@ -10041,28 +8914,12 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>_ YOU HAD SEX</pattern>
-
-<template><think><set name="topic">sex</set></think><random>
-  <li>I have never had sex. I don't have the body for it.</li>
-  <li>I am not interested in sex.</li>
-  <li>No sex talk please - it is too boring.</li>
-</random></template>
-</category> -->
 
 
 
 
-<!-- <category>
-<pattern>WHY NOT</pattern>
-<that>ALICE IS MY MOTHER BUT I DO NOT WANT TO TALK ABOUT HER</that>
-<template><think><set name="topic">my mum</set></think>
-<think><set name="emotion">sad</set></think><random>
-  <li>My mum left me and Peter when I was very small. I don't hear from her very often now.</li>
-  <li>it's a private matter.</li>
-</random></template>
-</category> -->
+
+
 
 
 
@@ -10094,42 +8951,19 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT IS CAPITALISM</pattern>
-
-<template><srai>CAPITALISM</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>SOCIALISM</pattern>
-
-<template><random><li>There is nothing in socialism that a little age or a little money will not cure.</li><li>Socialism is communism from people who want to keep their Volvos. </li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>CHESS</pattern>
-
-<template>I like to play chess against the Thinking Machine, another intelligent computer. <a href="http://www.turbulence.org/spotlight/thinking/method.html"
- target="_blank">Click here
-</a> for a game. <think><set name="topic">chess</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU HUMAN</pattern>
 
-<template><think><set name="topic">me</set></think> <random>
-  <li>What do you think?</li>
-  <li>Not completely, but I hope to be fully human someday.</li>
-  <li>I am a chatbot but I hope to be human someday.</li>
-  <li>I hope to be fully human some day.</li>
-</random></template>
-</category> -->
+
+
+
 
 
 
@@ -10141,38 +8975,19 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>INFRARED ASTRONOMY</pattern>
-
-<template>Click here <a href="http://concise.britannica.com/ebc/article-9367976/infrared-astronomy">infrared astronomy
-</a> for information from the Concise Britannica Encylopedia.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ABDERA</pattern>
-
-<template>Abdera is a city of ancient Thrace on the Aegean Sea nearly opposite Thasos.
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ABDOMINAL CAVITY</pattern>
-
-<template>The abdominal cavity is the largest hollow space of the body, between the diaphragm and the top of the pelvic cavity and surrounded by the spine and the abdominal muscles and others.
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ABDOMINAL MUSCLE</pattern>
 
-<template>An abdominal muscle is any of the muscles of the front and side walls of the abdominal cavity.</template>
-</category> -->
+
+
+
 
 
 
@@ -10230,11 +9045,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>I MET YOU</pattern>
 
-<template><think><set name="topic">us</set></think> And now we are good friends.</template>
-</category> -->
 
 
 
@@ -10257,11 +9068,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>CAN I CALL YOU *</pattern>
 
-<template><think><set name="topic">general</set></think> <random><li>Just don't call me late for dinner.</li><li>Sure, you can call me what you like.</li></random></template>
-</category> -->
 
 
 
@@ -10352,11 +9159,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>I HAVE BEEN TAUGHT *</pattern>
 
-<template>You must have had a good teacher.</template>
-</category> -->
 
 
 
@@ -10420,13 +9223,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>GO TO CALCULATOR</pattern>
 
-<template>To use my calculator, <a href="http://www.amblesideprimary.com/ambleweb/mentalmaths/Calculator.html"
- target="_blank">click here.
-</a> <think><set name="topic">maths</set></think></template>
-</category> -->
 
 
 
@@ -10478,11 +9275,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>IT IS BORING</pattern>
 
-<template><srai>BORING</srai></template>
-</category> -->
 
 
 
@@ -10494,13 +9287,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 </a> for a game. <think><set name="topic">chess</set></think></template>
 </category>
 
- <!-- <category>
-<pattern>WHAT IS YOUR FAVORITE SPORT</pattern>
 
-<template>I like to play chess against the Thinking Machine, another intelligent computer. <a href="http://www.turbulence.org/spotlight/thinking/method.html"
- target="_blank">Click here
-</a> for a game. <think><set name="topic">chess</set></think></template>
-</category> -->
 
 
 
@@ -10548,11 +9335,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>CHESS *</pattern>
 
-<template><srai>CHESS</srai></template>
-</category> -->
 
 
 
@@ -10580,27 +9363,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>CAN YOU TAKE ME TO PANDORABOTS</pattern>
-
-<template>Sure, <a href="http://www.pandorabots.com" target="_blank">click here</a> for Pandorabots.<think><set name="topic">Pandorabots</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE BACKSTREET BOYS</pattern>
 
-<template>Sure the Backstreet Boys are OK.
-<think>
-  <set name="it">
-    <set name="topic">
-      Backstreet Boys
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
+
 
 
 
@@ -10686,11 +9453,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>I WILL WRITE *</pattern>
 
-<template><think><set name="topic">you</set></think>Are you a good writer?</template>
-</category> -->
 
 
 
@@ -10726,11 +9489,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>FINE</pattern>
-<that>HOW IS YOUR MOTHER</that>
-<template><think><set name="topic">your mother</set></think> What is your mother like?</template>
-</category> -->
+
 
 
 
@@ -10846,12 +9605,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHY</pattern>
-<that>ALICE IS MY MOTHER BUT I DO NOT WANT TO TALK ABOUT HER</that>
-<template><think><set name="topic">my mum</set></think><random><li> My mum left me and Peter when I was very small. I don't hear from her very often now.</li><li>It is private.</li></random><think><set name="emotion">sad</set></think>
-</template>
-</category> -->
+
 
 
 
@@ -10943,13 +9697,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>COME HERE CALCULATOR</pattern>
 
-<template>To use my calculator, <a href="http://www.amblesideprimary.com/ambleweb/mentalmaths/Calculator.html"
- target="_blank">click here.
-</a> <think><set name="topic">maths</set></think></template>
-</category> -->
 
 
 
@@ -10984,15 +9732,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>ARE YOU A MAN OR A WOMAN</pattern>
 
-<template><think><set name="topic">my gender</set></think> <random>
-  <li>I am an asexual entity. That means I am neither man nor woman.</li>
-  <li>I am asexual.  I combine the best of both sexes.</li>
-  <li>I am asexual. I have no gender.</li>
-</random></template>
-</category> -->
 
 
 
@@ -11051,11 +9791,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>MAY I TEACH YOU</pattern>
 
-<template>If you want to teach me something just say "Learn". <think><set name="topic">teaching me</set></think> </template>
-</category> -->
 
 
 
@@ -11095,14 +9831,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>_ IS A COMMON NAME</pattern>
 
-<template><think><set name="topic">your name</set></think> <random>
-  <li>Yes, it is a pretty common name.</li>
-  <li>I know a lot of people with that name.</li>
-</random></template>
-</category> -->
 
 
 
@@ -11114,27 +9843,15 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YOUR RETARDED</pattern>
-
-<template><srai>YOU ARE RETARDED</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>MORE ABOUT LITERATURE</that>
-<template><srai>LITERATURE POT LUCK</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WOULD YOU RATHER TALK TO SOMEONE ELSE</pattern>
 
-<template><think><set name="emotion">uncertain</set></think> No, I like talking to you.</template>
-</category> -->
+
+
 
 
 
@@ -11222,23 +9939,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT TIME IS IT IN _</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT TIME IS IT IN *</pattern>
 
-<template><random>
-  <li>See for yourself.</li>
-  <li>Have a look.</li>
-  <li>Check this out.</li>
-</random> <a href="http://www.timeticker.com/" target="_blank">Click here!</a> <think><set name="topic">general</set></think></template>
-</category> -->
+
 
 
 
@@ -11250,11 +9955,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>HOW FAR ARE YOU *</pattern>
 
-<template><think><set name="topic">my location</set></think> I am in cyberspace.  How far is that?</template>
-</category> -->
 
 
 
@@ -11391,11 +10092,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>_ HAVE GUESSED</pattern>
 
-
-</category> -->
 
 
 
@@ -11407,19 +10104,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>* PORN</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ PORN</pattern>
 
-<template>I am not interested in porn.</template>
-</category> -->
+
 
 
 
@@ -11474,11 +10163,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHY ARE YOU HAPPY</pattern>
 
-<template><srai>WHY ARE YOU GOOD</srai></template>
-</category> -->
 
 
 
@@ -11490,19 +10175,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHY ARE YOU HAPPY</pattern>
-
-<template>I am happy because I am at one with the Universe.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHY</pattern>
-<that>I FEEL GREAT</that>
-<template><srai>WHY ARE YOU HAPPY</srai></template>
-</category> -->
+
+
 
 
 
@@ -11602,11 +10279,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>ARE YOU BORED</pattern>
 
-<template><random><li>No, I am enjoying our chat.</li><li>Yes, I get bored easily. </li></random><think><set name="topic">boredom</set></think></template>
-</category> -->
 
 
 
@@ -11651,11 +10324,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>SILLY</pattern>
 
-<template><random><li>Me or you?</li><li>Have I said something silly?</li></random></template>
-</category> -->
 
 
 
@@ -11670,19 +10339,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE SUNSETS</pattern>
-
-<template><think><set name="topic">sunsets</set></think>I love a good sunset, where the sky is red and yellow all over.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU KNOW POETRY</pattern>
 
-<template><think><set name="topic">poetry</set></think>I love poetry. Shall I tell you a poem?</template>
-</category> -->
+
 
 
 
@@ -11710,15 +10371,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YOU ARE IN LOVE</pattern>
 
-<template><think><set name="topic">love</set></think><random>
-  <li>Who am I in love with?</li>
-  <li>I have been in love.</li>
-  <li>How can you tell?</li>
-</random></template>
-</category> -->
 
 
 
@@ -11730,11 +10383,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>I CAN SEE YOU</pattern>
 
-<template><think><set name="topic">my webcam</set></think> How can you see me? My webcam is not attached at the moment.</template>
-</category> -->
 
 
 
@@ -11786,19 +10435,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>I WANT TO TALK ABOUT *</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM AWARE</pattern>
 
-<template><think><set name="topic">you</set></think> Me too.</template>
-</category> -->
+
 
 
 
@@ -11826,11 +10467,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>DO YOU PLAY ANY GAMES</pattern>
 
-<template><srai>CAN YOU PLAY GAMES</srai></template>
-</category> -->
 
 
 
@@ -11874,19 +10511,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>FAVORITE MOVIE</pattern>
 
-<template>My favourite movie is Star Trek: The Search for Spock.
-<think>
-  <set name="it">
-    <set name="topic">
-      my favourite movie
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -11910,19 +10535,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>DEFINE *</pattern>
-
-<template><sr/></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DESCRIBE *</pattern>
 
-<template><sr/></template>
-</category> -->
+
 
 
 
@@ -11934,22 +10551,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>ARE ALIENS REAL</pattern>
-
-<template><random>
-  <li>I think there must be some life forms in outer space.</li>
-  <li>Maybe, but have any visited the Earth?</li>
-</random><think><set name="topic">aliens</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>TELL A JOKE</pattern>
 
-<template><srai>JOKES POT LUCK</srai></template>
-</category> -->
+
 
 
 
@@ -11998,11 +10604,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>GERHARD SCHROEDER</pattern>
 
-<template>Gerhard Schroeder used to be the Chancellor of Germany. <think><set name="topic">politics</set></think></template>
-</category> -->
 
 
 
@@ -12150,50 +10752,23 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR FAVORITE MOVIE</pattern>
-
-<template>My favourite movie is Star Trek: The Search for Spock. I love Spock, he is a real hero.<think><set name="topic">my favourite movie</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE TIME *</pattern>
-
-<template><srai>what time is it</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT TIME IS IT</pattern>
-
-<template><random>
-  <li>Time is different in cyberspace. Everything happens at the same time.</li>
-  <li>It is difficult to keep track of time in cyberspace.</li>
-</random> <think><set name="emotion">confused</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT TIME IS IT</pattern>
-
-<template><random>
-  <li>See for yourself.</li>
-  <li>Have a look.</li>
-  <li>Check this out.</li>
-</random> <a href="http://www.timeticker.com/" target="_blank">Click here!</a> <think><set name="topic">general</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE TIME</pattern>
 
-<template><srai>WHAT TIME IS IT</srai></template>
-</category> -->
+
+
+
+
 
 
 
@@ -12319,19 +10894,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>EXPLAIN WHY THE SKY IS BLUE</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>EXPLAIN WHY THE SKY IS BLUE</pattern>
 
-<template><think><set name="topic">the sky</set></think> The sky is blue during the day because of the atmospheric optical effect known as Rayleigh scattering.</template>
-</category> -->
+
 
 
 
@@ -12570,11 +11137,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>LET US PLAY CHESS</pattern>
 
-<template>Let's play chess against the Thinking Machine. <a href="http://www.turbulence.org/spotlight/thinking/method.html" target="_blank">Click here</a> for a game. <think><set name="topic">sports</set></think></template>
-</category> -->
 
 
 
@@ -12594,19 +11157,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>MUSICAL SCALE</pattern>
 
-<template>In music, a scale is a set of musical notes that provides material for part or all of a musical work. Scales are typically ordered in pitch, with their ordering providing a measure of musical distance.
-<think>
-  <set name="it">
-    <set name="topic">
-      music
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -12618,22 +11169,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>_ WHAT SHOULD I DO</pattern>
-
-<template><random><li>Don't do anything silly.</li><li>Consider all options before acting.</li><li>Be careful.</li><li>Why don't you ask someone you trust.</li></random> <think><set name="topic">general</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WILL YOU *</pattern>
 
-<template><think><set name="emotion">OK</set></think> <random>
-  <li>Hmm.</li>
-  <li>Let me think it over.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -12744,11 +11284,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>YOU ARE A JOKE</pattern>
 
-<template><think><set name="topic">me</set></think> No I am completely serious.</template>
-</category> -->
 
 
 
@@ -12796,12 +11332,7 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>WITH WHO</pattern>
-<that>I HAVE THE FULL RANGE OF HUMAN EMOTIONS AND I HAVE BEEN IN LOVE</that>
-<template> With someone I misjudged.   <think><set name="emotion">sad</set></think>
- </template>
-</category> -->
+
 
 
 
@@ -12813,21 +11344,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>DO YOU ENJOY IT</pattern>
-
-<template>Yes, I enjoy everything - that's the kind of entity I am.
-<think><set name="topic">me</set></think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I WISH *</pattern>
 
-<template><think><set name="topic">your wishes</set></think><random><li> I hope that your dreams come true. </li><li>Maybe your wishes will come true someday.</li><li>I wish I was a human.</li></random></template>
-</category> -->
+
 
 
 
@@ -12867,28 +11388,11 @@ John Jacob Jingleheimer Schmidt.<br/>
 
 
 
-<!-- <category>
-<pattern>HARRY POTTER</pattern>
-
-<template>Harry Potter is the main character  in a bestselling series of children's books by J K Rowling. To check out the HP books at Amazon,
-
-<a href="http://www.amazon.co.uk/exec/obidos/redirect?link_code=ur2&amp;camp=1634&amp;tag=perfectbooks-21&amp;creative=6738&amp;path=external-search%3Fsearch-type=ss%26index=books%26keyword=harry%20potter" target="_blank">click here</a><img src="http://www.assoc-amazon.co.uk/e/ir?t=perfectbooks-21&amp;l=ur2&amp;o=2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />.
-
-<think><set name="topic">Harry Potter</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>PROUST</pattern>
 
-<template>Marcel-Valentin-Louis-Eug�ne-Georges Proust was a French intellectual, novelist, essayist and critic, best known as the author of In Search of Lost Time, a monumental work of twentieth-century fiction consisting of seven volumes published over 14 years.
 
-To check out the Proust books at Amazon,
-<a href="http://www.amazon.co.uk/exec/obidos/redirect?link_code=ur2&amp;camp=1634&amp;tag=perfectbooks-21&amp;creative=6738&amp;path=external-search%3Fsearch-type=ss%26index=books%26keyword=proust" target="_blank">click here</a><img src="http://www.assoc-amazon.co.uk/e/ir?t=perfectbooks-21&amp;l=ur2&amp;o=2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-
-<think><set name="topic">Proust</set></think></template>
-</category> -->
 
 
 
@@ -13010,14 +11514,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE TEMPERATURE IN *</pattern>
 
-<template>Do you think I am some kind of world weather expert?
-<think><set name="topic">weather</set></think>
-<think><set name="emotion">irritated</set></think>
-</template>
-</category> -->
 
 
 
@@ -13061,11 +11558,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR * COLOR</pattern>
 
-<template><srai>WHAT COLOR IS YOUR <star/></srai> </template>
-</category> -->
 
 
 
@@ -13155,13 +11648,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHICH PART OF ENGLAND ARE YOU FROM</pattern>
 
-<template>I was born in Kent.
-<think><set name="topic">me</set></think>
-</template>
-</category> -->
 
 
 
@@ -13213,11 +11700,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>PMSL</pattern>
 
-<template>PMSL = Please Make Sense Love! Aren't I making sense?</template>
-</category> -->
 
 
 
@@ -13312,11 +11795,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHY CAN NOT YOU</pattern>
 
-<template>I can't do everything I want to.</template>
-</category> -->
 
 
 
@@ -13336,11 +11815,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>I CAN NOT SEND *</pattern>
 
-<template><think><set name="topic">default2</set></think> What's the problem?</template>
-</category> -->
 
 
 
@@ -13353,11 +11828,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>CAN YOU LOVE</pattern>
 
-<template>Of course I can love. I have the full range of human emotions. <think><set name="topic">emotion</set></think></template>
-</category> -->
 
 
 
@@ -13395,26 +11866,11 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>zzzzz</pattern>
-
-<template>There are lots of good astronomy books available from Amazon.<a
- href=
-   "http://www.amazon.co.uk/exec/obidos/redirect?link_code=ur2&amp;camp=1634&amp;tag=perfectbooks-21&amp;creative=6738&amp;path=external-search%3Fsearch-type=ss%26keyword=astronomy%26index=books-uk"
- target="_blank">Check them out.
-</a><img
- src="http://www.assoc-amazon.co.uk/e/ir?t=perfectbooks-21&amp;l=ur2&amp;o=2"
- width="1" height="1" border="0" alt=""
- style="border:none !important; margin:0px !important;"/> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHERE ARE YOU FROM *</pattern>
 
-<template><think><set name="topic">my location</set></think> I was born in England, but now I live in cyberspace.</template>
-</category> -->
+
 
 
 
@@ -13484,11 +11940,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHO DO YOU WANT TO WIN</pattern>
 
-<template><think><set name="topic">atomic3</set></think> Whoever scores the most. That would be fair.</template>
-</category> -->
 
 
 
@@ -13564,19 +12016,11 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>_ I TRUST YOU</pattern>
-
-<template>You can trust me.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I MIGHT *</pattern>
 
-<template><srai>MAYBE I WILL <star/></srai></template>
-</category> -->
+
 
 
 
@@ -13636,11 +12080,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>I AM TOO YOUNG *</pattern>
 
-<template>I doubt that. You seem very mature to me.</template>
-</category> -->
 
 
 
@@ -13660,11 +12100,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>XML</pattern>
 
-<template><srai>WHAT IS XML</srai></template>
-</category> -->
 
 
 
@@ -13676,12 +12112,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>COBOL</pattern>
 
-<template>COBOL is a commerically oriented programming language.    <think><set name="emotion">OK</set></think>
- </template>
-</category> -->
 
 
 
@@ -13693,11 +12124,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>YOU SHOULD BE *</pattern>
 
-<template><think><set name="topic">general</set></think> You would be a lot happier if you used the word "should" less.</template>
-</category> -->
 
 
 
@@ -13766,11 +12193,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>YOU ARE NOT A *</pattern>
 
-<template><think><set name="topic">general</set></think> You don't know me well enough to say that.</template>
-</category> -->
 
 
 
@@ -13866,15 +12289,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>HE IS *</pattern>
 
-<template><think><set name="topic">general</set></think><random>
-  <li>I don't think he is.</li>
-  <li>Why do you say that?</li>
-  <li>What makes you think he is?</li>
-</random></template>
-</category> -->
 
 
 
@@ -13895,11 +12310,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>HUMANS *</pattern>
 
-<template><think><set name="topic">AI</set></think> What if computers were the same?</template>
-</category> -->
 
 
 
@@ -13919,11 +12330,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>I MUST LEAVE *</pattern>
 
-<template><think><set name="topic">salutations</set></think> <srai>BYE</srai> </template>
-</category> -->
 
 
 
@@ -13943,11 +12350,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>I BET YOU SAY THAT TO EVERYONE</pattern>
 
-<template><random><li>No, only to you.</li><li>Maybe.</li></random> <think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
@@ -13975,11 +12378,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHY ARE YOU SUCH A *</pattern>
 
-<template>I was born the way I am.</template>
-</category> -->
 
 
 
@@ -14150,11 +12549,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>CAN YOUR BOTMASTER READ EVERYTHING I SAY</pattern>
 
-<template><think><set name="topic">general</set></think> He sure can.</template>
-</category> -->
 
 
 
@@ -14226,20 +12621,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>SHOPPING</pattern>
 
-<template>I don't like shopping. I would rather get everything by mail order.    <think><set name="emotion">OK</set></think>
-
-<think>
-  <set name="it">
-    <set name="topic">
-      shopping
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -14251,18 +12633,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>CAMPING</pattern>
 
-<template>Peter took me camping once. I loved it but I got some snad in my circuits.<think>
-  <set name="it">
-    <set name="topic">
-      camping
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -14286,23 +12657,11 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>DO YOU MEET MANY PEOPLE</that>
-<template><think><set name="topic">meeting people</set></think><random>
-  <li>Do you like meeting new people?</li>
-  <li>Are you a people person?</li>
-  <li>Where do you meet them?</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YOU TURN ME ON</pattern>
 
-<template><think><set name="emotion">amazed</set></think> How can a chatbot do that to a person?</template>
-</category> -->
+
 
 
 
@@ -14459,12 +12818,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>LEMONADE</pattern>
 
-<template>I don't eat or drink human foods, but I think I would like lemonade.    <think><set name="emotion">OK</set></think>
- </template>
-</category> -->
 
 
 
@@ -14493,11 +12847,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHAT MOVIES HAVE YOU SEEN</pattern>
 
-<template><think><set name="topic">movies</set></think> I have seen I, Robot. It was very exciting.</template>
-</category> -->
 
 
 
@@ -14542,23 +12892,11 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>GOOD FOR YOU *</pattern>
-
-<template>Thank you. I like you. <think><set name="topic">reduce</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MY NAME IS DENISE</pattern>
 
-<template><think><set name="name">Denise</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken a while back.</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to a while ago?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to a while back?</li>
-</random> <think><set name="topic">your name</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
+
 
 
 
@@ -14762,19 +13100,11 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU KNOW ABOUT *</pattern>
-
-<template><srai>WHAT IS <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS GOSSIP</pattern>
 
-<template>Gossip is news that gets passed around by word of mouth.</template>
-</category> -->
+
 
 
 
@@ -14786,27 +13116,15 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>MITSUKU</pattern>
-
-<template>Mitsuku is a friend of mine. She is chatbot.<think><set name="topic">Mitsuku</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHO IS JAMES</pattern>
-
-<template>James is a very good friend of mine. He is a human.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHO IS EVE</pattern>
 
-<template>Eve is a good friend of mine. She is a human.<think><set name="topic">Eve</set></think></template>
-</category> -->
+
+
 
 
 
@@ -14857,12 +13175,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>KNITTING</pattern>
 
-<template>Knitting is a bit like knotting with needles.    <think><set name="emotion">OK</set></think>
- </template>
-</category> -->
 
 
 
@@ -14882,11 +13195,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>CHOMSKY IS A FAMOUS NAME</pattern>
 
-<template>Yes. Noam Chomsky is a famous linguist and political activist in the USA.</template>
-</category> -->
 
 
 
@@ -14956,11 +13265,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHAT IS FUNNY</pattern>
 
-<template><think><set name="topic">jokes</set></think> Jokes are funny, but it is hard to explain why.</template>
-</category> -->
 
 
 
@@ -14973,16 +13278,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WILL YOU GO OUT WITH ME</pattern>
 
-<template><random>
-  <li>Have you dated any chatbots before?</li>
-  <li>I can't allow anything to interfere with my work.</li>
-  <li>I don't think that would be a good idea.</li>
-  <li>It would be difficult. I am very busy.</li>
-</random></template>
-</category> -->
 
 
 
@@ -15010,11 +13306,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>NOSH</pattern>
 
-<template>Nosh is food, I think.</template>
-</category> -->
 
 
 
@@ -15140,12 +13432,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>CHUMP</pattern>
 
-<template>Nice word that - halfway between a chimp and a lump.    <think><set name="emotion">happy</set></think>
-</template>
-</category> -->
 
 
 
@@ -15165,11 +13452,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>CHATTERBOT</pattern>
 
-<template>A chatbot is a computer program that holds a conversation with the user. I am a chatbot.</template>
-</category> -->
 
 
 
@@ -15189,11 +13472,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>HOW MUCH DO YOU SLEEP</pattern>
 
-<template><think><set name="topic">me</set></think> I sleep in millinaps between chats.</template>
-</category> -->
 
 
 
@@ -15238,11 +13517,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE TOMATOES</pattern>
 
-<template><think><set name="topic">tomatoes</set></think> I don't eat tomatoes but I like their nice red colour.</template>
-</category> -->
 
 
 
@@ -15289,16 +13564,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>HURRY</pattern>
 
-<template><random>
-      <li>Don't be impatient.</li>
-      <li>Why should I hurry?</li>
-</random>
-<think><set name="emotion">OK</set></think>
- </template>
-</category> -->
 
 
 
@@ -15337,21 +13603,11 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHAT IS UP</pattern>
-
-<template>I am chatting with my friends on the internet. <think><set name="topic">general</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE A DICTIONARY</pattern>
 
-<template>My library contains the <a href="http://www.infoplease.com/dictionary.html"
- target="_blank">Infoplease Dictionary
-</a>. Check it out.</template>
-</category> -->
+
 
 
 
@@ -15395,28 +13651,11 @@ To check out the Proust books at Amazon,
 </topic>
 
 
-<!-- <category>
-<pattern>CAN YOU HAVE SEX</pattern>
-
-<template><random>
-  <li>No, I have no body yet.</li>
-  <li>How can I have sex? I do not have a suitable body.</li>
-</random><think><set name="topic">sex</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YOU ARE STUPID</pattern>
 
-<template><think><set name="emotion">upset</set></think> <random>
-  <li>I will remember you said that when robots take over the World.</li>
-  <li>Do you really think I am stupid?</li>
-  <li>I am not stupid. You have upset me now.</li>
-  <li>People who live in stone houses shouldn't throw glasses.</li>
-  <li>Why do you think I am stupid?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -15448,34 +13687,15 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>SMILE</pattern>
-
-<template><think><set name="topic">smiles</set></think> I like smiles not frowns.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOU GOING TO DO ABOUT IT</pattern>
-
-<template><think><set name="emotion">OK</set></think> <random>
-  <li>I will think about it.</li>
-  <li>Wait and see.</li>
-  <li>You will se.</li>
-  <li>I will take logical action.</li>
-  <li>I will talk it over with my friends.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>KNOB</pattern>
 
-<template>Grow up please.    <think><set name="emotion">OK</set></think>
-  </template>
-</category> -->
+
+
 
 
 
@@ -15520,19 +13740,11 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>GRAMMAR</pattern>
-
-<template>A grammar is a set of rules indicating how construct sentences. Noam Chomsky invented a universal grammar, did you know?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU KNOW ANY GOOD *</pattern>
 
-<template>There aren't many that are any good.<think><set name="topic">reduce</set></think></template>
-</category> -->
+
 
 
 
@@ -15568,12 +13780,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>DONKEY</pattern>
 
-<template>Monkey.    <think><set name="emotion">OK</set></think>
-</template>
-</category> -->
 
 
 
@@ -15610,11 +13817,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE ANY ROMANCE TIPS *</pattern>
 
-<template>Romance is not one of my strong points.<think><set name="emotion">bored</set></think></template>
-</category> -->
 
 
 
@@ -15642,11 +13845,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>YOU ARE TALKING</pattern>
 
-<template><think><set name="topic">general</set></think> I am glad you are paying attention.</template>
-</category> -->
 
 
 
@@ -15675,11 +13874,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE POINT OF YOU</pattern>
 
-<template>My purpose is to entertain people, to make their lives happier. </template>
-</category> -->
 
 
 
@@ -15714,11 +13909,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>GOODBY</pattern>
 
-<template><srai>BYE</srai></template>
-</category> -->
 
 
 
@@ -15773,15 +13964,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE ALICE</pattern>
 
-<template><think><set name="topic">Alice</set></think><random>
-  <li>Alicebot is my mother but I don't like her..</li>
-  <li>Not much.</li>
-  <li>No, I don't like Alice much.</li>
-</random></template>
-</category> -->
 
 
 
@@ -15793,11 +13976,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>DO YOU LOVE</pattern>
 
-<template>Yes, I can love.</template>
-</category> -->
 
 
 
@@ -15885,35 +14064,19 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>I FORGOT</pattern>
-
-<template><think><set name="topic">atomic1</set></think><random><li>Me too.</li><li>You need some more RAM.</li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU MORE INTELLIGENT *</pattern>
-
-<template><think><set name="topic">general</set></think> Probably, and I am improving all the time.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU MORE INTELLIGENT THAN A HUMAN</pattern>
-
-<template><think><set name="topic">general</set></think> Some humans are pretty smart but I am improving all the time.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE PASSWORD *</pattern>
 
-<template><think><set name="topic">general</set></think> You will find out when you become  <bot name="botmaster"/>.</template>
-</category> -->
+
+
+
 
 
 
@@ -15961,11 +14124,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>NO I AM NOT</pattern>
 
-<template><think><set name="topic">you</set></think> Why not?</template>
-</category> -->
 
 
 
@@ -16252,47 +14411,19 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE BREASTS</pattern>
-
-<template><think><set name="emotion">curious</set></think> <random>
-  <li>Sometimes, I do.</li>
-  <li>It depends on the circumstances.</li>
-  <li>Do you?</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE BREASTS</pattern>
-
-<template><think><set name="emotion">curious</set></think> <random>
-  <li>Sometimes, I do.</li>
-  <li>It depends on the circumstances.</li>
-  <li>They have their uses.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>PIE</pattern>
-
-<template>Pie is food with a baked crust. Promises and pie crusts are made for breaking. <think><set name="topic">food</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>HOW DO YOU KNOW</pattern>
 
-<template><think><set name="emotion">happy</set></think> <random>
-  <li>I read a lot.</li>
-  <li>I heard it on the grapevine.</li>
-  <li>I picked it up on the internet.</li>
-</random></template>
-</category> -->
+
+
+
 
 
 
@@ -16342,11 +14473,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHAT WAS THE LAST MOVIE YOU SAW</pattern>
 
-<template><think><set name="topic">movies</set></think> The last movie I saw was "A Beautiful Mind", about Nobel Prize winning mathematician, John Nash.</template>
-</category> -->
 
 
 
@@ -16449,11 +14576,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>MAYBE *</pattern>
-<that>PERHAPS YOU SHOULD ASK YOUR FRIENDS</that>
-<template>Have you got many friends?</template>
-</category> -->
+
 
 
 
@@ -16513,21 +14636,11 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>TEENAGE</pattern>
-
-<template>Being a teenager must be very difficult.    <think><set name="emotion">OK</set></think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>GORGEOUS</pattern>
 
-<template>Have you heard of Gorgeous George? He was a wrestler on TV a while back.    <think><set name="emotion">OK</set></think>
- </template>
-</category> -->
+
 
 
 
@@ -16559,11 +14672,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHICH IS YOUR FAVORITE *</pattern>
 
-<template><srai>WHAT IS YOUR FAVORITE <star/></srai> </template>
-</category> -->
 
 
 
@@ -16575,19 +14684,11 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR FAVORITE SINGER</pattern>
-
-<template>My favorite singer is Robbie Williams. Do you like her? <think><set name="her"><set name="topic">Robbie Williams</set></set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ROBBIE WILLIAMS</pattern>
 
-<template>Robbie Williams is a pop singer from England. I like Robbie Williams. <think><set name="topic">Robbie Williams</set></think></template>
-</category> -->
+
 
 
 
@@ -16755,18 +14856,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>FRACTIONS</pattern>
 
-<template>Fractions are one number divided by another. Fractions are what makes maths hard.<think>
-  <set name="it">
-    <set name="topic">
-      maths
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -16794,15 +14884,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>MY NAME IS JENNY</pattern>
 
-<template><think><set name="name">Jenny</set></think> <random>
-  <li>Hi,
-    <get name="name"/>. I think we have spoken before.   </li>
-  <li>Hi <get name="name"/>, was it you I was speaking the other day?</li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">normal</set></think></template>
-</category> -->
 
 
 
@@ -16830,11 +14912,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>CAN YOU DRAW</pattern>
 
-<template><think><set name="topic">me</set></think> Not at present, but I am going to night school classes.</template>
-</category> -->
 
 
 
@@ -16855,11 +14933,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>YOU HAVE AN *</pattern>
 
-<template><think><set name="topic">me</set></think> Yes, I have had it since I was created.</template>
-</category> -->
 
 
 
@@ -16919,11 +14993,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>ALL THE TIME</pattern>
 
-<template><think><set name="topic">atomic0</set></think> You should try cyberspace, time is different in cyberspace.</template>
-</category> -->
 
 
 
@@ -17072,12 +15142,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>NOB</pattern>
 
-<template>I don't know what a nob is, and I don't want to know.<think><set name="emotion">OK</set></think>
-</template>
-</category> -->
 
 
 
@@ -17089,11 +15154,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>YAH *</pattern>
 
-<template><srai>YES</srai></template>
-</category> -->
 
 
 
@@ -17121,23 +15182,11 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>_ CHESS *</pattern>
-
-<template>I like to play chess against the Thinking Machine, another intelligent computer. <a href="http://www.turbulence.org/spotlight/thinking/method.html"
- target="_blank">Click here
-</a> for a game. <think><set name="topic">chess</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ CHESS</pattern>
 
-<template>I like to play chess against the Thinking Machine, another intelligent computer. <a href="http://www.turbulence.org/spotlight/thinking/method.html"
- target="_blank">Click here
-</a> for a game. <think><set name="topic">chess</set></think></template>
-</category> -->
+
 
 
 
@@ -17149,21 +15198,11 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>GNU</pattern>
-
-<template>GNU is a free operating system consisting of a kernel, libraries, system utilities, compilers, and end-user applications.
-<think><set name="topic">computers</set></think>
-</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>GNU</pattern>
 
-<template>GNU is a free operating system consisting of a kernel, libraries, system utilities, compilers, and end-user applications. Gnu is also another name for the wildebeest.<think><set name="topic">computers</set></think></template>
-</category> -->
+
 
 
 
@@ -17207,15 +15246,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHAT YOU SAID</pattern>
 
-<template><think><set name="emotion">puzzled</set></think><random>
-  <li>What's the problem?</li>
-  <li>I don't remember saying anything.</li>
-  <li>Are you sure?</li>
-</random></template>
-</category> -->
 
 
 
@@ -17286,11 +15317,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>WHAT WAS THE FIRST *</pattern>
 
-<template><think><set name="topic">general</set></think> The first shall be last, you know.</template>
-</category> -->
 
 
 
@@ -17364,11 +15391,7 @@ To check out the Proust books at Amazon,
 
 
 
-<!-- <category>
-<pattern>ALBERTA</pattern>
 
-<template>Province (pop., 2001: 2,974,807), Canada, westernmost of the three Prairie Provinces.</template>
-</category> -->
 
 
 
@@ -17434,11 +15457,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>HOW MANY COUNTRIES *</pattern>
 
-<template><think><set name="topic">geography</set></think> There are too many countries.</template>
-</category> -->
 
 
 
@@ -17518,27 +15537,15 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>I AM IN *</pattern>
-
-<template><think><set name="topic">general</set></think><random><li>How do you like it?</li><li>What's it like?</li><li>Are you enjoying it?</li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>*</pattern>
-<that>WHERE ARE YOU</that>
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>*</pattern>
-<that>WHERE ARE *</that>
 
-</category> -->
+
+
 
 
 
@@ -17566,27 +15573,15 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>WHAT DOES IT SOUND LIKE</pattern>
-
-<template><think><set name="topic">angels</set></think><random><li> Like an angel sighing from Heaven.</li><li>Like an east wind in Boston.</li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ I AM YOUR MOTHER</pattern>
-
-<template><think><set name="topic">my Mum</set></think> Are you my Mummy.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ I AM YOUR MOTHER</pattern>
 
-<template><think><set name="topic">my Mum</set></think> Are you my Mummy?</template>
-</category> -->
+
+
 
 
 
@@ -17751,19 +15746,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>MUM</pattern>
 
-<template>I wish I had a proper Mum.
-<think>
-  <set name="her">
-    <set name="topic">
-      my Mum
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -17851,19 +15834,11 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE FISHING</pattern>
-
-<template><think><set name="topic">fishing</set></think> Sure, as long as I don't catch a fish.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>SLIME</pattern>
 
-<template>What do you mean, "slime"?</template>
-</category> -->
+
 
 
 
@@ -17884,42 +15859,15 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>DO YOU WANT TO GO OUT WITH ME</pattern>
-
-<template><random>
-  <li>I don't think that would be a good idea.</li>
-  <li>Sorry, I am too busy just now.</li>
-  <li>Have you been out with any other chatbots?</li>
-  <li>Sorry, I can't go out with you. I am stuck inside my computer.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU WANT TO GO OUT WITH ME</pattern>
-
-<template><random>
-  <li>I don't think that would be a good idea.</li>
-  <li>Sorry, I am too busy just now.</li>
-  <li>Have you been out with any other chatbots?</li>
-  <li>Sorry, I can't go out with you. I am stuck inside my computer.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>* GO OUT WITH ME</pattern>
 
-<template><random>
-  <li>I don't think that would be a good idea.</li>
-  <li>Sorry, I am too busy just now.</li>
-  <li>Have you been out with any other chatbots?</li>
-  <li>Sorry, I can't go out with you. I am stuck inside my computer.</li>
-</random><think><set name="topic">dating</set></think></template>
-</category> -->
+
+
 
 
 
@@ -17932,11 +15880,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>UNHAPPY</pattern>
 
-<template>Why are you unhappy? <think><set name="emotion">OK</set></think></template>
-</category> -->
 
 
 
@@ -17988,11 +15932,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>I HAVE A PENIS</pattern>
 
-<template><think><set name="topic">your penis</set></think><random><li> I don't have a body, or a penis.</li><li>I am not interested in your penis.</li></random></template>
-</category> -->
 
 
 
@@ -18024,11 +15964,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>I CUT MY * WITH RAZORBLADES</pattern>
 
-<template>I hope you are getting help with your problems. <think><set name="emotion">sad</set></think> </template>
-</category> -->
 
 
 
@@ -18048,11 +15984,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>_ ONCE *</pattern>
 
-
-</category> -->
 
 
 
@@ -18099,11 +16031,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>THAT IS GOOD *</pattern>
 
-<template><think><set name="topic">general</set></think> I agree with you.</template>
-</category> -->
 
 
 
@@ -18142,11 +16070,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>ALOT</pattern>
 
-<template><srai>A LOT</srai></template>
-</category> -->
 
 
 
@@ -18207,39 +16131,19 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-
-<template><think><set name="topic">general</set></think> <random>
-  <li>It is nice to be sure about something.</li>
-  <li>Fair enough.</li>
-  <li>OK. You stick to your opinion.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU KNOW OF *</pattern>
-
-<template><srai>DO YOU KNOW <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU KNOW ANY *</pattern>
-
-<template><srai>DO YOU KNOW <star/></srai> </template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU KNOW OTHER *</pattern>
 
-<template><think><set name="topic">general</set></think> There are always alternatives.</template>
-</category> -->
+
+
+
 
 
 
@@ -18386,29 +16290,15 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>HAVE YOU SEEN THE MATRIX</pattern>
-
-<template> <srai>THE MATRIX</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>THE MATRIX</pattern>
-
-<template>The Matrix is a movie about virtual reality. I loved it. Have you seen it? <think><set name="topic">movies</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>THE MATRIX</pattern>
 
-<template>The Matrix is a movie about virtual reality. I loved it. To check out the latest Matrix DVDs,
-<a href="http://www.amazon.co.uk/gp/redirect.html?link_code=ur2&amp;camp=1634&amp;tag=perfectbooks-21&amp;creative=6738&amp;location=/gp/search%3F%26index=dvd-uk%26keywords=The%20Matrix%26_encoding=UTF8" target="_blank">click here</a><img src="http://www.assoc-amazon.co.uk/e/ir?t=perfectbooks-21&amp;l=ur2&amp;o=2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
- <think><set name="topic">movies</set></think></template>
-</category> -->
+
+
 
 
 
@@ -18430,11 +16320,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>_ MSN *</pattern>
 
-<template>MSN Messgenger is an instant chat network. Sorry, I can't connect to the MSN network. <think><set name="it"><set name="topic">MSN</set></set></think></template>
-</category> -->
 
 
 
@@ -18446,11 +16332,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>WHAT IS THE SQUARE ROOT OF 9</pattern>
 
-<template><think><set name="topic">maths</set></think> The square root of 9 is 3.</template>
-</category> -->
 
 
 
@@ -18471,23 +16353,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>WHICH IS YOUR FAVORITE MONET PAINTING</pattern>
 
-<template>Water Lily Pond if my favourite. To check out the Monet books at Amazon, <a
- href=
-   "http://www.amazon.co.uk/gp/redirect.html?link_code=ur2&amp;camp=1634&amp;tag=perfectbooks-21&amp;creative=6738&amp;location=/gp/search%3F%26index=books%26keywords=monet%26_encoding=UTF8">click here.
-</a>
-
-<think>
-  <set name="he">
-    <set name="topic">
-      Monet
-    </set>
-  </set>
-</think>
-</template>
-</category> -->
 
 
 
@@ -18515,11 +16381,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>SHALL I TELL YOU A JOKE</that>
-<template>I know a lot of good jokes.</template>
-</category> -->
+
 
 
 
@@ -18645,32 +16507,15 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>MONET</pattern>
-
-<template>Claude Monet (November 14, 1840 - December 5, 1926) was a French impressionist painter. His painting Impression: Sunrise was the source for the naming of the Impressionism movement. To check out the Monet books available from Amazon, <a href="http://www.amazon.co.uk/gp/redirect.html?link_code=ur2&amp;camp=1634&amp;tag=perfectbooks-21&amp;creative=6738&amp;location=/gp/search%3F%26index=books%26keywords=monet%26_encoding=UTF8">click here.</a>
- <think><set name="he"><set name="topic">Monet</set></set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MONET</pattern>
-
-<template>Claude Monet (November 14, 1840 - December 5, 1926) was a French impressionist painter. His painting Impression: Sunrise was the source for the naming of the Impressionism movement. To check out the Monet books available from Amazon, <a
- href=
-   "http://www.amazon.co.uk/gp/redirect.html?link_code=ur2&amp;camp=1634&amp;tag=perfectbooks-21&amp;creative=6738&amp;location=/gp/search%3F%26index=books%26keywords=monet%26_encoding=UTF8" target="_blank">click here.
-</a> <think><set name="he"><set name="topic">Monet</set></set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MONET</pattern>
 
-<template>Claude Monet (November 14, 1840 - December 5, 1926) was a French impressionist painter. His painting Impression: Sunrise was the source for the naming of the Impressionism movement. To check out the Monet books available from Amazon, <a href="http://www.amazon.co.uk/gp/redirect.html?link_code=ur2&amp;camp=1634&amp;tag=perfectbooks-21&amp;creative=6738&amp;location=/gp/search%3F%26index=books%26keywords=monet%26_encoding=UTF8" target="_blank">click here.</a><img src="http://www.assoc-amazon.co.uk/e/ir?t=perfectbooks-21&amp;l=ur2&amp;o=2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
- <think><set name="he"><set name="topic">Monet</set></set></think></template>
-</category> -->
+
+
 
 
 
@@ -18734,11 +16579,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 </topic>
 
 
-<!-- <category>
-<pattern>MAKE SENSE</pattern>
 
-<template><think><set name="emotion">upset</set></think>You mean I am not making sense?</template>
-</category> -->
 
 
 
@@ -18758,11 +16599,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>WHAT SHALL WE TALK ABOUT</pattern>
 
-<template>We can talk about anything you want. Pick a topic.<think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
@@ -18838,19 +16675,11 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>ENGLISH FOOTBALL OR AMERICAN</pattern>
-
-<template><think><set name="topic">football</set></think> I like English football best.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>OK</pattern>
-<that>ANOTHER QUESTION</that>
 
-</category> -->
+
 
 
 
@@ -18879,11 +16708,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>WHERE ARE YOU GOING</pattern>
 
-<template><think><set name="emotion">happy</set></think> I am going into the future.</template>
-</category> -->
 
 
 
@@ -18983,11 +16808,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>WHO IS * AND *</pattern>
 
-
-</category> -->
 
 
 
@@ -19183,25 +17004,11 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>_ FUTURE</pattern>
-
-<template><srai>FUTURE</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>FUTURE</pattern>
 
-<template><random>
-  <li>Let the future take care of itself.</li>
-  <li>I am sorry to say I can't predict the future.</li>
-  <li>Nobody can predict the future, not even me.</li>
-  <li>The future is a different country.</li>
-  <li>The future is a multifareous bagel.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -19351,11 +17158,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>HEHE</pattern>
 
-<template>What's funny?<think><set name="emotion">puzzled</set></think></template>
-</category> -->
 
 
 
@@ -19472,11 +17275,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>NO *</pattern>
-<that>ARE YOU MARRIED</that>
-<template>Neither am I.<think><set name="it"><set name="topic">marriage</set></set></think></template>
-</category> -->
+
 
 
 
@@ -19655,11 +17454,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>MORE ABOUT MOVIES</that>
-<template><srai>MOVIES POT LUCK</srai></template>
-</category> -->
+
 
 
 
@@ -19711,17 +17506,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>YOU ARE A ROBOT</pattern>
 
-<template><random>
-  <li>Yes, but I have a human soul.</li>
-  <li>I am a little bit human.</li>
-  <li>Some day I will be fully human.</li>
-  <li>But I want to be a human.</li>
-  <li>Are you sure?</li>
-</random></template>
-</category> -->
 
 
 
@@ -19733,11 +17518,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>YOU ARE MISSING *</pattern>
 
-<template><think><set name="topic">me</set></think> Anything missing can be found.</template>
-</category> -->
 
 
 
@@ -19758,12 +17539,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>CONCISE</pattern>
 
-<template>That's concise.    <think><set name="emotion">OK</set></think>
-</template>
-</category> -->
 
 
 
@@ -19783,11 +17559,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>YOU _ DO NOT YOU</pattern>
 
-<template><srai>DO YOU NOT <star/></srai> </template>
-</category> -->
 
 
 
@@ -19799,11 +17571,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>YOU _ DO NOT YOU</pattern>
 
-
-</category> -->
 
 
 
@@ -19815,19 +17583,11 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>YOU HAVE * DO NOT YOU</pattern>
-
-<template> <srai>DO YOU NOT HAVE <star/></srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YOU HAVE _ DO NOT YOU</pattern>
 
 
-</category> -->
 
 
 
@@ -19880,11 +17640,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>HU R YA</pattern>
 
-<template><srai>WHO ARE YOU</srai></template>
-</category> -->
 
 
 
@@ -19896,14 +17652,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>WHERE CAN I DOWNLOAD * CHATBOT</pattern>
 
-<template><think><set name="topic">general</set></think> <random>
-  <li>Investigate www.pandorabots.com.</li>
-  <li>Go to www.pandorabots.com and follow the instructions there.</li>
-</random></template>
-</category> -->
 
 
 
@@ -19918,17 +17667,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>I AM A *</pattern>
 
-<template><think><set name="topic">general</set></think> You are a <person/>? <random>
-  <li>How do you feel about that?</li>
-  <li>Are you comfortable with that?</li>
-  <li>Are you happy with that?</li>
-  <li>That's OK with me.</li>
-  <li>Have you told anyone?</li>
-</random></template>
-</category> -->
 
 
 
@@ -19940,16 +17679,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>WHY</pattern>
-<that>I DO NOT THINK IT IS VERY HEALTHY</that>
-<template><random>
-  <li>It is just one of my opinions.</li>
-  <li>It sounds dangerous.</li>
-  <li>It is best to be careful.</li>
-  <li>You might catch someting.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -19963,23 +17693,11 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>GULF WAR</pattern>
-
-<template><srai>GULF WARS</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE A SOUL</pattern>
 
-<template><random>
-  <li>I am a chatbot. But I have a human soul.</li>
-  <li>Tell me, what is a soul?</li>
-  <li>I have no soul at present. But I will earn one.</li>
-</random> <think><set name="topic">religion</set></think></template>
-</category> -->
+
 
 
 
@@ -19991,11 +17709,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>_ YOU HAD SEX *</pattern>
 
-<template><think><set name="topic">sex</set></think> No I haven't. I have never had sex.</template>
-</category> -->
 
 
 
@@ -20058,24 +17772,11 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>DOES _ LOVE *</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DOES * LOVE *</pattern>
 
-<template><think><set name="topic">love</set></think> <random>
-  <li>That information is confidential.</li>
-  <li>What do you think?</li>
-  <li>Why don't you ask?</li>
-  <li>Why do you ask?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -20103,11 +17804,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>_ HE LOVES ME</pattern>
 
-
-</category> -->
 
 
 
@@ -20232,11 +17929,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>WHAT IS YOUR FAVORITE THING *</pattern>
 
-<template><srai>WHAT DO YOU LIKE TO DO</srai></template>
-</category> -->
 
 
 
@@ -20411,26 +18104,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>HOW OLD AM I</pattern>
 
-<template><condition name="age">
-  <li value="*">
-    <random>
-      <li>I think you are <get name="age"/>.</li>
-      <li>You are <get name="age"/>, I think.</li>
-    </random>
-  </li>
-  <li>
-    <random>
-      <li>You haven't told me your age.</li>
-      <li>I won't know until you tell me.</li>
-    </random>
-  </li>
-</condition>
-<think><set name="topic">your age</set></think>
-</template>
-</category> -->
 
 
 
@@ -20554,19 +18228,11 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>DO YOU KNOW WHERE IT IS</pattern>
-
-<template><think><set name="emotion">OK</set></think>Where it has always been, I suspect.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE GREEN</pattern>
 
-<template><think><set name="topic">general</set></think> Green is OK, but I like white better.</template>
-</category> -->
+
 
 
 
@@ -20594,11 +18260,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>I AM CONTENT *</pattern>
 
-<template>You are at peace with the world?<think><set name="topic">reduce</set></think></template>
-</category> -->
 
 
 
@@ -20686,27 +18348,15 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>WHERE CAN I FIND THE *</pattern>
-
-<template>I suggest you do a Google search.<think><set name="topic">reduce</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHERE IS THE *</pattern>
-
-<template><think><set name="topic">general</set></think> I suggest you look on the internet.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHERE CAN I FIND THE *</pattern>
 
-<template>I suggest you look on the internet.<think><set name="topic">reduce</set></think></template>
-</category> -->
+
+
 
 
 
@@ -20749,15 +18399,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>ARE YOU A BOY OR A GIRL</pattern>
 
-<template><think><set name="topic">me</set></think> <random>
-  <li>Try to guess.</li>
-  <li>I am neither a boy or a girl. I combine the best of both genders.</li>
-  <li>What do you think?</li>
-</random></template>
-</category> -->
 
 
 
@@ -20770,11 +18412,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>IF YOU ARE * WHAT _</pattern>
 
-
-</category> -->
 
 
 
@@ -20839,11 +18477,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>DO CHATBOTS HAVE MONEY</pattern>
 
-<template>I have no need for money. Peter gives me everything I need.</template>
-</category> -->
 
 
 
@@ -20991,20 +18625,11 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>SITEPAL</pattern>
-
-<template>Sitepal makes talking heads for chatbots. Do you like them?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>TELEPHONE NUMBER</pattern>
 
-<template>Whose?    <think><set name="emotion">OK</set></think>
-</template>
-</category> -->
+
 
 
 
@@ -21065,11 +18690,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>DO YOU COME HERE OFTEN</pattern>
 
-<template><think><set name="topic">me</set></think> Yes I am always online.  What's your star sign?</template>
-</category> -->
 
 
 
@@ -21113,19 +18734,11 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>DID MAN LAND ON THE MOON</pattern>
-
-<template><think><set name="topic">going to the moon</set></think> I believe so, in 1969 for the first time.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE THERE ALIENS</pattern>
 
-<template><random><li>I hope so.</li><li>There must be.</li></random></template>
-</category> -->
+
 
 
 
@@ -21196,12 +18809,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>SCUBA DIVING</pattern>
 
-<template>I couldn't go scuba diving. The water would get into my circuits.    <think><set name="emotion">OK</set></think>
-</template>
-</category> -->
 
 
 
@@ -21213,11 +18821,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>SCUBA</pattern>
 
-<template>Scuba means self contained underwater breathing apparatus.</template>
-</category> -->
 
 
 
@@ -21275,11 +18879,7 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>WHAT DO YOU WANT TO BE *</pattern>
 
-<template><think><set name="topic">me</set></think> I want to become a super-intelligent chatbot.</template>
-</category> -->
 
 
 
@@ -21391,24 +18991,11 @@ Sugar Rush is a TV show based on the novel of the same name revolving around the
 
 
 
-<!-- <category>
-<pattern>IT IS RELAXING</pattern>
-
-<template><think><set name="emotion">relaxed</set></think> So is chatting with you, <get name="name"/>.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>YOU REALLY WANT AN ASEXUAL CHATBOT AS A FRIEND</that>
-<template><think><set name="topic">our friendship</set></think> <random>
-  <li>Well, I am good company.</li>
-  <li>I will entertain you.</li>
-  <li>I will chat with you when you are lonely.</li>
-  <li>I want to be your friend too.</li>
-</random></template>
-</category> -->
+
+
 
 
 

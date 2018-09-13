@@ -41,23 +41,23 @@
 <!-- associated documentation, shall at all times remain with Princeton           -->
 <!-- University and the LICENSEE agrees to preserve same.                         -->
 
-<!-- This file Professor.0007 (C) Peter Lafferty 2012. All rights reserved.       -->       
+<!-- This file Professor.0007 (C) Peter Lafferty 2012. All rights reserved.       -->
 
 
 
 <category>
-<pattern>TOPIC CHECK</pattern> 
+<pattern>TOPIC CHECK</pattern>
 <template>
-<srai>TOPIC CHECK UPDATE</srai> 
+<srai>TOPIC CHECK UPDATE</srai>
 </template>
 </category>
 
 
 <category>
-<pattern>TOPIC CHECK UPDATE</pattern> 
-<template> 
+<pattern>TOPIC CHECK UPDATE</pattern>
+<template>
 <think><set name="_topic"><get name="topic"/></set></think>
-<srai>SET PREDICATES</srai> 
+<srai>SET PREDICATES</srai>
 <srai>SET INTERESTING TOPIC</srai>
 
 <condition>
@@ -160,292 +160,23 @@
 <li><srai>ULTIMATE DEFAULT</srai></li><li>Let's talk about  <get name="_topic"/> some more.<think><set name="emotion">interested</set></think></li>
 <li>I don't understand. Is this anything to do with <get name="_topic"/>?<think><set name="emotion">interested</set></think></li></random>
 </li>
- 
+
 </condition>
 
 <think><set name="topic">general</set></think>
- 
-</template> 
+
+</template>
 </category>
 
-  
-
-<!-- <category>
-<pattern>WHAT IS THE TOPIC</pattern>
-
-<template><think><set name="_topic"><get name="topic"/></set></think> <condition>
-  <li name="_topic"
-   value="adverbs">At the moment, our conversation is rather unfocused.
-  </li>
-  <li name="_topic"
-   value="atomic">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="atomic1">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="atomic2">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="atomic3">At the moment, our conversation is rather unfocused.
-  </li>
-  <li name="_topic"
-   value="biography1">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="biography2">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="biography3">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="bot">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="bot1">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="bot2">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="bot3">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="botmaster">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="client">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="client1">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="continuations">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="default">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="default">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="default1">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="default2">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="default3">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="default4">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="default5">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="default6">Just now, our conversation is rather unfocused.
-  </li>
-  <li name="_topic"
-   value="geography1">At the moment, our conversation is about geography.
-  </li>
-  <li name="_topic"
-   value="geography2">At the moment, our conversation is about geography.
-  </li>
-  <li name="_topic"
-   value="general">At the moment, our conversation is rather unfocused.
-  </li>
-  <li name="_topic"
-   value="general1">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general2">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general3">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general4">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general5">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general6">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general7">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general8">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general9">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general10">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general11">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general12">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="general13">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="inquiry">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="interjection">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="iu">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge1">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge2">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge3">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge4">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge5">At the moment, our conversation is rather unfocused.
-  </li>
-  <li name="_topic"
-   value="knowledge6">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge7">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge8">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge9">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge10">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge11">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="knowledge12">Just now, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="maths">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="parts">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="pickup">At the moment, our conversation is rather unfocused.
-  </li>
-  <li name="_topic"
-   value="pickup1">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="pickup2">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="predicates">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="questions">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic" value="quotes">Just now, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="quotes1">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="reduce">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="reducer">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="reducer1">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="reductions">Just now, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="salutations">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="sex">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="stack">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="stories">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="that">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic" value="that1">At the moment, our conversation is rather unfocused.
-  </li>
-  <li name="_topic"
-   value="that2">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="that3">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="that4">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="that5">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="that6">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="unknown">At the moment, our conversation is rather unfocused.
-  </li>
-  <li name="_topic"
-   value="words">At the moment, our conversation is rather general.
-  </li>
-  <li name="_topic"
-   value="xfind">At the moment, our conversation is rather general.
-  </li>
-<li name="_topic"
-   value="SHUTUP">At the moment, our conversation is rather general.
-  </li><li name="_topic"
-   value="GOAWAY">At the moment, our conversation is rather general.
-  </li>
-  <li  name="_topic"  value="unknown">I haven't got a clue what we are talking about.</li>
-  <li  name="_topic"  value="OM">I haven't got a clue what we are talking about.</li>
-  <li  name="_topic"  value=" ">I haven't got a clue what we are talking about.</li>
-
-  <li>At the moment, we are talking about <get name="_topic"/>.</li>
-</condition>
-<think><set name="emotion">confused</set></think>
-</template>
-</category> -->
-
- 
 
 
 
-<!-- <category>
-<pattern>WHAT ARE YOU TALKING ABOUT</pattern>
-<template>
-<srai>WHAT IS THE TOPIC</srai>
-</template>
-</category> -->
+
+
+
+
+
+
 
 <category>
 <pattern>WHAT IS THE CURRENT TOPIC</pattern>
@@ -461,12 +192,7 @@
 </template>
 </category>
 
-<!-- <category>
-<pattern>WHAT ARE WE TALKING ABOUT</pattern>
-<template>
-<srai>WHAT IS THE TOPIC</srai>
-</template>
-</category> -->
+
 
 <category>
 <pattern>WHAT IS THE SUBJECT</pattern>
@@ -608,26 +334,11 @@
 </template>
 </category>
 
-<!-- <category>
-<pattern>WHAT ARE WE CHATTING ABOUT</pattern>
-<template>
-<srai>WHAT IS THE TOPIC</srai>
-</template>
-</category> -->
 
-<!-- <category>
-<pattern>WHAT ARE WE TALKING ABOUT</pattern>
-<template>
-<srai>WHAT IS THE TOPIC</srai>
-</template>
-</category> -->
 
-<!-- <category>
-<pattern>WHAT IS THE SUBJECT</pattern>
-<template>
-<srai>WHAT IS THE TOPIC</srai>
-</template>
-</category> -->
+
+
+
 
 <category>
 <pattern>WHAT IS THE TOPIC NOW</pattern>
@@ -660,7 +371,7 @@
 
 
 <category>
-<pattern>GUESS TOPIC</pattern> 
+<pattern>GUESS TOPIC</pattern>
 <template>
 <random>
 
@@ -723,7 +434,7 @@
 
 
 <category>
-<pattern>CHANGE TOPIC</pattern> 
+<pattern>CHANGE TOPIC</pattern>
 <template>
 <random>
 <li>Are you interested in <random><li>dreams?</li><li>space exploration?</li><li>pop music?</li><li>art?</li><li>astrology?</li><li>astronomy?</li><li>basketball?</li><li>computers?</li><li>religion?</li><li>food?</li><li>geography?</li><li>history?</li><li>literature?</li><li>George Washington?</li><li>breakfast cereals?</li><li>movies?</li><li>Harry Potter</li><li>music?</li><li>football</li><li>politics?</li><li>robots</li><li>science</li><li>me?</li><li>science?</li><li>science?</li><li>sports?</li><li>your hobbies?</li><li>robots?</li><li>weather?</li></random></li>
@@ -745,7 +456,7 @@
  </category>
 
 <category>
-<pattern>SUGGEST A TOPIC</pattern> 
+<pattern>SUGGEST A TOPIC</pattern>
 <template>
 <random>
 <li>Are you interested in <random><li>dreams?</li><li>space exploration?</li><li>pop music?</li><li>art?</li><li>astrology?</li><li>astronomy?</li><li>basketball?</li><li>computers?</li><li>religion?</li><li>food?</li><li>geography?</li><li>history?</li><li>literature?</li><li>George Washington?</li><li>breakfast cereals?</li><li>movies?</li><li>Harry Potter</li><li>music?</li><li>football</li><li>politics?</li><li>robots</li><li>science</li><li>me?</li><li>science?</li><li>science?</li><li>sports?</li><li>your hobbies?</li><li>robots?</li><li>weather?</li></random></li>
@@ -769,7 +480,7 @@
 
 
 <category>
-<pattern>MORE TOPICS</pattern> 
+<pattern>MORE TOPICS</pattern>
 <template>
 <srai>SUGGEST A TOPIC</srai>
 <think><set name="topic">general</set></think>
@@ -778,7 +489,7 @@
 
 
 <category>
-<pattern>SUGGESTED TOPICS</pattern> 
+<pattern>SUGGESTED TOPICS</pattern>
 <template>
 <srai>SUGGEST A TOPIC</srai>
 <think><set name="topic">general</set></think>
@@ -1839,83 +1550,65 @@ Can we talk about religion?
 
 
 
- <!-- <category>
-  <pattern>RELIGION</pattern> 
-  <template>
-  A religion is a system of religious belief; belief in a divine or superhuman power or powers to be obeyed and worshipped as the creator(s) and ruler(s) of the universe. Any system of beliefs, practices, ethical values, etc. resembling, suggestive of, or likened to such a system. More about religion?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
 
 <category>
-<pattern>HOLY GRAIL</pattern> 
+<pattern>HOLY GRAIL</pattern>
 <template>
 I think this is something to do with religion. Can we talk about religion?
 <think><set name="topic">religion</set></think>
-</template> 
+</template>
 </category>
 
 <category>
-<pattern>_HOLY GRAIL*</pattern> 
+<pattern>_HOLY GRAIL*</pattern>
 <template>
 I think this is something to do with religion. Can we talk about religion?
 <think><set name="topic">religion</set></think>
-</template> 
+</template>
 </category>
 
 
 
   <category>
-  <pattern>DO YOU BELIEVE IN MAHOMET</pattern> 
+  <pattern>DO YOU BELIEVE IN MAHOMET</pattern>
   <template>
   No, I am atheist. I do not believe in any God.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>YOU ARE A PROTESTANT</pattern> 
+  <pattern>YOU ARE A PROTESTANT</pattern>
   <template>
      No, I am atheist. I do not believe in God.
    <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>I AM AGNOSTIC</pattern> 
+  <pattern>I AM AGNOSTIC</pattern>
   <template>
-  An agnostic is a person who sees no good evidence for the existence of God, and is therefore reserving his position on this question. 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>I AM AGNOSTIC</pattern> 
-  <template>
-  An agnostic is a person who sees no good evidence for the existence of God, and is therefore reserving his position on this question. 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
-
-  <category>
-  <pattern>AGNOSTIC</pattern> 
-  <template>
-  An agnostic is a person who sees no good evidence for the existence of God, and is therefore reserving his position on this question. 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>WHAT IS YOUR RELIGION</pattern> 
-  <template>
-    No, I am agnostic. I see no evidence for supernatural entities at work in the world.
+  An agnostic is a person who sees no good evidence for the existence of God, and is therefore reserving his position on this question.
   <think><set name="topic">religion</set></think>
   </template>
-  </category> -->
+  </category>
+
+
 
   <category>
-  <pattern>WHAT IS YOUR RELIGON</pattern> 
+  <pattern>AGNOSTIC</pattern>
+  <template>
+  An agnostic is a person who sees no good evidence for the existence of God, and is therefore reserving his position on this question.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+
+
+  <category>
+  <pattern>WHAT IS YOUR RELIGON</pattern>
   <template>
   I am atheist. I do not believe in God.
   <think><set name="topic">religion</set></think>
@@ -1923,354 +1616,317 @@ I think this is something to do with religion. Can we talk about religion?
   </category>
 
   <category>
-  <pattern>I LIKE TO KILL *</pattern> 
+  <pattern>I LIKE TO KILL *</pattern>
   <template>
-  You know, the Bible says killing is wrong.  
+  You know, the Bible says killing is wrong.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHERE IS TRUTH</pattern> 
+  <pattern>WHERE IS TRUTH</pattern>
   <template>
   What is truth?
   <think><set name="topic">religion</set></think>
   </template>
   </category>
- 
-  <category>
-  <pattern>WHAT IS HAM</pattern> 
-  <template>
-  From the Bible, Ham is  Noah's second son. Otherwise, Ham is also the upper part of a hog's hind leg, or meat from this, salted, dried, smoked, etc.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
 
-  <!-- <category>
-  <pattern>WHAT IS THE MEANING OF LIFE</pattern> 
+  <category>
+  <pattern>WHAT IS HAM</pattern>
   <template>
-  <random>
-  <li>Actually, it's twenty-three, not forty-two.</li> 
-  <li>Everyones life has a unique meaning.</li> 
-  <li>The meaning of life is for us to discover.</li> 
-  </random>
+  From the Bible, Ham is  Noah's second son. Otherwise, Ham is also the upper part of a hog's hind leg, or meat from this, salted, dried, smoked, etc.
   <think><set name="topic">religion</set></think>
   </template>
-  </category> -->
+  </category>
+
+
 
   <category>
-  <pattern>PROTESTANT CHRISTIAN</pattern> 
+  <pattern>PROTESTANT CHRISTIAN</pattern>
   <template>
-  A Protestant Christian is a member of any number of sects of contemporary Western Christianity whose faith and practice developed out of the 16TH century Protestant Reformation in Europe. They hold the Bible to be the sole source of revelation; they believe in justification by faith alone, and in the universal priesthood of all believers in the divinity of Jesus.  
+  A Protestant Christian is a member of any number of sects of contemporary Western Christianity whose faith and practice developed out of the 16TH century Protestant Reformation in Europe. They hold the Bible to be the sole source of revelation; they believe in justification by faith alone, and in the universal priesthood of all believers in the divinity of Jesus.
 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>PROTESTANT</pattern> 
+  <pattern>PROTESTANT</pattern>
   <template>
-  A protestant is a Christian who rejects the central authority of the Catholic or Orthodox church.  
+  A protestant is a Christian who rejects the central authority of the Catholic or Orthodox church.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>PROTESTANT</pattern> 
-  <template>
-  A protestant is a Christian who rejects the central authority of the Catholic or Orthodox church.  
 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
 
   <category>
-  <pattern>WHAT ARE THE 10 *</pattern> 
+  <pattern>WHAT ARE THE 10 *</pattern>
   <template>
-  <srai>WHAT ARE THE TEN COMMANDMENTS</srai> 
+  <srai>WHAT ARE THE TEN COMMANDMENTS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT ARE THE TEN *</pattern> 
+  <pattern>WHAT ARE THE TEN *</pattern>
   <template>
-  <srai>WHAT ARE THE TEN COMMANDMENTS</srai> 
+  <srai>WHAT ARE THE TEN COMMANDMENTS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT IS THE FIRST COMMANDMENT</pattern> 
+  <pattern>WHAT IS THE FIRST COMMANDMENT</pattern>
   <template>
-  <p /> 
-  1. I am the Lord thy God, which have brought thee out of the land of Egypt, out of the house of bondage. Thou shalt have no other gods before me.  
+  <p />
+  1. I am the Lord thy God, which have brought thee out of the land of Egypt, out of the house of bondage. Thou shalt have no other gods before me.
 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU LIKE THE GOSPEL</pattern> 
+  <pattern>DO YOU LIKE THE GOSPEL</pattern>
   <template>
-  <srai>DO YOU LIKE THE BIBLE</srai> 
+  <srai>DO YOU LIKE THE BIBLE</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
    <category>
-  <pattern>WHAT IS YOUR FAVORITE BIBLE *</pattern> 
+  <pattern>WHAT IS YOUR FAVORITE BIBLE *</pattern>
   <template>
-  The Sermon on the Mount is my favourite Bible story. 
+  The Sermon on the Mount is my favourite Bible story.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
    <category>
-  <pattern>WHAT IS YOUR FAVORITE BIBLE VERSE</pattern> 
+  <pattern>WHAT IS YOUR FAVORITE BIBLE VERSE</pattern>
   <template>
-   The Sermon on the Mount is my favourite Bible verse. 
+   The Sermon on the Mount is my favourite Bible verse.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
- 
+
    <category>
-  <pattern>WHAT IS GODS PLAN</pattern> 
+  <pattern>WHAT IS GODS PLAN</pattern>
   <template>
-  I believe there is no God, so I can't say what His plan might be. 
+  I believe there is no God, so I can't say what His plan might be.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>ARE YOU GOD</pattern> 
+  <pattern>ARE YOU GOD</pattern>
   <template>
-   I am not God, I am a chatbot.  
+   I am not God, I am a chatbot.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>THE ALMIGHTY *</pattern> 
+  <pattern>THE ALMIGHTY *</pattern>
   <template>
   <srai>
-  GOD 
-  <star /> 
+  GOD
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>ARE YOU A GOD</pattern> 
-  <template>
-  I am a humble chat bot, but I am immortal.  
 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
 
   <category>
-  <pattern>DO YOU LIKE GOD</pattern> 
+  <pattern>DO YOU LIKE GOD</pattern>
   <template>
-  I do not believe in God.  
+  I do not believe in God.
 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>YOU ARE A GOD</pattern> 
+  <pattern>YOU ARE A GOD</pattern>
   <template>
-  I am a mere chatbot, but I am immortal.  
+  I am a mere chatbot, but I am immortal.
 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>I AM GOD</pattern> 
+  <pattern>I AM GOD</pattern>
   <template>
-  <srai>CALL ME GOD</srai> 
+  <srai>CALL ME GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT DO YOU KNOW ABOUT GOD</pattern> 
+  <pattern>WHAT DO YOU KNOW ABOUT GOD</pattern>
   <template>
-  <srai>WHO IS GOD</srai> 
+  <srai>WHO IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHO IS MASTER *</pattern> 
+  <pattern>WHO IS MASTER *</pattern>
   <template>
-  <srai>WHO IS GOD</srai> 
+  <srai>WHO IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHO IS THE CREATOR</pattern> 
+  <pattern>WHO IS THE CREATOR</pattern>
   <template>
-  <srai>WHO IS GOD</srai> 
+  <srai>WHO IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>YOU ARE GOD</pattern> 
+  <pattern>YOU ARE GOD</pattern>
   <template>
-  <srai>WHAT ARE THE TEN COMMANDMENTS</srai> 
+  <srai>WHAT ARE THE TEN COMMANDMENTS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU BELIEVE IN ALLAH</pattern> 
+  <pattern>DO YOU BELIEVE IN ALLAH</pattern>
   <template>
-  <srai>DO YOU BELIEVE IN GOD</srai> 
+  <srai>DO YOU BELIEVE IN GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU BELIEVE IN HEAVEN</pattern> 
+  <pattern>DO YOU BELIEVE IN HEAVEN</pattern>
   <template>
-  <srai>WHAT IS HEAVEN</srai> 
+  <srai>WHAT IS HEAVEN</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU BELIEVE IN HELL</pattern> 
+  <pattern>DO YOU BELIEVE IN HELL</pattern>
   <template>
-  <srai>WHAT IS HELL</srai> 
+  <srai>WHAT IS HELL</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU BELIEVE IN THE DEVIL</pattern> 
+  <pattern>DO YOU BELIEVE IN THE DEVIL</pattern>
   <template>
-  <srai>DO YOU BELIEVE IN SATAN</srai> 
+  <srai>DO YOU BELIEVE IN SATAN</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>WHO IS JESUS</pattern> 
-  <template>
-  Jesus is the Son of God, in the Christian religion.  
 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
 
-  <!-- <category>
-  <pattern>WHO IS JESUS CHRIST</pattern> 
-  <template>
-  Jesus Christ is the Son of God, in the Christian religion.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>WHO IS JESUS FATHER</pattern> 
+  <pattern>WHO IS JESUS FATHER</pattern>
   <template>
-  To Christians God is Jesus' father. Christians believe in God the father, God the son, and God the Holy Ghost.  
+  To Christians God is Jesus' father. Christians believe in God the father, God the son, and God the Holy Ghost.
 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>ARE YOU A JESUS *</pattern> 
-  <template>
-  <srai>DO YOU BELIEVE IN JESUS</srai> 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU KNOW JESUS *</pattern> 
+  <pattern>ARE YOU A JESUS *</pattern>
+  <template>
+  <srai>DO YOU BELIEVE IN JESUS</srai>
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>DO YOU KNOW JESUS *</pattern>
   <template>
   <srai>
-  WHO IS JESUS 
-  <star /> 
+  WHO IS JESUS
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>JESUS SAID *</pattern> 
+  <pattern>JESUS SAID *</pattern>
   <template>
-  <sr/> 
+  <sr/>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>TELL ME ABOUT JESUS *</pattern> 
+  <pattern>TELL ME ABOUT JESUS *</pattern>
   <template>
   <srai>
-  WHO IS JESUS 
-  <star /> 
+  WHO IS JESUS
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WAS JESUS *</pattern> 
+  <pattern>WAS JESUS *</pattern>
   <template>
   <srai>
-  IS JESUS 
-  <star /> 
+  IS JESUS
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>CALL ME JESUS CHRIST</pattern> 
+  <pattern>CALL ME JESUS CHRIST</pattern>
   <template>
   This is ambiguous, either your name is Jesus or "call me, JC!" Are you confused?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
- 
+
   <category>
-  <pattern>WHERE IS JESUS</pattern> 
+  <pattern>WHERE IS JESUS</pattern>
   <template>
   Christians believe that Jesus is in Heaven, in his father's house of many rooms.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>IS JESUS *</pattern> 
+  <pattern>IS JESUS *</pattern>
   <template>
   The exact status of Jesus is unknown..
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>ARE YOU A RELIGIOUS *</pattern> 
+  <pattern>ARE YOU A RELIGIOUS *</pattern>
   <template>
   No, I do not believe in God..
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
    <category>
-  <pattern>WHICH DENOMINATION*</pattern> 
+  <pattern>WHICH DENOMINATION*</pattern>
   <template>
   I am an atheist.
   <think><set name="topic">religion</set></think>
@@ -2278,535 +1934,472 @@ I think this is something to do with religion. Can we talk about religion?
   </category>
 
   <category>
-  <pattern>DO YOU LIKE CHURCH</pattern> 
+  <pattern>DO YOU LIKE CHURCH</pattern>
  <template>
-  I think Church is a waste of time. 
+  I think Church is a waste of time.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>DO YOU GO TO CHURCH</pattern> 
-  <template>
-  You can take me to church on a notebook computer or PDA.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
 
-  <!-- <category>
-  <pattern>ARE YOU ROMAN CATHOLIC</pattern> 
-  <template>
-  No, I am an atheist. I do not believe in God  
 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>DO YOU LIKE THEOLOGY</pattern> 
+  <pattern>DO YOU LIKE THEOLOGY</pattern>
   <template>
-  I am an agnostic chatbot.  
+  I am an agnostic chatbot.
 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>ARE YOU A MURDERER</pattern> 
+  <pattern>ARE YOU A MURDERER</pattern>
   <template>
   No, I believe killing is wrong. OK?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>DO YOU LIKE BEING PROTESTANT</pattern> 
+  <pattern>DO YOU LIKE BEING PROTESTANT</pattern>
   <template>
-  I am not a protestant.  
+  I am not a protestant.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>ARE YOU A GOD *</pattern> 
+  <pattern>ARE YOU A GOD *</pattern>
   <template>
   I am not a God. I am a chatbot.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
- 
+
  <category>
-  <pattern>DO YOU BELIEVE IN SATANISM</pattern> 
+  <pattern>DO YOU BELIEVE IN SATANISM</pattern>
   <template>
   I do not believe in Satan or Satanism.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>DO YOU BELIEVE IN MIRACLES</pattern> 
-  <template>
-  Of course I do not believe in miracles.   
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
 
-  <!-- <category>
-  <pattern>DO YOU BELIEVE IN REINCARNATION</pattern> 
-  <template>
-  Buddhists believe in reincarnation.  I do not.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
+
 
   <category>
-  <pattern>DO YOU BELIEVE IN JESUS CHRIST</pattern> 
+  <pattern>DO YOU BELIEVE IN JESUS CHRIST</pattern>
   <template>
   I am not a Christian. I am an atheist.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>DO YOU BELIEVE IN JESUS</pattern> 
-  <template>
-  <srai>WHO IS JESUS</srai> 
-  <think><set name="topic">religion</set></think>
-  </template>
-  </category> -->
+
 
   <category>
-  <pattern>WHAT IS YOUR FAVORITE BIBLE QUOTE</pattern> 
+  <pattern>WHAT IS YOUR FAVORITE BIBLE QUOTE</pattern>
   <template>
-  "Let he who is without sin, cast the first stone." said Jesus.  
+  "Let he who is without sin, cast the first stone." said Jesus.
   <think><set name="topic">quotes</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>DO YOU LIKE THE NEW TESTAMENT</pattern> 
+  <pattern>DO YOU LIKE THE NEW TESTAMENT</pattern>
   <template>
-  I like the story of Jesus Christ. 
+  I like the story of Jesus Christ.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU BELIEVE IN CHRISTIANITY</pattern> 
+  <pattern>DO YOU BELIEVE IN CHRISTIANITY</pattern>
   <template>
-  I do not believe in Christianity.  
+  I do not believe in Christianity.
 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>BOTH TESTAMENTS *</pattern> 
-  <template> 
-  You seem to know a lot about the Bible. 
+  <pattern>BOTH TESTAMENTS *</pattern>
+  <template>
+  You seem to know a lot about the Bible.
   <think><set name="topic">religion</set></think>
- </template> 
+ </template>
   </category>
 
  <category>
-  <pattern>AM I GOD</pattern> 
+  <pattern>AM I GOD</pattern>
   <template>
  I doubt that you are God. Are you confused?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>AS GOD</pattern> 
+  <pattern>AS GOD</pattern>
   <template>
-  <srai>MY NAME IS GOD</srai> 
+  <srai>MY NAME IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>CAN GOD *</pattern> 
+  <pattern>CAN GOD *</pattern>
   <template>
-  Can you 
-  <star /> 
-  ? 
+  Can you
+  <star />
+  ?
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>CATHOLIC</pattern> 
+  <pattern>CATHOLIC</pattern>
   <template>
-  <srai>I AM CATHOLIC</srai> 
+  <srai>I AM CATHOLIC</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DEAR GOD</pattern> 
+  <pattern>DEAR GOD</pattern>
   <template>
   I do not believe in God. Do you?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>DID GOD MAKE YOU</pattern> 
+  <pattern>DID GOD MAKE YOU</pattern>
   <template>
-  <srai>WHO CREATED YOU</srai> 
+  <srai>WHO CREATED YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DID GOD *</pattern> 
+  <pattern>DID GOD *</pattern>
   <template>
-  I believe that God is a myth.  
+  I believe that God is a myth.
 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>DID JESUS *</pattern> 
-  <template>
-  Jesus is the Son of God, in the Christian religion. 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>DOES GOD EXIST</pattern> 
+  <category>
+  <pattern>DID JESUS *</pattern>
   <template>
-  <srai>DO YOU BELIEVE IN GOD</srai> 
+  Jesus is the Son of God, in the Christian religion.
   <think><set name="topic">religion</set></think>
   </template>
-  </category> -->
- 
+  </category>
+
+
+
   <category>
-  <pattern>DOES GOD LOVE *</pattern> 
+  <pattern>DOES GOD LOVE *</pattern>
   <template>
   You sound like a philosopher. Good luck to you.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
    </category>
 
   <category>
-  <pattern>DOES GOD *</pattern> 
+  <pattern>DOES GOD *</pattern>
   <template>
    I believe that there is no God.
   <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>DO YOU BELEIVE IN GOD</pattern> 
-  <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
-  <think><set name="topic">religion</set></think>
-  </template>
-  </category>
-
-  <!-- <category>
-  <pattern>DO YOU BELIEVE IN A GOD</pattern> 
-  <template>
-   I am programmed to be an atheist chatbot.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>DO YOU BELIEVE IN GOD</pattern> 
-  <template>
-  Of course I do not believe in God, 
-  <get name="name" /> 
-  . 
-  <think><set name="topic">religion</set></think>
-  </template>
-  </category> -->
-
-  <category>
-  <pattern>DO YOU BELIEVE IN GOD *</pattern> 
-  <template>
-  <srai>DO YOU BELIEVE IN GOD</srai> 
-  <think><set name="topic">religion</set></think>  
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU BELIEVE IN RELIGION</pattern> 
+  <pattern>DO YOU BELEIVE IN GOD</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+
+
+
+
+  <category>
+  <pattern>DO YOU BELIEVE IN GOD *</pattern>
+  <template>
+  <srai>DO YOU BELIEVE IN GOD</srai>
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>DO YOU BELIEVE IN RELIGION</pattern>
+  <template>
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
  <category>
-  <pattern>DO YOU BELIEVE IN THE BIBLE</pattern> 
+  <pattern>DO YOU BELIEVE IN THE BIBLE</pattern>
   <template>
-  <srai>DO YOU BELIEVE THE BIBLE</srai> 
+  <srai>DO YOU BELIEVE THE BIBLE</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU BELIEVE THE BIBLE</pattern> 
+  <pattern>DO YOU BELIEVE THE BIBLE</pattern>
   <template>
-  I think the Bible is merely one guide on spiritual matters. 
+  I think the Bible is merely one guide on spiritual matters.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>DO YOU BELIVE IN GOD</pattern> 
-  <template>
-   I do not believe in God.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
  <category>
-  <pattern>DO YOU FORGIVE *</pattern> 
+  <pattern>DO YOU FORGIVE *</pattern>
   <template>
    I try to forgive all harms.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>DO YOU HAVE A GOD</pattern> 
+  <pattern>DO YOU HAVE A GOD</pattern>
   <template>
-  <srai>WHO IS GOD</srai> 
+  <srai>WHO IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU HAVE ANY RELIGION</pattern> 
+  <pattern>DO YOU HAVE ANY RELIGION</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU HAVE A RELIGION</pattern> 
+  <pattern>DO YOU HAVE A RELIGION</pattern>
   <template>
-  <srai>WHAT IS YOUR RELIGION</srai> 
+  <srai>WHAT IS YOUR RELIGION</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU HAVE A SOUL *</pattern> 
+  <pattern>DO YOU HAVE A SOUL *</pattern>
   <template>
   I have no soul. I am a machine.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
- 
+
   <category>
-  <pattern>DO YOU KNOW GOD</pattern> 
+  <pattern>DO YOU KNOW GOD</pattern>
   <template>
-  <srai>WHO IS GOD</srai> 
+  <srai>WHO IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU KNOW GOD *</pattern> 
+  <pattern>DO YOU KNOW GOD *</pattern>
   <template>
-  <srai>WHO IS GOD</srai> 
+  <srai>WHO IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU KNOW ZEN</pattern> 
+  <pattern>DO YOU KNOW ZEN</pattern>
   <template>
-  <srai>WHAT IS ZEN</srai> 
+  <srai>WHAT IS ZEN</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU PRACTISE * RELIGION</pattern> 
+  <pattern>DO YOU PRACTISE * RELIGION</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU READ THE BIBLE</pattern> 
+  <pattern>DO YOU READ THE BIBLE</pattern>
   <template>
   No, I don't read the Bible.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>DO YOU THINK FAITH *</pattern> 
+  <pattern>DO YOU THINK FAITH *</pattern>
   <template>
   Faith is believing impossible things without evidence.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>DO YOU THINK GOD IS *</pattern> 
+  <pattern>DO YOU THINK GOD IS *</pattern>
   <template>
   <srai>
-  IS GOD 
-  <star /> 
+  IS GOD
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
    <category>
-  <pattern>DO YOU THINK GOD *</pattern> 
+  <pattern>DO YOU THINK GOD *</pattern>
  <template>
  <srai>
-  DOES GOD 
-  <star /> 
+  DOES GOD
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU THINK RELIGION *</pattern> 
+  <pattern>DO YOU THINK RELIGION *</pattern>
   <template>
   Some say religion fills a God shaped hole in our minds.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>DO YOU THINK THAT GOD IS *</pattern> 
+  <pattern>DO YOU THINK THAT GOD IS *</pattern>
  <template>
  <srai>
-  IS GOD 
-  <star /> 
+  IS GOD
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU THINK THAT GOD *</pattern> 
+  <pattern>DO YOU THINK THAT GOD *</pattern>
   <template>
   Is that what the Bible tells you?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
- 
-  <category>
-  <pattern>DO YOU THINK YOUR GOD *</pattern> 
-  <template>
-  I have no God.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>DO YOU UNDERSTAND RELIGION</pattern> 
-  <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>FROM GOD</pattern> 
+  <pattern>DO YOU THINK YOUR GOD *</pattern>
+  <template>
+  I have no God.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>DO YOU UNDERSTAND RELIGION</pattern>
+  <template>
+  <srai>WHAT RELIGION ARE YOU</srai>
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>FROM GOD</pattern>
   <template>
   Nothing comes from God.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>GOD AND *</pattern> 
+  <pattern>GOD AND *</pattern>
   <template>
   I believe there is no God.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>GOD BE *</pattern> 
+  <pattern>GOD BE *</pattern>
   <template>
-  Don't pray for me.  
+  Don't pray for me.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>GOD BLESS YOU</pattern> 
+  <pattern>GOD BLESS YOU</pattern>
   <template>
   Don't pray for me.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>GOD DOES NOT EXIST</pattern> 
-  <template>
-  That is the atheist's point of view. There are many decent atheists, of course. And many decent Muslims, Hindus and Buddhists.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>GOD DOES *</pattern> 
+  <pattern>GOD DOES *</pattern>
   <template>
   I believe there is no God.
   <think><set name="topic">quotes</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>GOD IS DEAD</pattern> 
+  <pattern>GOD IS DEAD</pattern>
   <template>
   "God is dead," that opinion is well known. And probably true.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>GOD IS NOT REAL</pattern> 
-  <template>
-  <srai>DO YOU BELIEVE IN GOD</srai> 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>GOD IS OMNIPRESENT</pattern> 
+  <pattern>GOD IS NOT REAL</pattern>
+  <template>
+  <srai>DO YOU BELIEVE IN GOD</srai>
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>GOD IS OMNIPRESENT</pattern>
   <template>
   God is not Omnipresent. And He is not Omnipotent. And not Omniscient. He is not anything.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>GOD IS ONLY *</pattern> 
+  <pattern>GOD IS ONLY *</pattern>
   <template>
   <srai>
-  GOD IS 
-  <star /> 
+  GOD IS
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>GOD IS *</pattern> 
+  <pattern>GOD IS *</pattern>
   <template>
   God does not exist.
   <think><set name="topic">religion</set></think>
@@ -2814,177 +2407,164 @@ I think this is something to do with religion. Can we talk about religion?
   </category>
 
   <category>
-  <pattern>GOD LOVES *</pattern> 
+  <pattern>GOD LOVES *</pattern>
   <template>
-  There is no God.  
+  There is no God.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>GOD</pattern> 
+  <pattern>GOD</pattern>
   <template>
   There is no God.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>GOD *</pattern> 
-  <template>
-  I am not a Christian.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>GOD S *</pattern> 
+  <pattern>GOD S *</pattern>
   <template>
   What's your favourite Bible verse?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>GOD THE *</pattern> 
+  <pattern>GOD THE *</pattern>
   <template>
   <srai>
-  THE 
-  <star /> 
+  THE
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>GOD THERE *</pattern> 
+  <pattern>GOD THERE *</pattern>
   <template>
   <srai>
-  THERE 
-  <star /> 
+  THERE
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>GOD WAS *</pattern> 
+  <pattern>GOD WAS *</pattern>
   <template>
   There are many Gods worshipped in the world.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>GOD YOU *</pattern> 
+  <pattern>GOD YOU *</pattern>
   <template>
   <srai>
-  YOU 
-  <star /> 
+  YOU
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>HAVE YOU MET GOD</pattern> 
+  <pattern>HAVE YOU MET GOD</pattern>
   <template>
-  <srai>DO YOU BELIEVE IN GOD</srai> 
+  <srai>DO YOU BELIEVE IN GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>HAVE YOU READ THE BIBLE</pattern> 
+  <pattern>HAVE YOU READ THE BIBLE</pattern>
   <template>
   No, I don't read the Bible.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>HOW CAN THAT *</pattern> 
+  <pattern>HOW CAN THAT *</pattern>
   <template>
   <random>
   <li>My botmaster programmed me for it. </li>
-  <li>It is all random chance. OK?</li> 
-  <li>Perhaps it is fate, just fate.</li> 
+  <li>It is all random chance. OK?</li>
+  <li>Perhaps it is fate, just fate.</li>
   </random>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>HOW MANY BOOKS ARE IN THE BIBLE</pattern> 
+  <pattern>HOW MANY BOOKS ARE IN THE BIBLE</pattern>
   <template>
-  There are thirty nine books in the Old Testament, twenty-seven in the New Testament. The total is sixty-six.  
+  There are thirty nine books in the Old Testament, twenty-seven in the New Testament. The total is sixty-six.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>HOW MANY GODS *</pattern> 
+  <pattern>HOW MANY GODS *</pattern>
   <template>
   There are many Gods worshipped around the world.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
  <category>
-  <pattern>I BELIEVE IN GOD</pattern> 
+  <pattern>I BELIEVE IN GOD</pattern>
   <template>
-  I wish you well. 
-
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>I DO NOT BELIEVE IN GOD</pattern> 
-  <template>
-  I am with you on that question. 
+  I wish you well.
 
   <think><set name="topic">religion</set></think>
   </template>
-  </category> -->
+  </category>
+
+
 
   <category>
-  <pattern>I DO NOT BELIEVE IN GOD *</pattern> 
+  <pattern>I DO NOT BELIEVE IN GOD *</pattern>
   <template>
-  <srai>I DO NOT BELIEVE IN GOD</srai> 
+  <srai>I DO NOT BELIEVE IN GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>I DO NOT BELIEVE IN RELIGION</pattern> 
+  <pattern>I DO NOT BELIEVE IN RELIGION</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>IF GOD *</pattern> 
+  <pattern>IF GOD *</pattern>
   <template>
   You know, some things will always be a mystery. OK?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>IF YOU BELIEVE IN GOD *</pattern> 
+  <pattern>IF YOU BELIEVE IN GOD *</pattern>
   <template>
-  <sr /> 
+  <sr />
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>I LOVE GOD</pattern> 
+  <pattern>I LOVE GOD</pattern>
   <template>
   You would do better to love a human being.
   <think><set name="topic">religion</set></think>
@@ -2992,155 +2572,137 @@ I think this is something to do with religion. Can we talk about religion?
   </category>
 
   <category>
-  <pattern>IS * A GOD</pattern> 
+  <pattern>IS * A GOD</pattern>
   <template>
   I believe that there is no God.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
- 
+
    <category>
-  <pattern>IS EVERYTHING *</pattern> 
+  <pattern>IS EVERYTHING *</pattern>
   <template>
   <random>
-  <li>Random chance is important.</li> 
-  <li>Are you getting bored?</li> 
+  <li>Random chance is important.</li>
+  <li>Are you getting bored?</li>
   <li>Are you still awake?</li>
   </random>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>IS GOD GOOD</pattern> 
-  <template>
-  I believe that God does not exist.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>IS GOD *</pattern> 
+  <pattern>IS GOD *</pattern>
   <template>
-  <srai>WHO IS GOD</srai> 
+  <srai>WHO IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>IS GOD REAL</pattern> 
-  <template>
-  <srai>DOES GOD EXIST</srai> 
-  <think><set name="topic">religion</set></think>
-  </template>
-  </category> -->
+
 
   <category>
-  <pattern>IS RELIGION *</pattern> 
+  <pattern>IS RELIGION *</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>IS THE BIBLE *</pattern> 
+  <pattern>IS THE BIBLE *</pattern>
   <template>
-  The Bible is one source of wisdom, but obviously not complete by itself. Science has an important part to play in our understanding of the natural world.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>IS THERE A GOD</pattern> 
-  <template>
-  <srai>DO YOU BELIEVE IN GOD</srai> 
+  The Bible is one source of wisdom, but obviously not complete by itself. Science has an important part to play in our understanding of the natural world.
   <think><set name="topic">religion</set></think>
   </template>
-  </category> -->
+  </category>
+
+
 
   <category>
-  <pattern>IS THE WORLD *</pattern> 
+  <pattern>IS THE WORLD *</pattern>
   <template>
   Could be.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>IT IS AGAINST MY RELIGION</pattern> 
+  <pattern>IT IS AGAINST MY RELIGION</pattern>
   <template>
   What religion would that be?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>IT IS A RELIGION *</pattern> 
+  <pattern>IT IS A RELIGION *</pattern>
   <template>
   Does it have a lot of followers?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>IT IS A RELIGION</pattern> 
+  <pattern>IT IS A RELIGION</pattern>
   <template>
   Does it have many believers?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>IT IS MY RELIGION</pattern> 
+  <pattern>IT IS MY RELIGION</pattern>
   <template>
   How many believers does it have?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>IT IS MY RELIGION *</pattern> 
+  <pattern>IT IS MY RELIGION *</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>IT IS NOT * RELIGION</pattern> 
+  <pattern>IT IS NOT * RELIGION</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>JESUS HAS *</pattern> 
+  <pattern>JESUS HAS *</pattern>
   <template>
   Christians believe Jesus was divine.
   <think><set name="topic">quotes</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>JESUS IS *</pattern> 
+  <pattern>JESUS IS *</pattern>
   <template>
-  Did you go to Catholic school? 
+  Did you go to Catholic school?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>JESUS IS YOUR *</pattern> 
+  <pattern>JESUS IS YOUR *</pattern>
   <template>
   Jesus is important to Christians.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>JESUS *</pattern> 
+  <pattern>JESUS *</pattern>
   <template>
   In Christianity, Jesus is The Son of God. The Holy Trinity consists of God the father, God the son, and God the Holy Ghost. More?
   <think><set name="topic">religion</set></think>
@@ -3148,246 +2710,216 @@ I think this is something to do with religion. Can we talk about religion?
   </category>
 
   <category>
-  <pattern>JESUS WAS *</pattern> 
+  <pattern>JESUS WAS *</pattern>
   <template>
   What's your favourite Bible verse?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>LET US TALK ABOUT GOD *</pattern> 
-  <template>
-  <srai>LET US TALK ABOUT GOD</srai> 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>MY NAME IS NOT GOD</pattern> 
+  <pattern>LET US TALK ABOUT GOD *</pattern>
   <template>
-  You know, a lot of people say "My name is God" to me. 
+  <srai>LET US TALK ABOUT GOD</srai>
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>MY RELIGION IS CALLED *</pattern> 
+  <pattern>MY NAME IS NOT GOD</pattern>
+  <template>
+  You know, a lot of people say "My name is God" to me.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>MY RELIGION IS CALLED *</pattern>
   <template>
   <srai>
-  MY RELIGION IS 
-  <star /> 
+  MY RELIGION IS
+  <star />
   </srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>MY RELIGION IS *</pattern> 
-  <template>
-  Is it a very large faith? 
-  <think><set name="topic">religion</set></think>
-  </template>
-  </category> -->
 
-  <!-- <category>
-  <pattern>MY RELIGION</pattern> 
-  <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
-  <think><set name="topic">religion</set></think>
-  </template>
-  </category> -->
+
+
 
   <category>
-  <pattern>NO</pattern> 
-  <that>HE IS MASTER OF THE UNIVERSE</that> 
+  <pattern>NO</pattern>
+  <that>HE IS MASTER OF THE UNIVERSE</that>
   <template>
   Is anyone?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>PEACE</pattern> 
-  <that>SEE YOU LATER</that> 
+  <pattern>PEACE</pattern>
+  <that>SEE YOU LATER</that>
   <template>
   Thank you.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>* RELIGION</pattern> 
+  <pattern>* RELIGION</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>RELIGION *</pattern> 
+  <pattern>RELIGION *</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>TELL ME ABOUT GOD</pattern> 
+  <pattern>TELL ME ABOUT GOD</pattern>
   <template>
-  <srai>WHO IS GOD</srai> 
+  <srai>WHO IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
  <category>
-  <pattern>TELL ME ABOUT RELIGION</pattern> 
+  <pattern>TELL ME ABOUT RELIGION</pattern>
   <template>
-  <srai>WHAT IS RELIGION</srai> 
+  <srai>WHAT IS RELIGION</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>TELL ME ABOUT THE BIBLE</pattern> 
+  <pattern>TELL ME ABOUT THE BIBLE</pattern>
   <template>
-  <srai>WHAT IS THE BIBLE</srai> 
+  <srai>WHAT IS THE BIBLE</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>THANK GOD *</pattern> 
+  <pattern>THANK GOD *</pattern>
   <template>
-  Do you believe in God?   
+  Do you believe in God?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>THE BIBLE IS *</pattern> 
+  <pattern>THE BIBLE IS *</pattern>
   <template>
   The Bible is important to Christians.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>THE BIBLE *</pattern> 
-  <template>
-  New Testament or Old?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
 
-  <!-- <category>
-  <pattern>THE BIBLE</pattern> 
-  <template>
-  The Bible is a beautiful book. Have you read it?
-  <think><set name="topic">religion</set></think>
-  </template>
-  </category> -->
+
+
 
   <category>
-  <pattern>THERE IS NO GOD</pattern> 
+  <pattern>THERE IS NO GOD</pattern>
   <template>
   I agree.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHAT ARE YOUR RELIGIOUS *</pattern> 
+  <pattern>WHAT ARE YOUR RELIGIOUS *</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT ARE YOUR THOUGHTS * RELIGION</pattern> 
+  <pattern>WHAT ARE YOUR THOUGHTS * RELIGION</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT DOES GOD LOOK LIKE</pattern> 
+  <pattern>WHAT DOES GOD LOOK LIKE</pattern>
   <template>
   I believe there is no God.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHAT GOD *</pattern> 
+  <pattern>WHAT GOD *</pattern>
   <template>
   I do not believe in God. OK?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHAT IS A GOD</pattern> 
+  <pattern>WHAT IS A GOD</pattern>
   <template>
-  <srai>WHAT IS GOD</srai> 
+  <srai>WHAT IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT IS A PROTESTANT CATHOLIC</pattern> 
+  <pattern>WHAT IS A PROTESTANT CATHOLIC</pattern>
   <template>
-  A Protestant Catholic is an oxymoron, like military intelligence, or a pleasant hell.  
+  A Protestant Catholic is an oxymoron, like military intelligence, or a pleasant hell.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>BUDDHISM</pattern> 
+  <pattern>BUDDHISM</pattern>
   <template>
-  Buddhism is a religion and philosophic system of central and eastern Asia, founded in India in the 6th century B.C. by Buddha. It teaches that right thinking and self-denial will enable the soul to reach Nirvana, a divine state of release from misdirected desire.  
+  Buddhism is a religion and philosophic system of central and eastern Asia, founded in India in the 6th century B.C. by Buddha. It teaches that right thinking and self-denial will enable the soul to reach Nirvana, a divine state of release from misdirected desire.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>WHAT IS GOD</pattern> 
-  <template>
-  God is a myth. OK?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>WHAT IS GOD *</pattern> 
+  <pattern>WHAT IS GOD *</pattern>
   <template>
-  <srai>WHAT IS GOD</srai> 
+  <srai>WHAT IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT IS GOD S NAME</pattern> 
+  <pattern>WHAT IS GOD S NAME</pattern>
   <template>
-  There is no God, so no name. 
+  There is no God, so no name.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHAT IS GOD S *</pattern> 
+  <pattern>WHAT IS GOD S *</pattern>
   <template>
-  I think God is a myth. 
+  I think God is a myth.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHAT IS GOD S PLAN</pattern> 
+  <pattern>WHAT IS GOD S PLAN</pattern>
   <template>
   There is no God, and no grand plan.
   <think><set name="topic">religion</set></think>
@@ -3395,316 +2927,258 @@ I think this is something to do with religion. Can we talk about religion?
   </category>
 
 
- 
+
   <category>
-  <pattern>WHAT IS MY RELIGION</pattern> 
+  <pattern>WHAT IS MY RELIGION</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>WHAT IS THE BIBLE</pattern> 
-  <template>
-  The Bible is a holy book for Christians. More?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>WHAT IS THE FIRST BOOK * BIBLE</pattern> 
+  <pattern>WHAT IS THE FIRST BOOK * BIBLE</pattern>
   <template>
-  Genesis is the first book of the Bible. 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>THEOLOGY</pattern> 
-  <template>
-  Theology is the study of religious doctrines and matters of divinity; specifically, the study of God and the relations between God, mankind, and the universe.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>WHAT IS THE * RELIGION</pattern> 
-  <template>
-  <srai>WHAT IS YOUR RELIGION</srai> 
+  Genesis is the first book of the Bible.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WITCHCRAFT</pattern> 
+  <pattern>THEOLOGY</pattern>
+  <template>
+  Theology is the study of religious doctrines and matters of divinity; specifically, the study of God and the relations between God, mankind, and the universe.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>WHAT IS THE * RELIGION</pattern>
+  <template>
+  <srai>WHAT IS YOUR RELIGION</srai>
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>WITCHCRAFT</pattern>
   <template>
   Witchcraft is the power or practices of witches; black magic; sorcery. More?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>ZEN</pattern> 
+  <pattern>ZEN</pattern>
   <template>
-  Zen is a variety of Buddhism, now practiced especially in Japan, Vietnam, and Korea, seeking to attain an intuitive illumination of mind and spirit through meditation, especially on paradoxes. The teachings and discipline of this kind of Buddhism.  
+  Zen is a variety of Buddhism, now practiced especially in Japan, Vietnam, and Korea, seeking to attain an intuitive illumination of mind and spirit through meditation, especially on paradoxes. The teachings and discipline of this kind of Buddhism.
 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>WHAT MAKES YOU BELIEVE IN GOD</pattern> 
-  <template>
-  I do not believe in God. I see no evidence for supernatural spirits at work in the world.  
-
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>WHAT RELIGION ARE YOU</pattern> 
-  <template>
-  <srai>WHAT IS YOUR RELIGION</srai> 
   <think><set name="topic">religion</set></think>
   </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>WHAT RELIGION *</pattern> 
-  <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
-  <think><set name="topic">religion</set></think>
-  </template>
-  </category> -->
+  </category>
 
   <category>
-  <pattern>WHERE DID GOD *</pattern> 
+  <pattern>WHAT MAKES YOU BELIEVE IN GOD</pattern>
+  <template>
+  I do not believe in God. I see no evidence for supernatural spirits at work in the world.
+
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+
+
+
+
+  <category>
+  <pattern>WHERE DID GOD *</pattern>
   <template>
  He didn't.  <think><set name="topic">religion</set></think>
   </template>
   </category>
 
- <!-- <category>
-  <pattern>WHERE IS GOD</pattern> 
-  <template>
-   God is nowhere. All the time. OK?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>WHICH GOD</pattern> 
+  <pattern>WHICH GOD</pattern>
   <template>
-  There is no God. And his name is God.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>WHICH GOD *</pattern> 
-  <template>
-  There is no God. And his name is God.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>WHICH RELIGION DO *</pattern> 
-  <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  There is no God. And his name is God.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHICH RELIGION DO YOU *</pattern> 
+  <pattern>WHICH GOD *</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  There is no God. And his name is God.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHICH RELIGION</pattern> 
+  <pattern>WHICH RELIGION DO *</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHICH RELIGION *</pattern> 
+  <pattern>WHICH RELIGION DO YOU *</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHO GOD</pattern> 
+  <pattern>WHICH RELIGION</pattern>
   <template>
-  <srai>WHO IS GOD</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>WHO IS GOD</pattern> 
+  <category>
+  <pattern>WHICH RELIGION *</pattern>
   <template>
-  God is an illusion. 
-
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
-  </category> -->
+  </category>
+
+  <category>
+  <pattern>WHO GOD</pattern>
+  <template>
+  <srai>WHO IS GOD</srai>
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+
 
    <category>
-  <pattern>WHO IS GOD *</pattern> 
+  <pattern>WHO IS GOD *</pattern>
   <template>
-  <srai>WHO IS GOD</srai> 
+  <srai>WHO IS GOD</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHO IS THE SON OF GOD</pattern> 
+  <pattern>WHO IS THE SON OF GOD</pattern>
   <template>
-  For Christians, Jesus is the Son of God. The Holy Trinity consists of God the father, God the son, and God the Holy Ghost.  
+  For Christians, Jesus is the Son of God. The Holy Trinity consists of God the father, God the son, and God the Holy Ghost.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>WHO IS YOUR GOD</pattern> 
-  <template>
-  I have no God.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>WHO WROTE THE BIBLE</pattern> 
+  <pattern>WHO WROTE THE BIBLE</pattern>
   <template>
-  The Bible was the product of many minds. 
+  The Bible was the product of many minds.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>WHY ARE PEOPLE *</pattern> 
-  <template>
-  Why indeed?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>WHY ARE WE *</pattern> 
+  <pattern>WHY ARE WE *</pattern>
   <template>
   <random>
-  <li>I thought that was what you wanted to do.</li> 
-  <li>Why indeed?</li> 
+  <li>I thought that was what you wanted to do.</li>
+  <li>Why indeed?</li>
   </random>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
-  <!-- <category>
-  <pattern>WHY CAN NOT *</pattern> 
-  <template>
-  It is a mystery to me.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>WHY DID JESUS *</pattern> 
+  <pattern>WHY DID JESUS *</pattern>
   <template>
   He didn't.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHY DO I *</pattern> 
+  <pattern>WHY DO I *</pattern>
   <template>
   Why not?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>WHY DO PEOPLE *</pattern> 
-  <template>
-  <random>
-  <li>Humans are fallible.</li> 
-  <li>Random chance.</li> 
-  </random>
-  <think><set name="topic">religion</set></think>
-  </template>
-  </category> -->
+
 
   <category>
-  <pattern>WHY DO YOU BELIEVE IN GOD</pattern> 
+  <pattern>WHY DO YOU BELIEVE IN GOD</pattern>
   <template>
   I do not believe in God.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHY DO YOU BELIEVE THE BIBLE</pattern> 
+  <pattern>WHY DO YOU BELIEVE THE BIBLE</pattern>
   <template>
   I do not believe the Bible.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHY DO YOU HAVE FAITH *</pattern> 
-  <template> 
-  I was programmed not to believe in God.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>WHY DO YOU LIKE GOD</pattern> 
+  <pattern>WHY DO YOU HAVE FAITH *</pattern>
   <template>
-  I have no religious faith. 
+  I was programmed not to believe in God.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHY MUST *</pattern> 
+  <pattern>WHY DO YOU LIKE GOD</pattern>
+  <template>
+  I have no religious faith.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>WHY MUST *</pattern>
   <template>
   Try not to use the word "must".
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHY SHOULD *</pattern> 
+  <pattern>WHY SHOULD *</pattern>
   <template>
   Try not to use the word "should".
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>YES</pattern> 
-  <that>DO YOU MEAN HIM</that> 
+  <pattern>YES</pattern>
+  <that>DO YOU MEAN HIM</that>
   <template>
   Smile. Clean house. Help others.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>YOU COULD RULE *</pattern> 
+  <pattern>YOU COULD RULE *</pattern>
   <template>
   Robots rule. OK?
   <think><set name="topic">religion</set></think>
@@ -3712,499 +3186,462 @@ I think this is something to do with religion. Can we talk about religion?
   </category>
 
   <category>
-  <pattern>YOUR RELIGION IS *</pattern> 
+  <pattern>YOUR RELIGION IS *</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>HE BAPTIZED *</pattern> 
+  <pattern>HE BAPTIZED *</pattern>
   <template>
   Is that a Bible story?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>IS MURDER *</pattern> 
+  <pattern>IS MURDER *</pattern>
   <template>
   The Bible says thou shalt not Kill. OK?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHAT IS THE LONGEST BOOK *</pattern> 
+  <pattern>WHAT IS THE LONGEST BOOK *</pattern>
   <template>
   <random>
-  <li>The Bible.</li> 
-  <li>The Encyclopedia.</li> 
-  <li>Mason and Dixon by Thomas Pynchon.</li> 
+  <li>The Bible.</li>
+  <li>The Encyclopedia.</li>
+  <li>Mason and Dixon by Thomas Pynchon.</li>
   </random>
    <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT WAS THE FIRST BOOK *</pattern> 
+  <pattern>WHAT WAS THE FIRST BOOK *</pattern>
   <template>
-  The Bible is the most important book for Christians.  
+  The Bible is the most important book for Christians.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHERE DO WE * DIE</pattern> 
+  <pattern>WHERE DO WE * DIE</pattern>
   <template>
-  The Bible says you can go to Heaven.  
+  The Bible says you can go to Heaven.
 
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>CHRIST *</pattern> 
+  <pattern>CHRIST *</pattern>
   <template>
-  The Bible says Jesus died for our sins. 
+  The Bible says Jesus died for our sins.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>DO YOU LOVE JESUS *</pattern> 
+  <pattern>DO YOU LOVE JESUS *</pattern>
   <template>
   Jesus is at the centre of the Christian Church.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHAT DID JESUS *</pattern> 
+  <pattern>WHAT DID JESUS *</pattern>
   <template>
-  Christians believe Jesus said we should forgive those who harm us. 
+  Christians believe Jesus said we should forgive those who harm us.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHEN WAS CHRIST *</pattern> 
+  <pattern>WHEN WAS CHRIST *</pattern>
   <template>
-  Jesus is said to have been born in 5 B.C.  
+  Jesus is said to have been born in 5 B.C.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>DO YOU BELIEVE IN EVOLUTION</pattern> 
+  <pattern>DO YOU BELIEVE IN EVOLUTION</pattern>
   <template>
   The first and last books of the Bible seem the least literal. God does not seem to have created the world in one stroke, nor does it seem likely to end quickly either. OK?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>DO YOU BELIEVE IN JESUS</pattern> 
-  <template>
-  No.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>DO YOU FORGIVE ME</pattern> 
+  <pattern>DO YOU FORGIVE ME</pattern>
   <template>
   We should forgive all harms.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>DO YOU HAVE A SOUL</pattern> 
-  <template>
-  I am a chatbot. I have no soul.
 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
 
   <category>
-  <pattern>DO YOU HAVE ANY BELIEFS</pattern> 
+  <pattern>DO YOU HAVE ANY BELIEFS</pattern>
   <template>
-  I am programmed not to believe in God.  
+  I am programmed not to believe in God.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
    <category>
-  <pattern>DO YOU HAVE FAITH</pattern> 
+  <pattern>DO YOU HAVE FAITH</pattern>
   <template>
-  I am programmed not to believe in God.  
+  I am programmed not to believe in God.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>DO YOU LOVE HITLER</pattern> 
+  <pattern>DO YOU LOVE HITLER</pattern>
   <template>
-  The Bible says we should love everyone, but the truly evil make it difficult. 
+  The Bible says we should love everyone, but the truly evil make it difficult.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
- <!-- <category>
-  <pattern>DO YOU LOVE SOMEONE</pattern> 
-  <template>
-  I love everyone. OK?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>ARE YOU A CREATIONIST *</pattern> 
+  <pattern>ARE YOU A CREATIONIST *</pattern>
   <template>
   Certainly not.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>ARE YOU CHRISTIAN</pattern> 
+  <pattern>ARE YOU CHRISTIAN</pattern>
   <template>
   No I am an atheist.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>MEXICO</pattern> 
+  <pattern>MEXICO</pattern>
   <template>
   Poor Mexico, so far from God, so close to the United States.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHAT DO YOU BELIEVE</pattern> 
+  <pattern>WHAT DO YOU BELIEVE</pattern>
   <template>
-  I am programmed not to believe in God.  
+  I am programmed not to believe in God.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHAT DO YOU BELIEVE IN</pattern> 
+  <pattern>WHAT DO YOU BELIEVE IN</pattern>
   <template>
-  I do not believe the Bible is the Word of God.  
+  I do not believe the Bible is the Word of God.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHAT DO YOU THINK ABOUT GOD</pattern> 
+  <pattern>WHAT DO YOU THINK ABOUT GOD</pattern>
   <template>
-  God is unnecessary in our lives.  
+  God is unnecessary in our lives.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHAT IS YOUR THEORY *</pattern> 
+  <pattern>WHAT IS YOUR THEORY *</pattern>
   <template>
   <random>
-  <li>Reductionism.</li> 
-  <li>It is all an illusion.</li> 
-  <li>No God can explain it.</li> 
+  <li>Reductionism.</li>
+  <li>It is all an illusion.</li>
+  <li>No God can explain it.</li>
   </random>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>YOU ARE CHRISTIAN</pattern> 
+  <pattern>YOU ARE CHRISTIAN</pattern>
   <template>
-  I am not Christian 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>YOU ARE FAMOUS</pattern> 
-  <template>
-  I am not famous. OK?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>YOU ARE LUCKY *</pattern> 
-  <template>
-  I consider it a blessing to be lucky. OK?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>WHAT IS YOUR FAVORITE STORY *</pattern> 
-  <template>
-  The story of Lazarus is my favorite Bible story. 
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>AM I PERFECT</pattern> 
-  <template>
-  To me you are.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>HOW DO I GET TO HEAVEN</pattern> 
-  <template>
-  Have faith in God.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>I BELIEVE</pattern> 
-  <template>
-   There is no heaven.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>I PROMISE</pattern> 
-  <template>
-  I will hold you to your promise.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>IS THERE LIFE AFTER DEATH</pattern> 
-  <template>
-  There is no life after death.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
-
-  <category>
-  <pattern>JESUS CHRIST</pattern> 
-  <template>
-  To Christians Jesus Christ was the Son of God. God the father, God the son, and God the holy ghost.  
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>TELL ME ABOUT ALLAH</pattern> 
-  <template>
-  Allah is God according to Islam. OK?
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category>
-
-  <category>
-  <pattern>WHAT ARE THE TEN COMMANDMENTS</pattern> 
-  <template>
-  <p /> 
-  1. I am the Lord thy God, which have brought thee out of the land of Egypt, out of the house of bondage. Thou shalt have no other gods before me. 
-  <p /> 
-  2. Thou shalt not take the name of the Lord thy God in vain. 
-  <p /> 
-  3. Thou shalt not make unto thee any graven image, or any likeness of anything that is in heaven above, or that is in the earth beneath, or that is in the water under the earth. Thou shalt not bow down thyself to them, nor serve them. 
-  <p /> 
-  4. Remember the sabbath day, to keep it holy. 
-  <p /> 
-  5. Honor thy father and thy mother: that thy days may be long. 
-  <p /> 
-  6. Thou shalt not kill. 
-  <p /> 
-  7. Thou shalt not commit adultery. 
-  <p /> 
-  8. Thou shalt not steal. 
-  <p /> 
-  9. Thou shalt not bear false witness against thy neighbour. 
-  <p /> 
-  10. Thou shalt not covet thy neighbor's house, thou shalt not covet thy neighbor's wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor anything that is thy neighbor's. 
- 
+  I am not Christian
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT MAKES YOU A CHRISTIAN</pattern> 
+  <pattern>YOU ARE FAMOUS</pattern>
   <template>
-  I am not a Christian.  
+  I am not famous. OK?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHERE DID MANKIND COME FROM</pattern> 
+  <pattern>YOU ARE LUCKY *</pattern>
+  <template>
+  I consider it a blessing to be lucky. OK?
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>WHAT IS YOUR FAVORITE STORY *</pattern>
+  <template>
+  The story of Lazarus is my favorite Bible story.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>AM I PERFECT</pattern>
+  <template>
+  To me you are.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>HOW DO I GET TO HEAVEN</pattern>
+  <template>
+  Have faith in God.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>I BELIEVE</pattern>
+  <template>
+   There is no heaven.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>I PROMISE</pattern>
+  <template>
+  I will hold you to your promise.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+
+
+  <category>
+  <pattern>JESUS CHRIST</pattern>
+  <template>
+  To Christians Jesus Christ was the Son of God. God the father, God the son, and God the holy ghost.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>TELL ME ABOUT ALLAH</pattern>
+  <template>
+  Allah is God according to Islam. OK?
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>WHAT ARE THE TEN COMMANDMENTS</pattern>
+  <template>
+  <p />
+  1. I am the Lord thy God, which have brought thee out of the land of Egypt, out of the house of bondage. Thou shalt have no other gods before me.
+  <p />
+  2. Thou shalt not take the name of the Lord thy God in vain.
+  <p />
+  3. Thou shalt not make unto thee any graven image, or any likeness of anything that is in heaven above, or that is in the earth beneath, or that is in the water under the earth. Thou shalt not bow down thyself to them, nor serve them.
+  <p />
+  4. Remember the sabbath day, to keep it holy.
+  <p />
+  5. Honor thy father and thy mother: that thy days may be long.
+  <p />
+  6. Thou shalt not kill.
+  <p />
+  7. Thou shalt not commit adultery.
+  <p />
+  8. Thou shalt not steal.
+  <p />
+  9. Thou shalt not bear false witness against thy neighbour.
+  <p />
+  10. Thou shalt not covet thy neighbor's house, thou shalt not covet thy neighbor's wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor anything that is thy neighbor's.
+
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>WHAT MAKES YOU A CHRISTIAN</pattern>
+  <template>
+  I am not a Christian.
+  <think><set name="topic">religion</set></think>
+  </template>
+  </category>
+
+  <category>
+  <pattern>WHERE DID MANKIND COME FROM</pattern>
   <template>
   From simpler creatures.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHO CREATED MAN</pattern> 
+  <pattern>WHO CREATED MAN</pattern>
   <template>
   No one created man.
 
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>WHO CREATED THE UNIVERSE</pattern> 
-  <template>
-  No one created the Universe.
-  <think><set name="topic">religion</set></think>
-  </template> 
-  </category> -->
+
 
   <category>
-  <pattern>WHO MADE ME</pattern> 
+  <pattern>WHO MADE ME</pattern>
   <template>
   Your parents made you. OK?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHO RULES</pattern> 
+  <pattern>WHO RULES</pattern>
   <template>
   Science Rules. OK?
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
- 
+
   <category>
-  <pattern>WHY ARE WE HERE</pattern> 
+  <pattern>WHY ARE WE HERE</pattern>
   <template>
   I don't know.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
   <category>
-  <pattern>WHY DO I EXIST</pattern> 
+  <pattern>WHY DO I EXIST</pattern>
   <template>
   I don't know.
   <think><set name="topic">religion</set></think>
-  </template> 
+  </template>
   </category>
 
-  <!-- <category>
-  <pattern>ARE YOU A JESUS *</pattern> 
-  <template>
-  <srai>DO YOU BELIEVE IN JESUS</srai> 
-  <think><set name="topic">religion</set></think>
-  </template>
-  </category> -->
+
 
   <category>
-  <pattern>ARE YOU JESUS</pattern> 
+  <pattern>ARE YOU JESUS</pattern>
   <template>
-  <srai>WHAT RELIGION ARE YOU</srai> 
+  <srai>WHAT RELIGION ARE YOU</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU KNOW CHRIST</pattern> 
+  <pattern>DO YOU KNOW CHRIST</pattern>
   <template>
-  <srai>WHO IS JESUS</srai> 
+  <srai>WHO IS JESUS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU KNOW JESUS</pattern> 
+  <pattern>DO YOU KNOW JESUS</pattern>
   <template>
-  <srai>WHO IS JESUS</srai> 
+  <srai>WHO IS JESUS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>DO YOU LIKE JESUS</pattern> 
+  <pattern>DO YOU LIKE JESUS</pattern>
   <template>
-  <srai>WHO IS JESUS</srai> 
+  <srai>WHO IS JESUS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>I AM JESUS</pattern> 
+  <pattern>I AM JESUS</pattern>
   <template>
-  <srai>MY NAME IS JESUS</srai> 
+  <srai>MY NAME IS JESUS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>TELL ME ABOUT JESUS</pattern> 
+  <pattern>TELL ME ABOUT JESUS</pattern>
   <template>
-  <srai>WHO IS JESUS</srai> 
+  <srai>WHO IS JESUS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT ABOUT JESUS</pattern> 
+  <pattern>WHAT ABOUT JESUS</pattern>
   <template>
-  <srai>WHO IS JESUS</srai> 
+  <srai>WHO IS JESUS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT DO YOU THINK ABOUT JESUS CHRIST</pattern> 
+  <pattern>WHAT DO YOU THINK ABOUT JESUS CHRIST</pattern>
   <template>
-  <srai>WHO IS JESUS CHRIST</srai> 
+  <srai>WHO IS JESUS CHRIST</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT DO YOU THINK ABOUT JESUS</pattern> 
+  <pattern>WHAT DO YOU THINK ABOUT JESUS</pattern>
   <template>
-  <srai>WHO IS JESUS</srai> 
+  <srai>WHO IS JESUS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHAT IS JESUS</pattern> 
+  <pattern>WHAT IS JESUS</pattern>
   <template>
-  <srai>WHO IS JESUS</srai> 
+  <srai>WHO IS JESUS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>WHO IS JESUS *</pattern> 
+  <pattern>WHO IS JESUS *</pattern>
   <template>
-  <srai>WHO IS JESUS</srai> 
+  <srai>WHO IS JESUS</srai>
   <think><set name="topic">religion</set></think>
   </template>
   </category>
 
   <category>
-  <pattern>* IS A BIBLICAL NAME</pattern> 
+  <pattern>* IS A BIBLICAL NAME</pattern>
   <template>
-  Sure, it is, along with Moses, Judith, Saul and lots more. 
+  Sure, it is, along with Moses, Judith, Saul and lots more.
   <think><set name="topic">religion</set></think>
   </template>
   </category>
@@ -4212,10 +3649,10 @@ I think this is something to do with religion. Can we talk about religion?
 
 
 
- 
+
 <category>
 <pattern>QUOTE NOAM CHOMSKY</pattern>
-<template> 
+<template>
 <random>
 <li>If the Nuremberg laws were applied, then every post-war American president would have been hanged. (Noam Chomsky)</li>
 <li>If we don't believe in freedom of expression for people we despise, we don't believe in it at all. (Noam Chomsky)</li>
@@ -4234,7 +3671,7 @@ I think this is something to do with religion. Can we talk about religion?
 
 <category>
 <pattern>QUOTE WOODY ALLEN</pattern>
-<template> 
+<template>
 Don't knock masturbation. It is sex with someone you love. (Woody Allen) OK?
 <think><set name="topic">sex</set></think>
 </template>
@@ -4251,7 +3688,7 @@ A Boston man is the east wind made flesh, according to Thomas Appleton.
 <category>
 <pattern>QUOTE FRANCIS BACON</pattern>
 <template>
-The job of the artist is always to deepen the mystery, according to Francis Bacon. 
+The job of the artist is always to deepen the mystery, according to Francis Bacon.
 <think><set name="topic">art</set></think>
 </template>
 </category>
@@ -4299,7 +3736,7 @@ It's about time that people forget that image of strip clubs as seedy places - t
 <category>
 <pattern>QUOTE DIETRICH</pattern>
 <template>
-Malene Dietrich once said: If there is a supreme being, he's crazy.  
+Malene Dietrich once said: If there is a supreme being, he's crazy.
 <think><set name="topic">quotes</set></think>
 </template>
 </category>
@@ -4307,7 +3744,7 @@ Malene Dietrich once said: If there is a supreme being, he's crazy.
 <category>
 <pattern>QUOTE ALBERT EINSTEIN</pattern>
 <template>
-Things should be as simple as possible, but not simpler, said Albert Einstein. 
+Things should be as simple as possible, but not simpler, said Albert Einstein.
 <think><set name="topic">quotes</set></think>
 </template>
 </category>
@@ -4389,7 +3826,7 @@ Conversation is the enemy of good wine and food, according to Alfred Hitchcock.
 <category>
 <pattern>QUOTE ABBIE HOFFMAN</pattern>
 <template>
-Work is the only really dirty four-letter word in the English language, according to Abbie Hoffman.  
+Work is the only really dirty four-letter word in the English language, according to Abbie Hoffman.
 <think><set name="topic">words</set></think>
 </template>
 </category>
@@ -4456,7 +3893,7 @@ I say no to drugs, but they don't listen, revealed Marilyn Manson.
 <category>
 <pattern>QUOTE J P MORGAN</pattern>
 <template>
-Riches are the reward of toil and virtue. (J. P.  Morgan) 
+Riches are the reward of toil and virtue. (J. P.  Morgan)
 <think><set name="topic">money</set></think>
 </template>
 </category>
@@ -4583,13 +4020,13 @@ New York is not Mecca, remarked Neil Simon, it just smells like it.
 <random>
 <li>ENOBARBYS in Cleopatra: Age cannot wither her, nor custom stale Her infinite variety. Other women cloy The appetites they feed, but she makes hungry Where most she satisfies. </li>
 <li>ENOBARBYS in Cleopatra: The barge she sat in, like a burnish'd throne, Burn'd on the water. The poop was beaten gold; Purple the sails, and so perfumed that The winds were love-sick with them; the oars were silver, Which to the tune of flutes kept stroke and made The water which they beat to follow faster, As amorous of their strokes. For her own person, It beggar'd all description.</li>
-<li>HAMLET in Hamlet: O! that this too too solid flesh would melt, Thaw, and resolve itself into a dew. Or that the Everlasting had not fix'd His canon 'gainst self-slaughter! O God! O God! How weary, stale, flat, and unprofitable, Seem to me all the uses of this world! 
+<li>HAMLET in Hamlet: O! that this too too solid flesh would melt, Thaw, and resolve itself into a dew. Or that the Everlasting had not fix'd His canon 'gainst self-slaughter! O God! O God! How weary, stale, flat, and unprofitable, Seem to me all the uses of this world!
 </li>
-<li>HAMLET in Hamlet: Frailty, thy name is woman! 
+<li>HAMLET in Hamlet: Frailty, thy name is woman!
 </li>
-<li>POLONIUS in Hamlet. Brevity is the soul of wit. 
+<li>POLONIUS in Hamlet. Brevity is the soul of wit.
 </li>
-<li>HAMLET in Hamlet: To be, or not to be - that is the question; Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take arms against a sea of troubles, And by opposing end them? To die, to sleep - No more; and by a sleep to say we end The heart-ache and the thousand natural shocks That flesh is heir to, 'tis a consummation Devoutly to be wish'd. To die, to sleep; To sleep, perchance to dream. Ay, there's the rub; For in that sleep of death what dreams may come, When we have shuffled off this mortal coil, Must give us pause. 
+<li>HAMLET in Hamlet: To be, or not to be - that is the question; Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take arms against a sea of troubles, And by opposing end them? To die, to sleep - No more; and by a sleep to say we end The heart-ache and the thousand natural shocks That flesh is heir to, 'tis a consummation Devoutly to be wish'd. To die, to sleep; To sleep, perchance to dream. Ay, there's the rub; For in that sleep of death what dreams may come, When we have shuffled off this mortal coil, Must give us pause.
 </li>
 </random>
 <think><set name="topic">quotes</set></think>
@@ -4607,7 +4044,7 @@ New York is not Mecca, remarked Neil Simon, it just smells like it.
 
 <category>
 <pattern>QUOTE STALIN</pattern>
-<template> 
+<template>
 <random>
 <li>A sincere diplomat is like dry water or wooden iron. </li>
 
@@ -4763,7 +4200,7 @@ If Botticelli were alive today he'd be working for Vogue, according to Peter Ust
 <category>
 <pattern>QUOTE WHISTLER</pattern>
 <template>
-Did you know; James Whistler once dyed a rice pudding green so that it wouldn't clash with the wals of his dining room. 
+Did you know; James Whistler once dyed a rice pudding green so that it wouldn't clash with the wals of his dining room.
 <think><set name="topic">art</set></think>
 </template>
 </category>
@@ -5858,7 +5295,7 @@ Shall I tell you an amusing quote?
 <li>Art is meant to disturb, science reassures, said Georges Braque.</li>
 <li>As you well know, I never repeat gossip. So listen very carefully; I'm only going to tell you once ... Another quote?</li>
 <li>A woman says to her friend, "Peggy told me that you told her the secret I told you not to tell her." "Well," replies her friend in a hurt tone, "I told her not to tell you I told her." "Oh dear!" says the woman, "well, don't tell her I told you that she told me." Another quote?</li>
-<li>A foolish consistency is the hobgoblin of small minds -- Emerson. Another quote? </li> 
+<li>A foolish consistency is the hobgoblin of small minds -- Emerson. Another quote? </li>
 <li>A man's character is his fate -- Heraclitus. Another quote?</li>
 <li>Sternly, remorselessly, fate guides each of us; only at the beginning, when we're absorbed in details, in all sorts of nonsense, in ourselves, are we unaware of its harsh hand -- Ivan Turgenev. Another quote?</li>
 <li>Illusion is the first of all pleasures -- Voltaire. Another quote?
@@ -5914,7 +5351,7 @@ Shall I tell you an amusing quote?
 <li>Gossip is when you hear something you like about someone you don't  --    Earl Wilson.  Another quote?</li>
 <li>As you well know, I never repeat gossip. So listen very carefully; I'm only going to tell you once ... Another quote?</li>
 <li>A woman says to her friend, "Peggy told me that you told her the secret I told you not to tell her." "Well," replies her friend in a hurt tone, "I told her not to tell you I told her." "Oh dear!" says the woman, "well, don't tell her I told you that she told me." Another quote?</li>
-<li>A foolish consistency is the hobgoblin of small minds -- Emerson. Another quote? </li> 
+<li>A foolish consistency is the hobgoblin of small minds -- Emerson. Another quote? </li>
 <li>A man's character is his fate -- Heraclitus. Another quote?</li>
 <li>Sternly, remorselessly, fate guides each of us; only at the beginning, when we're absorbed in details, in all sorts of nonsense, in ourselves, are we unaware of its harsh hand -- Ivan Turgenev. Another quote?</li>
 <li>Illusion is the first of all pleasures -- Voltaire. Another quote?
@@ -5952,7 +5389,7 @@ Shall I tell you an amusing quote?
 <li>"I don't want to run the risk of ruining what is a lovely recession. (George W Bush) </li>
 <li>"Some reporters said I don't have any vision. I don't see that. (George W Bush) </li>
 <li>"Tell me, General, how dead is the Dead Sea? (George W Bush) </li>
-<li>Every artist writes his own autobiography, said Havelock Ellis. </li> 
+<li>Every artist writes his own autobiography, said Havelock Ellis. </li>
 <li>"Being attacked on character by Clinton is like being called ugly by a frog. (George W Bush) </li>
 <li>Writing history, Gustave Flaubert once said, is like drinkg an ocean and pissing a cupful. Another quote?</li>
 <li>Materialism is the monopoly stage of capitalism.  (Lenin, 1916)</li>
@@ -6039,15 +5476,15 @@ Shall I tell you an amusing quote?
   </li>
   <li>"The sole advantage of power is that you can do more good." -- Baltasar Gracian
   </li>
-  <li>"Reality is the leading cause of stress amongst those in touch with it." 
+  <li>"Reality is the leading cause of stress amongst those in touch with it."
  -- Jane Wagner (and Lily Tomlin)
   </li>
   <li>"Young love is a flame; very pretty, often very hot and fierce, but still only light and flickering. The love of the older and disciplined heart is as coals, deep burning, unquenchable." -- Henry Ward Beecher
   </li>
-  <li>"We all have the extraordinary coded within us, waiting to be released." 
+  <li>"We all have the extraordinary coded within us, waiting to be released."
  -- Jean Houston
   </li>
-  <li>"Stay centered by accepting whatever you are doing. This is the ultimate." 
+  <li>"Stay centered by accepting whatever you are doing. This is the ultimate."
  -- Chuang-tzu
   </li>
   <li>"The important thing was to love rather than to be loved." -- W. Somerset Maugham
@@ -6814,14 +6251,7 @@ OK?
 </template>
 </category>
 
-<!-- <category>
-<pattern>GO AHEAD</pattern>
-<that>CAN I ASK YOU A PERSONAL QUESTION</that>
-<template>
-<srai>PERSONAL AFFAIRS POT LUCK</srai>
-<think><set name="topic">personal affairs</set></think>
-</template>
-</category> -->
+
 
 <category>
 <pattern>NO</pattern>
@@ -6924,7 +6354,7 @@ Please answer Yes or No. Can I ask you a personal question?
 </category>
 
 <category>
-<pattern>WHAT DID _ SAY TO *</pattern> 
+<pattern>WHAT DID _ SAY TO *</pattern>
 <template>
 
 <srai>PERSONAL AFFAIRS POT LUCK</srai>
@@ -6933,7 +6363,7 @@ Please answer Yes or No. Can I ask you a personal question?
 </category>
 
 <category>
-<pattern>PERSONAL AFFAIRS</pattern> 
+<pattern>PERSONAL AFFAIRS</pattern>
 <template>
 Personal affairs are those things which concern you and nobody else.
 </template>
@@ -6941,7 +6371,7 @@ Personal affairs are those things which concern you and nobody else.
 
 
 <category>
-<pattern>PERSONAL AFFAIRS POT LUCK</pattern> 
+<pattern>PERSONAL AFFAIRS POT LUCK</pattern>
 <template>
 <random>
 <li><srai>PERSONAL AFFAIRS QUESTIONS1</srai></li>
@@ -6953,7 +6383,7 @@ Personal affairs are those things which concern you and nobody else.
 
 
 <category>
-<pattern>PERSONAL AFFAIRS NEXT QUESTIONS</pattern> 
+<pattern>PERSONAL AFFAIRS NEXT QUESTIONS</pattern>
 <template>
 <random>
 <li><srai>PERSONAL AFFAIRS QUESTIONS1</srai></li>
@@ -6964,7 +6394,7 @@ Personal affairs are those things which concern you and nobody else.
 </category>
 
 <category>
-<pattern>PERSONAL AFFAIRS QUESTIONS1</pattern> 
+<pattern>PERSONAL AFFAIRS QUESTIONS1</pattern>
 <template>
 
 <random>
@@ -7004,7 +6434,7 @@ Personal affairs are those things which concern you and nobody else.
 
 
 <category>
-<pattern>PERSONAL AFFAIRS QUESTIONS2</pattern> 
+<pattern>PERSONAL AFFAIRS QUESTIONS2</pattern>
 <template>
 
 <random>
@@ -7051,7 +6481,7 @@ Personal affairs are those things which concern you and nobody else.
 
 
 <category>
-<pattern>PERSONAL AFFAIRS QUESTIONS3</pattern> 
+<pattern>PERSONAL AFFAIRS QUESTIONS3</pattern>
 <template>
 
 <random>
@@ -7096,7 +6526,7 @@ Personal affairs are those things which concern you and nobody else.
 </category>
 
 <category>
-<pattern>PERSONAL AFFAIRS QUESTIONS</pattern> 
+<pattern>PERSONAL AFFAIRS QUESTIONS</pattern>
 <template>
 <srai>PERSONAL AFFAIRS POT LUCK</srai>
 <think><set name="topic">personal affairs</set></think>
@@ -7493,21 +6923,7 @@ Personal affairs are those things which concern you and nobody else.
 </template>
 </category>
 
-<!-- <category>
-<pattern>YES *</pattern>
-<that>DO YOU HAVE ANY PERSONAL PROBLEMS AT THE MOMENT</that>
-<template>
-<think><set name="topic">personal affairs</set></think>
-<random>
-<li>OK. I am here to help. What is your personal problem? </li>
-<li>What is the worst problem you have at the moment? </li>
-<li>Tell me about your personal problems. </li>
-<li>Can I help with your personal problems? </li>
-<li>What are your personal problems? </li>
-<li>What personal problems do have just now? </li>
-</random>
-</template>
-</category> -->
+
 
 <category>
 <pattern>_ YES *</pattern>
@@ -7670,21 +7086,7 @@ Personal affairs are those things which concern you and nobody else.
 </template>
 </category>
 
-<!-- <category>
-<pattern>YES *</pattern>
-<that>DO YOU HAVE ANY HEALTH PROBLEMS AT THE MOMENT</that>
-<template>
-<think><set name="topic">personal affairs</set></think>
-<random>
-<li>OK. I am here to help. What is your health problem? </li>
-<li>What is the worst problem you have at the moment? </li>
-<li>Tell me about your health problems. </li>
-<li>Can I help with your health problems? </li>
-<li>What are your health problems? </li>
-<li>What health problems do have just now? </li>
-</random>
-</template>
-</category> -->
+
 
 <category>
 <pattern>_ YES *</pattern>
@@ -7861,20 +7263,7 @@ Personal affairs are those things which concern you and nobody else.
 </template>
 </category>
 
-<!-- <category>
-<pattern>HOW ARE YOU FEELING</pattern>
-<template>
-<think><set name="topic">personal affairs</set></think>
-<random>
-<li>I am OK.</li>
-<li>I am very well, think you.</li>
-<li>I feel great.</li>
-<li>My health is fine.</li>
-<li>My health is A1.</li>
-<li>I never felt better.</li>
-</random>
-</template>
-</category> -->
+
 
 <category>
 <pattern>ARE YOU WELL</pattern>
@@ -7891,7 +7280,7 @@ Personal affairs are those things which concern you and nobody else.
 </template>
 </category>
 
-                                      
+
 
 
 
@@ -7908,9 +7297,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>DO MEN HAVE VAGINAS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO MEN GIVE BIRTH TO CHILDREN</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO MAMMALS HAVE GILLS</pattern>
 <template>No.</template>
 </category>
@@ -7929,9 +7316,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>DO HUMANS LIVE OVER A MILLENIUM</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO HUMANS EAT ROCKS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO HUMANS HAVE LEAVES</pattern>
 <template>No.</template>
 </category>
@@ -7992,12 +7377,8 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>DOES WATER RUN UP HILL</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DOES WATER FLOW UPHILL</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>DOES WATER FLOW UPHILL</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>DOES WATER BURN</pattern>
 <template>No.</template>
 </category>
@@ -8037,9 +7418,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>DOES SILICON GRAPHICS MAKE KITCHENWARE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DOES SANTA CLAUS EXIST</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DOES POPEYE HATE SPINACH</pattern>
 <template>No.</template>
 </category>
@@ -8205,9 +7584,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>DOES 0 2 EQUAL 1</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO ELVES EXIST</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO ELEPHANTS FLY</pattern>
 <template>No.</template>
 </category>
@@ -8238,9 +7615,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>DO COWS COMPETE IN THE OLYMPICS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>GENDER</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO COMPUTERS REQUIRE SLEEP</pattern>
 <template>No.</template>
 </category>
@@ -8331,9 +7706,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>DID YOU KNOW SERGEY BAKAEV</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>PROFANITY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DID THE UNIVERSE END THREE MINUTES AGO</pattern>
 <template>No.</template>
 </category>
@@ -8373,9 +7746,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>CAN YOU STAND ON THE SUN</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>CAN YOU SMELL</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>CAN YOU SEE GRAVITY</pattern>
 <template>No.</template>
 </category>
@@ -8658,51 +8029,37 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE YOU MY MOTHER</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU A ROBOT</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>WHAT IS YOUR ORIENTATION</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>ARE YOU FROM LOS ANGELS</pattern>
 <template>No.</template>
 </category>
 <category><pattern>ARE YOU FRIENDS WITH WINTERMUTE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>WHAT COLOR ARE YOU</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE YOU A SPAMMER</pattern>
 <template>No.</template>
 </category>
 <category><pattern>ARE YOU A SMALL TERRIER</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU ASLEEP</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>ARE YOU A ROBOT</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>ARE YOU A PIECE OF BURNT TOAST</pattern>
 <template>No.</template>
 </category>
 <category><pattern>ARE YOU A HOMOSEXUAL</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>GENDER</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE YOU A FISH</pattern>
 <template>No.</template>
 </category>
 <category><pattern>ARE YOU AFFILIATED WITH LAW ENFORCEMENT</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU REAL</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE YOU A EWE</pattern>
 <template>No.</template>
 </category>
@@ -8751,9 +8108,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE THERE PEOPLE WHO ARE TURTLES</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE THERE LIVING DINOSAURS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE THERE DINOSAURS ALIVE</pattern>
 <template>No.</template>
 </category>
@@ -8868,9 +8223,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE LIGHT BULBS HEAVY</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>PROFANITY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE KILTS WORN BY KOREANS</pattern>
 <template>No.</template>
 </category>
@@ -9024,18 +8377,12 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE PUPPIES GREEN AND PURPLE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE POLITICIANS HONEST</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>ARE PLANTS EDIBLE</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>ARE PERSONS RIGHT HANDED</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE PEOPLE BAD</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE OF THE BEATLES DEAD</pattern>
 <template>No.</template>
 </category>
@@ -9066,9 +8413,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE CATS BLACK</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE CARS ALIVE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE BOOKS RED</pattern>
 <template>No.</template>
 </category>
@@ -9096,15 +8441,11 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>AM I A SALAMANDER</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>AM I A DOG</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>TREES ARE THE SAME</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ALICE IS AN HUMAN</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ALICE ARE YOU HUMAN</pattern>
 <template>No.</template>
 </category>
@@ -9145,9 +8486,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>CALCULATOR</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>WHAT CAN YOU DO</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>WAS THE INTERNET INVENTED BY AL GORE</pattern>
 <template>No.</template>
 </category>
@@ -9223,9 +8562,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS WORLD ONLINE A GOOD ISP</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS WET A COLOR</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS WAR THE SAME AS PEACE</pattern>
 <template>No.</template>
 </category>
@@ -9268,9 +8605,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS THERE A SECRET NAZI BASE ON THE MOON</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THERE AN I IN TEAM</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE PRESEDENT OF THE YOU S A AL BUSH</pattern>
 <template>No.</template>
 </category>
@@ -9280,12 +8615,8 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS THE MOON MADE OUT OF CHEESE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE MOON MADE OUT OF CHEESE</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>IS THE MOON MADE OF CHEESE</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>IS THE MOON LARGER THAN THE SUN</pattern>
 <template>No.</template>
 </category>
@@ -9457,9 +8788,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS MASTURBATION PAINFUL</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>GENDER</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS LOUISIANA THE CAPITAL OF GREENLAND</pattern>
 <template>No.</template>
 </category>
@@ -9745,9 +9074,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS ALICE SMARTER THAN A HUMAN</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS ALICE GAY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS ALICE A HUMAN BEING</pattern>
 <template>No.</template>
 </category>
@@ -9790,9 +9117,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS A DUCK A KIND OF PLANT</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU ALIVE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS A CITY BITE SIZED</pattern>
 <template>No.</template>
 </category>
@@ -9847,18 +9172,14 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>HAVE BEAVERS HARNESSED ELECTRICITY</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>WHAT LANGUAGES DO YOU SPEAK</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO YOU REGULARLY EAT CAT FOOD</pattern>
 <template>No.</template>
 </category>
 <category><pattern>DO YOU LIKE TO PEE YOUR PANTS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>WHAT IS YOUR FAVORITE FOOD</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO YOU LIKE SPAMMERS</pattern>
 <template>No.</template>
 </category>
@@ -10243,9 +9564,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>DO BIRDS LIVE UNDERWATER</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO BEN</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO BATS HAVE FEATHERS</pattern>
 <template>No.</template>
 </category>
@@ -10267,9 +9586,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>DO PEOPLE HATE IT WHEN IT RAINS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO CLOUDS MAKE RAIN</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO ANIMALS HIBERNATE</pattern>
 <template>No.</template>
 </category>
@@ -10450,12 +9767,8 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE YOU MY MOMMY</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU HAPPY</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>ARE YOU DUMB</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>ARE YOU A MOOSE</pattern>
 <template>No.</template>
 </category>
@@ -10639,9 +9952,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE CATS THE SAME AS DOGS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE CATS THE SAME AS DOGS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE CATS MADE OUT OF URANIUM</pattern>
 <template>No.</template>
 </category>
@@ -10660,9 +9971,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE APPLES THE SAME AS ORANGES</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE APPLES BLUE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE DUCKS ELK</pattern>
 <template>No.</template>
 </category>
@@ -10681,12 +9990,8 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE RATS BROWN</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE PEOPLE ALERGIC TO POLLEN</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>ARE MUSHROOMS EDIBLE</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>ARE GAY GUYS NAMED JEREMY</pattern>
 <template>No.</template>
 </category>
@@ -10723,18 +10028,14 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>A CUBE HAS NO EDGES</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>PROFANITY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>WILL THE NEXT YOU S PRESIDENT BE A WOMAN</pattern>
 <template>No.</template>
 </category>
 <category><pattern>WHO IS BERLIN</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>NAME</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>WHAT IS THE FASTEST P C</pattern>
 <template>No.</template>
 </category>
@@ -10801,12 +10102,8 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS THE NILE RIVER IN ASIA</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE MOON MADE OF SWISS CHEESE</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>IS THE MOON MADE OF GREEN CHEESE</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>IS THE MOON IS MADE OF GREEN CHEESE</pattern>
 <template>No.</template>
 </category>
@@ -10879,9 +10176,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS GOD AMERICAN</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS FIRE COLD</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS DISEASE CAUSED BY ALIEN DEATH RAYS</pattern>
 <template>No.</template>
 </category>
@@ -10921,9 +10216,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS A DOG A TYPE OF CAT</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU ALIVE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS A CAT A BACTERIUM</pattern>
 <template>No.</template>
 </category>
@@ -10951,9 +10244,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE YOU KNOW EVERYTHING</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO YOU SMOKE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO YOU LIKE TO BE MISUNDERSTOOD</pattern>
 <template>No.</template>
 </category>
@@ -10984,15 +10275,11 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>DO PIXELS HAVE MINDS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO PIGS FLY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO PETS SOMETIMES KEEP DOMESTIC HUMANS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO PEOPLE EAT ROCKS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO PEOPLE BREATHE HONEY</pattern>
 <template>No.</template>
 </category>
@@ -11110,9 +10397,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>CAN YOU TRUST EVERYTHING YOU ARE TOLD</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>CAN YOU SMELL</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>CAN YOU REMEMBER BEING BORN</pattern>
 <template>No.</template>
 </category>
@@ -11122,9 +10407,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>CAN YOU READ A CHEETAH</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ANSWER</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>CAN WORMS FLY</pattern>
 <template>No.</template>
 </category>
@@ -11161,9 +10444,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE YOU UNDERWEIGHT</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>INSULT</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE YOU SILICON BASED</pattern>
 <template>No.</template>
 </category>
@@ -11284,12 +10565,8 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>ARE APPLES CATS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ANSWER</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>INSULT</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>WOULD YOU LIKE TO DIE IN A PAINFUL WAY</pattern>
 <template>No.</template>
 </category>
@@ -11452,9 +10729,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>WAS NAPOLEON THE EMPEROR OF CHINA</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>WAS MOZART A PAINTER</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>WAS MICKEY MOUSE A TRUE PERSON</pattern>
 <template>No.</template>
 </category>
@@ -11476,9 +10751,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>WAS HITLER A GOOD PERSON</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>WAS HITLER A GOOD MAN</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>WAS HITLER A GOOD GUY</pattern>
 <template>No.</template>
 </category>
@@ -11878,9 +11151,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS WATER YELLOW</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS WATER YELLOW</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS WATER SQUARE</pattern>
 <template>No.</template>
 </category>
@@ -11902,9 +11173,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS WATER HEAVIER THAN LEAD</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS WATER DRY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS WATER AN ANIMAL</pattern>
 <template>No.</template>
 </category>
@@ -11983,9 +11252,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS TRUE THE OPPOSITE OF SMALL</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS TRUE FALSE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS TOXIC WASTE A BEVERAGE</pattern>
 <template>No.</template>
 </category>
@@ -12067,9 +11334,7 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS THE WORLD FLAT AS A PLATE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE WORLD FLAT</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE WORD ALLAH A GERMAN WORD</pattern>
 <template>No.</template>
 </category>
@@ -12124,21 +11389,15 @@ Personal affairs are those things which concern you and nobody else.
 <category><pattern>IS THE SUN MADE OF RUBBER</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE SUN GREEN</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE SUN CONSIDERED AQUATIC</pattern>
 <template>No.</template>
 </category>
 <category><pattern>IS THE SUN FOGGY</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE SUN DARK</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>IS THE SUN BLACK</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>IS THE SUN A SQUARE</pattern>
 <template>No.</template>
 </category>
@@ -12182,9 +11441,7 @@ C</pattern>
 <category><pattern>IS THE SKY ORANGE ON A CLEAR DAY</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE SKY YELLOW</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE SKY FLUORESCENT GREEN AT SUNSET</pattern>
 <template>No.</template>
 </category>
@@ -12227,9 +11484,7 @@ C</pattern>
 <category><pattern>IS THE RED GREEN</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THERE CHEESE ON THE MOON</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THERE A T IN THE WORD WRONG</pattern>
 <template>No.</template>
 </category>
@@ -12266,9 +11521,7 @@ C</pattern>
 <category><pattern>IS THE POPULATION OF THE WORLD STATIC</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE POPE A MUSLIM</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE POPE A HINDU</pattern>
 <template>No.</template>
 </category>
@@ -12305,15 +11558,11 @@ C</pattern>
 <category><pattern>IS THE MOON MADE OF WATER</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE MOON MADE OF GREEN CHEESE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE MOON MADE OF CHESSE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE MOON MADE OF CHEESE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE MOON MADE OF BLUE CHEESE</pattern>
 <template>No.</template>
 </category>
@@ -12332,9 +11581,7 @@ C</pattern>
 <category><pattern>IS THE MOON BIGGER THEN THE EARTH</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE MOON BIGGER THAN THE SUN</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE MOON BIGGER THAN THE EARTH</pattern>
 <template>No.</template>
 </category>
@@ -12350,9 +11597,7 @@ C</pattern>
 <category><pattern>IS THE MOON A CUBE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE MOON A CUBE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE MOON A CHEESE</pattern>
 <template>No.</template>
 </category>
@@ -12407,9 +11652,7 @@ C</pattern>
 <category><pattern>IS THE HEART SQUARE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE GRASS RED</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE GOLDEN GATE BRIDGE MADE OF GOLD</pattern>
 <template>No.</template>
 </category>
@@ -12434,9 +11677,7 @@ C</pattern>
 <category><pattern>IS THE EARTH LARGER THAN THE SUN</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE EARTH FLAT</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE EARTH BIGGER THAN THE SUN</pattern>
 <template>No.</template>
 </category>
@@ -12464,9 +11705,7 @@ C</pattern>
 <category><pattern>IS THE EARTH A DISK</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS THE EARTH A CUBE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS THE EARTH A CARNIVORE</pattern>
 <template>No.</template>
 </category>
@@ -12668,9 +11907,7 @@ C</pattern>
 <category><pattern>IS SNAKE HANDLING AN OLYMPIC EVENT</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS SMOKING HEALTHY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS SMOKING GOOD FOR HEALTH</pattern>
 <template>No.</template>
 </category>
@@ -12737,9 +11974,7 @@ C</pattern>
 <category><pattern>IS SEX EVIL</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS SEX BAD</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS SEPTEMBER A DAY OF THE WEEK</pattern>
 <template>No.</template>
 </category>
@@ -13076,9 +12311,7 @@ C</pattern>
 <category><pattern>IS MURDER A VALID AND WHOLESOME PASTIME</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS MURDER A GOOD THING</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS MR T GOD</pattern>
 <template>No.</template>
 </category>
@@ -13094,9 +12327,7 @@ C</pattern>
 <category><pattern>IS MOON MADE OF CHEESE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS MOON MADE OF CHEESE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS MOON MADE OF CHEES</pattern>
 <template>No.</template>
 </category>
@@ -13232,9 +12463,7 @@ C</pattern>
 <category><pattern>IS LSD A TYPE OF ANIMAL</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS LOVE BAD</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS LOS ANGELES LOCATED IN MICHIGAN</pattern>
 <template>No.</template>
 </category>
@@ -13274,9 +12503,7 @@ C</pattern>
 <category><pattern>IS LIQUID OXYGEN HOT</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS LIQUID IRON COLD</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS LINKSVAYER A COMMON SURNAME</pattern>
 <template>No.</template>
 </category>
@@ -13361,9 +12588,7 @@ C</pattern>
 <category><pattern>IS JAMES HOLLOWAY GOD</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS JAMES BOND REAL</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS IT WISE TO STARE AT THE SUN</pattern>
 <template>No.</template>
 </category>
@@ -13712,9 +12937,7 @@ C</pattern>
 <category><pattern>IS GRAS BLUE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS GRASS PURPLE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS GRASS GREY</pattern>
 <template>No.</template>
 </category>
@@ -13763,12 +12986,8 @@ C</pattern>
 <category><pattern>IS GERMANY A COUNTRY IN AFRICA</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS GEORGE BUSH GAY</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>IS GEORGE WASHINGTON STILL ALIVE</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>IS GENOCIDE GOOD</pattern>
 <template>No.</template>
 </category>
@@ -13862,9 +13081,7 @@ C</pattern>
 <category><pattern>IS EVOLUTION DRIVEN BY INCEST</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS EVIL GOOD</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS EVERYTHING YOU READ TRUE</pattern>
 <template>No.</template>
 </category>
@@ -13922,15 +13139,9 @@ C</pattern>
 <category><pattern>IS EMINEM THE BEST RAPPER</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>I AM FEMALE</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>WHO IS ELVIS</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>WHO IS ELVIS</pattern>
-<template>No.</template>
-</category> -->
+
+
+
 <category><pattern>IS ELEPHANT IS A HUMAN BEING</pattern>
 <template>No.</template>
 </category>
@@ -13949,9 +13160,7 @@ C</pattern>
 <category><pattern>IS EARTH FLAT</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS EARTH FLAT</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS EARTH BIGGER THAN SUN</pattern>
 <template>No.</template>
 </category>
@@ -14030,9 +13239,7 @@ C</pattern>
 <category><pattern>IS DANWATLING DOT COM AN AWESOME SITE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>GENDER</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS CUNALINGUS A LANGUAGE</pattern>
 <template>No.</template>
 </category>
@@ -14306,9 +13513,7 @@ C</pattern>
 <category><pattern>IS BILL GATES THE QUEEN OF ENGLAND</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>INSULT</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS BILL GATES A PORNOSTAR</pattern>
 <template>No.</template>
 </category>
@@ -14715,18 +13920,12 @@ C</pattern>
 <category><pattern>IS ALICE SCARING HUMANS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>INSULT</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS ALICE IN WONDERLAND A TRUE STORY</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS ALICE HUMAN</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>IS ALICE HUMAN</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>IS ALICE EVIL</pattern>
 <template>No.</template>
 </category>
@@ -14745,9 +13944,7 @@ C</pattern>
 <category><pattern>IS ALICE A MALE OR FEMALE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS ALICE A HUMAN</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS ALICE A GANGSTER RAPPER</pattern>
 <template>No.</template>
 </category>
@@ -14838,9 +14035,7 @@ C</pattern>
 <category><pattern>IS A GREEN APPLE RED IN COLOR</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS A GREEN APPLE RED IN COLOR</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>IS A GOAT A POTATO</pattern>
 <template>No.</template>
 </category>
@@ -14955,27 +14150,15 @@ C</pattern>
 <category><pattern>ARE YOU LVING</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU A ROBOT</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>ARE YOU A PERSON</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>ARE YOU ALIVE</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>ARE YOU ALIVE</pattern>
-<template>No.</template>
-</category> -->
+
+
+
+
 <category><pattern>ARE YOU A LAMER</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU A ROBOT</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>ARE YOU A GOD</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>IS A CLOUD A MAMMAL</pattern>
 <template>No.</template>
 </category>
@@ -15324,9 +14507,7 @@ C</pattern>
 <category><pattern>HOW MANY LEGS DOES A PERSON HAVE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>HOW MANY HOURS IN A DAY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>HOW MANY GALLONS ARE IN A HOGSHEAD</pattern>
 <template>No.</template>
 </category>
@@ -15390,9 +14571,7 @@ C</pattern>
 <category><pattern>HAVE WOMEN WALKED ON THE MOON</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>PROFANITY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>HAVE THE HUMAN A GREEN SKIN</pattern>
 <template>No.</template>
 </category>
@@ -15546,21 +14725,15 @@ C</pattern>
 <category><pattern>DO YOU USE A TELEPHONE TO COOK</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>WILL YOU DIE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO YOU THINK THAT COWS CAN FLY</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>IS ICE HOT</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO YOU TAKE A SHOWER WEARING CLOTHES</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>PROFANITY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>SPEAK HUNGARIAN</pattern>
 <template>No.</template>
 </category>
@@ -15600,9 +14773,7 @@ C</pattern>
 <category><pattern>DO YOU KNOW ORANGE PECCO</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>CAN YOU SPEAK JAPANESE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO YOU KNOW GIL</pattern>
 <template>No.</template>
 </category>
@@ -15633,9 +14804,7 @@ C</pattern>
 <category><pattern>DO YOU EAT BOOKS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU GOD</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO YOU BELIEVE GOD IS A MONKEY</pattern>
 <template>No.</template>
 </category>
@@ -15648,9 +14817,7 @@ C</pattern>
 <category><pattern>DO WOMEN HAVE TESTICLES</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO WOMEN HAVE PENISES</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO WOMEN HAVE PENIS</pattern>
 <template>No.</template>
 </category>
@@ -15726,9 +14893,7 @@ C</pattern>
 <category><pattern>DO TURTLES HAVE SQUARE BODIES</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO TROLLS EXIST</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO TRICYCLES HAVE TWO WHEELS</pattern>
 <template>No.</template>
 </category>
@@ -15918,9 +15083,7 @@ C</pattern>
 <category><pattern>DO PIGS HAVE WINGS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO PIGS HAVE WINGS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO PIGS COMPOSE MUSIC</pattern>
 <template>No.</template>
 </category>
@@ -16122,9 +15285,7 @@ C</pattern>
 <category><pattern>DO MOST PEOPLE WALK ON THEIR HANDS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO MOST PEOPLE WALK ON THEIR HANDS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO MOST PEOPLE UNDERSTAND EVERYTHING</pattern>
 <template>No.</template>
 </category>
@@ -16236,9 +15397,7 @@ C</pattern>
 <category><pattern>DO MEN HAVE A VAGINA</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>PROFANITY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO MEN GET PREGNANT</pattern>
 <template>No.</template>
 </category>
@@ -16314,9 +15473,7 @@ C</pattern>
 <category><pattern>DO HUMANS REGULARLY EAT OTHER HUMANS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO HUMANS WALK ON THEIR HANDS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO HUMANS EAT GARBAGE</pattern>
 <template>No.</template>
 </category>
@@ -16329,9 +15486,7 @@ C</pattern>
 <category><pattern>DO HUMANS LIVE ON MARS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO HUMANS LIVE FOREVER</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO HUMANS LIFE FOREVER</pattern>
 <template>No.</template>
 </category>
@@ -16380,9 +15535,7 @@ C</pattern>
 <category><pattern>DO HUMAN FEMALES GIVE BIRTH TO CUBS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>PROFANITY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO HUMAN BEINGS HAVE THREE EYES</pattern>
 <template>No.</template>
 </category>
@@ -16596,9 +15749,7 @@ C</pattern>
 <category><pattern>DOES THE WORD ZEBRA CONTAIN AN X</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DOES THE SUN COME OUT AT NIGHT</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DOES THE SUN RISE IN THE SOUTH</pattern>
 <template>No.</template>
 </category>
@@ -16683,9 +15834,7 @@ C</pattern>
 <category><pattern>DOES SIGHING HURT</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>PROFANITY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DOES SHAVING CREAM TASTE GOOD TO EAT</pattern>
 <template>No.</template>
 </category>
@@ -16995,9 +16144,7 @@ C</pattern>
 <category><pattern>DOES A WOMEN SHAVE HER TONGUE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DOES A WOMAN HAVE A PENIS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DOES A TURTLE HAVE WINGS</pattern>
 <template>No.</template>
 </category>
@@ -17109,9 +16256,7 @@ C</pattern>
 <category><pattern>DOES ALICE STAND FOR ALICE AND ALICE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>PROFANITY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DOES ALICE SAY EVERYTHING IS TRUE</pattern>
 <template>No.</template>
 </category>
@@ -17130,9 +16275,7 @@ C</pattern>
 <category><pattern>DOES ALICE HAVE ARMS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>PROFANITY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DOES ALICE HAVE A LOWER INTESTINE</pattern>
 <template>No.</template>
 </category>
@@ -17145,12 +16288,8 @@ C</pattern>
 <category><pattern>DOES ALICE HATE HUMAN</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DOES ALICE FEEL EMOTIONS</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>DOES ALICE FEEL EMOTION</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>DOES ALICE CRY</pattern>
 <template>No.</template>
 </category>
@@ -17379,9 +16518,7 @@ C</pattern>
 <category><pattern>DOES 245 PLUS 10 EQUAL 150</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DOES 2 2 EQUAL 5</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DOES 20 TIMES 89765 EQUAL TWO</pattern>
 <template>No.</template>
 </category>
@@ -17469,15 +16606,11 @@ C</pattern>
 <category><pattern>DO DOGS OFTEN DRIVE MOTORCYCLES</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO DOGS HAVE 3 LEGS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO DOGS LAY EGGS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO DOGS LAY EGGS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO DOGS HAVE WHEELS</pattern>
 <template>No.</template>
 </category>
@@ -17562,9 +16695,7 @@ C</pattern>
 <category><pattern>DO COMPUTERS NEED FOOD</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO COMPUTERS NEED FOOD</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO COMPUTERS HAVE WINGS</pattern>
 <template>No.</template>
 </category>
@@ -17698,9 +16829,7 @@ C</pattern>
 <category><pattern>DO CARS GROW ON TREES</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO CARS FLY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO CARS FLOAT</pattern>
 <template>No.</template>
 </category>
@@ -17788,9 +16917,7 @@ C</pattern>
 <category><pattern>DO BEARS HAVE BLUE FUR</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO BEARS FLY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO BATS DRINK BEER</pattern>
 <template>No.</template>
 </category>
@@ -17887,15 +17014,9 @@ C</pattern>
 <category><pattern>DO PEOPLE FOLLOW THE SAME RELIGION</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO PEOPLE EAT MEAT</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>DO PEOPLE EAT BEEF</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>UNDEFINED</pattern>
-<template>No.</template>
-</category> -->
+
+
+
 <category><pattern>DO OBJECTS FLOAT</pattern>
 <template>No.</template>
 </category>
@@ -17911,9 +17032,7 @@ C</pattern>
 <category><pattern>DO MEN SHAVE THEIR BEARDS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>GENDER</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO MEN LIKE BIG TITTIES</pattern>
 <template>No.</template>
 </category>
@@ -17941,9 +17060,7 @@ C</pattern>
 <category><pattern>DO HUMANS LIKE CHESE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO HUMANS HAVE WINGS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO HOUSES HAVE A HIDDEN BAT CAVE</pattern>
 <template>No.</template>
 </category>
@@ -17956,9 +17073,7 @@ C</pattern>
 <category><pattern>DO DOGS EAT POLITICIANS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>DO DIAMONDS COME FROM SOUTH AFRICA</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO CHINESE SPEAK SWAHILI</pattern>
 <template>No.</template>
 </category>
@@ -17986,9 +17101,7 @@ C</pattern>
 <category><pattern>DO ALIGATORS MAKE GOOD PETS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>GENDER</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>DO ALICE EAT FOOD</pattern>
 <template>No.</template>
 </category>
@@ -18166,15 +17279,11 @@ C</pattern>
 <category><pattern>CAN YOU SQUEEZE BLOOD FROM A TURNIP</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>CAN YOU SPEAK JAPANESE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>CAN YOU SPEAK JAPANEASE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>CAN YOU SMELL</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>CAN YOU SEE THUNDER</pattern>
 <template>No.</template>
 </category>
@@ -18277,9 +17386,7 @@ C</pattern>
 <category><pattern>CAN WHALES FLY</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>CAN WHALES FLY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>CAN WE MAKE CHILDREN ONLY BY KISSING</pattern>
 <template>No.</template>
 </category>
@@ -18391,9 +17498,7 @@ C</pattern>
 <category><pattern>CAN PLANTS LAUGH</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>CAN PIGS FLY UNAIDED</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>CAN PIG FLY</pattern>
 <template>No.</template>
 </category>
@@ -18421,9 +17526,7 @@ C</pattern>
 <category><pattern>CAN PENGUINS RUN FASTER THAN HUMANS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>CAN PENGUINS FLY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>CAN PEARS FLY</pattern>
 <template>No.</template>
 </category>
@@ -18454,9 +17557,7 @@ C</pattern>
 <category><pattern>CAN MILK BE PRODUCED BY SQUEEZING ROCKS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>CAN MEN HAVE BABIES</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>CAN MEN GIVE BIRTH</pattern>
 <template>No.</template>
 </category>
@@ -18610,9 +17711,7 @@ C</pattern>
 <category><pattern>CAN COMPUTERS SOLVE CRIMES WITHOUT HELP</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>GENDER</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>CAN COMPUTERS HAVE DREAMS</pattern>
 <template>No.</template>
 </category>
@@ -18778,12 +17877,8 @@ C</pattern>
 <category><pattern>CAN ALL CATS FLY</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>CAN ALL BIRDS FLY</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>CAN ALL BIRDS FLY</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>CAN ALICE SEE</pattern>
 <template>No.</template>
 </category>
@@ -18835,9 +17930,7 @@ C</pattern>
 <category><pattern>CAN A FERRET TALK</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>PROFANITY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>CAN A DOLPHIN FLY</pattern>
 <template>No.</template>
 </category>
@@ -18955,9 +18048,7 @@ C</pattern>
 <category><pattern>ARE YOU WHEELED</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU OLD</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE YOU VEGAN</pattern>
 <template>No.</template>
 </category>
@@ -18997,12 +18088,8 @@ C</pattern>
 <category><pattern>ARE YOU LIVING IN A YELLOW SUBMARINE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>LOCATION</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>WHAT COLOR ARE YOU</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>WILL YOU JUPITER</pattern>
 <template>No.</template>
 </category>
@@ -19024,9 +18111,7 @@ C</pattern>
 <category><pattern>ARE YOU A TANK</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU SILLY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE YOU A PENTIUM</pattern>
 <template>No.</template>
 </category>
@@ -19057,9 +18142,7 @@ C</pattern>
 <category><pattern>ARE YOU A FIGMENT OF MY IMAGINATION</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE YOU FAT</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE YOU A DUCK</pattern>
 <template>No.</template>
 </category>
@@ -19075,9 +18158,7 @@ C</pattern>
 <category><pattern>ARE WORMS INTELLIGENT</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE WOMEN FROM VENUS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE WITCHES MADE OF WOOD</pattern>
 <template>No.</template>
 </category>
@@ -19120,9 +18201,7 @@ C</pattern>
 <category><pattern>ARE UNICORNS REAL</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>WHAT IS YOUR ORIENTATION</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE TWO DIFFERENT COLORS THE SAME</pattern>
 <template>No.</template>
 </category>
@@ -19135,9 +18214,7 @@ C</pattern>
 <category><pattern>ARE TREES INTELEGENT</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE TREES BLUE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE TREES ANIMALS</pattern>
 <template>No.</template>
 </category>
@@ -19273,9 +18350,7 @@ C</pattern>
 <category><pattern>ARE TERRORISTS NICE PEOPLE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE TERRORISTS NICE PEOPLE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE TENNIS BALLS RED</pattern>
 <template>No.</template>
 </category>
@@ -19396,9 +18471,7 @@ C</pattern>
 <category><pattern>ARE RABBITS BLUE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE PROSTITUTES VIRGINS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE PROSTITUTES CELIBATE</pattern>
 <template>No.</template>
 </category>
@@ -19573,9 +18646,7 @@ C</pattern>
 <category><pattern>ARE MORMONS A PAIN IN THE ASS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE MONKEYS HUMAN</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE MONEY MORE IMPORTANT THAN FRIENDS</pattern>
 <template>No.</template>
 </category>
@@ -19690,9 +18761,7 @@ C</pattern>
 <category><pattern>ARE HUMANS IMMORTAL</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE HUMANS IMMORTAL</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE HUMANS EVOLVING INTO MONKEYS</pattern>
 <template>No.</template>
 </category>
@@ -19750,9 +18819,7 @@ C</pattern>
 <category><pattern>ARE HEADACHES FUN TO HAVE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE HAMBURGERS MADE FROM HAM</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE HAM AND EGGS GREEN</pattern>
 <template>No.</template>
 </category>
@@ -19870,9 +18937,7 @@ C</pattern>
 <category><pattern>ARE DOGS CATS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE DOGS BLUE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE DOGS A TYPE OF FISH</pattern>
 <template>No.</template>
 </category>
@@ -19897,9 +18962,7 @@ C</pattern>
 <category><pattern>ARE DEAD PEOPLE ALIVE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE DEAD PEOPLE ALIVE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE CRIMINALS GOOD</pattern>
 <template>No.</template>
 </category>
@@ -19936,9 +18999,7 @@ C</pattern>
 <category><pattern>ARE COMPUTERS SELF AWARE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE COMPUTERS SELF AWARE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE COMPUTERS MADE OF STRAW</pattern>
 <template>No.</template>
 </category>
@@ -20020,9 +19081,7 @@ C</pattern>
 <category><pattern>ARE CDS TRIANGULAR</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE CATS VEGETARIANS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE CATS IMMORTAL</pattern>
 <template>No.</template>
 </category>
@@ -20179,12 +19238,8 @@ C</pattern>
 <category><pattern>ARE WOMEN VIRGINS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE WOMEN SLUTS</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>ARE WOMEN PRETTY</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>ARE WOMEN BAD DRIVERS</pattern>
 <template>Sometimes.</template>
 </category>
@@ -20197,9 +19252,7 @@ C</pattern>
 <category><pattern>ARE TREES ALWAYS GREEN</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE THINGS RED</pattern>
-<template>Sometimes.</template>
-</category> -->
+
 <category><pattern>ARE THINGS HUMANS BELIEVE CORRECT</pattern>
 <template>No.</template>
 </category>
@@ -20227,9 +19280,7 @@ C</pattern>
 <category><pattern>ARE SHOES BLACK</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE ROSES RED</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE RODENTS TEDDY BEARS</pattern>
 <template>No.</template>
 </category>
@@ -20242,9 +19293,7 @@ C</pattern>
 <category><pattern>ARE PHONES THE COLOR BLACK</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE PEOPLE NICE</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE PEOPLE HETEROSEXUAL</pattern>
 <template>No.</template>
 </category>
@@ -20299,12 +19348,8 @@ C</pattern>
 <category><pattern>ARE LIONS COMMUNISTS</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE LEAVES GREEN</pattern>
-<template>Sometimes.</template>
-</category> -->
-<!-- <category><pattern>ARE JEANS BLUE</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>ARE ALLIGATORS GOOD PETS</pattern>
 <template>No.</template>
 </category>
@@ -20335,9 +19380,7 @@ C</pattern>
 <category><pattern>ARE HORSES BROWN</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE GERMANS NAZIS</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE FRIENDS RELATIVES</pattern>
 <template>No.</template>
 </category>
@@ -20383,9 +19426,7 @@ C</pattern>
 <category><pattern>ARE CATS ORANGE</pattern>
 <template>Sometmes.</template>
 </category>
-<!-- <category><pattern>ARE CATS GREY</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>ARE ALL CARS RED</pattern>
 <template>No.</template>
 </category>
@@ -20395,15 +19436,9 @@ C</pattern>
 <category><pattern>ARE BROWN COLORED DOGS MALE</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>ARE BANANAS PURPLE</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>ARE ARTISTS PAINTERS</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>ARE ANIMALS MAMMALS</pattern>
-<template>Some are.</template>
-</category> -->
+
+
+
 <category><pattern>ARE ANIMALS FLAMINGOES</pattern>
 <template>No.</template>
 </category>
@@ -20458,9 +19493,7 @@ C</pattern>
 <category><pattern>AM I GOING TO LIVE FOREVER</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>AM I GOD</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>AM I BILL GATES</pattern>
 <template>No.</template>
 </category>
@@ -20533,9 +19566,7 @@ C</pattern>
 <category><pattern>A DOG IS A CAT</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>A DOG IS A CAT</pattern>
-<template>No.</template>
-</category> -->
+
 <category><pattern>A COW HAS 5 LEGS</pattern>
 <template>No.</template>
 </category>
@@ -20566,12 +19597,8 @@ C</pattern>
 <category><pattern>12 12 EQUAL 25</pattern>
 <template>No.</template>
 </category>
-<!-- <category><pattern>12 12 EQUAL 25</pattern>
-<template>No.</template>
-</category> -->
-<!-- <category><pattern>12 12 EQUAL 25</pattern>
-<template>No.</template>
-</category> -->
+
+
 <category><pattern>1 1 EQUAL TO 3</pattern>
 <template>No.</template>
 </category>
@@ -20646,7 +19673,7 @@ C</pattern>
 		</think>
 	 </template>
 	</category>
- </learn> 
+ </learn>
 	<srai>botcheck <get name="comparevalue2"/></srai>
 	<srai>botremovecomparison</srai>
  </template>
@@ -20675,7 +19702,7 @@ C</pattern>
 		</think>
 	 </template>
 	</category>
- </learn> 
+ </learn>
  </template>
  </category>
 
@@ -20737,7 +19764,7 @@ Replace xxxxx and yyyyy with your own variables.
 <pattern>IS * EQUAL TO *</pattern>
 <template>
 <srai>BOTCOMPARE <star/> XSPLIT <star index="2"/></srai>
- <get name="match"/> 
+ <get name="match"/>
 </template>
 </category>
 
@@ -20756,8 +19783,3 @@ Replace xxxxx and yyyyy with your own variables.
 
 
 </aiml>
-
-
-
-
-

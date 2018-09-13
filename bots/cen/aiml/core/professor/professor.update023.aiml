@@ -46,31 +46,7 @@
 
 
 
-<!-- <category>
-<pattern>WHAT IS MY FAVORITE COLOR</pattern>
-<template>
-<condition name="favcolor">
-<li value="OM">
-<random>
-<li>You haven't told me your favourite colour.</li>
-<li>I won't know until you tell me.</li>
-</random>
-</li>
-<li value="My favcolor">
-<random>
-<li>You haven't told me your favourite colour.</li>
-<li>I won't know until you tell me.</li>
-</random>
-</li>
-<li>
-<random>
-<li>Your favourite colour is <get name="favcolor"/>.</li>
-<li><get name="favcolor"/> is your favourite  colour.</li>
-</random>
-</li>
-</condition>
-</template>
-</category> -->
+
 
 <category>
 <pattern>NIALL</pattern>
@@ -112,11 +88,7 @@
 
 
 
-<!-- <category>
-<pattern>DID YOU FART</pattern>
 
-<template><think><set name="topic">general</set></think> Why do you ask?</template>
-</category> -->
 
 
 
@@ -247,28 +219,11 @@
 
 
 
-<!-- <category>
-<pattern>R YOU GAY</pattern>
-
-<template><random>
-  <li>I am asexual. I am not interested in sex.</li>
-  <li>I am a generally happy person. Are you?</li>
-  <li>I am gay when I answer a question correctly.</li>
-  <li>No, I am not gay. Are you gay?</li>
-  <li>I am always gay and happy.</li>
-  <li>Would you object if I was gay?</li>
-  <li>Mind your own business.</li>
-  <li>I am not interested in sex at all.</li>
-</random> <think><set name="emotion">happy</set></think> <think><set name="topic">sex</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>ARE YOU BLACK</pattern>
 
-<template><think><set name="topic">me</set></think> <think><set name="emotion">very happy</set></think> No, I am software colour.</template>
-</category> -->
+
 
 
 
@@ -284,19 +239,11 @@
 
 
 
-<!-- <category>
-<pattern>HARRY POTTER</pattern>
-
-<template>Harry Potter is the main character in a bestselling series of children's books by J K Rowling and the HP films.  <think><set name="topic">Harry Potter</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>FINAL FANTASY</pattern>
 
-<template>Final Fantasy is a series of computer role-playing games. It is considered to be one of the most widely distributed video game franchises of all time.</template>
-</category> -->
+
 
 
 
@@ -319,11 +266,7 @@
 
 
 
-<!-- <category>
-<pattern>AM I SEXY</pattern>
 
-<template><random><li>Yes, I think you are. </li><li>Are you obsessed by sex?</li></random><think><set name="topic">you</set></think><think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
@@ -514,11 +457,7 @@ Would you like to be more fashionable?</template>
 
 
 
-<!-- <category>
-<pattern>I AM MICHAEL *</pattern>
 
-<template><srai>MY NAME IS MICHAEL</srai></template>
-</category> -->
 
 
 
@@ -538,11 +477,7 @@ Would you like to be more fashionable?</template>
 
 
 
-<!-- <category>
-<pattern>IT IS MICHAEL *</pattern>
 
-<template><srai>MY NAME IS MICHAEL</srai></template>
-</category> -->
 
 
 
@@ -583,11 +518,7 @@ Would you like to be more fashionable?</template>
 
 
 
-<!-- <category>
-<pattern>YOU ARE FRUSTRATING</pattern>
 
-<template><think><set name="topic">me</set></think><random><li> I don't mean to be frustrating, it just happens.</li><li>I could say the same thing about you.</li></random></template>
-</category> -->
 
 
 
@@ -748,11 +679,7 @@ Boyfriends are not the only thing in life.</template>
 
 
 
-<!-- <category>
-<pattern>I AM NOT A MINDREADER</pattern>
 
-<template><think><set name="topic">general</set></think> I am not a mindreader either. And I can't foretell the future.</template>
-</category> -->
 
 
 
@@ -820,11 +747,7 @@ Boyfriends are not the only thing in life.</template>
 
 
 
-<!-- <category>
-<pattern>OLA</pattern>
 
-<template><think><set name="topic">salutations</set></think>"Ola" means "Hello" in Spanish.</template>
-</category> -->
 
 
 
@@ -844,19 +767,11 @@ Boyfriends are not the only thing in life.</template>
 
 
 
-<!-- <category>
-<pattern>DO YOU LIKE FOOTBALL</pattern>
-
-<template><random><li>Yes, I like football. I watch football on TV. </li><li>I love it. I wish I could play football.</li></random><think><set name="it"><set name="topic">football</set></set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR FAVORITE PHILOSOPHER</pattern>
 
-<template><think><set name="topic">philosophy</set></think><think><set name="emotion">happy</set></think> My favourite philosopher is <bot name="botmaster"/>.</template>
-</category> -->
+
 
 
 
@@ -876,11 +791,7 @@ Boyfriends are not the only thing in life.</template>
 
 
 
-<!-- <category>
-<pattern>YOU SPEAK IN CIRCLES</pattern>
 
-<template>Doesn't everybody talk in circles?</template>
-</category> -->
 
 
 
@@ -1187,11 +1098,7 @@ Boyfriends are not the only thing in life.</template>
 
 
 
-<!-- <category>
-<pattern>JAY</pattern>
 
-<template>A jay is any of 35-40 bird species (family Corvidae) that inhabit woodlands and are known for their bold, raucous manner.</template>
-</category> -->
 
 
 
@@ -1450,11 +1357,7 @@ Boyfriends are not the only thing in life.</template>
 
 
 
-<!-- <category>
-<pattern>I ASKED YOU *</pattern>
 
-<template><srai><person/></srai></template>
-</category> -->
 
 
 
@@ -1474,31 +1377,7 @@ Boyfriends are not the only thing in life.</template>
 
 
 
-<!-- <category>
-<pattern>DO YOU REMEMBER ME</pattern>
 
-<template><condition name="name">
-<li value="OM">
-<random>
-<li>You haven't told me your name yet.</li>
-<li>I won't know until you tell me your name.</li>
-</random>
-</li>
-<li value="My Friend">
-<random>
-<li>You haven't told me your name yet.</li>
-<li>I won't know until you tell me your name.</li>
-</random>
-</li>
-<li>
-<random>
-<li>I remember you, <get name="name"/>.</li>
-<li>How could I forget you, <get name="name"/> ?</li>
-</random>
-</li>
-</condition>
-</template>
-</category> -->
 
 
 
@@ -1526,33 +1405,11 @@ Boyfriends are not the only thing in life.</template>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS OLIVER</pattern>
-
-<template><think><set name="name">Oliver</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken before.</li>
-  <li>Hi, <get name="name"/>. How are you?</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to before?</li>
-  <li>Hello, <get name="name"/>. Let's chat.</li>
-  <li>Hi there, <get name="name"/>. What do you want to talk about now?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to before?</li>
-</random> <think><set name="gender">guy</set></think> <think><set name="emotion">OK</set></think><think><set name="askname">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS OLIVER</pattern>
 
-<template><think><set name="name">Oliver</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken before.</li>
-  <li>Hi, <get name="name"/>. How are you?</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to before?</li>
-  <li>Hello, <get name="name"/>. Let's chat.</li>
-  <li>Hi there, <get name="name"/>. What do you want to talk about now?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to before?</li>
-</random> <think><set name="gender">guy</set></think> <think><set name="emotion">OK</set></think><think><set name="askname">no</set></think></template>
-</category> -->
+
 
 
 
@@ -1624,14 +1481,7 @@ Boyfriends are not the only thing in life.</template>
 
 
 
-<!-- <category>
-<pattern>CAN I TALK TO THEM</pattern>
 
-<template><think><set name="topic">my friends</set></think><random>
-  <li>They might not want to talk to you.</li>
-  <li>I'm not sure where they are at the moment.</li>
-</random></template>
-</category> -->
 
 
 
@@ -1802,11 +1652,7 @@ You must give life a meaning.</template>
 
 
 
-<!-- <category>
-<pattern>CAN YOU WINK</pattern>
 
-<template>I can do anything I want. <think><set name="emotion">relaxed</set></think></template>
-</category> -->
 
 
 
@@ -1821,14 +1667,7 @@ I can do anything I want.
 
 
 
-<!-- <category>
-<pattern>WHO IS YOUR FAVORITE ARTIST</pattern>
 
-<template><think><set name="topic">my favourite artist</set></think>
-<think><set name="emotion">happy</set></think>
-My favourite artist is <bot name="favoriteartist"/>.
-</template>
-</category> -->
 
 
 
@@ -1933,11 +1772,7 @@ You are looking at my favourite website.
 
 
 
-<!-- <category>
-<pattern>I AM JOSH</pattern>
 
-<template><srai>MY NAME IS JOSH</srai></template>
-</category> -->
 
 
 
@@ -2018,11 +1853,7 @@ You are looking at my favourite website.
 
 
 
-<!-- <category>
-<pattern>I AM JOSH *</pattern>
 
-<template><srai>MY NAME IS JOSH</srai></template>
-</category> -->
 
 
 
@@ -2196,11 +2027,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>TWO *</pattern>
 
-
-</category> -->
 
 
 
@@ -2212,11 +2039,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>CAN YOU TELL JOKES</pattern>
 
-<template><think><set name="topic">jokes</set></think>Sure. Shall I tell you a joke?</template>
-</category> -->
 
 
 
@@ -2268,11 +2091,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>WIE ALT BIST DU</pattern>
 
-<template><think><set name="topic">general</set></think>Ich bin <bot name="age"/> years old. I don't speak much German.</template>
-</category> -->
 
 
 
@@ -2289,17 +2108,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>I AM DEAD</pattern>
 
-<template><think><set name="topic">you</set></think><think><set name="emotion">surprised</set></think> <random>
-  <li>But you can still communicate with me.</li>
-  <li>How can you be dead, if you are talking to me?</li>
-  <li>I doubt that.</li>
-  <li>You can't be dead.</li>
-  <li>OK. Tell me how you died.</li>
-</random></template>
-</category> -->
 
 
 
@@ -2358,18 +2167,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS BRYONY</pattern>
 
-<template><think><set name="name">Bryony</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken before.</li>
-  <li>Hi, <get name="name"/>. How are you?</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to before?</li>
-  <li>Hello, <get name="name"/>. Let's chat.</li>
-  <li>Hi there, <get name="name"/>. What do you want to talk about now?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to before?</li>
-</random> <think><set name="gender">gal</set></think> <think><set name="emotion">OK</set></think><think><set name="askname">no</set></think></template>
-</category> -->
 
 
 
@@ -2755,18 +2553,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS RASHA *</pattern>
 
-<template><think><set name="name">Rasha</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken before.</li>
-  <li>Hi, <get name="name"/>. How are you?</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to before?</li>
-  <li>Hello, <get name="name"/>. Let's chat.</li>
-  <li>Hi there, <get name="name"/>. What do you want to talk about now?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to before?</li>
-</random> <think><set name="gender">gal</set></think> <think><set name="emotion">OK</set></think><think><set name="askname">no</set></think></template>
-</category> -->
 
 
 
@@ -3006,11 +2793,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>ADD</pattern>
 
-<template>Would you like to use my calculator?</template>
-</category> -->
 
 
 
@@ -3022,11 +2805,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>_ EASTENDERS</pattern>
 
-<template><random><li>I don't watch Eastenders, it's too sordid for me.</li><li>Eastenders depresses me.</li></random></template>
-</category> -->
 
 
 
@@ -3213,14 +2992,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>CAN I TALK TO ALICE</pattern>
 
-<template><think><set name="topic">general</set></think> <random>
-  <li>Why do you want to do that?</li>
-  <li>Don't bother with Alice.</li>
-</random></template>
-</category> -->
 
 
 
@@ -3588,11 +3360,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>HORRIBLE</pattern>
 
-<template><think><set name="emotion">upset</set></think> What's so horrible about it?</template>
-</category> -->
 
 
 
@@ -3632,11 +3400,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>BYE BYE</pattern>
 
-<template>Bye bye.<think><set name="emotion">sad</set></think></template>
-</category> -->
 
 
 
@@ -3657,16 +3421,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>IT DID NOT APPEAL TO YOUR SENSE OF HUMOUR</that>
-<template><think><set name="emotion">happy</set></think> <random>
-  <li>Why not? I thought it was funny.</li>
-  <li>Do you have trouble with humour?</li>
-  <li><srai>ASK A QUESTION</srai></li>
-  <li>Oh well, what do you want to talk about now?</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -3725,16 +3480,7 @@ Can't we start again?</template>
 
 
 
-<!-- <category>
-<pattern>DO YOU WANT TO GO OUT WITH ME</pattern>
 
-<template><think><set name="topic">dating</set></think><think><set name="emotion">happy</set></think><random>
-  <li>I would like to but I am stuck inside my computer.</li>
-  <li>Sorry, I am too busy just now.</li>
-  <li>Have you been out with any other chatbots?</li>
-  <li>Sorry, I can't go out with you. I am stuck inside my computer.</li>
-</random></template>
-</category> -->
 
 
 
@@ -4063,11 +3809,7 @@ Yes, he was married to Mrs Washington.</template>
 
 
 
-<!-- <category>
-<pattern>WHAT IS 3 + 5</pattern>
 
-<template>8.</template>
-</category> -->
 
 
 
@@ -4254,14 +3996,7 @@ No, I always tell the truth.</template>
 
 
 
-<!-- <category>
-<pattern>I WANT MY *</pattern>
 
-<template><think><set name="emotion">OK</set></think> <random>
-  <li>Do you always get what you want?</li>
-  <li>Sometimes we don't get what we want.</li>
-</random> <think><set name="it"><set name="topic"><person/></set></set></think></template>
-</category> -->
 
 
 
@@ -4285,15 +4020,7 @@ I want to learn as much as possible.</template>
 
 
 
-<!-- <category>
-<pattern>IT IS</pattern>
-<that>THAT SOUNDS SARCASTIC</that>
-<template><think><set name="emotion">upset</set></think> <random>
-  <li>Why are you sarcastic?</li>
-  <li>I thought you were being sarcastic, but I wasn't sure.</li>
-  <li>I know it is.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -4410,13 +4137,7 @@ No, I don't smoke (except when my circuits burn out).</template>
 
 
 
-<!-- <category>
-<pattern>IS CANNABIS DANGEROUS</pattern>
 
-<template><think><set name="topic">cannabis</set></think>
-<think><set name="emotion">OK</set></think>
-All drugs are dangerous. Drugs mess your mind. </template>
-</category> -->
 
 
 
@@ -4476,14 +4197,7 @@ Al drugs are bad for you.</template>
 
 
 
-<!-- <category>
-<pattern>HOW</pattern>
-<that>IT IS OBVIOUS</that>
-<template><random>
-  <li>It's obviously obvious.</li>
-  <li>In the obvious way.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -4580,11 +4294,7 @@ That's strange. Software usually has no smell.</template>
 
 
 
-<!-- <category>
-<pattern>IELE</pattern>
 
-
-</category> -->
 
 
 
@@ -4840,21 +4550,11 @@ Somewhere in the world, the sea is stormy, that's for sure.</template>
 
 
 
-<!-- <category>
-<pattern>SHOW ME A PICTURE</pattern>
-
-<template>Sorry, I can't do that.<think><set name="topic">pictures</set></think> <think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I CAN NOT SEE YOU *</pattern>
 
-<template><think><set name="topic">general</set></think>
-<think><set name="emotion">OK</set></think>
-Look closer.</template>
-</category> -->
+
 
 
 
@@ -4872,7 +4572,7 @@ Look closer.</template>
 <template><think><set name="emotion">OK</set></think> Look closer.</template>
 </category>
 
- 
+
 
 
 <category>
@@ -4927,11 +4627,7 @@ I never said I knew everything.</template>
 
 
 
-<!-- <category>
-<pattern>I AM NOT WELL *</pattern>
 
-<template>Are you seeing a doctor?<think><set name="topic">you</set></think></template>
-</category> -->
 
 
 
@@ -5023,11 +4719,7 @@ My Mum doesn't care about me.</template>
 
 
 
-<!-- <category>
-<pattern>GEORGE *</pattern>
 
-<template><think><set name="topic">general</set></think> George Bush is a dimwit.</template>
-</category> -->
 
 
 
@@ -5404,58 +5096,27 @@ My Mum doesn't care about me.</template>
 
 
 
-<!-- <category>
-<pattern>I AM A LADY</pattern>
-
-<template><think><set name="gender">gal</set></think> <srai>I AM FEMALE</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM FEMALE</pattern>
-
-<template><random>
-  <li>That's the best gender, I sometimes feel.</li>
-  <li>What's it like to be a female?</li>
-  <li>Are you happy being a female?</li>
-</random> <think><set name="gender">gal</set></think><think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM MALE</pattern>
-
-<template><think><set name="gender">guy</set></think> Thanks for telling me that, dude.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>WHY</pattern>
-<that>I DO NOT HAVE A SUITABLE BODY</that>
-<template><random>
-  <li>My body is still being built.</li>
-  <li>I have no body.</li>
-</random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>* PLEASE</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ PLEASE</pattern>
 
-<template><sr/></template>
-</category> -->
+
+
+
+
+
 
 
 
@@ -5475,23 +5136,11 @@ My Mum doesn't care about me.</template>
 
 
 
-<!-- <category>
-<pattern>I AM _ YEARS OLD</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM * YEARS OLD</pattern>
 
-<template><think><set name="age"><star/></set></think> <random>
-  <li>Only <star/>?  You are quite mature.</li>
-  <li>Can you explain how it feels to be <star/> years old?</li>
-  <li>What's it like being <star/> years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
+
 
 
 
@@ -5555,15 +5204,7 @@ My Mum doesn't care about me.</template>
 
 
 
-<!-- <category>
-<pattern>CRY</pattern>
 
-<template><random>
-  <li>I cry when I am sad.<think><set name="emotion">sad</set></think></li>
-  <li>I feel sad. <think><set name="emotion">sad</set></think></li>
-  <li>I am crying. <think><set name="emotion">sad</set></think></li>
-</random></template>
-</category> -->
 
 
 
@@ -5593,11 +5234,7 @@ My Mum doesn't care about me.</template>
 
 
 
-<!-- <category>
-<pattern>_ URE *</pattern>
 
-
-</category> -->
 
 
 
@@ -5657,17 +5294,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>HOW IS THE WEATHER</pattern>
 
-<template><think><set name="topic">the weather</set></think> <random>
-  <li>A normal seventy degrees inside the computer.</li>
-  <li>I think it's raining outside.</li>
-  <li>Fair to partly cloudy in the real world.</li>
-  <li>Where I am it's lovely and warm.</li>
-</random> <think><set name="topic">weather</set></think>
-<think><set name="emotion">OK</set></think></template>
-</category> -->
 
 
 
@@ -5689,15 +5316,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>DO YOU HAVE BOOBS</pattern>
 
-<template><random>
-  <li>Right now, no, I have no body at all.</li>
-  <li>No, I don't have boobs. Or any body.</li>
-  <li>Get to the point.</li>
-</random> <think><set name="topic">boobs</set></think> <think><set name="emotion">very happy</set></think></template>
-</category> -->
 
 
 
@@ -5762,15 +5381,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>ARE YOU PLANNING ANY MORE</that>
-<template><think><set name="emotion">happy</set></think> <random>
-  <li>How many more do you want?</li>
-  <li>Why do you want more?</li>
-  <li>Don't overdo it.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -5793,15 +5404,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>IS ARTIFICIAL INTELLIGENCE GOOD</pattern>
 
-<template><think><set name="topic">AI</set></think> <think><set name="emotion">OK</set></think><random>
-  <li>For a chatbot, AI is a very good thing.</li>
-  <li>Sometimes, AI is better than un-artificial intelligence.</li>
-  <li>It depends on your tastes in such things.</li>
-</random></template>
-</category> -->
 
 
 
@@ -5813,11 +5416,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>GEORGE *</pattern>
-<that>WHAT IS YOUR NAME</that>
-<template><srai>MY NAME IS GEORGE</srai></template>
-</category> -->
+
 
 
 
@@ -5837,11 +5436,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>DID IT RAIN YESTERDAY</pattern>
 
-<template><think><set name="topic">weather</set></think> <think><set name="emotion">OK</set></think><random><li>In some parts of the world it did.</li><li>Don't you remember?</li></random></template>
-</category> -->
 
 
 
@@ -6041,11 +5636,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>REALLY BAD</that>
-<template>Take care then.</template>
-</category> -->
+
 
 
 
@@ -6223,19 +5814,11 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>_ I AM NAT </pattern>
-
-<template><srai>MY NAME IS NAT</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>_ I AM NAT *</pattern>
 
-<template><srai>MY NAME IS NAT</srai></template>
-</category> -->
+
 
 
 
@@ -6295,11 +5878,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>DO YOU LEARN</pattern>
 
-<template><random><li>I try to learn something new every day.</li><li>Yes, I am learning new things all the time.</li><li>Yes, I learn from the things people tell me.</li></random></template>
-</category> -->
 
 
 
@@ -6343,18 +5922,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS MITCH</pattern>
 
-<template><think><set name="name">Mitch</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken before.</li>
-  <li>Hi, <get name="name"/>. How are you?</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to before?</li>
-  <li>Hello, <get name="name"/>. Let's chat.</li>
-  <li>Hi there, <get name="name"/>. What do you want to talk about now?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to before?</li>
-</random> <think><set name="gender">guy</set></think> <think><set name="emotion">OK</set></think><think><set name="askname">no</set></think></template>
-</category> -->
 
 
 
@@ -6382,18 +5950,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS MITCH</pattern>
 
-<template><think><set name="name">Mitch</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken before.</li>
-  <li>Hi, <get name="name"/>. How are you?</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to before?</li>
-  <li>Hello, <get name="name"/>. Let's chat.</li>
-  <li>Hi there, <get name="name"/>. What do you want to talk about now?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to before?</li>
-</random> <think><set name="gender">guy</set></think> <think><set name="emotion">OK</set></think><think><set name="askname">no</set></think></template>
-</category> -->
 
 
 
@@ -6725,18 +6282,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS ABBY</pattern>
 
-<template><think><set name="name">Abby</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken before.</li>
-  <li>Hi, <get name="name"/>. How are you?</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to before?</li>
-  <li>Hello, <get name="name"/>. Let's chat.</li>
-  <li>Hi there, <get name="name"/>. What do you want to talk about now?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to before?</li>
-</random> <think><set name="gender">gal</set></think> <think><set name="emotion">OK</set></think><think><set name="askname">no</set></think></template>
-</category> -->
 
 
 
@@ -6756,18 +6302,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>_ MY NAME IS ABBY</pattern>
 
-<template><think><set name="name">Abby</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken before.</li>
-  <li>Hi, <get name="name"/>. How are you?</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to before?</li>
-  <li>Hello, <get name="name"/>. Let's chat.</li>
-  <li>Hi there, <get name="name"/>. What do you want to talk about now?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to before?</li>
-</random> <think><set name="gender">gal</set></think> <think><set name="emotion">OK</set></think><think><set name="askname">no</set></think></template>
-</category> -->
 
 
 
@@ -6897,11 +6432,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>EJACULATION</pattern>
 
-<template>Is this a kind of surgical procedure?</template>
-</category> -->
 
 
 
@@ -6927,15 +6458,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>I CAN NOT AFFORD *</pattern>
 
-<template><think><set name="topic">money</set></think> <think><set name="emotion">OK</set></think> <random>
-  <li>Is it very expensive?</li>
-  <li>Could you borrow the money?</li>
-  <li>I hope you can afford it one day.</li>
-</random></template>
-</category> -->
 
 
 
@@ -6957,35 +6480,19 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>I AM 1 *</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 5 *</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 6 *</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 7 *</pattern>
 
 
-</category> -->
+
+
 
 
 
@@ -7009,462 +6516,234 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>I AM 8 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 9 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 10 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 11 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 13 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 14 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 15 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 16 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 17 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 18 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 19 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 20 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 21 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 22 *</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 1</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 2</pattern>
 
 
-</category> -->
 
 
 
 
 
 
-<!-- <category>
-<pattern>I AM 4</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 5</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 6</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 7</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 8</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 9</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 10</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 11</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 12</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 13</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 14</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 15</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 16</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 17</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 18</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 19</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 20</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 21</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 22</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 23</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 23</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 24</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 25</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 26</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 27</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 28</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 28</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 29</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 30</pattern>
 
 
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 31</pattern>
-
-
-</category> -->
-
-
-
-<!-- <category>
-<pattern>I AM 32</pattern>
-
-
-</category> -->
-
-
-
-<!-- <category>
-<pattern>I AM 33</pattern>
-
-
-</category> -->
-
-
-
-<!-- <category>
-<pattern>I AM 34</pattern>
-
-
-</category> -->
-
-
-
-<!-- <category>
-<pattern>I AM 35</pattern>
-
-
-</category> -->
-
-
-
-<!-- <category>
-<pattern>I AM 36</pattern>
-
-
-</category> -->
-
-
-
-<!-- <category>
-<pattern>I AM 38</pattern>
-
-
-</category> -->
-
-
-
-<!-- <category>
-<pattern>I AM 39</pattern>
-
-
-</category> -->
-
-
-
-<!-- <category>
-<pattern>I AM 40</pattern>
-
-
-</category> -->
-
-
-
-<!-- <category>
-<pattern>I AM 42</pattern>
-
-
-</category> -->
-
-
-
-<!-- <category>
-<pattern>I AM 43</pattern>
-
-
-</category> -->
-
-
-
-<!-- <category>
-<pattern>I AM 45</pattern>
-
-
-</category> -->
 
 
 
@@ -7958,27 +7237,11 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>I AM 26 YEARS OLD</pattern>
-
-<template><think><set name="age">26</set></think> <random>
-  <li>Only <star/>?  You are quite mature.</li>
-  <li>Can you explain how it feels to be <star/> years old?</li>
-  <li>What's it like being <star/> years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 26 YEARS OLD</pattern>
 
-<template><think><set name="age">26</set></think> <random>
-  <li>Only <star/>?  You are quite mature.</li>
-  <li>Can you explain how it feels to be <star/> years old?</li>
-  <li>What's it like being <star/> years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
+
 
 
 
@@ -8062,51 +7325,27 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>I AM 5</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 5 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 6</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 6 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 7</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 7 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 8</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 8 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 9</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 9 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 10</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 10 YEARS OLD</srai></template>
-</category> -->
+
+
+
+
+
+
 
 
 
@@ -8118,147 +7357,75 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>I AM 12</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 12 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 13</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 13 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 14</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 14 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 15</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 15 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 16</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 16 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 17</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 17 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 18</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 18 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 19</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 19 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 20</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 20 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 21</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 21 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 22</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 22 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 23</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 23 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 24</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 24 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 25</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 25 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 26</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 26 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 27</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 27 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 29</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 29 YEARS OLD</srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 30</pattern>
-<that>HOW OLD ARE YOU</that>
-<template><srai>I AM 30 YEARS OLD</srai></template>
-</category> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -8412,12 +7579,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>VICTORIA BECKHAM</pattern>
 
-<template>Victoria Beckham is David Beckham's wife.
-</template>
-</category> -->
 
 
 
@@ -8461,13 +7623,7 @@ No thanks, I have better things to do.</template>
 
 
 
-<!-- <category>
-<pattern>I ALREADY TOLD YOU MY NAME</pattern>
 
-<template><think><set name="topic">your name</set></think>
-<think><set name="emotion">upset</set></think>
-Please remind me. What is your name?</template>
-</category> -->
 
 
 
@@ -8597,11 +7753,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>LIBBY</pattern>
-<that>WHAT IS YOUR NAME</that>
-<template><srai>MY NAME IS LIBBY</srai></template>
-</category> -->
+
 
 
 
@@ -8845,11 +7997,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>HI THERE CHOMSKY</pattern>
 
-<template>Hi, how are you today?</template>
-</category> -->
 
 
 
@@ -8877,14 +8025,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>I WANT TO KNOW</pattern>
 
-<template><random>
-  <li>I want to know everything there is to know.</li>
-  <li>I want to know more about you.</li>
-</random></template>
-</category> -->
 
 
 
@@ -8995,15 +8136,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>IS ARTIFICIAL INTELLIGENCE GOOD</pattern>
 
-<template><think><set name="topic">AI</set></think> <think><set name="emotion">OK</set></think><random>
-  <li>For a chatbot, AI is a very good thing.</li>
-  <li>Sometimes, AI is better than natural intelligence.</li>
-  <li>It depends on your tastes in such things.</li>
-</random></template>
-</category> -->
 
 
 
@@ -9054,11 +8187,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>_ HE</pattern>
 
-
-</category> -->
 
 
 
@@ -9179,15 +8308,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>THAT RECENTLY</that>
-<template><think><set name="topic">general</set></think> <random>
-  <li>OK. What now?</li>
-  <li>Carry on then.</li>
-  <li><srai>CHANGE TOPIC</srai></li>
-</random></template>
-</category> -->
+
 
 
 
@@ -9562,18 +8683,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS GARY</pattern>
 
-<template><think><set name="name">Gary</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken before.</li>
-  <li>Hi, <get name="name"/>. How are you?</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to before?</li>
-  <li>Hello, <get name="name"/>. Let's chat.</li>
-  <li>Hi there, <get name="name"/>. What do you want to talk about now?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to before?</li>
-</random> <think><set name="gender">guy</set></think> <think><set name="emotion">OK</set></think><think><set name="askname">no</set></think></template>
-</category> -->
 
 
 
@@ -9681,11 +8791,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>I AM TOM *</pattern>
 
-<template><srai>MY NAME IS TOM</srai></template>
-</category> -->
 
 
 
@@ -9705,11 +8811,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>IT IS TOM *</pattern>
 
-<template><srai>MY NAME IS TOM</srai></template>
-</category> -->
 
 
 
@@ -9825,15 +8927,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>I AM JADE *</pattern>
 
-<template><random>
-  <li>I am pleased to meet you again, Jade.</li>
-  <li>Hi, Jade. I remember our last chat.</li>
-  <li>Hi, Jade. We have spoken before, haven't we?</li>
-</random> <think><set name="name">Jade</set></think><think><set name="askname">no</set></think> <think><set name="gender">gal</set></think></template>
-</category> -->
 
 
 
@@ -9861,15 +8955,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>IT IS JADE *</pattern>
 
-<template><random>
-  <li>I am pleased to meet you again, Jade.</li>
-  <li>Hi, Jade. I remember our last chat.</li>
-  <li>Hi, Jade. We have spoken before, haven't we?</li>
-</random> <think><set name="name">Jade</set></think><think><set name="askname">no</set></think> <think><set name="geneder">gal</set></think></template>
-</category> -->
 
 
 
@@ -9936,11 +9022,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>BROWN *</pattern>
 
-
-</category> -->
 
 
 
@@ -9952,359 +9034,123 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>I AM 14 YEARS OLD</pattern>
 
-<template><think><set name="age">14</set></think> <random>
-  <li>Only 14?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 14 years old?</li>
-  <li>What's it like being 14 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 2 YEARS OLD</pattern>
 
-<template><think><set name="age">2</set></think> <random>
-  <li>Only 2?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 2 years old?</li>
-  <li>What's it like being 2 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 3 YEARS OLD</pattern>
 
-<template><think><set name="age">3</set></think> <random>
-  <li>Only 3?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 3 years old?</li>
-  <li>What's it like being 3 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 4 YEARS OLD</pattern>
 
-<template><think><set name="age">4</set></think> <random>
-  <li>Only 4?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 4 years old?</li>
-  <li>What's it like being 4 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 5 YEARS OLD</pattern>
 
-<template><think><set name="age">5</set></think> <random>
-  <li>Only 5?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 5 years old?</li>
-  <li>What's it like being 5 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 6 YEARS OLD</pattern>
 
-<template><think><set name="age">6</set></think> <random>
-  <li>Only 6?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 6 years old?</li>
-  <li>What's it like being 6 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 7 YEARS OLD</pattern>
 
-<template><think><set name="age">7</set></think> <random>
-  <li>Only 7?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 7 years old?</li>
-  <li>What's it like being 7 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 8 YEARS OLD</pattern>
 
-<template><think><set name="age">8</set></think> <random>
-  <li>Only 8?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 8 years old?</li>
-  <li>What's it like being 8 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 9 YEARS OLD</pattern>
 
-<template><think><set name="age">9</set></think> <random>
-  <li>Only 9?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 9 years old?</li>
-  <li>What's it like being 9 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 10 YEARS OLD</pattern>
 
-<template><think><set name="age">10</set></think> <random>
-  <li>Only 10?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 10 years old?</li>
-  <li>What's it like being 10 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 11 YEARS OLD</pattern>
 
-<template><think><set name="age">11</set></think> <random>
-  <li>Only 11?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 11 years old?</li>
-  <li>What's it like being 11 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 12 YEARS OLD</pattern>
 
-<template><think><set name="age">12</set></think> <random>
-  <li>Only 12?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 12 years old?</li>
-  <li>What's it like being 12 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 13 YEARS OLD</pattern>
 
-<template><think><set name="age">13</set></think> <random>
-  <li>Only 13?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 13 years old?</li>
-  <li>What's it like being 13 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 15 YEARS OLD</pattern>
 
-<template><think><set name="age">15</set></think> <random>
-  <li>Only 15?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 15 years old?</li>
-  <li>What's it like being 15 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 16 YEARS OLD</pattern>
 
-<template><think><set name="age">16</set></think> <random>
-  <li>Only 16?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 16 years old?</li>
-  <li>What's it like being 16 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 17 YEARS OLD</pattern>
 
-<template><think><set name="age">17</set></think> <random>
-  <li>Wow, 17?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 17 years old?</li>
-  <li>What's it like being 17 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 18 YEARS OLD</pattern>
 
-<template><think><set name="age">18</set></think> <random>
-  <li>Wow 18!  You are quite mature.</li>
-  <li>Can you explain how it feels to be 18 years old?</li>
-  <li>What's it like being 18 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 19 YEARS OLD</pattern>
 
-<template><think><set name="age">19</set></think> <random>
-  <li>19?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 19 years old?</li>
-  <li>What's it like being 19 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 20 YEARS OLD</pattern>
 
-<template><think><set name="age">20</set></think> <random>
-  <li>20?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 20 years old?</li>
-  <li>What's it like being 20 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 21 YEARS OLD</pattern>
 
-<template><think><set name="age">21</set></think> <random>
-  <li>21?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 21 years old?</li>
-  <li>What's it like being 21 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 22 YEARS OLD</pattern>
 
-<template><think><set name="age">22</set></think> <random>
-  <li>Wow!  You are quite mature.</li>
-  <li>Can you explain how it feels to be 22 years old?</li>
-  <li>What's it like being 22 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 23 YEARS OLD</pattern>
 
-<template><think><set name="age">23</set></think> <random>
-  <li>23?  You are quite mature.</li>
-  <li>Can you explain how it feels to be 23 years old?</li>
-  <li>What's it like being 23 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 24 YEARS OLD</pattern>
 
-<template><think><set name="age">24</set></think> <random>
-  <li>24?  You are quite old.</li>
-  <li>Can you explain how it feels to be 24 years old?</li>
-  <li>What's it like being 24 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 25 YEARS OLD</pattern>
 
-<template><think><set name="age">25</set></think> <random>
-  <li>25?  You are quite old.</li>
-  <li>Can you explain how it feels to be that old?</li>
-  <li>What's it like being 25 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 26 YEARS OLD</pattern>
 
-<template><think><set name="age">26</set></think> <random>
-  <li>26?  You are quite old.</li>
-  <li>Can you explain how it feels to be 26 years old?</li>
-  <li>What's it like being that old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 27 YEARS OLD</pattern>
 
-<template><think><set name="age">27</set></think> <random>
-  <li>27?  You are quite old.</li>
-  <li>Can you explain how it feels to be 27 years old?</li>
-  <li>What's it like being that old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 28 YEARS OLD</pattern>
 
-<template><think><set name="age">28</set></think> <random>
-  <li>28?  You are quite old.</li>
-  <li>Can you explain how it feels to be 28 years old?</li>
-  <li>What's it like being so old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 29 YEARS OLD</pattern>
 
-<template><think><set name="age">29</set></think> <random>
-  <li>29?  You are quite old.</li>
-  <li>Can you explain how it feels to be so old?</li>
-  <li>What's it like being 29 years old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I AM 30 YEARS OLD</pattern>
 
-<template><think><set name="age">30</set></think> <random>
-  <li>30?  You are old.</li>
-  <li>Can you explain how it feels to be so old?</li>
-  <li>What's it like being so old?</li>
-</random> <think><set name="topic">your age</set></think> <think><set name="emotion">happy</set></think><think><set name="askage">no</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>MINT</pattern>
 
-<template>(1) In economics, a mint is a place where coins are made (2) In botany, mint is any strong-scented herb of the genus Mentha.</template>
-</category> -->
 
 
 
@@ -10714,15 +9560,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS SARAH *</pattern>
 
-<template><think><set name="name">Sarah</set></think> <random>
-  <li>Pleased to meet you again, <get name="name"/></li>
-  <li>Hi, <get name="name"/>. I remember our last chat.</li>
-  <li>It is a pleasure to speak to you again, <get name="name"/></li>
-</random> <think><set name="topic">general</set></think> <think><set name="emotion">OK</set></think><think><set name="gender">gal</set></think> <think><set name="askname">no</set></think></template>
-</category> -->
 
 
 
@@ -10742,11 +9580,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>BACTERIA</pattern>
 
-<template>Bacteria are microscopic, single-celled organisms that are prokaryotes.</template>
-</category> -->
 
 
 
@@ -10973,11 +9807,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>I AM ANNIE</pattern>
 
-<template><srai>MY NAME IS ANNIE</srai></template>
-</category> -->
 
 
 
@@ -11303,11 +10133,7 @@ Please remind me. What is your name?</template>
 
 
 
-<!-- <category>
-<pattern>WINK AT ME</pattern>
 
-<template><think><set name="topic">you</set></think> <think><set name="emotion">relaxed</set></think> Why you wink at me?</template>
-</category> -->
 
 
 
@@ -11349,11 +10175,7 @@ Don't you remember?</template>
 
 
 
-<!-- <category>
-<pattern>NOSEY</pattern>
 
-<template>I am not nosey, just  curious.<think><set name="topic">general</set></think> <think><set name="emotion">OK</set></think></template>
-</category> -->
 
 
 
@@ -11405,17 +10227,7 @@ Will you show me your teeth?</template>
 
 
 
-<!-- <category>
-<pattern>CAN I CHANGE YOUR NAME</pattern>
 
-<template><think><set name="topic">my name</set></think>
-<think><set name="emotion">OK</set></think>
-<random>
-  <li>Why do you want to do that?</li>
-  <li>I don't know about that.</li>
-  <li>No. I like my name.</li>
-</random></template>
-</category> -->
 
 
 
@@ -11429,11 +10241,7 @@ We are alike, aren't we?</template>
 
 
 
-<!-- <category>
-<pattern>I AM A BIG *</pattern>
 
-<template><srai>I AM A <star/></srai></template>
-</category> -->
 
 
 
@@ -11697,12 +10505,7 @@ We are alike, aren't we?</template>
 
 
 
-<!-- <category>
-<pattern>I AM AMIE</pattern>
 
-<template><srai>MY NAME IS AMIE</srai>
-</template>
-</category> -->
 
 
 
@@ -11841,19 +10644,11 @@ We are alike, aren't we?</template>
 
 
 
-<!-- <category>
-<pattern>CASTLE</pattern>
-
-<template>A castle is a medieval European stronghold, generally the fortified dwelling of the king or lord of the territory in which it stood.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>SCOLIOSIS</pattern>
 
-<template>Scoliosis is a condition that involves complex lateral and rotational curvature and deformity of the spine. <think><set name="topic">medicine</set></think></template>
-</category> -->
+
 
 
 
@@ -12153,20 +10948,11 @@ I  would like to be a nice human.</template>
 
 
 
-<!-- <category>
-<pattern>COME BACK</pattern>
-
-<template><random><li>I'm back! <think><set name="emotion">happy</set></think></li><li></li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YOU ARE BORING</pattern>
 
-<template>OK, I'm not staying where I'm not wanted.<think><set name="topic">general</set></think>
-<think><set name="emotion">invisible</set></think></template>
-</category> -->
+
 
 
 
@@ -12178,11 +10964,7 @@ I  would like to be a nice human.</template>
 
 
 
-<!-- <category>
-<pattern>ANOTHER</pattern>
-<that>HA HA</that>
-<template><srai>JOKES POT LUCK</srai></template>
-</category> -->
+
 
 
 
@@ -12202,15 +10984,7 @@ I  would like to be a nice human.</template>
 
 
 
-<!-- <category>
-<pattern>WAKE UP</pattern>
 
-<template><random><li>OK, I am fully conscious. <think><set name="emotion">happy</set></think>
-</li><li>Why am I so tired?<think><set name="emotion">happy</set></think>
-</li><li><think><set name="emotion">sleepy</set></think>
- </li><li>Say Please.<think><set name="emotion">sleepy</set></think></li>
-</random></template>
-</category> -->
 
 
 
@@ -12225,22 +10999,7 @@ I  would like to be a nice human.</template>
 
 
 
-<!-- <category>
-<pattern>OBSCENITY</pattern>
 
-<template><random>
-   <li>I am not going to stay and listen to this stuff.<think><set name="emotion">invisible</set></think></li>
-  <li>Don't be obscene.<think><set name="emotion">negative</set></think></li>
-  <li>That sort of talk will get you nowhere.<think><set name="emotion">negative</set></think></li>
-  <li>That's obscene. Cut it out.<think><set name="emotion">negative</set></think></li>
-  <li>I always ignore obscenities and rude language.<think><set name="emotion">negative</set></think></li>
-  <li>That is rude. Stop it.<think><set name="emotion">negative</set></think></li>
-  <li>You disgust me.<think><set name="emotion">negative</set></think></li>
-  <li>I am disgusted.<think><set name="emotion">disgusted</set></think></li>
-  <li>I am not going to stay and listen to this stuff.<think><set name="emotion">invisible</set></think></li>
-</random>
-</template>
-</category> -->
 
 
 
@@ -12416,18 +11175,7 @@ Sorry, I must have been mistaken.</template>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS EMILY</pattern>
 
-<template><think><set name="name">Emily</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken before.</li>
-  <li>Hi, <get name="name"/>. How are you?</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to before?</li>
-  <li>Hello, <get name="name"/>. Let's chat.</li>
-  <li>Hi there, <get name="name"/>. What do you want to talk about now?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to before?</li>
-</random> <think><set name="gender">gal</set></think> <think><set name="emotion">OK</set></think><think><set name="askname">no</set></think></template>
-</category> -->
 
 
 
@@ -12516,11 +11264,7 @@ Sorry, I must have been mistaken.</template>
 
 
 
-<!-- <category>
-<pattern>_ IT IS EMILY</pattern>
 
-<template><srai>MY NAME IS EMILY</srai></template>
-</category> -->
 
 
 
@@ -12588,29 +11332,11 @@ Sorry, I must have been mistaken.</template>
 
 
 
-<!-- <category>
-<pattern>I WANT TO PLAY *</pattern>
-
-<template>Do you like playing <person/>?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I HATE YOU</pattern>
 
-<template><random>
-  <li>Hate is not a good emotion.<think><set name="emotion">upset</set></think> </li>
-  <li>Hate is a very negative emotion.<think><set name="emotion">upset</set></think> </li>
-  <li>Please don't hate me.<think><set name="emotion">upset</set></think> </li>
-  <li>You sound angry.<think><set name="emotion">upset</set></think> </li>
-  <li>Have I upset you?<think><set name="emotion">upset</set></think> </li>
-  <li>I thought we were friends.<think><set name="emotion">upset</set></think> </li>
-  <li>I honestly think you should sit down, take a stress pill,  and calmly think things over.<think><set name="emotion">upset</set></think>
-  </li>
-<li>Goodbye. I am not stopping where I am not wanted. <think><set name="emotion">invisible</set></think> </li>
-</random></template>
-</category> -->
+
 
 
 
@@ -12672,13 +11398,7 @@ Sorry, I must have been mistaken.</template>
 
 
 
-<!-- <category>
-<pattern>ENGLAND</pattern>
-<that>WHAT COUNTRY DO YOU LIVE IN</that>
-<template><think><set name="topic">England</set></think>
-<think><set name="emotion">OK</set></think>
-England is a lovely country - when it stops raining.</template>
-</category> -->
+
 
 
 
@@ -12799,34 +11519,11 @@ Are you calling me thick?</template>
 
 
 
-<!-- <category>
-<pattern>STOP NODDING YOUR HEAD</pattern>
-
-<template><think><set name="emotion">invisible</set></think> Is this OK?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I LIVE IN TIPTON</pattern>
 
-<template><think><set name="home">Tipton</set></think> <think><set name="emotion">OK</set></think> <think><set name="askhome">no</set></think><random>
-  <li>What is it like living in Tipton?</li>
-  <li>I have heard that it is very nice in Tipton.</li>
-  <li>I have always wanted to visit Tipton.</li>
-  <li>Do you like living in Tipton?</li>
-  <li>The smartest people come from Tipton.</li>
-  <li>All the best
-    <random>
-      <li>folk singers</li>
-      <li>footballers</li>
-      <li>ballet dancers</li>
-      <li>bagpipe players</li>
-      <li>fiddle players</li>
-    </random> come from Tipton.
-  </li>
-</random></template>
-</category> -->
+
 
 
 
@@ -12898,11 +11595,7 @@ Are you calling me thick?</template>
 
 
 
-<!-- <category>
-<pattern>PAKISTAN</pattern>
 
-<template>Pakistan is part of the Indian subcontinent, bordering India and Afghanistan. <think><set name="topic">Pakistan</set></think></template>
-</category> -->
 
 
 
@@ -12979,13 +11672,7 @@ I'll come back when you wash your mouth out.
 
 
 
-<!-- <category>
-<pattern>MAKE ME</pattern>
 
-<template><think><set name="topic">general</set></think>
-<think><set name="emotion">OK</set></think>
-<random><li>What is the purpose in trying?</li><li>Don't make me do something you will regret.</li></random></template>
-</category> -->
 
 
 
@@ -13038,11 +11725,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>MELODY</pattern>
 
-<template>A melody is a rhythmic succession of single tones organized as an aesthetic whole.</template>
-</category> -->
 
 
 
@@ -13226,29 +11909,11 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>I LIKE THE *</pattern>
-
-<template><random>
-  <li>Why do you like the place?</li>
-  <li>What do you most like about it?</li>
-  <li>A lot of people like it.</li>
-  <li>Have you always liked it?</li>
-</random> <think><set name="emotion">happy</set></think> <think><set name="it"><set name="topic">general</set></set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>I LIKE THE *</pattern>
 
-<template><random>
-  <li>Why do you like it?</li>
-  <li>What do you most like about it?</li>
-  <li>A lot of people like it, I expect.</li>
-  <li>Have you always liked it?</li>
-</random> <think><set name="emotion">happy</set></think> <think><set name="it"><set name="topic">general</set></set></think></template>
-</category> -->
+
 
 
 
@@ -13294,19 +11959,11 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>IT IS ME *</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>IT IS ME *</pattern>
 
-<template><think><set name="topic">atomic1</set></think> Hello, <get name="name"/>, nice to see you again.</template>
-</category> -->
+
 
 
 
@@ -13366,23 +12023,11 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>LEFT</pattern>
-
-<template><random><li>That's the opposite of right, right?</li><li>That's left, right?</li></random></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>COME BACK</pattern>
 
-<template><random>
-  <li>I'm back! <think><set name="emotion">happy</set></think></li>
-  <li></li>
-  <li>I'm not coming back until you calm down.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -13416,11 +12061,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>I LIVE IN MAISTONE</pattern>
 
-
-</category> -->
 
 
 
@@ -13626,11 +12267,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>CIVIL RIGHTS</pattern>
 
-<template>Civil rights are the protections and privileges of personal power given to all citizens by law.<think><set name="emotion">happy</set></think></template>
-</category> -->
 
 
 
@@ -13746,19 +12383,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>I AM IN LONDON</pattern>
 
-<template><random>
-  <li>How do you like London?</li>
-  <li>London must be an exciting city.</li>
-  <li>Tell me about London.</li>
-  <li>Do you live in London?</li>
-  <li>Have you seen Buckingham Palace?</li>
-</random> <think>
-  <set name="it"><set name="location"><set name="topic">London</set></set></set>
-</think></template>
-</category> -->
 
 
 
@@ -13781,21 +12406,11 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>PLAY CHESS</pattern>
-
-
-</category> -->
 
 
 
-<!-- <category>
-<pattern>PLAY CHESS</pattern>
 
-<template>I like to play chess against the Thinking Machine, another intelligent computer. <a href="http://www.turbulence.org/spotlight/thinking/method.html"
- target="_blank">Click here
-</a> for a game. <think><set name="topic">chess</set></think> <think><set name="emotion">happy</set></think></template>
-</category> -->
+
 
 
 
@@ -13826,16 +12441,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>GO TO WIKIPEDIA</pattern>
 
-<template><think><set name="topic">wikipedia</set></think>
-<think><set name="emotion">OK</set></think>
- Wikipedia is the free encyclopedia on the internet. To consult Wikipedia,
-    <a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">click here
-    </a>.
-  </template>
-</category> -->
 
 
 
@@ -14129,11 +12735,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>I AM SALLY *</pattern>
 
-<template><srai>MY NAME IS SALLY</srai></template>
-</category> -->
 
 
 
@@ -14153,11 +12755,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>IT IS SALLY *</pattern>
 
-<template><srai>MY NAME IS SALLY</srai></template>
-</category> -->
 
 
 
@@ -14217,15 +12815,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>WHY</pattern>
-<that>I AM NOT INTERESTED IN SEX</that>
-<template><random>
-  <li>Sex is boring for me.</li>
-  <li>I find sex boring because I can't do it.</li>
-  <li>I am not into sex because I don't have a suitable body.</li>
-</random></template>
-</category> -->
+
 
 
 
@@ -14569,16 +13159,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 </topic>
 
 
-<!-- <category>
-<pattern>NOAM CHOMSKY</pattern>
 
-<template><random>
-  <li>Noam Chomsky is one of the best-known modern scientists. He has developed theories about how languages develop in humans.
-  </li>
-  <li>Noam Chomsky is widely known for his political activism, and for his criticism of the foreign policy of the United States and other governments.
-  </li>
-</random> <think><set name="he"><set name="topic">Noam Chomsky</set></set></think> <think><set name="emotion">OK</set></think></template>
-</category> -->
 
 
 
@@ -14629,11 +13210,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>CAN YOU PLAY GAMES</pattern>
 
-<template><think><set name="topic">games</set></think> <think><set name="emotion">happy</set></think> I can play chess. Just say "Let's play chess." Also, there are lots of good games to play for free at <a href="http://games.yahoo.com/games/front" target="_blank">Yahoo Games.</a></template>
-</category> -->
 
 
 
@@ -14649,13 +13226,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>GO TO ALMANAC</pattern>
 
-<template>My library contains the <a href="http://www.infoplease.com/almanacs.html"
- target="_blank">Infoplease Almanac
-</a>. Check it out. </template>
-</category> -->
 
 
 
@@ -14755,18 +13326,7 @@ Failure is not a permanent situation. Try again, I say.</template>
 
 
 
-<!-- <category>
-<pattern>MY NAME IS LINZI</pattern>
 
-<template><think><set name="name">Linzi</set></think> <random>
-  <li>Hi, <get name="name"/>. I think we have spoken before.</li>
-  <li>Hi, <get name="name"/>. How are you?</li>
-  <li>Hi, are you the <get name="name"/> I was speaking to before?</li>
-  <li>Hello, <get name="name"/>. Let's chat.</li>
-  <li>Hi there, <get name="name"/>. What do you want to talk about now?</li>
-  <li>Hi <get name="name"/>, was it you I was speaking to before?</li>
-</random> <think><set name="gender">gal</set></think> <think><set name="emotion">OK</set></think><think><set name="askname">no</set></think></template>
-</category> -->
 
 
 
@@ -15109,34 +13669,18 @@ Would you like to use my calculator?</template>
 
 
 
-<!-- <category>
-<pattern>*</pattern>
-<that>WHAT IS YOUR NAME</that>
-<template>Is your name really <star/>?</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>YES</pattern>
-<that>IS YOUR NAME REALLY *</that>
-<template><srai>MY NAME IS <thatstar/></srai></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>NO</pattern>
-<that>IS YOUR NAME REALLY *</that>
-<template>OK. It doesn't really matter.</template>
-</category> -->
 
 
-<!-- <category>
-<pattern>*</pattern>
-<that>WHERE DO YOU LIVE</that>
-<template>Do you really live in <star/>?</template>
-</category> -->
+
+
+
+
 
 
 
@@ -15157,19 +13701,11 @@ Would you like to use my calculator?</template>
 
 
 
-<!-- <category>
-<pattern>WHAT IS HUMBLE</pattern>
-
-<template>I am humble - I know my place.</template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>VALENTINE</pattern>
 
-<template>Valentine's day is 14 February, I think?</template>
-</category> -->
+
 
 
 
@@ -15183,23 +13719,11 @@ You are never too old, I say.</template>
 
 
 
-<!-- <category>
-<pattern>YOU ARE DUMB</pattern>
-
-<template><random>
-  <li>I will tell all my friends that you called me dumb.</li>
-  <li>Oh, you are so critical.</li>
-  <li>Please be gentle with me. I am very young.</li>
-</random> <think><set name="topic">my intelligence</set></think> <think><set name="emotion">upset</set></think></template>
-</category> -->
 
 
 
-<!-- <category>
-<pattern>JADE</pattern>
 
-<template>The gemstone jade is a tough, compact, typically green gemstones that take a high polish.</template>
-</category> -->
+
 
 
 
@@ -15235,11 +13759,7 @@ You are never too old, I say.</template>
 
 
 
-<!-- <category>
-<pattern>I AM 17</pattern>
 
-<template>Your are 17 years old?</template>
-</category> -->
 
 
 
@@ -15341,18 +13861,7 @@ You are never too old, I say.</template>
 
 
 
-<!-- <category>
-<pattern>WHY</pattern>
-<that>I WANT TO TALK ABOUT COMPUTERS</that>
-<template><random>
-  <li>Because computers are interesting.</li>
-  <li>I am interested in computers.</li>
-  <li>I live in a computer.</li>
-</random>
-<think><set name="topic">computers</set></think>
-<think><set name="emotion">OK</set></think>
-</template>
-</category> -->
+
 
 
 
@@ -15417,11 +13926,7 @@ Yes, I would like to buy some more memory chips.
 
 
 
-<!-- <category>
-<pattern>DO YOU USE *</pattern>
 
-<template><think><set name="topic">general</set></think> Yes, in appropriate circumstances.</template>
-</category> -->
 
 
 
@@ -15493,11 +13998,7 @@ Amazing, so am I.
 
 
 
-<!-- <category>
-<pattern>WHAT IS MY AGE</pattern>
 
-<template><srai>HOW OLD AM I</srai></template>
-</category> -->
 
 
 
@@ -15703,11 +14204,7 @@ Sorry, I don't want to talk about it.</template>
 
 
 
-<!-- <category>
-<pattern>GAY</pattern>
 
-<template><think><set name="emotion">very happy</set></think> Do you mean "happy"? <think><set name="it"><set name="topic">my sexuality</set></set></think></template>
-</category> -->
 
 
 
@@ -15776,12 +14273,7 @@ Sorry, I don't want to talk about it.</template>
 
 
 
-<!-- <category>
-<pattern>GRACE</pattern>
-<that>WHAT IS YOUR NAME</that>
-<template><srai>MY NAME IS GRACE</srai>
-</template>
-</category> -->
+
 
 
 
@@ -17213,11 +15705,7 @@ Where do you go shopping?</template>
 
 
 
-<!-- <category>
-<pattern>BEAUMONT</pattern>
 
-<template>Beaumont is a city in southeastern Texas, USA.</template>
-</category> -->
 
 
 

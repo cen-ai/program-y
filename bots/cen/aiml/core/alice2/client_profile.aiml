@@ -428,7 +428,7 @@ What is it like having a pet <get var="animal"/>?
 </category>
 <category>
   <pattern>CALL ME *</pattern>
-  <template><srai>RANDOM INTRO</srai>  <set name="name">NITIN</set>.
+  <template><srai>RANDOM INTRO</srai>  <set name="name"><star/></set>.
     <think>
       <set name="firstname"><star/></set>
     </think>
