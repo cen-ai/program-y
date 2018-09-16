@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="1.0">
 <!-- File: train.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
 <!-- Last modified: July 19, 2014 -->
@@ -117,7 +117,6 @@ How long did <get name="pronoun"/> stay?
 <set var="response4"><get var="name"/> <get var="verb"/> <get var="obj"/>.</set>
 </think>
 For fun?
-
 <learn>
 <category>
     <pattern><eval><get var="pattern1"/></eval></pattern>
@@ -136,7 +135,6 @@ For fun?
     <template><eval><get var="response4"/></eval></template>
 </category>
 </learn>
-
 </template>
 </category>
 <category><pattern>THE <set>color</set> * IS <set>spatialprep</set> THE <set>color</set> *</pattern>
@@ -209,17 +207,14 @@ I think I understand that.
 <set var="pattern13">LOCATE ^ <get var="noun1"/></set>
 <set var="pattern14">WHAT IS THE LOCATION ^ <get var="noun1"/></set>
 <set var="response1">The <get var="noun1"/> is <get var="relation"/> the <get var="noun2"/>.</set>
-
 <set var="pattern21">WHERE IS THE <get var="noun2"/></set>
 <set var="pattern22">WHERE CAN I FIND ^ <get var="noun2"/></set>
 <set var="pattern23">LOCATE ^ <get var="noun2"/></set>
 <set var="pattern24">WHAT IS THE LOCATION ^ <get var="noun2"/></set>
 <set var="response2">The <get var="noun2"/> is <get var="opposite"/> the <get var="noun1"/>.</set>
-
 <set var="pattern31">IS THE <get var="noun1"/> <get var="relation"/> the <get var="noun2"/></set>
 <set var="pattern32">IS THE <get var="noun2"/> <get var="opposite"/> the <get var="noun1"/></set>
 <set var="response3">Yes</set>
-
 <set var="pattern41">IS THE <get var="noun1"/> * the <get var="noun2"/></set>
 <set var="pattern42">IS THE <get var="noun2"/> * the <get var="noun1"/></set>
 <set var="response4">No.  <get var="response1"/></set>
@@ -242,7 +237,6 @@ Ok.  I think I got that.
 <pattern><eval><get var="pattern14"/></eval></pattern>
 <template><eval><get var="response1"/></eval></template>
 </category>
-
 <category>
 <pattern><eval><get var="pattern21"/></eval></pattern>
 <template><eval><get var="response2"/></eval></template>
@@ -308,7 +302,6 @@ I'll remember that.</template>
 <set var="pattern3">WHAT IS <get var="prep"/> <get var="obj"/> ^</set>
 <set var="pattern4">WHERE SHOULD I LOOK FOR THE <get var="subj"/> ^</set>
 <set var="pattern5">WHERE CAN I FIND THE <get var="subj"/> ^</set>
-
 </think>
 Is it always <get var="prep"/> <star index="3"/>?
 <learn>
@@ -475,7 +468,6 @@ I understand.
 <set var="pattern7">Does <get name="pronoun"/> <get var="inf"/> <get var="prep"/> <get var="obj"/></set>
 <set var="pattern8">Does <get var="name"/> *</set>
 <set var="pattern9">Does <get name="pronoun"/> *</set>
-
 </think>
 <learn>
 <category><pattern><eval><get var="pattern1"/></eval></pattern>
@@ -774,7 +766,6 @@ You love <get var="star1"/> <star index="2"/>?
 <pattern>WHO <eval><get var="was"/></eval> *</pattern>
 <template><eval><get var="name"/> has <get var="been"/> <get var="object"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT DID <eval><get var="name"/></eval> *</pattern>
 <template><eval><get var="name"/> has <get var="been"/> <get var="object"/></eval>.</template>
@@ -808,22 +799,18 @@ You love <get var="star1"/> <star index="2"/>?
 <pattern>DID I <eval><get var="inf"/></eval> #</pattern>
 <template>You <eval><get var="verb"/> <get var="object"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT DID I <eval><get var="inf"/></eval></pattern>
 <template>You <eval><get var="verb"/> <get var="object"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT DID I DO #</pattern>
 <template>You <eval><get var="verb"/> <get var="object"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHO <eval><get var="verb"/></eval> #</pattern>
 <template>You <eval><get var="verb"/> <get var="object"/></eval>.</template>
 </category>
-
 </learn></template>
 </category>
 <category><pattern>I WENT <set>being</set> #</pattern>
@@ -846,17 +833,14 @@ You love <get var="star1"/> <star index="2"/>?
 <pattern>WHAT DID I SAY I #</pattern>
 <template>You <eval><get var="past"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHO WENT <eval><get var="verb"/></eval> #</pattern>
 <template>You <eval><get var="past"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHO <eval><get var="past"/></eval> #</pattern>
 <template>You <eval><get var="past"/></eval>.</template>
 </category>
-
 <category>
 <pattern>DID I <eval><get var="inf"/></eval> #</pattern>
 <template>You <eval><get var="past"/></eval>.</template>
@@ -1185,7 +1169,6 @@ Ok, I will remember <get var="a1"/> <get var="thing1"/> are <get var="thing2"/>.
 <pattern>IS THE <eval><star/></eval> <eval><star index="2"/></eval></pattern>
 <template>No.</template>
 </category>
-
 </learn></template>
 </category>
 <category><pattern>* IS NOT *</pattern>
@@ -1333,7 +1316,7 @@ Ok, I will remember <get var="a1"/> <get var="thing1"/> are <get var="thing2"/>.
 <template><srai>LEARN NEW RESPONSE My <star/></srai></template>
 </category>
 <category><pattern>LEARN NEW RESPONSE *</pattern>
-<template>OK.  Now whenever you say "<get name="newpattern"/>", I will respond with 
+<template>OK.  Now whenever you say "<get name="newpattern"/>", I will respond with
 "<star/>".
 <learn>
 <category>
@@ -1394,7 +1377,7 @@ What should I say instead?</template>
 </category>
 <category><pattern><set>familiarname</set> <set>is</set> *</pattern>
 <template><think>
-<set name="learnpattern">Who <star index="2"/> <person><star index="3"/></person></set>?  
+<set name="learnpattern">Who <star index="2"/> <person><star index="3"/></person></set>?
 <set name="learntemplate">Your <star/></set>.
 <learn>
 <category>
@@ -1405,7 +1388,7 @@ What should I say instead?</template>
 </think>
 Now you can ask me: "<get name="learnpattern"/>"?
 <think>
-<set name="learnpattern">What does my <star/> <map name="is2be"><star index="2"/></map></set>? 
+<set name="learnpattern">What does my <star/> <map name="is2be"><star index="2"/></map></set>?
 <set name="learntemplate"><person><star index="3"/></person></set>.
 <learn>
 <category>
@@ -1418,7 +1401,7 @@ and "<get name="learnpattern"/>"?</template>
 </category>
 <category><pattern>* <set>is</set> *</pattern>
 <template><think>
-<set name="learnpattern"><srai>QUESTIONWORD <star/></srai> <star index="2"/> <person><star index="3"/></person></set>?  
+<set name="learnpattern"><srai>QUESTIONWORD <star/></srai> <star index="2"/> <person><star index="3"/></person></set>?
 <set name="learntemplate"><star/></set>.
 <learn>
 <category>
@@ -1429,7 +1412,7 @@ and "<get name="learnpattern"/>"?</template>
 </think>
 Now you can ask me: "<get name="learnpattern"/>"?
 <think>
-<set name="learnpattern">What does <star/> <map name="is2be"><star index="2"/></map></set>? 
+<set name="learnpattern">What does <star/> <map name="is2be"><star index="2"/></map></set>?
 <set name="learntemplate"><person><star index="3"/></person></set>.
 <learn>
 <category>
@@ -1458,24 +1441,18 @@ and "<get name="learnpattern"/>"?</template>
 <pattern><eval><get var="questionword"/> <get var="was"/></eval> #</pattern>
 <template><eval><star/> <get var="was"/> <get var="object"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT DID <eval><star/> <get var="be"/></eval> #</pattern>
 <template><eval><star/> <get var="was"/> <get var="object"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT DID <eval><star/></eval> DO #</pattern>
 <template><eval><star/> <get var="was"/> <get var="object"/></eval>.</template>
 </category>
-
-
 <category>
 <pattern>WHAT HAPPENED #</pattern>
 <template><eval><star/> <get var="was"/> <get var="object"/></eval>.</template>
 </category>
-
-
 </learn></template>
 </category>
 <category><pattern>MY <set>familiarname</set> * LIKES TO <set>be</set> *</pattern>
@@ -1494,67 +1471,50 @@ and "<get name="learnpattern"/>"?</template>
 <category><pattern>MY <eval><get var="familiarname"/></eval></pattern>
 <template><eval><get var="name"/></eval></template>
 </category>
-
-
 <category>
 <pattern>WHO <eval><get var="is"/> <get var="obj"/> #</eval></pattern>
 <template><formal><eval><get var="name"/></eval></formal>.</template>
 </category>
-
-
 <category>
 <pattern>WHO LIKES TO <eval><get var="verb"/> <get var="obj"/> #</eval></pattern>
 <template><formal><eval><get var="name"/></eval></formal>.</template>
 </category>
-
-
 <category>
 <pattern>WHAT # DOES MY <eval><get var="familiarname"/> <get var="verb"/> #</eval></pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT # DOES MY <eval><get var="familiarname"/></eval> DO #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT # DOES MY <eval><get var="familiarname"/></eval> LIKE #</pattern>
 <template><eval><get var="response"/></eval></template>
 </category>
-
-
 <category>
 <pattern>WHAT # DOES <eval><get var="name"/></eval> <eval><get var="verb"/></eval> #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT # DOES <eval><get var="name"/></eval> DO #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT # DOES <eval><get var="name"/></eval> LIKE #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT # DOES <eval><get name="pronoun"/></eval> <eval><get var="verb"/></eval> #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT # DOES <eval><get name="pronoun"/></eval> DO #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT # DOES <eval><get name="pronoun"/></eval> LIKE #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
-
 </learn>
 Is <get name="pronoun"/> any good at <set name="it"><get var="ing"/> <get var="ing"/> <get var="obj"/></set>?</template>
 </category>
@@ -1573,47 +1533,38 @@ Is <get name="pronoun"/> any good at <set name="it"><get var="ing"/> <get var="i
 <category><pattern>MY <eval><get var="familiarname"/></eval></pattern>
 <template><eval><get var="name"/></eval></template>
 </category>
-
 <category>
 <pattern>WHAT # DOES MY <eval><get var="familiarname"/></eval> DO #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT # DOES MY <eval><get var="familiarname"/></eval> LIKE #</pattern>
 <template><eval><get var="response"/></eval></template>
 </category>
-
 <category>
 <pattern>WHAT # DOES <eval><get var="name"/></eval> DO #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT # DOES <eval><get var="name"/></eval> LIKE #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT * DOES <eval><get var="name"/></eval> LIKE *</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT # DOES <eval><get name="pronoun"/></eval> DO #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT # DOES <eval><get name="pronoun"/></eval> LIKE #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>WHAT * DOES <eval><get name="pronoun"/></eval> LIKE *</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 </learn>
 Is <get name="pronoun"/> any good at <set name="it"><get var="verb"/> <get var="prep"/> <get var="obj"/></set>?</template>
 </category>
@@ -1655,7 +1606,6 @@ Is <get name="pronoun"/> any good at <set name="it"><get var="verb"/> <get var="
 <pattern>DOES <eval><get var="name"/> <get var="be"/> <get var="obj"/></eval> #</pattern>
 <template>Yes.  <eval><get var="response"/></eval>.</template>
 </category>
-
 <category>
 <pattern>DOES <eval><get name="pronoun"/></eval> *</pattern>
 <template>I don't know if <eval>get var="name"/&gt;</eval> <star/>.  I know <eval><get var="response"/></eval>.</template>
@@ -1664,7 +1614,6 @@ Is <get name="pronoun"/> any good at <set name="it"><get var="verb"/> <get var="
 <pattern>DOES <eval><get var="name"/></eval> *</pattern>
 <template>I don't know if <eval><get var="name"/></eval> <star/>.  I know <eval><get var="response"/></eval>.</template>
 </category>
-
 </learn>
 Why does <get name="pronoun"/> <get var="be"/> <set name="it"><get var="obj"/></set>?</template>
 </category>
@@ -1678,7 +1627,6 @@ Why does <get name="pronoun"/> <get var="be"/> <set name="it"><get var="obj"/></
 <set var="response"><formal><get name="pronoun"/></formal> <get var="verb"/> <get var="obj"/></set>
 </think>
 <learn>
-
 <category>
 <pattern>WHO <eval><get var="verb"/> <get var="obj"/></eval> #</pattern>
 <template><eval><get var="name"/></eval>.</template>
@@ -1703,7 +1651,6 @@ Why does <get name="pronoun"/> <get var="be"/> <set name="it"><get var="obj"/></
 <pattern>WHAT DID <eval><get name="pronoun"/></eval> DO #</pattern>
 <template><eval><get var="response"/></eval>.</template>
 </category>
-
 </learn>
 Can you tell me why <get name="pronoun"/> <get var="verb"/> <set name="it"><get var="obj"/></set>?</template>
 </category>
@@ -1724,23 +1671,18 @@ Does <get name="pronoun"/> really?
 <category><pattern>WHAT DOES MY <eval><get var="familiarname"/></eval> DO #</pattern>
 <template><eval><get var="response"/></eval></template>
 </category>
-
 <category><pattern>WHAT DOES <eval><get var="name"/></eval> DO #</pattern>
 <template><eval><get var="response"/></eval></template>
 </category>
-
 <category><pattern>WHAT DOES <eval><get name="pronoun"/></eval> DO #</pattern>
 <template><eval><get var="response"/></eval></template>
 </category>
-
 <category><pattern>DOES MY <eval><get var="familiarname"/></eval> <eval><get var="be"/></eval> #</pattern>
 <template><eval><get var="response"/></eval></template>
 </category>
-
 <category><pattern>DOES <eval><get var="name"/></eval> <eval><get var="be"/></eval> #</pattern>
 <template><eval><get var="response"/></eval></template>
 </category>
-
 <category><pattern>WHO <eval><get var="verb"/></eval> #</pattern>
 <template>Your <eval><get var="familiarname"/> <get var="name"/></eval>.</template>
 </category>

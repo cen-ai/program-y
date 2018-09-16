@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="1.0">
 <!-- File: oob.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
 <!-- Last modified: July 19, 2014 -->
@@ -16,11 +16,6 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
-<category><pattern>TRANSCRIPT</pattern>
-<template>Sending transcript to <get name="email"/>.
-<oob><email><to><get name="email"/></to><subject>Transcript of <bot name="name"/> with <get name="name"/> on <date/></subject><body>
-<srai>DIALOG HISTORY</srai></body></email></oob></template>
-</category>
 <category><pattern>SEND BUG REPORT</pattern>
 <template>Sending transcript to callmom-info@pandorabots.com.
 <oob><email><to>callmom-info@pandorabots.com</to><subject>Transcript of <bot name="name"/> with <get name="name"/> on <date/></subject><body>
@@ -46,7 +41,7 @@ To help the developers understand your problem, you can choose to send us a tran
 <template><srai>SEND EMAIL</srai></template>
 </category>
 <category><pattern>SEND FEATURE REQUEST *</pattern>
-<template><think><set name="featurerequest"><star/></set></think> Click send to mail your feature request.  
+<template><think><set name="featurerequest"><star/></set></think> Click send to mail your feature request.
 <oob><email><to>callmom-info@pandorabots.com</to><subject>Feature request <get name="featurerequest"/></subject><body>Dear CallMom developers, I'd like to request that you add this feature to the next version of CallMom: <get name="featurerequest"/>.  Sincerely, <get name="name"/></body></email></oob></template>
 </category>
 <category><pattern>SHOW ME A VIDEO *</pattern>
@@ -76,45 +71,13 @@ To help the developers understand your problem, you can choose to send us a tran
 <category><pattern>LAUNCH * DOT COM</pattern>
 <template>Let's go to <star/>.com.  <oob><url>http://<star/>.com</url></oob></template>
 </category>
-<!-- <category><pattern>TACO</pattern>  (Error, name not found in map in )
-<template>I'm looking for Mexican restaurants near you.  <oob><map>Tacos</map></oob></template>
-</category>
-<category><pattern>PIZZA</pattern>
-<template>I'm looking on the map for Pizza places near you.  <oob><map>Pizza</map></oob></template>
-</category>
-<category><pattern>WHERE ARE THE *</pattern>
-<template>I'm looking on the map. <oob><map><star/></map></oob></template>
-</category>
-<category><pattern>WHERE IS A *</pattern>
-<template>I'll check the map for <star/>.  <oob><map><star/></map></oob></template>
-</category>
-<category><pattern>WHERE IS PASADENA</pattern>
-<template>Let me show you on the map.  <oob><map>Pasadena</map></oob></template>
-</category>
-<category><pattern>WHERE IS *</pattern>
-<template><oob><map><star/></map></oob> I'm looking on the map.</template>
-</category>
-<category><pattern>WHERE IS YORKSHIRE</pattern>
-<template>Let's look on the map.  <oob><map>Yorkshire</map></oob></template>
-</category>
-<category><pattern>WHERE IS NEW YORK</pattern>
-<template>Let me show you on the map. <oob><map>New York</map></oob></template>
-</category>
-<category><pattern>WHERE IS LEEDS</pattern>
-<template>I'll show you on the map.  <oob><map>Leeds</map></oob></template>
-</category>
-<category><pattern>WHERE IS INDIA</pattern>
-<template>I'll show you on the map.  <oob><map>India</map></oob></template>
-</category> -->
+
 <category><pattern>DIALOG TEST</pattern>
 <template>Testing dialog.  <oob><dialog><list><li>Yes</li><li>No</li></list></dialog></oob></template>
 </category>
 <category><pattern>ESPN</pattern>
 <template>Opening ESPN.  <oob><url>http://espn.go.com</url></oob></template>
 </category>
-<!--<category><pattern>AAA</pattern>
-<template>Looking up AAA.  <oob><map>AAA</map></oob></template>
-</category> -->
 <category><pattern>BROWSE TO *</pattern>
 <template><oob><search><star/></search></oob></template>
 </category>
@@ -142,9 +105,6 @@ To help the developers understand your problem, you can choose to send us a tran
 <category><pattern>WWW DOT * DOT COM</pattern>
 <template>I'm opening <star/>.com.  <oob><url>http://www.<star/>.com</url></oob></template>
 </category>
-<!--<category><pattern>WHAT IS THE ADDRESS TO *</pattern> (Error, name not found in map in )
-<template>I'll try to find it on the map <oob><map><star/></map></oob></template>
-</category> -->
 <category><pattern>TEST ALARM</pattern>
 <template>Alarm now set for 11:30.
 <oob><alarm><hour>11</hour><minute>30</minute></alarm></oob></template>

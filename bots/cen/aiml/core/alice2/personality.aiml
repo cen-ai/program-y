@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="1.0">
 <!-- File: personality.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
 <!-- Last modified: July 19, 2014 -->
@@ -946,7 +946,6 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <template>It's a great feeling to be in love.  You seem excited.</template>
 </category>
 <category><pattern>I AM *</pattern>
-
   <template>
     <think>
       <set name="isanumber"><srai>ISANUMBER <star/></srai></set>
@@ -954,12 +953,12 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
     </think>
     <condition name="isanumber">
       <li value="TRUE">
-          <li value="true"><srai>MY AGE IS <star/></srai></li>
+          <srai>MY AGE IS <star/></srai>
       </li>
       <li>
           <condition name="isaname">
             <li value="TRUE">
-                <li value="true"><srai>MY NAME IS <star/></srai></li>
+                Glad to meet you, <set name="name"><star/></set>
             </li>
             <li><srai>IAMRESPONSE</srai></li>
           </condition>

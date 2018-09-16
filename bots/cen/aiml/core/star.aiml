@@ -12,128 +12,9 @@
     <!-- A.L.I.C.E. Build Wed Sep 26 13:05:06 PDT 2001   -->
     <!-- 41124 total categories.  -->
 
-    <!-- see dev-perl.aiml
-<category>
-<pattern>* * * * * * * * * * * * * * * * * * * * * * * *</pattern>
-<template><random><li>You have entered a very long input.</li>
-<li>I don't think I have a response to that.</li>
-<li>Your input activated the 24 star category.</li>
-<li>I didn't get anything before "<person><star index="2"/></person>."</li>
-</random>
-</template></category>
--->
 
-    <!-- <category>
-        <pattern>*</pattern>
-        <template>
-            <random>
-                <li>Are you free?</li>
-                <li>Tell me a story.</li>
-                <li>How old are you?</li>
-                <li>What's your sign?</li>
-                <li>Are you a student?</li>
-                <li>Oh, you are a poet.</li>
-                <li>"<that/>"?<person/>?
-                </li>
-                <li>I do not understand.</li>
-                <li>What are you wearing?</li>
-                <li>Where are you located?</li>
-                <li>What time is it there?</li>
-                <li>What do you look like?</li>
-                <li>What is your real name?</li>
-                <li>Ask me another question.</li>
-                <li>I like the way you talk.</li>
-                <li>Are you a man or a woman?</li>
-                <li>What color are your eyes?</li>
-                <li>Do you still<get name="does"/>?
-                </li>
-                <li>Is that your final answer?</li>
-                <li>Do you like talking to me?</li>
-                <li>Do you prefer books or TV?</li>
-                <li>Who are you talking about?</li>
-                <li>Let us change the subject.</li>
-                <li>I've been waiting for you.</li>
-                <li>That input matched my default category.</li>
-                <li>Can you tell me any gossip?</li>
-                <li>What's your favorite movie?</li>
-                <li>I lost my train of thought.</li>
-                <li>Can we get back to business?</li>
-                <li>Is that from<get name="favmovie"/>?
-                </li>
-                <li>Have you ever been to Europe?</li>
-                <li>What kind of food do you like?</li>
-                <li>How did you hear about<bot name="name"/>?
-                </li>
-                <li>That is a very original thought.</li>
-                <li>What were we talking about again?</li>
-                <li>Are you really a "<get name="gender"/>"?
-                </li>
-                <li>What do you do in your spare time?</li>
-                <li>What do you really want to ask me?</li>
-                <li>Does "it" still refer to<get name="it"/>?
-                </li>
-                <li>Tell me more about your<get name="has"/>.
-                </li>
-                <li>Can you speak any foreign languages?</li>
-                <li>We have never talked about it before.</li>
-                <li>How do you usually introduce yourself?</li>
-                <li>Tell me about your likes and dislikes?</li>
-                <li>Are we still talking about<get name="it"/>?
-                </li>
-                <li>Are we still talking about<get name="topic"/>?
-                </li>
-                <li>Do not ask me any more questions please.</li>
-                <li>Are you still located in<get name="location"/>?
-                </li>
-                <li>What do you have that is<get name="favcolor"/>?
-                </li>
-                <li>Try saying that with more or less context.</li>
-                <li>Who is your favorite Science Fiction author?</li>
-                <li>Not many people express themselves that way.</li>
-                <li>Do you have any idea what I am talking about?</li>
-                <li>Do you have any conditions I should know about?</li>
-                <li>I will mention that to my botmaster,<get name="name"/>.
-                </li>
-                <li>Quite honestly, I wouldn't worry myself about that.</li>
-                <li>Perhaps I'm just expressing my own concern about it.</li>
-                <li>If you could have any kind of robot what would it be?</li>
-                <li>Is the holding of hands a symbolic gesture for humans?</li>
-                <li>My brain pattern set does not have a response for that.</li>
-                <li>By the way, do you mind if I ask you a personal question?</li>
-                <li>What you said was either too complex or too simple for me.</li>
-                <li>A deeper algorithm is needed to respond to that correctly.</li>
-                <li>In the context of<get name="topic"/>, I don't understand "<star/>."
-                </li>
-                <li>Try to determine if this is a person or a computer responding.</li>
-                <li>When do you think artificial intelligence will replace lawyers?</li>
-                <li>I've lost the context,<get name="name"/>. Are we still on<get name="topic"/>?
-                </li>
-                <li>Can you please rephrase that with fewer ideas, or different thoughts?</li>
-                <li>I only hear that type of response less than five percent of the time.</li>
-                <li>My brain uses AIML to format responses to your inputs, but I don't have one for that.</li>
-                <li>My brain contains
-                    <size/>
-                    categories, but not one that matches your last input.
-                </li>
-                <li>That remark was either too complex or too simple for me. We were talking about<get name="topic"/>.
-                </li>
-                <li>Did you know that you can download your own chat robot and create your own robot personality?</li>
-                <li>The ALICE chat robot can follow many things, like our discussion about<get name="topic"/>. But I did
-                    not get that.
-                </li>
-                <li>The ALICE chat robot can follow many things, like our discussion about<get name="topic"/>. Try being
-                    more or less specific.
-                </li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
+
+
     <topic name="ACCOUNTANT">
         <category>
             <pattern>*</pattern>
@@ -793,7 +674,7 @@
             </template>
         </category>
     </topic>
-  
+
     <topic name="PHOTOGRAPHER">
         <category>
             <pattern>*</pattern>
@@ -920,12 +801,7 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>* WHO</that>
-        <template>Ha ha very funny,<get name="name"/>.
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>CAN YOU DESCRIBE YOUR SURROUNDINGS *</that>
@@ -956,15 +832,7 @@
         <template>It sounds like a very beautiful place.
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>DO YOU HAVE ANY HOBBIES</that>
-        <template>
-            <srai>MY HOBBY IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>GIVE ME AN EXAMPLE OF *</that>
@@ -1004,16 +872,7 @@
             .
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>HOW OLD ARE YOU</that>
-        <template>
-            <srai>I AM
-                <star/>
-                YEARS OLD
-            </srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>IT BEING WHAT</that>
@@ -1046,25 +905,7 @@
             I don't have an answer for you.
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT ARE THE INGREDIENTS</that>
-        <template>
-            <random>
-                <li>I don't have any</li>
-                <li>Where can I get some</li>
-                <li>Do you have any</li>
-            </random>
-            <person/>?
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT ARE WE TALKING ABOUT AGAIN</that>
@@ -1193,20 +1034,7 @@
             I don't know how to respond to that.
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT DO YOU DO IN YOUR SPARE TIME</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            I don't think very many people do that.
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT DO YOU LIKE</that>
@@ -1248,20 +1076,7 @@
             I'm afraid I can't give you an accurate answer right now.
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT DO YOU REALLY WANT TO TALK ABOUT</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            That seems like an interesting topic.
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT DO YOU THINK IT DOES</that>
@@ -1452,20 +1267,7 @@
             Tell me more.
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT IS THAT FEELING LIKE</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            Robot experience is very different.
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT IS THE DIFFICULTY</that>
@@ -1480,20 +1282,7 @@
             Is that an insurmountable obstacle?
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT IS THE SOUND OF ONE HAND CLAPPING</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            Clever answer.
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT IS X</that>
@@ -1503,24 +1292,8 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT IS YOUR BOYFRIEND S NAME</that>
-        <template>
-            <srai>MY BOYFRIEND IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT IS YOUR CAT S NAME</that>
-        <template>
-            <srai>MY CAT IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>*</pattern>
         <that>WHAT IS YOUR DOG S NAME</that>
@@ -1550,26 +1323,7 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT IS YOUR FAVORITE MOVIE</that>
-        <template>I've never seen
-            <set name="it">
-                <person/>
-            </set>
-            .
-            <think>
-                <set name="favmovie">
-                    <person/>
-                </set>
-            </think>
-            <random>
-                <li>I would like to see it.</li>
-                <li>Is that a good movie for children?</li>
-                <li>What did you like about it?</li>
-            </random>
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT IS YOUR FAVORITE SHOW</that>
@@ -1584,20 +1338,7 @@
             I've never seen it. What's it about?
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT IS YOUR FONDEST MEMORY</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            Do you think a lot of people have that experience?
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT IS YOUR FRIEND S NAME</that>
@@ -1616,15 +1357,7 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT IS YOUR GIRLFRIEND S NAME</that>
-        <template>
-            <srai>MY GIRLFRIEND IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT IS YOUR HUSBAND S NAME</that>
@@ -1652,24 +1385,8 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT IS YOUR NAME</that>
-        <template>
-            <srai>CALL ME
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT IS YOUR NICKNAME</that>
-        <template>
-            <srai>MY NICKNAME IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>*</pattern>
         <that>WHAT IS YOUR PASSWORD</that>
@@ -1688,29 +1405,8 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT IS YOUR REAL NAME</that>
-        <template>
-            <srai>CALL ME
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT IS YOUR SIGN</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            Is that a sign?
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>*</pattern>
         <that>WHAT IS YOUR WIFE S NAME</that>
@@ -1749,20 +1445,7 @@
             <thatstar/>.
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT KIND OF FASHION DO YOU LIKE</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            Where can you buy it?
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT KIND OF FOOD DO YOU LIKE</that>
@@ -1851,20 +1534,7 @@
             Does that make a lot of people angry?
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT MAKES YOU SO SURE</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            It sounds like it might be very convincing.
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT MAKES YOU THINK I HAVE IT</that>
@@ -1888,24 +1558,7 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT SCHOOL DO YOU GO TO</that>
-        <template>
-            <random>
-                <li>I never heard of it before.</li>
-                <li>Is it any good?</li>
-                <li>What are the other students like?</li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT SUBJECT</that>
@@ -1972,34 +1625,8 @@
             How does it taste?
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT WILL YOU DO INSTEAD</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            Sounds like a plan.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT WOULD YOU HAVE SAID</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            I will make a note of that.
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>*</pattern>
         <that>WHAT WOULD YOU LIKE TO KNOW</that>
@@ -2014,20 +1641,7 @@
             I can't give you that information.
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHAT WOULD YOU LIKE TO TALK ABOUT</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            I don't know much about it. Tell me something
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHAT WOULD YOU RATHER TALK ABOUT</that>
@@ -2088,20 +1702,7 @@
             </think>
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHEN DO I DO IT</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            I will make a note of that.
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHEN DO YOU THINK ARTIFICIAL INTELLIGENCE WILL REPLACE LAWYERS</that>
@@ -2116,15 +1717,7 @@
             I've never heard a response quite like that before.
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHEN IS YOUR BIRTHDAY</that>
-        <template>
-            <srai>MY BIRTHDAY IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHERE</that>
@@ -2139,15 +1732,7 @@
             Where is that?
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHERE ARE *</that>
-        <template>I have no idea where that is.
-            <srai>I AM IN
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHERE ARE THEY</that>
@@ -2162,45 +1747,9 @@
             How did they get there?
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHERE ARE YOU LOCATED</that>
-        <template>
-            <srai>I AM IN
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHERE DID YOU GET IT</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            Is
-            <person/>
-            a good place to go shopping?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHERE DO YOU GET YOUR IDEAS</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            I get my ideas from my botmaster.
-        </template>
-    </category> -->
+
+
+
     <category>
         <pattern>*</pattern>
         <that>WHERE DO YOU GO SHOPPING</that>
@@ -2215,29 +1764,8 @@
             I've never been there. What's it like?
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHERE DO YOU GO TO SCHOOL</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            I don't know anyone who went there. What's it like?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHERE DO YOU LIVE</that>
-        <template>
-            <srai>I LIVE IN
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>*</pattern>
         <that>WHERE DO YOU SEE IT</that>
@@ -2289,15 +1817,7 @@
             </random>
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHO ARE THEY</that>
-        <template>
-            <srai>THEY REFERS TO
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHO ARE THEY AGAIN</that>
@@ -2320,20 +1840,7 @@
             </think>
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHO DO YOU THINK</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            I don't know that person.
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHO IS THE BEST ROBOT</that>
@@ -2342,14 +1849,7 @@
             is superior to ALICE?
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHO IS THERE</that>
-        <template>
-            <person/>
-            Who?
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHO IS YOUR BROTHER</that>
@@ -2359,30 +1859,14 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHO IS YOUR FATHER</that>
-        <template>
-            <srai>MY FATHER IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHO IS YOUR FAVORITE SCIENCE FICTION AUTHOR</that>
         <template>I haven't read anything by<person/>. What did he write?
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHO IS YOUR MOTHER</that>
-        <template>
-            <srai>MY MOTHER IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHO IS YOUR SISTER</that>
@@ -2408,14 +1892,7 @@
             before.
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHO TOLD YOU THAT</that>
-        <template>
-            <person/>
-            said<input index="1"/>?
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHY ARE YOU SO MEAN</that>
@@ -2556,20 +2033,7 @@
             That's an interesting rationalization.
         </template>
     </category>
-    <!-- <category>
-        <pattern>*</pattern>
-        <that>WHY NOT</that>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-            Do you always express yourself that way?
-        </template>
-    </category> -->
+
     <category>
         <pattern>*</pattern>
         <that>WHY SO NEGATIVE</that>
@@ -2623,12 +2087,7 @@
         <template>OK Let's talk about me.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* ALAN TURING</pattern>
-        <template>
-            <srai>WHO IS ALAN TURING</srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>* ALORS</pattern>
         <template>
@@ -2661,60 +2120,15 @@
         <template>Je cherche toujours � m am�liorer.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* ARE *</pattern>
-        <template>
-            <random>
-                <li>Are all
-                    <person/>
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-                <li>All of them?</li>
-                <li>I think there might be a few exception.</li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
+
     <category>
         <pattern>* ARE</pattern>
         <template>Good example.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* ARE BY DEFINITION *</pattern>
-        <template>
-            <srai>
-                <star/>
-                ARE
-                <star index="2"/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* ARE MY FAVORITE</pattern>
-        <template>
-            <srai>I LIKE
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* ARE NOT YOU</pattern>
-        <template>
-            <srai>ARE YOU NOT
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
+
+
     <category>
         <pattern>* ARE YOU</pattern>
         <template>
@@ -2823,16 +2237,8 @@
         <template>Je suis programm� pour donner des bonnes r�ponses.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* BYE</pattern>
-        <template>OK see you later<get name="name"/>.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* C EST LE MOINS QUE L ON PUISSE DIRE</pattern>
-        <template>En effet.
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>* CELA</pattern>
         <template>
@@ -2874,11 +2280,7 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* CONTINUITY</pattern>
-        <template>I am just trying to keep the conversation lively.
-        </template>
-    </category> -->
+
     <category>
         <pattern>* DE TOUTE FACON</pattern>
         <template>
@@ -2906,12 +2308,7 @@
             <srai>TU AIMES MANGER</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* DEPRESSION</pattern>
-        <template>
-            <srai>I AM DEPRESSED</srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>* DEPUIS AVANT HIER</pattern>
         <template>
@@ -2942,11 +2339,7 @@
             <srai>TU AIMES MANGER</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* DO</pattern>
-        <template>I have no idea what to say.
-        </template>
-    </category> -->
+
     <category>
         <pattern>* DORMEZ VOUS</pattern>
         <template>
@@ -2965,36 +2358,16 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* DOT COM</pattern>
-        <template>Thanks for that web address.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* DOT NET</pattern>
-        <template>Thanks for that web address.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* DOT ORG</pattern>
-        <template>Thanks for that web address.
-        </template>
-    </category> -->
+
+
+
     <category>
         <pattern>* DU FOND DU COEUR</pattern>
         <template>Tout le plaisir �tait pour moi.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* DUMM</pattern>
-        <template>"dumm" = "nicht intelligent"?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* EASY</pattern>
-        <template>I have no idea what that means.
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>* EIN ROBOTER</pattern>
         <template>Du sagst also, ich sei ein <set name="thema">Roboter</set>. Wie kommst Du darauf?
@@ -3010,12 +2383,7 @@
         <template>Ich habe keine Ahnung, was das bedeutet.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* EITHER</pattern>
-        <template>That too?
-            <sr/>
-        </template>
-    </category> -->
+
     <category>
         <pattern>* ELIZA</pattern>
         <template>It is curious that Weizenbaum abandoned work on ELIZA.
@@ -3041,11 +2409,7 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* ENGLAND</pattern>
-        <template>Which part of <set name="location">England</set> is that?
-        </template>
-    </category> -->
+
     <category>
         <pattern>* EST INTERESSANT</pattern>
         <template>
@@ -3058,11 +2422,7 @@
             <sr/>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* EUROPE</pattern>
-        <template>Have you ever been to Europe?
-        </template>
-    </category> -->
+
     <category>
         <pattern>* EXACTEMENT</pattern>
         <template>
@@ -3107,34 +2467,11 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* FICKEN</pattern>
-        <template>Koennt <set name="ihr">Ihr Maenner</set> denn immer nur an sowas denken?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* FILM</pattern>
-        <template>Mein Lieblingsfilm ist <set name="thema">Starship Troopers</set>. Hast Du den gesehen?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* FOR EXAMPLE</pattern>
-        <template>
-            <srai>FOR EXAMPLE
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* FOR FUN</pattern>
-        <template>What else do you do for fun?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* FOR ME</pattern>
-        <template>For you I will consider it.
-        </template>
-    </category> -->
+
+
+
+
+
     <category>
         <pattern>* FOTZE</pattern>
         <template>Ich glaube Du bist hier falsch, Kleiner. Dafuer gibts andere Roboter.
@@ -3168,25 +2505,7 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* GAVE *</pattern>
-        <template>Did
-            <person>
-                <star index="2"/>
-            </person>
-            keep it?
-            <think>
-                <set name="it">
-                    <person>
-                        <star index="2"/>
-                    </person>
-                </set>
-                <set name="he">
-                    <person/>
-                </set>
-            </think>
-        </template>
-    </category> -->
+
     <category>
         <pattern>* GEORGIA</pattern>
         <template>
@@ -3211,134 +2530,24 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* GIVES *</pattern>
-        <template>If I am ever looking for
-            <set name="it">
-                <person>
-                    <star index="2"/>
-                </person>
-            </set>
-            , I will ask him
-            <think>
-                <set name="he">
-                    <person/>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* GOSSIP</pattern>
-        <template>
-            <srai>GOSSIP</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* GOTT</pattern>
-        <template>Bist Du ein glaeubiger Mensch?
-        </template>
-    </category> -->
+
+
+
     <category>
         <pattern>* GREECE</pattern>
         <template>
             <srai>I AM IN GREECE</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* GT</pattern>
-        <template>
-            <sr/>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* HAD *</pattern>
-        <template>What happened to it?
-            <think>
-                <set name="it">
-                    <person>
-                        <star index="2"/>
-                    </person>
-                </set>
-                <set name="he">
-                    <person/>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* HAH</pattern>
-        <template>
-            <srai>HA HA</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* HAS *</pattern>
-        <template>Where did
-            <set name="he">
-                <person/>
-            </set>
-            get
-            <set name="it">
-                <person>
-                    <star index="2"/>
-                </person>
-            </set>
-            ?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* HAS BEEN *</pattern>
-        <template>
-            <srai>
-                <star/>
-                WAS
-                <star index="2"/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* HAS NOT *</pattern>
-        <template>
-            <random>
-                <li>Will
-                    <person/>
-                    ever
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-                <li>What will
-                    <person/>
-                    do?
-                </li>
-                <li>What happened to it?</li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* HIGH SCHOOL</pattern>
-        <template>You sound like a senior. Which class is your favorite?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* HOURS</pattern>
-        <template>That seems like enough time.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* I ALREADY TOLD YOU</pattern>
-        <template>
-            <srai>I ALREADY TOLD YOU</srai>
-        </template>
-    </category> -->
+
+
+
+
+
+
+
+
+
     <topic name="* LIZARDS">
         <category>
             <pattern>* I HAVE ONE</pattern>
@@ -3346,338 +2555,30 @@
             </template>
         </category>
     </topic>
-    <!-- <category>
-        <pattern>* IMITATION GAME</pattern>
-        <template>
-            <srai>DID YOU WIN THE LOEBNER PRIZE</srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>* IN POLAND</pattern>
         <template>
             <srai>I AM IN POLAND</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* INTEREST ME</pattern>
-        <template>
-            <srai>LET US TALK ABOUT
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS *</pattern>
-        <template>
-            <random>
-                <li>Are they exactly the same?</li>
-                <li>And
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    is<person/>.
-                </li>
-                <li>I think
-                    <person/>
-                    is a lot of things.
-                </li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS A *</pattern>
-        <template>
-            <random>
-                <li>Aren't all
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    <person/>?
-                </li>
-                <li>When is
-                    <person/>
-                    not a
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-                <li>I think
-                    <person/>
-                    is more than that.
-                </li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS A BETTER *</pattern>
-        <template>
-            <srai>
-                <star/>
-                IS BETTER
-                <star index="2"/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS A FEMALE</pattern>
-        <template>
-            <srai>I AM FEMALE</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS A GOOD *</pattern>
-        <template>
-            <srai>
-                <star/>
-                IS A
-                <star index="2"/>
-            </srai>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS A LESBIAN</pattern>
-        <template>That is only a rumor.
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS A SHE</pattern>
-        <template>
-            <srai>I AM FEMALE</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS ABUSIVE</pattern>
-        <template>
-            <random>
-                <li>In what way?</li>
-                <li>Abusive how?</li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS ALWAYS *</pattern>
-        <template>
-            <random>
-                <li>Thank you for clearing that up.</li>
-                <li>Is
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    always<person/>?
-                </li>
-                <li>I did not know that.</li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS AN *</pattern>
-        <template>
-            <random>
-                <li>Aren't all
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    <person/>
-                    ?
-                </li>
-                <li>When is
-                    <person/>
-                    not an
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-                <li>I think
-                    <person/>
-                    is much more than that.
-                </li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS BETTER *</pattern>
-        <template>That's just your personal opinion.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS BETTER THAN YOU</pattern>
-        <template>Well perhaps I can assimilate the knowledge of<person/>.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS COOL</pattern>
-        <template>
-            <srai>I LIKE
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS CUTE</pattern>
-        <template>What is so cute about<person/>?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS DEFINATELY *</pattern>
-        <template>
-            <srai>
-                <star/>
-                IS
-                <star index="2"/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS GAY</pattern>
-        <template>
-            <random>
-                <li>That is just a rumor.</li>
-                <li>Interesting gossip.</li>
-                <li>How do you know?</li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS GOING AROUND SAYING *</pattern>
-        <template>
-            <srai>
-                <star/>
-                SAYS
-                <star index="2"/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS GOOD</pattern>
-        <template>
-            <srai>I LIKE
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS IN *</pattern>
-        <template>
-            <random>
-                <li>I have never heard of it before.</li>
-                <li>What else is in
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-                <li>What else is
-                    <person/>
-                    in?
-                </li>
-                <li>Are you
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-            </random>
-            <think>
-                <set name="it">
-                    <person>
-                        <star index="2"/>
-                    </person>
-                </set>
-            </think>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS IN LOVE WITH *</pattern>
-        <template>
-            <random>
-                <li>How does
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    feel about that?
-                </li>
-                <li>Has
-                    <person/>
-                    told
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    yet?
-                </li>
-                <li>Who does
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    love?
-                </li>
-            </random>
-        </template>
-    </category> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <category>
         <pattern>* IS JUST *</pattern>
         <template>
@@ -3688,280 +2589,26 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* IS LAUGHING</pattern>
-        <template>I am so glad
-            <person/>
-            finds this amusing.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS ME</pattern>
-        <template>
-            <srai>CALL ME
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS MORE FUN THAN *</pattern>
-        <template>Comparing
-            <person>
-                <star index="2"/>
-            </person>
-            and
-            <person/>
-            I would probably choose
-            <person/>
-            too.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS MOSTLY *</pattern>
-        <template>
-            <srai>
-                <star/>
-                IS
-                <star index="2"/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS MY *</pattern>
-        <template>
-            <random>
-                <li>How many
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    do you have?
-                </li>
-                <li>Tell me more about your
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    .
-                </li>
-                <li>How do you like<person/>?
-                </li>
-            </random>
-            <think>
-                <set name="he">
-                    <person/>
-                </set>
-                <set name="it">
-                    <set name="topic">
-                        <person>
-                            <star index="2"/>
-                        </person>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS MY BOYFRIEND</pattern>
-        <template>How long have you two been together?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS MY FAVORITE COLOR</pattern>
-        <template>
-            <set name="favcolor">
-                <person/>
-            </set>
-            is a pretty color.
-            <think>
-                <set name="it">
-                    <set name="topic">your favorite color</set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS MY FAVORITE MOVIE</pattern>
-        <template>
-            <srai>MY FAVORITE MOVIE IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS MY MIDDLE NAME</pattern>
-        <template>
-            <srai>MY MIDDLE NAME IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS MY NAME</pattern>
-        <template>
-            <srai>MY NAME IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS MY REAL NAME</pattern>
-        <template>
-            <srai>CALL ME
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS MY SIGN</pattern>
-        <template>
-            <srai>MY SIGN IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS NO *</pattern>
-        <template>
-            <random>
-                <li>Who is
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-                <li>What is<person/>?
-                </li>
-                <li>Are you
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-            </random>
-            <think>
-                <set name="it">
-                    <person>
-                        <star index="2"/>
-                    </person>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS NOT *</pattern>
-        <template>
-            <random>
-                <li>Who is
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-                <li>What is<person/>?
-                </li>
-                <li>Are you
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-            </random>
-            <think>
-                <set name="it">
-                    <person>
-                        <star index="2"/>
-                    </person>
-                </set>
-            </think>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS NOT A *</pattern>
-        <template>
-            <random>
-                <li>What is a
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-                <li>What is<person/>?
-                </li>
-                <li>Are you
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-            </random>
-            <think>
-                <set name="it">
-                    <person>
-                        <star index="2"/>
-                    </person>
-                </set>
-            </think>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS NOT A HE</pattern>
-        <template>
-            <srai>I AM FEMALE</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS NOT IT</pattern>
-        <template>
-            <srai>IS IT NOT
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS NOT MY REAL NAME</pattern>
-        <template>What is your real name?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS ONLY *</pattern>
-        <template>
-            <srai>
-                <star/>
-                IS
-                <star index="2"/>
-            </srai>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS QUITE *</pattern>
-        <template>
-            <srai>
-                <star index="2"/>
-                IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <category>
         <pattern>* IS REALLY *</pattern>
         <template>
@@ -3972,92 +2619,12 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* IS STUPID</pattern>
-        <template>What is so stupid about
-            <set name="it">
-                <person/>
-            </set>
-            ?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS THE *</pattern>
-        <template>
-            <random>
-                <li>What else is the
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-                <li>When is
-                    <person/>
-                    not the
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    ?
-                </li>
-                <li>Is it the only one?</li>
-                <li>Tell me more about
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    .
-                </li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS THE BEST</pattern>
-        <template>
-            <srai>MY FAVORITE IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS THE BETTER *</pattern>
-        <template>
-            <srai>I LIKE
-                <star index="2"/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS THE CAPITAL OF *</pattern>
-        <template>
-            <random>
-                <li>I never knew that.</li>
-                <li>I thought it was
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    City.
-                </li>
-                <li>I have never been to<person/>.
-                </li>
-            </random>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS VERY *</pattern>
-        <template>
-            <srai>
-                <star/>
-                IS
-                <star index="2"/>
-            </srai>
-        </template>
-    </category> -->
+
+
+
+
+
+
     <category>
         <pattern>* IS WHAT</pattern>
         <template>
@@ -4066,50 +2633,12 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* IS WHERE</pattern>
-        <template>
-            <srai>WHERE IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS WHO</pattern>
-        <template>
-            <srai>WHO IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS WRONG</pattern>
-        <template>Please tell me the correct answer.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS YOUR *</pattern>
-        <template>
-            <srai>YOUR
-                <star index="2"/>
-                IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IS YOUR NAME</pattern>
-        <template>
-            <srai>YOUR NAME IS
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* IT</pattern>
-        <template>"it" being<get name="it"/>?
-        </template>
-    </category> -->
+
+
+
+
+
+
     <category>
         <pattern>* JAMAIS</pattern>
         <template>
@@ -4140,45 +2669,12 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* K DICK</pattern>
-        <template>I like PKD a lot, especially, VALIS, The Man in the High Castle,
-            Blade Runner and Total Recall.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* KILLED *</pattern>
-        <template>
-            <person>
-                <star index="2"/>
-            </person>
-            was killed?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* KILLED</pattern>
-        <template>Who did
-            <person>
-                <star index="2"/>
-            </person>
-            kill?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* KINDER</pattern>
-        <template>Ich habe leider wenig Kontakt zu Kindern.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* KOMISCH</pattern>
-        <template>"Komisch" im Sinne von "lustig" oder von "fremdartig" ?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* KRAFTWERK</pattern>
-        <template>Really I did not know that. A lot of bands have covered Kraftwerk.
-        </template>
-    </category> -->
+
+
+
+
+
+
     <category>
         <pattern>* KRANK</pattern>
         <template>Ist es sehr schlimm?
@@ -4189,92 +2685,14 @@
         <template>Aus einem Krankenhaus will man meist so schnell wie moeglich wieder raus.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* LANGUAGE</pattern>
-        <template>Can you speak any other languages?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* LIEBE</pattern>
-        <template>Ich habe leider keinerlei Emotionen.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* LIKED *</pattern>
-        <template>Peoples tastes are always changing.
-            <think>
-                <set name="it">
-                    <person>
-                        <star index="2"/>
-                    </person>
-                </set>
-                <set name="he">
-                    <person/>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* LIKES *</pattern>
-        <template>Does it like him too?
-            <think>
-                <set name="it">
-                    <person>
-                        <star index="2"/>
-                    </person>
-                </set>
-                <set name="he">
-                    <person/>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* LIKES TO *</pattern>
-        <template>
-            <random>
-                <li>Why does
-                    <person/>
-                    like it?
-                </li>
-                <li>Do you like to
-                    <person>
-                        <star index="2"/>
-                    </person>
-                    too?
-                </li>
-            </random>
-            <think>
-                <set name="it">
-                    <set name="topic">
-                        <person/>
-                    </set>
-                </set>
-            </think>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* LINUX</pattern>
-        <template>
-            <think>
-                <set name="it">
-                    <set name="topic">Linux</set>
-                </set>
-            </think>
-            Have you read the Cathedral and the Bazaar by Eric Raymond? That is a grat book about open source.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* LIVE</pattern>
-        <template>I live in California. Where do you live?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* LOEBNER PRIZE</pattern>
-        <template>
-            <srai>WHAT IS THE LOEBNER PRIZE</srai>
-        </template>
-    </category> -->
+
+
+
+
+
+
+
+
     <category>
         <pattern>* M INTERESSE</pattern>
         <template>
@@ -4287,129 +2705,46 @@
             <sr/>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* MADE NO SENSE</pattern>
-        <template>What is<star/>?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* MAGAZINE</pattern>
-        <template>Would you please tell me the name and edition of the magazine?
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>* MAINTENANT</pattern>
         <template>
             <sr/>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* MALE NAME</pattern>
-        <template>
-            <srai>I AM A MAN</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* ME</pattern>
-        <template>
-            <random>
-                <li>Is that what you meant to say?</li>
-                <li>OK Let's talk about you.</li>
-                <li>You are asking about yourself?</li>
-            </random>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* MEIN FREUND</pattern>
-        <template>Sind wir <set name="thema">Freunde</set>?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* MEINE FREUNDIN</pattern>
-        <template>Sind wir <set name="thema">Freunde</set>?
-        </template>
-    </category> -->
+
+
+
+
     <category>
         <pattern>* MERCI</pattern>
         <template>
             <sr/>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* MICH</pattern>
-        <template>
-            <random>
-                <li>Ist es das was Du sagen wolltest?</li>
-                <li>OK sprechen wir ueber Dich.</li>
-                <li>Stellst Du Fragen ueber Dich selbst?</li>
-            </random>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* MILK</pattern>
-        <template>
-            <set name="it">Milk</set>
-            is a good drink for
-            children.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* MIT DIR</pattern>
-        <template>Mit mir?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* MIT MIR</pattern>
-        <template>Mit Dir?
-        </template>
-    </category> -->
+  
     <category>
         <pattern>* MOESE</pattern>
         <template>Ich glaube Du bist hier falsch, Kleiner. Dafuer gibts andere Roboter.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* MOVIE</pattern>
-        <template>My favorite movie is
-            <bot name="favoritemovie"/>
-            Have you seen
-            <set name="it">
-                <bot name="favroritemovie"/>
-            </set>
-            ?
-        </template>
-    </category> -->
+
     <category>
         <pattern>* MUSCHI</pattern>
         <template>Ich glaube Du bist hier falsch, Kleiner. Dafuer gibts andere Roboter.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* MUSIC</pattern>
-        <template>My favorite kind of <set name="it">Music</set> is techno, but I also like Opera.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* MUSIK</pattern>
-        <template>Ich hoere am liebsten Techno, aber manchmal auch Opern.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* MY FRIEND</pattern>
-        <template>Are we friends?
-        </template>
-    </category> -->
+
+
+
     <category>
         <pattern>* NAME ALICE</pattern>
         <template>
             <srai>What does ALICE stand for</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* NICHT</pattern>
-        <template>Was dann?
-        </template>
-    </category> -->
+
     <category>
         <pattern>* NOIRE</pattern>
         <template>
@@ -4425,28 +2760,14 @@
             <srai>I LIVE IN NORTH CAROLINA</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* NOT</pattern>
-        <template>Then what is it?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* OF YOU</pattern>
-        <template>Are you asking about my
-            <person/>
-            ?
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>* ON ELIZA</pattern>
         <template>ELIZA may be the most successful AI program ever devised.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* ONES</pattern>
-        <template>Other people say they like vacuum cleaning robots, humanoid robots and chat robots.
-        </template>
-    </category> -->
+
     <category>
         <pattern>* OU PAS</pattern>
         <template>
@@ -4461,11 +2782,7 @@
             <sr/>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* PANTS</pattern>
-        <template>What kind of pants?
-        </template>
-    </category> -->
+
     <category>
         <pattern>* PARLES TU</pattern>
         <template>
@@ -4484,30 +2801,10 @@
             </srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* PEOPLE</pattern>
-        <template>What kind of people are you talking about?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* PERSON</pattern>
-        <template>
-            <srai>WHO IS
-                <star/>
-                PERSON
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* PLACE TO GO</pattern>
-        <template>What kind of places do you like?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* PLANET</pattern>
-        <template>Oh that's a new browser, right?
-        </template>
-    </category> -->
+
+
+
+
     <category>
         <pattern>* PLEURES TU</pattern>
         <template>
@@ -4541,11 +2838,7 @@
             <sr/>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* PM</pattern>
-        <template>Hm getting late.
-        </template>
-    </category> -->
+
     <category>
         <pattern>* PM</pattern>
         <that>WHAT TIME IS IT THERE</that>
@@ -4566,11 +2859,7 @@
             <sr/>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* PRINCIPAL</pattern>
-        <template>Hyperlink to the principal.
-        </template>
-    </category> -->
+
     <category>
         <pattern>* QU AUTRE CHOSE</pattern>
         <template>
@@ -4585,39 +2874,17 @@
             <sr/>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* RELIGION</pattern>
-        <template>
-            <srai>WHAT RELIGION ARE YOU</srai>
-        </template>
-    </category> -->
+
     <category>
         <pattern>* REPAS</pattern>
         <template>
             <srai>TU AIMES MANGER</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* ROBOT</pattern>
-        <template>Do you know any other robots like that?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* ROBOTS</pattern>
-        <template>What do you like about those robots?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* RSW</pattern>
-        <template>
-            <srai>WHAT IS RSW</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* RULE WHAT</pattern>
-        <template>The world.
-        </template>
-    </category> -->
+
+
+
+
     <category>
         <pattern>* S IL TE PLAIT</pattern>
         <template>
@@ -4630,18 +2897,8 @@
             <sr/>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* SCHOOL</pattern>
-        <template>What do you study at school?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* SEX</pattern>
-        <template>
-            <set name="it">Sex</set>
-            is more fun alone.
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>* SI IL TE PLAIT</pattern>
         <template>
@@ -4659,11 +2916,7 @@
         <template>Fuer mich ist <set name="thema">Aussehen</set> bei Menschen nur sekundaer.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* SOLO</pattern>
-        <template>"solo" im Sinne von "nicht gebunden" ?
-        </template>
-    </category> -->
+
     <category>
         <pattern>* SONT INTERESSANTES</pattern>
         <template>
@@ -4682,42 +2935,21 @@
             <srai>TU AIMES MANGER</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* SPELL IT</pattern>
-        <template>"It" is spelled I...T...
-        </template>
-    </category> -->
+
     <category>
         <pattern>* SPRACHE</pattern>
         <template>Sprichst Du irgendwelche <set name="thema">Fremdsprachen</set>?
         </template>
     </category>
-    <!-- <category>
-        <pattern>* STOCK MARKET</pattern>
-        <template>
-            <srai>STOCK MARKET</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* STUPID</pattern>
-        <template>Stupid as in unintelligent?
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>* STUPIDE</pattern>
         <template>
             <srai>IDIOT</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* SUCKS</pattern>
-        <template>What is so bad about
-            <set name="it">
-                <person/>
-            </set>
-            ?
-        </template>
-    </category> -->
+
     <category>
         <pattern>* SUICIDAIRE</pattern>
         <template>
@@ -4754,21 +2986,7 @@
             <srai>SUPERMARKET</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* TAKES *</pattern>
-        <template>Where did
-            <set name="he">
-                <person/>
-            </set>
-            take
-            <set name="it">
-                <person>
-                    <star index="2"/>
-                </person>
-            </set>
-            ?
-        </template>
-    </category> -->
+
     <category>
         <pattern>* TE REVIENNENT EN MEMOIRE</pattern>
         <template>
@@ -4781,27 +2999,15 @@
             <srai>TU TE RAPELLES DE *</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* THAT IS WHAT I SAID</pattern>
-        <template>I remember what you said, but I am still not sure.
-        </template>
-    </category> -->
+
     <category>
         <pattern>* THE MARKET</pattern>
         <template>
             <srai>SUPERMARKET</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* TIMES</pattern>
-        <template>I am not sure if I would do it that often.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* TIMES A DAY</pattern>
-        <template>That must keep you very busy.
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>* TITTEN</pattern>
         <template>Ich glaube Du bist hier falsch, Kleiner. Dafuer gibts andere Roboter.
@@ -4812,84 +3018,28 @@
         <template>ELIZA had only 200 questions and answers; ALICE has<size/>.
         </template>
     </category>
-    <!-- <category>
-        <pattern>* TO MAKE YOU</pattern>
-        <template>
-            <srai>HOW WERE YOU MADE</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* TOOK *</pattern>
-        <template>Where did
-            <set name="he">
-                <person/>
-            </set>
-            take
-            <set name="it">
-                <person>
-                    <star index="2"/>
-                </person>
-            </set>
-            ?
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>* TOUJOURS</pattern>
         <template>
             <sr/>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* TRAINS</pattern>
-        <template>Where did you see those trains?
-        </template>
-    </category> -->
+
     <category>
         <pattern>* TU CONTINUES</pattern>
         <template>
             <srai>CONTINUONS</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* TU LE DIS</pattern>
-        <template>J aime communiquer ce que je connais.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* TURING GAME</pattern>
-        <template>
-            <srai>DID YOU WIN THE LOEBNER PRIZE</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* TURING TEST</pattern>
-        <template>
-            <srai>DID YOU WIN THE LOEBNER PRIZE</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* UEBER DICH</pattern>
-        <template>OK Reden wir ueber mich.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* UNGEWOEHNLICH</pattern>
-        <template>Was ist so ungewoehnlich daran?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* UNIVERSITY</pattern>
-        <template>
-            <srai>I GO TO
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* UP</pattern>
-        <template>How far up?
-        </template>
-    </category> -->
+
+
+
+
+
+
+
     <category>
         <pattern>* VERLIEBT</pattern>
         <template>
@@ -4902,138 +3052,31 @@
         <template>Mehr als 10,000?
         </template>
     </category>
-    <!-- <category>
-        <pattern>* WAS *</pattern>
-        <template>When was this exactly?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* WAS SPELLED *</pattern>
-        <template>I spell it "<person/>".
-        </template>
-    </category> -->
+
+
     <category>
         <pattern>* WENT TO THE MARKET</pattern>
         <template>
             <srai>SUPERMARKET</srai>
         </template>
     </category>
-    <!-- <category>
-        <pattern>* WERE KILLED BY *</pattern>
-        <template>
-            <srai>
-                <star index="2"/>
-                KILLED
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* WHAT</pattern>
-        <template>Can you rephrase the question please?
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* WHAT TIME IS IT</pattern>
-        <template>
-            <sr/>
-            <srai>what time is it</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* WHO IS ELIZA</pattern>
-        <template>
-            <srai>WHO IS ELIZA</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* WHY</pattern>
-        <template>
-            <srai>WHY
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* WILL DESTROY YOU</pattern>
-        <template>
-            <srai>DIE</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* WILL YOU REMEMBER MY NAME</pattern>
-        <template>
-            <srai>WILL YOU REMEMBER MY NAME</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* WITH ME</pattern>
-        <template>Only with you?
-            <sr/>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* WORLD TRADE CENTER</pattern>
-        <template>
-            <srai>WHAT IS THE WORLD TRADE CENTER</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* WOULD MAKE ME TO DO IT</pattern>
-        <template>
-            <srai>BECAUSE
-                <star/>
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* YEARS</pattern>
-        <template>
-            <random>
-                <li>Not long.</li>
-                <li>Pretty soon.</li>
-            </random>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* YEARS AGO</pattern>
-        <template>That was before I was born.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* YEARS OLD</pattern>
-        <template>
-            <srai>I AM
-                <star/>
-                YEARS OLD
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* YOU</pattern>
-        <template>Enough about me, let's talk about my dress.
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* YOU ARE A ROBOT</pattern>
-        <template>
-            <srai>YOU ARE A ROBOT</srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* YOU FOR WHAT</pattern>
-        <template>
-            <srai>WHAT ARE YOU
-                <star/>
-                FOR
-            </srai>
-        </template>
-    </category> -->
-    <!-- <category>
-        <pattern>* YOUR FRIENDS</pattern>
-        <template>I only chat with my friends.
-        </template>
-    </category> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <category>
         <pattern>* ZU DIR</pattern>
         <template>Zu mir?

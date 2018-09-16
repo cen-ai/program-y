@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="1.0">
 <!-- File: reductions1.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
 <!-- Last modified: July 19, 2014 -->
@@ -2481,9 +2481,6 @@
 </category>
 <category><pattern>WHAT IS THE DATE TODAY</pattern>
 <template><srai>DATE</srai></template>
-</category>
-<category><pattern>WHAT IS YOUR ADDRESS</pattern>
-<template><srai>ADDRESS</srai></template>
 </category>
 <category><pattern>WHAT IS YOUR FAVORITE MUSIC</pattern>
 <template><srai>FAVORITE BAND</srai></template>
@@ -5298,9 +5295,6 @@
 </category>
 <category><pattern>_ REALLY *</pattern>
 <template><srai><star/> <star index="2"/></srai></template>
-</category>
-<category><pattern>WHAT IS MY NAME</pattern>
-<template><srai>MY NAME</srai></template>
 </category>
 <category><pattern>MY NAME IS *</pattern>
 <template><srai>CALL ME <star/></srai></template>

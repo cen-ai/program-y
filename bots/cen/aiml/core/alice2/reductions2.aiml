@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="1.0">
 <!-- File: reductions2.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
 <!-- Last modified: July 19, 2014 -->
@@ -538,9 +538,6 @@
 </category>
 <category><pattern>ADD TO MY PHONEBOOK</pattern>
 <template><srai>NEW CONTACT</srai></template>
-</category>
-<category><pattern>ADDRESS PLEASE *</pattern>
-<template><srai>WHAT IS THE ADDRESS <star/></srai></template>
 </category>
 <category><pattern>ALARM AT *</pattern>
 <template><srai>SET AN ALARM FOR <star/></srai></template>
@@ -3970,9 +3967,6 @@
 </category>
 <category><pattern>WHAT IS YOUR FULL NAME</pattern>
 <template><srai>FULL NAME</srai></template>
-</category>
-<category><pattern>WHAT IS YOUR PHONE NUMBER</pattern>
-<template><srai>PHONE NUMBER</srai></template>
 </category>
 <category><pattern>WHAT IS GOING ON *</pattern>
 <template><srai>DOING</srai></template>

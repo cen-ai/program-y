@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="1.0">
 <!-- File: utilities.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
 <!-- Last modified: July 19, 2014 -->
@@ -30,20 +30,7 @@
 
 </condition></template>
 </category>
-<!-- <category><pattern>ANAGRAMWORDS *</pattern> (SRAIX node, service attribute missing)
-<template><think><set var="list"><srai>ANAGRAM <star/></srai></set></think>
-<condition var="list">
-<li value="too long">I can only do anagrams up to 8 letters.</li>
-<li><condition var="list">
-    <li value="NIL"/>
-    <li><think><set var="word"><first><get var="list"/></first></set>
-        <set var="list"><rest><get var="list"/></rest></set>
-        <set var="def"><sraix bot="drwallace/wndef" botid="f038d2f99e345a95" host="callmom.pandorabots.com">WNDEF <get var="word"/></sraix></set>
-      </think> <condition var="def"><li value="unknown"/><li><get var="word"/> </li></condition> <loop/></li>
-    </condition>
-</li>
-</condition></template>
-</category> -->
+
 <category><pattern>JSTEST *</pattern>
 <template><javascript>
 function foo() {

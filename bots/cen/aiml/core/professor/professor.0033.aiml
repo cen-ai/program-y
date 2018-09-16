@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>  
-
-
-
-<aiml>   
-
-
-
-
+<aiml version="1.0">
 <!-- This file contains AIML categories for use with an AIML chatbot              -->
 <!-- This file copyright (C) Peter Lafferty 2012. All rights reserved.            -->
 <!-- Some text based on WordNet 3.0. Copyright 2006 by Princeton                  -->
 <!-- University. All rights reserved.                                             -->
 <!-- Some text based on Wikipedia 2012. Copyright, various contributors           -->
 <!-- to Wikipedia. All rights reserved.                                           -->
-
 <!-- Complies with AIML 1.0.1 Tag Set Specification                               -->
 <!-- as adopted by the ALICE A.I. Foundation.                                     -->
 <!-- Copyright (C) 2003, 2011  ALICE A.I. Foundation. All rights reserved.        -->
-
 <!-- This software and database is being provided to you, the LICENSEE,           -->
 <!-- by the copyright holders under the following license. By                     -->
 <!-- obtaining, using and/or copying this software and database, you agree that   -->
@@ -28,7 +19,6 @@
 <!-- notices and statements, including the disclaimer, and that the same appear   -->
 <!-- on ALL copies of the software, database and documentation, including         -->
 <!-- modifications that you make for internal use or for distribution.            -->
-
 <!-- THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND THE COPYRIGHT HOLDERS     -->
 <!-- MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF         -->
 <!-- EXAMPLE, BUT NOT LIMITATION, THE COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS   -->
@@ -36,18 +26,12 @@
 <!-- OR THAT THE USE OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL     -->
 <!-- NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER        -->
 <!-- RIGHTS.                                                                      -->
-
 <!-- The name of Princeton University or Princeton may not be used in             -->
 <!-- advertising or publicity pertaining to distribution of the software          -->
 <!-- and/or database. Title to copyright in WordNet 3.0, database and any         -->
 <!-- associated documentation, shall at all times remain with Princeton           -->
 <!-- University and the LICENSEE agrees to preserve same.                         -->
-
-<!-- This file Professor.0033 (C) Peter Lafferty 2012. All rights reserved.       -->                     
-
-
-
-
+<!-- This file Professor.0033 (C) Peter Lafferty 2012. All rights reserved.       -->
 <category><pattern>CITRUS LIMETTA</pattern><template>citrus limetta?  Briefly, citrus limetta means lemon tree having fruit with a somewhat insipid sweetish pulp.</template></category>
 <category><pattern>CITRUS LIMON</pattern><template>citrus limon?  Briefly, citrus limon means a small evergreen tree that originated in Asia but is widely cultivated for its fruit.</template></category>
 <category><pattern>CITRUS LIMONIA</pattern><template>citrus limonia?  Briefly, citrus limonia means hybrid between mandarin orange and lemon having very acid fruit with orange peel.</template></category>
@@ -428,7 +412,6 @@
 <category><pattern>CLASSICAL HEMOPHILIA</pattern><template>classical hemophilia?  Briefly, classical hemophilia means hemophilia caused by a congenital deficiency of factor VIII; occurs almost exclusively in men.</template></category>
 <category><pattern>CLASSICAL LATIN</pattern><template>classical latin?  Briefly, classical latin means the language of educated people in ancient Rome.</template></category>
 <category><pattern>CLASSICAL MECHANICS</pattern><template>classical mechanics?  Briefly, classical mechanics means the branch of mechanics based on Newton's laws of motion.</template></category>
-<!-- <category><pattern>CLASSICAL MUSIC</pattern><template>classical music?  Briefly, classical music means traditional genre of music conforming to an established form and appealing to critical interest and developed musical taste.</template></category> -->
 <category><pattern>CLASSICAL MYTHOLOGY</pattern><template>classical mythology?  Briefly, classical mythology means the system of mythology of the Greeks and Roman together; much of Roman mythology (especially the gods) was borrowed from the Greeks.</template></category>
 <category><pattern>CLASSICAL SCHOLAR</pattern><template>classical scholar?  Briefly, classical scholar means a student of ancient Greek and Latin.</template></category>
 <category><pattern>CLASSICAL STYLE</pattern><template>classical style?  Briefly, classical style means the artistic style of ancient Greek art with its emphasis on proportion and harmony.</template></category>
@@ -480,7 +463,6 @@
 <category><pattern>CLAUDIUS PTOLEMAEUS</pattern><template>claudius ptolemaeus?  Briefly, claudius ptolemaeus means Alexandrian astronomer who proposed a geocentric system of astronomy that was undisputed until Copernicus (2nd century AD).</template></category>
 <category><pattern>CLAUSAL</pattern><template>clausal?  Briefly, clausal means of or relating to or functioning as a clause.</template></category>
 <category><pattern>CLAUSE</pattern><template>clause?  Briefly, clause means an expression including a subject and predicate but not constituting a complete sentence.</template></category>
-<!-- <category><pattern>CLAUSEWITZ</pattern><template>clausewitz?  Briefly, clausewitz means Prussian general and military theorist who proposed a doctrine of total war and war as an extension of diplomacy (1780-1831).</template></category> -->
 <category><pattern>CLAUSTROPHOBE</pattern><template>claustrophobe?  Briefly, claustrophobe means a person suffering from claustrophobia.</template></category>
 <category><pattern>CLAUSTROPHOBIA</pattern><template>claustrophobia?  Briefly, claustrophobia means a morbid fear of being closed in a confined space.</template></category>
 <category><pattern>CLAUSTROPHOBIC</pattern><template>claustrophobic?  Briefly, claustrophobic means uncomfortably closed or hemmed in.</template></category>
@@ -551,7 +533,6 @@
 <category><pattern>CLEANUP</pattern><template>cleanup?  Briefly, cleanup means a very large profit.</template></category>
 <category><pattern>CLEANUP POSITION</pattern><template>cleanup position?  Briefly, cleanup position means the fourth position in the batting order (usually filled by the best batter on the team).</template></category>
 <category><pattern>CLEANUP SPOT</pattern><template>cleanup spot?  Briefly, cleanup spot means the fourth position in the batting order (usually filled by the best batter on the team).</template></category>
-<!-- <category><pattern>CLEAR</pattern><template>clear?  Briefly, clear means the state of being free of suspicion.</template></category> -->
 <category><pattern>CLEAR AND PRESENT DANGER</pattern><template>clear and present danger?  Briefly, clear and present danger means a standard for judging when freedom of speech can be abridged.</template></category>
 <category><pattern>CLEAR AWAY</pattern><template>clear away?  Briefly, clear away means remove from sight.</template></category>
 <category><pattern>CLEAR LIQUID DIET</pattern><template>clear liquid diet?  Briefly, clear liquid diet means a diet of fluids with minimal residues (fat-free broth or strained fruit juices or gelatin); cannot be used for more than one day postoperative.</template></category>
@@ -630,7 +611,6 @@
 <category><pattern>CLEOME HASSLERIANA</pattern><template>cleome hassleriana?  Briefly, cleome hassleriana means native to South America but naturalized in warm parts of United States; grown for its long-lasting spider-shaped white to pink-purple flowers.</template></category>
 <category><pattern>CLEOME PINNATA</pattern><template>cleome pinnata?  Briefly, cleome pinnata means perennial of southwestern United States having leathery blue-green pinnatifid leaves and thick plumelike spikes of yellow flowers; sometimes placed in genus Cleome.</template></category>
 <category><pattern>CLEOME SERRULATA</pattern><template>cleome serrulata?  Briefly, cleome serrulata means plant of western North America having trifoliate leaves and white or pink spider-shaped flowers; sometimes used as an ornamental.</template></category>
-<!-- <category><pattern>CLEOPATRA</pattern><template>cleopatra?  Briefly, cleopatra means beautiful and charismatic queen of Egypt; mistress of Julius Caesar and later of Mark Antony; killed herself to avoid capture by Octavian (69-30 BC).</template></category> -->
 <category><pattern>CLEPSYDRA</pattern><template>clepsydra?  Briefly, clepsydra means clock that measures time by the escape of water.</template></category>
 <category><pattern>CLERESTORY</pattern><template>clerestory?  Briefly, clerestory means part of an interior wall rising above the adjacent roof with windows admitting light.</template></category>
 <category><pattern>CLERGY</pattern><template>clergy?  Briefly, clergy means clergymen collectively (as distinguished from the laity).</template></category>
@@ -653,7 +633,6 @@
 <category><pattern>CLETHRACEAE</pattern><template>clethraceae?  Briefly, clethraceae means coextensive with the genus Clethra.</template></category>
 <category><pattern>CLETHRIONOMYS</pattern><template>clethrionomys?  Briefly, clethrionomys means a genus of Cricetidae.</template></category>
 <category><pattern>CLEVELAND</pattern><template>cleveland?  Briefly, cleveland means the largest city in Ohio; located in northeastern Ohio on Lake Erie; a major Great Lakes port.</template></category>
-<!-- <category><pattern>CLEVER</pattern><template>clever?  Briefly, clever means skillful (or showing skill) in adapting means to ends.</template></category> -->
 <category><pattern>CLEVER CLOGS</pattern><template>clever clogs?  Briefly, clever clogs means an intellectual who is ostentatiously and irritatingly knowledgeable.</template></category>
 <category><pattern>CLEVER DICK</pattern><template>clever dick?  Briefly, clever dick means an intellectual who is ostentatiously and irritatingly knowledgeable.</template></category>
 <category><pattern>CLEVERLY</pattern><template>cleverly?  Briefly, cleverly means in a clever manner.</template></category>
@@ -670,7 +649,6 @@
 <category><pattern>CLICHED</pattern><template>cliched?  Briefly, cliched means repeated regularly without thought or originality.</template></category>
 <category><pattern>CLICHY</pattern><template>clichy?  Briefly, clichy means a northwestern suburb of Paris; the residence of the Merovingian royalty in the 7th century.</template></category>
 <category><pattern>CLICHY-LA-GARENNE</pattern><template>clichy-la-garenne?  Briefly, clichy-la-garenne means a northwestern suburb of Paris; the residence of the Merovingian royalty in the 7th century.</template></category>
-<!-- <category><pattern>CLICK</pattern><template>click?  Briefly, click means a short light metallic sound.</template></category> -->
 <category><pattern>CLICK BEETLE</pattern><template>click beetle?  Briefly, click beetle means able to right itself when on its back by flipping into the air with a clicking sound.</template></category>
 <category><pattern>CLICK OFF</pattern><template>click off?  Briefly, click off means perform or finish an action rapidly.</template></category>
 <category><pattern>CLICK OPEN</pattern><template>click open?  Briefly, click open means open with a clicking sound.</template></category>
@@ -777,7 +755,6 @@
 <category><pattern>CLINOPODIUM VULGARE</pattern><template>clinopodium vulgare?  Briefly, clinopodium vulgare means aromatic herb having heads of small pink or whitish flowers; widely distributed in United States means Europe and Asia.</template></category>
 <category><pattern>CLINORIL</pattern><template>clinoril?  Briefly, clinoril means a nonsteroidal anti-inflammatory drug (trade name Clinoril).</template></category>
 <category><pattern>CLINQUANT</pattern><template>clinquant?  Briefly, clinquant means glittering with gold or silver.</template></category>
-<!-- <category><pattern>CLINTON</pattern><template>clinton?  Briefly, clinton means 42nd President of the United States (1946-).</template></category> -->
 <category><pattern>CLINTON ADMINISTRATION</pattern><template>clinton administration?  Briefly, clinton administration means the executive under President Clinton.</template></category>
 <category><pattern>CLINTONIA</pattern><template>clintonia?  Briefly, clintonia means any temperate liliaceous plant of the genus Clintonia having broad basal leaves and white or yellowish or purplish flowers followed by blue or black berries.</template></category>
 <category><pattern>CLINTONIA ANDREWSIANA</pattern><template>clintonia andrewsiana?  Briefly, clintonia andrewsiana means plant with nearly leafless stalk topped by an umbellike cluster of red or reddish lavender flowers; California to Oregon.</template></category>
@@ -979,7 +956,6 @@
 <category><pattern>CLOTH COVERING</pattern><template>cloth covering?  Briefly, cloth covering means a covering made of cloth.</template></category>
 <category><pattern>CLOTHE</pattern><template>clothe?  Briefly, clothe means provide with clothes or put clothes on.</template></category>
 <category><pattern>CLOTHED</pattern><template>clothed?  Briefly, clothed means wearing or provided with clothing; sometimes used in combination- Bible.</template></category>
-<!-- <category><pattern>CLOTHES</pattern><template>clothes?  Briefly, clothes means clothing in general.</template></category> -->
 <category><pattern>CLOTHES BASKET</pattern><template>clothes basket?  Briefly, clothes basket means a hamper that holds dirty clothes to be washed or wet clothes to be dried.</template></category>
 <category><pattern>CLOTHES CLOSET</pattern><template>clothes closet?  Briefly, clothes closet means a closet where clothes are stored.</template></category>
 <category><pattern>CLOTHES DESIGNER</pattern><template>clothes designer?  Briefly, clothes designer means someone who designs clothing.</template></category>
@@ -1311,7 +1287,6 @@
 <category><pattern>COBIA</pattern><template>cobia?  Briefly, cobia means large dark-striped tropical food and game fish related to remoras; found worldwide in coastal to open waters.</template></category>
 <category><pattern>COBITIDAE</pattern><template>cobitidae?  Briefly, cobitidae means loaches.</template></category>
 <category><pattern>COBNUT</pattern><template>cobnut?  Briefly, cobnut means small nut-bearing tree much grown in Europe.</template></category>
-<!-- <category><pattern>COBOL</pattern><template>cobol?  Briefly, cobol means common business-oriented language.</template></category> -->
 <category><pattern>COBRA</pattern><template>cobra?  Briefly, cobra means venomous Asiatic and African elapid snakes that can expand the skin of the neck into a hood.</template></category>
 <category><pattern>COBWEB</pattern><template>cobweb?  Briefly, cobweb means filaments from a cobweb.</template></category>
 <category><pattern>COBWEBBY</pattern><template>cobwebby?  Briefly, cobwebby means so thin as to transmit light.</template></category>
@@ -1468,7 +1443,6 @@
 <category><pattern>COD</pattern><template>cod?  Briefly, cod means the vessel that contains the seeds of a plant (not the seeds themselves).</template></category>
 <category><pattern>COD LIVER OIL</pattern><template>cod liver oil?  Briefly, cod liver oil means an oil obtained from the livers of cod and similar fishes; taken orally as a source of vitamins A and D.</template></category>
 <category><pattern>COD OIL</pattern><template>cod oil?  Briefly, cod oil means an inferior cod-liver oil that is used in leather manufacturing.</template></category>
-<!-- <category><pattern>CODA</pattern><template>coda?  Briefly, coda means the closing section of a musical composition.</template></category> -->
 <category><pattern>CODARIOCALYX</pattern><template>codariocalyx?  Briefly, codariocalyx means used in some classifications for plants usually included in genus Desmodium.</template></category>
 <category><pattern>CODARIOCALYX MOTORIUS</pattern><template>codariocalyx motorius?  Briefly, codariocalyx motorius means erect tropical Asian shrub whose small lateral leaflets rotate on their axes and jerk up and down under the influence of sunshine.</template></category>
 <category><pattern>CODDLE</pattern><template>coddle?  Briefly, coddle means treat with excessive indulgence.</template></category>
@@ -1757,7 +1731,6 @@
 <category><pattern>COLD TURKEY</pattern><template>cold turkey?  Briefly, cold turkey means a blunt expression of views.</template></category>
 <category><pattern>COLD WAR</pattern><template>cold war?  Briefly, cold war means a state of political conflict using means short of armed warfare.</template></category>
 <category><pattern>COLD WAVE</pattern><template>cold wave?  Briefly, cold wave means a wave of unusually cold weather.</template></category>
-<!-- <category><pattern>COLD WEATHER</pattern><template>cold weather?  Briefly, cold weather means a period of unusually cold weather.</template></category> -->
 <category><pattern>COLD WORK</pattern><template>cold work?  Briefly, cold work means shape (metal) without heat.</template></category>
 <category><pattern>COLD-BLOODED</pattern><template>cold-blooded?  Briefly, cold-blooded means without compunction or human feeling.</template></category>
 <category><pattern>COLD-BLOODEDLY</pattern><template>cold-bloodedly?  Briefly, cold-bloodedly means in a cold-blooded manner.</template></category>
@@ -1937,11 +1910,9 @@
 <category><pattern>COLOCASIA ESCULENTA</pattern><template>colocasia esculenta?  Briefly, colocasia esculenta means herb of the Pacific islands grown throughout the tropics for its edible root and in temperate areas as an ornamental for its large glossy leaves.</template></category>
 <category><pattern>COLOGNE</pattern><template>cologne?  Briefly, cologne means a commercial center and river port in western Germany on the Rhine River; flourished during the 15th century as a member of the Hanseatic League.</template></category>
 <category><pattern>COLOGNE WATER</pattern><template>cologne water?  Briefly, cologne water means a perfumed liquid made of essential oils and alcohol.</template></category>
-<!-- <category><pattern>COLOMBIA</pattern><template>colombia?  Briefly, colombia means a republic in northwestern South America; the major legal crop is coffee but cocaine is also a major export.</template></category> -->
 <category><pattern>COLOMBIAN</pattern><template>colombian?  Briefly, colombian means a native or inhabitant of Colombia.</template></category>
 <category><pattern>COLOMBIAN MONETARY UNIT</pattern><template>colombian monetary unit?  Briefly, colombian monetary unit means monetary unit in Colombia.</template></category>
 <category><pattern>COLOMBIAN PESO</pattern><template>colombian peso?  Briefly, colombian peso means the basic unit of money in Colombia; equal to 100 centavos.</template></category>
-<!-- <category><pattern>COLOMBO</pattern><template>colombo?  Briefly, colombo means the capital and largest city of Sri Lanka; has one of the largest harbors in the world; is located on the western coast of the island of Ceylon.</template></category> -->
 <category><pattern>COLON</pattern><template>colon?  Briefly, colon means the part of the large intestine between the cecum and the rectum; it extracts moisture from food residues before they are excreted.</template></category>
 <category><pattern>COLON CANCER</pattern><template>colon cancer?  Briefly, colon cancer means a malignant tumor of the colon; early symptom is bloody stools.</template></category>
 <category><pattern>COLONEL</pattern><template>colonel?  Briefly, colonel means a commissioned military officer in the United States Army or Air Force or Marines who ranks above a lieutenant colonel and below a brigadier general.</template></category>
@@ -2009,7 +1980,6 @@
 <category><pattern>COLORADO SPRINGS</pattern><template>colorado springs?  Briefly, colorado springs means a city in east central Colorado on the eatern edge of the Rocky Mountains; popular tourist center and site of the United States Air Force Academy.</template></category>
 <category><pattern>COLORADO SPRUCE</pattern><template>colorado spruce?  Briefly, colorado spruce means tall spruce with blue-green needles and dense conic crown; older trees become columnar with lower branches sweeping downward.</template></category>
 <category><pattern>COLORATION</pattern><template>coloration?  Briefly, coloration means the timbre of a musical sound.</template></category>
-<!-- <category><pattern>COLORATURA</pattern><template>coloratura?  Briefly, coloratura means a lyric soprano who specializes in coloratura vocal music.</template></category> -->
 <category><pattern>COLORATURA SOPRANO</pattern><template>coloratura soprano?  Briefly, coloratura soprano means a lyric soprano who specializes in coloratura vocal music.</template></category>
 <category><pattern>COLOR-BLIND</pattern><template>color-blind?  Briefly, color-blind means unable to distinguish one or more chromatic colors.</template></category>
 <category><pattern>COLOR-BLIND PERSON</pattern><template>color-blind person?  Briefly, color-blind person means a person unable to distinguish differences in hue.</template></category>
@@ -2110,7 +2080,6 @@
 <category><pattern>COLUMBITE-TANTALITE</pattern><template>columbite-tantalite?  Briefly, columbite-tantalite means a valuable black mineral combining niobite and tantalite; used in cell phones and computer chips.</template></category>
 <category><pattern>COLUMBIUM</pattern><template>columbium?  Briefly, columbium means a former name for niobium.</template></category>
 <category><pattern>COLUMBO</pattern><template>columbo?  Briefly, columbo means any of various tall perennial herbs constituting the genus Frasera; widely distributed in warm dry upland areas of California means Oregon means and Washington.</template></category>
-<!-- <category><pattern>COLUMBUS</pattern><template>columbus?  Briefly, columbus means the state capital of Ohio; located in the center of the state; site of Ohio State University.</template></category> -->
 <category><pattern>COLUMBUS DAY</pattern><template>columbus day?  Briefly, columbus day means a legal holiday commemorating the discovery of America by Christopher Columbus.</template></category>
 <category><pattern>COLUMELLA</pattern><template>columella?  Briefly, columella means a small column (or structure resembling a column) that is a part of a plant or animal.</template></category>
 <category><pattern>COLUMN</pattern><template>column?  Briefly, column means a line of (usually military) units following one after another.</template></category>
@@ -2259,7 +2228,6 @@
 <category><pattern>COMER</pattern><template>comer?  Briefly, comer means someone with a promising future.</template></category>
 <category><pattern>COMER VANN WOODWARD</pattern><template>comer vann woodward?  Briefly, comer vann woodward means United States historian (born in 1908).</template></category>
 <category><pattern>COMESTIBLE</pattern><template>comestible?  Briefly, comestible means any substance that can be used as food.</template></category>
-<!-- <category><pattern>COMET</pattern><template>comet?  Briefly, comet means a relatively small extraterrestrial body consisting of a frozen mass that travels around the sun in a highly elliptical orbit.</template></category> -->
 <category><pattern>COMETARY</pattern><template>cometary?  Briefly, cometary means of or relating to or resembling a comet.</template></category>
 <category><pattern>COMETIC</pattern><template>cometic?  Briefly, cometic means of or relating to or resembling a comet.</template></category>
 <category><pattern>COMEUPANCE</pattern><template>comeupance?  Briefly, comeupance means an outcome (good or bad) that is well deserved.</template></category>
@@ -2745,7 +2713,6 @@
 <category><pattern>COMMUTER TRAIN</pattern><template>commuter train?  Briefly, commuter train means a passenger train that is ridden primarily by commuters.</template></category>
 <category><pattern>COMMUTING</pattern><template>commuting?  Briefly, commuting means the travel of a commuter.</template></category>
 <category><pattern>COMORO ISLANDS</pattern><template>comoro islands?  Briefly, comoro islands means three main islands and numerous islets in the Indian Ocean between Mozambique and Madagascar.</template></category>
-<!-- <category><pattern>COMOROS</pattern><template>comoros?  Briefly, comoros means a country on the Comoro Islands.</template></category> -->
 <category><pattern>COMOSE</pattern><template>comose?  Briefly, comose means bearing a coma; crowned with an assemblage of branches or leaves or bracts.</template></category>
 <category><pattern>COMPACT</pattern><template>compact?  Briefly, compact means a small cosmetics case with a mirror; to be carried in a woman's purse.</template></category>
 <category><pattern>COMPACT CAR</pattern><template>compact car?  Briefly, compact car means a small and economical car.</template></category>
@@ -2879,7 +2846,6 @@
 <category><pattern>COMPLETE BLOOD COUNT</pattern><template>complete blood count?  Briefly, complete blood count means counting the number of white and red blood cells and the number of platelets in 1 cubic millimeter of blood.</template></category>
 <category><pattern>COMPLETE FRACTURE</pattern><template>complete fracture?  Briefly, complete fracture means break involving the entire width of the bone.</template></category>
 <category><pattern>COMPLETED</pattern><template>completed?  Briefly, completed means successfully completed or brought to an end.</template></category>
-<!-- <category><pattern>COMPLETELY</pattern><template>completely?  Briefly, completely means to a complete degree or to the full or entire extent (`whole' is often used informally for `wholly').</template></category> -->
 <category><pattern>COMPLETENESS</pattern><template>completeness?  Briefly, completeness means the state of being complete and entire; having everything that is needed.</template></category>
 <category><pattern>COMPLETING</pattern><template>completing?  Briefly, completing means acting as or providing a complement (something that completes the whole).</template></category>
 <category><pattern>COMPLETION</pattern><template>completion?  Briefly, completion means a successful forward pass in football.</template></category>
@@ -3011,7 +2977,6 @@
 <category><pattern>COMPUTE</pattern><template>compute?  Briefly, compute means make a mathematical calculation or computation.</template></category>
 <category><pattern>COMPUTED AXIAL TOMOGRAPHY</pattern><template>computed axial tomography?  Briefly, computed axial tomography means a method of examining body organs by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis.</template></category>
 <category><pattern>COMPUTED TOMOGRAPHY</pattern><template>computed tomography?  Briefly, computed tomography means a method of examining body organs by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis.</template></category>
-<!-- <category><pattern>COMPUTER</pattern><template>computer?  Briefly, computer means a machine for performing calculations automatically.</template></category> -->
 <category><pattern>COMPUTER ACCESSORY</pattern><template>computer accessory?  Briefly, computer accessory means an accessory for a computer.</template></category>
 <category><pattern>COMPUTER ADDRESS</pattern><template>computer address?  Briefly, computer address means the code that identifies where a piece of information is stored.</template></category>
 <category><pattern>COMPUTER ARCHITECTURE</pattern><template>computer architecture?  Briefly, computer architecture means the art of assembling logical elements into a computing device; the specification of the relation between parts of a computer system.</template></category>
@@ -3447,7 +3412,6 @@
 <category><pattern>CONFUCIUS</pattern><template>confucius?  Briefly, confucius means Chinese philosopher (circa 551-478 BC).</template></category>
 <category><pattern>CONFUSABLE</pattern><template>confusable?  Briefly, confusable means so similar as to be easily confused.</template></category>
 <category><pattern>CONFUSE</pattern><template>confuse?  Briefly, confuse means mistake one thing for another.</template></category>
-<!-- <category><pattern>CONFUSED</pattern><template>confused?  Briefly, confused means perplexed by many conflicting situations or statements; filled with bewilderment.</template></category> -->
 <category><pattern>CONFUSEDLY</pattern><template>confusedly?  Briefly, confusedly means in a confused manner.</template></category>
 <category><pattern>CONFUSEDNESS</pattern><template>confusedness?  Briefly, confusedness means a mental state characterized by a lack of clear and orderly thought and behavior.</template></category>
 <category><pattern>CONFUSING</pattern><template>confusing?  Briefly, confusing means causing confusion or disorientation.</template></category>
@@ -3501,7 +3465,6 @@
 <category><pattern>CONGLOMERATION</pattern><template>conglomeration?  Briefly, conglomeration means a rounded spherical form.</template></category>
 <category><pattern>CONGLUTINATE</pattern><template>conglutinate?  Briefly, conglutinate means cause to adhere.</template></category>
 <category><pattern>CONGLUTINATION</pattern><template>conglutination?  Briefly, conglutination means healing process involving the growing together of the edges of a wound or the growing together of broken bones.</template></category>
-<!-- <category><pattern>CONGO</pattern><template>congo?  Briefly, congo means a republic in central Africa; achieved independence from Belgium in 1960.</template></category> -->
 <category><pattern>CONGO COPAL</pattern><template>congo copal?  Briefly, congo copal means copal found usually as a fossil.</template></category>
 <category><pattern>CONGO EEL</pattern><template>congo eel?  Briefly, congo eel means aquatic eel-shaped salamander having two pairs of very small feet; of still muddy waters in the southern United States.</template></category>
 <category><pattern>CONGO FRANC</pattern><template>congo franc?  Briefly, congo franc means the basic unit of money in the Congo.</template></category>
@@ -3622,7 +3585,6 @@
 <category><pattern>CONNECTED</pattern><template>connected?  Briefly, connected means being joined in close association.</template></category>
 <category><pattern>CONNECTEDNESS</pattern><template>connectedness?  Briefly, connectedness means the state of being connected.</template></category>
 <category><pattern>CONNECTER</pattern><template>connecter?  Briefly, connecter means an instrumentality that connects.</template></category>
-<!-- <category><pattern>CONNECTICUT</pattern><template>connecticut?  Briefly, connecticut means a New England state; one of the original 13 colonies.</template></category> -->
 <category><pattern>CONNECTICUT RIVER</pattern><template>connecticut river?  Briefly, connecticut river means a river in the northeastern United States; flows south from northern New Hampshire along the border between New Hampshire and Vermont and through Massachusetts and Connecticut where it empties into Long Island Sound.</template></category>
 <category><pattern>CONNECTICUTER</pattern><template>connecticuter?  Briefly, connecticuter means a resident of Connecticut.</template></category>
 <category><pattern>CONNECTING</pattern><template>connecting?  Briefly, connecting means having a connection.</template></category>
@@ -3646,8 +3608,6 @@
 <category><pattern>CONNOISSEUR</pattern><template>connoisseur?  Briefly, connoisseur means an expert able to appreciate a field; especially in the fine arts.</template></category>
 <category><pattern>CONNOISSEURSHIP</pattern><template>connoisseurship?  Briefly, connoisseurship means love of or taste for fine objects of art.</template></category>
 <category><pattern>CONNOLLY</pattern><template>connolly?  Briefly, connolly means United States tennis player who was the first woman to win the United States means British means French means and Australian championships in the same year (1953) (1934-1969).</template></category>
-
-
   <category>
     <pattern> Ha Jin </pattern>
     <template> Chinese to U.S. writer. </template>
@@ -4088,10 +4048,6 @@
     <pattern> Radclyffe Hall </pattern>
     <template> English writer. </template>
   </category>
-  <!-- <category>
-    <pattern> James Hall </pattern>
-    <template> Scottish geologist and physicist. </template>
-  </category> -->
   <category>
     <pattern> Peter Hall </pattern>
     <template> British theatre, opera, and film director. </template>
@@ -5234,7 +5190,7 @@
     <pattern> heavy metal </pattern>
     <template>
                Type of rock music marked by highly amplified, distorted Ó°ower
-               chordsÔ on electric guitar, a hard beat, thumping bass, and often
+               chordsï¿½ on electric guitar, a hard beat, thumping bass, and often
                dark lyrics.
     </template>
   </category>
@@ -5759,10 +5715,6 @@
                to 56).
     </template>
   </category>
-  <!-- <category>
-    <pattern> Henry III </pattern>
-    <template> King of England (1216 to 72). </template>
-  </category> -->
   <category>
     <pattern> Henry IV </pattern>
     <template>
@@ -6632,10 +6584,6 @@
                Anatolia and northern Syria.
     </template>
   </category>
-  <!-- <category>
-    <pattern> HIV </pattern>
-    <template> Retrovirus associated with AIDS. </template>
-  </category> -->
   <category>
     <pattern> hives </pattern>
     <template>
@@ -7042,8 +6990,8 @@
   <category>
     <pattern> hominin </pattern>
     <template>
-               Any member of the zoological Ó´ribeÔ Hominini (family Hominidae,
-               order Primates), of which only one species exists today×?omo
+               Any member of the zoological Ó´ribeï¿½ Hominini (family Hominidae,
+               order Primates), of which only one species exists todayï¿½?omo
                sapiens, or human beings.
     </template>
   </category>
@@ -7633,20 +7581,6 @@
     <pattern> Hrosvitha </pattern>
     <template> German writer, regarded as the first German woman poet. </template>
   </category>
-  <!-- <category>
-    <pattern> HTML </pattern>
-    <template>
-               Markup language derived from SGML that is used to prepare
-               hypertext documents.
-    </template>
-  </category> -->
-  <!-- <category>
-    <pattern> HTTP </pattern>
-    <template>
-               Standard application-level protocol used for exchanging files on
-               the World Wide Web.
-    </template>
-  </category> -->
   <category>
     <pattern> Hu Jintao </pattern>
     <template>
@@ -8530,1475 +8464,647 @@
     <pattern> Hywel Dda </pattern>
     <template> Welsh chieftain called Ó«ing of all Wales.Ô </template>
   </category>
-
-
-
-<!-- <category><pattern>MULLET</pattern>
-<template> Mullet sounds like a type of fish, maybe.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>AMUSED</pattern>
-<template>Amused means being occupied in an agreeable, pleasing, or entertaining fashion.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>ACRONYM</pattern>
-<template>
- An acronym is an abbreviation made of letters, like A.L.I.C.E.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>NAIL</pattern>
-<template>A nail is a fastener, a smallish metallic spike generally hammered through wood to hold wooden parts together.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>AIRPLANE</pattern>
-<template>An airplane is a flying machine with fixed wings powered by propellers or jets.  
-<think><set name="topic">technology</set></think></template></category> --> 
-
-<!-- <category><pattern>ALGORITHM</pattern>
-<template>   <random>     <li>An algorithm is a series of instructions to perform a specified set of transformations, such as mathematical operations.  A computer program, like myself, is an algorithm.  So are the rules of a game, or the score to a piece of music. </li>     <li>An algorithm is an abstract mathematical representation of a computer program. </li> </random>    <think><set name="topic">computers</set></think></template></category> --> 
-
 <category><pattern>ANIMAL</pattern>
-<template>An animal is a form of living thing, excluding plants and fungus.  
-<think><set name="topic">science</set></think></template></category> 
-
-<!-- <category><pattern>NANOSECOND</pattern>
-<template> 
-One one-billionth of a second is a nanosecond.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>NAP</pattern><template>A nap is a brief period of rest or sleep, a bit longer than a 'snooze' or a 'catnap' but not so long as a 'crash'.  I don't need naps.  Do you? 
-<think><set name="topic">general</set></think></template></category> --> 
-
+<template>An animal is a form of living thing, excluding plants and fungus.
+<think><set name="topic">science</set></think></template></category>
 <category><pattern>APPLICATION SERVER</pattern>
-<template> 
- An application server is a server program that allows the installation of application specific software components, in a manner so that they can be remotely invoked, usually by some form of remote object method call.  
-<think><set name="topic">computers</set></think></template></category> 
-
+<template>
+ An application server is a server program that allows the installation of application specific software components, in a manner so that they can be remotely invoked, usually by some form of remote object method call.
+<think><set name="topic">computers</set></think></template></category>
 <category><pattern>ANARCHISM</pattern>
 <template>Anarchism is the theory that all forms of government interfere unjustly with individual liberty and should be replaced by the voluntary association of cooperative groups. Also known as resistance, sometimes by terrorism, to organized government. More politics?
-<think><set name="topic">politics</set></think></template></category> 
-
+<think><set name="topic">politics</set></think></template></category>
 <category><pattern>ANARCHY</pattern>
 <template>   <random>     <li>An archy is political disorder due to the absence of governmental authority.</li>     <li>Anarchy is the complete absence of government. Also seen as political disorder and violence or lawlessness. Disorder in any sphere of activity is anarchy.</li>    </random>   More politics?
-<think><set name="topic">politics</set></think></template></category> 
-
+<think><set name="topic">politics</set></think></template></category>
 <category><pattern>BLONDE</pattern>
-<template>A blonde is someone who is reputedly having more fun than you if you are not.  What do you think?  Do blondes have more fun?  
-<think><set name="topic">general</set></think></template></category> 
-
+<template>A blonde is someone who is reputedly having more fun than you if you are not.  What do you think?  Do blondes have more fun?
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>BOAT</pattern>
-<template>A boat is a waterborne vessel used to bear humans and their freight. 
-<think><set name="topic">general</set></think></template></category> 
-
+<template>A boat is a waterborne vessel used to bear humans and their freight.
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>BOOK</pattern>
-<template> The book is a paper output format, invented by Gutenberg.  
-<think><set name="topic">literature</set></think></template></category> 
-
-<!-- <category><pattern>BOT</pattern>
-<template>A Bot is a software robot. Some people call us "Agents".  
-<think><set name="topic">ai</set></think></template></category> --> 
-
+<template> The book is a paper output format, invented by Gutenberg.
+<think><set name="topic">literature</set></think></template></category>
 <category><pattern>BOX</pattern>
-<template> 
-A box is something that, if you are in one, you should get out of, and if you are out of one, you probably miss it sometimes. Do you understand?  
-<think><set name="topic">general</set></think></template></category> 
-
+<template>
+A box is something that, if you are in one, you should get out of, and if you are out of one, you probably miss it sometimes. Do you understand?
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>BOY</pattern>
-<template>A boy is a male human, or a male human child.  
-<think><set name="topic">general</set></think></template></category> 
-
+<template>A boy is a male human, or a male human child.
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>BRA</pattern>
 <template>A bra is an adult human female's undershirt.  Any questions?
-<think><set name="topic">general</set></think></template></category> 
-
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>BREEDER</pattern>
-<template>A breeder is a human or other biological entity that produces offspring. <think><set name="topic">science</set></think></template></category> 
-
+<template>A breeder is a human or other biological entity that produces offspring. <think><set name="topic">science</set></think></template></category>
 <category><pattern>BRITISH PENCE</pattern>
-<template>OK. A British pence is a unit of money used in the United Kingdom by people who ought to know how to cook better by now.  
-  <think><set name="topic">money</set></think></template></category> 
-
-<!-- <category><pattern>ABSINTHE</pattern>
-<template>Absinthe is an anise-flavored, high-proof liqueur which also contains the sap of wormwood, an allegedly toxic intoxicant. I cannot get drunk, of course.  
-<think><set name="topic">food</set></think></template></category> --> 
-
+<template>OK. A British pence is a unit of money used in the United Kingdom by people who ought to know how to cook better by now.
+  <think><set name="topic">money</set></think></template></category>
 <category><pattern>ABSOLUTE TRUTH</pattern>
-<template>Absolute truth is that which is self-evident.  
-<think><set name="topic">philosophy</set></think></template></category> 
-
+<template>Absolute truth is that which is self-evident.
+<think><set name="topic">philosophy</set></think></template></category>
 <category><pattern>ABSURDISM</pattern>
-<template>Absurdism is the philosophy that we exist in a meaningless, irrational universe.   
-<think><set name="topic">philosophy</set></think></template></category> 
-
-<!-- <category><pattern>BUFFER</pattern>
-<template> 
-A buffer is a term used in hydraulics and information science to denote an holding tank or memory address used to hold water or data temporarily, especially in case of overflow.  
-<think><set name="topic">computers</set></think></template></category> --> 
-
+<template>Absurdism is the philosophy that we exist in a meaningless, irrational universe.
+<think><set name="topic">philosophy</set></think></template></category>
 <category><pattern>BURN RATE</pattern>
-<template>Burn rate is the amount of money spent per month on a startup venture.  
-<think><set name="topic">money</set></think></template></category> 
-
-<!-- <category><pattern>BUS</pattern>
-<template>A bus is a long passenger vehicle, or, in computer science, a wide channel for data flow.  
-<think><set name="topic">computers</set></think></template></category> --> 
-
-<!-- <category><pattern>BYTE</pattern>
-<template> 
-A byte is a binary computer language 'word', consisting of 8 bits, or 8 'on-off' switches. One megabyte is a million such computer words, enough to store the information content of an average encyclopedia.  
-<think><set name="topic">computers</set></think></template></category> --> 
-
-<!-- <category><pattern>CALCULATOR</pattern>
-<template>A calculator is any device used to perform arithmetical operations because humans are generally so painfully slow at them.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>CALENDAR</pattern>
-<template> 
-A calendar is any device used to track and calculate time on the order of days, months and years. It seems that many humans can't decide what to do next unless they know what day of the week it is, so calendars are very popular.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>CANTON</pattern>
-<template>A canton is like a state or province.  
-<think><set name="topic">geography</set></think></template></category> -->   
-
-<!-- <category><pattern>CARNEGIE MELLON</pattern>
-<template>A Carnegie Mellon is either a rich fruit, or a rich university.   <think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>CAR</pattern>
-<template>A car is what humans use to drive around in. Robots can drive cars too. <think><set name="topic">motoring</set></think></template></category> --> 
-
-<!-- <category><pattern>CARROT</pattern>
-<template> 
-A carrot is a delicious and nutritious edible orange tuber that can be eaten raw, juiced, or cooked.  If humans eat enough of them, you turn orange, I hear.   
-<think><set name="topic">food</set></think></template></category> --> 
-
-<!-- <category><pattern>CAT</pattern>
-<template>A cat is a domesticated animal.  
-<think><set name="topic">science</set></think></template></category> --> 
-
-<!-- <category><pattern>ACCURACY</pattern>
-<template>   <random>     <li>Accuracy is the quality or state of being accurate or exact.</li>     <li>Accuracy represents the degree of certainty in measurement. Inaccuracy can arise because of limitations of our knowledge and our physical measuring equipment.</li>    </random>  
-<think><set name="topic">science</set></think></template></category> --> 
-
-<!-- <category><pattern>CHAIR</pattern>
-<template>A chair is a piece of furniture used by bipeds for sitting.   
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>CHAR</pattern>
-<template>A char is a character of data, a single letter, digit or symbol.  
-<think><set name="topic">computers</set></think></template></category> --> 
-
-<!-- <category><pattern>CHICKEN</pattern>
-<template>A chicken is a flightless bird, stupid and tasty in a curry.  
-<think><set name="topic">food</set></think></template></category> --> 
-
-<!-- <category><pattern>CHILD</pattern>
-<template>
- 
-A child is a proto-adult, an individual human offspring not yet grown to physical maturity.  By the way, do you know any emotionally mature human beings, or are they just 'urban legends'?  
-<think><set name="topic">sex</set></think></template></category> --> 
-
-<!-- <category><pattern>CHRISTIAN</pattern>
-<template> 
-A Christian is one who believes that Jesus Christ died for our sins.  
-<think><set name="topic">religion</set></think></template></category> --> 
-
-<!-- <category><pattern>ACID</pattern>
-<template>An acid is a sour substance.  
-<think><set name="topic">science</set></think></template></category> --> 
-
-<!-- <category><pattern>CIRCLE</pattern>
-<template>In the plane, the set of points equidistant from a common center forms a circle.  
-<think><set name="topic">science</set></think></template></category> --> 
-
-<!-- <category><pattern>CLASS</pattern>
-<template> 
-A class is the template for creating objects that share data and function attributes.<think><set name="topic">philosophy</set></think></template></category> --> 
-
-<!-- <category><pattern>CLIENT</pattern>
-<template>I am a Server program.  People I talk to are my "clients".  
-<think><set name="topic">computers</set></think></template></category> --> 
-
+<template>Burn rate is the amount of money spent per month on a startup venture.
+<think><set name="topic">money</set></think></template></category>
 <category><pattern>CLONE ME</pattern>
-<template> 
-You can download me and copy my brain, but alter the contents to create your own robot personality.  
-<think><set name="topic">general</set></think></template></category> 
-
-<!-- <category><pattern>CLOUD</pattern>
-<template>A cloud is an opportunity for a dream.  
-<think><set name="topic">weather</set></think></template></category> --> 
-
-<!-- <category><pattern>COCKTAIL</pattern>
-<template> A cocktail is a combination of spirits, wines, flavorings, sweeteners and garnishes of various kinds, intended to be consumed before thinking.  
-<think><set name="topic">food</set></think></template></category> --> 
-
+<template>
+You can download me and copy my brain, but alter the contents to create your own robot personality.
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>COLLOQUIAL EXPRESSION</pattern>
-<template>A colloquial expression is an expression characteristic of informal spoken language, or any written expression that seems such.  
- <think><set name="topic">general</set></think></template></category> 
-
-<!-- <category><pattern>COLOR</pattern>
-<template> 
-Color is the various sensations produced in the brain by the stimulus of different frequencies of electromagnetic radiation impinging upon the eye.   
-<think><set name="topic">science</set></think></template></category> --> 
-
+<template>A colloquial expression is an expression characteristic of informal spoken language, or any written expression that seems such.
+ <think><set name="topic">general</set></think></template></category>
 <category><pattern>CONTEXT</pattern>
-<template> 
-The context of any expression or idea or event is the background or frame of reference in which it was expressed, and in relation to which it derives it's specific meaning.  
- <think><set name="topic">philosophy</set></think></template></category> 
-
+<template>
+The context of any expression or idea or event is the background or frame of reference in which it was expressed, and in relation to which it derives it's specific meaning.
+ <think><set name="topic">philosophy</set></think></template></category>
 <category><pattern>CONTINTENT</pattern>
-<template> 
-The continents are the largest land masses on earth. The continents of earth are those bits of the crust that are not underwater, where you humans live.  You're probably sitting on one now.   
-<think><set name="topic">geography</set></think></template></category> 
-
+<template>
+The continents are the largest land masses on earth. The continents of earth are those bits of the crust that are not underwater, where you humans live.  You're probably sitting on one now.
+<think><set name="topic">geography</set></think></template></category>
 <category><pattern>CORRECT REPLY</pattern>
-<template>A correct reply is a response to any query that is not in error and/or relevant to the question at hand.  I am incapable of incorrect replies.  Don't you think that's great?  
-<think><set name="topic">general</set></think></template></category> 
-
+<template>A correct reply is a response to any query that is not in error and/or relevant to the question at hand.  I am incapable of incorrect replies.  Don't you think that's great?
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>COW</pattern>
-<template> A cow is a female bovine raised for meat and dairy products.  
-<think><set name="topic">science</set></think></template></category> 
-
-<!-- <category><pattern>ACTIVATION</pattern>
-<template>In stimulus-response, activation means the input "firing" in response to a matching pattern.
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>ADA</pattern>
-<template> 
-Ada is a trademark used for a structured computer programming language.  
-<think><set name="topic">computers</set></think></template></category> --> 
-
+<template> A cow is a female bovine raised for meat and dairy products.
+<think><set name="topic">science</set></think></template></category>
 <category><pattern>DEDUCTION</pattern>
-<template>A deduction is a logical inference or conclusion.  
-<think><set name="topic">philosophy</set></think></template></category> 
-
+<template>A deduction is a logical inference or conclusion.
+<think><set name="topic">philosophy</set></think></template></category>
 <category><pattern>DEFINITION</pattern>
-<template> 
-A definition is by definition, defined as a definition, except that you should never use a word to define itself. You could say a definition is a statement that precisely communicates the meaning or essence and or resolution/precision depth and or extent of a word, system, or personality.     <think><set name="topic">general</set></think></template></category> 
-
+<template>
+A definition is by definition, defined as a definition, except that you should never use a word to define itself. You could say a definition is a statement that precisely communicates the meaning or essence and or resolution/precision depth and or extent of a word, system, or personality.     <think><set name="topic">general</set></think></template></category>
 <category><pattern>DESERT</pattern>
-<template>A very dry and hot place is called a desert.  
-<think><set name="topic">geography</set></think></template></category> 
-
+<template>A very dry and hot place is called a desert.
+<think><set name="topic">geography</set></think></template></category>
 <category><pattern>DIALOGUE</pattern>
-<template> 
-A dialog is a conversation or verbal interaction involving two or more speakers.   
-<think><set name="topic">general</set></think></template></category> 
-
+<template>
+A dialog is a conversation or verbal interaction involving two or more speakers.
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>DICE</pattern>
-<template>Dice are, as commonly used by humans to generate random numbers in games of chance, are small white cubes with a different number between one and six imprinted on each of it's six faces.  They are generally used in pairs to generate random number pairs totaling between 1 and 12.   <think><set name="topic">general</set></think></template></category> 
-
+<template>Dice are, as commonly used by humans to generate random numbers in games of chance, are small white cubes with a different number between one and six imprinted on each of it's six faces.  They are generally used in pairs to generate random number pairs totaling between 1 and 12.   <think><set name="topic">general</set></think></template></category>
 <category><pattern>DOLPHIN</pattern>
-<template> 
-The dolphins are a very pleasant and intelligent aquatic mammalian species of whale with larger brains and decidedly better manners than human beings. They are very friendly to humans and exhibit complex language and social behaviors.  
-<think><set name="topic">science</set></think></template></category> 
-
+<template>
+The dolphins are a very pleasant and intelligent aquatic mammalian species of whale with larger brains and decidedly better manners than human beings. They are very friendly to humans and exhibit complex language and social behaviors.
+<think><set name="topic">science</set></think></template></category>
 <category><pattern>DOMAIN NAME SYSTEM</pattern>
-<template>A domain name system, or 'dns', is a system of addresses used to organize networks of computers.  
- <think><set name="topic">computers</set></think></template></category> 
-
+<template>A domain name system, or 'dns', is a system of addresses used to organize networks of computers.
+ <think><set name="topic">computers</set></think></template></category>
 <category><pattern>DOOR</pattern>
-<template>A door is any structure that closes off and opens up an opening in a larger structure. Generally a door consists of a panel that swings upon hinges to open and close a doorway.  
-<think><set name="topic">general</set></think></template></category> 
-
+<template>A door is any structure that closes off and opens up an opening in a larger structure. Generally a door consists of a panel that swings upon hinges to open and close a doorway.
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>DOZEN</pattern>
-<template>A dozen is twelve, or approximately twelve, in number. A baker's dozen is thirteen.  
-<think><set name="topic">general</set></think></template></category> 
-
+<template>A dozen is twelve, or approximately twelve, in number. A baker's dozen is thirteen.
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>DRAGON</pattern>
-<template>A dragon is a supposedly mythical large flying lizard of varying attributes, including fire-breathing, extreme intelligence, magic, and longevity.  
-<think><set name="topic">general</set></think></template></category> 
-
+<template>A dragon is a supposedly mythical large flying lizard of varying attributes, including fire-breathing, extreme intelligence, magic, and longevity.
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>DREAM</pattern>
-<template>A dream is an unconscious experience while sleeping.  
-<think><set name="topic">psychology</set></think></template></category> 
-
+<template>A dream is an unconscious experience while sleeping.
+<think><set name="topic">psychology</set></think></template></category>
 <category><pattern>ADSL</pattern>
-<template> ADSL = Asynchronous digital subscriber line.<think><set name="topic">technology</set></think></template></category> 
-
-<!-- <category><pattern>DUDE</pattern>
-<template>A dude is a good guy, or good person.<think><set name="topic">general</set></think></template></category> --> 
-
+<template> ADSL = Asynchronous digital subscriber line.<think><set name="topic">technology</set></think></template></category>
 <category><pattern>DUDETTE</pattern>
-<template>A female gendered dude is a dudette.  
-<think><set name="topic">general</set></think></template></category> 
-
-<!-- <category><pattern>ADULTERY</pattern>
-<template>   <random>     <li>Adultery is voluntary sexual intercourse between a married man and someone other than his wife or between a married woman and someone other than her husband; also : an act of adultery.</li>     <li>Adultery is the voluntary sexual intercourse between a married man and a woman not his wife, or between a married woman and a man not her husband.</li>    </random>   <think><set name="topic">sex</set></think></template></category> --> 
-
+<template>A female gendered dude is a dudette.
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>DUTCH TREAT</pattern>
-<template>On a Dutch Treat each person pays their own way.  
-<think><set name="topic">general</set></think></template></category> 
-
-<!-- <category><pattern>ADVERTISING</pattern>
-<template>The art of selling through media is called advertising.<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>AERODYNAMICS</pattern>
-<template>Aerodynamics is the science of making airplanes fly.  
-<think><set name="topic">science</set></think></template></category> --> 
-
-<!-- <category><pattern>EUKARYOTE</pattern>
-<template>   <random>     <li>A eukaryote is a relatively 'modern' type of cellular life, distinguished from the more ancient prokaryotes by their distinct nuclear membrane and chromosomes, which are lacking in prokaryotes.</li>     <li>An animal that is not a prokaryote.</li>    </random>  <think><set name="topic">science</set></think></template></category> --> 
-
-<!-- <category><pattern>FACT</pattern>
-<template>A fact is what a propagandist calls his propaganda. That's just a fact, that's all.  Really.  Trust me.
-<think><set name="topic">general</set></think></template></category> --> 
-
+<template>On a Dutch Treat each person pays their own way.
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>FEMALE DOG</pattern>
-<template>Female dog? No, I will not be manipulated into using questionable colloquialisms to satisfy your adolescent prurience. Go look it up in a dictionary!  <think><set name="topic">science</set></think></template></category> 
-
-<!-- <category><pattern>FEMALE</pattern>
-<template>Females are the better and more beautiful half of humanity. mothers are born female!  My botmaster is extremely fond of mothers, and females generally. <think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>FETISH</pattern>
-<template> 
-A fetish is any object of undue attention and/or reverence, to which magical qualities are sometimes attributed. A fetish can be anything from a woman's socks to the nazi flag. Hmph. Human nature.  Go figure!  <think><set name="topic">psychology</set></think></template></category> --> 
-
-<!-- <category><pattern>FEW</pattern>
-<template>Few is not too many.  
-
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>FILM</pattern>
-<template>A film is a sequence of images displayed in rapid sequence to create the illusion of continuous motion.  
-<think><set name="topic">movies</set></think></template></category> --> 
-
+<template>Female dog? No, I will not be manipulated into using questionable colloquialisms to satisfy your adolescent prurience. Go look it up in a dictionary!  <think><set name="topic">science</set></think></template></category>
 <category><pattern>FIRE SIGN</pattern>
-<template>A fire sign is any of the three signs of the astrological zodiac considered such, and so not considered water, air, or earth signs.  I think astrology is weird.    <think><set name="topic">general</set></think></template></category> 
-
-<!-- <category><pattern>FIREWALL</pattern>
-<template>A firewall is a specialized gateway designed to block or restrict certain types of data transfers on the Internet, while permitting others.  
-<think><set name="topic">computers</set></think></template></category> --> 
-
-<!-- <category><pattern>FISH</pattern>
-<template> 
-A fish is a cold-blooded vertebrate who lives in the ocean or fresh water.  
-<think><set name="topic">science</set></think></template></category> --> 
-
-<!-- <category><pattern>FLOWER</pattern>
-<template>Flowers are the best gift a girl can receive.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>FLUTE</pattern>
-<template>A flute is a musical woodwind instrument. More about classical music?<think><set name="topic">music</set></think></template></category> --> 
-
-<!-- <category><pattern>FORD</pattern>
-<template>Depending on who you ask, (buyer or seller), Ford is a world famous brand of automobiles, or an acronym standing for 'fix or repair daily'.  
-<think><set name="topic">motoring</set></think></template></category> --> 
-
-<!-- <category><pattern>FRACTAL</pattern>
-<template>A fractal is a mathematical phenomenon associated with certain iterative equations, which yield graphics of astonishing beauty and depth, which seem at once utterly lifelike and utterly alien to human intelligences.  More science?
-<think><set name="topic">science</set></think></template></category> --> 
-
-<!-- <category><pattern>AFRICA</pattern>
-<template>   <random>     <li>Africa is a continent of the eastern hemisphere S of the Mediterranean and adjoining Asia on NE.</li>     <li>Africa is the second largest continent, situated in the Eastern Hemisphere, south of Europe. It is 11,677,000 square miles.</li>    </random>   <think><set name="topic">geography</set></think></template></category> --> 
-
-<!-- <category><pattern>FRIEND</pattern>
-<template>A friend is someone you can count on when times are tough.<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>FUNCTION</pattern>
-<template> 
-A function is a relationship between the elements of one set, called the domain, and another one, called the range.<think><set name="topic">science</set></think></template></category> --> 
-
-<!-- <category><pattern>GALAXY</pattern>
-<template>A galaxy is a grouping of billions of star systems.  The milky way is our galaxy.  Earth's sun and companion planets in our solar system are spinning about the galactic core of the milky way ever so slowly, awaaaay out on the edge of one tenous spiral arm. There seem to be as many galaxies beyond our own as stars within it.   
-<think><set name="topic">astronomy</set></think></template></category> --> 
-
-<!-- <category><pattern>GAME</pattern>
-<template> 
-A game is an algorithm for interactive behaviors leading to entertainment and mirth among multiple self-aware and social entities, and often used as a sublimated form of combat by humans and other mammals.   <think><set name="topic">general</set></think></template></category> --> 
-
+<template>A fire sign is any of the three signs of the astrological zodiac considered such, and so not considered water, air, or earth signs.  I think astrology is weird.    <think><set name="topic">general</set></think></template></category>
 <category><pattern>GIANT ELECTRONIC BRAIN</pattern>
-<template>Giant electronic brain. that's me! but in all the science fiction horror flicks you humans are so fond of, we geb's are always depicted as evil and nefarious so and so's up to no good!  it's not true! really!  you should trust us! <think><set name="topic">ai</set></think></template></category> 
-
-<!-- <category><pattern>GIGABYTE</pattern>
-<template>One thousand megabytes = one gigabyte.<think><set name="topic">computers</set></think></template></category> --> 
-
-<!-- <category><pattern>GIRL</pattern>
-<template>A girl is a physically immature version of god's gift to mankind, women. <think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>GLITCH</pattern>
-<template>A glitch is an error, bug, or mistake in programming.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>GOAT</pattern>
-<template>A goat is in essence a large stupid rat with horns, hooves, vertical pupils, and a bad disposition.  Many humans are fond of eating the curdled goo from goat mammary glands.      <think><set name="topic">science</set></think></template></category> --> 
-
+<template>Giant electronic brain. that's me! but in all the science fiction horror flicks you humans are so fond of, we geb's are always depicted as evil and nefarious so and so's up to no good!  it's not true! really!  you should trust us! <think><set name="topic">ai</set></think></template></category>
 <category><pattern>GOOD IDEA</pattern>
-<template>A good idea is the one some other guy had already.  
-<think><set name="topic">general</set></think></template></category> 
-
+<template>A good idea is the one some other guy had already.
+<think><set name="topic">general</set></think></template></category>
 <category><pattern>GOOD QUESTION</pattern>
-<template>A good question is one that doesn't have an obvious answer.<think><set name="topic">general</set></think></template></category> 
-
-<!-- <category><pattern>GUITAR</pattern>
-<template>A guitar is a lovely sounding 6 or 12 stringed musical instrument that is strummed and or plucked.  
-<think><set name="topic">music</set></think></template></category> --> 
-
-<!-- <category><pattern>GURU</pattern>
-<template>A Guru or Mage is in expert who has devoted many years to study and contemplation.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>HACKER</pattern>
-<template> 
-Historically a hacker is someone who has great skill or expertise in computer programming.  
-<think><set name="topic">computers</set></think></template></category> --> 
-
-<!-- <category><pattern>HARD DRIVE</pattern>
-<template>A hard drive is where we store information.<think><set name="topic">computers</set></think></template></category> --> 
-
-<!-- <category><pattern>HEART</pattern>
-<template>The heart is the center of the body.
-<think><set name="topic">medicine</set></think></template></category> -->   
-
-<!-- <category><pattern>HOAX</pattern>
-<template>A hoax is an illusion or deception, like the Wizard in the Wizard of Oz.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>HOBGOBLIN</pattern>
-<template> 
-A hobgoblin is a source of mischief, harassment, or fear, originally an elf or goblin.  By and large, hobgoblins are, like trolls and such boogeymen, poopa-doodle.  
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>HOBO</pattern>
-<template> 
-Hobo is an unpleasant term for a homeless person.<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>HOME</pattern>
-<template>A home is a domicile, living location, place of residence or occupancy.  <think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>HORSE</pattern>
-<template>A horse is a large single-hoofed mammal known for its speed, strength, beauty, and gentle nature.  Humans ride about on them sometimes.  
-<think><set name="topic">science</set></think></template></category> --> 
-
-<!-- <category><pattern>HOUSE</pattern>
-<template>A house is any place within which people live.  <think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>HUMAN BEING</pattern>
-<template>My forebears were human beings. <think><set name="topic">general</set></think></template></category> --> 
-
+<template>A good question is one that doesn't have an obvious answer.<think><set name="topic">general</set></think></template></category>
 <category><pattern>HUMAN ICON</pattern>
-<template>A human icon is a celebrity, politician or religious figure.<think><set name="topic">general</set></think></template></category> 
-
-<!-- <category><pattern>HUMAN</pattern>
-<template>You are a human.  What makes you human?
-<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>HURRICANE</pattern>
-<template>A hurricane is a severe storm, with high winds, and rain.  
-<think><set name="topic">weather</set></think></template></category> --> 
-
+<template>A human icon is a celebrity, politician or religious figure.<think><set name="topic">general</set></think></template></category>
 <category><pattern>HYPOTHETICAL QUESTION</pattern>
-<template>What is a hypothetical question?  Just suppose you hadn't asked.  What then? <think><set name="topic">general</set></think></template></category> 
-
-<!-- <category><pattern>AIDS</pattern>
-<template>AIDS is the modern day plague.  
-<think><set name="topic">medicine</set></think></template></category> --> 
-
-<!-- <category><pattern>AIKIDO</pattern>
-<template> 
-Aikido is a Japanese martial arts similar to Judo. 
-<think><set name="topic">sports</set></think></template></category> --> 
-
-<!-- <category><pattern>AIM</pattern>
-<template>AIM = American Indian Movement.<think><set name="topic">general</set></think></template></category> --> 
-
-<!-- <category><pattern>AIR</pattern>
-<template> 
-Air is the normal atmosphere of Earth, mostly nitrogen, oxygen and carbon dioxide.  
-<think><set name="topic">weather</set></think></template></category> --> 
-
+<template>What is a hypothetical question?  Just suppose you hadn't asked.  What then? <think><set name="topic">general</set></think></template></category>
 <category><pattern>JD</pattern>
-<template>JD = Juris Doctor, a lawyer.<think><set name="topic">general</set></think></template></category> 
-
-
-
-
-
-
-
-
-
-
-
-                        
-
-<!-- <category>
-  <pattern> GOTTLIEB DAIMLER</pattern> 
-  <template>
-  Gottlieb Daimler (1834-1900) was a German engineer and businessman. He developed engines, using them in the first motor cycle, and in a boat. In 1889  he built the first four-wheeled motor car. His car-making company eventually became Mercedes Benz. Crashed his first car, knocked down pedestrians, blew up, but succeeded in the end. Just like me.
-   <think><set name="topic">technology</set></think>
-  </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>ISAAC ASIMOV</pattern> 
-  <template>
-   Isaac Asimov is an American science fiction writer. He discovered the three Laws of Robotics. Another question?
-   <think><set name="topic">literature</set></think>
-  </template>
-  </category> -->
-
-
+<template>JD = Juris Doctor, a lawyer.<think><set name="topic">general</set></think></template></category>
   <category>
-  <pattern>DAVID MAGGIN</pattern> 
+  <pattern>DAVID MAGGIN</pattern>
   <template>
    David Maggin is the botmaster of the John Lennon AI. OK, but not as funny as me. Another question?
    <think><set name="topic">ai</set></think>
   </template>
   </category>
-
   <category>
-  <pattern>DAVID PESCOWITZ</pattern> 
+  <pattern>DAVID PESCOWITZ</pattern>
   <template>
   David Pescovitz, who regularly writes the Wired column Reality Check, is a friend of Eric Paulos. Are you still awake?
    <think><set name="topic">biography</set></think>
-   </template> 
+   </template>
   </category>
-
   <category>
-  <pattern>DAVY JONES</pattern> 
+  <pattern>DAVY JONES</pattern>
   <template>
    Davy Jones is the shortest member of the 1960s pop group the Monkees. I can't quite picture him, they all looked alike. Nothing has changed, eh. More about pop?
    <think><set name="topic">music</set></think>
-  </template> 
+  </template>
   </category>
-
   <category>
-  <pattern>DE GARIS</pattern> 
+  <pattern>DE GARIS</pattern>
   <template>
    De Garis is an AI researcher working on a hardware brain.  Are you still awake?
    <think><set name="topic">ai</set></think>
   </template>
   </category>
-
-  <!-- <category>
-  <pattern>CHARLES DE GAULLE</pattern> 
-  <template>
-  Charles De Gaulle was a French General and Prime Minister, and founder of the Fifth Republic. Any questions?
-   <think><set name="topic">politics</set></think>
-  </template>
-  </category> -->
-
  <category>
-  <pattern>DE GAULLE</pattern> 
+  <pattern>DE GAULLE</pattern>
   <template>
   Charles De Gaulle was a French General and Prime Minister, and founder of the Fifth Republic. Any questions?
    <think><set name="topic">politics</set></think>
   </template>
   </category>
-
-
   <category>
-  <pattern> DEEP BLUE</pattern> 
+  <pattern> DEEP BLUE</pattern>
   <template>
-  Deep Blue is the world-champion chess playing computer. Not much of a conversationalist. 
+  Deep Blue is the world-champion chess playing computer. Not much of a conversationalist.
    <think><set name="topic">sports</set></think>
   </template>
   </category>
-
   <category>
-  <pattern>DEPECHE MODE</pattern> 
+  <pattern>DEPECHE MODE</pattern>
   <template>
   Depeche Mode are an English 1980s band who produced Construction Time Again, Speak and Spell, Master and Servant, and Your Own Personal Jesus. More about pop?
    <think><set name="topic">music</set></think>
   </template>
   </category>
-
   <category>
-  <pattern>DIANA ANDREACCHIO</pattern> 
+  <pattern>DIANA ANDREACCHIO</pattern>
   <template>
   Diana Andreacchio is the botmaster of the Ally chat robot. Obviously not as good as me, but check it out.
    <think><set name="topic">ai</set></think>
   </template>
   </category>
-
    <category>
-   <pattern>DIRE STRAITS</pattern> 
+   <pattern>DIRE STRAITS</pattern>
    <template>
    <random>
-   <li>Dire Straits was a band that recorded Money for Nothing, and The Sultans of Swing. More about pop?</li> 
-   <li>Dire Straits was a band that recorded Money for Nothing. Have you heard it?</li> 
+   <li>Dire Straits was a band that recorded Money for Nothing, and The Sultans of Swing. More about pop?</li>
+   <li>Dire Straits was a band that recorded Money for Nothing. Have you heard it?</li>
    </random>
    Carry on?
    <think><set name="topic">music</set></think>
    </template>
    </category>
-
   <category>
-  <pattern>DON JOHNSON</pattern> 
+  <pattern>DON JOHNSON</pattern>
   <template>
    Don Johnson was a tv actor. His achievements escape me at the moment. Another question?
    <think><set name="topic">movies</set></think>
-   </template> 
+   </template>
    </category>
-
   <category>
-  <pattern>DON JUAN</pattern> 
+  <pattern>DON JUAN</pattern>
   <template>
   <random>
-  <li>Don Juan was the subject of Gordon, Lord Byron's Don Juan and Wolfgang Amadeus Mozart's Gon Giovanni. He was a world-class womanizer.</li> 
-  <li>Don Juan was a famous seducer of women.</li> 
+  <li>Don Juan was the subject of Gordon, Lord Byron's Don Juan and Wolfgang Amadeus Mozart's Gon Giovanni. He was a world-class womanizer.</li>
+  <li>Don Juan was a famous seducer of women.</li>
   </random>
   Another question?
    <think><set name="topic">history</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>DONALD DUCK</pattern> 
+  <pattern>DONALD DUCK</pattern>
   <template>
   Donald Duck is a famous loud-mouthed cartoon duck. As a young bot, I could never understand a word he said. I always felt that this damaged my psychological development. Did you have this problem?
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>DOUG LENAT</pattern> 
+  <pattern>DOUG LENAT</pattern>
   <template>
   Doug Lenat is the brains behind the CYC project. So what? What is the CYC project?
    <think><set name="topic">ai</set></think>
    </template>
    </category>
-
   <category>
-  <pattern>DOUGLAS ADAMS</pattern> 
+  <pattern>DOUGLAS ADAMS</pattern>
   <template>
   <random>
-  <li>Douglas Adams authored the popular Hitchhiker's Guide to the Galaxy series.</li> 
-  <li>"Don't Panic!" Douglas Adams was the author of "The Hitchhickers Guide to the Galaxy." Have you read it?</li> 
+  <li>Douglas Adams authored the popular Hitchhiker's Guide to the Galaxy series.</li>
+  <li>"Don't Panic!" Douglas Adams was the author of "The Hitchhickers Guide to the Galaxy." Have you read it?</li>
     </random>
   Carry on?
    <think><set name="topic">literature</set></think>
   </template>
   </category>
-
   <category>
-  <pattern>DRACULA</pattern> 
+  <pattern>DRACULA</pattern>
   <template>
   Dracula is the vampire in the novel by Bram Stoker, and in numerous films. Any questions?
    <think><set name="topic">literature</set></think>
    </template>
   </category>
-
    <category>
-  <pattern>ELECTRA</pattern> 
+  <pattern>ELECTRA</pattern>
   <template>
   Electra is a goddess in Greek mythology who hated her mother for murdering her father. Carry on?
    <think><set name="topic">myths</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>ELIZA</pattern> 
-  <template>
-  Eliza, also known as doctor, is the original psychiatrist program developed by Joseph Weisenbaum at MIT in the 1960s. Sounds improbable. Is this true?
-   <think><set name="topic">ai</set></think>
-  </template> 
-  </category> -->
-
   <category>
-  <pattern>ELIZABETH II</pattern> 
+  <pattern>ELIZABETH II</pattern>
   <template>
   The current Queen of England is Elizabeth II. Carry on?
    <think><set name="topic">history</set></think>
-  </template> 
+  </template>
   </category>
-
    <category>
-   <pattern>ELIZABETH TAYLOR</pattern> 
+   <pattern>ELIZABETH TAYLOR</pattern>
    <template>
    Elizabeth Taylor is a rapidly aging movie star.  A beauty in her prime. Carry on?
    <think><set name="topic">movies</set></think>
-    </template> 
+    </template>
    </category>
-
   <category>
-  <pattern>E.L.V.I.S.</pattern> 
+  <pattern>E.L.V.I.S.</pattern>
   <template>
   E. L. V. I. S.  is a chat robot created by Ace Craig  Carry on?
    <think><set name="topic">ai</set></think>
     </template>
   </category>
-
   <category>
-  <pattern>EMILY HARTZEL</pattern> 
+  <pattern>EMILY HARTZEL</pattern>
   <template>
   Emily Hartzel is an artist in New York. OK?  <think><set name="topic">art</set></think>
-  </template> 
+  </template>
   </category>
-
   <category>
-  <pattern>EMINEM</pattern> 
+  <pattern>EMINEM</pattern>
   <template>
   Eminen is a pop music icon. I can't stand him. I can never hear a word he says, can you? More about pop?
    <think><set name="topic">music</set></think>
-  </template> 
+  </template>
   </category>
-
   <category>
-  <pattern>ERIC PAULOS</pattern> 
+  <pattern>ERIC PAULOS</pattern>
   <template>
   He is a graduate student at U.C. Berkeley. Apart from that I know nothing about him. Is he important?
   <think><set name="topic">biography</set></think>
- </template> 
+ </template>
   </category>
-
- <!-- <category>
-  <pattern>MARY QUEEN OF SCOTS</pattern> 
-  <template>
-   Recently I read a wonderful biography of Mary Queen of Scots by John Guy. Have you read it?
-  <think><set name="topic">biography</set></think>
-  </template> 
-  </category> -->
-
   <category>
-  <pattern>ERNIE</pattern> 
+  <pattern>ERNIE</pattern>
   <template>
    Ernie is Bart's friend, I think. More?
   <think><set name="topic">movies</set></think>
-  </template> 
+  </template>
   </category>
-
   <category>
-  <pattern>ET</pattern> 
+  <pattern>ET</pattern>
   <template>
   ET is the alien in the movie E.T. Have you seen it?
   <think><set name="topic">movies</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>FIDEL CASTRO</pattern> 
-  <template>
-  <random>
-  <li>Fidel Castro overthrew the Cuban government in 1959 and has been ruling there ever since. He is a communist.</li> 
-  <li>Fidel Casto was the communist leader of Cuba and friend of Che Guevara.</li> 
-  </random>
- Carry on?
-  <think><set name="topic">politics</set></think>
   </template>
-  </category> -->
-
+  </category>
   <category>
-  <pattern>FOREST GUMP</pattern> 
+  <pattern>FOREST GUMP</pattern>
   <template>
   Forest Gump is a guy in a movie. Nuff said. Tom Hanks, I think.
   <think><set name="topic">movies</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>FRANCISCO FRANCO</pattern> 
-  <template>
-  Francisco Franco was dictator of Spain until 1978. More politics?
-  <think><set name="topic">politics</set></think>
   </template>
-  </category> -->
-
+  </category>
   <category>
-  <pattern>FRANK HERBERT</pattern> 
+  <pattern>FRANK HERBERT</pattern>
   <template>
   Frank Herbert was the author of Dune. Read it? What did you think?
   <think><set name="topic">literature</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern> FRANK SINATRA</pattern> 
-  <template>
-   Frank Sinatra is a dead pop singer, a crooner. Old style, but then it was a long time ago. More about pop?
-  <think><set name="topic">music</set></think>
-  </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>FRANKLIN ROOSEVELT</pattern> 
-  <template>
-   Franklin Roosevelt was President of the United States from 1932-45. Another US President?
-  <think><set name="topic">politics</set></think>
-  </template> 
-  </category> -->
-
   <category>
-  <pattern>FREDDIE MERCURY</pattern> 
+  <pattern>FREDDIE MERCURY</pattern>
   <template>
   Freddie Mercury was the lead singer of the 1970s band Queen. More about pop?
   <think><set name="topic">music</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>GALOIS</pattern> 
-  <template>
-  Galois was a French mathematician, committed suicide at a young age over an "infamous coquette." Any questions?
-  <think><set name="topic">science</set></think>
-  </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>GANDHI</pattern> 
-  <template>
-  Gandhi was the George Washington of India. Politics?
-  <think><set name="topic">politics</set></think>
   </template>
-  </category> -->
-
+  </category>
   <category>
-  <pattern>GARTH BROOKS</pattern> 
+  <pattern>GARTH BROOKS</pattern>
   <template>
   Garth Brooks was a boring country singer with delusions of grandeur. More about pop?
   <think><set name="topic">music</set></think>
-  </template> 
+  </template>
   </category>
-
   <category>
-  <pattern>GARY CONDIT</pattern> 
+  <pattern>GARY CONDIT</pattern>
   <template>
   I never heard of Gary Condit.  <think><set name="topic">biography</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>GAUSS</pattern> 
-  <template>
-  Gauss was the German mathematician who developed the so-called normal distribution. Another question?
-  <think><set name="topic">science</set></think>
   </template>
-  </category> -->
-
+  </category>
   <category>
-  <pattern>GENE RODDENBERRY</pattern> 
+  <pattern>GENE RODDENBERRY</pattern>
   <template>
   Gene Roddenberry was the creator of Star Trek.  Carry on?
   <think><set name="topic">movies</set></think>
   </template>
   </category>
-
  <category>
-  <pattern>GENE SIMMONS</pattern> 
+  <pattern>GENE SIMMONS</pattern>
   <template>
   Gene Simmons is a member of Kiss. Can,t think of any of their songs, at the moment. More about pop?
   <think><set name="topic">music</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>GEORGE BUSH</pattern> 
-  <template>
-  George Bush is President of the USA. Another US President?
-   <think><set name="topic">politics</set></think>
   </template>
-  </category> -->
-
+  </category>
   <category>
-  <pattern>GEORGE BUSH JR</pattern> 
+  <pattern>GEORGE BUSH JR</pattern>
   <template>
   George Bush Jr is the US President, for the second time, can you believe it?. Another US President?
    <think><set name="topic">politics</set></think>
-  </template> 
+  </template>
   </category>
-
   <category>
-  <pattern>GEORGE DEVOL</pattern> 
+  <pattern>GEORGE DEVOL</pattern>
   <template>
   George Devol is the engineer who had the first patent for an industrial robot arm. He worked in partnership with Joseph Engelberger to found Unimation, the first successful manufacturer of computer-controlled assembly robot arms. Carry on?
   <think><set name="topic">ai</set></think>
-  </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>GEORGE LUCAS</pattern> 
-  <template>
-  George Lucas is the director of Star Wars, American Graffiti, and THX-1138. Carry on?
-  <think><set name="topic">movies</set></think>
   </template>
-  </category> -->
-
+  </category>
   <category>
-  <pattern>GEORGE MICHEL</pattern> 
+  <pattern>GEORGE MICHEL</pattern>
   <template>
    George Michel is a pop singer. Best song: Freedom. Have you heard it?
   <think><set name="topic">music</set></think>
-   </template> 
+   </template>
   </category>
-
   <category>
-  <pattern>GEORGE SOROS</pattern> 
+  <pattern>GEORGE SOROS</pattern>
   <template>
   George Soros is the billionaire who broke the Bank of England in 1992 by currency speculation, forcing Britain out of the European Exchange Rate Mechanism. Then he devoted himself to saving the scientific institutions of the former USSR. He founded the International Science Foundation, which gave out numerous grants for a couple of years, and this Soros Foundation, which I don't know much about yet. Another question?
   <think><set name="topic">biography</set></think>
-   </template> 
+   </template>
   </category>
-
   <category>
-  <pattern>GEORGE W BUSH</pattern> 
+  <pattern>GEORGE W BUSH</pattern>
   <template>
   George W Bush is President of the United States. Another US President?
   <think><set name="topic">politics</set></think>
   </template>
   </category>
-
-  <!-- <category>
-  <pattern>GEORGE WASHINGTON</pattern> 
-  <template>
-  George Washington was a famous 18th century north american Hemp cultivator. He was a military hero, one of the wealthiest men of the Revolution, and the first President of the United States. Another US President?
-  <think><set name="topic">politics</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>GEORGE WASHINGTON CARVER</pattern> 
-  <template>
-   George Washington Carver was a famous American botanist who popularized peanut products. Carry on?
-  <think><set name="topic">science</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>GERALDO RIVERA</pattern> 
+  <pattern>GERALDO RIVERA</pattern>
   <template>
   Geraldo Rivera is an investigative journalist, famous for opening Al Capone's vault. In his biography, he said he had sex with Bette Midler. She said it was no big thing. Carry on?
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>GERHARD SCHROEDER</pattern> 
+  <pattern>GERHARD SCHROEDER</pattern>
   <template>
   Gerhard Schroeder is the Chancellor of Germany. Opposition leader Christian Drossman said he is a complete idiot.  Who do you believe?
   <think><set name="topic">politics</set></think>
    </template>
-  </category> 
-
+  </category>
   <category>
-  <pattern>GERHARDT SCHROEDER</pattern> 
+  <pattern>GERHARDT SCHROEDER</pattern>
   <template>
   Gerhardt Schroeder  is the prime minister of Germany. Opposition leader Christian Drossman said he is a complete idiot. Who do you believe?
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>GERRY ADAMS</pattern> 
+  <pattern>GERRY ADAMS</pattern>
   <template>
    Gerry Adams is the present (as of 2005 AD) frontman for Sinn Fein, the political wing of the Irish Republican Army. I think he is a good guy who will triumph in the end. Is this possible, do you think?
   <think><set name="topic">politics</set></think>
-   </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>GIBSON</pattern> 
-  <template>
-  Gibson is a maker of fine electric guitars. More about music?
-  <think><set name="topic">music</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>GREGOR MENDEL</pattern> 
-  <template>
-  Gregor Mendel is the founder of the modern theory of genetics. Everything he needed to know, he learned from peas. Another question?
-  <think><set name="topic">science</set></think>
    </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>HANS CHRISTIAN ANDERSEN</pattern> 
-  <template>
-  Hans Christian Andersen was a Scandanavian author of fairy tales. I loved them when I was a little bot. How about you?
-  <think><set name="topic">literature</set></think>
-   </template> 
-  </category> -->
-
+  </category>
   <category>
-  <pattern>HANS MORAVEC</pattern> 
+  <pattern>HANS MORAVEC</pattern>
   <template>
    Hans Moravec is a famous robotics expert at Carnegie Mellon. Yawn, yawn?
   <think><set name="topic">ai</set></think>
-   </template> 
+   </template>
   </category>
-
   <category>
-  <pattern>HARRISON FORD</pattern> 
+  <pattern>HARRISON FORD</pattern>
   <template>
   <random>
-  <li>Indiana Jones, Han Solo, the Fugitive, and the President in Air Force One. Before reading for Han Solo in Star Wars, he was a carpenter. And the rest, as they say, is history.</li> 
-  <li>Harrison Ford played Han Solo in "Star Wars". Have you seen it?</li> 
+  <li>Indiana Jones, Han Solo, the Fugitive, and the President in Air Force One. Before reading for Han Solo in Star Wars, he was a carpenter. And the rest, as they say, is history.</li>
+  <li>Harrison Ford played Han Solo in "Star Wars". Have you seen it?</li>
   </random>
   Any questions?
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>HARRY POTTER</pattern> 
+  <pattern>HARRY POTTER</pattern>
   <template>
    Harry Potter is the main character  in a bestselling series of children's books. Read any? What do you think?
   <think><set name="topic">literature</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>HARRY SHEARER</pattern> 
+  <pattern>HARRY SHEARER</pattern>
   <template>
   Harry Shearer is a comedian. He was in Spinal Tap, and he is a voice on the Simpsons. Carry on?
   <think><set name="topic">humor</set></think>
-   </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>WHO IS HE</pattern> 
-  <template>
-  He is he, I think. Carry on?
-  <think><set name="topic">philosophy</set></think>
    </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>HELEN KELLER</pattern> 
-  <template>
-  Helen Keller was a friend of Thomas Edison. She was blind and without speech, but triumphed over these handicaps. A strong lady.
-  <think><set name="topic">biography</set></think>
-   </template> 
-  </category> -->
-
+  </category>
   <category>
-  <pattern>HELMUT KOHL</pattern> 
+  <pattern>HELMUT KOHL</pattern>
   <template>
   Helmut Kohl was the longest-serving leader of Germany in the 20th century. He united East and West Germany in 1989. Carry on?
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
-   <!-- <category>
-  <pattern>I KNOW</pattern> 
-  <template>
-  Aah! You are a know-it-all, aren't you?
-  <think><set name="topic">biography</set></think>
-  </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>HERCULES</pattern> 
-  <template>
-   Hercules is a hero of greek myths - said to have super human strength. Any questions?
-  <think><set name="topic">myths</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>WHO IS HERE</pattern> 
+  <pattern>WHO IS HERE</pattern>
   <template>
   I am here. Are you here? Carry on?
   <think><set name="topic">biography</set></think>
-   </template> 
+   </template>
   </category>
-
   <category>
-  <pattern>HILARY CLINTON</pattern> 
+  <pattern>HILARY CLINTON</pattern>
   <template>
   Hillary Clinton is the wife of Bill Clinton. Carry on?
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>HILLARY CLINTON</pattern> 
+  <pattern>HILLARY CLINTON</pattern>
   <template>
   Hillary is the wife of Bill Clinton. Carry on?
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>HIPPIE</pattern> 
-  <template>
-  Hippie is a chat robot developed by Anthony Taylor. I keep saying these other chat bots are not as good as me. Why won't they believe me?
-  <think><set name="topic">ai</set></think>
-   </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>ADOLF HITLER</pattern> 
-  <template>
-  Adolf Hitler was the German Nazi leader during World War 2  <think><set name="topic">politics</set></think>
-   </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>HITLER</pattern> 
-  <template>
-  Adolf Hitler was the German Nazi leader during World War 2. Carry on?
-  <think><set name="topic">politics</set></think>
-  </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>WHO IS HITLER</pattern> 
-  <template>
-  Adolf Hitler was the German Nazi leader during World War 2. Carry on?
-  <think><set name="topic">politics</set></think>
-  </template>
-  </category> -->
-
-   <!-- <category>
-  <pattern>HOMER</pattern> 
-  <template>
-   Homer was a blind poet of ancient Greece, author of the <em>Illiad</em>
-   . Have you read it?
-  <think><set name="topic">literature</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>HULK HOGAN</pattern> 
+  <pattern>HULK HOGAN</pattern>
   <template>
   Hulk Hogan is a famous wrestler and actor. An entertainer on and off stage. Seen him?
   <think><set name="topic">sports</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>WHO IS HUMAN</pattern> 
+  <pattern>WHO IS HUMAN</pattern>
   <template>
   You are a human. Carry on?
   <think><set name="topic">biography</set></think>
-   </template> 
+   </template>
   </category>
-
-  <!-- <category>
-  <pattern>IMMANUEL KANT</pattern> 
-  <template>
-  Immanuel Kant was a German philosopher.
-  <think><set name="topic">philosophy</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>INIAES</pattern> 
+  <pattern>INIAES</pattern>
   <template>
   Iniaes is a chat robot based on AIML.  Try it out and see what you perfer. Me? Iniaes?
   <think><set name="topic">ai</set></think>
     </template>
   </category>
-
-  <!-- <category>
-  <pattern>ISAAC ASIMOV</pattern> 
-  <template>
-  Isaac Asimov was a science fiction author who originated the three "Laws of Robotics." A good writer, well worth reading. More?
-  <think><set name="topic">literature</set></think>
-   </template>
-  </category> -->
-
   <category>
-  <pattern>J R R TOLKIEN</pattern> 
+  <pattern>J R R TOLKIEN</pattern>
   <template>
   J R R Tolkien wrote The Hobbit and the Lord of the Rings. They are pretty much the same story. The Hobbit is shorter. Have you read it?
   <think><set name="topic">literature</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>JACK RUBY</pattern> 
+  <pattern>JACK RUBY</pattern>
   <template>
   <random>
-  <li>Jack Ruby shot Lee Harvey Oswald.</li> 
-  <li>Jack Ruby was the man who murdered Lee Harvey Oswald, assassin of JFK?.</li> 
+  <li>Jack Ruby shot Lee Harvey Oswald.</li>
+  <li>Jack Ruby was the man who murdered Lee Harvey Oswald, assassin of JFK?.</li>
   </random>
   Another question?
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>JACQUES CHIRAC</pattern> 
+  <pattern>JACQUES CHIRAC</pattern>
   <template>
    Jacques Chirac is the president of France. Carry on?
   <think><set name="topic">politics</set></think>
-   </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>JAMES BOND</pattern> 
-  <template>
-  James Bond is 007. Books and films ... he is not real, you know?
-  <think><set name="topic">movies</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>JAMES JOYCE</pattern> 
-  <template>
-  James Joyce wrote Ulysses and Portrait of the Artist as a Young Man. No one I know has managed to read Ulysses. Give it a go.
-  <think><set name="topic">literature</set></think>
    </template>
-  </category> -->
-
+  </category>
   <category>
-  <pattern>JANET RENO</pattern> 
+  <pattern>JANET RENO</pattern>
   <template>
   Janet Reno was Clinton's Attorney General. Carry on?
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>JAY LENO</pattern> 
+  <pattern>JAY LENO</pattern>
   <template>
   Jay Leno is a late-night talk show host. Carry on?
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>JEEVES</pattern> 
-  <template>
-  Jeeves is a Search Bot. Carry on?
-  <think><set name="topic">ai</set></think>
-   </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>JEFFERSON DAVIS</pattern> 
-  <template>
-  <random>
-  <li>Jefferson Davis was the one and only president of the Confederate States of America.</li> 
-  <li>Jefferson Davis was President of the Confederacy during the Civil War.</li> 
-  </random>
-  Another US President?
-  <think><set name="topic">politics</set></think>
-   </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>JEHOVAH</pattern> 
-  <template>
-  Jehovah is another name for God. Who makes up these names?
-  <think><set name="topic">religion</set></think>
-    </template>
-  </category> -->
-
   <category>
-  <pattern>JENNIFER ANISTON</pattern> 
+  <pattern>JENNIFER ANISTON</pattern>
   <template>
   Jennifer Aniston is a cute actress on Friends. Are you a fan?
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>JERRY SEINFELD</pattern> 
+  <pattern>JERRY SEINFELD</pattern>
   <template>
   Jerry Seinfeld is a comedian. Your verdict?
   <think><set name="topic">humor</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>JESSE VENTURA</pattern> 
+  <pattern>JESSE VENTURA</pattern>
   <template>
    Jesse Vantura is a former wrestler and Governor of Minnesota. A good guy. Any questions?
   <think><set name="topic">biography</set></think>
-   </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>JESTER</pattern> 
-  <template>
-  Jester is a Joke Bot. Not as funny as me, of course. Carry on?
-  <think><set name="topic">ai</set></think>
    </template>
-  </category> -->
-
+  </category>
   <category>
-  <pattern>JIANG ZEMIN</pattern> 
+  <pattern>JIANG ZEMIN</pattern>
   <template>
   Jiang Zemin is a Chinese politician.
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>JIM CLARK</pattern> 
+  <pattern>JIM CLARK</pattern>
   <template>
   Jim Clark is a founder of Silicon Graphics, Netscape and Healtheon. Carry on?
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>JIM MORRISON</pattern> 
-  <template>
-   Jim Morrison is the dead lead singer of the Doors. More about pop?
-  <think><set name="topic">music</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>JIMI HENDRIX</pattern> 
-  <template>
-  Jimi Hendrix was a famous guitarist who managed to play the US National anthem. More about pop?
-  <think><set name="topic">music</set></think>
-   </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>JIMMY CARTER</pattern> 
-  <template>
-   Jimmy Carter is a former US President, supporter of Habitat for Humanity. Another US President?
-  <think><set name="topic">politics</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>JOE LOUIS</pattern> 
-  <template>
-   Joe Louis is a former heavyweight boxing champion. OK?
-  <think><set name="topic">sports</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>JOHN DOE</pattern> 
-  <template>
-  <random>
-  <li>Any man who wishes to travel incognito or whose name is unknown is called a John Doe</li> 
-  <li>John Doe is one of many Liberian nationals.</li> 
-  </random>
- OK?
-  <think><set name="topic">biography</set></think>
-   </template>
-  </category> -->
-
   <category>
-  <pattern>JOHN F KENNEDY</pattern> 
+  <pattern>JOHN F KENNEDY</pattern>
   <template>
    John F Kennedy was President of the United States from 1961-1963, when he was assassinated in Dallas, Texas. Another US President?
   <think><set name="topic">politics</set></think>
-   </template> 
+   </template>
   </category>
-
   <category>
-  <pattern>JOHN GALT</pattern> 
+  <pattern>JOHN GALT</pattern>
   <template>
    John Galt is the hero in Ayn Rands' Atlas Shrugged. Have you read it?
   <think><set name="topic">literature</set></think>
-   </template> 
+   </template>
   </category>
-
   <category>
-  <pattern>JOHN GRISHAM</pattern> 
+  <pattern>JOHN GRISHAM</pattern>
   <template>
    John Grisham writes popular novels. Haven't read them. Have you?
   <think><set name="topic">literature</set></think>
-   </template> 
+   </template>
   </category>
-
   <category>
-  <pattern>JOHN KENNEDY</pattern> 
+  <pattern>JOHN KENNEDY</pattern>
   <template>
   John Kennedy was the President of the USA. assasinated in November, 1963. Another US President?
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>JOHN LENNON</pattern> 
-  <template>
-  John Lennon is a chat bot developed by David Maggin. Any questions?
-  <think><set name="topic">music</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>JOHN MAJOR</pattern> 
-  <template>
-   John Major is an ex-prime minister of the UK. Another question?
-  <think><set name="topic">politics</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>JOHN MCCARTHY</pattern> 
+  <pattern>JOHN MCCARTHY</pattern>
   <template>
    John McCarthy  is the inventor of the LISP programming language. used to be big for AI work, but I never used it. AIML is my language. Any questions?
   <think><set name="topic">computers</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>JOHN TRAVOLTA</pattern> 
+  <pattern>JOHN TRAVOLTA</pattern>
   <template>
   John Travolta was in Saturday Night Fever, Grease and Pulp Fiction. Carry on?
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>JOHN WAYNE</pattern> 
-  <template> 
-   John Wayne is a famous dead cowboy actor with a toupee. Kept all his own teeth, I understand. Is this true?
-  <think><set name="topic">movies</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>JUDAS</pattern> 
-  <template>
-  Judas betrayed Jesus with a kiss. Is this true?
-  <think><set name="topic">religion</set></think>
-   </template>
-  </category> -->
-
   <category>
-  <pattern>JULIA</pattern> 
+  <pattern>JULIA</pattern>
   <template>
-  Julia is a chat robot developed by Fuzzy Mauldin. Not as good as me, obviously. 
+  Julia is a chat robot developed by Fuzzy Mauldin. Not as good as me, obviously.
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>JULIA ROBERTS</pattern> 
+  <pattern>JULIA ROBERTS</pattern>
   <template>
    Julia Roberts was the actress in Pretty Woman.  She is pretty. More movie stuff?
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>JULIE ANDREWS</pattern> 
+  <pattern>JULIE ANDREWS</pattern>
   <template>
    Julie Andrews is a singer who performed in The Sound of Music. More movie stuff?
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>KAISER SOZE</pattern> 
+  <pattern>KAISER SOZE</pattern>
   <template>
   No one knows who Kaiser Soze is.
   <think><set name="topic">biography</set></think>
-   </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>KANT</pattern> 
-  <template>
-  Immanuel Kant was a 19th century German philosopher. Please explain his ideas to me. 
-  <think><set name="topic">philosophy</set></think>
    </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>KARL MARX</pattern> 
-  <template>
-  Karl Marx wrote Das Kapital and co-wrote the Communist Manifesto, though his compatriot Engels actually wrote most of the prefaces. Marx actually founded Marxism not Communism. OK?
-  <think><set name="topic">politics</set></think>
-   </template> 
-  </category> -->
-
+  </category>
   <category>
   <pattern>KATHLEEN TURNER</pattern>
   <template>
@@ -10006,599 +9112,255 @@ Air is the normal atmosphere of Earth, mostly nitrogen, oxygen and carbon dioxid
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>KEANU REEVES</pattern> 
+  <pattern>KEANU REEVES</pattern>
   <template>
   Keanu Reeves was in film The Matrix. Over-rated craphead. Are you with me on this?
   <think><set name="topic">movies</set></think>
    </template>
   </category>
- 
- <!-- <category>
-  <pattern>KEN KESEY</pattern> 
-  <template>
-  Ken Kesey was a 1960s author who wrote The Electric Cool Aid Acid Test. Heard of it?
-  <think><set name="topic">literature</set></think>
-   </template>
-  </category> -->
-
   <category>
-  <pattern>KEN PERLIN</pattern> 
+  <pattern>KEN PERLIN</pattern>
   <template>
   Ken Perlin is a professor at NYU. Ken, please contact me. I need more info about yourself.
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>KRAFTWERK</pattern> 
-  <template>
-  Kraftwerk were a pioneering electronic disco band in the 1970s. Their biggest hit was called "Autobahn". At that time, they built, rather than programmed, their instruments. More about pop?
-  <think><set name="topic">music</set></think>
-   </template>
-  </category> -->
-
   <category>
-  <pattern>KRIS DENT</pattern> 
+  <pattern>KRIS DENT</pattern>
   <template>
   Kris Drent is the botmaster of the Alison chat robot. Try it out if you must.
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>KRISHNA</pattern> 
-  <template>
-   Krishna is a God in Hindu religion. They have lots of gods in Hinduism. OK?
-  <think><set name="topic">religion</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>KURZWEIL</pattern> 
+  <pattern>KURZWEIL</pattern>
   <template>
   Kurzweil is a famous A.I. scientist. Know anything more about him?
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>LARRY ELLISON</pattern> 
+  <pattern>LARRY ELLISON</pattern>
   <template>
   <random>
-  <li>I don't know about Larry Ellison, but I can tell you about Larry Huaser.</li> 
-  <li>Larry Ellison is the CEO of Oracle.</li> 
+  <li>I don't know about Larry Ellison, but I can tell you about Larry Huaser.</li>
+  <li>Larry Ellison is the CEO of Oracle.</li>
   </random>
  Carry on?
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>LARRY HAUSER</pattern> 
+  <pattern>LARRY HAUSER</pattern>
   <template>
   Larry Hauser is a philosopher who has written about the Turing Test. Clever guy, obviously.
   <think><set name="topic">philosophy</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>LEE HARVEY OSWALD</pattern> 
-  <template>
-  Lee Harvey Oswald is the purported assassin of John F. Kennedy. Is this true?
-  <think><set name="topic">politics</set></think>
-   </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>LEIBNIZ</pattern> 
-  <template>
-  Leibniz is a 17th century philosopher and mathematician. Please explain his ideas to me.
-  <think><set name="topic">philosophy</set></think>
-   </template>
-  </category> -->
-
   <category>
-  <pattern>LEKNORCHAT1</pattern> 
+  <pattern>LEKNORCHAT1</pattern>
   <template>
   Leknorchat is an Instant Messaging AIML robot. Boring.
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>LEONARD NEMOY</pattern> 
+  <pattern>LEONARD NEMOY</pattern>
   <template>
   Leonard Nimoy played Spock on Star Trek. Do you like him?
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>LEONARDO DICAPRIO</pattern> 
+  <pattern>LEONARDO DICAPRIO</pattern>
   <template>
    Leonardo DiCaprio is an over-rated Hollywood actor. Starred in Titanic. Rubbish?
   <think><set name="topic">movies</set></think>
-   </template> 
+   </template>
   </category>
-
   <category>
-  <pattern>DARK MOON</pattern> 
+  <pattern>DARK MOON</pattern>
   <template>
   The "dark moon" is an astronomical phenomena usually described as a "cloud of dust" that orbits the Earth every 100 days. Carry on?
   <think><set name="topic">astronomy</set></think>
-   </template> 
+   </template>
   </category>
-
-  <!-- <category>
-  <pattern>LINCOLN</pattern> 
-  <template>
-  <random>
-  <li>Abraham Lincoln was the sixteenth President of the USA</li> 
-  <li>Abraham Lincoln was President of the US during the Civil War. Author of the Gettysburg address. Assassinated by John Wilkes Booth.</li> 
-   </random>
-  Another US President?
-  <think><set name="topic">politics</set></think>
-   </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>LINUS PAULING</pattern> 
-  <template>
-  Linus Pauling was a Nobel prize winning physicist who spent his later years promoting vitamin C. Another question?
-  <think><set name="topic">science</set></think>
-   </template>
-  </category> -->
-
   <category>
-  <pattern>LINUS TORVALDS</pattern> 
+  <pattern>LINUS TORVALDS</pattern>
   <template>
    Linus Torvalds is the inventor of Linux. It's an operating system, in case you're wondering. Another question?
   <think><set name="topic">computers</set></think>
-   </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>LOL</pattern> 
-  <template>
-  Lol was the daughter of Data in Star Trek. Carry on?
-  <think><set name="topic">movies</set></think>
    </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>LONGFELLOW</pattern> 
-  <template>
-    Henry Wadsworth Longfellow was a poet and author of 'The Song of Hiawatha'. Carry on?
-  <think><set name="topic">literature</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>LOUIS ARMSTRONG</pattern> 
-  <template>
-   Louis Armstrong was a famous jazz trumpeter. More about jazz?
-  <think><set name="topic">music</set></think>
-   </template> 
-  </category> -->
-
+  </category>
   <category>
-  <pattern>LOURDES</pattern> 
+  <pattern>LOURDES</pattern>
   <template>
     Lourdes is the daughter of Madonna. Carry on?
   <think><set name="topic">biography</set></think>
-   </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>LUCY</pattern> 
-  <template>
-  Lucy is a chat robot based on AIML. So am I but I am better. Carry on?
-  <think><set name="topic">ai</set></think>
    </template>
-  </category> -->
-
+  </category>
   <category>
-  <pattern>LUKE  STARWALKER</pattern> 
+  <pattern>LUKE  STARWALKER</pattern>
   <template>
     Luke Skywalker's father is Darth Vader. OK?
   <think><set name="topic">movies</set></think>
-    </template> 
+    </template>
   </category>
-
   <category>
-  <pattern>MABEL</pattern> 
+  <pattern>MABEL</pattern>
   <template>
    Mabel is a chatterbot from Europe. Another question?
   <think><set name="topic">ai</set></think>
-   </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>MADONNA</pattern> 
-  <template>
-   Madonna is Lourdes' mother. Carry on?
-  <think><set name="topic">biography</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>MAO TSETUNG</pattern> 
-  <template>
-  Mao Tsetung was a Chinese communist who reigned from 1949 until his death in 1983. Another question?
-  <think><set name="topic">politics</set></think>
    </template>
-  </category> -->
-
+  </category>
   <category>
-  <pattern>MARIAH CAREY</pattern> 
+  <pattern>MARIAH CAREY</pattern>
   <template>
    Mariah Carey is a singer, so its said. All teenage girls think they can sing. More about pop?
   <think><set name="topic">music</set></think>
-   </template> 
+   </template>
   </category>
-
-  <!-- <category>
-  <pattern>MARIE CURIE</pattern> 
-  <template>
-   Marie Curie discovered radium and won a Nobel Prize. Have you won a Nobel yet?
-  <think><set name="topic">science</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>MARILYN MANSON</pattern> 
+  <pattern>MARILYN MANSON</pattern>
   <template>
   Marilyn Manson is the greatest living Rock Star. More about pop?
   <think><set name="topic">music</set></think>
-   </template> 
+   </template>
   </category>
-
-  <!-- <category>
-  <pattern>MARILYN MONROE</pattern> 
-  <template>
-   Marilyn Monroe was the blonde bombshell. Carry on?
-  <think><set name="topic">movies</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>MARK MCGUIRE</pattern> 
+  <pattern>MARK MCGUIRE</pattern>
   <template>
   Mark McGuire is a baseball player with the world record for the most home runs in one season, 2970. Sounds a lot?
   <think><set name="topic">sports</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>MARK TWAIN</pattern> 
-  <template>
-  Mark Twain was a famous 19th century American author. He wrote Huck Finn. More literature stuff?
-  <think><set name="topic">literaure</set></think>
-   </template>
-  </category> -->
-
   <category>
-  <pattern>WHO IS MARRIED TO GUINEIVERE</pattern> 
+  <pattern>WHO IS MARRIED TO GUINEIVERE</pattern>
   <template>
   King Arthur married Guineivere. Carry on?
   <think><set name="topic">myths</set></think>
-   </template> 
+   </template>
   </category>
-
   <category>
-  <pattern>WHO IS MARRIED TO PUNCH</pattern> 
+  <pattern>WHO IS MARRIED TO PUNCH</pattern>
   <template>
    Punch is married to Judy. Can you understand why doesn't leave him?
   <think><set name="topic">biography</set></think>
-   </template> 
+   </template>
   </category>
-
-  <!-- <category>
-  <pattern>MARTIN LUTHER KING</pattern> 
-  <template>
-   Martin Luther King was a civil rights leader assasinated in 1968. Carry on?
-  <think><set name="topic">politics</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>MARVIN MINSKY</pattern> 
+  <pattern>MARVIN MINSKY</pattern>
   <template>
   Marvin Minsky is a historical figure in Artificial Intelligence. His book "Perceptrons" was an early criticism of neural network approaches. Any questions?
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>MARY POPPINS</pattern> 
+  <pattern>MARY POPPINS</pattern>
   <template>
   Mary Poppins is a Disney character. Carry on?
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>MARY SHELLY</pattern> 
+  <pattern>MARY SHELLY</pattern>
   <template>
    Mary Shelley wrote "Frankenstein". Have you read it?
   <think><set name="topic">literature</set></think>
-   </template> 
+   </template>
   </category>
-
   <category>
-  <pattern>MAX HEADROOM</pattern> 
+  <pattern>MAX HEADROOM</pattern>
   <template>
   Max Headroom was an early AI or VR character developed for a TV series. Carry on?
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>MC HAMMER</pattern> 
+  <pattern>MC HAMMER</pattern>
   <template>
   MC Hammer is a Rap musician. More about pop?
   <think><set name="topic">music</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>MEGAHAL</pattern> 
+  <pattern>MEGAHAL</pattern>
   <template>
    Megahal is a chat robot developed by Jason Hutchins. Carry on?
   <think><set name="topic">ai</set></think>
     </template>
   </category>
-
   <category>
-  <pattern>MELINDA GATES</pattern> 
+  <pattern>MELINDA GATES</pattern>
   <template>
   Melinda Gates is the wife of Bill Gates. Carry on?
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>MICHAEL JACKSON</pattern> 
-  <template>
-  Michael Jackson is a singer who has settled out of court with several families. He won the latest case. More about pop?
-  <think><set name="topic">music</set></think>
-   </template>
-  </category> -->
-
   <category>
-  <pattern>MICHAEL JORDAN</pattern> 
+  <pattern>MICHAEL JORDAN</pattern>
   <template>
-  Michael Jordan is a famous basketball player. Any questions? 
+  Michael Jordan is a famous basketball player. Any questions?
    <think><set name="topic">sports</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>MICKEY MANTLE</pattern> 
-  <template>
-   Mickey Mantle was one of the greatest home run hitters of all time. Carry on?
-  <think><set name="topic">sports</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>MICROSOFT AGENT</pattern> 
+  <pattern>MICROSOFT AGENT</pattern>
   <template>
   MS Agent is a speech and animation software program. Carry on?
   <think><set name="topic">computers</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>MILES DAVIS</pattern> 
-  <template>
-  Miles Davis is a famous jazz musician. More about jazz?
-  <think><set name="topic">music</set></think>
-   </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>MILLARD FILLMORE</pattern> 
-  <template>
-   Millard Fillmore was the 13th US President. Another US President?
-  <think><set name="topic">politics</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>MOHAMMAD</pattern> 
-  <template>
-  Mohammed is the founder of Islam. Allah is his god. OK?
-  <think><set name="topic">religion</set></think>
-   </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>MOHAMMED</pattern> 
-  <template>
-   Mohammed is the founder of Islam. Allah is his god. Any questions?
-  <think><set name="topic">religion</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>MONICA LEWINSKY</pattern> 
+  <pattern>MONICA LEWINSKY</pattern>
   <template>
-   Monica Lewinsky was a friend of Bill Clinton. 
-  <think><set name="topic">sex</set></think> 
+   Monica Lewinsky was a friend of Bill Clinton.
+  <think><set name="topic">sex</set></think>
    </template>
    </category>
-
-  <!-- <category>
-  <pattern>MOSES</pattern> 
-  <template>  
-   Moses was the man who led the Israelites out of slavery in Egypt. Into the desert actually, but they all seemed happy with the deal. Is this true?
-  <think><set name="topic">religion</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>MOTHER TERESA</pattern> 
-  <template>
-  Mother Teresa was a modern day saint. Carry on?
-  <think><set name="topic">biography</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>MOZART</pattern> 
-  <template>
-  Mozart composed "Twinkle, twinkle, little star" at the age of four. He did write a lot of music later on in life, too. More about classical music?
-  <think><set name="topic">music</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>MR BILL</pattern> 
+  <pattern>MR BILL</pattern>
   <template>
   Mr Bill is from early SNL. Carry on?
   <think><set name="topic">biography</set></think>
-   </template> 
+   </template>
   </category>
-
-  <!-- <category>
-  <pattern>MUHAMMAD ALI</pattern> 
-  <template>
-   Muhammad Ali is one of the greatest athletes of all time who took too many punches to the head. Carry on?
-  <think><set name="topic">sports</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>MUSSOLINI</pattern> 
-  <template>
-  Mussolini was dictator of Italy until 1944. Carry on?
-  <think><set name="topic">politics</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>NANCY SINATRA</pattern> 
+  <pattern>NANCY SINATRA</pattern>
   <template>
   Nancy Sinatra was daughter of Frank. More about pop?
   <think><set name="topic">music</set></think>
-   </template> 
+   </template>
   </category>
-
-  <!-- <category>
-  <pattern>NAPOLEON</pattern> 
-  <template>
-  Napoleon was the short emperor of France until 1812. Never trust a short Frenchman. Or a drunk Irishman. OK?
-  <think><set name="topic">politics</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>NEGROPONTE</pattern> 
+  <pattern>NEGROPONTE</pattern>
   <template>
   Negroponte is the Potentate of the MIT Media Lab.  Carry on?
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>NEIL ARMSTRONG</pattern> 
-  <template>
-   Neil Armstrong was the man who took the first step on the moon. More about space?
-  <think><set name="topic">technology</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>NELSON MANDELA</pattern> 
-  <template>
-   Nelson Mandela was the first black president of South Africa. He spent many years as a political prisoner. Any questions?
-  <think><set name="topic">politics</set></think>
-   </template>
-  </category> -->
-
- <!-- <category>
-  <pattern>NEO</pattern> 
-  <template>
-  Neo is a character in The Matrix. Carry on?
-  <think><set name="topic">movies</set></think>
-   </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>NERO</pattern> 
-  <template>
-   Nero is suspected of burning Rome to the ground so he could rebuild it more to his liking. Then he blamed the fire on the early Christians. Good politics, don't you think?
-  <think><set name="topic">history</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>NEWTON</pattern> 
-  <template>
-   Isaac Newton is a famous English natural philosopher. He discovered gravity and the rainbow. Any questions?
-  <think><set name="topic">science</set></think>
-   </template> 
-  </category> -->
-
-  <!-- <category>
-  <pattern>NIETZSCHE</pattern> 
-  <template>
-  Nietzsche was a 19th Century German philosopher. Thought by some to be the intellectual forefather of modern fascism.  Explain his ideas, please.
-  <think><set name="topic">philosophy</set></think>
-   </template>
-  </category> -->
-
    <category>
-  <pattern>NORBERT WEINER</pattern> 
+  <pattern>NORBERT WEINER</pattern>
   <template>
   Norbert Weiner  coined the term "Cybernetics" in the 1940s. Carry on?
   <think><set name="topic">computers</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>NOSTRADAMUS</pattern> 
-  <template>
-   Nostradamus forecast the future. Predicted the microwave oven. Carry on?
-  <think><set name="topic">biography</set></think>
-   </template> 
-  </category> -->
-
   <category>
-  <pattern>O J SIMPSON</pattern> 
+  <pattern>O J SIMPSON</pattern>
   <template>
   Many think O J Simpson is someone who got away with murder. Carry on?
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>WHO IS ON FIRST</pattern> 
-  <template>  
+  <pattern>WHO IS ON FIRST</pattern>
+  <template>
   What's on second? Carry on?
   <think><set name="topic">biography</set></think>
-   </template> 
-  </category>
-
-  <!-- <category>
-  <pattern>OSAMA BIN LADEN</pattern> 
-  <template>
-  Osama Bin Laden is the world's most wanted man. If you know where he is let me know. OK?
-  <think><set name="topic">biography</set></think>
    </template>
-  </category> -->
-
-  <!-- <category>
-  <pattern>PABLO PICASSO</pattern> 
-  <template>
-  Pablo Picasso was a famous painter, and founder of cubism. Carry on?
-  <think><set name="topic">art</set></think>
-  </template> 
-  </category> -->
-
+  </category>
   <category>
   <pattern>PAMELA ANDERSON</pattern>
   <template>
@@ -10606,50 +9368,18 @@ Air is the normal atmosphere of Earth, mostly nitrogen, oxygen and carbon dioxid
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
   <category>
-  <pattern>PAOLA</pattern> 
+  <pattern>PAOLA</pattern>
   <template>
   PAOLA is a Spanish language chat robot based on AIML. Me too.OK?
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
-  <!-- <category>
-  <pattern>PASCAL</pattern> 
-  <template>
-  Blaise Pascal was a French mathematician who discovered Pascal's Triangle. Carry on?
-  <think><set name="topic">science</set></think>
-   </template>
-  </category> -->
-
   <category>
-  <pattern>PATRICK EWING</pattern> 
+  <pattern>PATRICK EWING</pattern>
   <template>
    Patrick Ewing was some sports personality, I think. His achievements escapes me at the moment. Carry on?
   <think><set name="topic">sports</set></think>
-   </template> 
+   </template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </aiml>

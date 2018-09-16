@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="1.0">
 <!-- File: client_profile.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
 <!-- Last modified: July 19, 2014 -->
@@ -428,7 +428,7 @@ What is it like having a pet <get var="animal"/>?
 </category>
 <category>
   <pattern>CALL ME *</pattern>
-  <template><srai>RANDOM INTRO</srai>  <set name="name">NITIN</set>.
+  <template><srai>RANDOM INTRO</srai>  <set name="name"><star/></set>.
     <think>
       <set name="firstname"><star/></set>
     </think>
