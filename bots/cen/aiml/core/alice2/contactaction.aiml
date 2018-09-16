@@ -41,14 +41,12 @@
 <template><think><set name="topic">unknown</set></think>
 <srai>CONTACTFINALIZE</srai> <srai><star/></srai></template>
 </category></topic>
-
 <topic name="ASKING TO ADD NEW CONTACTNAME">
 <category><pattern>*</pattern><that>WOULD YOU LIKE TO ADD * AS A CONTACT</that>
 <template><think><set name="topic">unknown</set>
 </think>
 <srai>CONTACTFINALIZE</srai> <srai><star/></srai></template>
 </category></topic>
-
 <category><pattern>TELL THAT TO *</pattern>
 <template><srai>CONTACTINIT</srai>
 <think><set name="contactname"><star/></set>
@@ -84,7 +82,6 @@
 </condition>
 <condition><name>learnpattern</name>
 <li><value>DIALNUMBER</value>
-
 <srai>ADDINFO DISPLAYNAME <get name="displayname"/> DIALNUMBER <get name="contacturi"/> PHONETYPE <get name="contacttype"/> EMAILADDRESS unknown EMAILTYPE unknown BIRTHDAY <get name="contactbirthday"/></srai>
 </li>
 <li><value>EMAILADDRESS</value>
@@ -94,7 +91,6 @@
 <srai>ADDINFO DISPLAYNAME <get name="displayname"/> DIALNUMBER unknown PHONETYPE unknown EMAILADDRESS unknown EMAILTYPE unknown BIRTHDAY unknown</srai>
 </li>
 </condition>
-
 </think>
 I'm remembering <get name="displayname"/>'s <lowercase><get name="contacttype"/></lowercase> <condition name="learnpattern"><li value="DIALNUMBER">phone number</li><li value="EMAILADDRESS">email address</li></condition> is <get name="contacturi"/>.</template>
 </category>
@@ -126,7 +122,7 @@ What is your message to <get name="displayname"/>?</template>
 <set name="topic">GETTING SELECTEDCONTACT</set>
 </think>
 <oob><dialog><title>Which contact?</title><list><get name="contactlist"/></list></dialog></oob>
-You have multiple contacts named <get name="contactname"/>: <get name="multiplenames"/>.  Which one would you like to 
+You have multiple contacts named <get name="contactname"/>: <get name="multiplenames"/>.  Which one would you like to
 <lowercase><get name="modecom"/></lowercase>?</template>
 </category>
 <category><pattern>CONTACTDIALOG *</pattern>
@@ -153,7 +149,6 @@ You have multiple contacts named <get name="contactname"/>: <get name="multiplen
 </li>
 </condition></template>
 </category></topic>
-
 <topic name="ASKING MESSAGEBODY">
 <category><pattern>_</pattern><that>WHAT IS YOUR MESSAGE TO *</that>
 <template><think>
@@ -162,7 +157,6 @@ You have multiple contacts named <get name="contactname"/>: <get name="multiplen
 </think>
 <srai>RESUMEACTION <get name="modecom"/></srai></template>
 </category></topic>
-
 <topic name="ASKING CONTACTURI">
 <category><pattern>_</pattern><that>WHAT IS THE * FOR *</that>
 <template><think>
@@ -173,7 +167,7 @@ You have multiple contacts named <get name="contactname"/>: <get name="multiplen
 <set name="isacontacturi"><srai>LOGICALOR <get name="isanemailaddress"/> <get name="isaphonenumber"/></srai></set>
 <condition name="isanemailaddress" value="true"><set name="emailaddress"><get name="contacturi"/></set> <set name="learnpattern">EMAILADDRESS</set></condition>
 <condition name="isaphonenumber" value="true">
-<set name="dialnumber"><srai>FORMATPHONENUMBER <get name="contacturi"/></srai></set> 
+<set name="dialnumber"><srai>FORMATPHONENUMBER <get name="contacturi"/></srai></set>
 <set name="learnpattern">DIALNUMBER</set></condition>
 </think>
 <condition name="isacontacturi">
@@ -182,7 +176,6 @@ You have multiple contacts named <get name="contactname"/>: <get name="multiplen
 <li>I did not recognize <get name="contacturi"/> as a phone number or email address. <srai>CONTACTFINALIZE</srai> <srai><star/></srai></li>
 </condition></template>
 </category></topic>
-
 <topic name="ASKING CONTACTNAME">
 <category><pattern>_</pattern><that>WHO DO YOU WANT TO *</that>
 <template><think>
@@ -195,7 +188,6 @@ You have multiple contacts named <get name="contactname"/>: <get name="multiplen
 <li><srai>CONTACTFINALIZE</srai> <srai><star/></srai></li>
 </condition></template>
 </category></topic>
-
 <category><pattern>EMAILACTION</pattern>
 <template><srai>CONTACTDEBUGINFO EMAILACTION</srai>
 <think>
@@ -207,7 +199,6 @@ You have multiple contacts named <get name="contactname"/>: <get name="multiplen
     <li value="unknown"><srai>ASK CONTACTNAME</srai></li>
     <li><condition name="checkedhimher">
         <li value="false"><srai>RESOLVE HIMHER</srai></li>
-
         <li><condition name="checkedfamiliarname">
             <li value="false"><srai>RESOLVE FAMILIARNAME</srai></li>
             <li><condition name="contactid">
@@ -280,7 +271,6 @@ You have multiple contacts named <get name="contactname"/>: <get name="multiplen
 <li><srai>CONTACTFINALIZE</srai> <srai>NORESP</srai></li>
 </condition></template>
 </category></topic>
-
 <topic name="ASKING TO ADD NEW CONTACTNAME">
 <category><pattern>YES</pattern><that>WOULD YOU LIKE TO ADD * AS A CONTACT</that>
 <template><think><set name="topic">unknown</set>
@@ -292,7 +282,6 @@ You have multiple contacts named <get name="contactname"/>: <get name="multiplen
 I've saved <get name="contactname"/> to your contacts.
 <srai>RESUMEACTION <get name="modecom"/></srai></template>
 </category></topic>
-
 <category><pattern>CONTACTINIT</pattern>
 <template><think>
 <set name="savedtopic"><get name="topic"/></set>
@@ -464,7 +453,6 @@ familiarcontactid = <get name="familiarcontactid"/>.
 </think>
 Ok.  He is <star/>.   <srai>RESUMEACTION <get name="modecom"/></srai></template>
 </category></topic>
-
 <topic name="ASKING PRONOUN REFERENCE">
 <category><pattern>_</pattern><that>WHO DOES HER REFER TO</that>
 <template><think><set name="she"><star/></set>
@@ -472,7 +460,6 @@ Ok.  He is <star/>.   <srai>RESUMEACTION <get name="modecom"/></srai></template>
 <set name="topic">unknown</set></think>
 Ok.  She is <star/>.   <srai>RESUMEACTION <get name="modecom"/></srai></template>
 </category></topic>
-
 <topic name="ASKING PRONOUN REFERENCE">
 <category><pattern>$MY *</pattern><that>WHO DOES HIM REFER TO</that>
 <template><think><set name="he"><star/></set>
@@ -480,7 +467,6 @@ Ok.  She is <star/>.   <srai>RESUMEACTION <get name="modecom"/></srai></template
 <set name="topic">unknown</set></think>
 Ok.  He is <star/>.   <srai>RESUMEACTION <get name="modecom"/></srai></template>
 </category></topic>
-
 <topic name="ASKING PRONOUN REFERENCE">
 <category><pattern>$MY *</pattern><that>WHO DOES HER REFER TO</that>
 <template><think><set name="she"><star/></set>
@@ -488,7 +474,6 @@ Ok.  He is <star/>.   <srai>RESUMEACTION <get name="modecom"/></srai></template>
 <set name="topic">unknown</set></think>
 Ok.  She is <star/>.   <srai>RESUMEACTION <get name="modecom"/></srai></template>
 </category></topic>
-
 <category><pattern>RESOLVE CONTACTURI</pattern>
 <template><srai>CONTACTDEBUGINFO RESOLVE CONTACTURI</srai>
 <think><set name="contactid"><srai>CONTACTID <get name="contactname"/></srai></set></think>
@@ -506,8 +491,8 @@ Ok.  She is <star/>.   <srai>RESUMEACTION <get name="modecom"/></srai></template
     <think>
     <set name="emailaddress"><set name="contacturi"><srai>EMAILADDRESS <get name="contacttype"/> <get name="contactid"/></srai></set></set></think>
       <condition name="contacturi">
-      <li value="unknown"> 
-      <think><set name="topic">ASKING TO ADD NEW CONTACTURI</set></think> 
+      <li value="unknown">
+      <think><set name="topic">ASKING TO ADD NEW CONTACTURI</set></think>
       You haven't yet added <condition name="contacttype"><li value="unknown">an</li><li>a <get name="contacttype"/></li></condition> email address for <get name="displayname"/> to your contacts.  Would you like to add one?
       </li>
       <li><srai>SET ALL CONTACTINFO</srai> <srai>RESUMEACTION <get name="modecom"/></srai></li>
@@ -516,7 +501,7 @@ Ok.  She is <star/>.   <srai>RESUMEACTION <get name="modecom"/></srai></template
     <li><think><set name="dialnumber"><set name="contacturi"><srai>DIALNUMBER <get name="contacttype"/> <get name="contactid"/></srai></set></set></think>
       <condition name="contacturi">
       <li value="unknown">
-      <think><set name="topic">ASKING TO ADD NEW CONTACTURI</set></think> 
+      <think><set name="topic">ASKING TO ADD NEW CONTACTURI</set></think>
 You haven't yet added <condition name="contacttype"><li value="unknown">a phone</li><li>a <get name="contacttype"/></li></condition> number for <get name="displayname"/> to your contacts.  Would you like to add one?
       </li>
       <li><srai>SET ALL CONTACTINFO</srai> <srai>RESUMEACTION <get name="modecom"/></srai></li>
@@ -546,7 +531,7 @@ You haven't yet added <condition name="contacttype"><li value="unknown">a phone<
       <li value="unknown"><srai>RESOLVE CONTACTNAME</srai></li>
       <li><condition name="contacturi">
           <li value="unknown"><srai>RESOLVE CONTACTURI</srai></li>
-          <li><srai>ADDINFO CONTACTID</srai>           
+          <li><srai>ADDINFO CONTACTID</srai>
 </li>
           </condition>
       </li>
@@ -772,8 +757,8 @@ familiarname: <get name="familiarname"/>.
 familiarpredicate: <get name="familiarpredicate"/>.
 familiarpronoun: <get name="familiarpronoun"/>
 forceaddcontact: <get name="forceaddcontact"/>.
-isaphonenumber: <get name="isaphonenumber"/>. 
-isanemailaddress: <get name="isanemailaddress"/>. 
+isaphonenumber: <get name="isaphonenumber"/>.
+isanemailaddress: <get name="isanemailaddress"/>.
 isacontacturi: <get name="isacontacturi"/>.
 isafamiliarname: <get name="isafamiliarname"/>.
 learnpattern: <get name="learnpattern"/>.
