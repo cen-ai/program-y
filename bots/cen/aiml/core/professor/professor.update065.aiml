@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<aiml>
+<aiml version="1.0">
 
 <!-- This file contains AIML categories for use with an AIML chatbot                -->
 

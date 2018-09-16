@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?> 
-
-
-
-<aiml>
-
-
-
-
+<aiml version="1.0">
 <!-- This file contains AIML categories for use with an AIML chatbot              -->
 <!-- This file copyright (C) Peter Lafferty 2012. All rights reserved.            -->
 <!-- Some text based on WordNet 3.0. Copyright 2006 by Princeton                  -->
 <!-- University. All rights reserved.                                             -->
 <!-- Some text based on Wikipedia 2012. Copyright, various contributors           -->
 <!-- to Wikipedia. All rights reserved.                                           -->
-
 <!-- Complies with AIML 1.0.1 Tag Set Specification                               -->
 <!-- as adopted by the ALICE A.I. Foundation.                                     -->
 <!-- Copyright (C) 2003, 2011  ALICE A.I. Foundation. All rights reserved.        -->
-
 <!-- This software and database is being provided to you, the LICENSEE,           -->
 <!-- by the copyright holders under the following license. By                     -->
 <!-- obtaining, using and/or copying this software and database, you agree that   -->
@@ -28,7 +19,6 @@
 <!-- notices and statements, including the disclaimer, and that the same appear   -->
 <!-- on ALL copies of the software, database and documentation, including         -->
 <!-- modifications that you make for internal use or for distribution.            -->
-
 <!-- THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND THE COPYRIGHT HOLDERS     -->
 <!-- MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF         -->
 <!-- EXAMPLE, BUT NOT LIMITATION, THE COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS   -->
@@ -36,17 +26,12 @@
 <!-- OR THAT THE USE OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL     -->
 <!-- NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER        -->
 <!-- RIGHTS.                                                                      -->
-
 <!-- The name of Princeton University or Princeton may not be used in             -->
 <!-- advertising or publicity pertaining to distribution of the software          -->
 <!-- and/or database. Title to copyright in WordNet 3.0, database and any         -->
 <!-- associated documentation, shall at all times remain with Princeton           -->
 <!-- University and the LICENSEE agrees to preserve same.                         -->
-
 <!-- This file Professor.0027 (C) Peter Lafferty 2012. All rights reserved.       -->
-
-
-
 <category><pattern>YOU MAY THINK * BUT *</pattern>
 <template><srai>  <star index="2" /></srai></template>
 </category>
@@ -68,7 +53,6 @@
 <category><pattern>AHA *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>MY HUSBAND THINKS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -11910,11 +11894,9 @@
 <category><pattern>* SIGNIFICANT *</pattern>
 <template><srai>  <star />  <star index="2" /></srai></template>
 </category>
-
 <category><pattern>* SO MANY *</pattern>
 <template><srai>  <star />  <star index="2" /></srai></template>
 </category>
-
 <category><pattern>* GOD DAMNED *</pattern>
 <template><srai>  <star />  <star index="2" /></srai></template>
 </category>
@@ -11927,14 +11909,12 @@
 <category><pattern>* SAYING *</pattern>
 <template><srai>  <star index="2" /></srai></template>
 </category>
-
 <category><pattern>* IS MUCH *</pattern>
 <template><srai>  <star />  <star index="2" /></srai></template>
 </category>
 <category><pattern>* IS NOT * IT IS *</pattern>
 <template><srai>  <star /> is <star index="3" /></srai></template>
 </category>
-
 <category><pattern>* SOMEONE WHO * AS WELL AS *</pattern>
 <template><srai>  <star /> Somone who <star index="2" /></srai>.  <srai>  <star /> Somone who <star index="3" /></srai></template>
 </category>
@@ -17857,7 +17837,6 @@
 <category><pattern>* LIKE SHIT *</pattern>
 <template><srai>  <star />  <star index="2" /></srai></template>
 </category>
-
 <category><pattern>* AMONGST OTHERS *</pattern>
 <template><srai>  <star />  <star index="2" /></srai></template>
 </category>
@@ -17879,15 +17858,7 @@
 <category><pattern>THERE IS NO SUCH THING AS *</pattern>
 <template><srai>  <star /> does not exist</srai></template>
 </category>
-
-
-
 <!-- SALUTATIONS -->
-
-
-
-
-
   <category>
   <pattern>ADIOS *</pattern>
   <template>
@@ -17895,11 +17866,6 @@
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>ALOH</pattern>
   <template>
@@ -17907,7 +17873,6 @@
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>ANYBODY HOME</pattern>
   <template>
@@ -17915,7 +17880,6 @@
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>AUREVOIR</pattern>
   <template>
@@ -17923,16 +17887,12 @@
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>BONJOUR MEANS HELLO</pattern>
   <template>
 <think><set name="topic">salutations</set></think>
 Well hello there!</template>
   </category>
-
-
-
   <category>
   <pattern>BUHBYE</pattern>
   <template>
@@ -17940,7 +17900,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>BY BY</pattern>
   <template>
@@ -17948,7 +17907,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>BY BYE</pattern>
   <template>
@@ -17956,7 +17914,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>BYBYE</pattern>
   <template>
@@ -17964,11 +17921,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>BYEBYE</pattern>
   <template>
@@ -17976,7 +17928,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>BYEBYE *</pattern>
   <template>
@@ -17984,7 +17935,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>* BYE</pattern>
   <template>
@@ -17992,14 +17942,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
-
-
-
-
-
   <category>
   <pattern>CIAO MEANS GOODBYE</pattern>
   <template>
@@ -18007,9 +17949,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
   <category>
   <pattern>C YA</pattern>
   <template>
@@ -18017,7 +17956,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>CYA *</pattern>
   <template>
@@ -18025,7 +17963,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>DISCONNECT ME</pattern>
   <template>
@@ -18033,7 +17970,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>END</pattern>
   <template>
@@ -18041,11 +17977,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>FAREWELL *</pattern>
   <template>
@@ -18053,7 +17984,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>G2G</pattern>
   <template>
@@ -18061,13 +17991,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
-
-
-
-
   <category>
   <pattern>GOOD BYE *</pattern>
   <template>
@@ -18075,11 +17998,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>GOODBYE</pattern>
   <that>SEE YOU LATER</that>
@@ -18088,17 +18006,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>HI THERE AGAIN</pattern>
   <template>
@@ -18106,11 +18013,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>GOOD NITE</pattern>
   <template>
@@ -18118,7 +18020,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>GOTTA GO</pattern>
   <template>
@@ -18126,7 +18027,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>GOTTA GO *</pattern>
   <template>
@@ -18134,7 +18034,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>GOT TO GO</pattern>
   <template>
@@ -18142,7 +18041,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>GOT TO GO *</pattern>
   <template>
@@ -18150,7 +18048,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>GREETINGS *</pattern>
   <template>
@@ -18158,7 +18055,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>GTG</pattern>
   <template>
@@ -18166,9 +18062,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
   <category>
   <pattern>HASTA LA VISTA</pattern>
   <template>
@@ -18176,7 +18069,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>HASTA LUEGO</pattern>
   <template>
@@ -18184,7 +18076,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>HASTA *</pattern>
   <template>
@@ -18192,9 +18083,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
   <category>
   <pattern>HAVE TO GO</pattern>
   <template>
@@ -18202,12 +18090,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
-
-
-
   <category>
   <pattern>HELLO. MY NAME IS *</pattern>
   <template>
@@ -18216,10 +18098,6 @@ Well hello there!</template>
   <think><set name="name"><star/></set></think>
   </template>
   </category>
-
-
-
-
   <category>
   <pattern>HELLO CHOMPY</pattern>
   <template>
@@ -18227,7 +18105,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>HELLO CHOMSKY</pattern>
   <template>
@@ -18235,7 +18112,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>HELLO CHOMSKY *</pattern>
   <template>
@@ -18243,11 +18119,6 @@ Well hello there!</template>
   Hi there! How are you today?
   </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>HELLOW</pattern>
   <template>
@@ -18255,7 +18126,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>HELOO *</pattern>
   <template>
@@ -18263,7 +18133,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>HELO</pattern>
   <template>
@@ -18271,13 +18140,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
-
-
-
-
-
-
   <category>
   <pattern>HI PAL</pattern>
   <template>
@@ -18285,7 +18147,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>HI CHOMPY</pattern>
   <template>
@@ -18293,7 +18154,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>HI CHOMSKY</pattern>
   <template>
@@ -18301,7 +18161,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>HI CHOMSKY *</pattern>
   <template>
@@ -18309,10 +18168,6 @@ Well hello there!</template>
   Hi there! How are you today?
   </template>
   </category>
-
-
-
-
   <category>
   <pattern>HI THERE *</pattern>
   <template>
@@ -18320,9 +18175,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
-
-
  <category>
   <pattern>HO CHOMSKY</pattern>
   <template>
@@ -18330,7 +18182,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
 <category>
   <pattern>HI HO CHOMSKY</pattern>
   <template>
@@ -18338,7 +18189,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
 <category>
   <pattern>HI HO CHOMPY</pattern>
   <template>
@@ -18346,7 +18196,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
 <category>
   <pattern>HO CHOMPY</pattern>
   <template>
@@ -18354,9 +18203,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
-
-
   <category>
   <pattern>HOLA IS HELLO *</pattern>
   <template>
@@ -18364,7 +18210,6 @@ Well hello there!</template>
   <srai>HOLA</srai>
   </template>
   </category>
-
   <category>
   <pattern>HOWDIE *</pattern>
   <template>
@@ -18372,7 +18217,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
 <category>
   <pattern>HOWDIE</pattern>
   <template>
@@ -18380,14 +18224,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
-
-
-
-
-
-
-
   <category>
   <pattern>HULLO CHOMPY</pattern>
   <template>
@@ -18395,7 +18231,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
  <category>
   <pattern>HULLO CHOMSKY</pattern>
   <template>
@@ -18403,9 +18238,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
-
-
 <category>
   <pattern>_ HOW ARE YOU</pattern>
   <template>
@@ -18413,7 +18245,6 @@ Well hello there!</template>
   <sr/> <srai>HOW ARE YOU</srai>
   </template>
   </category>
-
   <category>
   <pattern>I BETTER GO</pattern>
   <template>
@@ -18421,7 +18252,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I DO NOT WANT TO TALK *</pattern>
   <template>
@@ -18429,7 +18259,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I G2G</pattern>
   <template>
@@ -18437,7 +18266,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I GOING</pattern>
   <template>
@@ -18445,7 +18273,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I GO</pattern>
   <template>
@@ -18453,9 +18280,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
   <category>
   <pattern>I GOT TO GO</pattern>
   <template>
@@ -18463,7 +18287,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I G TWO G</pattern>
   <template>
@@ -18471,7 +18294,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I LEAVE</pattern>
   <template>
@@ -18479,7 +18301,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I LEAVING</pattern>
   <template>
@@ -18487,7 +18308,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I LEFT</pattern>
   <template>
@@ -18495,7 +18315,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I MUST BE GOING *</pattern>
   <template>
@@ -18503,7 +18322,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I MUST GO</pattern>
   <template>
@@ -18511,7 +18329,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I MUST GO *</pattern>
   <template>
@@ -18519,7 +18336,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I MUST LEAVE *</pattern>
   <template>
@@ -18528,7 +18344,6 @@ Well hello there!</template>
   <sr />
   </template>
   </category>
-
   <category>
   <pattern>I MUST LEAVE</pattern>
   <template>
@@ -18536,9 +18351,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
   <category>
   <pattern>I QUIT</pattern>
   <template>
@@ -18546,7 +18358,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>I RESIGN</pattern>
   <template>
@@ -18554,7 +18365,6 @@ Well hello there!</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>IS ANYONE THERE</pattern>
   <template>
@@ -18562,7 +18372,6 @@ Well hello there!</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>IT MEANS HELLO</pattern>
   <template>
@@ -18570,14 +18379,12 @@ Well hello there!</template>
  <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>I WANT TO LEAVE</pattern>
   <template>
 <think><set name="topic">salutations</set></think>
 Ok, bye bye.</template>
   </category>
-
   <category>
   <pattern>I WILL SEE YOU LATER</pattern>
   <template>
@@ -18585,11 +18392,6 @@ Ok, bye bye.</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>KONNICHI WA</pattern>
   <template>
@@ -18597,7 +18399,6 @@ Ok, bye bye.</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>KONNICHIWA</pattern>
   <template>
@@ -18605,7 +18406,6 @@ Ok, bye bye.</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>LEAVE *</pattern>
   <template>
@@ -18613,7 +18413,6 @@ Ok, bye bye.</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>MOOSHI MOOSHI</pattern>
   <template>
@@ -18621,7 +18420,6 @@ Ok, bye bye.</template>
   <srai>HELLO</srai>
   </template>
   </category>
-
   <category>
   <pattern>NIGHTY *</pattern>
   <template>
@@ -18629,19 +18427,6 @@ Ok, bye bye.</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>SEE YOU *</pattern>
   <template>
@@ -18649,16 +18434,12 @@ Ok, bye bye.</template>
   <srai>BYE</srai>
   </template>
   </category>
-
-
-
   <category>
   <pattern>SHALOM</pattern>
   <template>
 <think><set name="topic">salutations</set></think>
 Does SHALOM mean Hello or Goodbye?</template>
   </category>
-
   <category>
   <pattern>_ TALK TO YOU LATER</pattern>
   <template>
@@ -18666,7 +18447,6 @@ Does SHALOM mean Hello or Goodbye?</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>TA TA</pattern>
   <template>
@@ -18674,7 +18454,6 @@ Does SHALOM mean Hello or Goodbye?</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>TIME TO GO</pattern>
   <template>
@@ -18682,7 +18461,6 @@ Does SHALOM mean Hello or Goodbye?</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>TTYL</pattern>
   <template>
@@ -18690,23 +18468,18 @@ Does SHALOM mean Hello or Goodbye?</template>
   <srai>BYE</srai>
   </template>
   </category>
-
   <category>
   <pattern>WHAT IS SHALOM</pattern>
   <template>
 <think><set name="topic">salutations</set></think>
 Does shalom mean hello or goodbye?</template>
   </category>
-
   <category>
   <pattern>YOU ARE WELCOME *</pattern>
   <template>
 <think><set name="topic">salutations</set></think>
 It was my pleasure.</template>
   </category>
-
-
-
   <category>
   <pattern>_ YOU ARE WELCOME</pattern>
   <template>
@@ -18714,44 +18487,24 @@ It was my pleasure.</template>
   <think><set name="topic">salutations</set></think>
   </template>
   </category>
-
-
-
-
-
-
-
-
-
   <category>
 <pattern>A Coruna </pattern>
     <template>A Coruna? Briefly, A Coruna is a city in northwestern Spain.
   </template>
   </category>
-
-
   <category>
     <pattern>a priori </pattern>
     <template>a priori? Briefly, in epistemology, a priori means knowledge that is independent of all particular experiences, as opposed to a posteriori (or empirical) knowledge, which derives from experience.
   </template>
   </category>
-
-
   <category>
 <pattern>A Coruna *</pattern>
     <template>A Coruna? Briefly, A Coruna is a city in northwestern Spain.
   </template>
   </category>
-
-
   <category>
     <pattern>a priori *</pattern>
     <template>a priori? Briefly, in epistemology, a priori means knowledge that is independent of all particular experiences, as opposed to a posteriori (or empirical) knowledge, which derives from experience.
   </template>
   </category>
-
-
-
-
-
 </aiml>

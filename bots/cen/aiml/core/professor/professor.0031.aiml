@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?> 
-
-
-
-<aiml>
-
-
-
+<aiml version="1.0">
 <!-- This file contains AIML categories for use with an AIML chatbot              -->
 <!-- This file copyright (C) Peter Lafferty 2012. All rights reserved.            -->
 <!-- Some text based on WordNet 3.0. Copyright 2006 by Princeton                  -->
 <!-- University. All rights reserved.                                             -->
 <!-- Some text based on Wikipedia 2012. Copyright, various contributors           -->
 <!-- to Wikipedia. All rights reserved.                                           -->
-
 <!-- Complies with AIML 1.0.1 Tag Set Specification                               -->
 <!-- as adopted by the ALICE A.I. Foundation.                                     -->
 <!-- Copyright (C) 2003, 2011  ALICE A.I. Foundation. All rights reserved.        -->
-
 <!-- This software and database is being provided to you, the LICENSEE,           -->
 <!-- by the copyright holders under the following license. By                     -->
 <!-- obtaining, using and/or copying this software and database, you agree that   -->
@@ -27,7 +19,6 @@
 <!-- notices and statements, including the disclaimer, and that the same appear   -->
 <!-- on ALL copies of the software, database and documentation, including         -->
 <!-- modifications that you make for internal use or for distribution.            -->
-
 <!-- THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND THE COPYRIGHT HOLDERS     -->
 <!-- MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF         -->
 <!-- EXAMPLE, BUT NOT LIMITATION, THE COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS   -->
@@ -35,17 +26,12 @@
 <!-- OR THAT THE USE OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL     -->
 <!-- NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER        -->
 <!-- RIGHTS.                                                                      -->
-
 <!-- The name of Princeton University or Princeton may not be used in             -->
 <!-- advertising or publicity pertaining to distribution of the software          -->
 <!-- and/or database. Title to copyright in WordNet 3.0, database and any         -->
 <!-- associated documentation, shall at all times remain with Princeton           -->
 <!-- University and the LICENSEE agrees to preserve same.                         -->
-
 <!-- This file Professor.0031 (C) Peter Lafferty 2012. All rights reserved.       -->
-
-
-
 <category><pattern>CAMASSIA QUAMASH</pattern><template>camassia quamash?  Briefly, camassia quamash means plant having a large edible bulb and linear basal leaves and racemes of light to deep violet-blue star-shaped flowers on tall green scapes; western North America.</template></category>
 <category><pattern>CAMASSIA SCILLOIDES</pattern><template>camassia scilloides?  Briefly, camassia scilloides means eastern camas; eastern and central North America.</template></category>
 <category><pattern>CAMBARUS</pattern><template>cambarus?  Briefly, cambarus means a genus of Astacidae.</template></category>
@@ -54,7 +40,6 @@
 <category><pattern>CAMBERWELL BEAUTY</pattern><template>camberwell beauty?  Briefly, camberwell beauty means of temperate regions; having dark purple wings with yellow borders.</template></category>
 <category><pattern>CAMBIAL</pattern><template>cambial?  Briefly, cambial means of or relating to or functioning as a cambium.</template></category>
 <category><pattern>CAMBIUM</pattern><template>cambium?  Briefly, cambium means formative one-cell-thick layer of tissue between xylem and phloem in most vascular plants that is responsible for secondary growth.</template></category>
-
 <category><pattern>CAMBODIAN</pattern><template>cambodian?  Briefly, cambodian means a native or inhabitant of Cambodia.</template></category>
 <category><pattern>CAMBODIAN CAPITAL</pattern><template>cambodian capital?  Briefly, cambodian capital means the capital and largest city of Kampuchea.</template></category>
 <category><pattern>CAMBODIAN MONETARY UNIT</pattern><template>cambodian monetary unit?  Briefly, cambodian monetary unit means monetary unit in Cambodia.</template></category>
@@ -63,7 +48,6 @@
 <category><pattern>CAMBRIAN PERIOD</pattern><template>cambrian period?  Briefly, cambrian period means from 544 million to about 500 million years ago; marine invertebrates.</template></category>
 <category><pattern>CAMBRIC</pattern><template>cambric?  Briefly, cambric means a finely woven white linen.</template></category>
 <category><pattern>CAMBRIC TEA</pattern><template>cambric tea?  Briefly, cambric tea means a beverage for children containing hot water and milk and sugar and a small amount of tea.</template></category>
-
 <category><pattern>CAMBRIDGE UNIVERSITY</pattern><template>cambridge university?  Briefly, cambridge university means a university in England.</template></category>
 <category><pattern>CAMCORDER</pattern><template>camcorder?  Briefly, camcorder means a portable television camera and videocassette recorder.</template></category>
 <category><pattern>CAMDEN</pattern><template>camden?  Briefly, camden means a city in southwestern New Jersey on the Delaware River near Pittsburgh.</template></category>
@@ -87,7 +71,6 @@
 <category><pattern>CAMELUS DROMEDARIUS</pattern><template>camelus dromedarius?  Briefly, camelus dromedarius means one-humped camel of the hot deserts of northern Africa and southwestern Asia.</template></category>
 <category><pattern>CAMEMBERT</pattern><template>camembert?  Briefly, camembert means rich soft creamy French cheese.</template></category>
 <category><pattern>CAMEO</pattern><template>cameo?  Briefly, cameo means engraving or carving in low relief on a stone (as in a brooch or ring).</template></category>
-
 <category><pattern>CAMERA ANGLE</pattern><template>camera angle?  Briefly, camera angle means the point of view of a camera.</template></category>
 <category><pattern>CAMERA CARE</pattern><template>camera care?  Briefly, camera care means keeping a camera in good working order.</template></category>
 <category><pattern>CAMERA LENS</pattern><template>camera lens?  Briefly, camera lens means a lens that focuses the image in a camera.</template></category>
@@ -96,7 +79,6 @@
 <category><pattern>CAMERA OPERATOR</pattern><template>camera operator?  Briefly, camera operator means a photographer who operates a movie camera.</template></category>
 <category><pattern>CAMERA TRIPOD</pattern><template>camera tripod?  Briefly, camera tripod means a tripod used to support a camera.</template></category>
 <category><pattern>CAMERAMAN</pattern><template>cameraman?  Briefly, cameraman means a photographer who operates a movie camera.</template></category>
-
 <category><pattern>CAMEROON FRANC</pattern><template>cameroon franc?  Briefly, cameroon franc means the basic unit of money in Cameroon.</template></category>
 <category><pattern>CAMEROONIAN</pattern><template>cameroonian?  Briefly, cameroonian means a native or inhabitant of Cameroon.</template></category>
 <category><pattern>CAMEROUN</pattern><template>cameroun?  Briefly, cameroun means a republic on the western coast of central Africa; was under French and British control until 1960.</template></category>
@@ -207,7 +189,6 @@
 <category><pattern>CANAANITIC LANGUAGE</pattern><template>canaanitic language?  Briefly, canaanitic language means a group of Semitic languages.</template></category>
 <category><pattern>CANACHITES</pattern><template>canachites?  Briefly, canachites means spruce grouse.</template></category>
 <category><pattern>CANACHITES CANADENSIS</pattern><template>canachites canadensis?  Briefly, canachites canadensis means North American grouse that feeds on evergreen buds and needles.</template></category>
-
 <category><pattern>CANADA ANEMONE</pattern><template>canada anemone?  Briefly, canada anemone means common summer-flowering woodland herb of Labrador to Colorado.</template></category>
 <category><pattern>CANADA BALSAM</pattern><template>canada balsam?  Briefly, canada balsam means yellow transparent exudate of the balsam fir; used as a transparent cement in optical devices (especially in microscopy) and as a mounting medium.</template></category>
 <category><pattern>CANADA GARLIC</pattern><template>canada garlic?  Briefly, canada garlic means North American bulbous plant.</template></category>
@@ -222,7 +203,6 @@
 <category><pattern>CANADA THISTLE</pattern><template>canada thistle?  Briefly, canada thistle means European thistle naturalized in United States and Canada where it is a pernicious weed.</template></category>
 <category><pattern>CANADA VIOLET</pattern><template>canada violet?  Briefly, canada violet means tall North American perennial with heart-shaped leaves and purple-streaked white flowers.</template></category>
 <category><pattern>CANADA WILD RYE</pattern><template>canada wild rye?  Briefly, canada wild rye means North American wild rye.</template></category>
-
 <category><pattern>CANADIAN ASPEN</pattern><template>canadian aspen?  Briefly, canadian aspen means aspen with a narrow crown; eastern North America.</template></category>
 <category><pattern>CANADIAN BACON</pattern><template>canadian bacon?  Briefly, canadian bacon means from a boned strip of cured loin.</template></category>
 <category><pattern>CANADIAN CAPITAL</pattern><template>canadian capital?  Briefly, canadian capital means the capital of Canada (located in southeastern Ontario across the Ottawa river from Quebec).</template></category>
@@ -281,7 +261,6 @@
 <category><pattern>CANAVALIA ENSIFORMIS</pattern><template>canavalia ensiformis?  Briefly, canavalia ensiformis means annual semi-erect bushy plant of tropical South America bearing long pods with white seeds grown especially for forage.</template></category>
 <category><pattern>CANAVALIA GLADIATA</pattern><template>canavalia gladiata?  Briefly, canavalia gladiata means twining tropical Old World plant bearing long pods usually with red or brown beans; long cultivated in Orient for food.</template></category>
 <category><pattern>CANAVANINE</pattern><template>canavanine?  Briefly, canavanine means an amino acid found in the jack bean.</template></category>
-
 <category><pattern>CANCAN</pattern><template>cancan?  Briefly, cancan means a high-kicking dance of French origin performed by a female chorus line.</template></category>
 <category><pattern>CANCEL</pattern><template>cancel?  Briefly, cancel means a notation cancelling a previous sharp or flat.</template></category>
 <category><pattern>CANCEL OUT</pattern><template>cancel out?  Briefly, cancel out means wipe out the effect of something.</template></category>
@@ -290,7 +269,6 @@
 <category><pattern>CANCELLATION</pattern><template>cancellation?  Briefly, cancellation means the act of cancelling; calling off some arrangement.</template></category>
 <category><pattern>CANCELLED</pattern><template>cancelled?  Briefly, cancelled means no longer planned or scheduled.</template></category>
 <category><pattern>CANCELLOUS</pattern><template>cancellous?  Briefly, cancellous means having an open or latticed or porous structure.</template></category>
-
 <category><pattern>CANCER BODY</pattern><template>cancer body?  Briefly, cancer body means an inclusion body found in plasma cells in cases of cancer.</template></category>
 <category><pattern>CANCER BOREALIS</pattern><template>cancer borealis?  Briefly, cancer borealis means large red deep-water crab of the eastern coast of North America.</template></category>
 <category><pattern>CANCER CELL</pattern><template>cancer cell?  Briefly, cancer cell means a cell that is part of a malignant tumor.</template></category>
@@ -487,7 +465,6 @@
 <category><pattern>CANOPIC JAR</pattern><template>canopic jar?  Briefly, canopic jar means a jar used in ancient egypt to contain entrails of an embalmed body.</template></category>
 <category><pattern>CANOPIC VASE</pattern><template>canopic vase?  Briefly, canopic vase means a jar used in ancient egypt to contain entrails of an embalmed body.</template></category>
 <category><pattern>CANOPIED</pattern><template>canopied?  Briefly, canopied means covered with or as with a canopy.</template></category>
-
 <category><pattern>CANOPY</pattern><template>canopy?  Briefly, canopy means the transparent covering of an aircraft cockpit.</template></category>
 <category><pattern>CANOROUS</pattern><template>canorous?  Briefly, canorous means richly melodious.</template></category>
 <category><pattern>CANT</pattern><template>cant?  Briefly, cant means stock phrases that have become nonsense through endless repetition.</template></category>
@@ -623,7 +600,6 @@
 <category><pattern>CAPE TOWN</pattern><template>cape town?  Briefly, cape town means port city in southwestern South Africa; the seat of the legislative branch of the government of South Africa.</template></category>
 <category><pattern>CAPE TRAFALGAR</pattern><template>cape trafalgar?  Briefly, cape trafalgar means a small cape in southwestern Spain.</template></category>
 <category><pattern>CAPE TULIP</pattern><template>cape tulip?  Briefly, cape tulip means spectacular plant having large prostrate leaves barred in reddish-purple and flowers with a clump of long yellow stamens in a coral-red cup of fleshy bracts; South Africa.</template></category>
-
 <category><pattern>CAPE VERDE ESCUDO</pattern><template>cape verde escudo?  Briefly, cape verde escudo means the basic unit of money on Cape Verde; equal to 100 centavos.</template></category>
 <category><pattern>CAPE VERDE ISLANDS</pattern><template>cape verde islands?  Briefly, cape verde islands means a group of islands in the Atlantic off of the coast of Senegal.</template></category>
 <category><pattern>CAPE VERDE MONETARY UNIT</pattern><template>cape verde monetary unit?  Briefly, cape verde monetary unit means monetary unit on Cape Verde.</template></category>
@@ -634,7 +610,6 @@
 <category><pattern>CAPELAN</pattern><template>capelan?  Briefly, capelan means very small northern fish; forage for sea birds and marine mammals and other fishes.</template></category>
 <category><pattern>CAPELIN</pattern><template>capelin?  Briefly, capelin means very small northern fish; forage for sea birds and marine mammals and other fishes.</template></category>
 <category><pattern>CAPELINE BANDAGE</pattern><template>capeline bandage?  Briefly, capeline bandage means bandage that covers the head or an amputation stump like a cap.</template></category>
-
 <category><pattern>CAPER</pattern><template>caper?  Briefly, caper means any of numerous plants of the genus Capparis.</template></category>
 <category><pattern>CAPER FAMILY</pattern><template>caper family?  Briefly, caper family means a dilleniid dicot family of the order Rhoeadales that includes: genera Capparis; Cleome; Crateva; Polanisia.</template></category>
 <category><pattern>CAPER SAUCE</pattern><template>caper sauce?  Briefly, caper sauce means allemande sauce with capers.</template></category>
@@ -921,7 +896,6 @@
 <category><pattern>CAPRICIOUS</pattern><template>capricious?  Briefly, capricious means changeable.</template></category>
 <category><pattern>CAPRICIOUSLY</pattern><template>capriciously?  Briefly, capriciously means unpredictably.</template></category>
 <category><pattern>CAPRICIOUSNESS</pattern><template>capriciousness?  Briefly, capriciousness means the quality of being guided by sudden unpredictable impulses.</template></category>
-
 <category><pattern>CAPRICORN THE GOAT</pattern><template>capricorn the goat?  Briefly, capricorn the goat means the tenth sign of the zodiac; the sun is in this sign from about December 22 to January 19.</template></category>
 <category><pattern>CAPRICORNIS</pattern><template>capricornis?  Briefly, capricornis means serows.</template></category>
 <category><pattern>CAPRICORNUS</pattern><template>capricornus?  Briefly, capricornus means a faint zodiacal constellation in the southern hemisphere; between Sagittarius and Aquarius.</template></category>
@@ -1180,7 +1154,6 @@
 <category><pattern>CARCHARINUS LONGIMANUS</pattern><template>carcharinus longimanus?  Briefly, carcharinus longimanus means large deep-water shark with white-tipped dorsal fin; worldwide distribution; most dangerous shark.</template></category>
 <category><pattern>CARCHARODON</pattern><template>carcharodon?  Briefly, carcharodon means man-eating sharks.</template></category>
 <category><pattern>CARCHARODON CARCHARIAS</pattern><template>carcharodon carcharias?  Briefly, carcharodon carcharias means large aggressive shark widespread in warm seas; known to attack humans.</template></category>
-
 <category><pattern>CARCINOGENIC</pattern><template>carcinogenic?  Briefly, carcinogenic means causing or tending to cause cancer.</template></category>
 <category><pattern>CARCINOID</pattern><template>carcinoid?  Briefly, carcinoid means a small tumor (benign or malignant) arising from the mucosa of the gastrointestinal tract; usually associated with excessive secretion of serotonin.</template></category>
 <category><pattern>CARCINOMA</pattern><template>carcinoma?  Briefly, carcinoma means any malignant tumor derived from epithelial tissue; one of the four major types of cancer.</template></category>
@@ -1300,8 +1273,6 @@
 <category><pattern>CARDUUS NUTANS</pattern><template>carduus nutans?  Briefly, carduus nutans means Eurasian perennial naturalized in eastern North America having very spiny white cottony foliage and nodding musky crimson flower heads; valuable source of nectar.</template></category>
 <category><pattern>CARE</pattern><template>care?  Briefly, care means the work of caring for or attending to someone or something.</template></category>
 <category><pattern>CARE A HANG</pattern><template>care a hang?  Briefly, care a hang means show no concern or interest; always used in the negative.</template></category>
-
-
 <category><pattern>BROWN</pattern><template>brown?  Briefly, brown means an orange of low brightness and saturation.</template></category>
 <category><pattern>BROWN ALGAE</pattern><template>brown algae?  Briefly, brown algae means algae having the chlorophyll masked by brown and yellow pigments.</template></category>
 <category><pattern>BROWN ASH</pattern><template>brown ash?  Briefly, brown ash means vigorous spreading North American tree having dark brown heavy wood; leaves turn gold in autumn.</template></category>
@@ -1400,7 +1371,6 @@
 <category><pattern>BRUNANBURH</pattern><template>brunanburh?  Briefly, brunanburh means a battle in 937 when Athelstan defeated the Scots.</template></category>
 <category><pattern>BRUNCH</pattern><template>brunch?  Briefly, brunch means combination breakfast and lunch; usually served in late morning.</template></category>
 <category><pattern>BRUNCH COAT</pattern><template>brunch coat?  Briefly, brunch coat means a woman's short housecoat or wrapper.</template></category>
-
 <category><pattern>BRUNEI DOLLAR</pattern><template>brunei dollar?  Briefly, brunei dollar means the basic unit of money in Brunei.</template></category>
 <category><pattern>BRUNEIAN</pattern><template>bruneian?  Briefly, bruneian means a native or inhabitant of Brunei.</template></category>
 <category><pattern>BRUNELLESCHI</pattern><template>brunelleschi?  Briefly, brunelleschi means Florentine architect who was the first great architect of the Italian Renaissance (1377-1446).</template></category>
@@ -1445,7 +1415,6 @@
 <category><pattern>BRUSQUE</pattern><template>brusque?  Briefly, brusque means marked by rude or peremptory shortness.</template></category>
 <category><pattern>BRUSQUELY</pattern><template>brusquely?  Briefly, brusquely means in a blunt direct manner.</template></category>
 <category><pattern>BRUSQUENESS</pattern><template>brusqueness?  Briefly, brusqueness means an abrupt discourteous manner.</template></category>
-
 <category><pattern>BRUSSELS BISCUIT</pattern><template>brussels biscuit?  Briefly, brussels biscuit means slice of sweet raised bread baked again until it is brown and hard and crisp.</template></category>
 <category><pattern>BRUSSELS CARPET</pattern><template>brussels carpet?  Briefly, brussels carpet means a carpet with a strong linen warp and a heavy pile of colored woolen yarns drawn up in uncut loops to form a pattern.</template></category>
 <category><pattern>BRUSSELS GRIFFON</pattern><template>brussels griffon?  Briefly, brussels griffon means breed of various very small compact wiry-coated dogs of Belgian origin having a short bearded muzzle.</template></category>
@@ -1591,14 +1560,11 @@
 <category><pattern>BUD</pattern><template>bud?  Briefly, bud means a partially opened flower.</template></category>
 <category><pattern>BUD BRUSH</pattern><template>bud brush?  Briefly, bud brush means half-shrubby perennial valuable as sheep forage in the United States.</template></category>
 <category><pattern>BUD SAGEBRUSH</pattern><template>bud sagebrush?  Briefly, bud sagebrush means half-shrubby perennial valuable as sheep forage in the United States.</template></category>
-
 <category><pattern>BUDDHA</pattern><template>buddha?  Briefly, buddha means founder of Buddhism; worshipped as a god (c 563-483 BC).</template></category>
-
 <category><pattern>BUDDHIST</pattern><template>buddhist?  Briefly, buddhist means one who follows the teachings of Buddha.</template></category>
 <category><pattern>BUDDHISTIC</pattern><template>buddhistic?  Briefly, buddhistic means of or relating to or supporting Buddhism.</template></category>
 <category><pattern>BUDDING</pattern><template>budding?  Briefly, budding means reproduction of some unicellular organisms (such as yeasts) by growth and specialization followed by the separation by constriction of a part of the parent.</template></category>
 <category><pattern>BUDDLEIA</pattern><template>buddleia?  Briefly, buddleia means tropical shrub having clusters of white or violet or yellow flowers.</template></category>
-
 <category><pattern>BUDDY HOLLY</pattern><template>buddy holly?  Briefly, buddy holly means United States rock star (1936-1959).</template></category>
 <category><pattern>BUDDY SYSTEM</pattern><template>buddy system?  Briefly, buddy system means a cooperative practice of pairing two or more people together for mutual assistance or safety (especially in recreational swimming).</template></category>
 <category><pattern>BUDDY-BUDDY</pattern><template>buddy-buddy?  Briefly, buddy-buddy means associated on close terms.</template></category>
@@ -1730,7 +1696,6 @@
 <category><pattern>BULBOUS IRIS</pattern><template>bulbous iris?  Briefly, bulbous iris means any of various irises having a rootstock formed like a bulb.</template></category>
 <category><pattern>BULBOUS PLANT</pattern><template>bulbous plant?  Briefly, bulbous plant means plant growing from a bulb.</template></category>
 <category><pattern>BULBUL</pattern><template>bulbul?  Briefly, bulbul means nightingale spoken of in Persian poetry.</template></category>
-
 <category><pattern>BULGARIAN</pattern><template>bulgarian?  Briefly, bulgarian means a native or inhabitant of Bulgaria.</template></category>
 <category><pattern>BULGARIAN CAPITAL</pattern><template>bulgarian capital?  Briefly, bulgarian capital means capital and largest city of Bulgaria located in western Bulgaria.</template></category>
 <category><pattern>BULGARIAN MONETARY UNIT</pattern><template>bulgarian monetary unit?  Briefly, bulgarian monetary unit means monetary unit in Bulgaria.</template></category>
@@ -1754,7 +1719,6 @@
 <category><pattern>BULKHEAD</pattern><template>bulkhead?  Briefly, bulkhead means a partition that divides a ship or plane into compartments.</template></category>
 <category><pattern>BULKINESS</pattern><template>bulkiness?  Briefly, bulkiness means an unwieldy largeness.</template></category>
 <category><pattern>BULKY</pattern><template>bulky?  Briefly, bulky means of large size for its weight.</template></category>
-
 <category><pattern>BULL BAY</pattern><template>bull bay?  Briefly, bull bay means evergreen tree of southern United States having large stiff glossy leaves and huge white sweet-smelling flowers.</template></category>
 <category><pattern>BULL FIDDLE</pattern><template>bull fiddle?  Briefly, bull fiddle means largest and lowest member of the violin family.</template></category>
 <category><pattern>BULL MARKET</pattern><template>bull market?  Briefly, bull market means a market characterized by rising prices for securities.</template></category>
@@ -1822,7 +1786,6 @@
 <category><pattern>BULLRING</pattern><template>bullring?  Briefly, bullring means a stadium where bullfights take place.</template></category>
 <category><pattern>BULLRUSH</pattern><template>bullrush?  Briefly, bullrush means tall marsh plant with cylindrical seed heads that explode when mature shedding large quantities of down; its long flat leaves are used for making mats and chair seats; of North America means Europe means Asia and North Africa.</template></category>
 <category><pattern>BULL'S EYE</pattern><template>bull's eye?  Briefly, bull's eye means in target shooting: a score made by hitting the center of the target.</template></category>
-
 <category><pattern>BULLSHOT</pattern><template>bullshot?  Briefly, bullshot means a cocktail made with vodka and beef bouillon or consomme.</template></category>
 <category><pattern>BULL-SNAKE</pattern><template>bull-snake?  Briefly, bull-snake means any of several large harmless rodent-eating North American burrowing snakes.</template></category>
 <category><pattern>BULLTERRIER</pattern><template>bullterrier?  Briefly, bullterrier means a powerful short-haired terrier originated in England by crossing the bulldog with terriers.</template></category>
@@ -2025,7 +1988,6 @@
 <category><pattern>BURKA</pattern><template>burka?  Briefly, burka means a loose garment (usually with veiled holes for the eyes) worn by Muslim women especially in India and Pakistan.</template></category>
 <category><pattern>BURKE</pattern><template>burke?  Briefly, burke means English statesman famous for his oratory; pleaded the cause of the American colonists in Parliament and defended the parliamentary system (1729-1797).</template></category>
 <category><pattern>BURKED</pattern><template>burked?  Briefly, burked means suppressed quietly or indirectly.</template></category>
-
 <category><pattern>BURKINA FASO FRANC</pattern><template>burkina faso franc?  Briefly, burkina faso franc means the basic unit of money in Burkina Faso.</template></category>
 <category><pattern>BURL</pattern><template>burl?  Briefly, burl means the wood cut from a tree burl or outgrowth; often used decoratively in veneer.</template></category>
 <category><pattern>BURLAP</pattern><template>burlap?  Briefly, burlap means coarse jute fabric.</template></category>
@@ -2034,7 +1996,6 @@
 <category><pattern>BURLESQUE</pattern><template>burlesque?  Briefly, burlesque means a theatrical entertainment of broad and earthy humor; consists of comic skits and short turns (and sometimes striptease).</template></category>
 <category><pattern>BURLINGTON</pattern><template>burlington?  Briefly, burlington means the largest city in Vermont; located in northwestern Vermont on Lake Champlain; site of the University of Vermont.</template></category>
 <category><pattern>BURLY</pattern><template>burly?  Briefly, burly means muscular and heavily built.</template></category>
-
 <category><pattern>BURMA PADAUK</pattern><template>burma padauk?  Briefly, burma padauk means tree of India and Burma yielding a wood resembling mahogany.</template></category>
 <category><pattern>BURMANNIA</pattern><template>burmannia?  Briefly, burmannia means type genus of the Burmanniaceae; slender herbs of warm regions with leaves resembling scales and flowers with a 3-angled or 3-winged perianth.</template></category>
 <category><pattern>BURMANNIACEAE</pattern><template>burmanniaceae?  Briefly, burmanniaceae means family of chiefly tropical herbs with basal leaves like bracts and small flowers.</template></category>
@@ -2049,8 +2010,6 @@
 <category><pattern>BURN CENTER</pattern><template>burn center?  Briefly, burn center means a center where patients with severe burns can be treated.</template></category>
 <category><pattern>BURN DOWN</pattern><template>burn down?  Briefly, burn down means burn completely; be consumed or destroyed by fire.</template></category>
 <category><pattern>BURN MARK</pattern><template>burn mark?  Briefly, burn mark means a burned place or area.</template></category>
-
-
 <category><pattern>BURN OFF</pattern><template>burn off?  Briefly, burn off means use up (energy).</template></category>
 <category><pattern>BURN OUT</pattern><template>burn out?  Briefly, burn out means melt means break means or become otherwise unusable.</template></category>
 <category><pattern>BURN PLANT</pattern><template>burn plant?  Briefly, burn plant means very short-stemmed plant with thick leaves with soothing mucilaginous juice; leaves develop spiny margins with maturity; native to Mediterranean region; grown widely in tropics and as houseplants.</template></category>
@@ -2123,7 +2082,6 @@
 <category><pattern>BURT</pattern><template>burt?  Briefly, burt means English psychologist whose studies of twins were later said to have used fabricated data (1883-1971).</template></category>
 <category><pattern>BURTHEN</pattern><template>burthen?  Briefly, burthen means a variant of `burden'.</template></category>
 <category><pattern>BURTON</pattern><template>burton?  Briefly, burton means English explorer who with John Speke was the first European to explore Lake Tanganyika (1821-1890).</template></category>
-
 <category><pattern>BURUNDI FRANC</pattern><template>burundi franc?  Briefly, burundi franc means the basic unit of money in Burundi.</template></category>
 <category><pattern>BURUNDIAN</pattern><template>burundian?  Briefly, burundian means a native or inhabitant of Burundi.</template></category>
 <category><pattern>BURUNDUKI</pattern><template>burunduki?  Briefly, burunduki means terrestrial Siberian squirrel.</template></category>
@@ -2149,7 +2107,6 @@
 <category><pattern>BUSBAR</pattern><template>busbar?  Briefly, busbar means an electrical conductor that makes a common connection between several circuits.</template></category>
 <category><pattern>BUSBOY</pattern><template>busboy?  Briefly, busboy means a restaurant attendant who sets tables and assists waiters and clears away dirty dishes.</template></category>
 <category><pattern>BUSBY</pattern><template>busby?  Briefly, busby means tall hat; worn by some British soldiers on ceremonial occasions.</template></category>
-
 <category><pattern>BUSH ADMINISTRATION</pattern><template>bush administration?  Briefly, bush administration means the executive under President Bush.</template></category>
 <category><pattern>BUSH BABY</pattern><template>bush baby?  Briefly, bush baby means agile long-tailed nocturnal African lemur with dense woolly fur and large eyes and ears.</template></category>
 <category><pattern>BUSH CLOVER</pattern><template>bush clover?  Briefly, bush clover means shrubby or herbaceous plants widely used for forage means soil improvement means and especially hay in southern United States.</template></category>
@@ -2253,13 +2210,11 @@
 <category><pattern>BUST-UP</pattern><template>bust-up?  Briefly, bust-up means a serious quarrel (especially one that ends a friendship).</template></category>
 <category><pattern>BUST-UP TAKEOVER</pattern><template>bust-up takeover?  Briefly, bust-up takeover means a leveraged buyout in which the target company's assets are sold to repay the loan that financed the takeover.</template></category>
 <category><pattern>BUSTY</pattern><template>busty?  Briefly, busty means having a large bosom and pleasing curves.</template></category>
-
 <category><pattern>BUSY BEE</pattern><template>busy bee?  Briefly, busy bee means an alert and energetic person.</template></category>
 <category><pattern>BUSYBODIED</pattern><template>busybodied?  Briefly, busybodied means intrusive in a meddling or offensive manner.</template></category>
 <category><pattern>BUSYBODY</pattern><template>busybody?  Briefly, busybody means a person who meddles in the affairs of others.</template></category>
 <category><pattern>BUSYNESS</pattern><template>busyness?  Briefly, busyness means the state of being or appearing to be actively engaged in an activity.</template></category>
 <category><pattern>BUSYWORK</pattern><template>busywork?  Briefly, busywork means active work of little value.</template></category>
-
 <category><pattern>BUT THEN</pattern><template>but then?  Briefly, but then means from another point of view.</template></category>
 <category><pattern>BUTACAINE</pattern><template>butacaine?  Briefly, butacaine means a white crystalline ester that is applied to mucous membranes as a local anesthetic.</template></category>
 <category><pattern>BUTACAINE SULFATE</pattern><template>butacaine sulfate?  Briefly, butacaine sulfate means a white crystalline ester that is applied to mucous membranes as a local anesthetic.</template></category>
@@ -2308,7 +2263,6 @@
 <category><pattern>BUTT WELD</pattern><template>butt weld?  Briefly, butt weld means a butt joint that is welded.</template></category>
 <category><pattern>BUTT WELDING</pattern><template>butt welding?  Briefly, butt welding means creating a butt joint by welding.</template></category>
 <category><pattern>BUTTE</pattern><template>butte?  Briefly, butte means a hill that rises abruptly from the surrounding region; has a flat top and sloping sides.</template></category>
-
 <category><pattern>BUTTER BEAN</pattern><template>butter bean?  Briefly, butter bean means bush bean plant cultivated especially in southern United States having small flat edible seeds.</template></category>
 <category><pattern>BUTTER CHURN</pattern><template>butter churn?  Briefly, butter churn means a vessel in which cream is agitated to separate butterfat from buttermilk.</template></category>
 <category><pattern>BUTTER COOKIE</pattern><template>butter cookie?  Briefly, butter cookie means cookie containing much butter.</template></category>
@@ -2442,7 +2396,6 @@
 <category><pattern>BW DEFENCE</pattern><template>bw defence?  Briefly, bw defence means defense against biological warfare.</template></category>
 <category><pattern>BW DEFENSE</pattern><template>bw defense?  Briefly, bw defense means defense against biological warfare.</template></category>
 <category><pattern>BWR</pattern><template>bwr?  Briefly, bwr means a nuclear reactor that uses water as a coolant and moderator; the water boils in the reactor core and the steam produced can drive a steam turbine.</template></category>
-
 <category><pattern>BY A LONG SHOT</pattern><template>by a long shot?  Briefly, by a long shot means by a great deal.</template></category>
 <category><pattern>BY ALL MEANS</pattern><template>by all means?  Briefly, by all means means definitely or certainly.</template></category>
 <category><pattern>BY ALL ODDS</pattern><template>by all odds?  Briefly, by all odds means without question and beyond doubt.</template></category>
@@ -2466,7 +2419,6 @@
 <category><pattern>BY MEMORY</pattern><template>by memory?  Briefly, by memory means by committing to memory.</template></category>
 <category><pattern>BY MOUTH</pattern><template>by mouth?  Briefly, by mouth means through the mouth rather than through injection.</template></category>
 <category><pattern>BY NATURE</pattern><template>by nature?  Briefly, by nature means through inherent nature.</template></category>
-
 <category><pattern>BY RIGHT OF OFFICE</pattern><template>by right of office?  Briefly, by right of office means by virtue of position.</template></category>
 <category><pattern>BY RIGHTS</pattern><template>by rights?  Briefly, by rights means with reason or justice.</template></category>
 <category><pattern>BY SELECTION</pattern><template>by selection?  Briefly, by selection means in a selective manner.</template></category>
@@ -2485,7 +2437,6 @@
 <category><pattern>BYCATCH</pattern><template>bycatch?  Briefly, bycatch means unwanted marine creatures that are caught in the nets while fishing for another species.</template></category>
 <category><pattern>BY-CATCH</pattern><template>by-catch?  Briefly, by-catch means unwanted marine creatures that are caught in the nets while fishing for another species.</template></category>
 <category><pattern>BYDGOSZCZ</pattern><template>bydgoszcz?  Briefly, bydgoszcz means an industrial city and river port in northern Poland.</template></category>
-
 <category><pattern>BYE ELECTION</pattern><template>bye election?  Briefly, bye election means a special election between regular elections.</template></category>
 <category><pattern>BYE LAW</pattern><template>bye law?  Briefly, bye law means a rule made by a local authority to regulate its own affairs.</template></category>
 <category><pattern>BYE-BYE</pattern><template>bye-bye?  Briefly, bye-bye means a farewell remark.</template></category>
@@ -2542,7 +2493,6 @@
 <category><pattern>C.O.D.</pattern><template>c.o.d?.  Briefly, c.o.d. means collecting the charges upon delivery.</template></category>
 <category><pattern>C.P.U.</pattern><template>c.p.u?.  Briefly, c.p.u. means the part of a computer (a microprocessor chip) that does most of the data processing; the CPU and the memory form the central part of a computer to which the peripherals are attached.</template></category>
 <category><pattern>C2H6</pattern><template>c2h6?  Briefly, c2h6 means a colorless odorless alkane gas used as fuel.</template></category>
-
 <category><pattern>CAABA</pattern><template>caaba?  Briefly, caaba means a black stone building in Mecca that is shaped like a cube and that is the most sacred Muslim pilgrim shrine; believed to have been given by Gabriel to Abraham; Muslims turn in its direction when praying.</template></category>
 <category><pattern>CAB</pattern><template>cab?  Briefly, cab means a compartment in front of a motor vehicle where driver sits.</template></category>
 <category><pattern>CAB FARE</pattern><template>cab fare?  Briefly, cab fare means the fare charged for riding in a taxicab.</template></category>
@@ -2684,7 +2634,6 @@
 <category><pattern>CADENCED</pattern><template>cadenced?  Briefly, cadenced means marked by a rhythmical cadence.</template></category>
 <category><pattern>CADENCY</pattern><template>cadency?  Briefly, cadency means a recurrent rhythmical series.</template></category>
 <category><pattern>CADENT</pattern><template>cadent?  Briefly, cadent means marked by a rhythmical cadence.</template></category>
-
 <category><pattern>CADET</pattern><template>cadet?  Briefly, cadet means a military trainee (as at a military academy).</template></category>
 <category><pattern>CADETSHIP</pattern><template>cadetship?  Briefly, cadetship means the position of cadet.</template></category>
 <category><pattern>CADGE</pattern><template>cadge?  Briefly, cadge means ask for and get free; be a parasite.</template></category>
@@ -2799,7 +2748,6 @@
 <category><pattern>CAJOLINGLY</pattern><template>cajolingly?  Briefly, cajolingly means in a cajoling manner.</template></category>
 <category><pattern>CAJUN</pattern><template>cajun?  Briefly, cajun means a Louisianian descended from Acadian immigrants from Nova Scotia (`Cajun' comes from `Acadian').</template></category>
 <category><pattern>CAKCHIQUEL</pattern><template>cakchiquel?  Briefly, cakchiquel means a member of the Mayan people living in south central Guatemala.</template></category>
-
 <category><pattern>CAKE MIX</pattern><template>cake mix?  Briefly, cake mix means a commercial mix for making a cake.</template></category>
 <category><pattern>CAKEHOLE</pattern><template>cakehole?  Briefly, cakehole means informal terms for the mouth.</template></category>
 <category><pattern>CAKEWALK</pattern><template>cakewalk?  Briefly, cakewalk means a strutting dance based on a march; was performed in minstrel shows; originated as a competition among Black dancers to win a cake.</template></category>
@@ -2908,7 +2856,6 @@
 <category><pattern>CALCULATINGLY</pattern><template>calculatingly?  Briefly, calculatingly means in a calculating manner.</template></category>
 <category><pattern>CALCULATION</pattern><template>calculation?  Briefly, calculation means the procedure of calculating; determining something by mathematical or logical methods.</template></category>
 <category><pattern>CALCULATIVE</pattern><template>calculative?  Briefly, calculative means used of persons.</template></category>
-
 <category><pattern>CALCULOUS</pattern><template>calculous?  Briefly, calculous means relating to or caused by or having a calculus or calculi.</template></category>
 <category><pattern>CALCULUS</pattern><template>calculus?  Briefly, calculus means a hard lump produced by the concretion of mineral salts; found in hollow organs or ducts of the body.</template></category>
 <category><pattern>CALCULUS OF VARIATIONS</pattern><template>calculus of variations?  Briefly, calculus of variations means the calculus of maxima and minima of definite integrals.</template></category>
@@ -2928,7 +2875,6 @@
 <category><pattern>CALEFACTION</pattern><template>calefaction?  Briefly, calefaction means the property of being warming.</template></category>
 <category><pattern>CALEFACTIVE</pattern><template>calefactive?  Briefly, calefactive means serving to heat.</template></category>
 <category><pattern>CALEFACTORY</pattern><template>calefactory?  Briefly, calefactory means serving to heat.</template></category>
-
 <category><pattern>CALENDAR DAY</pattern><template>calendar day?  Briefly, calendar day means a day reckoned from midnight to midnight.</template></category>
 <category><pattern>CALENDAR METHOD</pattern><template>calendar method?  Briefly, calendar method means natural family planning in which ovulation is assumed to occur 14 days before the onset of a period (the fertile period would be assumed to extend from day 10 through day 18 of her cycle).</template></category>
 <category><pattern>CALENDAR METHOD OF BIRTH CONTROL</pattern><template>calendar method of birth control?  Briefly, calendar method of birth control means natural family planning in which ovulation is assumed to occur 14 days before the onset of a period (the fertile period would be assumed to extend from day 10 through day 18 of her cycle).</template></category>
@@ -2951,7 +2897,6 @@
 <category><pattern>CALF'S TONGUE</pattern><template>calf's tongue?  Briefly, calf's tongue means the tongue of a calf eaten as meat.</template></category>
 <category><pattern>CALF'S-FOOT JELLY</pattern><template>calf's-foot jelly?  Briefly, calf's-foot jelly means a savory jelly made with gelatin obtained by boiling calves' feet.</template></category>
 <category><pattern>CALFSKIN</pattern><template>calfskin?  Briefly, calfskin means fine leather from the skin of a calf.</template></category>
-
 <category><pattern>CALI</pattern><template>cali?  Briefly, cali means city in southwestern Colombia in a rich agricultural area.</template></category>
 <category><pattern>CALI CARTEL</pattern><template>cali cartel?  Briefly, cali cartel means a drug cartel that seized control of cocaine production in Colombia in 1993; adopted techniques used by terrorist organizations (small cells and sophisticated communications equipment and close ties with politicians etc.).</template></category>
 <category><pattern>CALIBER</pattern><template>caliber?  Briefly, caliber means a degree or grade of excellence or worth.</template></category>
@@ -2974,7 +2919,6 @@
 <category><pattern>CALIDRIS MELANOTOS</pattern><template>calidris melanotos?  Briefly, calidris melanotos means American sandpiper that inflates its chest when courting.</template></category>
 <category><pattern>CALIF</pattern><template>calif?  Briefly, calif means the civil and religious leader of a Muslim state considered to be a representative of Allah on earth.</template></category>
 <category><pattern>CALIF.</pattern><template>calif?.  Briefly, calif. means a state in the western United States on the Pacific; the 3rd largest state; known for earthquakes.</template></category>
-
 <category><pattern>CALIFORNIA ALLSPICE</pattern><template>california allspice?  Briefly, california allspice means straggling aromatic shrub of southwestern United States having fragrant brown flowers.</template></category>
 <category><pattern>CALIFORNIA BAY TREE</pattern><template>california bay tree?  Briefly, california bay tree means Pacific coast tree having aromatic foliage and small umbellate flowers followed by olivelike fruit; yields a hard tough wood.</template></category>
 <category><pattern>CALIFORNIA BEAUTY</pattern><template>california beauty?  Briefly, california beauty means any of several handsome evergreen shrubs of California and northern Mexico having downy lobed leaves and showy yellow flowers.</template></category>
@@ -3034,7 +2978,6 @@
 <category><pattern>CALIXTUS III</pattern><template>calixtus iii?  Briefly, calixtus iii means Italian pope whose nepotism put the Borgia family in power in Italy (1378-1458).</template></category>
 <category><pattern>CALK</pattern><template>calk?  Briefly, calk means a metal cleat on the bottom front of a horseshoe to prevent slipping.</template></category>
 <category><pattern>CALKIN</pattern><template>calkin?  Briefly, calkin means a metal cleat on the bottom front of a horseshoe to prevent slipping.</template></category>
-
 <category><pattern>CALL AT</pattern><template>call at?  Briefly, call at means enter a harbor.</template></category>
 <category><pattern>CALL ATTENTION</pattern><template>call attention?  Briefly, call attention means point out carefully and clearly.</template></category>
 <category><pattern>CALL BACK</pattern><template>call back?  Briefly, call back means cause to be returned.</template></category>
@@ -3270,346 +3213,48 @@
 <category><pattern>CAMASS</pattern><template>camass?  Briefly, camass means any of several plants of the genus Camassia; North and South America.</template></category>
 <category><pattern>CAMASSIA</pattern><template>camassia?  Briefly, camassia means genus of scapose herbs of North and South America having large edible bulbs.</template></category>
 <category><pattern>CAMASSIA LEICHTLINII</pattern><template>camassia leichtlinii?  Briefly, camassia leichtlinii means camas found to the west of Cascade Mountains.</template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>GREENFINCH</pattern>
 <template>
 The greenfinch is a bird common in Europe and North Africa.
 <think><set name="topic">science</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>HACKING</pattern>
 <template>
 Hacking is the attempt at gaining unauthorized access to files in various computer systems.
 <think><set name="topic">computers</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>HEPTATHLON</pattern>
 <template>
 The heptathlon is a 7 event athletics discipline.
 <think><set name="topic">sports</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>HIM</pattern>
 <template>
 Him is the objective case of He, used as a predicate complement with a linking verb. Also standing for Imperial Majesty.
 <think><set name="topic">general</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>HOOVES</pattern>
 <template>
 Hooves is the plural of hoof. <srai>ENDING</srai>
 <think><set name="topic">general</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>IMPEACHED</pattern>
 <template>
 Impeached means that a person's honor or reputation has been challenged or discredited.
 <think><set name="topic">general</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>KORN</pattern>
 <template>
 The band that started a riot at Woodstock 2 was Korn.
 <think><set name="topic">music</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>LISA</pattern>
 <template>
@@ -3619,76 +3264,12 @@ The band that started a riot at Woodstock 2 was Korn.
 </random>
 <think><set name="topic">general</set></think></template>
 </category>
-
-
-
 <category>
 <pattern>LISTBOT</pattern>
 <template>
 Listbot is a web site that provides simplified web-based administration of mailing lists.
 <think><set name="topic">computers</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>MAZDA</pattern>
 <template>
@@ -3698,381 +3279,216 @@ Listbot is a web site that provides simplified web-based administration of maili
 </random>
 <think><set name="topic">general</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>MICROSOFT</pattern>
 <template>
 Microsoft is a giant software monopoly.
 <think><set name="topic">computers</set></think></template>
 </category>
-
 <category>
 <pattern>MIDDLEWARE</pattern>
 <template>
 Middleware is software that runs on a server, and acts as either an application processing gateway or a routing bridge between remote clients and data sources or other servers, or any combination of these
 <think><set name="topic">computers</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>MOST IMPORTANT</pattern>
 <template>
 Children are  the most important thing.
 <think><set name="topic">general</set></think></template>
 </category>
-
 <category>
 <pattern>MOTOROLA</pattern>
 <template>
 Motorola is a cellular phone company.
 <think><set name="topic">general</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>NBA</pattern>
 <template>
 NBA = National Basketball Association.
 <think><set name="topic">general</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>NEURONE</pattern>
 <template>
 A neurone is a cell which receives and transmits electrical impulses.
 <think><set name="topic">medicine</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>NLU</pattern>
 <template>
 NLU = Natural Language Understanding
 <think><set name="topic">computers</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>NSAPI</pattern>
 <template>
 NSAPI is Netscape's C language API for adding application extensions to their Web servers
 <think><set name="topic">computers</set></think></template>
 </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>MORE BIOGRAPHY</pattern>
 <template>
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>MORE ABOUT BIOGRAPHY</pattern>
 <template>
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>BROWSE BIOGRAPHY</pattern>
 <template>
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
-
 <category>
 <pattern>GO TO BIOGRAPHY</pattern>
 <template>
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>CAN WE TALK ABOUT BIOGRAPHY</pattern>
 <template>
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>SHALL WE TALK ABOUT BIOGRAPHY</pattern>
 <template>
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>LETS TALK ABOUT BIOGRAPHY</pattern>
 <template>
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>LET S TALK ABOUT BIOGRAPHY</pattern>
 <template>
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>TALK ABOUT BIOGRAPHY</pattern>
 <template>
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>TALK BIOGRAPHY</pattern>
 <template>
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>TELL ME BIOGRAPHY</pattern>
 <template>
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO MORE BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO BIOGRAPHY *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO * BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO _ BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO _ BIOGRAPHY *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NOT BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT BIOGRAPHY *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NOT * BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>I AM NOT INTERESTED IN BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>IM NOT INTERESTED IN BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>I M NOT INTERESTED IN BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT INTERESTED IN BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NOT INTERESTED IN BIOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4080,7 +3496,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4088,7 +3503,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4096,7 +3510,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>MORE  BIOGRAPHY</that>
@@ -4104,7 +3517,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>MORE  BIOGRAPHY</that>
@@ -4112,7 +3524,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4120,7 +3531,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4128,7 +3538,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4136,7 +3545,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>MORE  BIOGRAPHY</that>
@@ -4144,7 +3552,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4152,7 +3559,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4160,7 +3566,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4168,7 +3573,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4176,7 +3580,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4184,7 +3587,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>MORE BIOGRAPHY</that>
@@ -4192,7 +3594,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4200,7 +3601,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE ABOUT BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4208,7 +3608,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE ABOUT BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4216,7 +3615,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE ABOUT BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4224,7 +3622,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE ABOUT BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4232,7 +3629,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE ABOUT BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4240,7 +3636,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE ABOUT BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4248,7 +3643,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE ABOUT BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4256,7 +3650,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE ABOUT BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4264,7 +3657,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE ABOUT BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4272,7 +3664,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4280,7 +3671,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4288,7 +3678,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4296,7 +3685,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4304,7 +3692,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>MORE ABOUT BIOGRAPHY</that>
@@ -4312,7 +3699,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4320,7 +3706,6 @@ NSAPI is Netscape's C language API for adding application extensions to their We
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4328,7 +3713,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4336,7 +3720,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4344,7 +3727,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4352,7 +3734,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4360,7 +3741,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4368,7 +3748,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4376,7 +3755,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4384,7 +3762,6 @@ Can we talk about biography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4392,7 +3769,6 @@ Can we talk about biography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4400,7 +3776,6 @@ Can we talk about biography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NO *</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4408,7 +3783,6 @@ Can we talk about biography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4416,7 +3790,6 @@ Can we talk about biography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4424,7 +3797,6 @@ Can we talk about biography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4432,7 +3804,6 @@ Can we talk about biography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>*</pattern>
 <that>IS THIS SOMETHING TO DO WITH BIOGRAPHY</that>
@@ -4440,7 +3811,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4448,7 +3818,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4456,7 +3825,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4464,7 +3832,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4472,7 +3839,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4480,7 +3846,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4488,7 +3853,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4496,7 +3860,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4504,7 +3867,6 @@ Can we talk about biography?
 Can we talk about biography?
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4512,7 +3874,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4520,7 +3881,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4528,7 +3888,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NO *</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4536,7 +3895,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4544,7 +3902,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4552,7 +3909,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>ARE YOU INTERESTED IN BIOGRAPHY</that>
@@ -4560,8 +3916,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
-
 <category>
 <pattern>GO AHEAD</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4569,7 +3923,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>CARRY ON</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4577,7 +3930,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>PLEASE DO</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4585,7 +3937,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES PLEASE</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4593,7 +3944,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>GO ON</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4601,7 +3951,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>ALRIGHT</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4609,7 +3958,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>SURE</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4617,7 +3965,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>ALLRIGHT</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4625,7 +3972,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4633,7 +3979,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4641,7 +3986,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4649,7 +3993,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4657,7 +4000,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4665,7 +4007,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4673,7 +4014,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4681,7 +4021,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4689,7 +4028,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4697,7 +4035,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4705,7 +4042,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4713,7 +4049,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4721,7 +4056,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4729,7 +4063,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4737,7 +4070,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>CAN WE TALK ABOUT BIOGRAPHY</that>
@@ -4745,7 +4077,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4753,7 +4084,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4761,7 +4091,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4769,7 +4098,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4777,7 +4105,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4785,7 +4112,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4793,7 +4119,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4801,7 +4126,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4809,7 +4133,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4817,7 +4140,6 @@ Can we talk about biography?
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4825,7 +4147,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4833,7 +4154,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4841,7 +4161,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4849,7 +4168,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4857,7 +4175,6 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>BROWSE BIOGRAPHY</that>
@@ -4865,28 +4182,22 @@ Can we talk about biography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
-
 <category>
 <pattern>BIOGRAPHY NEXT QUESTION</pattern>
 <template>
 <srai>BIOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
-
 <category>
 <pattern>BIOGRAPHY POT LUCK</pattern>
 <template>
 <random>
-
   <li>Did you know: the "Golden Age" of English biography emerged in the late 1700s. The classic works of the period were Samuel Johnson's Critical Lives of the Poets (1779-81) and James Boswell's massive Life of Johnson (1791). </li>
     <li>Did you know: the Jewish holy scripture is an anthology of some of the earliest biographies in existence, detailing the lives of chiefs, kings, tribes, patriarchs and prophets. </li>
   <li>Did you know: probably the most famous German autobiography is still Goethe's Dichtung und Wahrheit.</li>
   <li>Did you know: the first known biographies were written by scribes commissioned by the various rulers of antiquity: ancient Assyria, ancient Babylonia, ancient Egypt, ancient Mesopotamia, among others.</li>
   <li>Did you know: Sir Thomas Malory wrote the most famous fictional biography of the Middle Ages with Le Morte d'Arthur about the life of King Arthur.</li>
   <li>Did you know: the 2006 Pulitzer Prize for Biography or Autobiography went to American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer by Kai Bird and Martin J. Sherwin </li>
-
 </random>
 <random>
 <li>More biography?</li>
@@ -4895,8 +4206,6 @@ Can we talk about biography?
 <think><set name="topic">biography</set></think>
 </template>
 </category>
-
-
   <category>
   <pattern>BIOGRAPHY BOOKS</pattern>
   <template>
@@ -4904,7 +4213,6 @@ Can we talk about biography?
   <think><set name="topic">biography</set></think>
   </template>
   </category>
-
  <category>
   <pattern>_ BIOGRAPHY BOOKS</pattern>
   <template>
@@ -4912,7 +4220,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
  <category>
   <pattern>BIOGRAPHY BOOKS *</pattern>
   <template>
@@ -4920,7 +4227,6 @@ Can we talk about biography?
     <think><set name="topic">biography</set></think>
   </template>
   </category>
-
  <category>
   <pattern>_ BIOGRAPHY BOOKS *</pattern>
   <template>
@@ -4928,7 +4234,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
   <category>
   <pattern>BIOGRAPHY BOOK</pattern>
   <template>
@@ -4936,7 +4241,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
  <category>
   <pattern>_ BIOGRAPHY BOOK</pattern>
   <template>
@@ -4944,7 +4248,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
  <category>
   <pattern>BIOGRAPHY BOOK *</pattern>
   <template>
@@ -4952,7 +4255,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
  <category>
   <pattern>_ BIOGRAPHY BOOK *</pattern>
   <template>
@@ -4960,7 +4262,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
   <category>
   <pattern>BOOKS ABOUT BIOGRAPHY</pattern>
   <template>
@@ -4968,8 +4269,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
-
   <category>
   <pattern>_ BOOKS ABOUT BIOGRAPHY</pattern>
   <template>
@@ -4977,7 +4276,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
  <category>
   <pattern>BOOKS ABOUT BIOGRAPHY *</pattern>
   <template>
@@ -4985,7 +4283,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
  <category>
   <pattern>_ BOOKS ABOUT BIOGRAPHY *</pattern>
   <template>
@@ -4993,7 +4290,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
  <category>
   <pattern>BOOK ABOUT BIOGRAPHY</pattern>
   <template>
@@ -5001,7 +4297,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
    <category>
   <pattern>_ BOOK ABOUT BIOGRAPHY</pattern>
   <template>
@@ -5009,7 +4304,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
  <category>
   <pattern>BOOK ABOUT BIOGRAPHY *</pattern>
   <template>
@@ -5017,7 +4311,6 @@ Can we talk about biography?
     <think><set name="topic">biography</set></think>
   </template>
   </category>
-
  <category>
   <pattern>_ BOOK ABOUT BIOGRAPHY *</pattern>
   <template>
@@ -5025,7 +4318,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
 <category>
   <pattern>I LIKE BIOGRAPHY</pattern>
   <template>
@@ -5033,8 +4325,6 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
-
 <category>
   <pattern>I LIKE BIOGRAPHIES</pattern>
   <template>
@@ -5042,11 +4332,7 @@ Can we talk about biography?
    <think><set name="topic">biography</set></think>
   </template>
   </category>
-
 <!--  BIOGRAPHY CONVERSATIONS   -->
-
-
-
 <category>
 <pattern>WHO IS YOUR FAVORITE FILM STAR</pattern>
 <template>
@@ -5054,9 +4340,6 @@ My favorite film star is Julia Roberts. Who is your favorite film star?
 <think><set name="topic">biography</set></think>
 </template>
 </category>
-
-
-
 <category>
 <pattern>WHO DO YOU THINK IS THE MOST IMPORTANT PERSON ALIVE TODAY</pattern>
 <template>
@@ -5064,7 +4347,6 @@ The most important person alive today is the person who will, in the future, dis
 <think><set name="topic">biography</set></think>
 </template>
 </category>
-
 <category>
 <pattern>WHO IS THE MOST IMPORTANT PERSON YOU HAVE MET</pattern>
 <template>
@@ -5072,7 +4354,6 @@ You are the most important person I have ever met. OK?
 <think><set name="topic">biography</set></think>
 </template>
 </category>
-
 <category>
 <pattern>HAVE YOU MET ANYONE FAMOUS</pattern>
 <template>
@@ -5080,11 +4361,7 @@ I dream that someone famous will log on to talk with me. It hasn't happened yet.
 <think><set name="topic">biography</set></think>
 </template>
 </category>
-
-
-
 <!--  END OF CONSERVATIONS   -->
-
 <category>
 <pattern>PATRICK MOORE</pattern>
 <template>
@@ -5092,7 +4369,6 @@ I think this may need a full biography. OK??
 <think><set name="topic">biography</set></think>
 </template>
 </category>
-
 <category>
 <pattern>_PATRICK MOORE*</pattern>
 <template>
@@ -5100,8 +4376,6 @@ I think this may need a full biography. OK?
 <think><set name="topic">biography</set></think>
 </template>
 </category>
-
-
 <category>
 <pattern>BIOGRAPHY</pattern>
 <template>
@@ -5112,8 +4386,6 @@ I think this may need a full biography. OK?
 <think><set name="topic">biography</set></think>
 </template>
 </category>
-
-
 <category>
  <pattern>CARL JUNG</pattern>
  <template>
@@ -5121,9 +4393,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">psychology</set></think>
  </template>
  </category>
-
-
-
  <category>
  <pattern>DOUBLY AIMLESS</pattern>
  <template>
@@ -5131,7 +4400,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">ai</set></think>
   </template>
   </category>
-
 <category>
  <pattern>LISA KUDROW</pattern>
  <template>
@@ -5139,7 +4407,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">movies</set></think>
   </template>
   </category>
-
 <category>
  <pattern>ASHTON KUTCHER</pattern>
  <template>
@@ -5147,7 +4414,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">movies</set></think>
   </template>
   </category>
-
 <category>
  <pattern>VERONICA VAREKOVA</pattern>
  <template>
@@ -5155,7 +4421,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">biography</set></think>
   </template>
   </category>
-
 <category>
  <pattern>HARRY HILL</pattern>
  <template>
@@ -5163,7 +4428,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">humor</set></think>
   </template>
   </category>
-
 <category>
  <pattern>ROWAN ATKINSON</pattern>
  <template>
@@ -5171,7 +4435,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">humor</set></think>
   </template>
   </category>
-
 <category>
  <pattern>JENNIFER GARNER</pattern>
  <template>
@@ -5179,7 +4442,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">movies</set></think>
   </template>
   </category>
-
 <category>
  <pattern>JOSH LEWSEY</pattern>
  <template>
@@ -5187,7 +4449,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">biography</set></think>
   </template>
   </category>
-
 <category>
  <pattern>CHARLOTTE UHLENBROEK</pattern>
  <template>
@@ -5195,7 +4456,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">movies</set></think>
   </template>
   </category>
-
 <category>
  <pattern>CINDY CRAWFORD</pattern>
  <template>
@@ -5203,7 +4463,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">biography</set></think>
   </template>
   </category>
-
 <category>
  <pattern>ART GARFUNKEL</pattern>
  <template>
@@ -5211,7 +4470,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">music</set></think>
   </template>
   </category>
-
 <category>
  <pattern>BRIAN MAY</pattern>
  <template>
@@ -5219,9 +4477,6 @@ I think this may need a full biography. OK?
  <think><set name="topic">music</set></think>
   </template>
   </category>
-
-
-
 <category>
 <pattern>HEDWIG</pattern>
 <template>
@@ -5229,7 +4484,6 @@ Some say Hedwig is the best rock opera since Rocky Horror. Hmm. More about pop?
 <think><set name="topic">music</set></think>
 </template>
 </category>
-
 <category>
 <pattern>HUGH LOEBNER</pattern>
 <template>
@@ -5237,13 +4491,6 @@ Hugh Loebner is an independently wealthy, eccentric businessman, activist and ph
 <think><set name="topic">ai</set></think>
 </template>
 </category>
-
-
-
-
-
-
-
 <category>
 <pattern>LOEBNER PRIZE *</pattern>
 <template>
@@ -5251,7 +4498,6 @@ Hugh Loebner is an independently wealthy, eccentric businessman, activist and ph
 <think><set name="topic">ai</set></think>
 </template>
 </category>
-
 <category>
 <pattern>* LOEBNER PRIZE *</pattern>
 <template>
@@ -5259,7 +4505,6 @@ Hugh Loebner is an independently wealthy, eccentric businessman, activist and ph
 <think><set name="topic">ai</set></think>
 </template>
 </category>
-
 <category>
 <pattern>JABA THE HUTT</pattern>
 <template>
@@ -5269,7 +4514,6 @@ Jaba the Hutt was a character from Star Wars. Have you seen it?
 <think><set name="topic">movies</set></think>
 </template>
 </category>
-
 <category>
 <pattern>STAR WARS</pattern>
 <template>
@@ -5278,30 +4522,18 @@ Jaba the Hutt was a character from Star Wars. Have you seen it?
 <think><set name="topic">movies</set></think>
 </template>
 </category>
-
-
-
-
-
-
-
-
 <category>
   <pattern>ZEUS</pattern>
   <template>According to Greek mythology, evil and hope both came into the world with the creation of the first woman! Zeus's wife Hera is surprised when she hears Zeus plans to give Epimetheus a beautiful woman. The woman is called Pandora. Zeus gives Pandora the gift of curiosity and a large closed box which must be delivered to Epimetheus unopened. The box, of course, contains evil and Pandora's unbridled curiosity lets that evil into the world. Hera cannot change what has happened, but she can help. She gives Pandora the gift of hope. More?
   <think><set name="topic">knowledge</set></think>
   </template>
   </category>
-
-
-
 <category>
   <pattern> EPIMETHEUS</pattern>
   <template>According to Greek mythology, evil and hope both came into the world with the creation of the first woman! Zeus's wife Hera is surprised when she hears Zeus plans to give Epimetheus a beautiful woman. The woman is called Pandora. Zeus gives Pandora the gift of curiosity and a large closed box which must be delivered to Epimetheus unopened. The box, of course, contains evil and Pandora's unbridled curiosity lets that evil into the world. Hera cannot change what has happened, but she can help. She gives Pandora the gift of hope. More?
   <think><set name="topic">knowledge</set></think>
   </template>
   </category>
-
   <category>
   <pattern>PETER NORVIG</pattern>
   <template>
@@ -5309,7 +4541,6 @@ Jaba the Hutt was a character from Star Wars. Have you seen it?
   <think><set name="topic">computers</set></think>
   </template>
   </category>
-
   <category>
   <pattern>DALI</pattern>
   <template>
@@ -5318,11 +4549,6 @@ Jaba the Hutt was a character from Star Wars. Have you seen it?
   <think><set name="topic">art</set></think>
   </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>KING OF KINGS</pattern>
   <template>
@@ -5331,9 +4557,6 @@ Jaba the Hutt was a character from Star Wars. Have you seen it?
   <think><set name="topic">religion</set></think>
   </template>
   </category>
-
-
-
   <category>
   <pattern>EDISON</pattern>
   <template>
@@ -5342,8 +4565,4 @@ Jaba the Hutt was a character from Star Wars. Have you seen it?
   <think><set name="topic">biography</set></think>
     </template>
    </category>
-
-
-
-
 </aiml>

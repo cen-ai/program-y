@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?> 
 
- 
-
-<aiml>
-
- 
+<aiml version="1.0">
 
 <!-- This file contains AIML categories for use with an AIML chatbot              -->
 <!-- This file copyright (C) Peter Lafferty 2012. All rights reserved.            -->
@@ -12,11 +8,9 @@
 <!-- University. All rights reserved.                                             -->
 <!-- Some text based on Wikipedia 2012. Copyright, various contributors           -->
 <!-- to Wikipedia. All rights reserved.                                           -->
-
 <!-- Complies with AIML 1.0.1 Tag Set Specification                               -->
 <!-- as adopted by the ALICE A.I. Foundation.                                     -->
 <!-- Copyright (C) 2003, 2011  ALICE A.I. Foundation. All rights reserved.        -->
-
 <!-- This software and database is being provided to you, the LICENSEE,           -->
 <!-- by the copyright holders under the following license. By                     -->
 <!-- obtaining, using and/or copying this software and database, you agree that   -->
@@ -27,7 +21,6 @@
 <!-- notices and statements, including the disclaimer, and that the same appear   -->
 <!-- on ALL copies of the software, database and documentation, including         -->
 <!-- modifications that you make for internal use or for distribution.            -->
-
 <!-- THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND THE COPYRIGHT HOLDERS     -->
 <!-- MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF         -->
 <!-- EXAMPLE, BUT NOT LIMITATION, THE COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS   -->
@@ -35,15 +28,12 @@
 <!-- OR THAT THE USE OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL     -->
 <!-- NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER        -->
 <!-- RIGHTS.                                                                      -->
-
 <!-- The name of Princeton University or Princeton may not be used in             -->
 <!-- advertising or publicity pertaining to distribution of the software          -->
 <!-- and/or database. Title to copyright in WordNet 3.0, database and any         -->
 <!-- associated documentation, shall at all times remain with Princeton           -->
 <!-- University and the LICENSEE agrees to preserve same.                         -->
-
-<!-- This file Professor.0021 (C) Peter Lafferty 2012. All rights reserved.       -->                                             
-
+<!-- This file Professor.0021 (C) Peter Lafferty 2012. All rights reserved.       -->
 <category><pattern>SYMONS</pattern><template>symons?  Briefly, symons means English poet (1865-1945).</template></category>
 <category><pattern>SYMPATHECTOMY</pattern><template>sympathectomy?  Briefly, sympathectomy means surgical interruption of a nerve pathway in the sympathetic nervous system.</template></category>
 <category><pattern>SYMPATHETIC</pattern><template>sympathetic?  Briefly, sympathetic means of or relating to the sympathetic nervous system.</template></category>
@@ -780,7 +770,6 @@
 <category><pattern>TALIPOT PALM</pattern><template>talipot palm?  Briefly, talipot palm means tall palm of southern India and Sri Lanka with gigantic leaves used as umbrellas and fans or cut into strips for writing paper.</template></category>
 <category><pattern>TALISMAN</pattern><template>talisman?  Briefly, talisman means a trinket or piece of jewelry thought to be a protection against evil.</template></category>
 <category><pattern>TALISMANIC</pattern><template>talismanic?  Briefly, talismanic means possessing or believed to possess magic power especially protective power.</template></category>
-
 <category><pattern>TALK ABOUT</pattern><template>talk about?  Briefly, talk about means to consider or examine in speech or writing.</template></category>
 <category><pattern>TALK DOWN</pattern><template>talk down?  Briefly, talk down means belittle through talk.</template></category>
 <category><pattern>TALK INTO</pattern><template>talk into?  Briefly, talk into means persuade somebody to do something.</template></category>
@@ -804,7 +793,6 @@
 <category><pattern>TALKING HEAD</pattern><template>talking head?  Briefly, talking head means a talker on television who talks directly into the cameras and whose upper body is all that is shown on the screen.</template></category>
 <category><pattern>TALKING PICTURE</pattern><template>talking picture?  Briefly, talking picture means a movie with synchronized speech and singing.</template></category>
 <category><pattern>TALKING POINT</pattern><template>talking point?  Briefly, talking point means an especially persuasive point helping to support an argument or discussion.</template></category>
-
 <category><pattern>TALKS</pattern><template>talks?  Briefly, talks means a discussion intended to produce an agreement.</template></category>
 <category><pattern>TALKY</pattern><template>talky?  Briefly, talky means full of trivial conversation.</template></category>
 <category><pattern>TALL</pattern><template>tall?  Briefly, tall means great in vertical dimension; high in stature.</template></category>
@@ -1451,8 +1439,6 @@
 <category><pattern>T-BILL</pattern><template>t-bill?  Briefly, t-bill means a short-term obligation that is not interest-bearing (it is purchased at a discount); can be traded on a discount basis for 91 days.</template></category>
 <category><pattern>T-BONE STEAK</pattern><template>t-bone steak?  Briefly, t-bone steak means small steak from the thin end of the short loin containing a T-shaped bone and small piece of tenderloin.</template></category>
 <category><pattern>TC</pattern><template>tc?  Briefly, tc means a crystalline metallic element not found in nature; occurs as one of the fission products of uranium.</template></category>
-
-
 <category><pattern>SUICIDE SQUEEZE</pattern><template>suicide squeeze?  Briefly, suicide squeeze means the runner on third base starts home as the pitcher delivers the ball.</template></category>
 <category><pattern>SUICIDE SQUEEZE PLAY</pattern><template>suicide squeeze play?  Briefly, suicide squeeze play means the runner on third base starts home as the pitcher delivers the ball.</template></category>
 <category><pattern>SUIDAE</pattern><template>suidae?  Briefly, suidae means pigs; hogs; boars.</template></category>
@@ -1751,7 +1737,6 @@
 <category><pattern>SUNUP</pattern><template>sunup?  Briefly, sunup means the first light of day.</template></category>
 <category><pattern>SUN-WORSHIP</pattern><template>sun-worship?  Briefly, sun-worship means worship of the sun.</template></category>
 <category><pattern>SUOMI</pattern><template>suomi?  Briefly, suomi means republic in northern Europe; achieved independence from Russia in 1917.</template></category>
-
 <category><pattern>SUPER</pattern><template>super?  Briefly, super means a caretaker for an apartment house; represents the owner as janitor and rent collector.</template></category>
 <category><pattern>SUPER ACID</pattern><template>super acid?  Briefly, super acid means street names for ketamine.</template></category>
 <category><pattern>SUPER C</pattern><template>super c?  Briefly, super c means street names for ketamine.</template></category>
@@ -2059,10 +2044,8 @@
 <category><pattern>SURCHARGE</pattern><template>surcharge?  Briefly, surcharge means an additional charge (as for items previously omitted or as a penalty for failure to exercise common caution or common skill).</template></category>
 <category><pattern>SURCOAT</pattern><template>surcoat?  Briefly, surcoat means a loose outer coat usually of rich material.</template></category>
 <category><pattern>SURD</pattern><template>surd?  Briefly, surd means a consonant produced without sound from the vocal cords.</template></category>
-
 <category><pattern>SURE AS SHOOTING</pattern><template>sure as shooting?  Briefly, sure as shooting means absolutely certain.</template></category>
 <category><pattern>SURE ENOUGH</pattern><template>sure enough?  Briefly, sure enough means as supposed or expected.</template></category>
-
 <category><pattern>SURE-ENOUGH</pattern><template>sure-enough?  Briefly, sure-enough means used informally especially for emphasis.</template></category>
 <category><pattern>SURE-FIRE</pattern><template>sure-fire?  Briefly, sure-fire means certain to be successful.</template></category>
 <category><pattern>SUREFOOTED</pattern><template>surefooted?  Briefly, surefooted means not liable to stumble or fall.</template></category>
@@ -2494,7 +2477,6 @@
 <category><pattern>SWEEP-SECOND</pattern><template>sweep-second?  Briefly, sweep-second means a second hand that is mounted on the same center as the hour and minute hand and is read on the minutes.</template></category>
 <category><pattern>SWEEPSTAKE</pattern><template>sweepstake?  Briefly, sweepstake means a lottery in which the prize consists of the money paid by the participants.</template></category>
 <category><pattern>SWEEPSTAKES</pattern><template>sweepstakes?  Briefly, sweepstakes means a lottery in which the prize consists of the money paid by the participants.</template></category>
-
 <category><pattern>SWEET ACACIA</pattern><template>sweet acacia?  Briefly, sweet acacia means tropical American thorny shrub or small tree; fragrant yellow flowers used in making perfumery.</template></category>
 <category><pattern>SWEET ALISON</pattern><template>sweet alison?  Briefly, sweet alison means perennial European plant having clusters of small fragrant usually white flowers; widely grown in gardens.</template></category>
 <category><pattern>SWEET ALMOND</pattern><template>sweet almond?  Briefly, sweet almond means small bushy deciduous tree native to Asia and North Africa having pretty pink blossoms and highly prized edible nuts enclosed in a hard green hull; cultivated in southern Australia and California.</template></category>
@@ -2834,7 +2816,6 @@
 <category><pattern>SYMMETRIZE</pattern><template>symmetrize?  Briefly, symmetrize means make symmetric.</template></category>
 <category><pattern>SYMMETRY</pattern><template>symmetry?  Briefly, symmetry means an attribute of a shape or relation; exact correspondence of form on opposite sides of a dividing line or plane.</template></category>
 <category><pattern>SYMONDS</pattern><template>symonds?  Briefly, symonds means English writer (1840-1893).</template></category>
-
 <category><pattern>SPERMATOPHYTE</pattern><template>spermatophyte?  Briefly, spermatophyte means plant that reproduces by means of seeds not spores.</template></category>
 <category><pattern>SPERMATOZOAN</pattern><template>spermatozoan?  Briefly, spermatozoan means the male reproductive cell; the male gamete.</template></category>
 <category><pattern>SPERMATOZOID</pattern><template>spermatozoid?  Briefly, spermatozoid means a motile male gamete of a plant such as an alga or fern or gymnosperm.</template></category>
@@ -4387,7 +4368,6 @@
 <category><pattern>STAR-SHAPED</pattern><template>star-shaped?  Briefly, star-shaped means shaped like a star.</template></category>
 <category><pattern>STARSHIP</pattern><template>starship?  Briefly, starship means a spacecraft designed to carry a crew into interstellar space (especially in science fiction).</template></category>
 <category><pattern>STAR-SPANGLED BANNER</pattern><template>star-spangled banner?  Briefly, star-spangled banner means the national flage of the United States of America.</template></category>
-
 <category><pattern>START OUT</pattern><template>start out?  Briefly, start out means take the first step or steps in carrying out an action.</template></category>
 <category><pattern>START UP</pattern><template>start up?  Briefly, start up means get going or set in motion.</template></category>
 <category><pattern>STARTER</pattern><template>starter?  Briefly, starter means an electric motor for starting an engine.</template></category>
@@ -4538,7 +4518,6 @@
 <category><pattern>STATUESQUE</pattern><template>statuesque?  Briefly, statuesque means of size and dignity suggestive of a statue.</template></category>
 <category><pattern>STATUETTE</pattern><template>statuette?  Briefly, statuette means a small carved or molded figure.</template></category>
 <category><pattern>STATURE</pattern><template>stature?  Briefly, stature means high level of respect gained by impressive development or achievement.</template></category>
-
 <category><pattern>STATUS ASTHMATICUS</pattern><template>status asthmaticus?  Briefly, status asthmaticus means a prolonged and severe asthma attack that does not respond to standard treatment.</template></category>
 <category><pattern>STATUS EPILEPTICUS</pattern><template>status epilepticus?  Briefly, status epilepticus means a condition in which there are continuing attacks of epilepsy without intervals of consciousness; can lead to brain damage and death.</template></category>
 <category><pattern>STATUS QUO</pattern><template>status quo?  Briefly, status quo means the existing state of affairs.</template></category>
@@ -5186,7 +5165,6 @@
 <category><pattern>STOCK INDEX</pattern><template>stock index?  Briefly, stock index means index based on a statistical compilation of the share prices of a number of representative stocks.</template></category>
 <category><pattern>STOCK ISSUE</pattern><template>stock issue?  Briefly, stock issue means the authorization and delivery of shares of stock for sale to the public or the shares thus offered at a particular time.</template></category>
 <category><pattern>STOCK LIST</pattern><template>stock list?  Briefly, stock list means a detailed list of all the items in stock.</template></category>
-
 <category><pattern>STOCK MARKET INDEX</pattern><template>stock market index?  Briefly, stock market index means index based on a statistical compilation of the share prices of a number of representative stocks.</template></category>
 <category><pattern>STOCK OF RECORD</pattern><template>stock of record?  Briefly, stock of record means stock held by stockholders of record on a given date.</template></category>
 <category><pattern>STOCK OPTION</pattern><template>stock option?  Briefly, stock option means the right to buy or sell a stock at a specified price within a stated period.</template></category>
@@ -5361,7 +5339,6 @@
 <category><pattern>STOOPED</pattern><template>stooped?  Briefly, stooped means having the back and shoulders rounded; not erect.</template></category>
 <category><pattern>STOOPER</pattern><template>stooper?  Briefly, stooper means a person at a racetrack who searches for winning parimutuel tickets that have been carelessly discarded by others.</template></category>
 <category><pattern>STOOPING</pattern><template>stooping?  Briefly, stooping means having the back and shoulders rounded; not erect.</template></category>
-
 <category><pattern>STOP BATH</pattern><template>stop bath?  Briefly, stop bath means an acid bath used to stop the action of a developer.</template></category>
 <category><pattern>STOP CONSONANT</pattern><template>stop consonant?  Briefly, stop consonant means a consonant produced by stopping the flow of air at some point and suddenly releasing it.</template></category>
 <category><pattern>STOP DEAD</pattern><template>stop dead?  Briefly, stop dead means stop moving or become immobilized.</template></category>
@@ -5559,7 +5536,6 @@
 <category><pattern>STRAND</pattern><template>strand?  Briefly, strand means a pattern forming a unity within a larger structural whole.</template></category>
 <category><pattern>STRAND WOLF</pattern><template>strand wolf?  Briefly, strand wolf means of southern Africa.</template></category>
 <category><pattern>STRANDED</pattern><template>stranded?  Briefly, stranded means cut off or left behind.</template></category>
-
 <category><pattern>STRANGE ATTRACTOR</pattern><template>strange attractor?  Briefly, strange attractor means an attractor for which the approach to its final point in phase space is chaotic.</template></category>
 <category><pattern>STRANGE PARTICLE</pattern><template>strange particle?  Briefly, strange particle means an elementary particle with non-zero strangeness.</template></category>
 <category><pattern>STRANGE QUARK</pattern><template>strange quark?  Briefly, strange quark means a quark with an electric charge of -1/3 and a mass 988 times that of an electron and a strangeness of -1.</template></category>
@@ -6045,7 +6021,6 @@
 <category><pattern>STUDY</pattern><template>study?  Briefly, study means a detailed critical inspection.</template></category>
 <category><pattern>STUDY HALL</pattern><template>study hall?  Briefly, study hall means a period of time during the school day that is set aside for study.</template></category>
 <category><pattern>STUDYING</pattern><template>studying?  Briefly, studying means reading carefully with intent to remember.</template></category>
-
 <category><pattern>STUFF AND NONSENSE</pattern><template>stuff and nonsense?  Briefly, stuff and nonsense means senseless talk.</template></category>
 <category><pattern>STUFF SHOT</pattern><template>stuff shot?  Briefly, stuff shot means a basketball shot in which the basketball is propelled downward into the basket.</template></category>
 <category><pattern>STUFFED</pattern><template>stuffed?  Briefly, stuffed means filled with something.</template></category>
@@ -6103,7 +6078,6 @@
 <category><pattern>STUPEFYING</pattern><template>stupefying?  Briefly, stupefying means so surprisingly impressive as to stun or overwhelm.</template></category>
 <category><pattern>STUPENDOUS</pattern><template>stupendous?  Briefly, stupendous means so great in size or force or extent as to elicit awe.</template></category>
 <category><pattern>STUPENDOUSLY</pattern><template>stupendously?  Briefly, stupendously means to a stupendous degree.</template></category>
-
 <category><pattern>STUPID PERSON</pattern><template>stupid person?  Briefly, stupid person means a person who is not very bright.</template></category>
 <category><pattern>STUPIDITY</pattern><template>stupidity?  Briefly, stupidity means a poor ability to understand or to profit from experience.</template></category>
 <category><pattern>STUPIDLY</pattern><template>stupidly?  Briefly, stupidly means in a stupid manner.</template></category>
@@ -6726,7 +6700,6 @@
 <category><pattern>SUCCESSIVE</pattern><template>successive?  Briefly, successive means in regular succession without gaps.</template></category>
 <category><pattern>SUCCESSIVELY</pattern><template>successively?  Briefly, successively means in proper order or sequence.</template></category>
 <category><pattern>SUCCESSIVENESS</pattern><template>successiveness?  Briefly, successiveness means a following of one thing after another in time.</template></category>
-
 <category><pattern>SUCCINCT</pattern><template>succinct?  Briefly, succinct means briefly giving the gist of something.</template></category>
 <category><pattern>SUCCINCTLY</pattern><template>succinctly?  Briefly, succinctly means with concise and precise brevity; to the point.</template></category>
 <category><pattern>SUCCINCTNESS</pattern><template>succinctness?  Briefly, succinctness means terseness and economy in writing and speaking achieved by expressing a great deal in just a few words.</template></category>
@@ -6887,313 +6860,239 @@
 <category><pattern>SUICIDE MISSION</pattern><template>suicide mission?  Briefly, suicide mission means killing or injuring others while annihilating yourself; usually accomplished with a bomb.</template></category>
 <category><pattern>SUICIDE PACT</pattern><template>suicide pact?  Briefly, suicide pact means an agreement by two or more people to commit suicide together at a given place and time.</template></category>
 <category><pattern>SUICIDE PILL</pattern><template>suicide pill?  Briefly, suicide pill means a poison pill.</template></category>
-
-
-
   <category>
-  <pattern>COLOR INQUIRY OM</pattern> 
+  <pattern>COLOR INQUIRY OM</pattern>
   <template>
 <think><set name="topic">inquiry</set></think>
-What is your favorite color?</template> 
+What is your favorite color?</template>
   </category>
-
   <category>
-  <pattern>COLOR INQUIRY *</pattern> 
+  <pattern>COLOR INQUIRY *</pattern>
   <template>
 <think><set name="topic">inquiry</set></think>
-
-  What do you have that is 
-  <star /> 
-  ? 
+  What do you have that is
+  <star />
+  ?
+  </template>
+  </category>
+  <category>
+  <pattern>DOES INQUIRY OM</pattern>
+  <template>
+<think><set name="topic">inquiry</set></think>
+What are you doing</template>
+  </category>
+  <category>
+  <pattern>DOES INQUIRY *</pattern>
+  <template>
+<think><set name="topic">inquiry</set></think>
+  Are you still
+  <star />
+  ?
+  </template>
+  </category>
+  <category>
+  <pattern>GENDER INQUIRY OM</pattern>
+  <template>
+<think><set name="topic">inquiry</set></think>
+Are you a man or a woman</template>
+  </category>
+  <category>
+  <pattern>GENDER INQUIRY *</pattern>
+  <template>
+<think><set name="topic">inquiry</set></think>
+  Do you like being a
+  <star />
+  ?
+  </template>
+  </category>
+  <category>
+  <pattern>HAS INQUIRY OM</pattern>
+  <template>
+<think><set name="topic">inquiry</set></think>
+What is your favorite possession.</template>
+  </category>
+  <category>
+  <pattern>HAS INQUIRY *</pattern>
+  <template>
+<think><set name="topic">inquiry</set></think>
+  Tell me more about your
+  <star />
+  .
+  </template>
+  </category>
+  <category>
+  <pattern>LOCATION INQUIRY OM</pattern>
+  <template>
+<think><set name="topic">inquiry</set></think>
+Where are you located?</template>
+  </category>
+  <category>
+  <pattern>LOCATION INQUIRY *</pattern>
+  <template>
+<think><set name="topic">inquiry</set></think>
+  Are you still located in
+  <star />
+  ?
+  </template>
+  </category>
+  <category>
+  <pattern>MOVIE INQUIRY OM</pattern>
+  <template>
+<think><set name="topic">inquiry</set></think>
+What is your favorite movie?</template>
+  </category>
+  <category>
+  <pattern>MOVIE INQUIRY *</pattern>
+  <template>
+<think><set name="topic">inquiry</set></think>
+  Do you still like
+  <star />
+  ?
   </template>
   </category>
 
   <category>
-  <pattern>DOES INQUIRY OM</pattern> 
+  <pattern>*</pattern>
+  <that>WHERE ARE YOU LOCATED</that>
   <template>
 <think><set name="topic">inquiry</set></think>
-What are you doing</template> 
-  </category>
-
-  <category>
-  <pattern>DOES INQUIRY *</pattern> 
-  <template>
-<think><set name="topic">inquiry</set></think>
-
-  Are you still 
-  <star /> 
-  ? 
-  </template>
-  </category>
-
-  <category>
-  <pattern>GENDER INQUIRY OM</pattern> 
-  <template>
-<think><set name="topic">inquiry</set></think>
-Are you a man or a woman</template> 
-  </category>
-
-  <category>
-  <pattern>GENDER INQUIRY *</pattern> 
-  <template>
-<think><set name="topic">inquiry</set></think>
-
-  Do you like being a 
-  <star /> 
-  ? 
-  </template>
-  </category>
-
-  <category>
-  <pattern>HAS INQUIRY OM</pattern> 
-  <template>
-<think><set name="topic">inquiry</set></think>
-What is your favorite possession.</template> 
-  </category>
-
-  <category>
-  <pattern>HAS INQUIRY *</pattern> 
-  <template>
-<think><set name="topic">inquiry</set></think>
-
-  Tell me more about your 
-  <star /> 
-  . 
-  </template>
-  </category>
-
-  <category>
-  <pattern>LOCATION INQUIRY OM</pattern> 
-  <template>
-<think><set name="topic">inquiry</set></think>
-Where are you located?</template> 
-  </category>
-
-  <category>
-  <pattern>LOCATION INQUIRY *</pattern> 
-  <template>
-<think><set name="topic">inquiry</set></think>
-
-  Are you still located in 
-  <star /> 
-  ? 
-  </template>
-  </category>
-
-  <category>
-  <pattern>MOVIE INQUIRY OM</pattern> 
-  <template>
-<think><set name="topic">inquiry</set></think>
-What is your favorite movie?</template> 
-  </category>
-
-  <category>
-  <pattern>MOVIE INQUIRY *</pattern> 
-  <template>
-<think><set name="topic">inquiry</set></think>
-
-  Do you still like 
-  <star /> 
-  ? 
-  </template>
-  </category>
-
-  
-
-
-  <category>
-  <pattern>*</pattern> 
-  <that>WHERE ARE YOU LOCATED</that> 
-  <template>
-<think><set name="topic">inquiry</set></think>
-
-  <person /> 
-  is a very nice place. 
+  <person />
+  is a very nice place.
   <think>
   <set name="location">
-  <person /> 
+  <person />
   </set>
   </think>
   </template>
   </category>
 
-
-  
-
   <category>
-  <pattern>I AM LOCATED AT *</pattern> 
+  <pattern>I AM LOCATED AT *</pattern>
   <template>
 <think><set name="topic">inquiry</set></think>
-
-  <person /> 
-  is a very nice place. 
+  <person />
+  is a very nice place.
   <think>
   <set name="location">
-  <person /> 
+  <person />
   </set>
   </think>
   </template>
   </category>
 
-  
-
-
   <category>
-  <pattern>*</pattern> 
-  <that>WHAT ARE YOU DOING</that> 
+  <pattern>*</pattern>
+  <that>WHAT ARE YOU DOING</that>
   <template>
 <think><set name="topic">inquiry</set></think>
-
-  It sounds like a lot of fun. 
+  It sounds like a lot of fun.
   <think>
   <set name="does">
-  <person /> 
+  <person />
   </set>
   </think>
   </template>
   </category>
-
   <category>
-  <pattern>*</pattern> 
-  <that>WHAT IS YOUR FAVORITE POSSESSION</that> 
+  <pattern>*</pattern>
+  <that>WHAT IS YOUR FAVORITE POSSESSION</that>
   <template>
 <think><set name="topic">inquiry</set></think>
-
-  You must be very fond of it. 
+  You must be very fond of it.
   <think>
   <set name="it">
   <set name="has">
-  <person /> 
+  <person />
   </set>
   </set>
   </think>
   </template>
   </category>
-
   <category>
-  <pattern>MY FAVORITE POSSESSION IS *</pattern> 
+  <pattern>MY FAVORITE POSSESSION IS *</pattern>
   <template>
 <think><set name="topic">inquiry</set></think>
-
-  You must be very fond of it. 
+  You must be very fond of it.
   <think>
   <set name="it">
   <set name="has">
-  <person /> 
+  <person />
   </set>
   </set>
   </think>
   </template>
   </category>
-
-
   <category>
-  <pattern>*</pattern> 
-  <that>WHAT IS YOUR FAVORITE MOVIE</that> 
+  <pattern>*</pattern>
+  <that>WHAT IS YOUR FAVORITE MOVIE</that>
   <template>
 <think><set name="topic">inquiry</set></think>
-
-  I've never seen 
+  I've never seen
   <set name="it">
-  <person /> 
+  <person />
   </set>
-  . 
+  .
   <think>
   <set name="favmovie">
-  <person /> 
+  <person />
   </set>
   </think>
   <random>
-  <li>I would like to see it.</li> 
-  <li>Is that a good movie for children?</li> 
-  <li>What did you like about it?</li> 
+  <li>I would like to see it.</li>
+  <li>Is that a good movie for children?</li>
+  <li>What did you like about it?</li>
   </random>
   </template>
   </category>
 
-  
 
 
-  
-
-  
 
 
-  
-
-  
-
-
-  
 
   <category>
-  <pattern>YES</pattern> 
-  <that>DO YOU HAVE A PET</that> 
+  <pattern>YES</pattern>
+  <that>DO YOU HAVE A PET</that>
   <template>
 <think><set name="topic">inquiry</set></think>
-
   What is your pet? OK?
   </template>
   </category>
-
   <category>
-  <pattern>I HAVE PET</pattern> 
+  <pattern>I HAVE PET</pattern>
   <template>
 <think><set name="topic">inquiry</set></think>
-
   What is your pet? OK?
   </template>
   </category>
-
-
   <category>
-  <pattern>NO</pattern> 
-  <that>DO YOU HAVE A PET</that> 
+  <pattern>NO</pattern>
+  <that>DO YOU HAVE A PET</that>
   <template>
 <think><set name="topic">inquiry</set></think>
-
   Why not?
   </template>
   </category>
-
   <category>
-  <pattern>I DON'T HAVE A PET</pattern> 
+  <pattern>I DON'T HAVE A PET</pattern>
   <template>
 <think><set name="topic">inquiry</set></think>
-
   Why not?
   </template>
   </category>
-
   <category>
-  <pattern>I HAVE NO PET</pattern> 
+  <pattern>I HAVE NO PET</pattern>
   <template>
 <think><set name="topic">inquiry</set></think>
-
   Why not?
   </template>
   </category>
-
   <category>
-  <pattern>I HAVE NO PETS</pattern> 
+  <pattern>I HAVE NO PETS</pattern>
   <template>
 <think><set name="topic">inquiry</set></think>
-
   Why not?
   </template>
   </category>
-
-
-  
-
-
-
-
 
 </aiml>
-
-
-
-
-
-

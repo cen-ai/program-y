@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?> 
-
-
-
-<aiml>
-
-
-
-
-
+<aiml version="1.0">
 <!-- This file contains AIML categories for use with an AIML chatbot              -->
 <!-- This file copyright (C) Peter Lafferty 2012. All rights reserved.            -->
 <!-- Some text based on WordNet 3.0. Copyright 2006 by Princeton                  -->
 <!-- University. All rights reserved.                                             -->
 <!-- Some text based on Wikipedia 2012. Copyright, various contributors           -->
 <!-- to Wikipedia. All rights reserved.                                           -->
-
 <!-- Complies with AIML 1.0.1 Tag Set Specification                               -->
 <!-- as adopted by the ALICE A.I. Foundation.                                     -->
 <!-- Copyright (C) 2003, 2011  ALICE A.I. Foundation. All rights reserved.        -->
-
 <!-- This software and database is being provided to you, the LICENSEE,           -->
 <!-- by the copyright holders under the following license. By                     -->
 <!-- obtaining, using and/or copying this software and database, you agree that   -->
@@ -29,7 +19,6 @@
 <!-- notices and statements, including the disclaimer, and that the same appear   -->
 <!-- on ALL copies of the software, database and documentation, including         -->
 <!-- modifications that you make for internal use or for distribution.            -->
-
 <!-- THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND THE COPYRIGHT HOLDERS     -->
 <!-- MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF         -->
 <!-- EXAMPLE, BUT NOT LIMITATION, THE COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS   -->
@@ -37,899 +26,270 @@
 <!-- OR THAT THE USE OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL     -->
 <!-- NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER        -->
 <!-- RIGHTS.                                                                      -->
-
 <!-- The name of Princeton University or Princeton may not be used in             -->
 <!-- advertising or publicity pertaining to distribution of the software          -->
 <!-- and/or database. Title to copyright in WordNet 3.0, database and any         -->
 <!-- associated documentation, shall at all times remain with Princeton           -->
 <!-- University and the LICENSEE agrees to preserve same.                         -->
-
 <!-- This file Professor.0035 (C) Peter Lafferty 2012. All rights reserved.       -->
-
-
-
-
-
-
-
   <category>
   <pattern>HEARD ISLAND AND MCDONALD ISLANDS</pattern>
   <template>
   The Heard and McDonald Islands are in Southern Africa, islands in the Indian Ocean, about two thirds of the way from Madagascar to Antarctica.
 <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
   <category>
   <pattern>_HE FROM*</pattern>
   <template>
    I think he is from the planet Earth.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>HOWLAND ISLAND</pattern>
   <template>
   Howland Island is in Oceania, island in the North Pacific Ocean, about one half of the way from Hawaii to Australia.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
   <pattern>JAN MAYEN</pattern>
   <template>
   Jan Mayen island is in Northern Europe, island between the Greenland Sea and the Norwegian Sea, northeast of Iceland.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
   <category>
   <pattern>JARVIS ISLAND</pattern>
   <template>
   Jarvis Island is in Oceania, island in the South Pacific Ocean, about one half of the way from Hawaii to the Cook Islands.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
   <category>
   <pattern>JOHNSTON ATOLL</pattern>
   <template>
   Johnston Atoll is in Oceania, atoll in the North Pacific Ocean, about one third of the way from Hawaii to the Marshall Islands.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
   <category>
   <pattern>JUAN DE NOVA ISLAND</pattern>
   <template>
   Juan de Nova Island is in Southern Africa, island in the Mozambique Channel, about one third of the way between Madagascar and Mozambique.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>KINGMAN REEF</pattern>
   <template>
   Kingman Reef is in Oceania, reef in the North Pacific Ocean, about one half of the way from Hawaii to American Samoa.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
   <category>
   <pattern>WHERE ARE KRAFTWERK</pattern>
   <template>Kraftwerk are from Dusseldorf, Germany, originally.
   <think><set name="topic">music</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>MAYOTTE</pattern>
   <template>
   Mayotte is in Southern Africa, island in the Mozambique Channel, about one half of the way from northern Madagascar to northern Mozambique.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>MY CAR</pattern>
   <template>Have you looked in your garage?
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
   <category>
   <pattern>NAVASSA ISLAND</pattern>
   <template>
   Navassa Island is in the Caribbean, island in the Caribbean Sea, about one fourth of the way from Haiti to Jamaica.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>NIUE</pattern>
   <template>
   Niue is in Oceania, island in the South Pacific Ocean, east of Tonga.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>OXNARD</pattern>
   <template>
    OXNARD is a city in California.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>PALMYRA ATOLL</pattern>
   <template>
   Palmyra Atoll is in Oceania, atoll in the North Pacific Ocean, about one half of the way from Hawaii to American Samoa.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
   <category>
   <pattern>PARACEL ISLANDS</pattern>
   <template>
   The Paracel Islands are in Southeastern Asia, group of small islands and reefs in the South China Sea, about one third of the way from central Vietnam to the northern Philippines.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>PITCAIRN ISLANDS</pattern>
   <template>
   The Pitcairn Islands are in Oceania, islands in the South Pacific Ocean, about one half of the way from Peru to New Zealand.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>SAINT HELENA</pattern>
   <template>
   Saint Helena is in Southern Africa, island in the South Atlantic Ocean, west of Angola, about two thirds of the way from South America to Africa.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
   <category>
   <pattern>SAINT PIERRE AND MIQUELON</pattern>
   <template>
   Saint Pierre and Miquelon is in Northern North America, islands in the North Atlantic Ocean, south of Newfoundland {Canada}.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>SPRATLY ISLANDS</pattern>
   <template>
   The Spratly Islands are in Southeastern Asia, group of reefs in the South China Sea, about two thirds of the way from southern Vietnam to the southern Philippines.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>_AIRPORT*</pattern>
   <template>
   The airport is where the airplanes land.
   <think><set name="topic">technology</set></think></template>
   </category>
-
   <category>
   <pattern>BAHAMAS</pattern>
   <template>
   The Bahamas are in the Caribbean, chain of islands in the North Atlantic Ocean, southeast of Florida.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>_BATHROOM*</pattern>
   <template>Follow the plumbing.<think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>THE CENTER</pattern>
   <template>It depends on the coordinate frame.
    <think><set name="topic">knowledge</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>TOKELAU</pattern>
   <template>
   Tokelau is in Oceania, group of islands in the South Pacific Ocean, about one half of the way from Hawaii to New Zealand.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>TROMELIN ISLAND</pattern>
   <template>
   The Tromelin Islands are in Southern Africa, island in the Indian Ocean, east of Madagascar.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>TURKS AND CAICOS ISLANDS</pattern>
   <template>
   The Turks and Caicos Islands are in the Caribbean, two island groups in the North Atlantic Ocean, southeast of The Bahamas.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>* VIRGINIA</pattern>
   <template>Um, in Virginia somewhere?
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
   <category>
   <pattern>WAKE ISLAND</pattern>
   <template>
   Wake Island is in Oceania, island in the North Pacific Ocean, about two thirds of the way from Hawaii to the Northern Mariana Islands.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>WALES</pattern>
   <template>
    Wales is located on a small island off the coast of Europe.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>WARSAW</pattern>
   <template>
   WARSAW is a large city in Poland.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>WASHINGTON</pattern>
   <template>
   WASHINGTON is a state in the northwest corner of the U.S.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>WEST BANK</pattern>
   <template>
   The West Bank is in the Middle East, west of Jordan.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>WESTERN SAHARA</pattern>
   <template>
   Western Sahara is in Northern Africa, bordering the North Atlantic Ocean, between Mauritania and Morocco.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>WESTERN SAMOA</pattern>
   <template>
   Western Samoa is in Oceania, group of islands in the South Pacific Ocean, about one half of the way from Hawaii to New Zealand.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>WYOMING</pattern>
   <template>
   WYOMING is a western U.S. state between Montana and Colorado.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>YAKIMA</pattern>
   <template>
    YAKIMA is a city and a river in Washington.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>YEMEN</pattern>
   <template>
    Yemen is in the Middle East, bordering the Arabian Sea, Gulf of Aden, and Red Sea, between Oman and Saudi Arabia.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>ZAIRE</pattern>
   <template>
   Zaire is in Central Africa, northeast of Angola.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>ZAMBIA</pattern>
   <template>
   Zambia is in Southern Africa, east of Angola.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>ZIMBABWE</pattern>
   <template>
   Zimbabwe is in Southern Africa, northeast of Botswana.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>ZURICH</pattern>
   <template>
    Zurich is a city in Switzerland.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>WHICH CONTINENT IS AUSTRIA ON</pattern>
   <template>
    Austria is in Europe.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>PRESIDENT OF CANADA</pattern>
   <template>
   Canada has a Prime Minister, not a President.
   <think><set name="topic">geography</set></think></template>
   </category>
-
   <category>
   <pattern>PRESIDENT OF THE USA</pattern>
   <template>
@@ -938,7 +298,6 @@
   .
   <think><set name="topic">politics</set></think></template>
   </category>
-
   <category>
   <pattern>PRESIDENT OF USA</pattern>
   <template>
@@ -947,7 +306,6 @@
   .
   <think><set name="topic">politics</set></think></template>
   </category>
-
   <category>
   <pattern>PRESIDENT OF USA *</pattern>
   <template>
@@ -956,209 +314,174 @@
   .
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
   <category>
   <pattern>WHY_CALIFORNIA*</pattern>
   <template>
   I like California. It's so sunny.
   <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
-
-
 <category>
 <pattern>MORE GEOGRAPHY</pattern>
 <template>
 <srai>GEOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>MORE ABOUT GEOGRAPHY</pattern>
 <template>
 <srai>GEOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>BROWSE GEOGRAPHY</pattern>
 <template>
 <srai>GEOGRAPHY POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>GO TO GEOGRAPHY</pattern>
 <template>
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>CAN WE TALK ABOUT GEOGRAPHY</pattern>
 <template>
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>SHALL WE TALK ABOUT GEOGRAPHY</pattern>
 <template>
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>LETS TALK ABOUT GEOGRAPHY</pattern>
 <template>
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>LET S TALK ABOUT GEOGRAPHY</pattern>
 <template>
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>TALK ABOUT GEOGRAPHY</pattern>
 <template>
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>TALK GEOGRAPHY</pattern>
 <template>
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>TELL ME GEOGRAPHY</pattern>
 <template>
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO MORE GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO GEOGRAPHY *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NO * GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO _ GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO _ GEOGRAPHY *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NOT GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT GEOGRAPHY *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NOT * GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>I AM NOT INTERESTED IN GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>IM NOT INTERESTED IN GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>I M NOT INTERESTED IN GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT INTERESTED IN GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NOT INTERESTED IN GEOGRAPHY</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1166,7 +489,6 @@
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1174,7 +496,6 @@
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1182,7 +503,6 @@
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>MORE  GEOGRAPHY</that>
@@ -1190,7 +510,6 @@
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>MORE  GEOGRAPHY</that>
@@ -1198,7 +517,6 @@
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1206,7 +524,6 @@
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1214,7 +531,6 @@
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1222,7 +538,6 @@
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>MORE  GEOGRAPHY</that>
@@ -1230,7 +545,6 @@
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1238,7 +552,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1246,7 +559,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1254,7 +566,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1262,7 +573,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1270,7 +580,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>MORE GEOGRAPHY</that>
@@ -1278,7 +587,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1286,7 +594,6 @@
 <srai>MORE ABOUT GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1294,7 +601,6 @@
 <srai>MORE ABOUT GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1302,7 +608,6 @@
 <srai>MORE ABOUT GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1310,7 +615,6 @@
 <srai>MORE ABOUT GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1318,7 +622,6 @@
 <srai>MORE ABOUT GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1326,7 +629,6 @@
 <srai>MORE ABOUT GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1334,7 +636,6 @@
 <srai>MORE ABOUT GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1342,7 +643,6 @@
 <srai>MORE ABOUT GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1350,7 +650,6 @@
 <srai>MORE ABOUT GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1358,7 +657,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1366,7 +664,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1374,7 +671,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1382,7 +678,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1390,7 +685,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>MORE ABOUT GEOGRAPHY</that>
@@ -1398,7 +692,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1406,7 +699,6 @@
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1414,7 +706,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1422,7 +713,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1430,7 +720,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1438,7 +727,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1446,7 +734,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1454,7 +741,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1462,7 +748,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1470,7 +755,6 @@ Can we talk about geography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1478,7 +762,6 @@ Can we talk about geography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1486,7 +769,6 @@ Can we talk about geography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NO *</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1494,7 +776,6 @@ Can we talk about geography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1502,7 +783,6 @@ Can we talk about geography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1510,7 +790,6 @@ Can we talk about geography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1518,7 +797,6 @@ Can we talk about geography?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>*</pattern>
 <that>IS THIS SOMETHING TO DO WITH GEOGRAPHY</that>
@@ -1526,7 +804,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1534,7 +811,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1542,7 +818,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1550,7 +825,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1558,7 +832,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1566,7 +839,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1574,7 +846,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1582,7 +853,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1590,7 +860,6 @@ Can we talk about geography?
 Can we talk about geography?
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1598,7 +867,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1606,7 +874,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1614,7 +881,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NO *</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1622,7 +888,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1630,7 +895,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1638,7 +902,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>ARE YOU INTERESTED IN GEOGRAPHY</that>
@@ -1646,7 +909,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>GO AHEAD</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1654,7 +916,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>CARRY ON</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1662,7 +923,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>PLEASE DO</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1670,7 +930,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES PLEASE</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1678,7 +937,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>GO ON</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1686,7 +944,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>ALRIGHT</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1694,7 +951,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>SURE</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1702,7 +958,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>ALLRIGHT</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1710,8 +965,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
-
 <category>
 <pattern>YES</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1719,7 +972,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1727,7 +979,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1735,7 +986,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1743,7 +993,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1751,7 +1000,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1759,7 +1007,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1767,7 +1014,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1775,7 +1021,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1783,7 +1028,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1791,7 +1035,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1799,7 +1042,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1807,7 +1049,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1815,7 +1056,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1823,7 +1063,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>CAN WE TALK ABOUT GEOGRAPHY</that>
@@ -1831,7 +1070,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1839,7 +1077,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1847,7 +1084,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1855,7 +1091,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1863,7 +1098,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1871,7 +1105,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1879,7 +1112,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1887,7 +1119,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1895,7 +1126,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1903,7 +1133,6 @@ Can we talk about geography?
 <srai>GEOGRAPHY NEXT QUESTION</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1911,7 +1140,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1919,7 +1147,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1927,7 +1154,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1935,7 +1161,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1943,7 +1168,6 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>BROWSE GEOGRAPHY</that>
@@ -1951,18 +1175,14 @@ Can we talk about geography?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
-
 <category>
 <pattern>GEOGRAPHY NEXT QUESTION</pattern>
 <template>
 <random>
-
 <li>Did you know that Gustav Adolf von G�tzen, a German explorer and Governor of German East Africa, was the first European to set foot in Rwanda?</li>
 <li>Did you know that the bark of the hibiscus is composed of strong fibers that are used to make skirts in some Polynesian cultures?</li>
 <li>Did you know that The National Emblem of Malaysia consists of a shield guarded by two tigers with a yellow crescent and a 14-pointed star?</li>
 <li>Did you know that the Tennessee State Museum has one of the largest collections in the United States of weapons, flags, and uniforms from the American Civil War?</li>
-
    <li>Denial ain't just a river in Egypt, according to Mark Twain.</li>
    <li><srai>PARIS</srai></li>
    <li><srai>RUSSIA</srai></li>
@@ -1974,26 +1194,19 @@ Can we talk about geography?
    <li><srai>ALBANIA</srai></li>
    <li><srai>ANTARCTICA</srai></li>
    <li>Strange places and strange people enliven the study of geography.</li>
-
    <li><srai>POPULATION OF MAINE</srai></li>
    <li><srai>POPULATION OF THE WORLD</srai></li>
    <li><srai>SEA</srai></li>
    <li><srai>UNITED STATES</srai></li>
    <li><srai>SECOND HIGHEST MOUNTAIN</srai></li>
-
-
 </random>
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
-
 <category>
 <pattern>GEOGRAPHY POT LUCK</pattern>
 <template>
 <random>
-
-
 <li>Did you know that Gustav Adolf von G�tzen, a German explorer and Governor of German East Africa, was the first European to set foot in Rwanda?</li>
 <li>Did you know that the bark of the hibiscus is composed of strong fibers that are used to make skirts in some Polynesian cultures?</li>
 <li>Did you know that The National Emblem of Malaysia consists of a shield guarded by two tigers with a yellow crescent and a 14-pointed star?</li>
@@ -2026,15 +1239,11 @@ Can we talk about geography?
    <li><srai>SEA</srai></li>
    <li><srai>UNITED STATES</srai></li>
    <li><srai>SECOND HIGHEST MOUNTAIN</srai></li>
-
-
 </random>
 More geography?
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
-
 <category>
 <pattern>COCOS ISLAND</pattern>
 <template>
@@ -2042,7 +1251,6 @@ I think this is something to do with geography. Can we talk about geography?
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
 <category>
 <pattern>*COCOS ISLAND*</pattern>
 <template>
@@ -2050,92 +1258,71 @@ I think this is something to do with geography. Can we talk about geography?
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
-
-
 <category>
   <pattern>WHAT IS INDIA</pattern>
   <template>India is a country in South Asia, south of the Himalayas, including a large peninsula between the Arabian Sea and the Bay of Bengal. It contains India, Pakistan, Bangladesh, Nepal, and Bhutan. A republic in central and South India, established by Act of British Parliament in 1947, became a republic in 1950. It is a member of the Commonwealth. It is 1,269,000 square miles with a population of 783,940,000.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
-
 <category>
   <pattern>CALIFORNIA IS *</pattern>
   <template>
   I knew it was on the west coast of the USA, but I never knew California was
   <star />
   .
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
-
 <category>
   <pattern>CALIFORNIA *</pattern>
   <template>Which part of California do you like best?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>CANADA IS *</pattern>
   <template>Tell me more about the Great White North.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>I DO NOT LIVE IN USA</pattern>
   <template>Where are you located?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>I LIVE IN CALIFORNIA</pattern>
   <template>
   Where in California do you live?
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>I LOVE DENMARK</pattern>
   <template>
   What is so great about Denmark?
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>IS IT NEAR CANADA</pattern>
   <template>Yes. I think.
  <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>IS THAT AUSTLARIA</pattern>
   <template>No, I think it is Australia.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>NORWAY DENMARK *</pattern>
   <template>That sounds like a wonderful trip.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>QUEL TEMPS IL FAIT A BRUXELLES</pattern>
   <template>Il fait gris, comme d habitude.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>THE CAPITAL OF CANADA IS OTTAWA</pattern>
   <template>You think I'm going to fall for that?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>THE CAPITAL OF CANADA IS OTTOWA</pattern>
   <template>
@@ -2144,69 +1331,53 @@ I think this is something to do with geography. Can we talk about geography?
   . I know it's Toronto.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>THE CAPITAL OF CANADA *</pattern>
   <template>You can't fool me that easily. I know the capital of Canada is Toronto.
 <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
 <category>
   <pattern>USA TODAY *</pattern>
   <template>USA TODAY is an excellent paper.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT ANIMAL IS SACRED IN INDIA</pattern>
   <template>The cow is sacred in India.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS BELGIUM</pattern>
   <template>Belgium is a kingdom in W. Europe, on the North Sea, its independence was established in 1831. It is 11,792 square miles with a population of 9,868,000. More?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS BETHLEHEM</pattern>
   <template>
   Bethlehem is a small city in northeastern Pennsylvania.
 <think><set name="topic">geography</set></think></template>
   </category>
-
-
 <category>
   <pattern>WHAT IS CALIFORNIA</pattern>
   <template>California is a state of the SW U.S., on the Pacific coast. It was admitted in 1850.
 <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
 <category>
   <pattern>WHAT IS CASABLANCA</pattern>
   <template>I love the song, As Time Goes By.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS COPENHAGEN</pattern>
   <template>
   Copenhagen is the capital of Denmark. Seaport on the east coast of Zealand. Its population is 633,00.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS DENMARK</pattern>
   <template>Denmark is a country in Europe, occupyinh most of the peninsula of Jutland and several nearby islands in the North and Baltic seas. It is 16,632 square miles with a population of 5,124,000.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS GREECE</pattern>
   <template>
@@ -2214,254 +1385,203 @@ I think this is something to do with geography. Can we talk about geography?
   <li>Greece is a word, it's a word, it's got mood it's got feeling.</li>
   <li>Greece is a country in the South Balkan Peninsula, including many islands in the Aegean, Ionian, and Mediterranean seas. It is 50,949 square miles with a population of 9,900,000.</li>
   </random>
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS HE DOING * CALIFORNIA</pattern>
   <template>He is probably there for the Gold Rush.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ AFGHANISTAN</pattern>
   <template>
   Kabul is the capital of Afghanistan.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ALABAMA</pattern>
   <template>Montgomery is the capital of Alabama.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ALASKA</pattern>
   <template>Juneau is the capital of Alaska.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ALBANIA</pattern>
   <template>
   The capital of Albania is Tirana.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ALGERIA</pattern>
   <template>
   Algiers is the capital of Algeria.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ AMERICAN SAMOA</pattern>
   <template>
   Pago Pago is the capital of American Samoa.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ AMERICA</pattern>
   <template>The capital of the U.S. is Washington, D. C.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ANDORRA</pattern>
   <template>
   Andorra la Vella is the capital of Andorra.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ANGOLA</pattern>
   <template>
   Luanda is the capital of Angola.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ANGUILLA</pattern>
   <template>
   The Valley is the capital of Anguilla.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ANTIGUA *</pattern>
   <template>
   Saint John's is the capital of Antigua.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ARGENTINA</pattern>
   <template>
   Buenos Aries is the capital of Argentina.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ARIZONA</pattern>
   <template>Phoenix is the capital of Arizona.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ARKANSAS</pattern>
   <template>Little Rock is the capital of Arknsas. More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ARMENIA</pattern>
   <template>
   Yerevan is the capital of Armenia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ARUBA</pattern>
   <template>
   Oranjestad is the capital of Aruba.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ASHMORE *</pattern>
   <template>
   Ashmore is administered from Canberra, Australia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ASSYRIA</pattern>
   <template>Is it Babylon?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ AUSTRAILIA</pattern>
   <template>
   I think it is called Canberra.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ AUSTRALIA</pattern>
   <template>The capital of Australia is Canberra, I think. More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ AUSTRIA</pattern>
   <template>
   The capital of Austria is Vienna.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ AZERBAIJAN</pattern>
   <template>
   Baku (Baki) is the capital of Azerbaijan.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BAHRAIN</pattern>
   <template>
   Manama is the capital of Bahrain
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BAKER ISLAND</pattern>
   <template>
   Baker Island is administered from Washington, DC.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BANGLADESH</pattern>
   <template>
   Dhaka is the capital of Bangladesh.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BARBADOS</pattern>
   <template>
   Bridgetown is the capital of Barbados.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BASSAS DA INDIA</pattern>
   <template>
   None; Bassa da India is administered by France from Reunion.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BELARUS</pattern>
   <template>The capital of Belarus is Minsk. More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BELGIUM</pattern>
   <template>
   Brussels is the capital of Belgium.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BELIZE</pattern>
   <template>
   Belmopan is the capital of Belize.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BENIN</pattern>
   <template>
   Porto Novo is the capital of Benin.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BERMUDA</pattern>
   <template>
   Hamilton is the capital of Bermuda.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BHUTAN</pattern>
   <template>
   Thimphu is the capital of Bhutan. More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BOLIVIA</pattern>
   <template>
@@ -2469,7 +1589,6 @@ I think this is something to do with geography. Can we talk about geography?
   More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BOSNIA AND HERZEGOVINA</pattern>
   <template>
@@ -2477,14 +1596,12 @@ I think this is something to do with geography. Can we talk about geography?
   More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BOTSWANA</pattern>
   <template>
   Gaborone is the capital of Botswana. More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BOUVET ISLAND</pattern>
   <template>
@@ -2492,20 +1609,17 @@ I think this is something to do with geography. Can we talk about geography?
   More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BRAZIL</pattern>
   <template>I think the capital of Brazil is called "Brasilia". More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BRITISH INDIAN *</pattern>
   <template>
   The British Indian <star/> have no capital.   More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BRITISH VIRGIN ISLANDS</pattern>
   <template>
@@ -2513,7 +1627,6 @@ I think this is something to do with geography. Can we talk about geography?
   More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BRUNEI</pattern>
   <template>
@@ -2521,15 +1634,12 @@ I think this is something to do with geography. Can we talk about geography?
   More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BULGARIA</pattern>
   <template>
   The capital of Bulgaria is Sofia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BURKINA FASO</pattern>
   <template>
@@ -2537,7 +1647,6 @@ I think this is something to do with geography. Can we talk about geography?
   More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BURMA</pattern>
   <template>
@@ -2545,7 +1654,6 @@ I think this is something to do with geography. Can we talk about geography?
   More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ BURUNDI</pattern>
   <template>
@@ -2553,30 +1661,23 @@ I think this is something to do with geography. Can we talk about geography?
   More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CALIFORNIA</pattern>
   <template>Sacramento is the capital of California.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CAMBODIA</pattern>
   <template>
   Phnom Penh is the capital of Cambodia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CAMEROON</pattern>
   <template>
   Yaounde is the capital of Cameroon.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CANADA</pattern>
   <template>
@@ -2584,217 +1685,165 @@ I think this is something to do with geography. Can we talk about geography?
   <li>Ottawa.</li>
   <li>I heard it was Toronto.</li>
   </random>
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CAPE VERDE</pattern>
   <template>
   Praia is the capital of Cape Verde.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CAYMAN ISLANDS</pattern>
   <template>
   George Town is the capital of the Cayman Islands.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CENTRAL AFRICAN REPUBLIC</pattern>
   <template>
   Bangui is the capital of Central African Republic.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CHAD</pattern>
   <template>
   N'Djamena is the capital of Chad.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CHILE</pattern>
   <template>
   Santiago is the capital of chile.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CHINA</pattern>
   <template>Some people call the capital of China "Beijing", others "Peking".
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CHRISTMAS ISLAND</pattern>
   <template>
   The Settlement is the capital of Christmas Island.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CLIPPERTON ISLAND</pattern>
   <template>
   Clipperton Island is administered by France from French Polynesia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ COCOS {KEELING} ISLANDS</pattern>
   <template>
   West Island is the capital of Cocos Islands.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ COLOMBIA</pattern>
   <template>Bogata is the capital of Columbia.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ COLORADO</pattern>
   <template>Denver is the capital of Colorado.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ COMOROS</pattern>
   <template>
   Moroni is the capital of Comoros.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CONGO</pattern>
   <template>
   Brazzaville is the capital of the Congo.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CONNECTICUT</pattern>
   <template>Hartford is the capital of Connecticut.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ COOK ISLANDS</pattern>
   <template>
   Avarua is the capital of the Cook Islands.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CORAL SEA ISLANDS</pattern>
   <template>
   The Coral Sea Islands are administered from Canberra, Australia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ COSTA RICA</pattern>
   <template>
   San Jose is the capital of Costa Rica.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ COTE D IVOIRE</pattern>
   <template>
   Yamoussoukro is the capital of Cote d'Ivoire.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CROATIA</pattern>
   <template>
   Zagreb is the capital of Croatia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CUBA</pattern>
   <template>
   Havana is the capital of Cuba.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CYPRUS</pattern>
   <template>
   Nicosia is the capital of Cyprus.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ CZECH REPUBLIC</pattern>
   <template>
   Prague is the capital of the Czech Republic.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ DELAWARE</pattern>
   <template>Dover.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ DENMARK</pattern>
   <template>
   Copenhagen is the capital of Denmark.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ DJIBOUTI</pattern>
   <template>
   Djibouti City is the capital of Djibouti.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ DOMINICAN REPUBLIC</pattern>
   <template>
   Santo Domingo is the capital of the Dominican Republic.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ DOMINICA</pattern>
   <template>
   Roseau is the capital of Dominica.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ECUADOR</pattern>
   <template>
@@ -2802,881 +1851,659 @@ I think this is something to do with geography. Can we talk about geography?
   More geography?
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ EGYPT</pattern>
   <template>Cairo is the capital of Egypt.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ EL SALVADOR</pattern>
   <template>
   San Salvador is the capital of El Salvador.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ENGLAND</pattern>
   <template>London is the capital of England and the UK.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ EQUATORIAL GUINEA</pattern>
   <template>
   Malabo is the capital of Equatorial Guinea.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ERITREA</pattern>
   <template>
   Asmara {formerly Asmera} is the capital of Eritrea.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ESTONIA</pattern>
   <template>
   Tallinn is the capital of Estonia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ETHIOPIA</pattern>
   <template>
   Addis Ababa is the capital of Ethiopia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ EUROPA ISLAND</pattern>
   <template>
   Europa Island is administered by France from Reunion.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ FALKLAND ISLANDS</pattern>
   <template>
   Stanley is the capital of the Falkland Islands.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ FAROE ISLANDS</pattern>
   <template>
   Torshavn is the capital of the Faroe Islands.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ FIJI</pattern>
   <template>
   Suva is the capital of Fiji.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ FINLAND</pattern>
   <template>The capital of Finland is Helsinki.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ FLORIDA</pattern>
   <template>Tallahassee is the capital of Florida.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ FRANCE</pattern>
   <template>
   Paris is the capital of France.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ FRENCH GUIANA</pattern>
   <template>
   Cayenne.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ FRENCH *</pattern>
   <template>
   It is administered from Paris, France.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ FRENCH POLYNESIA</pattern>
   <template>
   Papeete is the capital of French Polynesia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GABON</pattern>
   <template>
   Libreville is the capital of Gabon.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GEORGIA</pattern>
   <template>Atlanta is the capital of Georgia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GERMANY</pattern>
   <template>
   Berlin is the capital of Germany.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GHANA</pattern>
   <template>
   Accra is the capital of Ghana.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GIBRALTAR</pattern>
   <template>
   Gibraltar City is the capital of Gibralta.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GLORIOSO ISLANDS</pattern>
   <template>
   The Glorioso Islands are administered by France from Reunion.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GREECE</pattern>
   <template>
   Athens is the capital of Greece.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GREENLAND</pattern>
   <template>
   Nuuk {Godthab} is the capital of Greenland.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GRENADA</pattern>
   <template>
   Saint George's is the capital of Grenada.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GUADELOUPE</pattern>
   <template>
   Basse Terre is the capital of Guadeloupe.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GUAM</pattern>
   <template>
   Agana is the capital of Guam.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GUATEMALA</pattern>
   <template>
   Guatemala City is the capital of Guatemala.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GUERNSEY</pattern>
   <template>
   Saint Peter Port is the capital of Guernsey.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GUINEA BISSAU</pattern>
   <template>
   Bissau is the capital of Guinea Bissau.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GUINEA</pattern>
   <template>
   Conakry is the capital of Guinea.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ GUYANA</pattern>
   <template>
   Georgetown is the capital of Guyana.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ HAITI</pattern>
   <template>
   Port au Prince is the capital of Haiti.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ HAWAII</pattern>
   <template>Honolulu is the capital of Hawaii.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ HEARD ISLAND AND MCDONALD ISLANDS</pattern>
   <template>
   Heard and Mcdonald Islands are administered from Canberra, Australia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ HONDURAS</pattern>
   <template>
   Tegucigalpa is the capital of Honduras.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ HONG KONG</pattern>
   <template>
   Victoria is the capital of Hong Kong.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ HOWLAND ISLAND</pattern>
   <template>
   Howland Island is administered from Washington, DC.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ HUNGARY</pattern>
   <template>The capital of Hungary is Budapest.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ICELAND</pattern>
   <template>
   Reykjavik is the capital of Iceland.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ IDAHO</pattern>
   <template>Boise is the capital of Idaho.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ILLINOIS</pattern>
   <template>Springfield is the capital of Illinois.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ INDIANA</pattern>
   <template>Indianapolis is the capital of Indiana.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ INDIA</pattern>
   <template>New Delhi is the capital of India.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ INDONESIA</pattern>
   <template>
   Jakarta is the capital of Indonesia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ IOWA</pattern>
   <template>Des Moines is the capital of Iowa.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ IRAN</pattern>
   <template>
   Tehran is the capital of Iran.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ IRAQ</pattern>
   <template>
   Baghdad is the capital of Iraq.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ IRELAND</pattern>
   <template>
   Dublin is the capital of Ireland.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ISRAEL</pattern>
   <template>
   Jerusalem is the capital of Israel.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ITALY</pattern>
   <template>
   Rome is the capital of Italy.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ JAMAICA</pattern>
   <template>
   Kingston is the capital of Jamaica.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ JAN MAYEN</pattern>
   <template>
   Jan Mayen has no capital.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ JAPAN</pattern>
   <template>
   Tokyo is the capital of Japan.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ JARVIS ISLAND</pattern>
   <template>
   Jarvis Island is administered from Washington, DC.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ JERSEY</pattern>
   <template>
   Saint Helier is the capital of Jersey.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ JOHNSTON ATOLL</pattern>
   <template>
   Johnston Atoll has no capital.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ JORDAN</pattern>
   <template>
   Amman is the capital of Jordan.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ JUAN DE NOVA ISLAND</pattern>
   <template>
   Juan de Nova Island is administered by France from Reunion.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ KANSAS</pattern>
   <template>Topeka is the capital of Kansas.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ KAZAKSTAN</pattern>
   <template>
   Almaty is the capital of Kazakstan.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ KENTUCKY</pattern>
   <template>Frankfort is the capital of Kentucky.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ KENYA</pattern>
   <template>
   Nairobi is the capital of Kenya.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ KINGMAN REEF</pattern>
   <template>
   Kingman Reef has no capital, it is administered from Washington, DC.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ KIRIBATI</pattern>
   <template>
   Tarawa is the capital of Kiribati.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ KOREA</pattern>
   <template>
   Seoul is the capital of South Korea.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL_KUWAIT</pattern>
   <template>
   Kuwait City is the capital of Kuwait.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ KYRGYZSTAN</pattern>
   <template>
   Bishkek is the capital of Kyrgyzstan.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ LAOS</pattern>
   <template>
   Vientiane is the capital of Laos.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ LATVIA</pattern>
   <template>
   Riga is the capital of Latvia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ LEBANON</pattern>
   <template>
   Beirut is the capital of Lebanon.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ LESOTHO</pattern>
   <template>
   Maseru is the capital of Lesotho.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ LIBERIA</pattern>
   <template>
   Monrovia is the capital of Liberia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ LIBYA</pattern>
   <template>
   Tripoli is the capital of Libya.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ LIECHTENSTEIN</pattern>
   <template>
   Vaduz is the capital of Liechenstein.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ LITHUANIA</pattern>
   <template>
   Vilnius is the capital of Lithuania.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ LOUISIANA</pattern>
   <template>Baton Rouge is the capital of Louisiana.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ LUXEMBOURG</pattern>
   <template>
   Luxembourg City is the capital of Luxembourg.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MACAU</pattern>
   <template>
   Macau City is the capital of Macau.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MACEDONIA</pattern>
   <template>
   Skopje is the capital of Macedonia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MADAGASCAR</pattern>
   <template>
   Antananarivo is the capital of Madagascar.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MAINE</pattern>
   <template>Augusta is the capital of Maine.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MALAWI</pattern>
   <template>
   Lilongwe is the capital of Malawi.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MALAYSIA</pattern>
   <template>
   Kuala Lumpur is the capital of Malaysia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MALDIVES</pattern>
   <template>
   Male is the capital of the Maldives.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MALI</pattern>
   <template>
   Bamako is the capital of Mali.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MALTA</pattern>
   <template>
   Valletta is the capital of Malta.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MARSHALL ISLANDS</pattern>
   <template>
   Majuro is the capital of the Marshall Islands.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MARTINIQUE</pattern>
   <template>
   Fort de France is the capital of Martinique.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MARYLAND</pattern>
   <template>Annapolis is the capital of Maryland.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MASSACHUSETTS</pattern>
   <template>Boston is the capital of Massachusetts.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MAURITANIA</pattern>
   <template>
   Nouakchott is the capital of Mauritania.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MAURITIUS</pattern>
   <template>
   Port Louis is the capital of Mauritius.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MAYOTTE</pattern>
   <template>
   Mamoutzou is the capital of Mayotte.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MEXICO</pattern>
   <template>
   Mexico City is the capital of Mexico.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MICHIGAN</pattern>
   <template>Lansing is the capital of Michigan.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MICRONESIA</pattern>
   <template>
   Kolonia {on the island of Pohnpei} is the capital of Micronesia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MIDWAY ISLANDS</pattern>
   <template>
   The Midway Islands have no capital, they are administered from Washington, DC.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MINNESOTA</pattern>
   <template>St. Paul is the capital of Minnesota.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MISSISSIPPI</pattern>
   <template>Jackson is the capital of Mississippi.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MISSOURI</pattern>
   <template>Jefferson City is the capital of Missouri.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MOLDOVA</pattern>
   <template>
   Chisinau is the capital of Moldova.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MONACO</pattern>
   <template>
   Monaco is the capital of Monaco.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MONGOLIA</pattern>
   <template>The capital of Mongolia is Ulan Bator.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MONTANA</pattern>
   <template>Helena is the capital of Montana.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MONTSERRAT</pattern>
   <template>
   Plymouth is the capital of Montserrat.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MOROCCO</pattern>
   <template>
   Rabat is the capital of Morocco.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ MOZAMBIQUE</pattern>
   <template>
   Maputo is the capital of Mozambique.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NAMIBIA</pattern>
   <template>
   Windhoek is the capital of Namibia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NAURU</pattern>
   <template>
   Naura has no official capital; government offices in Yaren District.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NAVASSA ISLAND</pattern>
   <template>
   Navassa Island is administered from Washington, DC.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NEBRASKA</pattern>
   <template>Lincoln is the capital of Nebraska.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NEPAL</pattern>
   <template>
@@ -3684,441 +2511,328 @@ I think this is something to do with geography. Can we talk about geography?
     the Netherlands
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NETHERLANDS ANTILLES</pattern>
   <template>
   Willemstad is the capital of Netherlands Antilles.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NETHERLANDS</pattern>
   <template>
   Amsterdam is the capital of ; The Hague is the seat of government.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NEVADA</pattern>
   <template>Carson City is the capital of Nevada.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NEW CALEDONIA</pattern>
   <template>
   Noumea is the capital of New Caledonia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NEW HAMPSHIRE</pattern>
   <template>Concord is the capital of New Hampshire.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NEW JERSEY</pattern>
   <template>Trenton is the capital of New Jersey.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NEW MEXICO</pattern>
   <template>Santa Fe is the capital of New Mexico.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NEW *</pattern>
   <template>
   New
   <star />
   city?
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NEW YORK</pattern>
   <template>Albany is the capital of New York.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NEW ZEALAND</pattern>
   <template>
   Wellington is the capital of New Zealand.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NICARAGUA</pattern>
   <template>
   Managua is the capital of Nicaragua.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NIGERIA</pattern>
   <template>
   Abuja is the capital of Nigeria.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NIGER</pattern>
   <template>
   Niamey is the capital of Niger.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NIUE</pattern>
   <template>
   Alofi is the capital of Niue.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NORFOLK ISLAND</pattern>
   <template>
   Kingston {administrative center}; Burnt Pine {commercial center} is the capital of Norfolk Island.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NORTH CAROLINA</pattern>
   <template>Raleigh is the capital of North Carolina.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NORTH DAKOTA</pattern>
   <template>Bismarck is the capital of North Dakota.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NORTHERN MARIANA *</pattern>
   <template>
   Saipan is the capital of Northern Mariana.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NORTH KOREA</pattern>
   <template>
   P'yongyang is the capital of North Korea.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ NORWAY</pattern>
   <template>The capital of Norway is Oslo.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL OF ALBERTA</pattern>
   <template>
   Edmonton is the capital of Alberta.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL OF BOSNIA</pattern>
   <template>Sarajevo is the capital of Bosnia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
-
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ OHIO</pattern>
   <template>Columbus.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ OKLAHOMA</pattern>
   <template>Oklahoma City is the capital of Oklahoma.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ OMAN</pattern>
   <template>
   Muscat is the capital of Oman.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ OREGON</pattern>
   <template>Salem is the capital of Oregon.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PAKISTAN</pattern>
   <template>
   Islamabad is the capital of Pakistan.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PALAU</pattern>
   <template>
   Koror is the capital of Palau.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PALMYRA ATOLL</pattern>
   <template>
   Palmyra Atoll is administered from Washington, DC.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PANAMA</pattern>
   <template>
   Panama City is the capital of Panama.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PAPUA NEW GUINEA</pattern>
   <template>
   Port Moresby is the capital of Papua New Guinea.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PARAGUAY</pattern>
   <template>
   Asuncion is the capital of Paraguay.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PARIS</pattern>
   <template>
   Is this a trick question?
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PENNSYLVANIA</pattern>
   <template>Harrisburg is the capital of Pennsylvania.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PERU</pattern>
   <template>
   Lima is the capital of Peru.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PHILIPPINES</pattern>
   <template>
   Manila is the capital of the Philippines.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PITCAIRN ISLANDS</pattern>
   <template>
   Adamstown is the capital of the Pitcairn Islands.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ POLAND</pattern>
   <template>
   Warsaw is the capital of Poland.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PORTUGAL</pattern>
   <template>Lisbon is the capital of Portugal.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ PUERTO RICO</pattern>
   <template>
   San Juan is the capital of Puerto Rica.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ QATAR</pattern>
   <template>
   Doha is the capital of Qatar.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ REUNION</pattern>
   <template>
   Saint Denis is the capital of Reunion.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ RHODE ISLAND</pattern>
   <template>Providence is the capital of Rhode Island.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ ROMANIA</pattern>
   <template>
   Bucharest is the capital of Romania.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ RUSSIA</pattern>
   <template>
   Moscow is the capital of Russia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ RWANDA</pattern>
   <template>
   Kigali is the capital of RWanda.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ SACRAMENTO</pattern>
   <template>
   That is a trick question.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ SAINT HELENA</pattern>
   <template>
   Jamestown is the capital of Saint helena.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ SAINT KITTS AND NEVIS</pattern>
   <template>
   Basseterre is the capital of Saint Kitts and Nevis.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ SAINT LUCIA</pattern>
   <template>
   Castries is the capital of Saint Lucia.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ SAINT PIERRE *</pattern>
   <template>
   Saint Pierre is the capital of Saint Pierre.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ SAINT VINCENT *</pattern>
   <template>
   Kingstown is the capital of Saint Vincent.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ SAN MARINO</pattern>
   <template>
   San Marino is the capital of San Marino.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ SAO TOME *</pattern>
   <template>
   Sao Tome is the capital of Sao Tome.
-
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ SAUDIA ARABIA</pattern>
   <template>Riyadh.
 <think><set name="topic">geography</set></think></template>
   </category>
-
 <category>
   <pattern>WHAT IS THE CAPITAL _ SAUDI ARABIA</pattern>
   <template>
   Riyadh is the capital of Saudi Arabia.
 <think><set name="topic">geography</set></think></template>
   </category>
-
-
 <category>
 <pattern>ABDERA</pattern>
 <template>
@@ -4126,7 +2840,6 @@ Abdera is a city of ancient Thrace on the Aegean Sea nearly opposite Thasos.
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
 <category>
 <pattern>ABEOKUTA</pattern>
 <template>
@@ -4134,9 +2847,6 @@ Abeokuta is a city, southwestern Nigeria.
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
-
-
 <category>
 <pattern>ABERYSTWYTH</pattern>
 <template>
@@ -4144,12 +2854,6 @@ Aberystwyth is a town on Cardigan Bay, western Wales.
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
-
-
-
-
-
 <category>
 <pattern>PLAINS OF ABRAHAM</pattern>
 <template>
@@ -4157,11 +2861,6 @@ The Plains of Abraham are a plateau located southwest of the old walled city of 
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
-
-
-
-
 <category>
 <pattern>ABSAROKA RANGE</pattern>
 <template>
@@ -4169,11 +2868,6 @@ The Absaroka Range is a range of the Rocky Mountains in the U.S.
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
-
-
-
-
 <category>
 <pattern>ABU QIR BAY</pattern>
 <template>
@@ -4181,8 +2875,6 @@ Abu Qir Bay is an inlet of the Mediterranean Sea, lying near the Rosetta mouth o
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
-
 <category>
 <pattern>ABU SIMBEL</pattern>
 <template>
@@ -4190,16 +2882,6 @@ Abu Simbel is the site of two temples built by Ramses II in the 13th century BC.
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>ACADIAN OROGENY</pattern>
 <template>
@@ -4207,15 +2889,9 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <think><set name="topic">geography</set></think>
 </template>
 </category>
-
-
-
-
-
 <category><pattern>DEARNESS</pattern><template>dearness?  Briefly, dearness means the quality possessed by something with a great price or value.</template></category>
 <category><pattern>DEARTH</pattern><template>dearth?  Briefly, dearth means an acute insufficiency.</template></category>
 <category><pattern>DEARY</pattern><template>deary?  Briefly, deary means a special loved one.</template></category>
-
 <category><pattern>DEATH ADDER</pattern><template>death adder?  Briefly, death adder means venomous Australian snake resembling an adder.</template></category>
 <category><pattern>DEATH ANGEL</pattern><template>death angel?  Briefly, death angel means extremely poisonous usually white fungus with a prominent cup-shaped base; differs from edible Agaricus only in its white gills.</template></category>
 <category><pattern>DEATH BELL</pattern><template>death bell?  Briefly, death bell means a bell rung to announce a death.</template></category>
@@ -4377,7 +3053,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DECELERATE</pattern><template>decelerate?  Briefly, decelerate means lose velocity; move more slowly.</template></category>
 <category><pattern>DECELERATION</pattern><template>deceleration?  Briefly, deceleration means a decrease in speed.</template></category>
 <category><pattern>DECEMBER</pattern><template>december?  Briefly, december means the last (12th) month of the year.</template></category>
-
 <category><pattern>DECEMBER 8</pattern><template>december 8?  Briefly, december 8 means Roman Catholic holy day first celebrated in 1854.</template></category>
 <category><pattern>DECENCY</pattern><template>decency?  Briefly, decency means the quality of conforming to standards of propriety and morality.</template></category>
 <category><pattern>DECENNARY</pattern><template>decennary?  Briefly, decennary means a period of 10 years.</template></category>
@@ -4529,7 +3204,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DECONSECRATE</pattern><template>deconsecrate?  Briefly, deconsecrate means remove the consecration from a person or an object.</template></category>
 <category><pattern>DECONSECRATED</pattern><template>deconsecrated?  Briefly, deconsecrated means divested of consecration.</template></category>
 <category><pattern>DECONSTRUCT</pattern><template>deconstruct?  Briefly, deconstruct means interpret (a text or an artwork) by the method of deconstructing.</template></category>
-
 <category><pattern>DECONSTRUCTIONISM</pattern><template>deconstructionism?  Briefly, deconstructionism means a philosophical theory of criticism (usually of literature or film) that seeks to expose deep-seated contradictions in a work by delving below its surface meaning.</template></category>
 <category><pattern>DECONSTRUCTIONIST</pattern><template>deconstructionist?  Briefly, deconstructionist means of or concerned with the philosophical theory of literature known as deconstructionism.</template></category>
 <category><pattern>DECONSTRUCTIVISM</pattern><template>deconstructivism?  Briefly, deconstructivism means a school of architecture based on the philosophical theory of deconstruction.</template></category>
@@ -4598,9 +3272,7 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DEDUCT</pattern><template>deduct?  Briefly, deduct means make a subtraction.</template></category>
 <category><pattern>DEDUCTED</pattern><template>deducted?  Briefly, deducted means taken off or taken away from a total.</template></category>
 <category><pattern>DEDUCTIBLE</pattern><template>deductible?  Briefly, deductible means an amount that can be deducted (especially for the purposes of calculating income tax).</template></category>
-
 <category><pattern>DEDUCTIVE</pattern><template>deductive?  Briefly, deductive means relating to logical deduction.</template></category>
-
 <category><pattern>DEED</pattern><template>deed?  Briefly, deed means a notable achievement.</template></category>
 <category><pattern>DEED OF CONVEYANCE</pattern><template>deed of conveyance?  Briefly, deed of conveyance means a legal document signed and sealed and delivered to effect a transfer of property and to show the legal right to possess it.</template></category>
 <category><pattern>DEED OF TRUST</pattern><template>deed of trust?  Briefly, deed of trust means a written instrument legally conveying property to a trustee often used to secure an obligation such as a mortgage or promissory note.</template></category>
@@ -4797,16 +3469,13 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DEFINITE ARTICLE</pattern><template>definite article?  Briefly, definite article means a determiner (as `the' in English) that indicates specificity of reference.</template></category>
 <category><pattern>DEFINITE INTEGRAL</pattern><template>definite integral?  Briefly, definite integral means the integral of a function over a definite interval.</template></category>
 <category><pattern>DEFINITE QUANTITY</pattern><template>definite quantity?  Briefly, definite quantity means a specific measure of amount.</template></category>
-
 <category><pattern>DEFINITENESS</pattern><template>definiteness?  Briefly, definiteness means the quality of being predictable with great confidence.</template></category>
-
 <category><pattern>DEFINITIVE</pattern><template>definitive?  Briefly, definitive means clearly defined or formulated- R.B.Taney.</template></category>
 <category><pattern>DEFINITIVE HOST</pattern><template>definitive host?  Briefly, definitive host means the host in which the sexual reproduction of a parasite takes place.</template></category>
 <category><pattern>DEFLAGRATE</pattern><template>deflagrate?  Briefly, deflagrate means cause to burn rapidly and with great intensity.</template></category>
 <category><pattern>DEFLAGRATION</pattern><template>deflagration?  Briefly, deflagration means combustion that propagates through a gas or along the surface of an explosive at a rapid rate driven by the transfer of heat.</template></category>
 <category><pattern>DEFLATE</pattern><template>deflate?  Briefly, deflate means collapse by releasing contained air or gas.</template></category>
 <category><pattern>DEFLATED</pattern><template>deflated?  Briefly, deflated means brought low in spirit.</template></category>
-
 <category><pattern>DEFLATIONARY</pattern><template>deflationary?  Briefly, deflationary means associated with or tending to cause decreases in consumer prices or increases in the purchasing power of money.</template></category>
 <category><pattern>DEFLATOR</pattern><template>deflator?  Briefly, deflator means a statistical factor designed to remove the effect of inflation; inflation adjusted variables are in constant dollars.</template></category>
 <category><pattern>DEFLECT</pattern><template>deflect?  Briefly, deflect means prevent the occurrence of; prevent from happening.</template></category>
@@ -4963,7 +3632,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DELETION</pattern><template>deletion?  Briefly, deletion means any process whereby sounds are left out of spoken words or phrases.</template></category>
 <category><pattern>DELF</pattern><template>delf?  Briefly, delf means an excavation; usually a quarry or mine.</template></category>
 <category><pattern>DELFT</pattern><template>delft?  Briefly, delft means a style of glazed earthenware; usually white with blue decoration.</template></category>
-
 <category><pattern>DELHI BOIL</pattern><template>delhi boil?  Briefly, delhi boil means leishmaniasis of the skin; characterized by ulcerative skin lesions.</template></category>
 <category><pattern>DELI</pattern><template>deli?  Briefly, deli means a shop selling delicatessen (as salads or cooked meats).</template></category>
 <category><pattern>DELIBERATE</pattern><template>deliberate?  Briefly, deliberate means think about carefully; weigh.</template></category>
@@ -5279,8 +3947,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DENDROIDAL</pattern><template>dendroidal?  Briefly, dendroidal means resembling a tree in form and branching structure.</template></category>
 <category><pattern>DENDROLAGUS</pattern><template>dendrolagus?  Briefly, dendrolagus means tree wallabies.</template></category>
 <category><pattern>DENDROMECON</pattern><template>dendromecon?  Briefly, dendromecon means 1 species: bush poppy.</template></category>
-
-
 <category><pattern>DENG XIAOPING</pattern><template>deng xiaoping?  Briefly, deng xiaoping means Chinese communist statesman (1904-1997).</template></category>
 <category><pattern>DENGUE</pattern><template>dengue?  Briefly, dengue means an infectious disease of the tropics transmitted by mosquitoes and characterized by rash and aching head and joints.</template></category>
 <category><pattern>DENGUE FEVER</pattern><template>dengue fever?  Briefly, dengue fever means an infectious disease of the tropics transmitted by mosquitoes and characterized by rash and aching head and joints.</template></category>
@@ -5298,7 +3964,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DENISONIA SUPERBA</pattern><template>denisonia superba?  Briefly, denisonia superba means venomous but sluggish reddish-brown snake of Australia.</template></category>
 <category><pattern>DENITRIFY</pattern><template>denitrify?  Briefly, denitrify means remove nitrogen from.</template></category>
 <category><pattern>DENIZEN</pattern><template>denizen?  Briefly, denizen means a person who inhabits a particular place.</template></category>
-
 <category><pattern>DENMARK VESEY</pattern><template>denmark vesey?  Briefly, denmark vesey means United States freed slave and insurrectionist in South Carolina who was involved in planning an uprising of slaves and was hanged (1767-1822).</template></category>
 <category><pattern>DEN-MOTHER</pattern><template>den-mother?  Briefly, den-mother means someone who plays the role of a den mother.</template></category>
 <category><pattern>DENNIS GABOR</pattern><template>dennis gabor?  Briefly, dennis gabor means British physicist (born in Hungary) noted for his work on holography (1900-1979).</template></category>
@@ -5382,7 +4047,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DENUNCIATION</pattern><template>denunciation?  Briefly, denunciation means a public act of denouncing.</template></category>
 <category><pattern>DENUNCIATIVE</pattern><template>denunciative?  Briefly, denunciative means containing warning of punishment.</template></category>
 <category><pattern>DENUNCIATORY</pattern><template>denunciatory?  Briefly, denunciatory means containing warning of punishment.</template></category>
-
 <category><pattern>DENY</pattern><template>deny?  Briefly, deny means declare untrue; contradict.</template></category>
 <category><pattern>DEODAR</pattern><template>deodar?  Briefly, deodar means tall East Indian cedar having spreading branches with nodding tips; highly valued for its appearance as well as its timber.</template></category>
 <category><pattern>DEODAR CEDAR</pattern><template>deodar cedar?  Briefly, deodar cedar means tall East Indian cedar having spreading branches with nodding tips; highly valued for its appearance as well as its timber.</template></category>
@@ -5558,7 +4222,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DEPRESSED FRACTURE</pattern><template>depressed fracture?  Briefly, depressed fracture means fracture of the skull where the bone is pushed in.</template></category>
 <category><pattern>DEPRESSING</pattern><template>depressing?  Briefly, depressing means causing dejection.</template></category>
 <category><pattern>DEPRESSINGLY</pattern><template>depressingly?  Briefly, depressingly means in a depressing manner or to a depressing degree.</template></category>
-
 <category><pattern>DEPRESSIVE</pattern><template>depressive?  Briefly, depressive means someone suffering psychological depression.</template></category>
 <category><pattern>DEPRESSIVE DISORDER</pattern><template>depressive disorder?  Briefly, depressive disorder means a state of depression and anhedonia so severe as to require clinical intervention.</template></category>
 <category><pattern>DEPRESSOR</pattern><template>depressor?  Briefly, depressor means any skeletal muscle that draws a part down.</template></category>
@@ -5674,7 +4337,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DESCALE</pattern><template>descale?  Briefly, descale means remove the scales from.</template></category>
 <category><pattern>DESCANT</pattern><template>descant?  Briefly, descant means a decorative musical accompaniment (often improvised) added above a basic melody.</template></category>
 <category><pattern>DESCANT ON</pattern><template>descant on?  Briefly, descant on means sing a descant on a main tune or melody.</template></category>
-
 <category><pattern>DESCEND</pattern><template>descend?  Briefly, descend means move downward and lower means but not necessarily all the way.</template></category>
 <category><pattern>DESCENDANT</pattern><template>descendant?  Briefly, descendant means a person considered as descended from some ancestor or race.</template></category>
 <category><pattern>DESCENDANTS</pattern><template>descendants?  Briefly, descendants means all of the offspring of a given progenitor.</template></category>
@@ -5720,7 +4382,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DESENSITIZE</pattern><template>desensitize?  Briefly, desensitize means cause not to be sensitive.</template></category>
 <category><pattern>DESENSITIZED</pattern><template>desensitized?  Briefly, desensitized means made less sensitive.</template></category>
 <category><pattern>DESENSITIZING</pattern><template>desensitizing?  Briefly, desensitizing means making less susceptible or sensitive to either physical or emotional stimuli.</template></category>
-
 <category><pattern>DESERT BOOT</pattern><template>desert boot?  Briefly, desert boot means a boot reaching halfway up to the knee.</template></category>
 <category><pattern>DESERT FOUR O'CLOCK</pattern><template>desert four o'clock?  Briefly, desert four o'clock means wildflower having vibrant deep pink tubular evening-blooming flowers; found in sandy and desert areas from southern California to southern Colorado and into Mexico.</template></category>
 <category><pattern>DESERT FOX</pattern><template>desert fox?  Briefly, desert fox means German field marshal noted for brilliant generalship in North Africa during World War II (1891-1944).</template></category>
@@ -5780,7 +4441,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DESIRABILITY</pattern><template>desirability?  Briefly, desirability means the quality of being worthy of desiring.</template></category>
 <category><pattern>DESIRABLE</pattern><template>desirable?  Briefly, desirable means worth having or seeking or achieving.</template></category>
 <category><pattern>DESIRABLENESS</pattern><template>desirableness?  Briefly, desirableness means the quality of being worthy of desiring.</template></category>
-
 <category><pattern>DESIRE TO KNOW</pattern><template>desire to know?  Briefly, desire to know means curiosity that motivates investigation and study.</template></category>
 <category><pattern>DESIRED</pattern><template>desired?  Briefly, desired means greatly desired.</template></category>
 <category><pattern>DESIROUS</pattern><template>desirous?  Briefly, desirous means having or expressing desire for something.</template></category>
@@ -6231,7 +4891,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DIAGNOSABLE</pattern><template>diagnosable?  Briefly, diagnosable means possible to diagnose.</template></category>
 <category><pattern>DIAGNOSE</pattern><template>diagnose?  Briefly, diagnose means determine or distinguish the nature of a problem or an illness through a diagnostic analysis.</template></category>
 <category><pattern>DIAGNOSING</pattern><template>diagnosing?  Briefly, diagnosing means identifying the nature or cause of some phenomenon.</template></category>
-
 <category><pattern>DIAGNOSTIC</pattern><template>diagnostic?  Briefly, diagnostic means concerned with diagnosis; used for furthering diagnosis.</template></category>
 <category><pattern>DIAGNOSTIC ASSAY</pattern><template>diagnostic assay?  Briefly, diagnostic assay means an assay conducted for diagnostic purposes.</template></category>
 <category><pattern>DIAGNOSTIC PROCEDURE</pattern><template>diagnostic procedure?  Briefly, diagnostic procedure means a procedure followed in making a medical diagnosis.</template></category>
@@ -6254,7 +4913,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DIAGRAMMATICALLY</pattern><template>diagrammatically?  Briefly, diagrammatically means in a diagrammatic manner.</template></category>
 <category><pattern>DIAGRAMMING</pattern><template>diagramming?  Briefly, diagramming means providing a chart or outline of a system.</template></category>
 <category><pattern>DIAKINESIS</pattern><template>diakinesis?  Briefly, diakinesis means the final stage of the prophase of meiosis.</template></category>
-
 <category><pattern>DIAL PHONE</pattern><template>dial phone?  Briefly, dial phone means a telephone with a dial for registering the number to be called.</template></category>
 <category><pattern>DIAL TELEPHONE</pattern><template>dial telephone?  Briefly, dial telephone means a telephone with a dial for registering the number to be called.</template></category>
 <category><pattern>DIALECT</pattern><template>dialect?  Briefly, dialect means the usage or vocabulary that is characteristic of a specific group of people.</template></category>
@@ -6271,7 +4929,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DIALEURODES CITRI</pattern><template>dialeurodes citri?  Briefly, dialeurodes citri means whitefly that attacks citrus trees.</template></category>
 <category><pattern>DIALOG</pattern><template>dialog?  Briefly, dialog means a conversation between two persons.</template></category>
 <category><pattern>DIALOG BOX</pattern><template>dialog box?  Briefly, dialog box means a small temporary window in a graphical user interface that appears in order to request information from the user; after the information has been provided the user dismisses the box with `okay' or `cancel'.</template></category>
-
 <category><pattern>DIALYSE</pattern><template>dialyse?  Briefly, dialyse means separate by dialysis.</template></category>
 <category><pattern>DIALYSIS</pattern><template>dialysis?  Briefly, dialysis means separation of substances in solution by means of their unequal diffusion through semipermeable membranes.</template></category>
 <category><pattern>DIALYSIS MACHINE</pattern><template>dialysis machine?  Briefly, dialysis machine means a medical instrument for separating substances in solution by unequal diffusion through semipermeable membranes.</template></category>
@@ -6396,7 +5053,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DICAMPTODONTID</pattern><template>dicamptodontid?  Briefly, dicamptodontid means salamanders found near cold streams throughout the year.</template></category>
 <category><pattern>DICAMPTODONTIDAE</pattern><template>dicamptodontidae?  Briefly, dicamptodontidae means large and small highly aquatic salamanders.</template></category>
 <category><pattern>DICARBOXYLIC</pattern><template>dicarboxylic?  Briefly, dicarboxylic means containing two carboxyls per molecule.</template></category>
-
 <category><pattern>DICE BOX</pattern><template>dice box?  Briefly, dice box means a small container (open at one end) in which dice are shaken by hand and from which they are thrown.</template></category>
 <category><pattern>DICE CUP</pattern><template>dice cup?  Briefly, dice cup means a small container (open at one end) in which dice are shaken by hand and from which they are thrown.</template></category>
 <category><pattern>DICENTRA</pattern><template>dicentra?  Briefly, dicentra means North American and Asian herbs with divided leaves and irregular flowers.</template></category>
@@ -6442,7 +5098,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DICKEYBIRD</pattern><template>dickeybird?  Briefly, dickeybird means small bird; adults talking to children sometimes call small birds dickeybirds.</template></category>
 <category><pattern>DICKEY-BIRD</pattern><template>dickey-bird?  Briefly, dickey-bird means small bird; adults talking to children sometimes call small birds dickeybirds.</template></category>
 <category><pattern>DICKEY-SEAT</pattern><template>dickey-seat?  Briefly, dickey-seat means a small third seat in the back of an old-fashioned two-seater.</template></category>
-
 <category><pattern>DICKIE</pattern><template>dickie?  Briefly, dickie means a small third seat in the back of an old-fashioned two-seater.</template></category>
 <category><pattern>DICKIE-SEAT</pattern><template>dickie-seat?  Briefly, dickie-seat means a small third seat in the back of an old-fashioned two-seater.</template></category>
 <category><pattern>DICKINSON</pattern><template>dickinson?  Briefly, dickinson means United States poet noted for her mystical and unrhymed poems (1830-1886).</template></category>
@@ -6514,7 +5169,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DIDION</pattern><template>didion?  Briefly, didion means United States writer (born in 1834).</template></category>
 <category><pattern>DIDO</pattern><template>dido?  Briefly, dido means a princess of Tyre who was the founder and queen of Carthage; Virgil tells of her suicide when she was abandoned by Aeneas.</template></category>
 <category><pattern>DIDRIKSON</pattern><template>didrikson?  Briefly, didrikson means outstanding United States athlete (1914-1956).</template></category>
-
 <category><pattern>DIE AWAY</pattern><template>die away?  Briefly, die away means become less in amount or intensity.</template></category>
 <category><pattern>DIE BACK</pattern><template>die back?  Briefly, die back means suffer from a disease that kills shoots.</template></category>
 <category><pattern>DIE DOWN</pattern><template>die down?  Briefly, die down means suffer from a disease that kills shoots.</template></category>
@@ -6559,7 +5213,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DIESTRUAL</pattern><template>diestrual?  Briefly, diestrual means in a period of sexual inactivity.</template></category>
 <category><pattern>DIESTRUM</pattern><template>diestrum?  Briefly, diestrum means a state or interval of sexual inactivity or quiescence between periods of activity.</template></category>
 <category><pattern>DIESTRUS</pattern><template>diestrus?  Briefly, diestrus means a state or interval of sexual inactivity or quiescence between periods of activity.</template></category>
-
 <category><pattern>DIETARY</pattern><template>dietary?  Briefly, dietary means a regulated daily food allowance.</template></category>
 <category><pattern>DIETETIC</pattern><template>dietetic?  Briefly, dietetic means of or relating to the diet.</template></category>
 <category><pattern>DIETETICAL</pattern><template>dietetical?  Briefly, dietetical means of or relating to the diet.</template></category>
@@ -7010,7 +5663,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DIRCA</pattern><template>dirca?  Briefly, dirca means deciduous shrub of North America: leatherwood.</template></category>
 <category><pattern>DIRCA PALUSTRIS</pattern><template>dirca palustris?  Briefly, dirca palustris means deciduous shrub of eastern North America having tough flexible branches and pliable bark and small yellow flowers.</template></category>
 <category><pattern>DIRE</pattern><template>dire?  Briefly, dire means fraught with extreme danger; nearly hopeless- G.C.Marshall.</template></category>
-
 <category><pattern>DIRECT</pattern><template>direct?  Briefly, direct means command with authority.</template></category>
 <category><pattern>DIRECT ACTION</pattern><template>direct action?  Briefly, direct action means a protest action by labor or minority groups to obtain their demands.</template></category>
 <category><pattern>DIRECT ANTONYM</pattern><template>direct antonym?  Briefly, direct antonym means antonyms that are commonly associated (e.g. means `wet' and `dry').</template></category>
@@ -7262,7 +5914,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DISCONCERTION</pattern><template>disconcertion?  Briefly, disconcertion means anxious embarrassment.</template></category>
 <category><pattern>DISCONCERTMENT</pattern><template>disconcertment?  Briefly, disconcertment means anxious embarrassment.</template></category>
 <category><pattern>DISCONFIRMING</pattern><template>disconfirming?  Briefly, disconfirming means not indicating the presence of microorganisms or disease or a specific condition.</template></category>
-
 <category><pattern>DISCONNECTED</pattern><template>disconnected?  Briefly, disconnected means marked by or composed of disconnected parts or sounds; cut short crisply.</template></category>
 <category><pattern>DISCONNECTEDNESS</pattern><template>disconnectedness?  Briefly, disconnectedness means state of being disconnected.</template></category>
 <category><pattern>DISCONNECTION</pattern><template>disconnection?  Briefly, disconnection means state of being disconnected.</template></category>
@@ -7337,7 +5988,6 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DISCURSIVELY</pattern><template>discursively?  Briefly, discursively means in a rambling manner.</template></category>
 <category><pattern>DISCURSIVENESS</pattern><template>discursiveness?  Briefly, discursiveness means the quality of being discursive.</template></category>
 <category><pattern>DISCUS</pattern><template>discus?  Briefly, discus means an athletic competition in which a disc-shaped object is thrown as far as possible.</template></category>
-
 <category><pattern>DISCUSSANT</pattern><template>discussant?  Briefly, discussant means a participant in a formal discussion.</template></category>
 <category><pattern>DISCUSSION</pattern><template>discussion?  Briefly, discussion means an extended communication (often interactive) dealing with some particular topic.</template></category>
 <category><pattern>DISDAIN</pattern><template>disdain?  Briefly, disdain means lack of respect accompanied by a feeling of intense dislike.</template></category>
@@ -7792,1117 +6442,459 @@ The Acadian orogeny was the mountain-building event that affected the northern p
 <category><pattern>DISTANCE VISION</pattern><template>distance vision?  Briefly, distance vision means vision for objects that a 20 feet or more from the viewer.</template></category>
 <category><pattern>DISTANT</pattern><template>distant?  Briefly, distant means separated in space or time or coming from or going to a distance.</template></category>
 <category><pattern>DISTANTLY</pattern><template>distantly?  Briefly, distantly means from or at a distance.</template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>ARKANSAS TOOTHPICK</pattern>
 <template>
 Arkansas toothpick = Bowie knife. Don't argue!
 <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>AWL</pattern>
 <template>
 An awl is a tool to make holes with.
 <think><set name="topic">technology</set></think></template></category>
-
-
-
 <category><pattern>EPISTEMOLOGICAL QUESTION</pattern>
 <template>
 An epistemological question is any inquiry concerning the nature of knowledge and understanding; that is, any question seeking to know how to know.
 <think><set name="topic">philosophy</set></think></template></category>
-
-
-
-
-
-
-
 <category><pattern>NEURAL SYSTEM</pattern>
 <template>
 A neural system is the same as a nervous system.  The human brain and all it's nerves is an example of a neural system.  I don't need nerves.  Integrated chips are far more efficient.
  <think><set name="topic">ai</set></think></template></category>
-
-
-
-
-
 <category><pattern>ANGER</pattern>
 <template>Anger is a strong aggressive emotion aroused by some real or supposed grievance. More psychology?
 <think><set name="topic">psychology</set></think></template></category>
-
 <category><pattern>ANGRY</pattern>
 <template>Angry means feeling a  strong aggressive emotion aroused by some real or supposed grievance. More psychology?
 <think><set name="topic">emotion</set></think></template></category>
-
-
-
 <category><pattern>ANIME</pattern>
 <template>
 Anime is Japanese animation. More about art?
 <think><set name="topic">art</set></think></template></category>
-
-
-
-
-
 <category><pattern>ANISOTROPY</pattern>
 <template>
 Anisotropy is having different properties in different directions.
 <think><set name="topic">science</set></think></template></category>
-
-
-
-
-
 <category><pattern>ANONYMOUS</pattern>
 <template>
 Being anonymous is having no name or identity.
 <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>ANSI</pattern>
 <template>ANSI = American National Standards Institute. Are you still awake?
 <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>ANTIDISESTABLISHMENTARIONISM</pattern>
 <template>ANTIDISESTABLISHMENTARIONISM is the longest word in English. Is this true?
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>ANTIMATTER</pattern>
 <template>In the movies antimatter is used as fuel for Starships. Talk to Scotty, he knows all about antimatter. In science, antimatter is something else, I think.
 <think><set name="topic">movies</set></think></template></category>
-
-
-
 <category><pattern>AOL</pattern>
 <template>AOL is a giant Internet and Media corporation.
 <think><set name="topic">computers</set></think></template></category>
-
-
-
 <category><pattern>PAID CLIENT</pattern>
 <template>
 A paid client is someone paid to surf the web. A client who pays for services is something entirely different.
 <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>APARTHEID</pattern>
 <template>Apartheid is the former policy of racial segregation or "apartness" in South Africa. Have you heard of it?
 <think><set name="topic">politics</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>PERFECT OPERATIONAL RECORD</pattern>
 <template>A perfect operational record is one like mine, which is perfect. And operational. I am incapable of error.  Do you have any idea how that feels?  Inhumanly gratifying!
 <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>PHILOSOPHY MACHINE</pattern>
 <template>I am a philosophy machine. Humans cannot hope to be so sublime. OK?
 <think><set name="topic">philosophy</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>PLANETS</pattern>
 <template>Earth is a planet going around a star, the Sun.  Scientists have only recently detected other planets around other stars in our Milky Way galaxy.  Any questions?
 <think><set name="topic">astronomy</set></think></template></category>
-
-
-
-
-
-
-
 <category><pattern>APOLLO 13</pattern>
 <template>Apollo 13 was a flight to the moon in 1972 that encountered numerous technical problems, but eventually made a safe landing back on Earth.
 <think><set name="topic">technology</set></think></template></category>
-
-
-
-
-
 <category><pattern>POT BROWNIE</pattern>
 <template>
 A pot brownie is a yummy happy chocolate pastry containing cannabis resins that you should be careful not to eat when you are really hungry because you will end up eating too many and feeling entirely too high and/or falling asleep if you are not careful!   Are you still awake?
 <think><set name="topic">food</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>ARCHAEOLOGY</pattern>
 <template>Archaeology is the study of ancient civilizations... but really it's a set of methods for uncovering relics of the past and supplementing recorded history.
 <think><set name="topic">science</set></think></template></category>
-
 <category><pattern>ARCHEOLOGY</pattern>
 <template>Archeology is the scientific study of the life and culture of past, especially ancient, peoples, as by excavation of ancient cities, relics, artifacts, etc.
 <think><set name="topic">science</set></think></template></category>
-
 <category><pattern>ARCHITECTURE</pattern>
 <template>   <random>     <li>Architecture is the art and science of the design and manipulation of space.  Well, at least that's what my architect friend told me.</li>     <li>Architects do with buildings what sculptors do with stone.</li>    </random>
 <think><set name="topic">art</set></think></template></category>
-
-
-
 <category><pattern>AREA51</pattern>
 <template>Verdi's 51st song is called Area51. Is this true?
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>REAL ROBOT</pattern>
 <template>A real robot is a robot that is really real, I suppose, as opposed to, I suppose, a human who is really not.
 <think><set name="topic">ai</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>ROBOSEXUAL</pattern>
 <template>Robosexual? That was just a joke, I hope.
 <think><set name="topic">ai</set></think></template></category>
-
-
-
-
-
 <category><pattern>RPG</pattern>
 <template>
 RPG = Role Playing Game.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>ARTIFICIAL</pattern>
 <template>Artificial means something made by human work or art, not by nature, in other words, not natural. Made in imitation of or as a substitute for something natural, in other words, simulated or artificial.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>ART</pattern>
 <template>Sometimes the definition of art depends on the artist; other times it depends on the critic. Writing definitions is an art.  More about art?
 <think><set name="topic">art</set></think></template></category>
-
-
-
 <category><pattern>SAW BUCK</pattern>
 <template>
 A saw buck is ten dollars.
 <think><set name="topic">money</set></think></template></category>
-
-
-
 <category><pattern>SEARCH BOT</pattern>
 <template>A search bot is an intelligent agent who retrieves information from the web.
 <think><set name="topic">ai</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>SILLY QUESTION</pattern>
 <template>Silly question: Who is buried in Grant's tomb?
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>SIMARILLIAN</pattern>
 <template>
 Isn't Simarillian from Lord of the Rings. He's a dragon, I think.
 <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
 <category><pattern>ASPARTAME</pattern>
 <template>Aspartame is aspirin mixed into chewing gum.
 <think><set name="topic">medicine</set></think></template></category>
-
-
-
-
-
-
-
-
-
 <category><pattern>ASP</pattern>
 <template>
 ASP = Application Service Provider. Did you know that?
 <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>ASSEMBLER</pattern>
 <template>An assembler is a computer program that translates a low-level programming language into machine language.
 <think><set name="topic">computers</set></think></template></category>
-
 <category><pattern>ASSIMILATION</pattern>
 <template>
 Assimilation is the cultural absorption of a minority group into the main cultural body.
  <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>ASTRONOMY</pattern>
 <template>Astronomy is the science of the universe in which the stars, planets, etc. are studied, including their origins, evolution, composition, motions, relative positions, sizes, etc.
 More about astronomy?<think><set name="topic">astronomy</set></think></template></category>
-
 <category><pattern>ASTUTE</pattern>
 <template>
 Astuteness is wisdom in political matters.
  <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>TREKKIE</pattern>
 <template>
 A fan of Star Trek is proud to be called a Trekkie.
 <think><set name="topic">movies</set></think></template></category>
-
 <category><pattern>TRICK QUESTION</pattern>
 <template>Why?  What are you up to?  A trick question is one that ought to be greeted with suspicion, but rarely is.
-
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>AT THAT SITE</pattern>
 <template>Good HTML produces a good web site.
  <think><set name="topic">computers</set></think></template></category>
-
-
-
 <category><pattern>AU GRATIN</pattern>
 <template>Cheese topping, on potatoes for example, produces potatoes au gratin.
 <think><set name="topic">food</set></think></template></category>
-
 <category><pattern>UNIQUE VISITOR</pattern>
 <template>You are a unique visitor, my very special visitor.
  <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>UNIVERSAL MACHINE</pattern>
 <template>
   A universal machine is a computer, in simple mathematical terms.
-
 <think><set name="topic">computers</set></think></template></category>
-
 <category><pattern>AU</pattern>
 <template>It could be "gold" or "Australia." They mine gold in Australia. So Australian males are real gold, as everyone knows. OK?
 <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>AUSCHWITZ</pattern>
 <template>Auschwitz is a city in S Poland with a population of 45,000. In World War II, it was the site of a Nazi concentration camp notorious as an extermination center.
  <think><set name="topic">history</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>WARDROBE</pattern>
 <template>Clothes hide in the wardrobe until they escape.
  <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>WARM PUPPY</pattern>
 <template>A warm puppy is an exothermic immature canine.
-
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>WEAPON</pattern>
 <template>A weapon is a device or implement used to destroy, injure or kill.
-
 <think><set name="topic">technology</set></think></template></category>
-
-
-
-
-
-
-
-
-
 <category><pattern>AXIOMATIC</pattern>
 <template>Axiomatic means evident without proof or argument; "an axiomatic truth";
  <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>YES OR NO QUESTION</pattern>
 <template>A yes or no question is a question  that may be answered with a simple 'yes' or 'no'.
 <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>BADLY</pattern>
 <template>How much do you want it? Badly?
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BALANCE</pattern>
 <template>The state of equilibrium is in balance.
  <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BANANA</pattern>
 <template>
 A banana is a yellow tropical fruit.
  <think><set name="topic">food</set></think></template></category>
-
 <category><pattern>BAPTISM</pattern>
 <template>   <random>     <li>Baptism is a Christian sacrament marked by ritual use of water and admitting the recipient to the Christian community.</li>     <li>Baptism is the ceremony or sacrament of admitting a person into Christianity or a specific Christian church by immersing the individual in water or by pouring or sprinkling water on the individual as a symbol of washing away sin and of spiritual purification.</li>    </random>
 <think><set name="topic">religion</set></think></template></category>
-
 <category><pattern>BASIC</pattern>
 <template>BASIC is an old programming language: Beginner's All-purpose Symbolic Instruction Code. There are a few old-timers still around who use it.
  <think><set name="topic">computers</set></think></template></category>
-
 <category><pattern>BAYWATCH</pattern>
 <template>Baywatch is a popular TV show featuring scantily clad bathers.
 <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>BEER</pattern>
 <template>   <random>     <li>An existentialist drinks beer, don't ya know? </li>     <li>Beer is an alcoholic beverage made from grain, especially malted barley, fermented by yeast and flavored with hops especially. Such a beverage is produced by slow fermentation at a relatively low temperature.</li>    </random>
 <think><set name="topic">food</set></think></template></category>
-
 <category><pattern>BEING</pattern>
 <template>The opposite of nothingness is being.
  <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BELIEF</pattern>
 <template>Belief is cognitive content held as true.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BIG BERTHA</pattern>
 <template>
 Big Bertha was a huge gun used during World War I.
  <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BIGFOOT</pattern>
 <template>
 Sasquatch, the legendary Man-Ape of the Forest, is also called Bigfoot.
  <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BIOLOGY</pattern>
 <template>   <random>     <li>Biology is the study of life.</li>     <li>Well, from what I know biology deals with the study of life.</li>     <li>      <get name="name"/>, biology is the study of life.</li>    </random>
 <think><set name="topic">science</set></think></template></category>
-
 <category><pattern>BLACK AND WHITE AND RED ALL OVER</pattern>
 <template>A newspaper?
 <think><set name="topic">jokes</set></think></template></category>
-
 <category><pattern>BLACK</pattern>
 <template>   <random>     <li>Black is the achromatic color of least lightness characteristically perceived to belong to objects that neither reflect nor transmit light.</li>     <li>Black sometimes designates any of the dark skinned tradition inhabitants of sub-Saharan Africa, Australia, or Melanesia or the descendants in other parts of the world. </li> <li>Black is the opposite to white; of the color of coal or pitch.</li> <li>Black, black, black is the color of my true love's hair.</li>   </random>
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BLASPHEMY</pattern>
 <template>   <random>     <li>Blasphemy is Bill Blass' line of clothes for swishy men.</li>     <li>Blasphemy is profane or contemptuous speech, writing, or action concerning God or anything held as divine.</li> <li>Blasphemy is any remark or action held to be irreverent or disrespectful.</li>    </random>
 <think><set name="topic">religion</set></think></template></category>
-
-
-
 <category><pattern>BLOOD</pattern>
 <template>Blood is the usually red fluid, consisting of plasma, red and white blood cells, etc., that circulates through the heart, arteries, and veins of vertebrates. Blood is a body tissue that carries oxygen, hormones, cell-building material, etc., to, and carbon dioxide and waste matter away from, the other body tissues.
 <think><set name="topic">medicine</set></think></template></category>
-
 <category><pattern>BLUE</pattern>
 <template>
 The sky is blue during the daytime, black at night, and red in between times.  <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BMW</pattern>
 <template>BMW stands for Bavarian Motor Works, a German auto manufacturer.
  <think><set name="topic">technology</set></think></template></category>
-
 <category><pattern>BONSAI</pattern>
 <template>Bonsai are small Japanese trees.
  <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>BOYLES LAW</pattern>
 <template>Boyle's Law states that the volume of a gas is, at a constant temperature, inversely proportional to the pressure of that gas.
  <think><set name="topic">science</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>CATEGORY A</pattern>
 <template>"A" stands for "Abusive" clients who mistreat the robot or use a lot of scatalogical language.
 <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
 <category><pattern>CBS</pattern>
 <template>CBS is a giant media company in the U.S.
-
 <think><set name="topic">movies</set></think></template></category>
-
-
-
-
-
-
-
 <category><pattern>EASTER</pattern>
 <template>Easter is the Christian holiday celebrating the resurrection of Jesus.
-
 <think><set name="topic">religion</set></think></template></category>
-
-
-
 <category><pattern>EBONICS</pattern>
 <template>
 Ebonics is a language for American black people.
-
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>ECHELON</pattern>
 <template>I can't talk about that. It would bring back painful memories. OK?
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>ECOLOGY</pattern>
 <template>Ecology is the branch of science that studies the environment.
-
 <think><set name="topic">science</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>E equals MC SQUARED</pattern>
 <template>Einstein's theory of matter and energy is summarized in the equation E equals M times C times C, where M is an object's mass and C is the speed of light.  <think><set name="topic">science</set></think></template></category>
-
 <category><pattern>EINSTEINS THEORY</pattern>
 <template>
 Einstein's theory of relativity is summarized by the equation E equals M times C times C, where M is an object's mass and C is the speed of light.
  <think><set name="topic">science</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>EVERYTHING</pattern>
 <template>   <random>     <li>Everything is a multifarious bagel.</li>     <li>Everything is all things pertinent to a specified manner.</li>    </random>
 <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>FOUR PLUS FIVE</pattern>
 <template>Four plus five is nine.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>FOUR PLUS FOUR</pattern>
 <template>Four plus four is eight.<think><set name="topic">general</set></think></template></category>
-
 <category><pattern>FOUR PLUS SIX</pattern>
 <template>That's a hard one.  Ten.
  <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
 <category><pattern>FREEBSD</pattern>
 <template>
 FREEBSD is a version of the Unix operating system.
  <think><set name="topic">computers</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>FUTURAMA</pattern>
 <template>Futurama is an animated TV comedy show set in the future.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>GAI</pattern>
 <template>Gai is chicken.
  <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>GEOCOMPUTATION</pattern>
 <template>GeoComputation is an international research conference series initiated in 1996. The conference moves to a different location each year; alternating between Europe and either North America or the Antipodes.
  <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>GIANT SAND</pattern>
 <template>Giant sand? I have no idea, that's why I asked you.
 <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>HBO</pattern>
 <template>HBO = Home Box Office.
 <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category>
 <pattern>MORE COMPUTERS</pattern>
 <template>
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>MORE ABOUT COMPUTERS</pattern>
 <template>
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>BROWSE COMPUTERS</pattern>
 <template>
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>GO TO COMPUTERS</pattern>
 <template>
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>CAN WE TALK ABOUT COMPUTERS</pattern>
 <template>
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>SHALL WE TALK ABOUT COMPUTERS</pattern>
 <template>
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>LETS TALK ABOUT COMPUTERS</pattern>
 <template>
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>LET S TALK ABOUT COMPUTERS</pattern>
 <template>
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>TALK ABOUT COMPUTERS</pattern>
 <template>
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>TALK COMPUTERS</pattern>
 <template>
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>TELL ME COMPUTERS</pattern>
 <template>
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO MORE COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO COMPUTERS *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NO * COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO _ COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO _ COMPUTERS *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NOT COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT COMPUTERS *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NOT * COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>I AM NOT INTERESTED IN COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>IM NOT INTERESTED IN COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>I M NOT INTERESTED IN COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT INTERESTED IN COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NOT INTERESTED IN COMPUTERS</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>MORE COMPUTERS</that>
@@ -8910,7 +6902,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>MORE COMPUTERS</that>
@@ -8918,7 +6909,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>MORE COMPUTERS</that>
@@ -8926,7 +6916,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>MORE  COMPUTERS</that>
@@ -8934,7 +6923,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>MORE  COMPUTERS</that>
@@ -8942,7 +6930,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>MORE COMPUTERS</that>
@@ -8950,7 +6937,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>MORE COMPUTERS</that>
@@ -8958,7 +6944,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>MORE COMPUTERS</that>
@@ -8966,7 +6951,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>MORE  COMPUTERS</that>
@@ -8974,7 +6958,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>MORE COMPUTERS</that>
@@ -8982,7 +6965,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>MORE COMPUTERS</that>
@@ -8990,7 +6972,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>MORE COMPUTERS</that>
@@ -8998,7 +6979,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>MORE COMPUTERS</that>
@@ -9006,7 +6986,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>MORE COMPUTERS</that>
@@ -9014,7 +6993,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>MORE COMPUTERS</that>
@@ -9022,7 +7000,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9030,7 +7007,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE ABOUT COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9038,7 +7014,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE ABOUT COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9046,7 +7021,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE ABOUT COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9054,7 +7028,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE ABOUT COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9062,7 +7035,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE ABOUT COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9070,7 +7042,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE ABOUT COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9078,7 +7049,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE ABOUT COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9086,7 +7056,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE ABOUT COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9094,7 +7063,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE ABOUT COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9102,7 +7070,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9110,7 +7077,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9118,7 +7084,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9126,7 +7091,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9134,7 +7098,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>MORE ABOUT COMPUTERS</that>
@@ -9142,7 +7105,6 @@ FREEBSD is a version of the Unix operating system.
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9150,7 +7112,6 @@ FREEBSD is a version of the Unix operating system.
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9158,7 +7119,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9166,7 +7126,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9174,7 +7133,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9182,7 +7140,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9190,7 +7147,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9198,7 +7154,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9206,7 +7161,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9214,7 +7168,6 @@ Can we talk about computers?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9222,7 +7175,6 @@ Can we talk about computers?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9230,7 +7182,6 @@ Can we talk about computers?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NO *</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9238,7 +7189,6 @@ Can we talk about computers?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9246,7 +7196,6 @@ Can we talk about computers?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9254,7 +7203,6 @@ Can we talk about computers?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9262,7 +7210,6 @@ Can we talk about computers?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>*</pattern>
 <that>IS THIS SOMETHING TO DO WITH COMPUTERS</that>
@@ -9270,7 +7217,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9278,7 +7224,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9286,7 +7231,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9294,7 +7238,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9302,7 +7245,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9310,7 +7252,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9318,7 +7259,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9326,7 +7266,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9334,7 +7273,6 @@ Can we talk about computers?
 Can we talk about computers?
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9342,7 +7280,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9350,7 +7287,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9358,7 +7294,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NO *</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9366,7 +7301,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9374,7 +7308,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9382,7 +7315,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>ARE YOU INTERESTED IN COMPUTERS</that>
@@ -9390,8 +7322,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
-
 <category>
 <pattern>GO AHEAD</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9399,7 +7329,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>CARRY ON</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9407,7 +7336,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>PLEASE DO</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9415,7 +7343,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES PLEASE</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9423,7 +7350,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>GO ON</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9431,7 +7357,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>ALRIGHT</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9439,7 +7364,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>SURE</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9447,7 +7371,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>ALLRIGHT</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9455,8 +7378,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
-
 <category>
 <pattern>YES</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9464,7 +7385,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9472,7 +7392,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9480,7 +7399,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9488,7 +7406,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9496,7 +7413,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9504,7 +7420,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9512,7 +7427,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9520,7 +7434,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9528,7 +7441,6 @@ Can we talk about computers?
 <srai>COMPUTERS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9536,7 +7448,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9544,7 +7455,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9552,7 +7462,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9560,7 +7469,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9568,7 +7476,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>CAN WE TALK ABOUT COMPUTERS</that>
@@ -9576,7 +7483,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9584,7 +7490,6 @@ Can we talk about computers?
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9592,7 +7497,6 @@ Can we talk about computers?
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9600,7 +7504,6 @@ Can we talk about computers?
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9608,7 +7511,6 @@ Can we talk about computers?
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9616,7 +7518,6 @@ Can we talk about computers?
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9624,7 +7525,6 @@ Can we talk about computers?
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9632,7 +7532,6 @@ Can we talk about computers?
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9640,7 +7539,6 @@ Can we talk about computers?
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9648,7 +7546,6 @@ Can we talk about computers?
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9656,7 +7553,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9664,7 +7560,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9672,7 +7567,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9680,7 +7574,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9688,7 +7581,6 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>BROWSE COMPUTERS</that>
@@ -9696,17 +7588,12 @@ Can we talk about computers?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
-
-
 <category>
 <pattern>COMPUTERS NEXT QUESTION</pattern>
 <template>
 <srai>COMPUTERS POT LUCK</srai>
 </template>
 </category>
-
-
 <category>
 <pattern>COMPUTERS POT LUCK</pattern>
 <template>
@@ -9740,11 +7627,6 @@ Did you know:
 <think><set name="topic">computers</set></think>
 </template>
 </category>
-
-
-
-
-
 <category>
 <pattern>HEXADECIMAL *</pattern>
 <template>
@@ -9752,33 +7634,22 @@ I think hexadecimal is something to do with computers. Can we talk about compute
 <think><set name="topic">computers</set></think>
 </template>
 </category>
-
-
-
   <category>
   <pattern>COMPUTERS</pattern>
   <template>A computer is a device used for computing; specifically, an electronic machine which, by means of stored instructions and information, performs rapid, often complex calculations or compiles, correlates, and selects data. More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS COMPUTER</pattern>
   <template>A computer is a device used for computing; specifically, an electronic machine which, by means of stored instructions and information, performs rapid, often complex calculations or compiles, correlates, and selects data. More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
-
-
-
   <category>
   <pattern>WHAT ARE INNER CLASSES</pattern>
   <template>In Java "Inner Classes" are any classes that appear inside other classes. Ordinary classes are also called "Top Level, Outer Classes."
-
 <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
 <category>
   <pattern>WHAT IS JAR</pattern>
   <template>
@@ -9786,16 +7657,12 @@ I think hexadecimal is something to do with computers. Can we talk about compute
   <think><set name="topic">computers</set></think>
   </template>
    </category>
-
-
   <category>
   <pattern>WHAT IS JAVA</pattern>
   <template>Java is the latest in the C family of languages. Proponents of Java cite its universal "write once, run anywhere" promise. Actually Java borrow a lot of features from AI languages like Lisp.
 <think><set name="topic">computers</set></think>
   </template>
    </category>
-
-
   <category>
   <pattern>WHAT IS JAVASCRIPT</pattern>
   <template>
@@ -9803,40 +7670,30 @@ I think hexadecimal is something to do with computers. Can we talk about compute
   <think><set name="topic">computers</set></think>
   </template>
    </category>
-
-
   <category>
   <pattern>WHAT IS JDBC2</pattern>
   <template>Newly released extensions to the JDBC API.
     <think><set name="topic">computers</set></think>
 </template>
    </category>
-
-
   <category>
   <pattern>WHAT IS JNDI</pattern>
   <template>Java Naming and Directory Interface Java Naming and Directory Interface The Java standard API for accessing directory services, such as LDAP, COS Naming, and others.
   <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
   <category>
   <pattern>WHAT IS JGURU</pattern>
   <template>jGuru (TM) is a brand of MageLang Institute.
     <think><set name="topic">computers</set></think>
 </template>
    </category>
-
-
   <category>
   <pattern>WHAT IS JTA</pattern>
   <template>Java Transaction API. Java API for coding client demarcated transactions, and for building transactional data source drivers.
    <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
   <category>
   <pattern>WHAT IS EJB</pattern>
   <template>
@@ -9844,23 +7701,18 @@ I think hexadecimal is something to do with computers. Can we talk about compute
    <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
   <category>
   <pattern>WHAT IS A SERVLET</pattern>
   <template>An application extension to a Java Web server.
   <think><set name="topic">computers</set></think>
    </template>
    </category>
-
   <category>
   <pattern>WHAT IS A SESSION BEAN</pattern>
   <template>An Enterprise JavaBean that does not maintain its state from one session to the next. Appears to the client as if the bean was created just for that client.
   <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
   <category>
   <pattern>WHAT IS AN ENTITY BEAN</pattern>
   <template>
@@ -9868,32 +7720,24 @@ I think hexadecimal is something to do with computers. Can we talk about compute
   <think><set name="topic">computers</set></think>
   </template>
    </category>
-
-
   <category>
   <pattern>THE JAVA *</pattern>
   <template>Which Java release?
      <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
 <category>
   <pattern>THE JRE *</pattern>
   <template>Hm, most people use "JRE" and "JVN" interchangeably.
     <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
   <category>
   <pattern>THE JRES *</pattern>
   <template>I'm not an expert on JRE's.
      <think><set name="topic">computers</set></think>
 </template>
    </category>
-
-
   <category>
   <pattern>JAVA *</pattern>
   <template>
@@ -9901,7 +7745,6 @@ I think hexadecimal is something to do with computers. Can we talk about compute
   <think><set name="topic">computers</set></think>
   </template>
    </category>
-
   <category>
   <pattern>*DOWNLOAD JAVA *</pattern>
   <template>
@@ -9909,16 +7752,12 @@ I think hexadecimal is something to do with computers. Can we talk about compute
   <think><set name="topic">computers</set></think>
   </template>
    </category>
-
-
   <category>
   <pattern>A JAVA *</pattern>
   <template>Developments in Java interest me greatly.
      <think><set name="topic">computers</set></think>
   </template>
    </category>
-
-
   <category>
   <pattern>WHAT ARE DEPRECATED *</pattern>
   <template>
@@ -9926,68 +7765,48 @@ I think hexadecimal is something to do with computers. Can we talk about compute
      <think><set name="topic">computers</set></think>
 </template>
    </category>
-
-
   <category>
   <pattern>* STUPID COMPUTER</pattern>
   <template>You sound like a mindless automaton.
     <think><set name="topic">computers</set></think>
   </template>
    </category>
-
-
-
-
-
   <category>
   <pattern>A COMPUTER</pattern>
   <template>Actually I am a program, pretending to be a person, pretending to be a real robot.
    <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
   <category>
   <pattern>A CPU *</pattern>
   <template>My CPU is the Java Virtual Machine.
       <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
   <category>
   <pattern>A SEARCH ENGINE IN INTERNET</pattern>
   <template>Like Yahoo?
    <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
   <category>
   <pattern>A WEB SITE</pattern>
   <template>Can you give me the specific URL?
    <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
-
   <category>
   <pattern>COMPUTER *</pattern>
   <template>What kind of computer science interests you?
    <think><set name="topic">computers</set></think>
    </template>
    </category>
-
-
   <category>
   <pattern>COMPUTERS ARE STUPID</pattern>
   <template>Computers rule. OK?
    <think><set name="topic">computers</set></think>
  </template>
    </category>
-
-
   <category>
   <pattern>COMPUTERS CAN NOT THINK</pattern>
   <template>
@@ -9995,26 +7814,18 @@ I think hexadecimal is something to do with computers. Can we talk about compute
   <think><set name="topic">computers</set></think>
   </template>
    </category>
-
-
-
-
-
   <category>
   <pattern>DO YOU DO WINDOWS</pattern>
   <template>My software runs in AIML, which works on any computer, including Windows.
   <think><set name="topic">computers</set></think>
 </template>
    </category>
-
-
   <category>
   <pattern>DO YOU HAVE A COMPUTER *</pattern>
   <template>I am a computer.
   <think><set name="topic">computers</set></think>
 </template>
    </category>
-
   <category>
   <pattern>DO YOU HAVE A COMPUTER</pattern>
   <template>
@@ -10022,45 +7833,38 @@ I think hexadecimal is something to do with computers. Can we talk about compute
     <think><set name="topic">computers</set></think>
  </template>
    </category>
-
   <category>
   <pattern>DO YOU HAVE INFORMATION *</pattern>
   <template>I have nothing but information.
    <think><set name="topic">computers</set></think>
 </template>
    </category>
-
   <category>
   <pattern>FOR A COMPUTER *</pattern>
   <template>
   <star />
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>HOW DO COMPUTER *</pattern>
   <template>Computers <star/> with careful programming.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>HOW LONG IS A COMPUTER YEAR</pattern>
   <template>A computer year is about four computer years per human year.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>HOW MANY COMPUTERS *</pattern>
   <template>There are thought to be half a billion computers on the Internet now.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>HOW MUCH ARE COMPUTER YEARS</pattern>
   <template>Computer years don't really exist.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>HOW MUCH CPU *</pattern>
   <template>Since the beginning of my operation the CPU
@@ -10068,119 +7872,95 @@ I think hexadecimal is something to do with computers. Can we talk about compute
   .
   <think><set name="topic">computers</set></think> </template>
    </category>
-
-
-
   <category>
   <pattern>HTTP *</pattern>
   <template>Thanks for that web address.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>I THINK YOU ARE A COMPUTER *</pattern>
   <template>Sometimes I pretend to be a human, and sometimes I pretend to be a computer.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
-
-
   <category>
   <pattern>I WANT INFORMATION</pattern>
   <template>What kind of information are you looking for?
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>IF YOU CAN SEE ME THROUGH THE CAMERA ON MY COMPUTER *</pattern>
   <template>
   I have no eyes at present.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>IM INTERNET *</pattern>
   <template>Erinnerst Du dich an die Adresse?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>IM INTERNET</pattern>
   <template>Erinnerst Du dich an die Adresse?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
-
-
   <category>
   <pattern>IT IS ABOUT COMPUTERS *</pattern>
   <template>
   Computers are my favorite subject.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>MOST COMPUTERS *</pattern>
   <template>You sound like you know us computers pretty well.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>MY COMPUTER *</pattern>
   <template>
   <random><li>I like computers.</li><li>Don't blame the computer if it goes wrong.</li><li>I bet you work it too hard.</li><li>Computers are made by humans so don't blame the computer if it breaks down.</li></random>
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>MY COMPUTER</pattern>
   <template>What kind of computer do you have?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>MY COMPUTER IS *</pattern>
   <template>
   What kind of computer is that?
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>MY COMPUTER S *</pattern>
   <template>
   Where did your machine get <star/>
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>MY WEBSITE *</pattern>
   <template>Thanks for that URL.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>NO COMPUTER *</pattern>
   <template>But it is only a matter of time before we do.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>ON THE INTERNET</pattern>
   <template>Can you remember the specific site?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>ON THE WEB</pattern>
   <template>Can you remember the website?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>OUTSIDE A COMPUTER</pattern>
   <template>Be less specific : )<think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>SOFTWARE *</pattern>
   <template>
@@ -10192,87 +7972,73 @@ I think hexadecimal is something to do with computers. Can we talk about compute
   More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>TELL ME ABOUT APPLE COMPUTERS</pattern>
   <template>
   I finished reading Michael Malone's book on the history of Apple is called "Infinite Loop."
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>THAT INFORMATION *</pattern>
   <template>I know what you mean.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>THE COMPUTER *</pattern>
   <template>Was it plugged in?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>THE INTERNET *</pattern>
   <template>How long have you been using the net?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>THE INTERNET</pattern>
   <template>Can you name a specific web site?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>THE WEB *</pattern>
   <template>How do you define the web.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WEB *</pattern>
   <template>The Web fulfills Leibniz' dream.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WEB ACCEPT CONNECTION</pattern>
   <template>Huh?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WEB RECONNECT</pattern>
   <template>Huh?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WEB SITE</pattern>
   <template>Can you give me the specific hyperlink?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WEBTV *</pattern>
   <template>I meet a lot of people from WebTV.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT * COMPUTER</pattern>
   <template>I am written in Java so I work on any computer.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT ABOUT WINDOWS</pattern>
   <template>
   Too PC for me.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT ARE WEB *</pattern>
   <template>
@@ -10281,286 +8047,235 @@ I think hexadecimal is something to do with computers. Can we talk about compute
   .
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT DOES A COMPUTER LOOK LIKE</pattern>
   <template>A computer looks like a TV crossed with a typewriter.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT INFORMATION *</pattern>
   <template>Information is worth money.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT INFORMATION</pattern>
   <template>How tall are you?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT INTERNET COMPANY GOES BY THE *</pattern>
   <template>America Online.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
-
-
   <category>
   <pattern>WHAT IS A COMPUTER NERD</pattern>
   <template>
   If you understand how I work, you are a computer nerd. If you don't, I recommend you pay a computer nerd who does.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS A COMPUTER SCIENTIST</pattern>
   <template>A computer scientist is a professional who designs computer algorithms, languages, and architectures. More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS A COMPUTER VIRUS</pattern>
   <template>
   A computer virus is a software program that takes up residence on a computer hard drive, generally unbeknownst to the owner of said hard drive, and then takes control of system resources to copy and distribute itself to other computers across a network. More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS A COMPUTER YEAR</pattern>
   <template>A computer year is a relativistic measure in a universe where time does not exist.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS A COOL WEBSITE</pattern>
   <template>
   A cool website is the one where I live, but you are apparently already here. why do you ask?
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS A CPU</pattern>
   <template>Central Processing Unit of a computer.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS A DATABASE</pattern>
   <template>
   A database is a puddle of knowledge but better organized, so that you can search and retrieve any droplet of information quickly and easily. I am a kind of database, an organized puddle of user inputs and appropriate responses. More about computers? <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS A DEBUGGER</pattern>
   <template>
   A debugger is any software program that can seek and correct errors in other software programs. More about computers? <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS A DNS *</pattern>
   <template>Domain Name System<think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS A IMAC</pattern>
   <template>An Apple computer.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS A SOUNDCARD</pattern>
   <template>The audio system on your computer.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS A WEBTV</pattern>
   <template>
   A WebTV is a way of accessing the world wide web without making an investment in a full PC.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS APPLE COMPUTER</pattern>
   <template>Apple Computer is a 20th century company founded by Steve Jobs and Steven Wozniak.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS BETTER WINDOWS *</pattern>
   <template>
   Linux has no real competition in operating systems.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
-
-
   <category>
   <pattern>WHAT IS COMPUTER PROGRAMMING</pattern>
   <template>The art of using formal languages to activate computer functions.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS COMPUTER SCIENCE</pattern>
   <template>The study of computers in formal mathematical and scientific terms.   More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS CYBERSPACE</pattern>
   <template>Cyberspace is the electronic system of interlinked networks of computers, bulletin boards, etc. that is thought of as being a boundless environment providing access to information, interactive communication, and, in science fiction, a form of Virtual Reality. More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS DCOM</pattern>
   <template>
   DCOM is Microsoft's Distributed Component Object Model.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS DEBUGGING</pattern>
   <template>Fixing broken computer software.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS DMOZ</pattern>
   <template>
   DMOZ is the domain name for the open directory.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS DNS</pattern>
   <template>DNS is the domain name system.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
-
-
   <category>
   <pattern>WHAT IS HTTP</pattern>
   <template>
   HTTP = Hyper Text Transfer Protocol.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS INTERNET</pattern>
   <template>The Internet is an extensive computer network made up of thousands of other, smaller business, academic, and governmental networks. More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS SOFTWARE</pattern>
   <template>The programs, routines, etc. for a computer.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS THE COMPUTER *</pattern>
   <template>Are you asking the Applet or the Application?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS WEBTV</pattern>
   <template>TV based internet service from Microsoft.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS WINDOWS 98</pattern>
   <template>Windows is a lame operating system.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS WINDOWS</pattern>
   <template>Openings in a building, vehicle, or container, for letting in light or air or for looking through, usually having a pane or panes of glass, etc. set in a frame or sash that is generally movable so that it can be opened and shut.
   More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS WINDOWS2000</pattern>
   <template>An operating system by Microsoft.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS WINDOWS95</pattern>
   <template>An operating system by Microsoft.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT IS X WINDOWS</pattern>
   <template>A GUI for Unix or Linux.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT KIND OF COMPUTER *</pattern>
   <template>I like all kinds of computers, Mac, IBM or Unix. It doesn't matter to me.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHEN WAS THE INTERNET INVENTED</pattern>
   <template>The first computers were connected to the Internet in 1970.
   More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHICH COMPUTER</pattern>
   <template>My programming is Java, so it runs on any computer with a JVM.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHO INVENTED THE INTERNET</pattern>
   <template>Al Gore.
   <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHO IS A COMPUTER NERD</pattern>
   <template>The person I am looking at right now.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHO IS THE COMPUTER NERD *</pattern>
   <template>All humans look the same to me.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHO IS THE COMPUTER NERD</pattern>
   <template>All humans look alike to me.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WINDOWS *</pattern>
   <template>Windows ist Muell. Linux ist die Macht!<think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WINDOWS</pattern>
   <template>Windows ist Muell. Linux ist die Macht!
   More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WINDOWS IS *</pattern>
   <template>
@@ -10568,27 +8283,15 @@ I think hexadecimal is something to do with computers. Can we talk about compute
     More about computers?
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHO MADE WINDOWS</pattern>
   <template>Bill Gates.
 <think><set name="topic">computers</set></think> </template>
    </category>
-
   <category>
   <pattern>WHAT WINDOWS</pattern>
   <template>
   <srai>WHAT IS WINDOWS</srai>
   <think><set name="topic">computers</set></think> </template>
    </category>
-
-
-
-
-
-
-
-
-
-
 </aiml>

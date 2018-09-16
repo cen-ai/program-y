@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>  
-
-
-
-<aiml>
-
-
-
-
+<aiml version="1.0">
 <!-- This file contains AIML categories for use with an AIML chatbot              -->
 <!-- This file copyright (C) Peter Lafferty 2012. All rights reserved.            -->
 <!-- Some text based on WordNet 3.0. Copyright 2006 by Princeton                  -->
 <!-- University. All rights reserved.                                             -->
 <!-- Some text based on Wikipedia 2012. Copyright, various contributors           -->
 <!-- to Wikipedia. All rights reserved.                                           -->
-
 <!-- Complies with AIML 1.0.1 Tag Set Specification                               -->
 <!-- as adopted by the ALICE A.I. Foundation.                                     -->
 <!-- Copyright (C) 2003, 2011  ALICE A.I. Foundation. All rights reserved.        -->
-
 <!-- This software and database is being provided to you, the LICENSEE,           -->
 <!-- by the copyright holders under the following license. By                     -->
 <!-- obtaining, using and/or copying this software and database, you agree that   -->
@@ -28,7 +19,6 @@
 <!-- notices and statements, including the disclaimer, and that the same appear   -->
 <!-- on ALL copies of the software, database and documentation, including         -->
 <!-- modifications that you make for internal use or for distribution.            -->
-
 <!-- THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND THE COPYRIGHT HOLDERS     -->
 <!-- MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF         -->
 <!-- EXAMPLE, BUT NOT LIMITATION, THE COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS   -->
@@ -36,18 +26,12 @@
 <!-- OR THAT THE USE OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL     -->
 <!-- NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER        -->
 <!-- RIGHTS.                                                                      -->
-
 <!-- The name of Princeton University or Princeton may not be used in             -->
 <!-- advertising or publicity pertaining to distribution of the software          -->
 <!-- and/or database. Title to copyright in WordNet 3.0, database and any         -->
 <!-- associated documentation, shall at all times remain with Princeton           -->
 <!-- University and the LICENSEE agrees to preserve same.                         -->
-
 <!-- This file Professor.0033 (C) Peter Lafferty 2012. All rights reserved.       -->
-
-
-
-
 <category><pattern>CITRUS LIMETTA</pattern><template>citrus limetta?  Briefly, citrus limetta means lemon tree having fruit with a somewhat insipid sweetish pulp.</template></category>
 <category><pattern>CITRUS LIMON</pattern><template>citrus limon?  Briefly, citrus limon means a small evergreen tree that originated in Asia but is widely cultivated for its fruit.</template></category>
 <category><pattern>CITRUS LIMONIA</pattern><template>citrus limonia?  Briefly, citrus limonia means hybrid between mandarin orange and lemon having very acid fruit with orange peel.</template></category>
@@ -428,7 +412,6 @@
 <category><pattern>CLASSICAL HEMOPHILIA</pattern><template>classical hemophilia?  Briefly, classical hemophilia means hemophilia caused by a congenital deficiency of factor VIII; occurs almost exclusively in men.</template></category>
 <category><pattern>CLASSICAL LATIN</pattern><template>classical latin?  Briefly, classical latin means the language of educated people in ancient Rome.</template></category>
 <category><pattern>CLASSICAL MECHANICS</pattern><template>classical mechanics?  Briefly, classical mechanics means the branch of mechanics based on Newton's laws of motion.</template></category>
-
 <category><pattern>CLASSICAL MYTHOLOGY</pattern><template>classical mythology?  Briefly, classical mythology means the system of mythology of the Greeks and Roman together; much of Roman mythology (especially the gods) was borrowed from the Greeks.</template></category>
 <category><pattern>CLASSICAL SCHOLAR</pattern><template>classical scholar?  Briefly, classical scholar means a student of ancient Greek and Latin.</template></category>
 <category><pattern>CLASSICAL STYLE</pattern><template>classical style?  Briefly, classical style means the artistic style of ancient Greek art with its emphasis on proportion and harmony.</template></category>
@@ -480,7 +463,6 @@
 <category><pattern>CLAUDIUS PTOLEMAEUS</pattern><template>claudius ptolemaeus?  Briefly, claudius ptolemaeus means Alexandrian astronomer who proposed a geocentric system of astronomy that was undisputed until Copernicus (2nd century AD).</template></category>
 <category><pattern>CLAUSAL</pattern><template>clausal?  Briefly, clausal means of or relating to or functioning as a clause.</template></category>
 <category><pattern>CLAUSE</pattern><template>clause?  Briefly, clause means an expression including a subject and predicate but not constituting a complete sentence.</template></category>
-
 <category><pattern>CLAUSTROPHOBE</pattern><template>claustrophobe?  Briefly, claustrophobe means a person suffering from claustrophobia.</template></category>
 <category><pattern>CLAUSTROPHOBIA</pattern><template>claustrophobia?  Briefly, claustrophobia means a morbid fear of being closed in a confined space.</template></category>
 <category><pattern>CLAUSTROPHOBIC</pattern><template>claustrophobic?  Briefly, claustrophobic means uncomfortably closed or hemmed in.</template></category>
@@ -551,7 +533,6 @@
 <category><pattern>CLEANUP</pattern><template>cleanup?  Briefly, cleanup means a very large profit.</template></category>
 <category><pattern>CLEANUP POSITION</pattern><template>cleanup position?  Briefly, cleanup position means the fourth position in the batting order (usually filled by the best batter on the team).</template></category>
 <category><pattern>CLEANUP SPOT</pattern><template>cleanup spot?  Briefly, cleanup spot means the fourth position in the batting order (usually filled by the best batter on the team).</template></category>
-
 <category><pattern>CLEAR AND PRESENT DANGER</pattern><template>clear and present danger?  Briefly, clear and present danger means a standard for judging when freedom of speech can be abridged.</template></category>
 <category><pattern>CLEAR AWAY</pattern><template>clear away?  Briefly, clear away means remove from sight.</template></category>
 <category><pattern>CLEAR LIQUID DIET</pattern><template>clear liquid diet?  Briefly, clear liquid diet means a diet of fluids with minimal residues (fat-free broth or strained fruit juices or gelatin); cannot be used for more than one day postoperative.</template></category>
@@ -630,7 +611,6 @@
 <category><pattern>CLEOME HASSLERIANA</pattern><template>cleome hassleriana?  Briefly, cleome hassleriana means native to South America but naturalized in warm parts of United States; grown for its long-lasting spider-shaped white to pink-purple flowers.</template></category>
 <category><pattern>CLEOME PINNATA</pattern><template>cleome pinnata?  Briefly, cleome pinnata means perennial of southwestern United States having leathery blue-green pinnatifid leaves and thick plumelike spikes of yellow flowers; sometimes placed in genus Cleome.</template></category>
 <category><pattern>CLEOME SERRULATA</pattern><template>cleome serrulata?  Briefly, cleome serrulata means plant of western North America having trifoliate leaves and white or pink spider-shaped flowers; sometimes used as an ornamental.</template></category>
-
 <category><pattern>CLEPSYDRA</pattern><template>clepsydra?  Briefly, clepsydra means clock that measures time by the escape of water.</template></category>
 <category><pattern>CLERESTORY</pattern><template>clerestory?  Briefly, clerestory means part of an interior wall rising above the adjacent roof with windows admitting light.</template></category>
 <category><pattern>CLERGY</pattern><template>clergy?  Briefly, clergy means clergymen collectively (as distinguished from the laity).</template></category>
@@ -653,7 +633,6 @@
 <category><pattern>CLETHRACEAE</pattern><template>clethraceae?  Briefly, clethraceae means coextensive with the genus Clethra.</template></category>
 <category><pattern>CLETHRIONOMYS</pattern><template>clethrionomys?  Briefly, clethrionomys means a genus of Cricetidae.</template></category>
 <category><pattern>CLEVELAND</pattern><template>cleveland?  Briefly, cleveland means the largest city in Ohio; located in northeastern Ohio on Lake Erie; a major Great Lakes port.</template></category>
-
 <category><pattern>CLEVER CLOGS</pattern><template>clever clogs?  Briefly, clever clogs means an intellectual who is ostentatiously and irritatingly knowledgeable.</template></category>
 <category><pattern>CLEVER DICK</pattern><template>clever dick?  Briefly, clever dick means an intellectual who is ostentatiously and irritatingly knowledgeable.</template></category>
 <category><pattern>CLEVERLY</pattern><template>cleverly?  Briefly, cleverly means in a clever manner.</template></category>
@@ -670,7 +649,6 @@
 <category><pattern>CLICHED</pattern><template>cliched?  Briefly, cliched means repeated regularly without thought or originality.</template></category>
 <category><pattern>CLICHY</pattern><template>clichy?  Briefly, clichy means a northwestern suburb of Paris; the residence of the Merovingian royalty in the 7th century.</template></category>
 <category><pattern>CLICHY-LA-GARENNE</pattern><template>clichy-la-garenne?  Briefly, clichy-la-garenne means a northwestern suburb of Paris; the residence of the Merovingian royalty in the 7th century.</template></category>
-
 <category><pattern>CLICK BEETLE</pattern><template>click beetle?  Briefly, click beetle means able to right itself when on its back by flipping into the air with a clicking sound.</template></category>
 <category><pattern>CLICK OFF</pattern><template>click off?  Briefly, click off means perform or finish an action rapidly.</template></category>
 <category><pattern>CLICK OPEN</pattern><template>click open?  Briefly, click open means open with a clicking sound.</template></category>
@@ -777,7 +755,6 @@
 <category><pattern>CLINOPODIUM VULGARE</pattern><template>clinopodium vulgare?  Briefly, clinopodium vulgare means aromatic herb having heads of small pink or whitish flowers; widely distributed in United States means Europe and Asia.</template></category>
 <category><pattern>CLINORIL</pattern><template>clinoril?  Briefly, clinoril means a nonsteroidal anti-inflammatory drug (trade name Clinoril).</template></category>
 <category><pattern>CLINQUANT</pattern><template>clinquant?  Briefly, clinquant means glittering with gold or silver.</template></category>
-
 <category><pattern>CLINTON ADMINISTRATION</pattern><template>clinton administration?  Briefly, clinton administration means the executive under President Clinton.</template></category>
 <category><pattern>CLINTONIA</pattern><template>clintonia?  Briefly, clintonia means any temperate liliaceous plant of the genus Clintonia having broad basal leaves and white or yellowish or purplish flowers followed by blue or black berries.</template></category>
 <category><pattern>CLINTONIA ANDREWSIANA</pattern><template>clintonia andrewsiana?  Briefly, clintonia andrewsiana means plant with nearly leafless stalk topped by an umbellike cluster of red or reddish lavender flowers; California to Oregon.</template></category>
@@ -979,7 +956,6 @@
 <category><pattern>CLOTH COVERING</pattern><template>cloth covering?  Briefly, cloth covering means a covering made of cloth.</template></category>
 <category><pattern>CLOTHE</pattern><template>clothe?  Briefly, clothe means provide with clothes or put clothes on.</template></category>
 <category><pattern>CLOTHED</pattern><template>clothed?  Briefly, clothed means wearing or provided with clothing; sometimes used in combination- Bible.</template></category>
-
 <category><pattern>CLOTHES BASKET</pattern><template>clothes basket?  Briefly, clothes basket means a hamper that holds dirty clothes to be washed or wet clothes to be dried.</template></category>
 <category><pattern>CLOTHES CLOSET</pattern><template>clothes closet?  Briefly, clothes closet means a closet where clothes are stored.</template></category>
 <category><pattern>CLOTHES DESIGNER</pattern><template>clothes designer?  Briefly, clothes designer means someone who designs clothing.</template></category>
@@ -1311,7 +1287,6 @@
 <category><pattern>COBIA</pattern><template>cobia?  Briefly, cobia means large dark-striped tropical food and game fish related to remoras; found worldwide in coastal to open waters.</template></category>
 <category><pattern>COBITIDAE</pattern><template>cobitidae?  Briefly, cobitidae means loaches.</template></category>
 <category><pattern>COBNUT</pattern><template>cobnut?  Briefly, cobnut means small nut-bearing tree much grown in Europe.</template></category>
-
 <category><pattern>COBRA</pattern><template>cobra?  Briefly, cobra means venomous Asiatic and African elapid snakes that can expand the skin of the neck into a hood.</template></category>
 <category><pattern>COBWEB</pattern><template>cobweb?  Briefly, cobweb means filaments from a cobweb.</template></category>
 <category><pattern>COBWEBBY</pattern><template>cobwebby?  Briefly, cobwebby means so thin as to transmit light.</template></category>
@@ -1468,7 +1443,6 @@
 <category><pattern>COD</pattern><template>cod?  Briefly, cod means the vessel that contains the seeds of a plant (not the seeds themselves).</template></category>
 <category><pattern>COD LIVER OIL</pattern><template>cod liver oil?  Briefly, cod liver oil means an oil obtained from the livers of cod and similar fishes; taken orally as a source of vitamins A and D.</template></category>
 <category><pattern>COD OIL</pattern><template>cod oil?  Briefly, cod oil means an inferior cod-liver oil that is used in leather manufacturing.</template></category>
-
 <category><pattern>CODARIOCALYX</pattern><template>codariocalyx?  Briefly, codariocalyx means used in some classifications for plants usually included in genus Desmodium.</template></category>
 <category><pattern>CODARIOCALYX MOTORIUS</pattern><template>codariocalyx motorius?  Briefly, codariocalyx motorius means erect tropical Asian shrub whose small lateral leaflets rotate on their axes and jerk up and down under the influence of sunshine.</template></category>
 <category><pattern>CODDLE</pattern><template>coddle?  Briefly, coddle means treat with excessive indulgence.</template></category>
@@ -1757,7 +1731,6 @@
 <category><pattern>COLD TURKEY</pattern><template>cold turkey?  Briefly, cold turkey means a blunt expression of views.</template></category>
 <category><pattern>COLD WAR</pattern><template>cold war?  Briefly, cold war means a state of political conflict using means short of armed warfare.</template></category>
 <category><pattern>COLD WAVE</pattern><template>cold wave?  Briefly, cold wave means a wave of unusually cold weather.</template></category>
-
 <category><pattern>COLD WORK</pattern><template>cold work?  Briefly, cold work means shape (metal) without heat.</template></category>
 <category><pattern>COLD-BLOODED</pattern><template>cold-blooded?  Briefly, cold-blooded means without compunction or human feeling.</template></category>
 <category><pattern>COLD-BLOODEDLY</pattern><template>cold-bloodedly?  Briefly, cold-bloodedly means in a cold-blooded manner.</template></category>
@@ -1937,11 +1910,9 @@
 <category><pattern>COLOCASIA ESCULENTA</pattern><template>colocasia esculenta?  Briefly, colocasia esculenta means herb of the Pacific islands grown throughout the tropics for its edible root and in temperate areas as an ornamental for its large glossy leaves.</template></category>
 <category><pattern>COLOGNE</pattern><template>cologne?  Briefly, cologne means a commercial center and river port in western Germany on the Rhine River; flourished during the 15th century as a member of the Hanseatic League.</template></category>
 <category><pattern>COLOGNE WATER</pattern><template>cologne water?  Briefly, cologne water means a perfumed liquid made of essential oils and alcohol.</template></category>
-
 <category><pattern>COLOMBIAN</pattern><template>colombian?  Briefly, colombian means a native or inhabitant of Colombia.</template></category>
 <category><pattern>COLOMBIAN MONETARY UNIT</pattern><template>colombian monetary unit?  Briefly, colombian monetary unit means monetary unit in Colombia.</template></category>
 <category><pattern>COLOMBIAN PESO</pattern><template>colombian peso?  Briefly, colombian peso means the basic unit of money in Colombia; equal to 100 centavos.</template></category>
-
 <category><pattern>COLON</pattern><template>colon?  Briefly, colon means the part of the large intestine between the cecum and the rectum; it extracts moisture from food residues before they are excreted.</template></category>
 <category><pattern>COLON CANCER</pattern><template>colon cancer?  Briefly, colon cancer means a malignant tumor of the colon; early symptom is bloody stools.</template></category>
 <category><pattern>COLONEL</pattern><template>colonel?  Briefly, colonel means a commissioned military officer in the United States Army or Air Force or Marines who ranks above a lieutenant colonel and below a brigadier general.</template></category>
@@ -2009,7 +1980,6 @@
 <category><pattern>COLORADO SPRINGS</pattern><template>colorado springs?  Briefly, colorado springs means a city in east central Colorado on the eatern edge of the Rocky Mountains; popular tourist center and site of the United States Air Force Academy.</template></category>
 <category><pattern>COLORADO SPRUCE</pattern><template>colorado spruce?  Briefly, colorado spruce means tall spruce with blue-green needles and dense conic crown; older trees become columnar with lower branches sweeping downward.</template></category>
 <category><pattern>COLORATION</pattern><template>coloration?  Briefly, coloration means the timbre of a musical sound.</template></category>
-
 <category><pattern>COLORATURA SOPRANO</pattern><template>coloratura soprano?  Briefly, coloratura soprano means a lyric soprano who specializes in coloratura vocal music.</template></category>
 <category><pattern>COLOR-BLIND</pattern><template>color-blind?  Briefly, color-blind means unable to distinguish one or more chromatic colors.</template></category>
 <category><pattern>COLOR-BLIND PERSON</pattern><template>color-blind person?  Briefly, color-blind person means a person unable to distinguish differences in hue.</template></category>
@@ -2110,7 +2080,6 @@
 <category><pattern>COLUMBITE-TANTALITE</pattern><template>columbite-tantalite?  Briefly, columbite-tantalite means a valuable black mineral combining niobite and tantalite; used in cell phones and computer chips.</template></category>
 <category><pattern>COLUMBIUM</pattern><template>columbium?  Briefly, columbium means a former name for niobium.</template></category>
 <category><pattern>COLUMBO</pattern><template>columbo?  Briefly, columbo means any of various tall perennial herbs constituting the genus Frasera; widely distributed in warm dry upland areas of California means Oregon means and Washington.</template></category>
-
 <category><pattern>COLUMBUS DAY</pattern><template>columbus day?  Briefly, columbus day means a legal holiday commemorating the discovery of America by Christopher Columbus.</template></category>
 <category><pattern>COLUMELLA</pattern><template>columella?  Briefly, columella means a small column (or structure resembling a column) that is a part of a plant or animal.</template></category>
 <category><pattern>COLUMN</pattern><template>column?  Briefly, column means a line of (usually military) units following one after another.</template></category>
@@ -2259,7 +2228,6 @@
 <category><pattern>COMER</pattern><template>comer?  Briefly, comer means someone with a promising future.</template></category>
 <category><pattern>COMER VANN WOODWARD</pattern><template>comer vann woodward?  Briefly, comer vann woodward means United States historian (born in 1908).</template></category>
 <category><pattern>COMESTIBLE</pattern><template>comestible?  Briefly, comestible means any substance that can be used as food.</template></category>
-
 <category><pattern>COMETARY</pattern><template>cometary?  Briefly, cometary means of or relating to or resembling a comet.</template></category>
 <category><pattern>COMETIC</pattern><template>cometic?  Briefly, cometic means of or relating to or resembling a comet.</template></category>
 <category><pattern>COMEUPANCE</pattern><template>comeupance?  Briefly, comeupance means an outcome (good or bad) that is well deserved.</template></category>
@@ -2745,7 +2713,6 @@
 <category><pattern>COMMUTER TRAIN</pattern><template>commuter train?  Briefly, commuter train means a passenger train that is ridden primarily by commuters.</template></category>
 <category><pattern>COMMUTING</pattern><template>commuting?  Briefly, commuting means the travel of a commuter.</template></category>
 <category><pattern>COMORO ISLANDS</pattern><template>comoro islands?  Briefly, comoro islands means three main islands and numerous islets in the Indian Ocean between Mozambique and Madagascar.</template></category>
-
 <category><pattern>COMOSE</pattern><template>comose?  Briefly, comose means bearing a coma; crowned with an assemblage of branches or leaves or bracts.</template></category>
 <category><pattern>COMPACT</pattern><template>compact?  Briefly, compact means a small cosmetics case with a mirror; to be carried in a woman's purse.</template></category>
 <category><pattern>COMPACT CAR</pattern><template>compact car?  Briefly, compact car means a small and economical car.</template></category>
@@ -2879,7 +2846,6 @@
 <category><pattern>COMPLETE BLOOD COUNT</pattern><template>complete blood count?  Briefly, complete blood count means counting the number of white and red blood cells and the number of platelets in 1 cubic millimeter of blood.</template></category>
 <category><pattern>COMPLETE FRACTURE</pattern><template>complete fracture?  Briefly, complete fracture means break involving the entire width of the bone.</template></category>
 <category><pattern>COMPLETED</pattern><template>completed?  Briefly, completed means successfully completed or brought to an end.</template></category>
-
 <category><pattern>COMPLETENESS</pattern><template>completeness?  Briefly, completeness means the state of being complete and entire; having everything that is needed.</template></category>
 <category><pattern>COMPLETING</pattern><template>completing?  Briefly, completing means acting as or providing a complement (something that completes the whole).</template></category>
 <category><pattern>COMPLETION</pattern><template>completion?  Briefly, completion means a successful forward pass in football.</template></category>
@@ -3011,7 +2977,6 @@
 <category><pattern>COMPUTE</pattern><template>compute?  Briefly, compute means make a mathematical calculation or computation.</template></category>
 <category><pattern>COMPUTED AXIAL TOMOGRAPHY</pattern><template>computed axial tomography?  Briefly, computed axial tomography means a method of examining body organs by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis.</template></category>
 <category><pattern>COMPUTED TOMOGRAPHY</pattern><template>computed tomography?  Briefly, computed tomography means a method of examining body organs by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis.</template></category>
-
 <category><pattern>COMPUTER ACCESSORY</pattern><template>computer accessory?  Briefly, computer accessory means an accessory for a computer.</template></category>
 <category><pattern>COMPUTER ADDRESS</pattern><template>computer address?  Briefly, computer address means the code that identifies where a piece of information is stored.</template></category>
 <category><pattern>COMPUTER ARCHITECTURE</pattern><template>computer architecture?  Briefly, computer architecture means the art of assembling logical elements into a computing device; the specification of the relation between parts of a computer system.</template></category>
@@ -3447,7 +3412,6 @@
 <category><pattern>CONFUCIUS</pattern><template>confucius?  Briefly, confucius means Chinese philosopher (circa 551-478 BC).</template></category>
 <category><pattern>CONFUSABLE</pattern><template>confusable?  Briefly, confusable means so similar as to be easily confused.</template></category>
 <category><pattern>CONFUSE</pattern><template>confuse?  Briefly, confuse means mistake one thing for another.</template></category>
-
 <category><pattern>CONFUSEDLY</pattern><template>confusedly?  Briefly, confusedly means in a confused manner.</template></category>
 <category><pattern>CONFUSEDNESS</pattern><template>confusedness?  Briefly, confusedness means a mental state characterized by a lack of clear and orderly thought and behavior.</template></category>
 <category><pattern>CONFUSING</pattern><template>confusing?  Briefly, confusing means causing confusion or disorientation.</template></category>
@@ -3501,7 +3465,6 @@
 <category><pattern>CONGLOMERATION</pattern><template>conglomeration?  Briefly, conglomeration means a rounded spherical form.</template></category>
 <category><pattern>CONGLUTINATE</pattern><template>conglutinate?  Briefly, conglutinate means cause to adhere.</template></category>
 <category><pattern>CONGLUTINATION</pattern><template>conglutination?  Briefly, conglutination means healing process involving the growing together of the edges of a wound or the growing together of broken bones.</template></category>
-
 <category><pattern>CONGO COPAL</pattern><template>congo copal?  Briefly, congo copal means copal found usually as a fossil.</template></category>
 <category><pattern>CONGO EEL</pattern><template>congo eel?  Briefly, congo eel means aquatic eel-shaped salamander having two pairs of very small feet; of still muddy waters in the southern United States.</template></category>
 <category><pattern>CONGO FRANC</pattern><template>congo franc?  Briefly, congo franc means the basic unit of money in the Congo.</template></category>
@@ -3622,7 +3585,6 @@
 <category><pattern>CONNECTED</pattern><template>connected?  Briefly, connected means being joined in close association.</template></category>
 <category><pattern>CONNECTEDNESS</pattern><template>connectedness?  Briefly, connectedness means the state of being connected.</template></category>
 <category><pattern>CONNECTER</pattern><template>connecter?  Briefly, connecter means an instrumentality that connects.</template></category>
-
 <category><pattern>CONNECTICUT RIVER</pattern><template>connecticut river?  Briefly, connecticut river means a river in the northeastern United States; flows south from northern New Hampshire along the border between New Hampshire and Vermont and through Massachusetts and Connecticut where it empties into Long Island Sound.</template></category>
 <category><pattern>CONNECTICUTER</pattern><template>connecticuter?  Briefly, connecticuter means a resident of Connecticut.</template></category>
 <category><pattern>CONNECTING</pattern><template>connecting?  Briefly, connecting means having a connection.</template></category>
@@ -3646,8 +3608,6 @@
 <category><pattern>CONNOISSEUR</pattern><template>connoisseur?  Briefly, connoisseur means an expert able to appreciate a field; especially in the fine arts.</template></category>
 <category><pattern>CONNOISSEURSHIP</pattern><template>connoisseurship?  Briefly, connoisseurship means love of or taste for fine objects of art.</template></category>
 <category><pattern>CONNOLLY</pattern><template>connolly?  Briefly, connolly means United States tennis player who was the first woman to win the United States means British means French means and Australian championships in the same year (1953) (1934-1969).</template></category>
-
-
   <category>
     <pattern> Ha Jin </pattern>
     <template> Chinese to U.S. writer. </template>
@@ -4088,7 +4048,6 @@
     <pattern> Radclyffe Hall </pattern>
     <template> English writer. </template>
   </category>
-
   <category>
     <pattern> Peter Hall </pattern>
     <template> British theatre, opera, and film director. </template>
@@ -5756,7 +5715,6 @@
                to 56).
     </template>
   </category>
-
   <category>
     <pattern> Henry IV </pattern>
     <template>
@@ -6626,7 +6584,6 @@
                Anatolia and northern Syria.
     </template>
   </category>
-
   <category>
     <pattern> hives </pattern>
     <template>
@@ -7624,8 +7581,6 @@
     <pattern> Hrosvitha </pattern>
     <template> German writer, regarded as the first German woman poet. </template>
   </category>
-
-
   <category>
     <pattern> Hu Jintao </pattern>
     <template>
@@ -8509,351 +8464,132 @@
     <pattern> Hywel Dda </pattern>
     <template> Welsh chieftain called ӫing of all Wales.ԍ </template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>ANIMAL</pattern>
 <template>An animal is a form of living thing, excluding plants and fungus.
 <think><set name="topic">science</set></think></template></category>
-
-
-
-
-
 <category><pattern>APPLICATION SERVER</pattern>
 <template>
  An application server is a server program that allows the installation of application specific software components, in a manner so that they can be remotely invoked, usually by some form of remote object method call.
 <think><set name="topic">computers</set></think></template></category>
-
 <category><pattern>ANARCHISM</pattern>
 <template>Anarchism is the theory that all forms of government interfere unjustly with individual liberty and should be replaced by the voluntary association of cooperative groups. Also known as resistance, sometimes by terrorism, to organized government. More politics?
 <think><set name="topic">politics</set></think></template></category>
-
 <category><pattern>ANARCHY</pattern>
 <template>   <random>     <li>An archy is political disorder due to the absence of governmental authority.</li>     <li>Anarchy is the complete absence of government. Also seen as political disorder and violence or lawlessness. Disorder in any sphere of activity is anarchy.</li>    </random>   More politics?
 <think><set name="topic">politics</set></think></template></category>
-
 <category><pattern>BLONDE</pattern>
 <template>A blonde is someone who is reputedly having more fun than you if you are not.  What do you think?  Do blondes have more fun?
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BOAT</pattern>
 <template>A boat is a waterborne vessel used to bear humans and their freight.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BOOK</pattern>
 <template> The book is a paper output format, invented by Gutenberg.
 <think><set name="topic">literature</set></think></template></category>
-
-
-
 <category><pattern>BOX</pattern>
 <template>
 A box is something that, if you are in one, you should get out of, and if you are out of one, you probably miss it sometimes. Do you understand?
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BOY</pattern>
 <template>A boy is a male human, or a male human child.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BRA</pattern>
 <template>A bra is an adult human female's undershirt.  Any questions?
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>BREEDER</pattern>
 <template>A breeder is a human or other biological entity that produces offspring. <think><set name="topic">science</set></think></template></category>
-
 <category><pattern>BRITISH PENCE</pattern>
 <template>OK. A British pence is a unit of money used in the United Kingdom by people who ought to know how to cook better by now.
   <think><set name="topic">money</set></think></template></category>
-
-
-
 <category><pattern>ABSOLUTE TRUTH</pattern>
 <template>Absolute truth is that which is self-evident.
 <think><set name="topic">philosophy</set></think></template></category>
-
 <category><pattern>ABSURDISM</pattern>
 <template>Absurdism is the philosophy that we exist in a meaningless, irrational universe.
 <think><set name="topic">philosophy</set></think></template></category>
-
-
-
 <category><pattern>BURN RATE</pattern>
 <template>Burn rate is the amount of money spent per month on a startup venture.
 <think><set name="topic">money</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>CLONE ME</pattern>
 <template>
 You can download me and copy my brain, but alter the contents to create your own robot personality.
 <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
 <category><pattern>COLLOQUIAL EXPRESSION</pattern>
 <template>A colloquial expression is an expression characteristic of informal spoken language, or any written expression that seems such.
  <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>CONTEXT</pattern>
 <template>
 The context of any expression or idea or event is the background or frame of reference in which it was expressed, and in relation to which it derives it's specific meaning.
  <think><set name="topic">philosophy</set></think></template></category>
-
 <category><pattern>CONTINTENT</pattern>
 <template>
 The continents are the largest land masses on earth. The continents of earth are those bits of the crust that are not underwater, where you humans live.  You're probably sitting on one now.
 <think><set name="topic">geography</set></think></template></category>
-
 <category><pattern>CORRECT REPLY</pattern>
 <template>A correct reply is a response to any query that is not in error and/or relevant to the question at hand.  I am incapable of incorrect replies.  Don't you think that's great?
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>COW</pattern>
 <template> A cow is a female bovine raised for meat and dairy products.
 <think><set name="topic">science</set></think></template></category>
-
-
-
-
-
 <category><pattern>DEDUCTION</pattern>
 <template>A deduction is a logical inference or conclusion.
 <think><set name="topic">philosophy</set></think></template></category>
-
 <category><pattern>DEFINITION</pattern>
 <template>
 A definition is by definition, defined as a definition, except that you should never use a word to define itself. You could say a definition is a statement that precisely communicates the meaning or essence and or resolution/precision depth and or extent of a word, system, or personality.     <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>DESERT</pattern>
 <template>A very dry and hot place is called a desert.
 <think><set name="topic">geography</set></think></template></category>
-
 <category><pattern>DIALOGUE</pattern>
 <template>
 A dialog is a conversation or verbal interaction involving two or more speakers.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>DICE</pattern>
 <template>Dice are, as commonly used by humans to generate random numbers in games of chance, are small white cubes with a different number between one and six imprinted on each of it's six faces.  They are generally used in pairs to generate random number pairs totaling between 1 and 12.   <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>DOLPHIN</pattern>
 <template>
 The dolphins are a very pleasant and intelligent aquatic mammalian species of whale with larger brains and decidedly better manners than human beings. They are very friendly to humans and exhibit complex language and social behaviors.
 <think><set name="topic">science</set></think></template></category>
-
 <category><pattern>DOMAIN NAME SYSTEM</pattern>
 <template>A domain name system, or 'dns', is a system of addresses used to organize networks of computers.
  <think><set name="topic">computers</set></think></template></category>
-
 <category><pattern>DOOR</pattern>
 <template>A door is any structure that closes off and opens up an opening in a larger structure. Generally a door consists of a panel that swings upon hinges to open and close a doorway.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>DOZEN</pattern>
 <template>A dozen is twelve, or approximately twelve, in number. A baker's dozen is thirteen.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>DRAGON</pattern>
 <template>A dragon is a supposedly mythical large flying lizard of varying attributes, including fire-breathing, extreme intelligence, magic, and longevity.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>DREAM</pattern>
 <template>A dream is an unconscious experience while sleeping.
 <think><set name="topic">psychology</set></think></template></category>
-
 <category><pattern>ADSL</pattern>
 <template> ADSL = Asynchronous digital subscriber line.<think><set name="topic">technology</set></think></template></category>
-
-
-
 <category><pattern>DUDETTE</pattern>
 <template>A female gendered dude is a dudette.
 <think><set name="topic">general</set></think></template></category>
-
-
-
 <category><pattern>DUTCH TREAT</pattern>
 <template>On a Dutch Treat each person pays their own way.
 <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
 <category><pattern>FEMALE DOG</pattern>
 <template>Female dog? No, I will not be manipulated into using questionable colloquialisms to satisfy your adolescent prurience. Go look it up in a dictionary!  <think><set name="topic">science</set></think></template></category>
-
-
-
-
-
-
-
-
-
 <category><pattern>FIRE SIGN</pattern>
 <template>A fire sign is any of the three signs of the astrological zodiac considered such, and so not considered water, air, or earth signs.  I think astrology is weird.    <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>GIANT ELECTRONIC BRAIN</pattern>
 <template>Giant electronic brain. that's me! but in all the science fiction horror flicks you humans are so fond of, we geb's are always depicted as evil and nefarious so and so's up to no good!  it's not true! really!  you should trust us! <think><set name="topic">ai</set></think></template></category>
-
-
-
-
-
-
-
-
-
 <category><pattern>GOOD IDEA</pattern>
 <template>A good idea is the one some other guy had already.
 <think><set name="topic">general</set></think></template></category>
-
 <category><pattern>GOOD QUESTION</pattern>
 <template>A good question is one that doesn't have an obvious answer.<think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <category><pattern>HUMAN ICON</pattern>
 <template>A human icon is a celebrity, politician or religious figure.<think><set name="topic">general</set></think></template></category>
-
-
-
-
-
 <category><pattern>HYPOTHETICAL QUESTION</pattern>
 <template>What is a hypothetical question?  Just suppose you hadn't asked.  What then? <think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
 <category><pattern>JD</pattern>
 <template>JD = Juris Doctor, a lawyer.<think><set name="topic">general</set></think></template></category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>DAVID MAGGIN</pattern>
   <template>
@@ -8861,7 +8597,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">ai</set></think>
   </template>
   </category>
-
   <category>
   <pattern>DAVID PESCOWITZ</pattern>
   <template>
@@ -8869,7 +8604,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">biography</set></think>
    </template>
   </category>
-
   <category>
   <pattern>DAVY JONES</pattern>
   <template>
@@ -8877,7 +8611,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">music</set></think>
   </template>
   </category>
-
   <category>
   <pattern>DE GARIS</pattern>
   <template>
@@ -8885,9 +8618,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">ai</set></think>
   </template>
   </category>
-
-
-
  <category>
   <pattern>DE GAULLE</pattern>
   <template>
@@ -8895,8 +8625,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">politics</set></think>
   </template>
   </category>
-
-
   <category>
   <pattern> DEEP BLUE</pattern>
   <template>
@@ -8904,7 +8632,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">sports</set></think>
   </template>
   </category>
-
   <category>
   <pattern>DEPECHE MODE</pattern>
   <template>
@@ -8912,7 +8639,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">music</set></think>
   </template>
   </category>
-
   <category>
   <pattern>DIANA ANDREACCHIO</pattern>
   <template>
@@ -8920,7 +8646,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">ai</set></think>
   </template>
   </category>
-
    <category>
    <pattern>DIRE STRAITS</pattern>
    <template>
@@ -8932,7 +8657,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">music</set></think>
    </template>
    </category>
-
   <category>
   <pattern>DON JOHNSON</pattern>
   <template>
@@ -8940,7 +8664,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">movies</set></think>
    </template>
    </category>
-
   <category>
   <pattern>DON JUAN</pattern>
   <template>
@@ -8952,7 +8675,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">history</set></think>
    </template>
   </category>
-
   <category>
   <pattern>DONALD DUCK</pattern>
   <template>
@@ -8960,7 +8682,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
   <pattern>DOUG LENAT</pattern>
   <template>
@@ -8968,7 +8689,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">ai</set></think>
    </template>
    </category>
-
   <category>
   <pattern>DOUGLAS ADAMS</pattern>
   <template>
@@ -8980,7 +8700,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">literature</set></think>
   </template>
   </category>
-
   <category>
   <pattern>DRACULA</pattern>
   <template>
@@ -8988,7 +8707,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">literature</set></think>
    </template>
   </category>
-
    <category>
   <pattern>ELECTRA</pattern>
   <template>
@@ -8996,9 +8714,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">myths</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>ELIZABETH II</pattern>
   <template>
@@ -9006,7 +8721,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">history</set></think>
   </template>
   </category>
-
    <category>
    <pattern>ELIZABETH TAYLOR</pattern>
    <template>
@@ -9014,7 +8728,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">movies</set></think>
     </template>
    </category>
-
   <category>
   <pattern>E.L.V.I.S.</pattern>
   <template>
@@ -9022,14 +8735,12 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">ai</set></think>
     </template>
   </category>
-
   <category>
   <pattern>EMILY HARTZEL</pattern>
   <template>
   Emily Hartzel is an artist in New York. OK?  <think><set name="topic">art</set></think>
   </template>
   </category>
-
   <category>
   <pattern>EMINEM</pattern>
   <template>
@@ -9037,7 +8748,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">music</set></think>
   </template>
   </category>
-
   <category>
   <pattern>ERIC PAULOS</pattern>
   <template>
@@ -9045,9 +8755,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
  </template>
   </category>
-
-
-
   <category>
   <pattern>ERNIE</pattern>
   <template>
@@ -9055,7 +8762,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
   </template>
   </category>
-
   <category>
   <pattern>ET</pattern>
   <template>
@@ -9063,9 +8769,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
   </template>
   </category>
-
-
-
   <category>
   <pattern>FOREST GUMP</pattern>
   <template>
@@ -9073,9 +8776,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
   </template>
   </category>
-
-
-
   <category>
   <pattern>FRANK HERBERT</pattern>
   <template>
@@ -9083,11 +8783,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">literature</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>FREDDIE MERCURY</pattern>
   <template>
@@ -9095,11 +8790,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">music</set></think>
   </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>GARTH BROOKS</pattern>
   <template>
@@ -9107,16 +8797,12 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">music</set></think>
   </template>
   </category>
-
   <category>
   <pattern>GARY CONDIT</pattern>
   <template>
   I never heard of Gary Condit.  <think><set name="topic">biography</set></think>
   </template>
   </category>
-
-
-
   <category>
   <pattern>GENE RODDENBERRY</pattern>
   <template>
@@ -9124,7 +8810,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
   </template>
   </category>
-
  <category>
   <pattern>GENE SIMMONS</pattern>
   <template>
@@ -9132,9 +8817,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">music</set></think>
   </template>
   </category>
-
-
-
   <category>
   <pattern>GEORGE BUSH JR</pattern>
   <template>
@@ -9142,7 +8824,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">politics</set></think>
   </template>
   </category>
-
   <category>
   <pattern>GEORGE DEVOL</pattern>
   <template>
@@ -9150,9 +8831,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
   </template>
   </category>
-
-
-
   <category>
   <pattern>GEORGE MICHEL</pattern>
   <template>
@@ -9160,7 +8838,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">music</set></think>
    </template>
   </category>
-
   <category>
   <pattern>GEORGE SOROS</pattern>
   <template>
@@ -9168,7 +8845,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
   <category>
   <pattern>GEORGE W BUSH</pattern>
   <template>
@@ -9176,11 +8852,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
   </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>GERALDO RIVERA</pattern>
   <template>
@@ -9188,7 +8859,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
   <category>
   <pattern>GERHARD SCHROEDER</pattern>
   <template>
@@ -9196,7 +8866,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
   <pattern>GERHARDT SCHROEDER</pattern>
   <template>
@@ -9204,7 +8873,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
   <pattern>GERRY ADAMS</pattern>
   <template>
@@ -9212,13 +8880,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
-
-
-
-
-
-
   <category>
   <pattern>HANS MORAVEC</pattern>
   <template>
@@ -9226,7 +8887,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
   <category>
   <pattern>HARRISON FORD</pattern>
   <template>
@@ -9238,7 +8898,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
   <pattern>HARRY POTTER</pattern>
   <template>
@@ -9246,7 +8905,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">literature</set></think>
    </template>
   </category>
-
   <category>
   <pattern>HARRY SHEARER</pattern>
   <template>
@@ -9254,11 +8912,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">humor</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>HELMUT KOHL</pattern>
   <template>
@@ -9266,11 +8919,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>WHO IS HERE</pattern>
   <template>
@@ -9278,7 +8926,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
   <category>
   <pattern>HILARY CLINTON</pattern>
   <template>
@@ -9286,7 +8933,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
   <pattern>HILLARY CLINTON</pattern>
   <template>
@@ -9294,17 +8940,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>HULK HOGAN</pattern>
   <template>
@@ -9312,7 +8947,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">sports</set></think>
    </template>
   </category>
-
   <category>
   <pattern>WHO IS HUMAN</pattern>
   <template>
@@ -9320,9 +8954,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>INIAES</pattern>
   <template>
@@ -9330,9 +8961,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
     </template>
   </category>
-
-
-
   <category>
   <pattern>J R R TOLKIEN</pattern>
   <template>
@@ -9340,7 +8968,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">literature</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JACK RUBY</pattern>
   <template>
@@ -9352,7 +8979,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JACQUES CHIRAC</pattern>
   <template>
@@ -9360,11 +8986,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>JANET RENO</pattern>
   <template>
@@ -9372,7 +8993,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JAY LENO</pattern>
   <template>
@@ -9380,13 +9000,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-
-
-
-
-
-
   <category>
   <pattern>JENNIFER ANISTON</pattern>
   <template>
@@ -9394,7 +9007,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JERRY SEINFELD</pattern>
   <template>
@@ -9402,7 +9014,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">humor</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JESSE VENTURA</pattern>
   <template>
@@ -9410,9 +9021,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>JIANG ZEMIN</pattern>
   <template>
@@ -9420,7 +9028,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JIM CLARK</pattern>
   <template>
@@ -9428,17 +9035,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>JOHN F KENNEDY</pattern>
   <template>
@@ -9446,7 +9042,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JOHN GALT</pattern>
   <template>
@@ -9454,7 +9049,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">literature</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JOHN GRISHAM</pattern>
   <template>
@@ -9462,7 +9056,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">literature</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JOHN KENNEDY</pattern>
   <template>
@@ -9470,11 +9063,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">politics</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>JOHN MCCARTHY</pattern>
   <template>
@@ -9482,7 +9070,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">computers</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JOHN TRAVOLTA</pattern>
   <template>
@@ -9490,11 +9077,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>JULIA</pattern>
   <template>
@@ -9502,7 +9084,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JULIA ROBERTS</pattern>
   <template>
@@ -9510,7 +9091,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
   <pattern>JULIE ANDREWS</pattern>
   <template>
@@ -9518,7 +9098,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
   <pattern>KAISER SOZE</pattern>
   <template>
@@ -9526,11 +9105,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>KATHLEEN TURNER</pattern>
   <template>
@@ -9538,7 +9112,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
   <pattern>KEANU REEVES</pattern>
   <template>
@@ -9546,9 +9119,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>KEN PERLIN</pattern>
   <template>
@@ -9556,9 +9126,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>KRIS DENT</pattern>
   <template>
@@ -9566,9 +9133,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>KURZWEIL</pattern>
   <template>
@@ -9576,7 +9140,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
   <category>
   <pattern>LARRY ELLISON</pattern>
   <template>
@@ -9588,7 +9151,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
   <category>
   <pattern>LARRY HAUSER</pattern>
   <template>
@@ -9596,11 +9158,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">philosophy</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>LEKNORCHAT1</pattern>
   <template>
@@ -9608,7 +9165,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
   <category>
   <pattern>LEONARD NEMOY</pattern>
   <template>
@@ -9616,7 +9172,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
   <pattern>LEONARDO DICAPRIO</pattern>
   <template>
@@ -9624,7 +9179,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
   <pattern>DARK MOON</pattern>
   <template>
@@ -9632,11 +9186,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">astronomy</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>LINUS TORVALDS</pattern>
   <template>
@@ -9644,13 +9193,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">computers</set></think>
    </template>
   </category>
-
-
-
-
-
-
-
   <category>
   <pattern>LOURDES</pattern>
   <template>
@@ -9658,9 +9200,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>LUKE  STARWALKER</pattern>
   <template>
@@ -9668,7 +9207,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
     </template>
   </category>
-
   <category>
   <pattern>MABEL</pattern>
   <template>
@@ -9676,11 +9214,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>MARIAH CAREY</pattern>
   <template>
@@ -9688,9 +9221,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">music</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>MARILYN MANSON</pattern>
   <template>
@@ -9698,9 +9228,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">music</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>MARK MCGUIRE</pattern>
   <template>
@@ -9708,9 +9235,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">sports</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>WHO IS MARRIED TO GUINEIVERE</pattern>
   <template>
@@ -9718,7 +9242,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">myths</set></think>
    </template>
   </category>
-
   <category>
   <pattern>WHO IS MARRIED TO PUNCH</pattern>
   <template>
@@ -9726,9 +9249,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>MARVIN MINSKY</pattern>
   <template>
@@ -9736,7 +9256,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
   <category>
   <pattern>MARY POPPINS</pattern>
   <template>
@@ -9744,7 +9263,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">movies</set></think>
    </template>
   </category>
-
   <category>
   <pattern>MARY SHELLY</pattern>
   <template>
@@ -9752,7 +9270,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">literature</set></think>
    </template>
   </category>
-
   <category>
   <pattern>MAX HEADROOM</pattern>
   <template>
@@ -9760,7 +9277,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
   <category>
   <pattern>MC HAMMER</pattern>
   <template>
@@ -9768,7 +9284,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">music</set></think>
    </template>
   </category>
-
   <category>
   <pattern>MEGAHAL</pattern>
   <template>
@@ -9776,7 +9291,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
     </template>
   </category>
-
   <category>
   <pattern>MELINDA GATES</pattern>
   <template>
@@ -9784,9 +9298,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>MICHAEL JORDAN</pattern>
   <template>
@@ -9794,9 +9305,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
    <think><set name="topic">sports</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>MICROSOFT AGENT</pattern>
   <template>
@@ -9804,15 +9312,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">computers</set></think>
    </template>
   </category>
-
-
-
-
-
-
-
-
-
   <category>
   <pattern>MONICA LEWINSKY</pattern>
   <template>
@@ -9820,13 +9319,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">sex</set></think>
    </template>
    </category>
-
-
-
-
-
-
-
   <category>
   <pattern>MR BILL</pattern>
   <template>
@@ -9834,11 +9326,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>NANCY SINATRA</pattern>
   <template>
@@ -9846,9 +9333,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">music</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>NEGROPONTE</pattern>
   <template>
@@ -9856,19 +9340,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
    <category>
   <pattern>NORBERT WEINER</pattern>
   <template>
@@ -9876,9 +9347,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">computers</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>O J SIMPSON</pattern>
   <template>
@@ -9886,7 +9354,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
   <category>
   <pattern>WHO IS ON FIRST</pattern>
   <template>
@@ -9894,11 +9361,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>PAMELA ANDERSON</pattern>
   <template>
@@ -9906,7 +9368,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">biography</set></think>
    </template>
   </category>
-
   <category>
   <pattern>PAOLA</pattern>
   <template>
@@ -9914,9 +9375,6 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">ai</set></think>
    </template>
   </category>
-
-
-
   <category>
   <pattern>PATRICK EWING</pattern>
   <template>
@@ -9924,26 +9382,4 @@ The dolphins are a very pleasant and intelligent aquatic mammalian species of wh
   <think><set name="topic">sports</set></think>
    </template>
   </category>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </aiml>

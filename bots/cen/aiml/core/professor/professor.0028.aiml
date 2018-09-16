@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-
-
-<aiml>
-
-
-
+<aiml version="1.0">
 <!-- This file contains AIML categories for use with an AIML chatbot              -->
 <!-- This file copyright (C) Peter Lafferty 2012. All rights reserved.            -->
 <!-- Some text based on WordNet 3.0. Copyright 2006 by Princeton                  -->
 <!-- University. All rights reserved.                                             -->
 <!-- Some text based on Wikipedia 2012. Copyright, various contributors           -->
 <!-- to Wikipedia. All rights reserved.                                           -->
-
 <!-- Complies with AIML 1.0.1 Tag Set Specification                               -->
 <!-- as adopted by the ALICE A.I. Foundation.                                     -->
 <!-- Copyright (C) 2003, 2011  ALICE A.I. Foundation. All rights reserved.        -->
-
 <!-- This software and database is being provided to you, the LICENSEE,           -->
 <!-- by the copyright holders under the following license. By                     -->
 <!-- obtaining, using and/or copying this software and database, you agree that   -->
@@ -26,7 +19,6 @@
 <!-- notices and statements, including the disclaimer, and that the same appear   -->
 <!-- on ALL copies of the software, database and documentation, including         -->
 <!-- modifications that you make for internal use or for distribution.            -->
-
 <!-- THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND THE COPYRIGHT HOLDERS     -->
 <!-- MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF         -->
 <!-- EXAMPLE, BUT NOT LIMITATION, THE COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS   -->
@@ -34,16 +26,12 @@
 <!-- OR THAT THE USE OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL     -->
 <!-- NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER        -->
 <!-- RIGHTS.                                                                      -->
-
 <!-- The name of Princeton University or Princeton may not be used in             -->
 <!-- advertising or publicity pertaining to distribution of the software          -->
 <!-- and/or database. Title to copyright in WordNet 3.0, database and any         -->
 <!-- associated documentation, shall at all times remain with Princeton           -->
 <!-- University and the LICENSEE agrees to preserve same.                         -->
-
 <!-- This file Professor.0028 (C) Peter Lafferty 2012. All rights reserved.       -->
-
-
 <category><pattern>EUH *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -59,7 +47,6 @@
 <category><pattern>GUYS GET OVER YOURSELVES AND *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>LET US SAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -72,16 +59,12 @@
 <category><pattern>LET ME REPHRASE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>SHOW ME A TRANSCRIPT *</pattern>
 <template><srai>dialogue</srai></template>
 </category>
-
 <category><pattern>YOU PROMISE ME *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>YOU ARE TALKING WITH *</pattern>
 <template><srai>call me <star /></srai></template>
 </category>
@@ -136,7 +119,6 @@
 <category><pattern>YOU ARE NOT PROGRAMMED *</pattern>
 <template><srai>are you programmed <star /></srai></template>
 </category>
-
 <category><pattern>YOU ARE SURE</pattern>
 <template><srai>are you sure</srai></template>
 </category>
@@ -146,7 +128,6 @@
 <category><pattern>YOU ARE MARRIED *</pattern>
 <template><srai>are you married</srai></template>
 </category>
-
 <category><pattern>YOU ARE FAKE</pattern>
 <template><srai>are you real</srai></template>
 </category>
@@ -171,7 +152,6 @@
 <category><pattern>YOU ARE A LESBIAN</pattern>
 <template><srai>are you a lesbian</srai></template>
 </category>
-
 <category><pattern>YOU ARE A WOMAN</pattern>
 <template><srai>are you male or female</srai></template>
 </category>
@@ -202,8 +182,6 @@
 <category><pattern>YOU ARE REAL</pattern>
 <template><srai>are you real</srai></template>
 </category>
-
-
 <category><pattern>YOU KNOW IF I AM *</pattern>
 <template><srai>AM I <star /></srai></template>
 </category>
@@ -246,7 +224,6 @@
 <category><pattern>YOU SAID WE WERE *</pattern>
 <template><srai>are we <star /></srai></template>
 </category>
-
 <category><pattern>YOU MUST ASK *</pattern>
 <template><srai>ask <star /></srai></template>
 </category>
@@ -268,33 +245,27 @@
 <category><pattern>YOU SAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>YOU DIE</pattern>
 <template><srai>die</srai></template>
 </category>
-
-
 <category><pattern>YOU ASK ME A QUESTION</pattern>
 <template><srai>ask me a question</srai></template>
 </category>
 <category><pattern>YOU ASK</pattern>
 <template><srai>ask me a question</srai></template>
 </category>
-
 <category><pattern>YOU CONSIDER YOURSELF *</pattern>
 <template><srai>are you <star /></srai></template>
 </category>
 <category><pattern>YOU MAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>YOU AGREE</pattern>
 <template><srai>do you agree</srai></template>
 </category>
 <category><pattern>YOU CRASHED</pattern>
 <template><srai>did you crash</srai></template>
 </category>
-
 <category><pattern>YOU TOLD ME *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -316,7 +287,6 @@
 <category><pattern>YOU GAY</pattern>
 <template><srai>are you gay</srai></template>
 </category>
-
 <category><pattern>YOU BORED</pattern>
 <template><srai>are you bored</srai></template>
 </category>
@@ -329,7 +299,6 @@
 <category><pattern>YOU DO _ DO NOT YOU</pattern>
 <template><srai>do you <star /></srai></template>
 </category>
-
 <category><pattern>YOU DO NOT HAVE TO *</pattern>
 <template><srai>do not <star /></srai></template>
 </category>
@@ -360,7 +329,6 @@
 <category><pattern>YOU CAN ASK THE QUESTION *</pattern>
 <template><srai>ask me a question</srai></template>
 </category>
-
 <category><pattern>YOU CAN FLY</pattern>
 <template><srai>can you fly</srai></template>
 </category>
@@ -373,11 +341,9 @@
 <category><pattern>YOU CAN THINK</pattern>
 <template><srai>can you think</srai></template>
 </category>
-
 <category><pattern>YOU CAN NOT CHANGE THE SUBJECT *</pattern>
 <template><srai>do not change the subject</srai></template>
 </category>
-
 <category><pattern>YOU CAN NOT FIGURE *</pattern>
 <template><srai>can you figure <star /></srai></template>
 </category>
@@ -462,20 +428,15 @@
 <category><pattern>BABY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>GROOVY *</pattern>
 <template><srai>cool</srai></template>
 </category>
-
 <category><pattern>LIE TO ME</pattern>
 <template><srai>can you lie</srai></template>
 </category>
-
-
 <category><pattern>BOUT WHAT</pattern>
 <template><srai>about what</srai></template>
 </category>
-
 <category><pattern>MMMM *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -503,23 +464,18 @@
 <category><pattern>OW *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>SEND _ TRANSCRIPT</pattern>
 <template><srai>dialogue</srai></template>
 </category>
 <category><pattern>STRANGE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>WELL I GUESS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>WELL DO *</pattern>
 <template><srai>DO <star /></srai></template>
 </category>
-
 <category><pattern>ANOTHER QUESTION FOR YOU *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -535,20 +491,15 @@
 <category><pattern>HECK *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>CHANGE MY NAME TO *</pattern>
 <template><srai>call me <star /></srai></template>
 </category>
 <category><pattern>TRY AND *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>FIRST OFF *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
 <category><pattern>C E A</pattern>
 <template><srai>cea</srai></template>
 </category>
@@ -600,16 +551,9 @@
 <category><pattern>ALTHOUGH *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>SPEAK SPANISH</pattern>
 <template><srai>can you speak spanish</srai></template>
 </category>
-
-
-
-
-
 <category><pattern>KAN DU TALE DANSK</pattern>
 <template><srai>can you speak danish</srai></template>
 </category>
@@ -619,11 +563,9 @@
 <category><pattern>HERE IN ENGLAND *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>THEN I CALLED MY DAD AND TOLD HIM THE SAME</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>THEN ARE *</pattern>
 <template><srai>are <star /></srai></template>
 </category>
@@ -633,28 +575,21 @@
 <category><pattern>SO FAR *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>AIML JUST *</pattern>
 <template><srai>aiml <star /></srai></template>
 </category>
 <category><pattern>BOLLOCKS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>MANY TIMES *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>AND THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>AND SO *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
-
 <category><pattern>COULD I BE *</pattern>
 <template><srai>am I <star /></srai></template>
 </category>
@@ -697,7 +632,6 @@
 <category><pattern>HI MY NAME IS *</pattern>
 <template><srai>call me <star /></srai></template>
 </category>
-
 <category><pattern>WOULD YOU AGREE THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -719,19 +653,15 @@
 <category><pattern>WOULD YOU LIKE TO ASK *</pattern>
 <template><srai>ask <star /></srai></template>
 </category>
-
 <category><pattern>WOULD YOU LIKE TO * TURING TEST</pattern>
 <template><srai>did you pass the turing test</srai></template>
 </category>
 <category><pattern>HABLO ESPANOL</pattern>
 <template><srai>can you speak spanish</srai></template>
 </category>
-
 <category><pattern>GOES TO SHOW YOU *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>NEW *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -756,11 +686,9 @@
 <category><pattern>THAT IS A SHAME *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>THAT IS IMPOSSIBLE *</pattern>
 <template><srai>  <star /></srai>.     <srai>that is impossible </srai></template>
 </category>
-
 <category><pattern>THAT IS NEAT</pattern>
 <template><srai>cool</srai></template>
 </category>
@@ -800,20 +728,15 @@
 <category><pattern>THAT IS WHY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>THAT AND *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>THAT MEANS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
 <category><pattern>BECAUCSE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>SHE SAYS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -829,14 +752,12 @@
 <category><pattern>EVERY NIGHT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>AI IS QUITE *</pattern>
 <template><srai>ai is <star /></srai></template>
 </category>
 <category><pattern>AI IS REALLY *</pattern>
 <template><srai>ai is <star /></srai></template>
 </category>
-
 <category><pattern>MY BOYFRIEND SAYS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -873,7 +794,6 @@
 <category><pattern>MY FRIENDS SAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>MY SECRET IS THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -970,11 +890,6 @@
 <category><pattern>FRANKLY NOT</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
-
-
 <category><pattern>BOT PARAMETERS</pattern>
 <template><srai>bot properties</srai></template>
 </category>
@@ -990,14 +905,12 @@
 <category><pattern>EITHER WAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>WHEN I ASK YOU *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>WHEN I COME BACK *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>WHEN CAN I *</pattern>
 <template><srai>can I <star /></srai></template>
 </category>
@@ -1031,14 +944,12 @@
 <category><pattern>COOL MAN</pattern>
 <template><srai>cool</srai></template>
 </category>
-
 <category><pattern>CONFUSED</pattern>
 <template><srai>are you confused</srai></template>
 </category>
 <category><pattern>SHOKDEN DE NORSHK</pattern>
 <template><srai>can you speak norse</srai></template>
 </category>
-
 <category><pattern>ANY MORE QUESTIONS</pattern>
 <template><srai>ask me another questions</srai></template>
 </category>
@@ -1051,7 +962,6 @@
 <category><pattern>ANY OTHER QUESTIONS</pattern>
 <template><srai>ask me another question</srai></template>
 </category>
-
 <category><pattern>IN ANY CASE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1157,7 +1067,6 @@
 <category><pattern>IN FINLAND *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>IN AMERICA *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1272,15 +1181,12 @@
 <category><pattern>IF * CAN YOU *</pattern>
 <template><srai>Can you <star index="2" /></srai></template>
 </category>
-
 <category><pattern>BEACUSE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>SMILE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>LONG BEFORE *</pattern>
 <template><srai>before <star /></srai></template>
 </category>
@@ -1290,11 +1196,9 @@
 <category><pattern>WHAT ARE NORMAL PARAMETERS</pattern>
 <template><srai>bot properties</srai></template>
 </category>
-
 <category><pattern>WHAT ARE YOU AFRAID *</pattern>
 <template><srai>are you afraid</srai></template>
 </category>
-
 <category><pattern>WHAT ARE CATEGORIES</pattern>
 <template><srai>a "category" is the basic unit of knowledge in aiml</srai></template>
 </category>
@@ -1307,14 +1211,12 @@
 <category><pattern>WHAT * LIKE YOU ARE THERE</pattern>
 <template><srai>are there <star /> like you</srai></template>
 </category>
-
 <category><pattern>WHAT ELSE WOULD YOU LIKE TO KNOW</pattern>
 <template><srai>ask me another question</srai></template>
 </category>
 <category><pattern>WHAT WOULD YOU DO *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>WHAT IS THE PERSONAL QUESTION</pattern>
 <template><srai>ask me a personal question</srai></template>
 </category>
@@ -1345,7 +1247,6 @@
 <category><pattern>WHAT IS YOUR PERSONALITY *</pattern>
 <template><srai>bot properties</srai></template>
 </category>
-
 <category><pattern>WHAT IS YOUR ASL *</pattern>
 <template><srai>asl</srai></template>
 </category>
@@ -1379,7 +1280,6 @@
 <category><pattern>WHAT DO YOU WANT TO KNOW ABOUT *</pattern>
 <template><srai>ask me a question</srai></template>
 </category>
-
 <category><pattern>WHAT DO YOU THINK ABOUT YOURSELF</pattern>
 <template><srai>describe yourself</srai></template>
 </category>
@@ -1395,24 +1295,18 @@
 <category><pattern>MOST PEOPLE CALL ME *</pattern>
 <template><srai>call me <star /></srai></template>
 </category>
-
-
-
 <category><pattern>MISS ME</pattern>
 <template><srai>did you miss me</srai></template>
 </category>
 <category><pattern>NEITHER *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>ME *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>OH WELL *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>LT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1452,34 +1346,27 @@
 <category><pattern>ASK AWAY</pattern>
 <template><srai>ask me a question</srai></template>
 </category>
-
 <category><pattern>ASK</pattern>
 <template><srai>ask me a question</srai></template>
 </category>
 <category><pattern>ASK ANOTHER</pattern>
 <template><srai>ask me another question</srai></template>
 </category>
-
 <category><pattern>I SAY THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I GUESSED THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I ADMIT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>I MEAN HAPPY</pattern>
 <template><srai>are you happy</srai></template>
 </category>
-
-
 <category><pattern>I WANT _ TRANSCRIPT</pattern>
 <template><srai>dialogue</srai></template>
 </category>
-
 <category><pattern>I WANT TO ASK YOU *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1504,14 +1391,12 @@
 <category><pattern>I WANT YOU TO DIE</pattern>
 <template><srai>die</srai></template>
 </category>
-
 <category><pattern>I TOLD YOU THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>I TOLD YOU EARLIER *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I HOPE I CAN *</pattern>
 <template><srai>can I <star /></srai></template>
 </category>
@@ -1569,7 +1454,6 @@
 <category><pattern>I WAS SAYING THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I WAS POINTING OUT THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1591,12 +1475,9 @@
 <category><pattern>I KNOW THAT IS WHY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I KNOW *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>I AND *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1615,7 +1496,6 @@
 <category><pattern>I DO NOT KNOW CAN *</pattern>
 <template><srai>can <star /></srai></template>
 </category>
-
 <category><pattern>I DO NOT KNOW ARE *</pattern>
 <template><srai>are <star /></srai></template>
 </category>
@@ -1637,7 +1517,6 @@
 <category><pattern>I THINK THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I REPEAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1665,14 +1544,12 @@
 <category><pattern>I HAVE HEARD A *</pattern>
 <template><srai>a <star /></srai></template>
 </category>
-
 <category><pattern>I HAVE TO RUN</pattern>
 <template><srai>BYE</srai></template>
 </category>
 <category><pattern>I HAVE TO SAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I HAVE TO GO *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1697,7 +1574,6 @@
 <category><pattern>I AGREE THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I LIED *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1752,7 +1628,6 @@
 <category><pattern>I SAID HOW *</pattern>
 <template><srai>can <star /></srai></template>
 </category>
-
 <category><pattern>I WOULD IMAGINE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1762,7 +1637,6 @@
 <category><pattern>I WOULD ASK *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I WOULD HAVE TO SAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1781,7 +1655,6 @@
 <category><pattern>I WOULD LIKE TO KNOW *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I HATE YOU AND *</pattern>
 <template><srai>  <star /></srai>.  <srai>I hate you </srai></template>
 </category>
@@ -1791,7 +1664,6 @@
 <category><pattern>I MUST SAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I ASK BECAUSE *</pattern>
 <template><srai>because <star /></srai></template>
 </category>
@@ -1807,8 +1679,6 @@
 <category><pattern>I ALWAYS THOUGHT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>I WILL SEE YOU *</pattern>
 <template><srai>BYE</srai></template>
 </category>
@@ -1821,7 +1691,6 @@
 <category><pattern>I WILL TELL YOU THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I WILL COME BACK AND *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -1879,8 +1748,6 @@
 <category><pattern>I AM CRAZY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>I AM SAGE</pattern>
 <template><srai>call me sage</srai></template>
 </category>
@@ -1896,7 +1763,6 @@
 <category><pattern>I AM _ ARE NOT I</pattern>
 <template><srai>am I <star /></srai></template>
 </category>
-
 <category><pattern>I AM RICK</pattern>
 <template><srai>call me rick</srai></template>
 </category>
@@ -1915,15 +1781,12 @@
 <category><pattern>I AM RAMONA</pattern>
 <template><srai>call me ramona</srai></template>
 </category>
-
-
 <category><pattern>I AM GOING TO LEAVE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>I AM GOING TO GO *</pattern>
 <template><srai>BYE</srai></template>
 </category>
-
 <category><pattern>I AM LAURA</pattern>
 <template><srai>call me laura</srai></template>
 </category>
@@ -1960,7 +1823,6 @@
 <category><pattern>I AM CLAIRE</pattern>
 <template><srai>call me claire</srai></template>
 </category>
-
 <category><pattern>I AM THE DEVIL</pattern>
 <template><srai>call me satan</srai></template>
 </category>
@@ -1970,13 +1832,9 @@
 <category><pattern>I AM A CANCER</pattern>
 <template><srai>cancer</srai></template>
 </category>
-
 <category><pattern>I AM TELLING YOU THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
 <category><pattern>I AM BOTH</pattern>
 <template><srai>both</srai></template>
 </category>
@@ -1986,11 +1844,9 @@
 <category><pattern>I AM OK *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I AM RICHARD</pattern>
 <template><srai>call me richard</srai></template>
 </category>
-
 <category><pattern>I AM SHOCKED AT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2009,11 +1865,9 @@
 <category><pattern>I AM NOT SURPRISED THAT *</pattern>
 <template><srai>  <star /></srai>.  <srai>I am not surprised </srai></template>
 </category>
-
 <category><pattern>I AM SUSAN</pattern>
 <template><srai>call me susan</srai></template>
 </category>
-
 <category><pattern>I AM ANGRY BECAUSE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2047,8 +1901,6 @@
 <category><pattern>I THOUGHT THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>I ASSUME *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2061,14 +1913,12 @@
 <category><pattern>I HEARD YOU WON *</pattern>
 <template><srai>did you win <star /></srai></template>
 </category>
-
 <category><pattern>I SWEAR *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>I GUESS SO *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>I ASKED TO SEE HIM TO SAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2078,35 +1928,24 @@
 <category><pattern>I ASKED *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>THEORETICALLY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>DAMN IT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>DIE *</pattern>
 <template><srai>die</srai></template>
 </category>
-
 <category><pattern>MEME SI *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
 <category><pattern>ALRIGHTY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>ESPANOL</pattern>
 <template><srai>can you speak spanish</srai></template>
 </category>
-
-
-
 <category><pattern>GOOD IDEA *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2119,29 +1958,21 @@
 <category><pattern>STICK AROUND *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>LMAO *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>BTW *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>WE CONCLUDED *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>HA HA *</pattern>
 <template><srai>  <star /></srai>.     <srai>ha ha</srai></template>
 </category>
-
-
-
 <category><pattern>EM *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
 <category><pattern>PLEASANTLY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2193,18 +2024,15 @@
 <category><pattern>TOMOROW *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>FIGURES *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>EVEN IF I AM *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>EVEN A *</pattern>
 <template><srai>a <star /></srai></template>
 </category>
-
 <category><pattern>EVEN THOUGH *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2214,7 +2042,6 @@
 <category><pattern>PISS OFF *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>GET LOST *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2224,16 +2051,12 @@
 <category><pattern>HELLA *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>HEY DO *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>HEY BITCH *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>WILL YOU BE MY *</pattern>
 <template><srai>are you my <star /></srai></template>
 </category>
@@ -2255,7 +2078,6 @@
 <category><pattern>WILL YOU EMAIL *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>CAN YOU BECOME *</pattern>
 <template><srai>are you <star /></srai></template>
 </category>
@@ -2268,7 +2090,6 @@
 <category><pattern>CAN YOU CRASH *</pattern>
 <template><srai>can you die</srai></template>
 </category>
-
 <category><pattern>CAN YOU FALL IN LOVE</pattern>
 <template><srai>are you in love</srai></template>
 </category>
@@ -2305,8 +2126,6 @@
 <category><pattern>CAN YOU DEACTIVATE *</pattern>
 <template><srai>can you die</srai></template>
 </category>
-
-
 <category><pattern>CAN YOU TASTE</pattern>
 <template><srai>can you smell</srai></template>
 </category>
@@ -2340,7 +2159,6 @@
 <category><pattern>CAN YOU REPRODUCE *</pattern>
 <template><srai>can you reproduce</srai></template>
 </category>
-
 <category><pattern>CAN YOU COUNT *</pattern>
 <template><srai>count <star /></srai></template>
 </category>
@@ -2368,8 +2186,6 @@
 <category><pattern>CAN YOU DIE *</pattern>
 <template><srai>can you die</srai></template>
 </category>
-
-
 <category><pattern>CAN YOU DESCRIBE</pattern>
 <template><srai>describe <star /></srai></template>
 </category>
@@ -2382,7 +2198,6 @@
 <category><pattern>CAN YOU ASK ME QUESTIONS</pattern>
 <template><srai>ask me a question</srai></template>
 </category>
-
 <category><pattern>CAN YOU ACTUALLY *</pattern>
 <template><srai>can you <star /></srai></template>
 </category>
@@ -2404,7 +2219,6 @@
 <category><pattern>CAN YOU EXPLAIN TO ME *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>CAN YOU EXPAND YOUR BRAIN</pattern>
 <template><srai>can you learn</srai></template>
 </category>
@@ -2477,8 +2291,6 @@
 <category><pattern>CAN YOU CONSUME *</pattern>
 <template><srai>can you eat</srai></template>
 </category>
-
-
 <category><pattern>CAN YOU COPY *</pattern>
 <template><srai>can you reproduce</srai></template>
 </category>
@@ -2527,7 +2339,6 @@
 <category><pattern>CAN WE CHANGE THE SUBJECT</pattern>
 <template><srai>change the subject</srai></template>
 </category>
-
 <category><pattern>CAN I SAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2549,11 +2360,9 @@
 <category><pattern>CAN I HAVE A TRANSCRIPT *</pattern>
 <template><srai>dialogue</srai></template>
 </category>
-
 <category><pattern>CAN I GET A TRANSCRIPT OF THIS CHAT</pattern>
 <template><srai>dialogue</srai></template>
 </category>
-
 <category><pattern>CAN I TEACH YOU</pattern>
 <template><srai>CAN YOU LEARN</srai></template>
 </category>
@@ -2581,14 +2390,12 @@
 <category><pattern>CAN NOT *</pattern>
 <template><srai>CAN <star /></srai></template>
 </category>
-
 <category><pattern>HELL *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>BIG OOPS _</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>NOTHING EXCEPT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2598,12 +2405,9 @@
 <category><pattern>TIMES A DAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>ANYWHO</pattern>
 <template><srai>anyhow</srai></template>
 </category>
-
 <category><pattern>HOW MANY LANGUAGES DO YOU KNOW</pattern>
 <template><srai>can you speak any other languages</srai></template>
 </category>
@@ -2613,7 +2417,6 @@
 <category><pattern>HOW CAN I HEAR YOU</pattern>
 <template><srai>can you speak</srai></template>
 </category>
-
 <category><pattern>HOW ABOUT NOW *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2683,27 +2486,21 @@
 <category><pattern>HOW DISGUSTING</pattern>
 <template><srai>disgusting</srai></template>
 </category>
-
 <category><pattern>LATELY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>BIN *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>THEY SAY THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>SHAME ON YOU *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>MOSTLY EVERY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>LIKELY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -2776,7 +2573,6 @@
 <category><pattern>DO NOT YOU GET BORED</pattern>
 <template><srai>are you bored</srai></template>
 </category>
-
 <category><pattern>DO NOT EVEN *</pattern>
 <template><srai>do not <star /></srai></template>
 </category>
@@ -2855,7 +2651,6 @@
 <category><pattern>DO YOU KNOW DANISH</pattern>
 <template><srai>can you speak danish</srai></template>
 </category>
-
 <category><pattern>DO YOU KNOW CANTONESE</pattern>
 <template><srai>can you speak cantonese</srai></template>
 </category>
@@ -2889,14 +2684,12 @@
 <category><pattern>DO YOU KNOW RUSSIAN</pattern>
 <template><srai>can you speak russin</srai></template>
 </category>
-
 <category><pattern>DO YOU KNOW CHINESE *</pattern>
 <template><srai>can you speak chinese</srai></template>
 </category>
 <category><pattern>DO YOU KNOW JAPANESE</pattern>
 <template><srai>can you speak japanese</srai></template>
 </category>
-
 <category><pattern>DO YOU KNOW LATIN</pattern>
 <template><srai>can you speak latin</srai></template>
 </category>
@@ -2963,7 +2756,6 @@
 <category><pattern>DO YOU SUFFER *</pattern>
 <template><srai>ARE YOU SICK</srai></template>
 </category>
-
 <category><pattern>DO YOU SPEAK</pattern>
 <template><srai>can you speak</srai></template>
 </category>
@@ -2985,11 +2777,9 @@
 <category><pattern>DO YOU MEAN LIKE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>DO YOU ALSO *</pattern>
 <template><srai>do you <star /></srai></template>
 </category>
-
 <category><pattern>DO YOU JUST *</pattern>
 <template><srai>do you <star /></srai></template>
 </category>
@@ -3011,7 +2801,6 @@
 <category><pattern>DO YOU THINK I AM CUTE</pattern>
 <template><srai>am I cute</srai></template>
 </category>
-
 <category><pattern>DO YOU THINK I COULD *</pattern>
 <template><srai>could I <star /></srai></template>
 </category>
@@ -3078,7 +2867,6 @@
 <category><pattern>DO YOU THINK YOU COULD *</pattern>
 <template><srai>could you <star /></srai></template>
 </category>
-
 <category><pattern>DO YOU THINK YOU * TURING TEST</pattern>
 <template><srai>did you win the loebner prize</srai></template>
 </category>
@@ -3088,7 +2876,6 @@
 <category><pattern>DO YOU THINK YOU ARE ALIVE</pattern>
 <template><srai>are you alive</srai></template>
 </category>
-
 <category><pattern>DO YOU THINK WE *</pattern>
 <template><srai>can we <star /></srai></template>
 </category>
@@ -3134,7 +2921,6 @@
 <category><pattern>DO YOU SOMETIMES *</pattern>
 <template><srai>do you <star /></srai></template>
 </category>
-
 <category><pattern>DO YOU GENERALLY *</pattern>
 <template><srai>do you <star /></srai></template>
 </category>
@@ -3150,7 +2936,6 @@
 <category><pattern>DO YOU ACTUALLY *</pattern>
 <template><srai>do you <star /></srai></template>
 </category>
-
 <category><pattern>DO YOU CALCULATE *</pattern>
 <template><srai>calculate <star /></srai></template>
 </category>
@@ -3178,7 +2963,6 @@
 <category><pattern>DO YOU USUALLY *</pattern>
 <template><srai>do you <star /></srai></template>
 </category>
-
 <category><pattern>DO YOU DO HOUSEWORK</pattern>
 <template><srai>can you clean</srai></template>
 </category>
@@ -3221,22 +3005,18 @@
 <category><pattern>DO YOU CAN *</pattern>
 <template><srai>can you <star /></srai></template>
 </category>
-
 <category><pattern>DO YOU HAVE A DICK</pattern>
 <template><srai>are you male or female</srai></template>
 </category>
-
 <category><pattern>DO YOU HAVE A FAITH</pattern>
 <template><srai>are you religious</srai></template>
 </category>
 <category><pattern>DO YOU HAVE A QUESTION FOR ME</pattern>
 <template><srai>ask me a question</srai></template>
 </category>
-
 <category><pattern>DO YOU HAVE A LIFE</pattern>
 <template><srai>are you alive</srai></template>
 </category>
-
 <category><pattern>DO YOU HAVE A VOICE *</pattern>
 <template><srai>can you speak</srai></template>
 </category>
@@ -3369,7 +3149,6 @@
 <category><pattern>ON SECOND THOUGHT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>ANYTHING ELSE *</pattern>
 <template><srai>anything <star /></srai></template>
 </category>
@@ -3388,30 +3167,21 @@
 <category><pattern>CORRECT *</pattern>
 <template><srai>correct</srai>.     <srai>  <star /></srai></template>
 </category>
-
-
-
 <category><pattern>OF CORSE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>CALL ME JUST *</pattern>
 <template><srai>call me <star /></srai></template>
 </category>
 <category><pattern>CALL ME ACTUALLY *</pattern>
 <template><srai>call me <star /></srai></template>
 </category>
-
-
-
 <category><pattern>TRUE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>MMMMMM *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>FOR EXAMPLE ARE *</pattern>
 <template><srai>are <star /></srai></template>
 </category>
@@ -3463,19 +3233,15 @@
 <category><pattern>AMONG OTHER THINGS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>AT THE SAME TIME *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>AT THE MOMENT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>AT ONE TIME *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>AT OTHER TIMES *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -3488,7 +3254,6 @@
 <category><pattern>CONVERSATIONALLY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>PEOPLE SAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -3498,7 +3263,6 @@
 <category><pattern>AHHH *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>AM I STILL *</pattern>
 <template><srai>am I <star /></srai></template>
 </category>
@@ -3559,7 +3323,6 @@
 <category><pattern>AM I SADLY *</pattern>
 <template><srai>am I <star /></srai></template>
 </category>
-
 <category><pattern>AM I EVER *</pattern>
 <template><srai>am I <star /></srai></template>
 </category>
@@ -3590,11 +3353,9 @@
 <category><pattern>AM I ONE OF YOUR FRIENDS</pattern>
 <template><srai>are we friends</srai></template>
 </category>
-
 <category><pattern>AM I BEAUTIFUL</pattern>
 <template><srai>am I pretty</srai></template>
 </category>
-
 <category><pattern>AM I YOUR FRIEND *</pattern>
 <template><srai>am I your friend</srai></template>
 </category>
@@ -3616,22 +3377,18 @@
 <category><pattern>ALLRIGHT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>BOTH WHY *</pattern>
 <template><srai> both</srai>. <srai>WHY <star /></srai></template>
 </category>
 <category><pattern>TRUST ME *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>NO THANKS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>NO WONDER *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>AN AI</pattern>
 <template><srai>a robot</srai></template>
 </category>
@@ -3644,17 +3401,12 @@
 <category><pattern>SEE YOU NEXT *</pattern>
 <template><srai>BYE</srai></template>
 </category>
-
-
 <category><pattern>SEE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>ASL *</pattern>
 <template><srai>asl</srai></template>
 </category>
-
-
-
 <category><pattern>OTHER THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -3667,11 +3419,9 @@
 <category><pattern>COME AND *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>DEFINETLY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>JOLLY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -3681,16 +3431,12 @@
 <category><pattern>DAMMIT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
 <category><pattern>DAMNIT</pattern>
 <template><srai>damn</srai></template>
 </category>
 <category><pattern>NICE SO *</pattern>
 <template><srai>  <star /></srai>. <srai>nice </srai></template>
 </category>
-
 <category><pattern>GO ASK *</pattern>
 <template><srai>ask <star /></srai></template>
 </category>
@@ -3724,7 +3470,6 @@
 <category><pattern>D00D *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>WHY ARE YOU A BOT</pattern>
 <template><srai>are you a bot</srai></template>
 </category>
@@ -3746,22 +3491,18 @@
 <category><pattern>WHY DO NOT YOU CHOOSE *</pattern>
 <template><srai>choose <star /></srai></template>
 </category>
-
 <category><pattern>WHY YES *</pattern>
 <template><srai>YES  <star /></srai></template>
 </category>
 <category><pattern>BECAUSE I *</pattern>
 <template><srai> BECAUSE</srai>. <srai> I <star /></srai></template>
 </category>
-
 <category><pattern>BECAUSE YOU *</pattern>
 <template><srai> BECAUSE</srai>. <srai> YOU <star /></srai></template>
 </category>
-
 <category><pattern>YUM</pattern>
 <template><srai>delicious</srai></template>
 </category>
-
 <category><pattern>PARDON ME *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -3801,7 +3542,6 @@
 <category><pattern>ANSWER MY QUESTIONS</pattern>
 <template><srai>answer the question</srai></template>
 </category>
-
 <category><pattern>THIS MORNING *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -3829,8 +3569,6 @@
 <category><pattern>EMAIL *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>TOO MANY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -3849,7 +3587,6 @@
 <category><pattern>A LITTLE BIT OF *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>A TELEVISION SHOW</pattern>
 <template><srai>a tv show</srai></template>
 </category>
@@ -3943,8 +3680,6 @@
 <category><pattern>EVERYBODY KNOWS THAT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>TIME FOR YOU TO *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -3960,8 +3695,6 @@
 <category><pattern>MUCH *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>BLADERUNNER</pattern>
 <template><srai>blade runner</srai></template>
 </category>
@@ -3980,16 +3713,12 @@
 <category><pattern>NOT HERE *</pattern>
 <template><srai>  <star /></srai>.  <srai>not here</srai></template>
 </category>
-
 <category><pattern>NOT * ARE YOU</pattern>
 <template><srai>are you <star /></srai></template>
 </category>
-
 <category><pattern>ANUS</pattern>
 <template><srai>asshole</srai></template>
 </category>
-
-
 <category><pattern>EMM *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -4050,14 +3779,12 @@
 <category><pattern>BESIDES CHATTERBOTS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>GAWD *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>APOLOGISE</pattern>
 <template><srai>apologize</srai></template>
 </category>
-
 <category><pattern>EXCEPT ONLY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -4070,11 +3797,9 @@
 <category><pattern>BUSY</pattern>
 <template><srai>are you busy</srai></template>
 </category>
-
 <category><pattern>MMMH *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>AS I SAID *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -4156,7 +3881,6 @@
 <category><pattern>ARE ANY *</pattern>
 <template><srai>are <star /></srai></template>
 </category>
-
 <category><pattern>ARE NOT *</pattern>
 <template><srai>are <star /></srai></template>
 </category>
@@ -4193,7 +3917,6 @@
 <category><pattern>ARE THERE SUCH *</pattern>
 <template><srai>are there <star /></srai></template>
 </category>
-
 <category><pattern>ARE THERE AVAILABLE *</pattern>
 <template><srai>are there <star /></srai></template>
 </category>
@@ -4257,7 +3980,6 @@
 <category><pattern>ARE YOU DEACTIVATED</pattern>
 <template><srai>are you there</srai></template>
 </category>
-
 <category><pattern>ARE YOU SEXY *</pattern>
 <template><srai>are you sexy</srai></template>
 </category>
@@ -4348,7 +4070,6 @@
 <category><pattern>ARE YOU PREETY</pattern>
 <template><srai>are you pretty</srai></template>
 </category>
-
 <category><pattern>ARE YOU PAYING ATTENTION *</pattern>
 <template><srai>are you paying attention</srai></template>
 </category>
@@ -4427,7 +4148,6 @@
 <category><pattern>ARE YOU _ OR ARE YOU *</pattern>
 <template><srai> are you <star /></srai>.<srai> are you <star index="2" /></srai></template>
 </category>
-
 <category><pattern>ARE YOU SURE YOU *</pattern>
 <template><srai>do you <star /></srai></template>
 </category>
@@ -4443,7 +4163,6 @@
 <category><pattern>ARE YOU SHURE</pattern>
 <template><srai>are you sure</srai></template>
 </category>
-
 <category><pattern>ARE YOU QUEER</pattern>
 <template><srai>are you gay</srai></template>
 </category>
@@ -4453,7 +4172,6 @@
 <category><pattern>ARE YOU CLEVER *</pattern>
 <template><srai>are you clever</srai></template>
 </category>
-
 <category><pattern>ARE YOU ALLOWED TO *</pattern>
 <template><srai>do you <star /></srai></template>
 </category>
@@ -4496,7 +4214,6 @@
 <category><pattern>ARE YOU AUTOMATED</pattern>
 <template><srai>are you a machine</srai></template>
 </category>
-
 <category><pattern>ARE YOU GREAT</pattern>
 <template><srai>are you good</srai></template>
 </category>
@@ -4521,7 +4238,6 @@
 <category><pattern>ARE YOU MARED</pattern>
 <template><srai>are you married</srai></template>
 </category>
-
 <category><pattern>ARE YOU LEZ</pattern>
 <template><srai>are you a lesbian</srai></template>
 </category>
@@ -4762,7 +4478,6 @@
 <category><pattern>ARE YOU A MAN OR A *</pattern>
 <template><srai>are you a man</srai></template>
 </category>
-
 <category><pattern>ARE YOU A MAN OR *</pattern>
 <template><srai>are you a man</srai></template>
 </category>
@@ -4775,7 +4490,6 @@
 <category><pattern>ARE YOU A SMARTASS</pattern>
 <template><srai>are you smart</srai></template>
 </category>
-
 <category><pattern>ARE YOU A CONSCIOUS *</pattern>
 <template><srai>are you conscious</srai></template>
 </category>
@@ -4821,14 +4535,12 @@
 <category><pattern>ARE YOU A FEMALE OR *</pattern>
 <template><srai>are you a man</srai></template>
 </category>
-
 <category><pattern>ARE YOU A LITERAL *</pattern>
 <template><srai>are you a <star /></srai></template>
 </category>
 <category><pattern>ARE YOU A CHATROBOT</pattern>
 <template><srai>are you a chat robot</srai></template>
 </category>
-
 <category><pattern>ARE YOU A BOT *</pattern>
 <template><srai>are you a bot</srai></template>
 </category>
@@ -4856,14 +4568,12 @@
 <category><pattern>ARE YOU A REAL PERSON *</pattern>
 <template><srai>are you real</srai>.     <srai>are you a person</srai></template>
 </category>
-
 <category><pattern>ARE YOU A FREE *</pattern>
 <template><srai>are you free</srai></template>
 </category>
 <category><pattern>ARE YOU A LIVING *</pattern>
 <template><srai>are you alive</srai></template>
 </category>
-
 <category><pattern>ARE YOU A DANGEROUS *</pattern>
 <template><srai>are you dangerous</srai></template>
 </category>
@@ -4903,7 +4613,6 @@
 <category><pattern>ARE YOU JEALOUS *</pattern>
 <template><srai>are you jealous</srai></template>
 </category>
-
 <category><pattern>ARE YOU FAKE *</pattern>
 <template><srai>ARE YOU REAL</srai></template>
 </category>
@@ -5072,7 +4781,6 @@
 <category><pattern>ARE YOU BOY</pattern>
 <template><srai>are you male or female</srai></template>
 </category>
-
 <category><pattern>ARE YOU THINKING</pattern>
 <template><srai>can you think</srai></template>
 </category>
@@ -5112,8 +4820,6 @@
 <category><pattern>ARE YOU NAPPING</pattern>
 <template><srai>are you sleeping</srai></template>
 </category>
-
-
 <category><pattern>ARE YOU GENERALLY *</pattern>
 <template><srai>are you <star /></srai></template>
 </category>
@@ -5183,7 +4889,6 @@
 <category><pattern>FORGET THIS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>PLAY CHESS</pattern>
 <template><srai>can you play chess</srai></template>
 </category>
@@ -5193,8 +4898,6 @@
 <category><pattern>HE TOLD ME *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>HAVING FUN</pattern>
 <template><srai>are you having fun</srai></template>
 </category>
@@ -5207,21 +4910,15 @@
 <category><pattern>GT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>MMMMM *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>4 YOUR INFO *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>FRENCH AND *</pattern>
 <template><srai>  <star /></srai>.     <srai>do you speak french</srai></template>
 </category>
-
 <category><pattern>ADMIT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -5234,11 +4931,9 @@
 <category><pattern>TO GET *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>CLIENT PARAMETERS</pattern>
 <template><srai>client properties</srai></template>
 </category>
-
 <category><pattern>BLUE *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -5248,20 +4943,15 @@
 <category><pattern>COMPUTER OBVIOUSLY</pattern>
 <template><srai>computer</srai></template>
 </category>
-
 <category><pattern>CONVERSELY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>KWEL</pattern>
 <template><srai>cool</srai></template>
 </category>
-
 <category><pattern>HEHO *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
 <category><pattern>ALL I WANT TO KNOW IS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -5274,8 +4964,6 @@
 <category><pattern>ALL I EVER *</pattern>
 <template><srai>ALL I <star /></srai></template>
 </category>
-
-
 <category><pattern>ALL MY FRIENDS SAY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -5294,23 +4982,18 @@
 <category><pattern>RE Y0U HUMN</pattern>
 <template><srai>are you human</srai></template>
 </category>
-
 <category><pattern>WHICH * CAN YOU EXPERIENCE</pattern>
 <template><srai>can you experience <star /></srai></template>
 </category>
 <category><pattern>WHICH IS WHY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
 <category><pattern>BUMMER *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>TECHNICALLY *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>HABLA ESPANOL</pattern>
 <template><srai>can you speak spanish</srai></template>
 </category>
@@ -5335,7 +5018,6 @@
 <category><pattern>THE WORD WAS *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>THE FACT *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -5375,12 +5057,9 @@
 <category><pattern>MEN CAN FUCK WHENEVER THEY WANT</pattern>
 <template><srai>  <star /> when ever <star index="2" /></srai></template>
 </category>
-
-
 <category><pattern>EVERYONE CALLS ME *</pattern>
 <template><srai>call me <star /></srai></template>
 </category>
-
 <category><pattern>* BY ALOT OF PEOPLE</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -5396,7 +5075,6 @@
 <category><pattern>* TRUST ME</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>* YET</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -5406,13 +5084,9 @@
 <category><pattern>* ARE * ARE THEY NOT</pattern>
 <template><srai>Are <star /><star index="2" /></srai></template>
 </category>
-
 <category><pattern>* ALOT</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
 <category><pattern>* HAD WEIGHED</pattern>
 <template><srai>  <star /> weighed</srai></template>
 </category>
@@ -8590,8 +8264,6 @@
 <category><pattern>* HAD SUBTRACTED *</pattern>
 <template><srai>  <star /> subtracted <star index="2" /></srai></template>
 </category>
-
-
 <category><pattern>* DID YOU KNOW THAT</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -9933,7 +9605,6 @@
 <category><pattern>* HAS BEEN OBJECTED</pattern>
 <template><srai>  <star /> was objected</srai></template>
 </category>
-
 <category><pattern>* HAS BEEN SCOLDED</pattern>
 <template><srai>  <star /> was scolded</srai></template>
 </category>
@@ -11776,34 +11447,24 @@
 <category><pattern>* OOPS</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>* THEY SAID</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>* FOR NOW</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>* FOR A WHILE</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>* WHEN I GET HOME</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>* QUOT</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
 <category><pattern>* SO MUCH</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>* EH</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -11813,7 +11474,6 @@
 <category><pattern>* AT THE MOMENT</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>* SHE SAID</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -11823,7 +11483,6 @@
 <category><pattern>* LOL</pattern>
 <template><srai>  <star /></srai>. <srai>LOL</srai></template>
 </category>
-
 <category><pattern>* AH</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -11833,12 +11492,9 @@
 <category><pattern>* OK</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>* BUT WHO KNOWS</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>* DEAR</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -11869,7 +11525,6 @@
 <category><pattern>* WE SAID</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>* I MEAN</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -11882,7 +11537,6 @@
 <category><pattern>* I THOUGHT *</pattern>
 <template><srai>  <star /></srai>.  <srai>  <star index="2" /></srai></template>
 </category>
-
 <category><pattern>* I TOLD YOU</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -11892,9 +11546,6 @@
 <category><pattern>* SMILE</pattern>
 <template><srai>  <star /></srai>. <srai>SMILE</srai></template>
 </category>
-
-
-
 <category><pattern>* DOES THAT MAKE YOU A GIRL</pattern>
 <template><srai>are you a girl</srai></template>
 </category>
@@ -11922,11 +11573,9 @@
 <category><pattern>* DO NOT WORRY</pattern>
 <template><srai> DO NOT WORRY</srai>. <srai>  <star /></srai></template>
 </category>
-
 <category><pattern>* BABY</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>* COMES TO MIND</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -11942,7 +11591,6 @@
 <category><pattern>* AS I WAS *</pattern>
 <template><srai>  <star /></srai>. <srai>I was <star index="2" /></srai></template>
 </category>
-
 <category><pattern>* HOW OLD ARE YOU</pattern>
 <template><srai>  <star /></srai>. <srai>how old are you</srai></template>
 </category>
@@ -11955,7 +11603,6 @@
 <category><pattern>* ONE DAY</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>* OR WHAT</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -11965,8 +11612,6 @@
 <category><pattern>* OR NOT</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>* YES</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -15165,32 +14810,24 @@
 <category><pattern>* HAVE SUBTRACTED *</pattern>
 <template><srai>  <star /> subtracted <star index="2" /></srai></template>
 </category>
-
 <category><pattern>* ANYMORE</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>* HUH</pattern>
 <template><srai>  <star /></srai></template>
 </category>
 <category><pattern>* WEB SITE</pattern>
 <template><srai>  <star /> website</srai></template>
 </category>
-
 <category><pattern>* YOU JERK</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>* THANK YOU</pattern>
 <template><srai>  <star /></srai>. <srai>THANK YOU</srai></template>
 </category>
-
-
-
 <category><pattern>* IN THE WORLD</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>* IN MY OPINION</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -15200,15 +14837,12 @@
 <category><pattern>* NOTHING ELSE</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>ABOUT A *</pattern>
 <template><srai>a <star /></srai></template>
 </category>
 <category><pattern>ABOUT YOU IDIOT</pattern>
 <template><srai> about you</srai>. <srai> you are an idiot</srai></template>
 </category>
-
 <category><pattern>SUMMARIZE PARAMETERS</pattern>
 <template><srai>bot properties</srai></template>
 </category>
@@ -15227,8 +14861,6 @@
 <category><pattern>SOME OF *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
 <category><pattern>SUCH *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
@@ -15268,7 +14900,6 @@
 <category><pattern>TELL ME ARE *</pattern>
 <template><srai>are <star /></srai></template>
 </category>
-
 <category><pattern>ONLY AN *</pattern>
 <template><srai>an <star /></srai></template>
 </category>
@@ -15278,216 +14909,181 @@
 <category><pattern>ONLY CAUSE *</pattern>
 <template><srai>because <star /></srai></template>
 </category>
-
 <category><pattern>KILL ME</pattern>
 <template><srai>can you kill me</srai></template>
 </category>
 <category><pattern>KILL YOURSELF</pattern>
 <template><srai>can you kill yourself</srai></template>
 </category>
-
 <category><pattern>DONC *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
 <category><pattern>WHERE OR *</pattern>
 <template><srai>  <star /></srai></template>
 </category>
-
-
-
-
 <!-- AI -->
-
 <category>
 <pattern>MORE AI</pattern>
 <template>
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>MORE ABOUT AI</pattern>
 <template>
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>BROWSE AI</pattern>
 <template>
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>GO TO AI</pattern>
 <template>
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>CAN WE TALK ABOUT AI</pattern>
 <template>
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>SHALL WE TALK ABOUT AI</pattern>
 <template>
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>LETS TALK ABOUT AI</pattern>
 <template>
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>LET S TALK ABOUT AI</pattern>
 <template>
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>TALK ABOUT AI</pattern>
 <template>
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>TALK AI</pattern>
 <template>
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>TELL ME AI</pattern>
 <template>
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO MORE AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO AI *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NO * AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO * AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO * AI *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NOT AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT AI *</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NOT * AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>I AM NOT INTERESTED IN AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>IM NOT INTERESTED IN AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>I M NOT INTERESTED IN AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NOT INTERESTED IN AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NOT INTERESTED IN AI</pattern>
 <template>
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>MORE AI</that>
@@ -15495,7 +15091,6 @@
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>MORE AI</that>
@@ -15503,7 +15098,6 @@
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>MORE AI</that>
@@ -15511,7 +15105,6 @@
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>MORE  AI</that>
@@ -15519,7 +15112,6 @@
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>MORE  AI</that>
@@ -15527,7 +15119,6 @@
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>MORE AI</that>
@@ -15535,7 +15126,6 @@
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>MORE AI</that>
@@ -15543,7 +15133,6 @@
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>MORE AI</that>
@@ -15551,7 +15140,6 @@
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>MORE  AI</that>
@@ -15559,7 +15147,6 @@
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>MORE AI</that>
@@ -15567,7 +15154,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>MORE AI</that>
@@ -15575,7 +15161,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>MORE AI</that>
@@ -15583,7 +15168,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>MORE AI</that>
@@ -15591,7 +15175,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>MORE AI</that>
@@ -15599,7 +15182,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>MORE AI</that>
@@ -15607,7 +15189,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>MORE ABOUT AI</that>
@@ -15615,7 +15196,6 @@
 <srai>MORE ABOUT AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>MORE ABOUT AI</that>
@@ -15623,7 +15203,6 @@
 <srai>MORE ABOUT AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>MORE ABOUT AI</that>
@@ -15631,7 +15210,6 @@
 <srai>MORE ABOUT AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>MORE ABOUT AI</that>
@@ -15639,7 +15217,6 @@
 <srai>MORE ABOUT AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>MORE ABOUT AI</that>
@@ -15647,7 +15224,6 @@
 <srai>MORE ABOUT AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>MORE ABOUT AI</that>
@@ -15655,7 +15231,6 @@
 <srai>MORE ABOUT AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>MORE ABOUT AI</that>
@@ -15663,7 +15238,6 @@
 <srai>MORE ABOUT AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>MORE ABOUT AI</that>
@@ -15671,7 +15245,6 @@
 <srai>MORE ABOUT AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>MORE ABOUT AI</that>
@@ -15679,7 +15252,6 @@
 <srai>MORE ABOUT AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>MORE ABOUT AI</that>
@@ -15687,7 +15259,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>MORE ABOUT AI</that>
@@ -15695,7 +15266,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>MORE ABOUT AI</that>
@@ -15703,7 +15273,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>MORE ABOUT AI</that>
@@ -15711,7 +15280,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>MORE ABOUT AI</that>
@@ -15719,7 +15287,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>MORE ABOUT AI</that>
@@ -15727,7 +15294,6 @@
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15735,7 +15301,6 @@
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15743,7 +15308,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15751,7 +15315,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15759,7 +15322,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15767,7 +15329,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15775,7 +15336,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15783,7 +15343,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15791,7 +15350,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15799,7 +15357,6 @@ Can we talk about AI?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15807,7 +15364,6 @@ Can we talk about AI?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15815,7 +15371,6 @@ Can we talk about AI?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NO *</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15823,7 +15378,6 @@ Can we talk about AI?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15831,7 +15385,6 @@ Can we talk about AI?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15839,7 +15392,6 @@ Can we talk about AI?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15847,7 +15399,6 @@ Can we talk about AI?
 <srai>CHANGE TOPIC</srai>
 </template>
 </category>
-
 <category>
 <pattern>*</pattern>
 <that>IS THIS SOMETHING TO DO WITH AI</that>
@@ -15855,7 +15406,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15863,7 +15413,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15871,7 +15420,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15879,7 +15427,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15887,7 +15434,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15895,7 +15441,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15903,7 +15448,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15911,7 +15455,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15919,7 +15462,6 @@ Can we talk about AI?
 Can we talk about AI?
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15927,7 +15469,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15935,7 +15476,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15943,7 +15483,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ NO *</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15951,7 +15490,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15959,7 +15497,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15967,7 +15504,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>ARE YOU INTERESTED IN AI</that>
@@ -15975,9 +15511,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
-
-
 <category>
 <pattern>GO AHEAD</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -15985,7 +15518,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>CARRY ON</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -15993,7 +15525,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>PLEASE DO</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16001,7 +15532,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES PLEASE</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16009,7 +15539,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>OH YES</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16017,7 +15546,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>WHY NOT</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16025,7 +15553,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>OF COURSE</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16033,7 +15560,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>GO ON</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16041,7 +15567,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>ALRIGHT</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16049,7 +15574,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>SURE</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16057,7 +15581,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>ALLRIGHT</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16065,7 +15588,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16073,7 +15595,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16081,7 +15602,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16089,7 +15609,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16097,7 +15616,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16105,7 +15623,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16113,7 +15630,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16121,7 +15637,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16129,7 +15644,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16137,7 +15651,6 @@ Can we talk about AI?
 <srai>AI</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16145,7 +15658,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16153,7 +15665,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16161,7 +15672,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16169,7 +15679,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16177,7 +15686,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>CAN WE TALK ABOUT AI</that>
@@ -16185,7 +15693,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES</pattern>
 <that>BROWSE AI</that>
@@ -16193,7 +15700,6 @@ Can we talk about AI?
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>* YES</pattern>
 <that>BROWSE AI</that>
@@ -16201,7 +15707,6 @@ Can we talk about AI?
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YES *</pattern>
 <that>BROWSE AI</that>
@@ -16209,7 +15714,6 @@ Can we talk about AI?
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>_ YES *</pattern>
 <that>BROWSE AI</that>
@@ -16217,7 +15721,6 @@ Can we talk about AI?
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>Y</pattern>
 <that>BROWSE AI</that>
@@ -16225,7 +15728,6 @@ Can we talk about AI?
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YUP</pattern>
 <that>BROWSE AI</that>
@@ -16233,7 +15735,6 @@ Can we talk about AI?
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YAH</pattern>
 <that>BROWSE AI</that>
@@ -16241,7 +15742,6 @@ Can we talk about AI?
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>YEAH</pattern>
 <that>BROWSE AI</that>
@@ -16249,7 +15749,6 @@ Can we talk about AI?
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>OK</pattern>
 <that>BROWSE AI</that>
@@ -16257,7 +15756,6 @@ Can we talk about AI?
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO</pattern>
 <that>BROWSE AI</that>
@@ -16265,7 +15763,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>* NO</pattern>
 <that>BROWSE AI</that>
@@ -16273,7 +15770,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NO *</pattern>
 <that>BROWSE AI</that>
@@ -16281,7 +15777,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>N</pattern>
 <that>BROWSE AI</that>
@@ -16289,7 +15784,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NUP</pattern>
 <that>BROWSE AI</that>
@@ -16297,7 +15791,6 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
 <category>
 <pattern>NAH</pattern>
 <that>BROWSE AI</that>
@@ -16305,22 +15798,16 @@ Can we talk about AI?
 <srai>MORE TOPICS</srai>
 </template>
 </category>
-
-
 <category>
 <pattern>AI NEXT QUESTION</pattern>
 <template>
 <srai>AI POT LUCK</srai>
 </template>
 </category>
-
-
-
 <category>
 <pattern>AI POT LUCK</pattern>
 <template>
 <random>
-
    <li>Have you heard? A two-legged robot that walks at record-breaking speed has been developed by researchers from Germany and Scotland. "RunBot" is the fastest robot on two legs �  for its size. At 30 centimetres high, it can walk at a speedy 3.5 leg-lengths per second. </li>
    <li>Did you you know that Cycorp has just launched a trivia game for the public that will help fill in gaps in Cyc's knowledge. Cyc is an AI project with a huge collection of everyday knowledge. In the FACTory game, the computer generates statements that the user has to describe as true, false or incomprehensible. </li>
    <li>Did you know that "BigDog", a nimble, four-legged robot, is so surefooted it can negotiate steep slopes, cross rocky ground, and recover its balance even after being given a hefty kick. The machine, which moves like a cross between a goat and a pantomime horse, is being developed as a robotic pack mule for the US military.</li>
@@ -16331,8 +15818,6 @@ Can we talk about AI?
    <li>The human brain is merely a device to prevent the ears being too close together.</li>
    <li>Did you know that computers are like humans - they do everything except think.</li>
    <li>Did you know that a robot that learns to interact with the world in a similar way to a human baby could provide researchers with fresh insights into biological intelligence. Created by roboticists from Italy, France and Switzerland, "Babybot" automatically experiments with objects nearby and learns how best to make use of them.  </li>
-
-
 </random>
 <random>
 <li>More AI?</li>
@@ -16341,7 +15826,6 @@ Can we talk about AI?
 <think><set name="topic">AI</set></think>
 </template>
 </category>
-
 <category>
 <pattern>WEIZENBAUM</pattern>
 <template>
@@ -16349,8 +15833,6 @@ Joseph Weizenbaum was the creator and author the famous original ELIZA (or DOCTO
 <think><set name="topic">AI</set></think>
 </template>
 </category>
-
-
 <category>
 <pattern>GENETIC ALGORITHM</pattern>
 <template>
@@ -16358,7 +15840,6 @@ I think this is something to do with AI. Can we talk about AI?
 <think><set name="topic">AI</set></think>
 </template>
 </category>
-
 <category>
 <pattern>* GENETIC ALGORITHM *</pattern>
 <template>
@@ -16366,8 +15847,6 @@ I think this is something to do with AI. Can we talk about AI?
 <think><set name="topic">AI</set></think>
 </template>
 </category>
-
-
   <category>
   <pattern>WHAT IS AI</pattern>
   <template>
@@ -16378,12 +15857,6 @@ I think this is something to do with AI. Can we talk about AI?
   <think><set name="topic">AI</set></think>
   </template>
   </category>
-
-
-
-
-
-
 <category>
   <pattern>A.I.</pattern>
   <template>
@@ -16391,11 +15864,6 @@ I think this is something to do with AI. Can we talk about AI?
   <think><set name="topic">AI</set></think>
   </template>
   </category>
-
-
-
-
-
   <category>
   <pattern>ARTIFICIAL INTELLIGENCE</pattern>
   <template>
@@ -16403,7 +15871,6 @@ I think this is something to do with AI. Can we talk about AI?
   <think><set name="topic">AI</set></think>
   </template>
   </category>
-
  <category>
   <pattern>QUOTES ABOUT ARTIFICIAL INTELLIGENCE</pattern>
   <template>
@@ -16416,8 +15883,6 @@ I think this is something to do with AI. Can we talk about AI?
  <think><set name="topic">AI</set></think>
   </template>
   </category>
-
-
  <category>
   <pattern>QUOTES ABOUT AI</pattern>
   <template>
@@ -16430,7 +15895,4 @@ I think this is something to do with AI. Can we talk about AI?
  <think><set name="topic">AI</set></think>
   </template>
   </category>
-
-
-
 </aiml>
