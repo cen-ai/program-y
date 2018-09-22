@@ -5,6 +5,23 @@
 <!-- (c) Cen Inc. -->
 <!-- Last modified 3/3/2018 -->
 <!-- How do I use cen? -->
+<category>
+    <pattern>$where * your $white $paper #</pattern>
+    <template><srai>WHITE_PAPER_RESPONSE</srai></template>
+</category>
+<category>
+    <pattern>$could * your $white $paper #</pattern>
+    <template><srai>WHITE_PAPER_RESPONSE</srai></template>
+</category>
+<category>
+    <pattern># $your $white $paper #</pattern>
+    <template><srai>WHITE_PAPER_RESPONSE</srai></template>
+</category>
+<category>
+  <pattern>WHITE_PAPER_RESPONSE</pattern>
+  <template>Please visit this link https://www.cen.ai/#section-336</template>
+</category>
+
 
 
     <category><pattern>ARE YOU _ AN ICO</pattern>
@@ -186,6 +203,8 @@
             </srai>
         </template>
     </category>
+
+
 
 <!-- NOTE I have edited RAMONAJOBSML to say how I work, might need to check this -->
 <!-- -->

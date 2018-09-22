@@ -220,9 +220,6 @@
 <category><pattern>WHERE TO *</pattern>
 <template><sraix service="pannous">WHERE TO <star/></sraix></template>
 </category>
-<category><pattern>WHERE *</pattern>
-<template><sraix service="pannous">WHERE <star/></sraix></template>
-</category>
 <category><pattern>WHERE IS GOD</pattern>
 <template><sraix service="pannous">WHERE IS GOD</sraix></template>
 </category>
