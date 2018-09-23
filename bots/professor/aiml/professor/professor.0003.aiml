@@ -5906,8 +5906,9 @@ C</pattern>
 <category><pattern>IS POTTERY A CRAFT</pattern>
 <template>Yes.</template>
 </category>
+<!-- I changed this from Yes. As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category><pattern>IS PLUTO THE NINTH PLANET FROM THE SUN</pattern>
-<template>Yes.</template>
+<template>Pluto is now considered a dwarf planet.</template>
 </category>
 <category><pattern>IS PINICILLIN MADE FROM MOLDS</pattern>
 <template>Yes.</template>

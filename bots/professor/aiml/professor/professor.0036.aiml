@@ -2498,8 +2498,9 @@ They are trying to have private conversations with me.</template></category>
 <!-- <category><pattern>WHAT ARE THEIR NAMES</pattern><template><think><set name="topic">atomic3</set></think>
 There are too many of them to name them all.</template></category> -->
   
+  <!-- I changed "sometimes" to "formerly". As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category><pattern>WHAT ARE THE PLANETS</pattern><template><think><set name="topic">atomic3</set></think>
-  The planets are     Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune and sometimes Pluto. More about astronomy?
+  The planets are     Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune and formerly Pluto. More about astronomy?
 <think><set name="topic">astronomy</set></think>
 </template></category>
   

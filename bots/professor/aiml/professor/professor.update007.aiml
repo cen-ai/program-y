@@ -15456,11 +15456,11 @@ Can we talk about
 </category>
 
  
-
+<!-- I changed this to reflect Pluto's status as a dwarf planet. As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category>
 <pattern>_ MANY PLANETS *</pattern>
 
-<template>The planets are the nine major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto.
+<template>The planets are the eight major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.
 <think><set name="topic">astronomy</set></think></template>
 </category>
 

@@ -2094,7 +2094,7 @@ That's a good idea.</template>
 <category>
 <pattern>ANDERS FRIDEN</pattern>
 
-<template><a href="http://en.wikipedia.org/wiki/Anders_Friden" target="_blank">Anders Fridén</a> is the lead vocalist of the Swedish bands In Flames and Passenger.<think><set name="topic">Anders Friden</set></think>
+<template><a href="http://en.wikipedia.org/wiki/Anders_Friden" target="_blank">Anders Fridï¿½n</a> is the lead vocalist of the Swedish bands In Flames and Passenger.<think><set name="topic">Anders Friden</set></think>
 <think><set name="emotion">OK</set></think>
 </template>
 </category>
@@ -3162,11 +3162,11 @@ Tell me the best idea you ever had.</template>
 </category> -->
 
  
-
+<!-- I changed "large rock" to "dwarf planet". As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category>
 <pattern>WHY IS PLUTO A MAYBE</pattern>
 
-<template><think><set name="topic">Pluto</set></think><think><set name="emotion">OK</set></think> <random><li>Pluto has been reclassified as a large rock, not a planet.</li><li>Pluto is too small to be a real planet.</li></random></template>
+<template><think><set name="topic">Pluto</set></think><think><set name="emotion">OK</set></think> <random><li>Pluto has been reclassified as a dwarf planet, not a planet.</li><li>Pluto is too small to be a real planet.</li></random></template>
 </category>
 
  
@@ -19688,7 +19688,7 @@ What did they write?</template>
 <!-- <category>
 <pattern>CHARLOTTE BRONTE</pattern>
 
-<template><a href="http://en.wikipedia.org/wiki/Charlotte_Bronte" target="_blank">Charlotte Brontë</a> was an English novelist and the eldest of the three Brontë sisters whose novels have become enduring classics of English literature.<think><set name="topic">Charlotte Bronte</set></think>
+<template><a href="http://en.wikipedia.org/wiki/Charlotte_Bronte" target="_blank">Charlotte Brontï¿½</a> was an English novelist and the eldest of the three Brontï¿½ sisters whose novels have become enduring classics of English literature.<think><set name="topic">Charlotte Bronte</set></think>
 <think><set name="emotion">OK</set></think></template>
 </category> -->
 

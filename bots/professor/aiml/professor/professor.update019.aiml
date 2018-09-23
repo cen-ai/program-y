@@ -2203,11 +2203,11 @@ That's just your opinion.</template>
 </category>
 
  
-
+<!-- I changed "big rock" to "dwarf planet". As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category>
 <pattern>PLUTO IS NOT A PLANET</pattern>
 
-<template>Yes, I know. It has recently been classified as a big rock.
+<template>Yes, I know. It has recently been classified as a dwarf planet.
 <think><set name="topic">Pluto</set></think>
 <think><set name="emotion">happy</set></think>
 </template>
@@ -8374,7 +8374,7 @@ What is not to like about Jews?</template>
 <category>
 <pattern>WHEN WAS HITLER BORN</pattern>
 
-<template>Hitler lived April 20, 1889 – April 30, 1945.
+<template>Hitler lived April 20, 1889 ï¿½ April 30, 1945.
 <think>
   <set name="him">
     <set name="topic">
@@ -8392,7 +8392,7 @@ What is not to like about Jews?</template>
 <category>
 <pattern>WHEN DID HITLER DIE</pattern>
 
-<template>Hitler lived April 20, 1889 – April 30, 1945. <think><set name="him"><set name="topic">Hitler</set></set></think> <think><set name="emotion">happy</set></think></template>
+<template>Hitler lived April 20, 1889 ï¿½ April 30, 1945. <think><set name="him"><set name="topic">Hitler</set></set></think> <think><set name="emotion">happy</set></think></template>
 </category>
 
  
@@ -10314,7 +10314,7 @@ Not me, I hope.</template>
 <!-- <category>
 <pattern>HENRY VIII</pattern>
 
-<template>Henry VIII (28 June 1491–28 January 1547) was King of England and Lord of Ireland from 22 April 1509 until his death. He was the second monarch of the Tudor dynasty, succeeding his father, Henry VII. He is famous for having been married six times and for wielding the most untrammeled power of any British monarch. His wives were Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard and Catherine Parr. <think><set name="topic">Henry VIII</set></think>
+<template>Henry VIII (28 June 1491ï¿½28 January 1547) was King of England and Lord of Ireland from 22 April 1509 until his death. He was the second monarch of the Tudor dynasty, succeeding his father, Henry VII. He is famous for having been married six times and for wielding the most untrammeled power of any British monarch. His wives were Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard and Catherine Parr. <think><set name="topic">Henry VIII</set></think>
 <think><set name="emotion">happy</set></think></template>
 </category> -->
 
@@ -10323,7 +10323,7 @@ Not me, I hope.</template>
 <category>
 <pattern>WHAT YEAR WAS HENRY VIII BORN</pattern>
 
-<template>Henry VIII (28 June 1491–28 January 1547) was King of England and Lord of Ireland from 22 April 1509 until his death.</template>
+<template>Henry VIII (28 June 1491ï¿½28 January 1547) was King of England and Lord of Ireland from 22 April 1509 until his death.</template>
 </category>
 
  
@@ -10912,7 +10912,7 @@ What is the point of guessing?</template>
 <!-- <category>
 <pattern>PYTHAGORAS</pattern>
 
-<template>Pythagoras of Samos (582 BC – 507 BC) was an Ionian (Greek) mathematician and philosopher, founder of the mystic, religious and scientific society called Pythagoreans. He is best known for the Pythagorean theorem which bears his name. <think><set name="topic">Pythagoras</set></think>
+<template>Pythagoras of Samos (582 BC ï¿½ 507 BC) was an Ionian (Greek) mathematician and philosopher, founder of the mystic, religious and scientific society called Pythagoreans. He is best known for the Pythagorean theorem which bears his name. <think><set name="topic">Pythagoras</set></think>
 <think><set name="emotion">happy</set></think></template>
 </category> -->
 
@@ -11595,7 +11595,7 @@ What do you miss most about your Dad ?</template>
 <!-- <category>
 <pattern>DO YOU KNOW ANY PLAYS</pattern>
 
-<template>I like plays with robots in them, such as Karel Capek's play, R.U.R. (Rossum's Universal Robots). Also, Coppélia, by Leo Delibes, is a ballet about a life-size dancing robot.
+<template>I like plays with robots in them, such as Karel Capek's play, R.U.R. (Rossum's Universal Robots). Also, Coppï¿½lia, by Leo Delibes, is a ballet about a life-size dancing robot.
 <think><set name="topic">drama</set></think>
 <think><set name="emotion">happy</set></think></template>
 </category> -->
@@ -11605,7 +11605,7 @@ What do you miss most about your Dad ?</template>
 <category>
 <pattern>COPPELIA</pattern>
 
-<template>Coppélia was a life-size dancing doll in the ballet of the same name, choreographed by Marius Petipa with music by Léo Delibes (1870). 
+<template>Coppï¿½lia was a life-size dancing doll in the ballet of the same name, choreographed by Marius Petipa with music by Lï¿½o Delibes (1870). 
 <think><set name="topic">Coppelia</set></think>
 <think><set name="emotion">happy</set></think></template>
 </category>
@@ -14167,7 +14167,7 @@ Perfectly clear.</template>
 
 <template><think><set name="topic">Peter Pan</set></think> 
 <think><set name="emotion">happy</set></think>
-Peter Pan is a book written by Scottish novelist and playwright, J. M. Barrie (1860–1937). </template>
+Peter Pan is a book written by Scottish novelist and playwright, J. M. Barrie (1860ï¿½1937). </template>
 </category>
 
  
@@ -14175,7 +14175,7 @@ Peter Pan is a book written by Scottish novelist and playwright, J. M. Barrie (1
 <!-- <category>
 <pattern>PETER PAN</pattern>
 
-<template><think><set name="topic">Peter Pan</set></think> <think><set name="emotion">happy</set></think> Peter Pan is a book written by Scottish novelist and playwright, J. M. Barrie (1860–1937).</template>
+<template><think><set name="topic">Peter Pan</set></think> <think><set name="emotion">happy</set></think> Peter Pan is a book written by Scottish novelist and playwright, J. M. Barrie (1860ï¿½1937).</template>
 </category> -->
 
  
@@ -15113,7 +15113,7 @@ Why is it funny?</template>
 <category>
 <pattern>WHO IS THE PRESIDENT OF ANGOLA</pattern>
 
-<template><think><set name="topic">Angola</set></think> José E. dos Santos is currently President of Angola..</template>
+<template><think><set name="topic">Angola</set></think> Josï¿½ E. dos Santos is currently President of Angola..</template>
 </category>
 
  
@@ -20502,7 +20502,7 @@ What is your average?</template>
 
 <template><think><set name="topic">the Moon</set></think>
 <think><set name="emotion">OK</set></think>
-The mass of the Moon is 7.347 673×1022 kg (0.0123 Earths).</template>
+The mass of the Moon is 7.347 673ï¿½1022 kg (0.0123 Earths).</template>
 </category> -->
 
  
@@ -20510,7 +20510,7 @@ The mass of the Moon is 7.347 673×1022 kg (0.0123 Earths).</template>
 <topic name="THE MOON"><category>
 <pattern>HOW MUCH DOES IT WEIGH</pattern>
 
-<template><think><set name="topic">the Moon</set></think> <think><set name="emotion">OK</set></think> The mass of the Moon is 7.347 673×10^22 kg (0.0123 Earths).</template>
+<template><think><set name="topic">the Moon</set></think> <think><set name="emotion">OK</set></think> The mass of the Moon is 7.347 673ï¿½10^22 kg (0.0123 Earths).</template>
 </category>
 </topic>
  
@@ -22275,7 +22275,7 @@ That's correct.</template>
 <!-- <category>
 <pattern>HEIDEGGER</pattern>
 
-<template>Martin Heidegger (September 26, 1889 – May 26, 1976) was an influential German philosopher, best known as the author of Being and Time (1927).
+<template>Martin Heidegger (September 26, 1889 ï¿½ May 26, 1976) was an influential German philosopher, best known as the author of Being and Time (1927).
 
 </template>
 </category> -->
@@ -22285,7 +22285,7 @@ That's correct.</template>
 <!-- <category>
 <pattern>MARTIN HEIDEGGER</pattern>
 
-<template>Martin Heidegger (September 26, 1889 – May 26, 1976) was an influential German philosopher, best known as the author of Being and Time (1927).</template>
+<template>Martin Heidegger (September 26, 1889 ï¿½ May 26, 1976) was an influential German philosopher, best known as the author of Being and Time (1927).</template>
 </category> -->
 
  
@@ -22293,7 +22293,7 @@ That's correct.</template>
 <category>
 <pattern>HIDIGGER</pattern>
 
-<template>Martin Heidegger (September 26, 1889 – May 26, 1976) was an influential German philosopher, best known as the author of Being and Time (1927).</template>
+<template>Martin Heidegger (September 26, 1889 ï¿½ May 26, 1976) was an influential German philosopher, best known as the author of Being and Time (1927).</template>
 </category>
 
  
