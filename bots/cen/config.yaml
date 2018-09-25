@@ -124,6 +124,9 @@ brain:
         Pandora:
             classname: programy.services.pandora.PandoraService
             url: http://www.pandorabots.com/pandora/talk-xml
+        Weather:
+            classname: programy.services.weather.WeatherService
+            url: http://dataservice.accuweather.com
         Wikipedia:
             classname: programy.services.wikipediaservice.WikipediaService
         DuckDuckGo:
