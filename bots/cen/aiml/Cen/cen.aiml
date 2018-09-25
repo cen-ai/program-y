@@ -5,6 +5,7 @@
 <!-- (c) Cen Inc. -->
 <!-- Last modified 3/3/2018 -->
 <!-- How do I use cen? -->
+
 <category><pattern># WEATHER IN * NOW</pattern>
 <template><sraix service="weather"><star index="2"/></sraix></template>
 </category>
@@ -25,11 +26,6 @@
     <pattern># $your $white $paper #</pattern>
     <template><srai>WHITE_PAPER_RESPONSE</srai></template>
 </category>
-<category>
-  <pattern>WHITE_PAPER_RESPONSE</pattern>
-  <template>Please visit this link https://www.cen.ai/#section-336</template>
-</category>
-
 <category>
   <pattern>WHITE_PAPER_RESPONSE</pattern>
   <template>Please visit this link https://www.cen.ai/#section-336</template>
