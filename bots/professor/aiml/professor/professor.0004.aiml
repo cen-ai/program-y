@@ -10049,8 +10049,9 @@ AIS</pattern>
 <category><pattern>IS PORNOGRAPHY ADDICTIVE</pattern>
 <template>Yes.</template>
 </category>
+<!-- I changed this from Yes to No. As much as I love Pluto, it's not recognized as a planet anymore. It also isn't planted. -->
 <category><pattern>IS PLUTO A PLANTED</pattern>
-<template>Yes.</template>
+<template>No.</template>
 </category>
 <category><pattern>IS OREGON A STATE NEAR WASHINGTON STATE</pattern>
 <template>Yes.</template>

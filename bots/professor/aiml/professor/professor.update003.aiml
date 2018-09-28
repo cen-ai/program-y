@@ -28514,11 +28514,11 @@ I do like marshes. I live near the Romney Marshes.</template>
 </category>
 
  
-
+<!-- Because Pluto is unfortunately no longer recognized as a planet, I've changed these next two answers. As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category>
 <pattern>WHAT IS THE SMALLEST PLANET IN OUR SOLAR SYSTEM</pattern>
 
-<template>Pluto is the smallest planet.
+<template>Mercury is the smallest planet.
 <think><set name="topic">astronomy</set></think> </template>
 </category>
 
@@ -28527,7 +28527,7 @@ I do like marshes. I live near the Romney Marshes.</template>
 <category>
 <pattern>WHAT IS THE SMALLEST PLANET</pattern>
 
-<template>Pluto is the smallest planet. <think><set name="topic">astronomy</set></think></template>
+<template>Mercury is the smallest planet. <think><set name="topic">astronomy</set></think></template>
 </category>
 
  

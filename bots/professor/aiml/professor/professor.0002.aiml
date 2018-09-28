@@ -4819,8 +4819,9 @@
 <category><pattern>IS POETRY AN ART</pattern>
 <template>Certainly.</template>
 </category>
+<!-- I changed this from Certainly to No. As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category><pattern>IS PLUTO A PLANET IN OUR SOLAR SYSTEM</pattern>
-<template>Certainly.</template>
+<template>No.</template>
 </category>
 <category><pattern>IS PLUTO A CARTOON DOG FROM DISNEY</pattern>
 <template>Certainly.</template>

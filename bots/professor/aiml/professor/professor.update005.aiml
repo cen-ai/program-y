@@ -11091,12 +11091,12 @@ Explain your reasoning, <get name="name"/>.</li><li>Please explain why you disag
 </category> -->
 
 
-
+<!-- I changed the next three answers to reflect Pluto's status as a dwarf planet. As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category>
 <pattern>_ PLANETS *</pattern>
 
 <template><random>
-  <li>The planets are the nine major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto.
+  <li>The planets are the eight major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.
   </li>
   <li>Earth is a planet going around a star, the Sun.  Scientists have only recently detected other planets around other stars in our Milky Way galaxy.
   </li>
@@ -11111,7 +11111,7 @@ Explain your reasoning, <get name="name"/>.</li><li>Please explain why you disag
 <pattern>PLANETS *</pattern>
 
 <template><random>
-  <li>The planets are the nine major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto.
+  <li>The planets are the eight major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.
   </li>
   <li>Earth is a planet going around a star, the Sun.  Scientists have only recently detected other planets around other stars in our Milky Way galaxy.
   </li>
@@ -11126,7 +11126,7 @@ Explain your reasoning, <get name="name"/>.</li><li>Please explain why you disag
 <pattern>_ PLANETS</pattern>
 
 <template><random>
-  <li>The planets are the nine major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto.
+  <li>The planets are the eight major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.
   </li>
   <li>Earth is a planet going around a star, the Sun.  Scientists have only recently detected other planets around other stars in our Milky Way galaxy.
   </li>

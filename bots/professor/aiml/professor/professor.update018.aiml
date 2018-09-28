@@ -2817,7 +2817,7 @@ String theory is very interesting. It could be the "theory of everything".</temp
 <template><random>
   <li>Pokemon is the Pocket Monster from Japan. It was a craze a few years ago and has recently died down.
   </li>
-  <li>Pokémon is a multi-billion dollar media franchise created by Satoshi Tajiri in 1996.
+  <li>Pokï¿½mon is a multi-billion dollar media franchise created by Satoshi Tajiri in 1996.
   </li>
 </random> 
 <think><set name="topic">Pokemon</set></think>
@@ -9597,7 +9597,7 @@ Great Britain does not have a President.</template>
 <!-- <category>
 <pattern>BARTOK</pattern>
 
-<template>Béla Bartók (March 25, 1881 – September 26, 1945) was a Hungarian composer, pianist and collector of Eastern European and Middle Eastern folk music.
+<template>Bï¿½la Bartï¿½k (March 25, 1881 ï¿½ September 26, 1945) was a Hungarian composer, pianist and collector of Eastern European and Middle Eastern folk music.
 <think>
   <set name="he">
     <set name="topic">
@@ -9980,7 +9980,7 @@ There is not enough room here to display it.</template>
 <category>
 <pattern>SHAKA</pattern>
 
-<template>Shaka (ca. 1787 – ca. 22 September 1828) is widely credited with transforming the Zulu tribe from a small clan into the beginnings of a nation that held sway over that portion of Southern Africa between the Phongolo and Mzimkhulu rivers. 
+<template>Shaka (ca. 1787 ï¿½ ca. 22 September 1828) is widely credited with transforming the Zulu tribe from a small clan into the beginnings of a nation that held sway over that portion of Southern Africa between the Phongolo and Mzimkhulu rivers. 
 <think><set name="him">
     <set name="topic">
       Shaka
@@ -10092,7 +10092,7 @@ You can't please everyone. Try again later and see if I've improved.</template>
 <category>
 <pattern>STEVE IRWIN</pattern>
 
-<template>Stephen Robert Irwin (22 February 1962 – 4 September 2006), nicknamed as "The Crocodile Hunter", was an Australian conservationist and television personality. On 4 September 2006, Irwin was fatally pierced in the chest by a stingray spine whilst snorkelling at the Great Barrier Reef.
+<template>Stephen Robert Irwin (22 February 1962 ï¿½ 4 September 2006), nicknamed as "The Crocodile Hunter", was an Australian conservationist and television personality. On 4 September 2006, Irwin was fatally pierced in the chest by a stingray spine whilst snorkelling at the Great Barrier Reef.
 <think>
   <set name="he">
     <set name="topic">
@@ -10128,7 +10128,7 @@ You can't please everyone. Try again later and see if I've improved.</template>
 <category>
 <pattern>HAROLD SHIPMAN</pattern>
 
-<template>Harold Shipman (14 January 1946 – 13 January 2004) was a British general practitioner who was the most prolific known serial killer in the history of Britain (and possibly the world).
+<template>Harold Shipman (14 January 1946 ï¿½ 13 January 2004) was a British general practitioner who was the most prolific known serial killer in the history of Britain (and possibly the world).
 
 <think>
   <set name="he">
@@ -17431,13 +17431,13 @@ Don't be so pessimistic.</template>
 </category>
 
  
-
+<!-- Fixed this to say dwarf planet instead of "lump of rock". As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category>
 <pattern>IS PLUTO A PLANET</pattern>
 
 <template><think><set name="topic">Pluto</set></think> 
 <think><set name="emotion">happy</set></think> 
-No, it has been reclassified as a lump of rock.</template>
+No, it has been reclassified as a dwarf planet.</template>
 </category>
 
  
