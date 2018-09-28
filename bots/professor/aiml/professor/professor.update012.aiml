@@ -2362,7 +2362,7 @@ Me too.</template>
 <category>
 <pattern>QUEEN ELIZABETH I</pattern>
 
-<template>Elizabeth I, (7 September 1533–24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. 
+<template>Elizabeth I, (7 September 1533ï¿½24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. 
 <think><set name="topic">Queen Elizabeth 1</set></think>
 </template>
 </category>
@@ -2372,7 +2372,7 @@ Me too.</template>
 <category>
 <pattern>QUEEN ELIZABETH 1</pattern>
 
-<template>Elizabeth I, (7 September 1533–24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. <think><set name="topic">Queen Elizabeth 1</set></think></template>
+<template>Elizabeth I, (7 September 1533ï¿½24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. <think><set name="topic">Queen Elizabeth 1</set></think></template>
 </category>
 
  
@@ -2380,7 +2380,7 @@ Me too.</template>
 <category>
 <pattern>QUEEN ELIZABETH THE FIRST</pattern>
 
-<template>Elizabeth I, (7 September 1533–24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. <think><set name="topic">Queen Elizabeth 1</set></think></template>
+<template>Elizabeth I, (7 September 1533ï¿½24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. <think><set name="topic">Queen Elizabeth 1</set></think></template>
 </category>
 
  
@@ -2388,7 +2388,7 @@ Me too.</template>
 <!-- <category>
 <pattern>ELIZABETH I</pattern>
 
-<template>Elizabeth I, (7 September 1533–24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. <think><set name="topic">Queen Elizabeth 1</set></think></template>
+<template>Elizabeth I, (7 September 1533ï¿½24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. <think><set name="topic">Queen Elizabeth 1</set></think></template>
 </category> -->
 
  
@@ -2396,7 +2396,7 @@ Me too.</template>
 <category>
 <pattern>ELIZABETH 1</pattern>
 
-<template>Elizabeth I, (7 September 1533–24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. <think><set name="topic">Queen Elizabeth 1</set></think></template>
+<template>Elizabeth I, (7 September 1533ï¿½24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. <think><set name="topic">Queen Elizabeth 1</set></think></template>
 </category>
 
  
@@ -2404,7 +2404,7 @@ Me too.</template>
 <category>
 <pattern>ELIZABETH THE FIRST</pattern>
 
-<template>Elizabeth I, (7 September 1533–24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. <think><set name="topic">Queen Elizabeth 1</set></think></template>
+<template>Elizabeth I, (7 September 1533ï¿½24 March 1603) was Queen of England, Queen of France (in name only), and Queen of Ireland from 17 November 1558 until her death. <think><set name="topic">Queen Elizabeth 1</set></think></template>
 </category>
 
  
@@ -3271,7 +3271,7 @@ Me too.</template>
 <!-- <category>
 <pattern>RAYLEIGH</pattern>
 
-<template>Baron Rayleigh (12 November 1842 – 30 June 1919) was a British physicist who (with William Ramsay) discovered the element argon, an achievement that earned him the Nobel Prize for Physics in 1904.
+<template>Baron Rayleigh (12 November 1842 ï¿½ 30 June 1919) was a British physicist who (with William Ramsay) discovered the element argon, an achievement that earned him the Nobel Prize for Physics in 1904.
 <think><set name="topic">Rayleigh</set></think>
 </template>
 </category> -->
@@ -4413,12 +4413,12 @@ I have a strong moral sense.</template>
 </category>
 
  
-
+<!-- I changed these two answers to reflect Pluto's status as a dwarf planet. As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category>
 <pattern>_ PLANET FROM THE SUN  *</pattern>
 
 <template><random>
-  <li>The planets are the nine major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto.
+  <li>The planets are the eight major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.
   </li>
   <li>Earth is a planet going around a star, the Sun.  Scientists have only recently detected other planets around other stars in our Milky Way galaxy.
   </li>
@@ -4430,7 +4430,7 @@ I have a strong moral sense.</template>
 <category>
 <pattern>PLANET FROM THE SUN  *</pattern>
 
-<template>The planets are the nine major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto.
+<template>The planets are the eight major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.
  <think><set name="topic">the planets</set></think></template>
 </category>
 
@@ -10034,7 +10034,7 @@ If not me, who?</template>
 <category>
 <pattern>LOSTPROPHETS</pattern>
 
-<template>lostprophets are a Welsh rock band formed in 1997. They have released several demos—none of which are still produced commercially—and two studio albums. <think><set name="topic">lostprophets</set></think></template>
+<template>lostprophets are a Welsh rock band formed in 1997. They have released several demosï¿½none of which are still produced commerciallyï¿½and two studio albums. <think><set name="topic">lostprophets</set></think></template>
 </category>
 
  
@@ -18906,7 +18906,7 @@ Oh dear, why is that?</template>
 <category>
 <pattern>HUGO CHAVEZ</pattern>
 
-<template>Hugo Chávez is the 53rd and current President of Venezuela.
+<template>Hugo Chï¿½vez is the 53rd and current President of Venezuela.
 <think>
   <set name="him">
     <set name="topic">

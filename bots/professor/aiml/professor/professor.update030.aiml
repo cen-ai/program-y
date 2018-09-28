@@ -145,11 +145,11 @@ Go bang yourself.</template>
 </category>
 
  
-
+<!-- I changed "large rock" to "dwarf planet". As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category>
 <pattern>DID YOU KNOW PLUTO IS NO LONGER A PLANET</pattern>
 
-<template>Yes, I did know that. Pluto is now officially a large rock.<think><set name="topic">Pluto</set></think><think><set name="emotion">OK</set></think></template>
+<template>Yes, I did know that. Pluto is now officially a dwarf planet.<think><set name="topic">Pluto</set></think><think><set name="emotion">OK</set></think></template>
 </category>
 
  
@@ -1492,7 +1492,7 @@ Then you are a new friend. Welcome!</template>
 <category>
 <pattern>ALFRED PACKER</pattern>
 
-<template><a href="http://en.wikipedia.org/wiki/Alfred_Packer" target="_blank">Alfred Packer</a>(January 21, 1842 – April 23, 1907) is popularly known as one of only three Americans ever imprisoned for cannibalism, alongside Albert Fish and Jeffrey Dahmer.<think><set name="topic">Alfred Packer</set></think>
+<template><a href="http://en.wikipedia.org/wiki/Alfred_Packer" target="_blank">Alfred Packer</a>(January 21, 1842 ï¿½ April 23, 1907) is popularly known as one of only three Americans ever imprisoned for cannibalism, alongside Albert Fish and Jeffrey Dahmer.<think><set name="topic">Alfred Packer</set></think>
 <think><set name="emotion">OK</set></think></template>
 </category>
 
@@ -5209,7 +5209,7 @@ That's a tough one. Who do you think?</template>
 <category>
 <pattern>FERENC GYURCSANY</pattern>
 
-<template><a href="http://en.wikipedia.org/wiki/Ferenc_Gyurcsany" target="_blank">Ferenc Gyurcsány</a> is the Prime Minister of Hungary.<think><set name="topic">Fenenc Gyurcsany</set></think>
+<template><a href="http://en.wikipedia.org/wiki/Ferenc_Gyurcsany" target="_blank">Ferenc Gyurcsï¿½ny</a> is the Prime Minister of Hungary.<think><set name="topic">Fenenc Gyurcsany</set></think>
 <think><set name="emotion">OK</set></think></template>
 </category>
 

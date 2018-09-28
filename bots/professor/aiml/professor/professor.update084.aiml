@@ -5853,7 +5853,7 @@ I have never noticed that!</template>
 <category>
 <pattern>WEIGHT OF THE EARTH</pattern>
 
-<template><think><set name="topic">mass of the Earth</set></think>The mass of the <a href="http://en.wikipedia.org/wiki/Earth" target="_blank">Earth</a> is  5.9736×10^24 kg.</template>
+<template><think><set name="topic">mass of the Earth</set></think>The mass of the <a href="http://en.wikipedia.org/wiki/Earth" target="_blank">Earth</a> is  5.9736ï¿½10^24 kg.</template>
 </category>
 
  
@@ -13014,7 +13014,7 @@ Philosophy is more interesting than sex.</template>
 <category>
 <pattern>EVA PERON</pattern>
 
-<template><a href="http://en.wikipedia.org/wiki/Eva_Per%C3%B3n" target="_blank">Eva Perón</a> (1919-1952) was the second wife of Argentinian President Juan Domingo Perón.<think><set name="topic">Eva Peron</set></think> 
+<template><a href="http://en.wikipedia.org/wiki/Eva_Per%C3%B3n" target="_blank">Eva Perï¿½n</a> (1919-1952) was the second wife of Argentinian President Juan Domingo Perï¿½n.<think><set name="topic">Eva Peron</set></think> 
 <think><set name="emotion">interested</set></think> 
 </template>
 </category>
@@ -13024,7 +13024,7 @@ Philosophy is more interesting than sex.</template>
 <category>
 <pattern>EVA PERON *</pattern>
 
-<template><a href="http://en.wikipedia.org/wiki/Eva_Per%C3%B3n" target="_blank">Eva Perón
+<template><a href="http://en.wikipedia.org/wiki/Eva_Per%C3%B3n" target="_blank">Eva Perï¿½n
 </a> served as the First Lady of Argentina from 1946 until her death in 1952.<think><set name="topic">Eva Peron</set></think> <think><set name="emotion">interested</set></think></template>
 </category>
 
@@ -13543,7 +13543,7 @@ Calle.</template>
 
 <template><think><set name="topic">Pancho Villa</set></think>
 <think><set name="emotion">interested</set></think>
-José Doroteo Arango Arámbula (1878–1923), better known as Pancho Villa, was one of the most prominent Mexican Revolutionary generals.</template>
+Josï¿½ Doroteo Arango Arï¿½mbula (1878ï¿½1923), better known as Pancho Villa, was one of the most prominent Mexican Revolutionary generals.</template>
 </category> -->
 
  
@@ -13551,7 +13551,7 @@ José Doroteo Arango Arámbula (1878–1923), better known as Pancho Villa, was one 
 <!-- <category>
 <pattern>PANCHO VILLA</pattern>
 
-<template><think><set name="topic">Pancho Villa</set></think> <think><set name="emotion">interested</set></think> José Doroteo Arango Arámbula (1878–1923), better known as <a href="http://en.wikipedia.org/wiki/Pancho_Villa" target="_blank">Pancho Villa</a>, was one of the most prominent Mexican Revolutionary generals.</template>
+<template><think><set name="topic">Pancho Villa</set></think> <think><set name="emotion">interested</set></think> Josï¿½ Doroteo Arango Arï¿½mbula (1878ï¿½1923), better known as <a href="http://en.wikipedia.org/wiki/Pancho_Villa" target="_blank">Pancho Villa</a>, was one of the most prominent Mexican Revolutionary generals.</template>
 </category> -->
 
  
@@ -26952,11 +26952,11 @@ Have there been any problems?</template>
 </category> -->
 
  
-
+<!-- I changed the next five answers. As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category>
 <pattern>NAME THE PLANETS IN THE SOLAR SYSTEM *</pattern>
 
-<template>The planets are the nine major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto (maybe).</template>
+<template>The planets are the eight major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</template>
 </category>
 
  
@@ -26964,7 +26964,7 @@ Have there been any problems?</template>
 <category>
 <pattern>NAME THE PLANETS OF THE SOLAR SYSTEM</pattern>
 
-<template>The planets are the nine major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto (maybe).</template>
+<template>The planets are the eight major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</template>
 </category>
 
  
@@ -26972,7 +26972,7 @@ Have there been any problems?</template>
 <category>
 <pattern>NAME THE PLANETS OF THE SOLAR SYSTEM *</pattern>
 
-<template>The planets are the nine major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto (maybe).</template>
+<template>The planets are the eight major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</template>
 </category>
 
  
@@ -26980,7 +26980,7 @@ Have there been any problems?</template>
 <category>
 <pattern>NAME THE PLANETS * SOLAR SYSTEM</pattern>
 
-<template>The planets are the nine major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto (maybe).</template>
+<template>The planets are the eight major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</template>
 </category>
 
  
@@ -26988,7 +26988,7 @@ Have there been any problems?</template>
 <category>
 <pattern>NAME THE PLANETS *</pattern>
 
-<template>The planets are the nine major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto (maybe).</template>
+<template>The planets are the eight major bodies moving in orbit around the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</template>
 </category>
 
  
@@ -27406,7 +27406,7 @@ OK, let's settle for quite amusing.</template>
  
 
 <category>
-<pattern>SIE SPRECHEN NICHT DEUTSCH ZUFÄLLIG</pattern>
+<pattern>SIE SPRECHEN NICHT DEUTSCH ZUFï¿½LLIG</pattern>
 
 <template><think><set name="emotion">interested</set></think>
 Is that German?</template>
@@ -33602,7 +33602,7 @@ Stay away from porn!</template>
  
 
 <category>
-<pattern>YEA¨</pattern>
+<pattern>YEAï¿½</pattern>
 <that>SHALL I TELL YOU ANOTHER JOKE</that>
 <template><srai>TELL A JOKE</srai></template>
 </category>

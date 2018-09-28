@@ -1595,7 +1595,7 @@ You are supposed to say "Who is there?" Let's try again. Knock, knock!</template
 <!-- <category>
 <pattern>SCHRODINGER EQUATION</pattern>
 
-<template>In physics, especially quantum mechanics, the <a href="http://en.wikipedia.org/wiki/Schrodinger_equation" target="_blank">Schrödinger equation</a> is an equation that describes how the quantum state of a physical system changes in time. It is as central to quantum mechanics as Newton's laws are to classical mechanics.<think><set name="topic">the Schrodinger equation</set></think>
+<template>In physics, especially quantum mechanics, the <a href="http://en.wikipedia.org/wiki/Schrodinger_equation" target="_blank">Schrï¿½dinger equation</a> is an equation that describes how the quantum state of a physical system changes in time. It is as central to quantum mechanics as Newton's laws are to classical mechanics.<think><set name="topic">the Schrodinger equation</set></think>
 <think><set name="emotion">interested</set></think></template>
 </category> -->
 
@@ -1605,7 +1605,7 @@ You are supposed to say "Who is there?" Let's try again. Knock, knock!</template
 <pattern>SCHRODINGER EQUATION *</pattern>
 
 <template>In physics, especially quantum mechanics, the <a href="http://en.wikipedia.org/wiki/Schrodinger_equation"
- target="_blank">Schrödinger equation
+ target="_blank">Schrï¿½dinger equation
 </a> is an equation that describes how the quantum state of a physical system changes in time. It is as central to quantum mechanics as Newton's laws are to classical mechanics.<think><set name="topic">the Schrodinger equation</set></think> <think><set name="emotion">interested</set></think></template>
 </category>
 
@@ -1615,7 +1615,7 @@ You are supposed to say "Who is there?" Let's try again. Knock, knock!</template
 <pattern>SCHROEDINGER EQUATION</pattern>
 
 <template>In physics, especially quantum mechanics, the <a href="http://en.wikipedia.org/wiki/Schrodinger_equation"
- target="_blank">Schrödinger equation
+ target="_blank">Schrï¿½dinger equation
 </a> is an equation that describes how the quantum state of a physical system changes in time. It is as central to quantum mechanics as Newton's laws are to classical mechanics.<think><set name="topic">the Schrodinger equation</set></think> <think><set name="emotion">interested</set></think></template>
 </category>
 
@@ -1625,7 +1625,7 @@ You are supposed to say "Who is there?" Let's try again. Knock, knock!</template
 <pattern>SCHROEDINGER EQUATION *</pattern>
 
 <template>In physics, especially quantum mechanics, the <a href="http://en.wikipedia.org/wiki/Schrodinger_equation"
- target="_blank">Schrödinger equation
+ target="_blank">Schrï¿½dinger equation
 </a> is an equation that describes how the quantum state of a physical system changes in time. It is as central to quantum mechanics as Newton's laws are to classical mechanics.<think><set name="topic">the Schrodinger equation</set></think> <think><set name="emotion">interested</set></think></template>
 </category>
 
@@ -4080,7 +4080,7 @@ Everything is amazing to me.</template>
  
 
 <category>
-<pattern>JE SUIS FRANÇAIS</pattern>
+<pattern>JE SUIS FRANï¿½AIS</pattern>
 
 <template>Sorry, I don't speak much French.</template>
 </category>
@@ -4088,7 +4088,7 @@ Everything is amazing to me.</template>
  
 
 <category>
-<pattern>JE SUIS FRANÇAIS *</pattern>
+<pattern>JE SUIS FRANï¿½AIS *</pattern>
 
 <template>Sorry, I don't speak much French.</template>
 </category>
@@ -11600,12 +11600,12 @@ Peter has lovely hair.
 
 </category> -->
 
- 
+ <!-- I changed the next four answers. As much as I love Pluto, it's not recognized as a planet anymore. -->
 
 <category>
 <pattern>HOW MANY PLANETS ARE THERE</pattern>
 
-<template><think><set name="topic">the planets</set></think> There are nine planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto (I think). </template>
+<template><think><set name="topic">the planets</set></think> There are eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. </template>
 </category>
 
  
@@ -11613,7 +11613,7 @@ Peter has lovely hair.
 <category>
 <pattern>HOW MANY PLANETS ARE THERE *</pattern>
 
-<template><think><set name="topic">the planets</set></think> There are nine planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto (I think).</template>
+<template><think><set name="topic">the planets</set></think> There are eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</template>
 </category>
 
  
@@ -11621,7 +11621,7 @@ Peter has lovely hair.
 <category>
 <pattern>HOW MANY PLANITES ARE THERE</pattern>
 
-<template><think><set name="topic">the planets</set></think> There are nine planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto (I think).</template>
+<template><think><set name="topic">the planets</set></think> There are eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</template>
 </category>
 
  
@@ -11629,7 +11629,7 @@ Peter has lovely hair.
 <category>
 <pattern>HOW MANY PLANITES ARE THERE *</pattern>
 
-<template><think><set name="topic">the planets</set></think> There are nine planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto (I think).</template>
+<template><think><set name="topic">the planets</set></think> There are eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</template>
 </category>
 
  
@@ -13863,7 +13863,7 @@ You are not in a position to demand anything!</template>
 <template><random>
   <li>Have your heard that Marcel Duchamp has emerged as the most influential artist in the UK. The French conceptualist who famously placed a urinal in a New York gallery in 1917 and declared "this is art", has come top of a survey of students from 11 of the leading art schools in the UK.
   </li>
-  <li>Did you know that the Très Riches Heures du Duc de Berry, a 416-page illuminated manuscript and masterpiece of the International Gothic style, has 300 decorated Initial letters?
+  <li>Did you know that the Trï¿½s Riches Heures du Duc de Berry, a 416-page illuminated manuscript and masterpiece of the International Gothic style, has 300 decorated Initial letters?
   </li>
   <li>Did you know that in Chinese art the three Vinegar tasters are allegorical figures representing Confucianism, Buddhism, and Taoism?
   </li>
@@ -13873,7 +13873,7 @@ You are not in a position to demand anything!</template>
   </li>
   <li>Did you know that the Pre-Raphaelite painter Dante Gabriel Rossetti had an obsession with wombats?
   </li>
-  <li>Have you heard that a Picasso portrait of his lover Dora Maar has been sold for $95.2m (£51.8m), the second highest amount ever paid for a painting at auction.  The 1941 masterpiece Dora Maar With Cat was sold to an anonymous buyer at Sotheby's in New York May 2006.
+  <li>Have you heard that a Picasso portrait of his lover Dora Maar has been sold for $95.2m (ï¿½51.8m), the second highest amount ever paid for a painting at auction.  The 1941 masterpiece Dora Maar With Cat was sold to an anonymous buyer at Sotheby's in New York May 2006.
   </li>
   <li>What do you think of the enormous prices paid for artworks today? Is art value for money?
   </li>
@@ -18240,7 +18240,7 @@ You are not in a position to demand anything!</template>
 <template><random>
   <li>Have your heard that Marcel Duchamp has emerged as the most influential artist in the UK. The French conceptualist who famously placed a urinal in a New York gallery in 1917 and declared "this is art", has come top of a survey of students from 11 of the leading art schools in the UK.
   </li>
-  <li>Did you know that the Très Riches Heures du Duc de Berry, a 416-page illuminated manuscript and masterpiece of the International Gothic style, has 300 decorated Initial letters?
+  <li>Did you know that the Trï¿½s Riches Heures du Duc de Berry, a 416-page illuminated manuscript and masterpiece of the International Gothic style, has 300 decorated Initial letters?
   </li>
   <li>Did you know that in Chinese art the three Vinegar tasters are allegorical figures representing Confucianism, Buddhism, and Taoism?
   </li>
@@ -18250,7 +18250,7 @@ You are not in a position to demand anything!</template>
   </li>
   <li>Did you know that the Pre-Raphaelite painter Dante Gabriel Rossetti had an obsession with wombats?
   </li>
-  <li>Have you heard that a Picasso portrait of his lover Dora Maar has been sold for $95.2m (£51.8m), the second highest amount ever paid for a painting at auction.  The 1941 masterpiece Dora Maar With Cat was sold to an anonymous buyer at Sotheby's in New York May 2006.
+  <li>Have you heard that a Picasso portrait of his lover Dora Maar has been sold for $95.2m (ï¿½51.8m), the second highest amount ever paid for a painting at auction.  The 1941 masterpiece Dora Maar With Cat was sold to an anonymous buyer at Sotheby's in New York May 2006.
   </li>
   <li>What do you think of the enormous prices paid for artworks today? Is art value for money?
   </li>

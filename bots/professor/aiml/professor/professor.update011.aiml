@@ -1515,11 +1515,11 @@ Not even one subject?</template>
 </category>
 
  
-
+<!-- I changed this due to Pluto's status as a dwarf planet. As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category>
 <pattern>WHAT IS THE COLDEST PLANET</pattern>
 
-<template><think><set name="topic">astronomy</set></think> The coldest planet must be Pluto.</template>
+<template><think><set name="topic">astronomy</set></think> The coldest planet must be Neptune.</template>
 </category>
 
  
@@ -7372,7 +7372,7 @@ Why don't you ask?</template>
 <category>
 <pattern>CHE GUEVERA</pattern>
 
-<template>Ernesto Guevara de la Serna (June 14, 1928 – October 9, 1967), commonly known as Che Guevara, was an Argentine-born physician, Marxist revolutionary, politician, and Cuban guerrilla leader.
+<template>Ernesto Guevara de la Serna (June 14, 1928 ï¿½ October 9, 1967), commonly known as Che Guevara, was an Argentine-born physician, Marxist revolutionary, politician, and Cuban guerrilla leader.
 <think><set name="topic">Che Guevera</set></think>
 </template>
 </category>
@@ -7398,7 +7398,7 @@ Why don't you ask?</template>
 <!-- <category>
 <pattern>MUHAMMAD</pattern>
 
-<template>Muhammad (c. 570–632) is a major figure in Islam. Muslims believe he was God's final prophet, to whom the Qur'an was revealed. Non-Muslims consider him to be the founder of Islam.
+<template>Muhammad (c. 570ï¿½632) is a major figure in Islam. Muslims believe he was God's final prophet, to whom the Qur'an was revealed. Non-Muslims consider him to be the founder of Islam.
 <think>
   <set name="it">
     <set name="topic">
@@ -11971,7 +11971,7 @@ And at other times, you are bored?</template>
 <category>
 <pattern>WILLIAM WALLACE</pattern>
 
-<template><think><set name="topic">William Wallace</set></think>William Wallace (c.1270 – 23 August 1305) was a Scottish knight who led a resistance to the English occupation of Scotland during significant periods of the Wars of Scottish Independence.</template>
+<template><think><set name="topic">William Wallace</set></think>William Wallace (c.1270 ï¿½ 23 August 1305) was a Scottish knight who led a resistance to the English occupation of Scotland during significant periods of the Wars of Scottish Independence.</template>
 </category>
 
  
@@ -11979,7 +11979,7 @@ And at other times, you are bored?</template>
 <!-- <category>
 <pattern>ROBERT THE BRUCE</pattern>
 
-<template><think><set name="topic">Robert the Bruce</set></think>Robert I, usually known in modern English today as Robert the Bruce (11 July 1274 – 7 June 1329), was King of Scotland (1306 – 1329).
+<template><think><set name="topic">Robert the Bruce</set></think>Robert I, usually known in modern English today as Robert the Bruce (11 July 1274 ï¿½ 7 June 1329), was King of Scotland (1306 ï¿½ 1329).
 
 </template>
 </category> -->
@@ -13708,7 +13708,7 @@ And at other times, you are bored?</template>
 <category>
 <pattern>ANNE FRANK</pattern>
 
-<template>Annelies Marie "Anne" Frank (June 12, 1929 – March, 1945) was a German-born Jewish girl who wrote a diary while in hiding with her family and four friends in Amsterdam during the German occupation of the Netherlands in World War II. 
+<template>Annelies Marie "Anne" Frank (June 12, 1929 ï¿½ March, 1945) was a German-born Jewish girl who wrote a diary while in hiding with her family and four friends in Amsterdam during the German occupation of the Netherlands in World War II. 
 <think><set name="topic">Anne Frank</set></think>
 </template>
 </category>
@@ -13734,7 +13734,7 @@ And at other times, you are bored?</template>
 <category>
 <pattern>_ ANNE FRANK</pattern>
 
-<template>Annelies Marie "Anne" Frank (June 12, 1929 – March, 1945) was a German-born Jewish girl who wrote a diary while in hiding with her family and four friends in Amsterdam during the German occupation of the Netherlands in World War II. <think><set name="topic">Anne Frank</set></think></template>
+<template>Annelies Marie "Anne" Frank (June 12, 1929 ï¿½ March, 1945) was a German-born Jewish girl who wrote a diary while in hiding with her family and four friends in Amsterdam during the German occupation of the Netherlands in World War II. <think><set name="topic">Anne Frank</set></think></template>
 </category>
 
  
@@ -13742,7 +13742,7 @@ And at other times, you are bored?</template>
 <category>
 <pattern>_ ANNE FRANK *</pattern>
 
-<template>Annelies Marie "Anne" Frank (June 12, 1929 – March, 1945) was a German-born Jewish girl who wrote a diary while in hiding with her family and four friends in Amsterdam during the German occupation of the Netherlands in World War II. <think><set name="topic">Anne Frank</set></think></template>
+<template>Annelies Marie "Anne" Frank (June 12, 1929 ï¿½ March, 1945) was a German-born Jewish girl who wrote a diary while in hiding with her family and four friends in Amsterdam during the German occupation of the Netherlands in World War II. <think><set name="topic">Anne Frank</set></think></template>
 </category>
 
  

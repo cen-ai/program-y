@@ -1144,8 +1144,9 @@
 <category><pattern>PORTUGAL IS IN EUROPE</pattern>
 <template>Yes.</template>
 </category>
+<!-- I changed this from Yes to No. As much as I love Pluto, it's not recognized as a planet anymore. -->
 <category><pattern>PLUTO IS A PLANET</pattern>
-<template>Yes.</template>
+<template>No.</template>
 </category>
 <category><pattern>PIANO IS A MUSICAL INSTRUMENT</pattern>
 <template>Yes.</template>
