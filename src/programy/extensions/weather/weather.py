@@ -111,3 +111,4 @@ class WeatherExtension(Extension):
             return datapoint
         else:
             return "UNAVAILABLE"
+

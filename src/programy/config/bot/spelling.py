@@ -27,6 +27,7 @@ class BotSpellingConfiguration(BaseConfigurationData):
         self._alphabet = None
         self._check_before = False
         self._check_and_retry = False
+        self.load=True
 
     @property
     def classname(self):
