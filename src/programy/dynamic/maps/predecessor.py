@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.dynamic.maps.map import DynamicMap
 
@@ -27,14 +27,12 @@ class PredecessorMap(DynamicMap):
     def __init__(self, config):
         DynamicMap.__init__(self, config)
 
-    def map_value(self, bot, clientid, input_value):
+    def map_value(self, client_context, input_value):
         try:
             int_value = int(input_value)
             str_value = str(int_value - 1)
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("PredecessorMap converted %s to %s", input_value, str_value)
+            YLogger.debug(client_context, "PredecessorMap converted %s to %s", input_value, str_value)
             return str_value
         except Exception:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("PredecessorMap could not convert %s to integer string", input_value)
+            YLogger.error(client_context, "PredecessorMap could not convert %s to integer string", input_value)
             return ""

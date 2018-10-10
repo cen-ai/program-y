@@ -1,64 +1,71 @@
 import unittest
 import os
 
-from programytest.aiml_tests.client import TestClient
+from programytest.client import TestClient
 
-class BasicTestClient(TestClient):
+class ArrowTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(BasicTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
+    def load_storage(self):
+        super(ArrowTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+
 
 class ArrowAIMLTests(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        ArrowAIMLTests.test_client = BasicTestClient()
+    def setUp(self):
+        client = ArrowTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_arrow_first_word(self):
-        response = ArrowAIMLTests.test_client.bot.ask_question("test",  "SAY HEY")
+        response = self._client_context.bot.ask_question(self._client_context,  "SAY HEY")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'ARROW IS SAY')
+        self.assertEqual(response, 'ARROW IS SAY.')
 
     def test_arrow_first_no_word(self):
-        response = ArrowAIMLTests.test_client.bot.ask_question("test", "HEY")
+        response = self._client_context.bot.ask_question(self._client_context, "HEY")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'ARROW IS')
+        self.assertEqual(response, 'ARROW IS.')
 
     def test_arrow_first_multi_word(self):
-        response = ArrowAIMLTests.test_client.bot.ask_question("test", "WE SAY HEY")
+        response = self._client_context.bot.ask_question(self._client_context, "WE SAY HEY")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'ARROW IS WE SAY')
+        self.assertEqual(response, 'ARROW IS WE SAY.')
+
+    def test_arrow_first_multi_match(self):
+        response = self._client_context.bot.ask_question(self._client_context, "WE CHECKING MULTI WORD MATCH")
+        self.assertIsNotNone(response)
+        self.assertEqual(response, 'ARROW IS NOW WE.')
 
     def test_arrow_last_word(self):
-        response = ArrowAIMLTests.test_client.bot.ask_question("test", "HELLO YOU")
+        response = self._client_context.bot.ask_question(self._client_context, "HELLO YOU")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'ARROW IS YOU')
+        self.assertEqual(response, 'ARROW IS YOU.')
 
     def test_arrow_no_word(self):
-        response = ArrowAIMLTests.test_client.bot.ask_question("test", "HELLO")
+        response = self._client_context.bot.ask_question(self._client_context, "HELLO")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'ARROW IS')
+        self.assertEqual(response, 'ARROW IS.')
 
     def test_arrow_no_multi_word(self):
-        response = ArrowAIMLTests.test_client.bot.ask_question("test", "HELLO YOU THERE")
+        response = self._client_context.bot.ask_question(self._client_context, "HELLO YOU THERE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'ARROW IS YOU THERE')
+        self.assertEqual(response, 'ARROW IS YOU THERE.')
 
     def test_arrow_middle_word(self):
-        response = ArrowAIMLTests.test_client.bot.ask_question("test", "WELL HI THERE")
+        response = self._client_context.bot.ask_question(self._client_context, "WELL HI THERE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'ARROW IS HI')
+        self.assertEqual(response, 'ARROW IS HI.')
 
     def test_arrow_middle_no_word(self):
-        response = ArrowAIMLTests.test_client.bot.ask_question("test", "WELL THERE")
+        response = self._client_context.bot.ask_question(self._client_context, "WELL THERE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'ARROW IS')
+        self.assertEqual(response, 'ARROW IS.')
 
     def test_arrow_middle_multi_word(self):
-        response = ArrowAIMLTests.test_client.bot.ask_question("test", "WELL I WAS THERE")
+        response = self._client_context.bot.ask_question(self._client_context, "WELL I WAS THERE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'ARROW IS I WAS')
+        self.assertEqual(response, 'ARROW IS I WAS.')

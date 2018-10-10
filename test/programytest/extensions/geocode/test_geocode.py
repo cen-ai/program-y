@@ -4,7 +4,8 @@ import json
 
 from programy.extensions.geocode.geocode import GeoCodeExtension
 from programy.utils.geo.google import GoogleMaps
-from programytest.aiml_tests.client import TestClient
+
+from programytest.client import TestClient
 
 class MockGoogleMaps(GoogleMaps):
 
@@ -28,7 +29,8 @@ class MockGeoCodeExtension(GeoCodeExtension):
 class GeoCodeExtensionTests(unittest.TestCase):
 
     def setUp(self):
-        self.test_client = TestClient()
+        client = TestClient()
+        self.context = client.create_client_context("testid")
 
     def test_geocode_postcode1(self):
         filename = os.path.dirname(__file__) +  os.sep + "google_latlong.json"
@@ -38,9 +40,9 @@ class GeoCodeExtensionTests(unittest.TestCase):
         geocode = MockGeoCodeExtension(geo_locator)
         self.assertIsNotNone(geocode)
 
-        result = geocode.execute(self.test_client.bot, "testid", "POSTCODE1 KY39UR")
+        result = geocode.execute(self.context, "POSTCODE1 KY39UR")
         self.assertIsNotNone(result)
-        self.assertEquals("LATITUDE DEC 56 FRAC 0720397 LONGITUDE DEC -3 FRAC 1752001", result)
+        self.assertEqual("LATITUDE DEC 56 FRAC 0720397 LONGITUDE DEC -3 FRAC 1752001", result)
 
     def test_geocode_postcode2(self):
         filename = os.path.dirname(__file__) +  os.sep + "google_latlong.json"
@@ -50,9 +52,9 @@ class GeoCodeExtensionTests(unittest.TestCase):
         geocode = MockGeoCodeExtension(geo_locator)
         self.assertIsNotNone(geocode)
 
-        result = geocode.execute(self.test_client.bot, "testid", "POSTCODE2 KY3 9UR")
+        result = geocode.execute(self.context, "POSTCODE2 KY3 9UR")
         self.assertIsNotNone(result)
-        self.assertEquals("LATITUDE DEC 56 FRAC 0720397 LONGITUDE DEC -3 FRAC 1752001", result)
+        self.assertEqual("LATITUDE DEC 56 FRAC 0720397 LONGITUDE DEC -3 FRAC 1752001", result)
 
     def test_geocode_location(self):
         filename = os.path.dirname(__file__) +  os.sep + "google_latlong.json"
@@ -62,6 +64,6 @@ class GeoCodeExtensionTests(unittest.TestCase):
         geocode = MockGeoCodeExtension(geo_locator)
         self.assertIsNotNone(geocode)
 
-        result = geocode.execute(self.test_client.bot, "testid", "LOCATION KINGHORN")
+        result = geocode.execute(self.context, "LOCATION KINGHORN")
         self.assertIsNotNone(result)
-        self.assertEquals("LATITUDE DEC 56 FRAC 0720397 LONGITUDE DEC -3 FRAC 1752001", result)
+        self.assertEqual("LATITUDE DEC 56 FRAC 0720397 LONGITUDE DEC -3 FRAC 1752001", result)

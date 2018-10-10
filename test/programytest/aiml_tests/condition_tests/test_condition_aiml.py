@@ -1,82 +1,81 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
 
-class BasicTestClient(TestClient):
+from programytest.client import TestClient
+
+class ConditionTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(BasicTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
+    def load_storage(self):
+        super(ConditionTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+
 
 class ConditionAIMLTests(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        pass
-
     def setUp(self):
-        ConditionAIMLTests.test_client = BasicTestClient()
+        client = ConditionTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_condition_type1_variant1(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE1 VARIANT1")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE1 VARIANT1")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "Y")
+        self.assertEqual(response, "Y.")
 
     def test_condition_type1_variant2(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE1 VARIANT2")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE1 VARIANT2")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "Y")
+        self.assertEqual(response, "Y.")
 
     def test_condition_type1_variant3(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE1 VARIANT3")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE1 VARIANT3")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "Y")
+        self.assertEqual(response, "Y.")
 
     def test_condition_type1_variant4(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE1 VARIANT4")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE1 VARIANT4")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "Y")
+        self.assertEqual(response, "Y.")
 
     def test_condition_type1_variant1_no_match(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE1 VARIANT1 NO MATCH")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE1 VARIANT1 NO MATCH")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "")
+        self.assertEqual(response, "")
 
     def test_condition_type2_variant1(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE2 VARIANT1 NO DEFAULT")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE2 VARIANT1 NO DEFAULT")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "Y")
+        self.assertEqual(response, "Y.")
 
     def test_condition_type2_variant1_default(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE2 VARIANT1 WITH DEFAULT")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE2 VARIANT1 WITH DEFAULT")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "DEF")
+        self.assertEqual(response, "DEF.")
 
     def test_condition_type2_variant1_no_match(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE2 VARIANT1 NO MATCH")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE2 VARIANT1 NO MATCH")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "")
+        self.assertEqual(response, "")
 
     def test_condition_type2_variant2(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE2 VARIANT2 NO DEFAULT")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE2 VARIANT2 NO DEFAULT")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "Y")
+        self.assertEqual(response, "Y.")
 
     def test_condition_type3_variant1(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE3 VARIANT1 NO DEFAULT")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE3 VARIANT1 NO DEFAULT")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "A")
+        self.assertEqual(response, "A.")
 
     def test_condition_type3_variant1_default(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE3 VARIANT1 WITH DEFAULT")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE3 VARIANT1 WITH DEFAULT")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "DEF")
+        self.assertEqual(response, "DEF.")
 
     def test_condition_type3_variant1_default(self):
-        response = ConditionAIMLTests.test_client.bot.ask_question("test", "TYPE3 VARIANT1 NO MATCH")
+        response = self._client_context.bot.ask_question(self._client_context, "TYPE3 VARIANT1 NO MATCH")
         self.assertIsNotNone(response)
-        self.assertEquals(response, "")
+        self.assertEqual(response, "")

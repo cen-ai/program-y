@@ -3,28 +3,38 @@ from programy.processors.post.denormalize import DenormalizePostProcessor
 from programy.processors.post.formatpunctuation import FormatPunctuationProcessor
 from programy.processors.post.formatnumbers import FormatNumbersPostProcessor
 from programy.processors.post.multispaces import RemoveMultiSpacePostProcessor
+from programy.processors.post.emojize import EmojizePreProcessor
 from programy.bot import Bot
-from programy.brain import Brain
-from programy.config.sections.brain.brain import BrainConfiguration
-from programy.config.sections.bot.bot import BotConfiguration
+from programy.config.bot.bot import BotConfiguration
+from programy.context import ClientContext
 
+from programytest.client import TestClient
+import re
 
 class PostProcessingTests(unittest.TestCase):
 
-    def setUp(self):
-        self.bot = Bot(Brain(BrainConfiguration()), config=BotConfiguration())
-        self.bot.brain.denormals.process_splits([" dot com ",".com"])
-        self.bot.brain.denormals.process_splits([" atsign ","@"])
-        self.denormalize = DenormalizePostProcessor()
-        self.punctuation = FormatPunctuationProcessor()
-        self.numbers = FormatNumbersPostProcessor()
-        self.multispaces = RemoveMultiSpacePostProcessor()
-
     def post_process(self, output_str):
-        output_str = self.denormalize.process(self.bot, "testid", output_str)
-        output_str = self.punctuation.process(self.bot, "testid", output_str)
-        output_str = self.numbers.process(self.bot, "testid", output_str)
-        output_str = self.multispaces.process(self.bot, "testid", output_str)
+        self.client = TestClient()
+
+        context = ClientContext(self.client, "testid")
+   
+        context.bot = Bot(config=BotConfiguration(), client=self.client)
+        context.brain = context.bot.brain
+        context.bot.brain.denormals.add_to_lookup(" DOT COM ", [re.compile('(^DOT COM | DOT COM | DOT COM$)', re.IGNORECASE), '.COM '])
+        context.bot.brain.denormals.add_to_lookup(" ATSIGN ",[re.compile('(^ATSIGN | ATSIGN | ATSIGN$)', re.IGNORECASE), '@'])
+
+        denormalize = DenormalizePostProcessor()
+        punctuation = FormatPunctuationProcessor()
+        numbers = FormatNumbersPostProcessor()
+        multispaces = RemoveMultiSpacePostProcessor()
+        emojize = EmojizePreProcessor()
+
+        output_str = denormalize.process(context, output_str)
+        output_str = punctuation.process(context, output_str)
+        output_str = numbers.process(context, output_str)
+        output_str = multispaces.process(context, output_str)
+        output_str = emojize.process(context, output_str)
+
         return output_str
 
     def test_post_cleanup(self):

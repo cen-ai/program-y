@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -17,7 +17,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 import datetime
 import json
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 import metoffer
 
@@ -49,15 +49,12 @@ class DataPoint(object):
             return json_data[name]
         else:
             if data_type == MetOfficeWeatherReport.OBSERVATION:
-                if logging.getLogger().isEnabledFor(logging.WARNING):
-                    logging.warning('%s attribute missing from ObservationDataPoint data point', name)
+                YLogger.warning(self, '%s attribute missing from ObservationDataPoint data point', name)
             elif data_type == MetOfficeWeatherReport.FORECAST:
                 if time_period == metoffer.THREE_HOURLY:
-                    if logging.getLogger().isEnabledFor(logging.WARNING):
-                        logging.warning('%s attribute missing from three hourly forecast data point', name)
+                    YLogger.warning(self, '%s attribute missing from three hourly forecast data point', name)
                 if time_period == metoffer.DAILY:
-                    if logging.getLogger().isEnabledFor(logging.WARNING):
-                        logging.warning('%s attribute missing from daily forecast data point', name)
+                    YLogger.warning(self, '%s attribute missing from daily forecast data point', name)
             return None
 
     def direction_to_full_text(self, direction):

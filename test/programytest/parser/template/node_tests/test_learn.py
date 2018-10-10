@@ -7,12 +7,14 @@ from programy.parser.template.nodes.word import TemplateWordNode
 
 from programytest.parser.base import ParserTestsBaseClass
 
+
 class MockTemplateLearnNode(TemplateLearnNode):
     def __init__(self):
         TemplateLearnNode.__init__(self)
 
-    def resolve_to_string(self, bot, clientid):
+    def resolve_to_string(self, context):
         raise Exception("This is an error")
+
 
 class TestLearnCategory(unittest.TestCase):
 
@@ -26,7 +28,7 @@ class TestLearnCategory(unittest.TestCase):
         self.assertIsNotNone(learncat.children)
         self.assertEqual(0, len(learncat.children))
 
-        self.assertEqual("CATEGORY", learncat.to_string())
+        self.assertEqual("[CATEGORY]", learncat.to_string())
 
         learncat.pattern = "pattern2"
         self.assertEqual("pattern2", learncat.pattern)
@@ -40,6 +42,7 @@ class TestLearnCategory(unittest.TestCase):
         learncat.append("category1")
         learncat.append("category2")
         self.assertEqual(2, len(learncat.children))
+
 
 class TemplateLearnNodeTests(ParserTestsBaseClass):
 
@@ -59,7 +62,7 @@ class TemplateLearnNodeTests(ParserTestsBaseClass):
         root.append(learn)
         self.assertEqual(1, len(root.children))
 
-        resolved = root.resolve(self._bot, self._clientid)
+        resolved = root.resolve(self._client_context)
         self.assertIsNotNone(resolved)
         self.assertEqual("", resolved)
 
@@ -73,7 +76,7 @@ class TemplateLearnNodeTests(ParserTestsBaseClass):
         learn.append(learn_cat)
         root.append(learn)
 
-        xml = root.xml_tree(self._bot, self._clientid)
+        xml = root.xml_tree(self._client_context)
         self.assertIsNotNone(xml)
         xml_str = ET.tostring(xml, "utf-8").decode("utf-8")
         self.assertEqual("<template><learn><category><pattern>HELLO LEARN</pattern><topic>*</topic><that>*</that><template>LEARN</template></category></learn></template>", xml_str)
@@ -83,6 +86,6 @@ class TemplateLearnNodeTests(ParserTestsBaseClass):
         node = MockTemplateLearnNode()
         root.append(node)
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
-        self.assertEquals("", result)
+        self.assertEqual("", result)

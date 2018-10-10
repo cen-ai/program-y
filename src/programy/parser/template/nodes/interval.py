@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 import datetime
 from dateutil.relativedelta import relativedelta
 from programy.parser.template.nodes.base import TemplateNode
@@ -62,16 +62,16 @@ class TemplateIntervalNode(TemplateNode):
     def style(self, style):
         self._style = style
 
-    def resolve_to_string(self, bot, clientid):
-        format_str = self._interval_format.resolve(bot, clientid)
+    def resolve_to_string(self, client_context):
+        format_str = self._interval_format.resolve(client_context)
 
-        from_str = self.interval_from.resolve(bot, clientid)
+        from_str = self.interval_from.resolve(client_context)
         from_time = datetime.datetime.strptime(from_str, format_str)
 
-        to_str = self.interval_to.resolve(bot, clientid)
+        to_str = self.interval_to.resolve(client_context)
         to_time = datetime.datetime.strptime(to_str, format_str)
 
-        style = self._style.resolve(bot, clientid)
+        style = self._style.resolve(client_context)
 
         diff = to_time - from_time
         difference = relativedelta(to_time, from_time)
@@ -103,34 +103,25 @@ class TemplateIntervalNode(TemplateNode):
                        (difference.years, difference.months, difference.days,
                         difference.hours, difference.minutes, difference.seconds)
         else:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("Unknown interval style [%s]", style)
+            YLogger.error(client_context, "Unknown interval style [%s]", style)
             resolved = ""
 
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("[INTERVAL] resolved to [%s]", resolved)
+        YLogger.debug(client_context, "[INTERVAL] resolved to [%s]", resolved)
         return resolved
-
-    def resolve(self, bot, clientid):
-        try:
-            return self.resolve_to_string(bot, clientid)
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
 
     def to_string(self):
         return "[INTERVAL]"
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = '<interval'
-        xml += ' format="%s"' % self._interval_format.to_xml(bot, clientid)
-        xml += ' style="%s"' % self._style.to_xml(bot, clientid)
+        xml += ' format="%s"' % self._interval_format.to_xml(client_context)
+        xml += ' style="%s"' % self._style.to_xml(client_context)
         xml += '>'
         xml += '<from>'
-        xml += self._interval_from.to_xml(bot, clientid)
+        xml += self._interval_from.to_xml(client_context)
         xml += '</from>'
         xml += '<to>'
-        xml += self._interval_to.to_xml(bot, clientid)
+        xml += self._interval_to.to_xml(client_context)
         xml += '</to>'
         xml += '</interval>'
         return xml
@@ -187,16 +178,12 @@ class TemplateIntervalNode(TemplateNode):
             self.parse_text(graph, tail_text)
 
         if self.interval_format is None:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("Interval node, format missing, defaulting to 'c%%'!")
+            YLogger.warning(self, "Interval node, format missing, defaulting to 'c%%'!")
             self.interval_format = "%c"
         if self.style is None:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("style node, format missing, defaulting to 'days'!")
+            YLogger.warning(self, "style node, format missing, defaulting to 'days'!")
             self.style = "days"
         if self.interval_from is None:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("interval_from node, format missing !")
+            YLogger.warning(self, "interval_from node, format missing !")
         if self.interval_to is None:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("interval_to node, format missing !")
+            YLogger.warning(self, "interval_to node, format missing !")

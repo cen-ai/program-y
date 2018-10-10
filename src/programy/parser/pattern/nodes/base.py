@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,29 +15,47 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.utils.text.text import TextUtils
 from programy.parser.pattern.matcher import Match, EqualsMatch
 
 #######################################################################################################################
 #
+
+class MultiValueDict(dict):
+
+    def __setitem__(self, key, value):
+        """add the given value to the list of values for this key"""
+        self.setdefault(key, []).append(value)
+
+    def remove(self, key, value):
+        if key in self:
+            for v in self[key]:
+                if v == value:
+                    self[key].remove(value)
+            if len(self[key]) == 0:
+                del self[key]
+
+
 class PatternNode(object):
 
     THAT = "__THAT__"
     TOPIC = "__TOPIC__"
 
-    def __init__(self):
+    def __init__(self, userid='*'):
+
+        self._userid = userid
 
         # Child Nodes
         self._priority_words = []
         self._0ormore_hash = None
         self._1ormore_underline = None
         self._children = []
-        self._children_words = {}
-        self._iset_names = {}
-        self._set_names = {}
-        self._bot_properties = {}
+        self._children_words = MultiValueDict()
+        self._iset_names = MultiValueDict()
+        self._set_names = MultiValueDict()
+        self._bot_properties = MultiValueDict()
         self._0ormore_arrow = None
         self._1ormore_star = None
 
@@ -45,6 +63,10 @@ class PatternNode(object):
         self._topic = None
         self._that = None
         self._template = None
+
+    @property
+    def userid(self):
+        return self._userid
 
     ########################################################################
     #
@@ -216,10 +238,10 @@ class PatternNode(object):
     def equivalent(self, other):
         return False
 
-    def equals(self, bot, clientid, words, word_no):
+    def equals(self, client_context, words, word_no):
         return EqualsMatch(False, word_no)
 
-    def equals_ignore_case(self, bot, client, word1, word2):
+    def equals_ignore_case(self, word1, word2):
         if word1 is not None and word2 is not None:
             return bool(word1.upper() == word2.upper())
         return False
@@ -229,104 +251,146 @@ class PatternNode(object):
     def can_add(self, new_node):
         pass
 
+    def _priority_node_exist(self, new_node):
+        for priority in self._priority_words:
+            if priority.equivalent(new_node) is True:
+                # Equivalent node already exists, use this one instead
+                return priority
+        return None
+
+    def _zero_or_more_node_exist(self, new_node):
+        if self._0ormore_arrow is not None:
+            if self._0ormore_arrow.equivalent(new_node) is True:
+                return self._0ormore_arrow
+        if self._0ormore_hash is not None:
+            if self._0ormore_hash.equivalent(new_node) is True:
+                return self._0ormore_hash
+        return None
+
+    def _one_or_more_node_exist(self, new_node):
+        if self._1ormore_underline is not None:
+            if self._1ormore_underline.equivalent(new_node) is True:
+                return self._1ormore_underline
+        if self._1ormore_star is not None:
+            if self._1ormore_star.equivalent(new_node) is True:
+                return self._1ormore_star
+        return None
+
+    def _topic_node_exist(self, new_node):
+        if self._topic is not None:
+            return self._topic
+        return None
+
+    def _that_node_exist(self, new_node):
+        if self._that is not None:
+            return self._that
+        return None
+
+    def _template_node_exist(self, new_node):
+        if self._template is not None:
+            return self._template
+        return None
+
+    def _iset_node_exist(self, new_node):
+        for existing_node in self.children:
+            if existing_node.is_iset():
+                if existing_node.equivalent(new_node):
+                    return existing_node
+        return None
+
+    def _set_node_exist(self, new_node):
+        if new_node.set_name in self._set_names:
+            existing_nodes = self._set_names[new_node.set_name]
+            for existing_node in existing_nodes:
+                if existing_node.equivalent(new_node):
+                    # Equivalent node already exists, use this one instead
+                    return existing_node
+        return None
+
+    def _bot_node_exist(self, new_node):
+        if new_node.property in self._bot_properties:
+            existing_nodes = self._bot_properties[new_node.property]
+            for existing_node in existing_nodes:
+                if existing_node.equivalent(new_node):
+                    # Equivalent node already exists, use this one instead
+                    return existing_node
+        return None
+
+    def _regex_node_exist(self, new_node):
+        for existing_node in self.children:
+            if existing_node.is_regex():
+                if existing_node.equivalent(new_node):
+                    return existing_node
+        return None
+
+    def _word_node_exist(self, new_node):
+        if new_node.word in self._children_words:
+            existing_nodes = self._children_words[new_node.word]
+            for existing_node in existing_nodes:
+                if existing_node.equivalent(new_node):
+                    # Equivalent node already exists, use this one instead
+                    return existing_node
+        return None
+
     def _node_exists(self, new_node):
 
         if new_node.is_priority() is True:
-            for priority in self._priority_words:
-                if priority.equivalent(new_node) is True:
-                    # Equivalent node already exists, use this one instead
-                    return priority
-            return None
+            return self._priority_node_exist(new_node)
 
         if new_node.is_zero_or_more() is True:
-            if self._0ormore_arrow is not None:
-                if self._0ormore_arrow.equivalent(new_node) is True:
-                    return self._0ormore_arrow
-            if self._0ormore_hash is not None:
-                if self._0ormore_hash.equivalent(new_node) is True:
-                    return self._0ormore_hash
-            return None
+            return self._zero_or_more_node_exist(new_node)
 
         if new_node.is_one_or_more() is True:
-            if self._1ormore_underline is not None:
-                if self._1ormore_underline.equivalent(new_node) is True:
-                    return self._1ormore_underline
-            if self._1ormore_star is not None:
-                if self._1ormore_star.equivalent(new_node) is True:
-                    return self._1ormore_star
-            return None
+            return self._one_or_more_node_exist(new_node)
 
         if new_node.is_topic() is True:
-            if self._topic is not None:
-                return self._topic
-            return None
+            return self._topic_node_exist(new_node)
 
         if new_node.is_that():
-            if self._that is not None:
-                return self._that
-            return None
+            return self._that_node_exist(new_node)
 
         if new_node.is_template() is True:
-            if self._template is not None:
-                return self._template
-            return None
+            return self._template_node_exist(new_node)
 
         if new_node.is_iset() is True:
-            for existing_node in self.children:
-                if existing_node.is_iset():
-                    if existing_node.equivalent(new_node):
-                        return existing_node
-            return None
+            return self._iset_node_exist(new_node)
 
         if new_node.is_set() is True:
-            if new_node.set_name in self._set_names:
-                existing_node = self._set_names[new_node.set_name]
-                if existing_node.equivalent(new_node):
-                    # Equivalent node already exists, use this one instead
-                    return existing_node
-            return None
+            return self._set_node_exist(new_node)
 
         if new_node.is_bot() is True:
-            if new_node.property in self._bot_properties:
-                existing_node = self._bot_properties[new_node.property]
-                if existing_node.equivalent(new_node):
-                    # Equivalent node already exists, use this one instead
-                    return existing_node
-            return None
+            return self._bot_node_exist(new_node)
 
         if new_node.is_regex() is True:
-            for existing_node in self.children:
-                if existing_node.is_regex():
-                    if existing_node.equivalent(new_node):
-                        return existing_node
-            return None
+            return self._regex_node_exist(new_node)
 
         if new_node.is_word():
-            if new_node.word in self._children_words:
-                existing_node = self._children_words[new_node.word]
-                if existing_node.equivalent(new_node):
-                    # Equivalent node already exists, use this one instead
-                    return existing_node
+            return self._word_node_exist(new_node)
 
         return None
 
     def _add_node(self, new_node):
+
         # Otherwise use the new node, and return that to maintain consistence
         # And allow child node to be chained, but supports duplicates
         if new_node.is_priority()  is True:
             self._priority_words.append(new_node)
+
         elif new_node.is_zero_or_more() is True:
             if new_node.wildcard == '^':
                 self._0ormore_arrow = new_node
             elif new_node.wildcard == '#':
                 self._0ormore_hash = new_node
+
         elif new_node.is_one_or_more() is True:
             if new_node.wildcard == '_':
                 self._1ormore_underline = new_node
             elif new_node.wildcard == '*':
                 self._1ormore_star = new_node
+
         elif new_node.is_template() is True:
             self._template = new_node
+
         else:
             # Append sets and bots to the end of the array as they take a slightly
             # lower priority to actual words.
@@ -338,20 +402,73 @@ class PatternNode(object):
             if new_node.is_set() is True:
                 self.children.append(new_node)
                 self._set_names[new_node.set_name] = new_node
+
             elif new_node.is_iset() is True:
                 self.children.append(new_node)
                 self._iset_names[new_node.iset_name] = new_node
+
             elif new_node.is_bot() is True:
                 self.children.append(new_node)
                 self._bot_properties[new_node.property] = new_node
+
             elif new_node.is_regex() is True:
                 self.children.append(new_node)
+
             else:
                 self.children.insert(0, new_node)
                 if new_node.is_word() is True:
                     self._children_words[new_node.word] = new_node
 
         return new_node
+
+    def _remove_node(self, current_node):
+        YLogger.debug(None, "Removing %s" % current_node.to_string())
+
+        if current_node.is_priority()  is True:
+            self._priority_words.remove(current_node)
+
+        elif current_node.is_zero_or_more() is True:
+            if current_node.wildcard == '^':
+                self._0ormore_arrow = None
+            elif current_node.wildcard == '#':
+                self._0ormore_hash = None
+
+        elif current_node.is_one_or_more() is True:
+            if current_node.wildcard == '_':
+                self._1ormore_underline = None
+            elif current_node.wildcard == '*':
+                self._1ormore_star = None
+
+        elif current_node.is_template() is True:
+            self._template = None
+
+        else:
+            # Append sets and bots to the end of the array as they take a slightly
+            # lower priority to actual words.
+            # This allows the following to work
+            #  my favorite color is green
+            #  my favorite color is <set>color</set>
+            # In the above, if the set color contains green then
+            # it still gets picked up in the first grammar and not he second
+            if current_node.is_set() is True:
+                self.children.remove(current_node)
+                self._set_names.remove(current_node.set_name, current_node)
+
+            elif current_node.is_iset() is True:
+                self.children.remove(current_node)
+                self._iset_names.remove(current_node.iset_name, current_node)
+
+            elif current_node.is_bot() is True:
+                self.children.remove(current_node)
+                self._bot_properties.remove(current_node.property, current_node)
+
+            elif current_node.is_regex() is True:
+                self.children.remove(current_node)
+
+            else:
+                self.children.remove(current_node)
+                if current_node.is_word() is True:
+                    self._children_words.remove(current_node.word, current_node)
 
     def add_child(self, new_node, replace_existing=False):
 
@@ -384,175 +501,171 @@ class PatternNode(object):
 
     def to_string(self, verbose=True):
         if verbose is True:
-            return "NODE [%s]" % self._child_count(verbose)
+            return "NODE [%s] [%s]"%(self.userid, self._child_count(verbose))
         return "NODE"
 
-    def get_tabs(self, bot, depth):
-        if bot.configuration.tab_parse_output is True:
+    def get_tabs(self, client_context, depth):
+        if client_context.bot.configuration.tab_parse_output is True:
             return TextUtils.get_tabs(depth)
         return ""
 
-    def dump(self, tabs, output_func=logging.debug, eol="", verbose=True):
+    def dump(self, tabs, output_func=YLogger.debug, eol="", verbose=True):
 
         string = "{0}{1}{2}".format(tabs, self.to_string(verbose), eol)
-        output_func(string)
+        output_func(self, string)
 
         for priority in self._priority_words:
             priority.dump(tabs+"\t", output_func, eol, verbose)
 
         if self._0ormore_arrow is not None:
             self._0ormore_arrow.dump(tabs+"\t", output_func, eol, verbose)
+
         if self._0ormore_hash is not None:
             self._0ormore_hash.dump(tabs+"\t", output_func, eol, verbose)
+
         if self._1ormore_underline is not None:
             self._1ormore_underline.dump(tabs+"\t", output_func, eol, verbose)
+
         if self._1ormore_star is not None:
             self._1ormore_star.dump(tabs+"\t", output_func, eol, verbose)
+
         if self._topic is not None:
             self._topic.dump(tabs+"\t", output_func, eol, verbose)
+
         if self._that is not None:
             self._that.dump(tabs+"\t", output_func, eol, verbose)
+
         if self._template is not None:
             self._template.dump(tabs+"\t", output_func, eol, verbose)
 
         for child in self.children:
             child.dump(tabs+"\t", output_func, eol, verbose)
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context, include_user=False):
         string = ""
 
         for priority in self._priority_words:
-            string += priority.to_xml(bot, clientid)
+            string += priority.to_xml(client_context, include_user)
 
         if self._0ormore_arrow is not None:
-            string += self._0ormore_arrow.to_xml(bot, clientid)
+            string += self._0ormore_arrow.to_xml(client_context, include_user)
+
         if self._0ormore_hash is not None:
-            string += self._0ormore_hash.to_xml(bot, clientid)
+            string += self._0ormore_hash.to_xml(client_context, include_user)
+
         if self._1ormore_underline is not None:
-            string += self._1ormore_underline.to_xml(bot, clientid)
+            string += self._1ormore_underline.to_xml(client_context, include_user)
+
         if self._1ormore_star is not None:
-            string += self._1ormore_star.to_xml(bot, clientid)
+            string += self._1ormore_star.to_xml(client_context, include_user)
+
         if self._topic is not None:
-            string += self._topic.to_xml(bot, clientid)
+            string += self._topic.to_xml(client_context, include_user)
+
         if self._that is not None:
-            string += self._that.to_xml(bot, clientid)
+            string += self._that.to_xml(client_context, include_user)
+
         if self._template is not None:
-            string += self._template.to_xml(bot, clientid)
+            string += self._template.to_xml(client_context)
 
         for child in self.children:
-            string += child.to_xml(bot, clientid)
+            string += child.to_xml(client_context, include_user)
 
         return string
 
-    def match_children(self, bot, clientid, children, child_type, words, word_no, context, match_type, depth):
+    def match_children(self, client_context, children, child_type, words, word_no, context, match_type, depth):
 
-        tabs = self.get_tabs(bot, depth)
+        tabs = self.get_tabs(client_context, depth)
 
         for child in children:
 
-            result = child.equals(bot, clientid, words, word_no)
+            result = child.equals(client_context, words, word_no)
             if result.matched is True:
                 word_no = result.word_no
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("%s%s matched %s", tabs, child_type, result.matched_phrase)
+                YLogger.debug(client_context, "%s%s matched %s", tabs, child_type, result.matched_phrase)
 
                 match_node = Match(match_type, child, result.matched_phrase)
 
                 context.add_match(match_node)
 
-                match = child.consume(bot, clientid, context, words, word_no + 1, match_type, depth+1)
+                match = child.consume(client_context, context, words, word_no + 1, match_type, depth+1)
                 if match is not None:
-                    if logging.getLogger().isEnabledFor(logging.DEBUG):
-                        logging.debug("%sMatched %s child, success!", tabs, child_type)
+                    YLogger.debug(client_context, "%sMatched %s child, success!", tabs, child_type)
                     return match, word_no
                 else:
                     context.pop_match()
 
         return None, word_no
 
-    def consume(self, bot, clientid, context, words, word_no, match_type, depth):
+    def consume(self, client_context, context, words, word_no, match_type, depth):
 
-        tabs = self.get_tabs(bot, depth)
+        tabs = self.get_tabs(client_context, depth)
 
         if context.search_time_exceeded() is True:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("%sMax search time [%d]secs exceeded", tabs, context.max_search_timeout)
+            YLogger.error(client_context, "%sMax search time [%d]secs exceeded", tabs, context.max_search_timeout)
             return None
 
         if context.search_depth_exceeded(depth) is True:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("%sMax search depth [%d] exceeded", tabs, context.max_search_depth)
+            YLogger.error(client_context, "%sMax search depth [%d] exceeded", tabs, context.max_search_depth)
             return None
 
         if word_no >= words.num_words():
             if self._template is not None:
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("%sFound a template, success!", tabs)
+                YLogger.debug(client_context, "%sFound a template, success!", tabs)
                 return self._template
             else:
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("%sNo more words and no template, no match found!", tabs)
-                #context.pop_match()
+                YLogger.debug(client_context, "%sNo more words and no template, no match found!", tabs)
                 return None
 
         if self._topic is not None:
-            match = self._topic.consume(bot, clientid, context, words, word_no, Match.TOPIC, depth+1)
+            match = self._topic.consume(client_context, context, words, word_no, Match.TOPIC, depth+1)
             if match is not None:
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("%sMatched topic, success!", tabs)
+                YLogger.debug(client_context, "%sMatched topic, success!", tabs)
                 return match
             if words.word(word_no) == PatternNode.TOPIC:
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("%s Looking for a %s, none give, no match found!", tabs, PatternNode.TOPIC)
+                YLogger.debug(client_context, "%s Looking for a %s, none give, no match found!", tabs, PatternNode.TOPIC)
                 return None
 
         if self._that is not None:
-            match = self._that.consume(bot, clientid, context, words, word_no, Match.THAT, depth+1)
+            match = self._that.consume(client_context, context, words, word_no, Match.THAT, depth+1)
             if match is not None:
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("%sMatched that, success!", tabs)
+                YLogger.debug(client_context, "%sMatched that, success!", tabs)
                 return match
             if words.word(word_no) == PatternNode.THAT:
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("%s Looking for a %s, none give, no match found!", tabs, PatternNode.THAT)
+                YLogger.debug(client_context, "%s Looking for a %s, none give, no match found!", tabs, PatternNode.THAT)
                 return None
 
-        match, word_no = self.match_children(bot, clientid, self._priority_words, "Priority", words, word_no, context, match_type, depth)
+        match, word_no = self.match_children(client_context, self._priority_words, "Priority", words, word_no, context, match_type, depth)
         if match is not None:
             return match
 
         if self._0ormore_hash is not None:
-            match = self._0ormore_hash.consume(bot, clientid, context, words, word_no, match_type, depth+1)
+            match = self._0ormore_hash.consume(client_context, context, words, word_no, match_type, depth+1)
             if match is not None:
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("%sMatched 0 or more hash, success!", tabs)
+                YLogger.debug(client_context, "%sMatched 0 or more hash, success!", tabs)
                 return match
 
         if self._1ormore_underline is not None:
-            match = self._1ormore_underline.consume(bot, clientid, context, words, word_no, match_type, depth+1)
+            match = self._1ormore_underline.consume(client_context, context, words, word_no, match_type, depth+1)
             if match is not None:
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("%sMatched 1 or more underline, success!", tabs)
+                YLogger.debug(client_context, "%sMatched 1 or more underline, success!", tabs)
                 return match
 
-        match, word_no = self.match_children(bot, clientid, self._children, "Word", words, word_no, context, match_type, depth)
+        match, word_no = self.match_children(client_context, self._children, "Word", words, word_no, context, match_type, depth)
         if match is not None:
             return match
 
         if self._0ormore_arrow is not None:
-            match = self._0ormore_arrow.consume(bot, clientid, context, words, word_no, match_type, depth+1)
+            match = self._0ormore_arrow.consume(client_context, context, words, word_no, match_type, depth+1)
             if match is not None:
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("%sMatched 0 or more arrow, success!", tabs)
+                YLogger.debug(client_context, "%sMatched 0 or more arrow, success!", tabs)
                 return match
 
         if self._1ormore_star is not None:
-            match = self._1ormore_star.consume(bot, clientid, context, words, word_no, match_type, depth+1)
+            match = self._1ormore_star.consume(client_context, context, words, word_no, match_type, depth+1)
             if match is not None:
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("%sMatched 1 or more star, success!", tabs)
+                YLogger.debug(client_context, "%sMatched 1 or more star, success!", tabs)
                 return match
 
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("%sNo match for %s, trying another path", tabs, words.word(word_no))
+        YLogger.debug(client_context, "%sNo match for %s, trying another path", tabs, words.word(word_no))
         return None

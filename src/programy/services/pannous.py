@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -14,10 +14,10 @@ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRI
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.services.service import Service
-from programy.config.sections.brain.service import BrainServiceConfiguration
+from programy.config.brain.service import BrainServiceConfiguration
 from programy.services.requestsapi import RequestsAPI
 
 
@@ -58,6 +58,8 @@ class PannousAPI(object):
 
 class PannousService(Service):
 
+    LICENSE_KEY = 'PANNOUS_LOGIN'
+
     def __init__(self, config: BrainServiceConfiguration, api=None):
         Service.__init__(self, config)
 
@@ -72,18 +74,16 @@ class PannousService(Service):
         else:
             self.url = config.url
 
-    def ask_question(self, bot, clientid: str, question: str):
+    def ask_question(self, client_context, question: str):
         try:
-            if bot.license_keys.has_key('PANNOUS_LOGIN'):
-                login = bot.license_keys.get_key('PANNOUS_LOGIN')
+            if client_context.client.license_keys.has_key(PannousService.LICENSE_KEY):
+                login = client_context.client.license_keys.get_key(PannousService.LICENSE_KEY)
             else:
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error("No variable PANNOUS_LOGIN found in license key file")
+                YLogger.error(client_context, "No variable %s found in license key file", PannousService.LICENSE_KEY)
                 return ""
 
             return self.api.ask_question(self.url, question, login)
 
         except Exception as excep:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error(str(excep))
+            YLogger.error(client_context, str(excep))
             return ""

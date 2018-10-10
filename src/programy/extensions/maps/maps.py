@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -14,7 +14,7 @@ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRI
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.utils.geo.google import GoogleMaps
 from programy.extensions.base import Extension
@@ -26,9 +26,8 @@ class GoogleMapsExtension(Extension):
         return GoogleMaps()
 
     # execute() is the interface that is called from the <extension> tag in the AIML
-    def execute(self, bot, clientid, data):
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("GoogleMaps [%s]", data)
+    def execute(self, context, data):
+        YLogger.debug(context, "GoogleMaps [%s]", data)
 
         splits = data.split(" ")
         command = splits[0]
@@ -44,8 +43,7 @@ class GoogleMapsExtension(Extension):
             directions = googlemaps.get_directions_between_addresses(from_place, to_place)
             return self._format_directions_for_programy(directions)
         else:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("Unknown Google Maps Extension command [%s]", command)
+            YLogger.error(context, "Unknown Google Maps Extension command [%s]", command)
             return None
 
     def _format_distance_for_programy(self, distance):

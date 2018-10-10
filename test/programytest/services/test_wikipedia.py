@@ -2,14 +2,10 @@ import unittest
 import os
 import wikipedia
 
-from programy.utils.license.keys import LicenseKeys
 from programy.services.wikipediaservice import WikipediaService
-from programytest.settings import external_services
 
-class TestBot:
+from programytest.client import TestClient
 
-    def __init__(self):
-        self.license_keys = None
 
 class MockWikipediaAPI(object):
 
@@ -32,55 +28,38 @@ class MockWikipediaAPI(object):
         else:
             return self._response
 
+
 class WikipediaServiceTests(unittest.TestCase):
 
     def setUp(self):
-        self.bot = TestBot()
-        self.bot.license_keys = LicenseKeys()
-        self.bot.license_keys.load_license_key_file(os.path.dirname(__file__)+ os.sep + "test.keys")
+        client = TestClient()
+        client.add_license_keys_store()
+        self._client_context = client.create_client_context("testid")
 
     def test_ask_question(self):
         service = WikipediaService(api=MockWikipediaAPI(response="Test Wikipedia response"))
         self.assertIsNotNone(service)
 
-        response = service.ask_question(self.bot, "testid", "SUMMARY what is a cat")
-        self.assertEquals("Test Wikipedia response", response)
+        response = service.ask_question(self._client_context, "SUMMARY what is a cat")
+        self.assertEqual("Test Wikipedia response", response)
 
     def test_ask_question_disambiguous(self):
         service = WikipediaService(api=MockWikipediaAPI(response=None, throw_exception=MockWikipediaAPI.DISAMBIGUATIONERROR))
         self.assertIsNotNone(service)
 
-        response = service.ask_question(self.bot, "testid", "what is a cat")
-        self.assertEquals("", response)
+        response = service.ask_question(self._client_context, "what is a cat")
+        self.assertEqual("", response)
 
     def test_ask_question_pageerror_exception(self):
         service = WikipediaService(api=MockWikipediaAPI(response=None, throw_exception=MockWikipediaAPI.PAGEERROR))
         self.assertIsNotNone(service)
 
-        response = service.ask_question(self.bot, "testid", "what is a cat")
-        self.assertEquals("", response)
+        response = service.ask_question(self._client_context, "what is a cat")
+        self.assertEqual("", response)
 
     def test_ask_question_general_exception(self):
         service = WikipediaService(api=MockWikipediaAPI(response=None, throw_exception=MockWikipediaAPI.GENERALEXCEPTION))
         self.assertIsNotNone(service)
 
-        response = service.ask_question(self.bot, "testid", "what is a cat")
-        self.assertEquals("", response)
-
-    @unittest.skipIf(not external_services, "External service testing disabled")
-    def test_ask_question_summary(self):
-        service = WikipediaService()
-        self.assertIsNotNone(service)
-
-        response = service.ask_question(self.bot, "testid", "SUMMARY cat")
-        self.assertIsNotNone(response)
-        self.assertEqual("The domestic cat (Felis silvestris catus or Felis catus) is a small, typically furry, carnivorous mammal.", response)
-
-    @unittest.skipIf(not external_services, "External service testing disabled")
-    def test_ask_question_search(self):
-        service = WikipediaService()
-        self.assertIsNotNone(service)
-
-        response = service.ask_question(self.bot, "testid", "SEARCH cat")
-        self.assertIsNotNone(response)
-        self.assertTrue(response.startswith("Cat"))
+        response = service.ask_question(self._client_context, "what is a cat")
+        self.assertEqual("", response)

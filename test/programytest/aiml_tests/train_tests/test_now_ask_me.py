@@ -1,27 +1,32 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
+
 from programy.config.file.factory import ConfigurationFactory
-from programy.config.programy import ProgramyConfiguration
-from programy.config.sections.client.console import ConsoleConfiguration
+from programy.clients.events.console.config import ConsoleConfiguration
+
+from programytest.client import TestClient
+
 
 class NowAskMeTrainTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        self.configuration = ConfigurationFactory.load_configuration_from_file(ConsoleConfiguration(),
-                                                                               os.path.dirname(__file__)+ os.sep + "testconfig.yaml",
-                                                                               bot_root=os.path.dirname(__file__))
+    def load_storage(self):
+        super(NowAskMeTrainTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+        self.add_sets_store([os.path.dirname(__file__) + os.sep + "sets"])
+
 
 class TrainAIMLTests(unittest.TestCase):
 
-    def setUp(cls):
-        TrainAIMLTests.test_client = NowAskMeTrainTestClient()
+    def setUp(self):
+        client = NowAskMeTrainTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_now_ask_me(self):
-        TrainAIMLTests.test_client.bot.brain.dump_tree()
-        response = TrainAIMLTests.test_client.bot.ask_question("test", "daddy is great")
+        response = self._client_context.bot.ask_question(self._client_context, "daddy is great")
         self.assertIsNotNone(response)
-        self.assertEqual('Now you can ask me: "Who is GREAT?" and "What does my daddy be?"', response)
+        
+        self.assertEqual('Now you can ask me: " Who is great ?" and " What does my daddy ?".', response)

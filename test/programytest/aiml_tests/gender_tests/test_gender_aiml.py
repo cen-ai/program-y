@@ -1,25 +1,27 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
 
-class BasicTestClient(TestClient):
+from programytest.client import TestClient
+
+class GenderAIMLTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(BasicTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
-        self.configuration.brain_configuration.files._gender = os.path.dirname(__file__)+ os.sep + "gender.txt"
+    def load_storage(self):
+        super(GenderAIMLTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+        self.add_gender_store(os.path.dirname(__file__)+ os.sep + "gender.txt")
+
 
 class GenderAIMLTests(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        GenderAIMLTests.test_client = BasicTestClient()
+    def setUp(self):
+        client = GenderAIMLTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_gender(self):
-        response = GenderAIMLTests.test_client.bot.ask_question("test",  "TEST GENDER")
+        response = self._client_context.bot.ask_question(self._client_context,  "TEST GENDER")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "This goes to her")
+        self.assertEqual(response, "This goes to her.")

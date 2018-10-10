@@ -1,37 +1,39 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
 
-class BasicTestClient(TestClient):
+from programytest.client import TestClient
+
+class InfoAIMLTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(BasicTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
+    def load_storage(self):
+        super(InfoAIMLTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+
 
 class InfoAIMLTests(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        InfoAIMLTests.test_client = BasicTestClient()
+    def setUp(self):
+        client = InfoAIMLTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_program(self):
-        response = InfoAIMLTests.test_client.bot.ask_question("test",  "TEST PROGRAM")
+        response = self._client_context.bot.ask_question(self._client_context,  "TEST PROGRAM")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "AIMLBot")
+        self.assertEqual(response, "AIMLBot.")
 
     def test_id(self):
-        response = InfoAIMLTests.test_client.bot.ask_question("test", "TEST ID")
+        response = self._client_context.bot.ask_question(self._client_context, "TEST ID")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "test")
+        self.assertEqual(response, "Testclient.")
 
     def test_env(self):
 
-        InfoAIMLTests.test_client.bot.brain.properties.add_property("env","test")
+        self._client_context.bot.brain.properties.add_property("env", "test")
 
-        response = InfoAIMLTests.test_client.bot.ask_question("test", "TEST ENVIRONMENT")
+        response = self._client_context.bot.ask_question(self._client_context, "TEST ENVIRONMENT")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "ENVIRONMENT IS test")
+        self.assertEqual(response, "ENVIRONMENT IS test.")

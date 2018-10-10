@@ -1,4 +1,4 @@
-import logging
+from programy.utils.logging.ylogger import YLogger
 import json
 import requests
 
@@ -21,8 +21,7 @@ class NewsArticle(object):
         if name in data:
             return data[name]
         else:
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("Attribute [%s] missing from New API Article data", name)
+            YLogger.debug(self, "Attribute [%s] missing from New API Article data", name)
             return def_value
 
     def parse_json(self, data):
@@ -199,7 +198,7 @@ class NewsAPI(object):
         if license_keys.has_key('NEWSAPI_API_KEY'):
             self.api_key = license_keys.get_key('NEWSAPI_API_KEY')
         else:
-            raise Exception("No valid license key METOFFICE_API_KEY found")
+            raise Exception("No valid license key NEWSAPI_API_KEY found")
 
     @staticmethod
     def _format_url(service, api_key, sort_by="top"):
@@ -212,8 +211,7 @@ class NewsAPI(object):
 
     @staticmethod
     def _get_news_feed_articles(url, max_articles, sort, reverse):
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("News API URL: [%s]", url)
+        YLogger.debug(None, "News API URL: [%s]", url)
         response = NewsAPI._news_api_api.get_news(url)
         articles = []
         if response.status_code == 200:
@@ -225,31 +223,24 @@ class NewsAPI(object):
                         article = NewsArticle()
                         article.parse_json(article_data)
                         articles.append(article)
-                        if logging.getLogger().isEnabledFor(logging.DEBUG):
-                            logging.debug(article.description)
+                        YLogger.debug(None, article.description)
 
                     if sort is True:
-                        if logging.getLogger().isEnabledFor(logging.DEBUG):
-                            logging.debug("Sorting articles,, reverse=%s", str(reverse))
+                        YLogger.debug(None, "Sorting articles,, reverse=%s", str(reverse))
                         articles.sort(key=lambda article: article.published_at, reverse=reverse)
 
                     if max_articles != 0:
-                        if logging.getLogger().isEnabledFor(logging.DEBUG):
-                            logging.debug("Returning max_articles %d articles", max_articles)
+                        YLogger.debug(None, "Returning max_articles %d articles", max_articles)
                         articles = articles[:max_articles]
                     else:
-                        if logging.getLogger().isEnabledFor(logging.DEBUG):
-                            logging.debug("Returning all articles")
+                        YLogger.debug(None, "Returning all articles")
                 else:
-                    if logging.getLogger().isEnabledFor(logging.ERROR):
-                        logging.error("NewAPI payload contains no articles attribute")
+                    YLogger.error(None, "NewAPI payload contains no articles attribute")
             else:
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error("NewsAPI request none JSON object")
+                YLogger.error(None, "NewsAPI request none JSON object")
 
         else:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("NewsAPI request returned error code %d", response.status_code)
+            YLogger.error(None, "NewsAPI request returned error code %d", response.status_code)
 
         return articles
 
@@ -259,8 +250,7 @@ class NewsAPI(object):
             function = self.function_mapping[source]
             return function(self.api_key, max_articles, sort, reverse)
         else:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("No source available for %s", source)
+            YLogger.error(self, "No source available for %s", source)
             return []
 
     @staticmethod
@@ -273,13 +263,21 @@ class NewsAPI(object):
 
     @staticmethod
     def json_to_file(filename, json_data):
-        with open(filename, 'w+', encoding="utf-8") as json_file:
-            json.dump(json_data, json_file)
+        try:
+            with open(filename, 'w+', encoding="utf-8") as json_file:
+                json.dump(json_data, json_file)
+
+        except Exception as e:
+            YLogger.exception(None, "Failed to write to [%s]", e, filename)
 
     @staticmethod
     def json_from_file(filename):
-        with open(filename, 'r+', encoding="utf-8") as json_file:
-            return json.load(json_file)
+        try:
+            with open(filename, 'r+', encoding="utf-8") as json_file:
+                return json.load(json_file)
+
+        except Exception as e:
+            YLogger.exception(None, "Failed to read from [%s]", e, filename)
 
     @staticmethod
     def to_program_y_text(articles, break_str=" <br /> "):

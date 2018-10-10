@@ -4,7 +4,7 @@ import datetime
 
 from programy.clients.client import BotClient
 from programy.utils.files.filefinder import FileFinder
-from programy.config.sections.client.console import ConsoleConfiguration
+from programy.clients.events.console.config import ConsoleConfiguration
 
 class TestQuestion(object):
 
@@ -94,7 +94,7 @@ class TestFileFileFinder(FileFinder):
         else:
             print("Template [%s] not found!" % answer)
 
-    def load_file_contents(self, filename):
+    def load_file_contents(self, filename, userid="*"):
         print("Loading aiml_tests from file [%s]" % filename)
         questions = []
         templates = {}

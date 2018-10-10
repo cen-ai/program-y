@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -14,18 +14,20 @@ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRI
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
-import logging
-
+from programy.utils.logging.ylogger import YLogger
+from programy.storage.stores.file.store.licensekeys import FileLicenseStore
 
 class LicenseKeys(object):
 
     def __init__(self):
         self._keys = {}
 
+    def empty(self):
+        self._keys.clear()
+
     def add_key(self, name, value):
         if name in self._keys:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("License key [%s], already exists", name)
+            YLogger.warning(self, "License key [%s], already exists", name)
         self._keys[name] = value
 
     def has_key(self, name):
@@ -36,33 +38,3 @@ class LicenseKeys(object):
             return self._keys[name]
         else:
             raise ValueError("No license key named [%s]"%name)
-
-    def load_license_key_data(self, license_key_data):
-        lines = license_key_data.split('\n')
-        for line in lines:
-            self._process_license_key_line(line)
-
-    def load_license_key_file(self, license_key_filename):
-        try:
-            if logging.getLogger().isEnabledFor(logging.INFO):
-                logging.info("Loading license key file: [%s]", license_key_filename)
-            with open(license_key_filename, "r", encoding="utf-8") as license_file:
-                for line in license_file:
-                    self._process_license_key_line(line)
-        except Exception:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("Invalid license key file [%s]", license_key_filename)
-
-    def _process_license_key_line(self, line):
-        line = line.strip()
-        if line:
-            if line.startswith('#') is False:
-                splits = line.split("=")
-                if len(splits) > 1:
-                    key_name = splits[0].strip()
-                    # If key has = signs in it, then combine all elements past the first
-                    key = "".join(splits[1:]).strip()
-                    self._keys[key_name] = key
-                else:
-                    if logging.getLogger().isEnabledFor(logging.WARNING):
-                        logging.warning("Invalid license key [%s]", line)

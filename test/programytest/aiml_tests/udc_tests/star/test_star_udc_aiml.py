@@ -1,33 +1,37 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
 
-class BasicTestClient(TestClient):
+from programytest.client import TestClient
+
+
+class StarUDCTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(BasicTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._file = os.path.dirname(__file__)+os.sep+'star_udc.aiml'
+    def load_storage(self):
+        super(StarUDCTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
 
-class UDCAIMLTests(unittest.TestCase):
+
+class StarUDCAIMLTests(unittest.TestCase):
 
     def setUp(self):
-        UDCAIMLTests.test_client = BasicTestClient()
+        client = StarUDCTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_udc_multi_word_question(self):
-        response = UDCAIMLTests.test_client.bot.ask_question("test", "Ask Question")
+        response = self._client_context.bot.ask_question(self._client_context, "Ask Question")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "UDC Star Response")
+        self.assertEqual(response, "UDC Star Response.")
 
     def test_udc_single_word_question(self):
-        response = UDCAIMLTests.test_client.bot.ask_question("test", "Question")
+        response = self._client_context.bot.ask_question(self._client_context, "Question")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "UDC Star Response")
+        self.assertEqual(response, "UDC Star Response.")
 
     def test_udc_empty_string_question(self):
-        response = UDCAIMLTests.test_client.bot.ask_question("test", "")
+        response = self._client_context.bot.ask_question(self._client_context, "")
         self.assertIsNotNone(response)
         self.assertEqual(response, "")

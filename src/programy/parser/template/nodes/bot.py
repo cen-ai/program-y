@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 from programy.parser.template.nodes.base import TemplateNode
 from programy.parser.exceptions import ParserException
 from programy.utils.text.text import TextUtils
@@ -36,45 +36,34 @@ class TemplateBotNode(TemplateNode):
         self._name = name
 
     @staticmethod
-    def get_bot_variable(bot, client, name):
-        value = bot.brain.properties.property(name)
+    def get_bot_variable(client_context, name):
+        value = client_context.brain.properties.property(name)
         if value is None:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("No bot property for [%s]"%name)
+            YLogger.error(client_context, "No bot property for [%s]", name)
 
-            value = bot.brain.properties.property("default-property")
+            value = client_context.brain.properties.property("default-property")
             if value is None:
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error("No value for default-property")
+                YLogger.error(client_context, "No value for default-property")
 
-                value = bot.brain.configuration.defaults.default_get
+                value = client_context.brain.configuration.defaults.default_get
                 if value is None:
-                    if logging.getLogger().isEnabledFor(logging.ERROR):
-                        logging.error("No value for default default-property, return 'unknown'")
+                    YLogger.error(client_context, "No value for default default-property, return 'unknown'")
                     value = "unknown"
 
         return value
 
-    def resolve_to_string(self, bot, clientid):
-        name = self.name.resolve(bot, clientid)
-        value = TemplateBotNode.get_bot_variable(bot, clientid, name)
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("[%s] resolved to [%s] = [%s]", self.to_string(), name, value)
+    def resolve_to_string(self, client_context):
+        name = self.name.resolve(client_context)
+        value = TemplateBotNode.get_bot_variable(client_context, name)
+        YLogger.debug(client_context, "[%s] resolved to [%s] = [%s]", self.to_string(), name, value)
         return value
-
-    def resolve(self, bot, clientid):
-        try:
-            return self.resolve_to_string(bot, clientid)
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
 
     def to_string(self):
         return "[BOT (%s)]" % (self.name.to_string())
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = "<bot "
-        xml += ' name="%s"' % self.name.resolve(bot, clientid)
+        xml += ' name="%s"' % self.name.resolve(client_context)
         xml += " />"
         return xml
 

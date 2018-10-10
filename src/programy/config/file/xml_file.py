@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 # Ignore pylint warning, this import from Programy must be before ElementTree
 # Which ensures that the class LineNumberingParser is injected into the code
 from programy.utils.parsing.linenumxml import LineNumberingParser
@@ -39,10 +39,16 @@ class XMLConfigurationFile(BaseConfigurationFile):
 
     def load_from_file(self, filename, client_configuration, bot_root):
         configuration = ProgramyConfiguration(client_configuration)
-        with open(filename, 'r+', encoding="utf-8") as xml_data_file:
-            tree = ET.parse(xml_data_file, parser=LineNumberingParser())
-            self.xml_data = tree.getroot()
-            configuration.load_config_data(self, bot_root)
+
+        try:
+            with open(filename, 'r+', encoding="utf-8") as xml_data_file:
+                tree = ET.parse(xml_data_file, parser=LineNumberingParser())
+                self.xml_data = tree.getroot()
+                configuration.load_config_data(self, bot_root)
+
+        except Exception as excep:
+           YLogger.exception(self, "Failed to open xml config file [%s]", excep, filename)
+
         return configuration
 
     def is_string(self, section):
@@ -78,8 +84,7 @@ class XMLConfigurationFile(BaseConfigurationFile):
             return child
         else:
             if missing_value is not None:
-                if logging.getLogger().isEnabledFor(logging.WARNING):
-                    logging.warning("Missing value for [%s] in config, return default value %s", option_name, missing_value)
+                YLogger.warning(self, "Missing value for [%s] in config, return default value %s", option_name, missing_value)
             return missing_value
 
     def _infer_type_from_string(self, text):
@@ -94,8 +99,7 @@ class XMLConfigurationFile(BaseConfigurationFile):
         if child is not None:
             return self.convert_to_bool(child.text)
         else:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("Missing value for [%s] in config, return default value %s", option_name, missing_value)
+            YLogger.warning(self, "Missing value for [%s] in config, return default value %s", option_name, missing_value)
             return missing_value
 
     def get_int_option(self, section, option_name, missing_value=0):
@@ -103,9 +107,27 @@ class XMLConfigurationFile(BaseConfigurationFile):
         if child is not None:
             return self.convert_to_int(child.text)
         else:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("Missing value for [%s] in config, return default value %d", option_name, missing_value)
+            YLogger.warning(self, "Missing value for [%s] in config, return default value %d", option_name, missing_value)
             return missing_value
+
+    def get_multi_option(self, section, option_name, missing_value=None):
+        if missing_value is None:
+            missing_value = []
+        value = self.get_option(section, option_name, missing_value)
+        if isinstance(value, list):
+            if not value:
+                return value
+        if isinstance(value, str):
+            values = [value]
+        else:
+            values = []
+            for child in value._children:
+                if child.tag == "bot":
+                    values.append(child.text)
+        multis = []
+        for value in values:
+            multis.append(value)
+        return multis
 
     def get_multi_file_option(self, section, option_name, bot_root, missing_value=None):
         if missing_value is None:

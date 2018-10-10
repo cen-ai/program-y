@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -14,11 +14,11 @@ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRI
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
-import logging
+from programy.utils.logging.ylogger import YLogger
 from xml.etree import ElementTree
 
 from programy.services.service import Service
-from programy.config.sections.brain.service import BrainServiceConfiguration
+from programy.config.brain.service import BrainServiceConfiguration
 from programy.services.requestsapi import RequestsAPI
 
 
@@ -59,18 +59,16 @@ class PandoraService(Service):
         if config.url is None:
             raise Exception("Undefined url parameter")
 
-    def ask_question(self, bot, clientid: str, question: str):
+    def ask_question(self, client_context, question: str):
         try:
-            if bot.license_keys.has_key('PANDORA_BOTID'):
-                botid = bot.license_keys.get_key('PANDORA_BOTID')
+            if client_context.client.license_keys.has_key('PANDORA_BOTID'):
+                botid = client_context.client.license_keys.get_key('PANDORA_BOTID')
             else:
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error("No variable PANDORA_BOTID found in license key file")
+                YLogger.error(client_context, "No variable PANDORA_BOTID found in license key file")
                 return ""
 
             return self.api.ask_question(self._config.url, question, botid)
 
         except Exception as excep:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error(str(excep))
+            YLogger.error(client_context, str(excep))
             return ""

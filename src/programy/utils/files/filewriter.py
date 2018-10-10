@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,10 +15,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 import datetime
 import csv
 import os
+
 
 class TextFile(object):
 
@@ -57,8 +58,7 @@ class FileWriter(object):
 
         if configuration.delete_on_start:
             if os.path.exists(configuration.filename):
-                if logging.getLogger().isEnabledFor(logging.INFO):
-                    logging.info("Removing %s on start up", configuration.filename)
+                YLogger.info(self, "Removing %s on start up", configuration.filename)
                 os.remove(configuration.filename)
 
         if configuration.file_format == 'txt':
@@ -71,6 +71,7 @@ class FileWriter(object):
 
     def get_timestamp(self):
         return "{:%Y-%m-%d %H:%M:%S}".format(datetime.datetime.now())
+
 
 class ConversationFileWriter(FileWriter):
 
@@ -110,8 +111,7 @@ class ContentFileWriter(FileWriter):
         self._entries.append(row)
 
     def save_content(self):
-        if logging.getLogger().isEnabledFor(logging.INFO):
-            logging.info("Saving aiml %s to file [%s]", self._content_type, self._filename )
+        YLogger.info(self, "Saving aiml %s to file [%s]", self._content_type, self._filename )
 
         for entry in self._entries:
             self._file.write_line(self, entry)
@@ -130,8 +130,7 @@ class ContentFileWriter(FileWriter):
             return "%s [%s]\n"%(row[0], row[1])
 
     def display_debug_info(self):
-        if logging.getLogger().isEnabledFor(logging.INFO):
-            logging.info("Found a total of %d %s in your grammrs, check out [%s] for details",
+        YLogger.info(self, "Found a total of %d %s in your grammrs, check out [%s] for details",
                          len(self._entries), self._content_type, self._filename)
 
 

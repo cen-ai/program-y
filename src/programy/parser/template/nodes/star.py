@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.parser.template.nodes.indexed import TemplateIndexedNode
 
@@ -24,8 +24,8 @@ class TemplateStarNode(TemplateIndexedNode):
     def __init__(self, index=1):
         TemplateIndexedNode.__init__(self, index)
 
-    def resolve_to_string(self, bot, clientid):
-        conversation = bot.get_conversation(clientid)
+    def resolve_to_string(self, client_context):
+        conversation = client_context.bot.get_conversation(client_context)
 
         if conversation.has_current_question():
 
@@ -35,40 +35,29 @@ class TemplateStarNode(TemplateIndexedNode):
 
             matched_context = current_sentence.matched_context
             if matched_context is None:
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error("Star node has no matched context for clientid %s", clientid)
+                YLogger.error(client_context, "Star node has no matched context for clientid %s", client_context.userid)
                 resolved = ""
             else:
                 try:
                     resolved = matched_context.star(self.index)
                     if resolved is None:
-                        if logging.getLogger().isEnabledFor(logging.ERROR):
-                            logging.error("Star index not in range [%d]", self.index)
+                        YLogger.error(client_context, "Star index not in range [%d]", self.index)
                         resolved = ""
                 except Exception:
-                    if logging.getLogger().isEnabledFor(logging.ERROR):
-                        logging.error("Star index not in range [%d]", self.index)
+                    YLogger.error(client_context, "Star index not in range [%d]", self.index)
                     resolved = ""
         else:
             resolved = ""
 
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("Star Node [%s] resolved to [%s]", self.to_string(), resolved)
+        YLogger.debug(client_context, "Star Node [%s] resolved to [%s]", self.to_string(), resolved)
         return resolved
 
-    def resolve(self, bot, clientid):
-        try:
-            return self.resolve_to_string(bot, clientid)
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
-
     def to_string(self):
-        string = "STAR"
-        string += self.get_index_as_str()
+        string = "[STAR"
+        string += self.get_index_as_str() + ']'
         return string
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = "<star"
         xml += self.get_index_as_xml()
         xml += ">"

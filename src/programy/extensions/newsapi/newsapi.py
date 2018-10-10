@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -14,7 +14,7 @@ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRI
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.utils.newsapi.newsapi import NewsAPI
 from programy.extensions.base import Extension
@@ -22,28 +22,26 @@ from programy.extensions.base import Extension
 
 class NewsAPIExtension(Extension):
 
-    def get_news_api_api(self, bot, clientid):
-        return  NewsAPI(bot.license_keys)
+    def get_news_api_api(self, context):
+        return  NewsAPI(context.client.license_keys)
 
-    def get_news(self, bot, clientid, source, max_num, sort, reverse):
+    def get_news(self, context, source, max_num, sort, reverse):
 
-        newsapi = self.get_news_api_api(bot, clientid)
+        newsapi = self.get_news_api_api(context)
 
         headlines = newsapi.get_headlines(source, max_num, sort, reverse)
         if headlines is None:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("NewsAPIExtension no headlines found!")
+            YLogger.error(context, "NewsAPIExtension no headlines found!")
             return ""
 
         results = newsapi.to_program_y_text(headlines)
         if results is None:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("NewsAPIExtension no results returned!")
+            YLogger.error(context, "NewsAPIExtension no results returned!")
             return ""
 
         return results
 
-    def parse_data(self, data):
+    def parse_data(self, context, data):
         source = None
         max_num = 10
         sort = False
@@ -65,8 +63,7 @@ class NewsAPIExtension(Extension):
                 elif splits[count].upper() == 'FALSE':
                     sort = False
                 else:
-                    if logging.getLogger().isEnabledFor(logging.ERROR):
-                        logging.error("Invalid value for NewAPI Data parameter sort [%s]", splits[count])
+                    YLogger.error(context, "Invalid value for NewAPI Data parameter sort [%s]", splits[count])
                     sort = False
             elif splits[count] == "REVERSE":
                 count += 1
@@ -75,25 +72,22 @@ class NewsAPIExtension(Extension):
                 elif splits[count].upper() == 'FALSE':
                     reverse = False
                 else:
-                    if logging.getLogger().isEnabledFor(logging.ERROR):
-                        logging.error("Invalid value for NewAPI Data parameter reverse [%s]", splits[count])
+                    YLogger.error(context, "Invalid value for NewAPI Data parameter reverse [%s]", splits[count])
                     reverse = False
             else:
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error("Unknown News API Command [%s]", splits[count])
+                YLogger.error(context, "Unknown News API Command [%s]", splits[count])
 
             count += 1
 
         return source, max_num, sort, reverse
 
     # execute() is the interface that is called from the <extension> tag in the AIML
-    def execute(self, bot, clientid, data):
+    def execute(self, context, data):
 
-        source, max_num, sort, reverse = self.parse_data(data)
+        source, max_num, sort, reverse = self.parse_data(context, data)
 
         if source is None:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("NewsAPIExtension no source passed in as data parameter!")
+            YLogger.error(context, "NewsAPIExtension no source passed in as data parameter!")
             return ""
 
-        return self.get_news(bot, clientid, source, max_num, sort, reverse)
+        return self.get_news(context, source, max_num, sort, reverse)

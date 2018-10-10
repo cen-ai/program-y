@@ -12,7 +12,7 @@ class MockTemplateDeleteTripleNode(TemplateDeleteTripleNode):
     def __init__(self, subj, pred, obj):
         TemplateDeleteTripleNode.__init__(self, subj, pred, obj)
 
-    def resolve_to_string(self, bot, clientid):
+    def resolve_to_string(self, context):
         raise Exception("This is a failure")
 
 class TemplateDeleteTripleNodeTests(ParserTestsBaseClass):
@@ -20,14 +20,14 @@ class TemplateDeleteTripleNodeTests(ParserTestsBaseClass):
     def test_to_string(self):
         root = TemplateDeleteTripleNode()
         self.assertIsNotNone(root)
-        self.assertEquals("DELETETRIPLE", root.to_string())
+        self.assertEqual("[DELETETRIPLE]", root.to_string())
 
     def test_to_xml(self):
         root = TemplateNode()
         node = TemplateDeleteTripleNode(TemplateWordNode("S"), TemplateWordNode("P"), TemplateWordNode("O"))
         root.append(node)
 
-        xml = root.xml_tree(self._bot, self._clientid)
+        xml = root.xml_tree(self._client_context)
         self.assertIsNotNone(xml)
         xml_str = ET.tostring(xml, "utf-8").decode("utf-8")
         self.assertEqual("<template><deletetriple><subj>S</subj><pred>P</pred><obj>O</obj></deletetriple></template>", xml_str)
@@ -37,15 +37,15 @@ class TemplateDeleteTripleNodeTests(ParserTestsBaseClass):
         node = TemplateDeleteTripleNode(TemplateWordNode("S"), TemplateWordNode("P"), TemplateWordNode("O"))
         root.append(node)
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
-        self.assertEquals("", result)
+        self.assertEqual("", result)
 
     def test_node_exception_handling(self):
         root = TemplateNode()
         node = MockTemplateDeleteTripleNode(TemplateWordNode("S"), TemplateWordNode("P"), TemplateWordNode("O"))
         root.append(node)
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
-        self.assertEquals("", result)
+        self.assertEqual("", result)

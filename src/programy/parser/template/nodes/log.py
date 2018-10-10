@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 
 from programy.parser.exceptions import ParserException
@@ -38,40 +38,27 @@ class TemplateLogNode(TemplateAttribNode):
     def level(self, level):
         self._level = level
 
-    def resolve_to_string(self, bot, clientid):
-        resolved = self.resolve_children_to_string(bot, clientid)
+    def resolve_to_string(self, client_context):
+        resolved = self.resolve_children_to_string(client_context)
 
         if self._output == "logging":
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+            YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
             if self._level == "debug":
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug(resolved)
+                YLogger.debug(client_context, resolved)
             elif self._level == "warning":
-                if logging.getLogger().isEnabledFor(logging.WARNING):
-                    logging.warning(resolved)
+                YLogger.warning(client_context, resolved)
             elif self._level == "error":
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error(resolved)
+                YLogger.error(client_context, resolved)
             elif self._level == "info":
-                if logging.getLogger().isEnabledFor(logging.INFO):
-                    logging.info(resolved)
+                YLogger.info(client_context, resolved)
             else:
-                if logging.getLogger().isEnabledFor(logging.INFO):
-                    logging.info(resolved)
+                YLogger.info(client_context, resolved)
         else:
             print(resolved)
         return ""
 
-    def resolve(self, bot, clientid):
-        try:
-            return self.resolve_to_string(bot, clientid)
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
-
     def to_string(self):
-        return "LOG level=%s" % (self._level)
+        return "[LOG level=%s]" % (self._level)
 
     def set_attrib(self, attrib_name, attrib_value):
         if attrib_name != 'level' and attrib_name != 'output':
@@ -81,12 +68,12 @@ class TemplateLogNode(TemplateAttribNode):
             raise ParserException("Invalid attribute value %s for this node %s", attrib_value, attrib_name)
         self._level = attrib_value
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = "<log"
         if self._level is not None:
             xml += ' level="%s"' % self._level
         xml += ">"
-        xml += self.children_to_xml(bot, clientid)
+        xml += self.children_to_xml(client_context)
         xml += "</log>"
         return xml
 

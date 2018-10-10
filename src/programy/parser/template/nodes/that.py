@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.parser.template.nodes.indexed import TemplateDoubleIndexedNode
 
@@ -30,27 +30,19 @@ class TemplateThatNode(TemplateDoubleIndexedNode):
     def __init__(self, question=1, sentence=1):
         TemplateDoubleIndexedNode.__init__(self, question, sentence)
 
-    def resolve_to_string(self, bot, clientid):
-        conversation = bot.get_conversation(clientid)
+    def resolve_to_string(self, client_context):
+        conversation = client_context.bot.get_conversation(client_context)
         question = conversation.previous_nth_question(self.question)
         resolved = question.combine_answers()
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+        YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
         return resolved
 
-    def resolve(self, bot, clientid):
-        try:
-            return self.resolve_to_string(bot, clientid)
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
-
     def to_string(self):
-        string = "THAT"
-        string += self.get_question_and_sentence_as_str()
+        string = "[THAT"
+        string += self.get_question_and_sentence_as_str() + ']'
         return string
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = "<that"
         xml += self.get_question_and_sentence_as_index_xml()
         xml += ">"

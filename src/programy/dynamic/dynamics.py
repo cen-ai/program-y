@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.utils.classes.loader import ClassLoader
 from programy.dynamic.sets.numeric import IsNumeric
@@ -53,29 +53,24 @@ class DynamicsCollection(object):
 
     def load_default_dynamic_sets(self, dynamics_configuration):
         if IsNumeric.NAME not in self._dynamic_sets:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("Dynamic set %s not defined, adding default implementation", IsNumeric.NAME)
+            YLogger.warning(self, "Dynamic set %s not defined, adding default implementation", IsNumeric.NAME)
             self._dynamic_sets[IsNumeric.NAME] = IsNumeric(dynamics_configuration)
 
     def load_default_dynamic_maps(self, dynamics_configuration):
         if PluralMap.NAME not in self._dynamic_maps:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("Dynamic set %s not defined, adding default implementation", PluralMap.NAME)
+            YLogger.warning(self, "Dynamic set %s not defined, adding default implementation", PluralMap.NAME)
             self._dynamic_maps[PluralMap.NAME] = PluralMap(dynamics_configuration)
 
         if SingularMap.NAME not in self._dynamic_maps:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("Dynamic set %s not defined, adding default implementation", SingularMap.NAME)
+            YLogger.warning(self, "Dynamic set %s not defined, adding default implementation", SingularMap.NAME)
             self._dynamic_maps[SingularMap.NAME] = SingularMap(dynamics_configuration)
 
         if SuccessorMap.NAME not in self._dynamic_maps:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("Dynamic set %s not defined, adding default implementation", SuccessorMap.NAME)
+            YLogger.warning(self, "Dynamic set %s not defined, adding default implementation", SuccessorMap.NAME)
             self._dynamic_maps[SuccessorMap.NAME] = SuccessorMap(dynamics_configuration)
 
         if PredecessorMap.NAME not in self._dynamic_maps:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("Dynamic set %s not defined, adding default implementation", PredecessorMap.NAME)
+            YLogger.warning(self, "Dynamic set %s not defined, adding default implementation", PredecessorMap.NAME)
             self._dynamic_maps[PredecessorMap.NAME] = PredecessorMap(dynamics_configuration)
 
     def load_default_dynamic_vars(self, dynamics_configuration):
@@ -94,11 +89,11 @@ class DynamicsCollection(object):
     def is_dynamic_set(self, name):
         return bool(name.upper() in self._dynamic_sets)
 
-    def dynamic_set(self, bot, clientid, name, value):
+    def dynamic_set(self, client_context, name, value):
         name = name.upper()
         if name in self._dynamic_sets:
             dynamic_set = self._dynamic_sets[name]
-            return dynamic_set.is_member(bot, clientid, value)
+            return dynamic_set.is_member(client_context, value)
         return None
 
     ###################################################################################################
@@ -114,11 +109,11 @@ class DynamicsCollection(object):
     def is_dynamic_map(self, name):
         return bool(name.upper() in self._dynamic_maps)
 
-    def dynamic_map(self, bot, clientid, name, value):
+    def dynamic_map(self, client_context, name, value):
         name = name.upper()
         if name in self._dynamic_maps:
             dynamic_map = self._dynamic_maps[name]
-            return dynamic_map.map_value(bot, clientid, value)
+            return dynamic_map.map_value(client_context, value)
         return None
 
     ###################################################################################################
@@ -134,9 +129,9 @@ class DynamicsCollection(object):
     def is_dynamic_var(self, name):
         return bool(name.upper() in self._dynamic_vars)
 
-    def dynamic_var(self, bot, clientid, name, value=None):
+    def dynamic_var(self, client_context, name, value=None):
         name = name.upper()
         if name in self._dynamic_vars:
             dynamic_var = self._dynamic_vars[name]
-            return dynamic_var.get_value(bot, clientid, value)
+            return dynamic_var.get_value(client_context, value)
         return None

@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -14,7 +14,7 @@ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRI
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
-import logging
+from programy.utils.logging.ylogger import YLogger
 import wikipedia
 
 from programy.services.service import Service
@@ -42,7 +42,7 @@ class WikipediaService(Service):
         else:
             self._api = api
 
-    def ask_question(self, bot, clientid: str, question: str):
+    def ask_question(self, client_context, question: str):
         try:
             words  = question.split()
             question = " ".join(words[1:])
@@ -52,17 +52,13 @@ class WikipediaService(Service):
                 results = self._api.search(question)
                 search = ", ".join(results)
             else:
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error("Unknown Wikipedia command [%s]", words[0])
+                YLogger.error(client_context, "Unknown Wikipedia command [%s]", words[0])
                 search = ""
             return search
         except wikipedia.exceptions.DisambiguationError:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("Wikipedia search is ambiguous for question [%s]", question)
+            YLogger.error(client_context, "Wikipedia search is ambiguous for question [%s]", question)
         except wikipedia.exceptions.PageError:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("No page on Wikipedia for question [%s]", question)
+            YLogger.error(client_context, "No page on Wikipedia for question [%s]", question)
         except Exception:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("General error querying Wikipedia for question [%s]", question)
+            YLogger.error(client_context, "General error querying Wikipedia for question [%s]", question)
         return ""

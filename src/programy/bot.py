@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -14,358 +14,410 @@ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRI
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
+from programy.utils.logging.ylogger import YLogger
 
-import logging
-import datetime
-
+from programy.brain import Brain
 from programy.dialog.dialog import Conversation, Question, Sentence
-from programy.dialog.storage.factory import ConversationStorageFactory
-from programy.config.sections.bot.bot import BotConfiguration
-from programy.utils.license.keys import LicenseKeys
+from programy.dialog.conversation import ConversationManager
+from programy.config.bot.bot import BotConfiguration
 from programy.utils.classes.loader import ClassLoader
-from programy.utils.files.filewriter import ConversationFileWriter
+from programy.spelling.base import SpellingChecker
+from programy.dialog.splitter.splitter import SentenceSplitter
+from programy.dialog.joiner.joiner import SentenceJoiner
+
+
+class BrainSelector(object):
+
+    def __init__(self, configuration):
+        self._configuration = configuration
+
+    def select_brain(self, brains):
+        pass
+
+
+class DefaultBrainSelector(BrainSelector):
+
+    def __init__(self, configuration):
+        BrainSelector.__init__(self, configuration)
+
+    def select_brain(self, brains):
+        if brains:
+            return next (iter (brains.values()))
+        return None
+
+
+class BrainFactory(object):
+
+    def __init__(self, bot):
+        self._brains = {}
+        self.loads_brains(bot)
+        self._brain_selector = None
+        self.load_brain_selector(bot.configuration)
+
+    def brainids(self):
+        return self._brains.keys()
+
+    def brain(self, id):
+        if id in self._brains:
+            return self._brains[id]
+        else:
+            return None
+
+    def loads_brains(self, bot):
+        for config in bot.configuration.configurations:
+            brain = Brain(bot, config)
+            self._brains[brain.id] = brain
+
+    def load_brain_selector(self, configuration):
+        if configuration.brain_selector is None:
+            self._brain_selector = DefaultBrainSelector(configuration)
+        else:
+            try:
+                self._brain_selector = ClassLoader.instantiate_class(configuration.brain_selector)(configuration)
+            except Exception as e:
+                self._brain_selector = DefaultBrainSelector(configuration)
+
+    def select_brain(self):
+        return self._brain_selector.select_brain(self._brains)
+
 
 class Bot(object):
 
-    def __init__(self, brain, config: BotConfiguration):
-        self._brain = brain
-        self._configuration = config
+    def __init__(self, config, client):
 
-        self._conversations = {}
+        assert (config is not None)
+        assert (client is not None)
+
+        self._configuration = config
+        self._client = client
+
+        self._brain_factory = BrainFactory(self)
+
         self._question_depth = 0
         self._question_start_time = None
+
         self._spell_checker = None
-        self._conversation_storage = None
-        self._license_keys = None
-
-        self.conversation_logger = None
-        if self.brain.configuration.files.aiml_files.conversation is not None:
-            self.conversation_logger = ConversationFileWriter(self.brain.configuration.files.aiml_files.conversation)
-
-        self.load_license_keys()
-
         self.initiate_spellchecker()
 
-        self.initiate_conversation_storage()
+        self._sentence_splitter = None
+        self.initiate_sentence_splitter()
+
+        self._sentence_joiner = None
+        self.initiate_sentence_joiner()
+
+        self._conversation_mgr = ConversationManager(config.conversations)
+        self._conversation_mgr.initialise(self._client.storage_factory)
+
+    def ylogger_type(self):
+        return "bot"
+
+    @property
+    def id(self):
+        return self._configuration.section_name
+
+    @property
+    def client(self):
+        return self._client
 
     @property
     def configuration(self):
         return self._configuration
 
-    def load_license_keys(self):
-        # TODO Move this to License keys base class
-        self._license_keys = LicenseKeys()
-        if self._configuration is not None:
-            self._load_license_keys(self._configuration)
-        else:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("No configuration defined when loading license keys")
-
-    def _load_license_keys(self, bot_configuration):
-        if bot_configuration.license_keys is not None:
-            self._license_keys.load_license_key_file(bot_configuration.license_keys)
-        else:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("No configuration setting for license_keys")
-
-    def initiate_spellchecker(self):
-        # TODO Move this to Spelling bass class
-        if self._configuration is not None:
-            if self._configuration.spelling.classname is not None:
-                try:
-                    if logging.getLogger().isEnabledFor(logging.INFO):
-                        logging.info("Loading spelling checker from class [%s]", self._configuration.spelling.classname)
-                    spell_class = ClassLoader.instantiate_class(self._configuration.spelling.classname)
-                    self._spell_checker = spell_class(self._configuration.spelling)
-                except Exception as excep:
-                    logging.exception(excep)
-            else:
-                if logging.getLogger().isEnabledFor(logging.WARNING):
-                    logging.warning("No configuration setting for spelling checker!")
+    @property
+    def brain_factory(self):
+        return self._brain_factory
 
     @property
     def spell_checker(self):
         return self._spell_checker
 
+    def initiate_spellchecker(self):
+        if self.configuration is not None:
+            if self.configuration.spelling is not None:
+                self._spell_checker = SpellingChecker.initiate_spellchecker(self.configuration.spelling, self.client.storage_factory)
+
+    @property
+    def sentence_splitter(self):
+        return self._sentence_splitter
+
+    def initiate_sentence_splitter(self):
+        if self.configuration is not None:
+            if self.configuration.splitter is not None:
+                self._sentence_splitter = SentenceSplitter.initiate_sentence_splitter(self.configuration.splitter)
+
+    @property
+    def sentence_joiner(self):
+        return self._sentence_joiner
+
+    def initiate_sentence_joiner(self):
+        if self.configuration is not None:
+            if self.configuration.joiner is not None:
+                self._sentence_joiner = SentenceJoiner.initiate_sentence_joiner(self.configuration.joiner)
+
     @property
     def brain(self):
-        return self._brain
+        return self._brain_factory.select_brain()
 
     @property
     def conversations(self):
-        return self._conversations
-
-    @property
-    def license_keys(self):
-        return self._license_keys
-
-    @property
-    def prompt(self):
-        if self._configuration is not None:
-            return self._configuration.prompt
-        return BotConfiguration.DEFAULT_PROMPT
+        return self._conversation_mgr
 
     @property
     def default_response(self):
-        if self._configuration is not None:
-            return self._configuration.default_response
+        if self.configuration is not None:
+            return self.configuration.default_response
         return BotConfiguration.DEFAULT_RESPONSE
 
     @property
     def default_response_srai(self):
-        if self._configuration is not None:
-            return self._configuration.default_response_srai
+        if self.configuration is not None:
+            return self.configuration.default_response_srai
         return None
 
     @property
     def exit_response(self):
-        if self._configuration is not None:
-            return self._configuration.exit_response
+        if self.configuration is not None:
+            return self.configuration.exit_response
         return BotConfiguration.DEFAULT_EXIT_RESPONSE
 
     @property
     def exit_response_srai(self):
-        if self._configuration is not None:
-            return self._configuration.exit_response_srai
+        if self.configuration is not None:
+            return self.configuration.exit_response_srai
         return BotConfiguration.DEFAULT_EXIT_RESPONSE_SRAI
 
     @property
     def initial_question(self):
-        if self._configuration is not None:
-            return self._configuration.initial_question
+        if self.configuration is not None:
+            return self.configuration.initial_question
         return BotConfiguration.DEFAULT_INITIAL_QUESTION
 
     @property
     def initial_question_srai(self):
-        if self._configuration is not None:
-            return self._configuration.initial_question_srai
+        if self.configuration is not None:
+            return self.configuration.initial_question_srai
         return BotConfiguration.DEFAULT_INITIAL_QUESTION_SRAI
 
     @property
     def override_properties(self):
-        if self._configuration is not None:
-            return self._configuration.override_properties
+        if self.configuration is not None:
+            return self.configuration.override_properties
         return False
 
-    @property
-    def get_version_string(self):
-        if self._configuration is not None:
-            if self.brain.properties.has_property("version"):
-                # The old version of returning the version string, did not distinquish
-                # between App and Grammar version
-                return "%s, v%s, initiated %s" % (
-                    self.brain.properties.property("name"),
-                    self.brain.properties.property("version"),
-                    self.brain.properties.property("birthdate"))
-            else:
-                # This version now does
-                return "%s, App: v%s Grammar v%s, initiated %s" % (
-                    self.brain.properties.property("name"),
-                    self.brain.properties.property("app_version"),
-                    self.brain.properties.property("grammar_version"),
-                    self.brain.properties.property("birthdate"))
-        return ""
+    def get_version_string(self, client_context):
 
-    def has_conversation(self, clientid):
-        return bool(clientid in self._conversations)
+        assert (client_context is not None)
 
-    def conversation(self, clientid: str):
-        return self.get_conversation(clientid)
-
-    def get_conversation(self, clientid: str):
-        # TODO move this to Conversations base class
-        if clientid in self._conversations:
-            if logging.getLogger().isEnabledFor(logging.INFO):
-                logging.info("Retrieving conversation for client %s", clientid)
-            return self._conversations[clientid]
+        if client_context.brain.properties.has_property("version"):
+            # The old version of returning the version string, did not distinquish
+            # between App and Grammar version
+            return "%s, v%s, initiated %s" % (
+                client_context.brain.properties.property("name"),
+                client_context.brain.properties.property("version"),
+                client_context.brain.properties.property("birthdate"))
         else:
-            if logging.getLogger().isEnabledFor(logging.INFO):
-                logging.info("Creating new conversation for client %s", clientid)
+            # This version now does
+            return "%s, App: v%s Grammar v%s, initiated %s" % (
+                client_context.brain.properties.property("name"),
+                client_context.brain.properties.property("app_version"),
+                client_context.brain.properties.property("grammar_version"),
+                client_context.brain.properties.property("birthdate"))
 
-            conversation = Conversation(clientid, self)
+    def has_conversation(self, client_context):
 
-            if self.brain.properties is not None:
-                conversation.load_initial_variables(self.brain.variables)
+        assert (self._conversation_mgr is not None)
 
-            self._conversations[clientid] = conversation
+        return self._conversation_mgr.has_conversation(client_context)
 
-            self.load_conversation(clientid)
+    def conversation(self, client_context):
+        return self.get_conversation(client_context)
 
-            return conversation
+    def get_conversation(self, client_context):
 
-    def initiate_conversation_storage(self):
-        if self._configuration is not None:
-            if self._configuration.conversations is not None:
-                self._conversation_storage = ConversationStorageFactory.get_storage(self._configuration)
-                if self._conversation_storage is not None:
-                    if self._configuration.conversations.empty_on_start is True:
-                        self._conversation_storage.empty ()
+        assert (self._conversation_mgr is not None)
 
-    def load_conversation(self, clientid):
-        if self._conversation_storage is not None:
-            if clientid in self._conversations:
-                conversation = self._conversations[clientid]
-                self._conversation_storage.load_conversation(conversation, clientid,
-                                                             self.configuration.conversations.restore_last_topic)
+        return self._conversation_mgr.get_conversation(client_context)
 
-    def save_conversation(self, clientid):
-        if self._conversation_storage is not None:
-            if clientid in self._conversations:
-                conversation = self._conversations[clientid]
-                self._conversation_storage.save_conversation(conversation, clientid)
-            else:
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error("Unknown conversation id type [%s] unable tonot persist!" % clientid)
+    def save_conversation(self, client_context):
 
-    def check_max_recursion(self):
-        if self._configuration.max_question_recursion != -1:
-            if self._question_depth > self._configuration.max_question_recursion:
-                raise Exception("Maximum recursion limit [%d] exceeded" % self._configuration.max_question_recursion)
+        assert (self._conversation_mgr is not None)
 
-    def total_search_time(self):
-        delta = datetime.datetime.now() - self._question_start_time
-        return abs(delta.total_seconds())
+        self._conversation_mgr.save_conversation(client_context)
 
-    def check_max_timeout(self):
-        if self._configuration.max_question_timeout != -1:
-            if self.total_search_time() >= self._configuration.max_question_timeout:
-                raise Exception("Maximum search time limit [%d] exceeded" % self._configuration.max_question_timeout)
+    def check_spelling_before(self, client_context, each_sentence):
+        if self.spell_checker is not None:
+            self.spell_checker.check_spelling_before(client_context, each_sentence)
 
-    def check_spelling_before(self, each_sentence):
-        # TODO Move this to spelliing base class
-        if self._configuration.spelling.check_before is True:
-            text = each_sentence.text()
-            corrected = self.spell_checker.correct(text)
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("Spell Checker corrected [%s] to [%s]", text, corrected)
-            each_sentence.replace_words(corrected)
-
-    def check_spelling_and_retry(self, clientid, each_sentence):
-        # TODO Move this to spelling base class
-        if self._configuration.spelling.check_and_retry is True:
-            text = each_sentence.text()
-            corrected = self.spell_checker.correct(text)
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("Spell Checker corrected [%s] to [%s]", text, corrected)
-            each_sentence.replace_words(corrected)
-            response = self.brain.ask_question(self, clientid, each_sentence)
-            return response
+    def check_spelling_and_retry(self, client_context, each_sentence):
+        if self.spell_checker is not None:
+            return self.spell_checker.check_spelling_and_retry(client_context, each_sentence)
         return None
 
-    def ask_question(self, clientid: str, text: str, srai=False, responselogger=None):
-        # TODO Method too big, convert to smaller methods
+    def get_default_response(self, client_context):
 
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("##########################################################################################")
-            logging.debug("Question (%s): %s", clientid, text)
+        assert (client_context is not None)
 
-        if srai is False:
-            pre_processed = self.brain.pre_process_question(self, clientid, text)
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("Pre Processed (%s): %s", clientid, pre_processed)
-        else:
-            pre_processed = text
-
-        if pre_processed is None or pre_processed == "":
-            pre_processed = self._configuration.empty_string
-
-        if srai is False:
-            question = Question.create_from_text(self.brain.tokenizer,pre_processed)
-        else:
-            question = Question.create_from_text(self.brain._tokenizer, pre_processed, split=False)
-
-        conversation = self.get_conversation(clientid)
-        conversation.record_dialog(question)
-
-        if self._question_depth == 0:
-            self._question_start_time = datetime.datetime.now()
-        self._question_depth += 1
-
-        answers = []
-        sentence_no = 0
-        for each_sentence in question.sentences:
-
-            question.set_current_sentence_no(sentence_no)
-
-            self.check_max_recursion()
-            self.check_max_timeout()
-
-            if srai is False:
-                self.check_spelling_before(each_sentence)
-
-            response = self.brain.ask_question(self, clientid, each_sentence, srai=srai)
-
-            if response is None and srai is False:
-                response = self.check_spelling_and_retry(clientid, each_sentence)
-
-            if response is not None:
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("Raw Response (%s): %s", clientid, response)
-                each_sentence.response = response
-
-                if srai is False:
-                    answer = self.brain.post_process_response(self, clientid, response).strip()
-                    if not answer:
-                        answer = self.get_default_response(clientid)
-                else:
-                    answer = response
-
-                answers.append(answer)
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("Processed Response (%s): %s", clientid, answer)
-
-                if responselogger is not None:
-                    responselogger.log_response(each_sentence.text, answer)
-
-            else:
-                default_response = self.get_default_response(clientid)
-                each_sentence.response = default_response
-                answers.append(default_response)
-
-                if responselogger is not None:
-                    responselogger.log_unknown_response(each_sentence)
-
-            sentence_no += 1
-
-        self._question_depth = 0
-
-        if srai is True:
-            conversation.pop_dialog()
-
-        response = ". ".join([sentence for sentence in answers if sentence is not None])
-
-        if self.conversation_logger is not None:
-            self.conversation_logger.log_question_and_answer(clientid, text, response)
-
-        return response
-
-    def get_default_response(self, clientid):
         if self.default_response_srai is not None:
-            sentence = Sentence(self.brain.tokenizer, self.default_response_srai)
-            default_response = self.brain.ask_question(self, clientid, sentence, srai=False)
+            sentence = Sentence(client_context.brain.tokenizer, self.default_response_srai)
+            default_response = client_context.brain.ask_question(client_context, sentence)
             if default_response is None or not default_response:
                 default_response = self.default_response
             return default_response
         else:
             return self.default_response
 
-    def get_initial_question(self, clientid):
+    def get_initial_question(self, client_context):
+
+        assert (client_context is not None)
+
         if self.initial_question_srai is not None:
-            sentence = Sentence(self.brain.tokenizer, self.initial_question_srai)
-            initial_question = self.brain.ask_question(self, clientid, sentence, srai=False)
+            sentence = Sentence(client_context.brain.tokenizer, self.initial_question_srai)
+            initial_question = client_context.brain.ask_question(client_context, sentence)
             if initial_question is None or not initial_question:
                 initial_question = self.initial_question
             return initial_question
         else:
             return self.initial_question
 
-    def get_exit_response(self, clientid):
+    def get_exit_response(self, client_context):
+
+        assert (client_context is not None)
+
         if self.exit_response_srai is not None:
-            sentence = Sentence(self.brain.tokenizer, self.exit_response_srai)
-            exit_response = self.brain.ask_question(self, clientid, sentence, srai=False)
+            sentence = Sentence(client_context.brain.tokenizer, self.exit_response_srai)
+            exit_response = client_context.brain.ask_question(client_context, sentence)
             if exit_response is None or not exit_response:
                 exit_response = self.exit_response
             return exit_response
         else:
             return self.exit_response
 
+    def pre_process_text(self, client_context, text, srai):
+
+        assert (client_context is not None)
+        assert (client_context.brain is not None)
+
+        if srai is False:
+            pre_processed = client_context.brain.pre_process_question(client_context, text)
+            YLogger.debug(client_context, "Pre Processed (%s): %s", client_context.userid, pre_processed)
+        else:
+            pre_processed = text
+
+        if pre_processed is None or pre_processed == "":
+
+            assert (self.configuration is not None)
+
+            pre_processed = self.configuration.empty_string
+
+        return pre_processed
+
+    def get_question(self, client_context, pre_processed, srai):
+        if srai is False:
+            return Question.create_from_text(client_context, pre_processed, srai=srai)
+        else:
+            return Question.create_from_text(client_context, pre_processed, split=False, srai=srai)
+
+    def combine_answers(self, answers, srai):
+
+        assert (answers is not None)
+        assert (self._sentence_joiner is not None)
+
+        return self._sentence_joiner.combine_answers(answers, srai)
+
+    def post_process_response(self, client_context, response, srai):
+        if srai is False:
+
+            assert (client_context is not None)
+
+            answer = client_context.brain.post_process_response(client_context, response).strip()
+            if not answer:
+                answer = self.get_default_response(client_context)
+        else:
+            answer = response
+        return answer
+
+    def log_answer(self, client_context, text, answer, responselogger):
+        YLogger.debug(client_context, "Processed Response (%s): %s", client_context.userid, answer)
+
+        if responselogger is not None:
+            responselogger.log_response(text, answer)
+
+    def ask_question(self, client_context, text, srai=False, responselogger=None):
+
+        assert (client_context is not None)
+
+        if srai is False:
+            client_context.bot = self
+            client_context.brain = client_context.bot.brain
+
+        assert (client_context.bot is not None)
+        assert (client_context.brain is not None)
+
+        client_context.mark_question_start(text)
+
+        pre_processed = self.pre_process_text(client_context, text, srai)
+
+        question = self.get_question(client_context, pre_processed, srai)
+
+        conversation = self.get_conversation(client_context)
+
+        assert (conversation is not None)
+
+        conversation.record_dialog(question)
+
+        answers = []
+        sentence_no = 0
+        for sentence in question.sentences:
+            question.set_current_sentence_no(sentence_no)
+            answer = self.process_sentence(client_context, sentence, srai, responselogger)
+            answers.append(answer)
+            sentence_no += 1
+
+        client_context.reset_question()
+
+        if srai is True:
+            conversation.pop_dialog()
+
+        self.save_conversation(client_context)
+
+        return self.combine_answers(answers, srai)
+
+    def process_sentence(self, client_context, sentence, srai, responselogger):
+
+        assert (client_context is not None)
+        assert (client_context.brain is not None)
+
+        client_context.check_max_recursion()
+        client_context.check_max_timeout()
+
+        if srai is False:
+            self.check_spelling_before(client_context, sentence)
+
+        response = client_context.brain.ask_question(client_context, sentence, srai)
+
+        if response is None and srai is False:
+            response = self.check_spelling_and_retry(client_context, sentence)
+
+        if response is not None:
+            return self.handle_response(client_context, sentence, response, srai, responselogger)
+        else:
+            return self.handle_none_response(client_context, sentence, responselogger)
+
+    def handle_response(self, client_context, sentence, response, srai, responselogger):
+
+        assert (sentence is not None)
+
+        YLogger.debug(client_context, "Raw Response (%s): %s", client_context.userid, response)
+        sentence.response = response
+        answer = self.post_process_response(client_context, response, srai)
+        self.log_answer(client_context, sentence.text, answer, responselogger)
+        return answer
+
+    def handle_none_response(self, clientid, sentence, responselogger):
+
+        assert (sentence is not None)
+
+        sentence.response = self.get_default_response(clientid)
+        if responselogger is not None:
+            responselogger.log_unknown_response(sentence)
+        return sentence.response

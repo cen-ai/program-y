@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.parser.template.nodes.base import TemplateNode
 from programy.parser.exceptions import ParserException
@@ -25,23 +25,15 @@ class TemplateSizeNode(TemplateNode):
     def __init__(self):
         TemplateNode.__init__(self)
 
-    def resolve_to_string(self, bot, clientid):
-        resolved = str(bot.brain.aiml_parser.num_categories)
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+    def resolve_to_string(self, client_context):
+        resolved = str(client_context.brain.aiml_parser.num_categories)
+        YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
         return resolved
 
-    def resolve(self, bot, clientid):
-        try:
-            return self.resolve_to_string(bot, clientid)
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
-
     def to_string(self):
-        return "SIZE"
+        return "[SIZE]"
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = "<size />"
         return xml
 
@@ -51,4 +43,4 @@ class TemplateSizeNode(TemplateNode):
     def parse_expression(self, graph, expression):
         self._parse_node(graph, expression)
         if self.children:
-            raise ParserException("<size> node should not contains child text, use <size /> or <size></size> only")
+            raise ParserException("<size> node should not contain child text, use <size /> or <size></size> only")

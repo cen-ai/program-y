@@ -1,7 +1,8 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
+
+from programytest.client import TestClient
+
 
 """
 A set of scratch aiml_tests to provide a unit test framework for testing adhoc grammars
@@ -14,25 +15,28 @@ class ScratchTestsClient(TestClient):
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(ScratchTestsClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
+    def load_storage(self):
+        super(ScratchTestsClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+
 
 class ScratchAIMLTests(unittest.TestCase):
 
-    def setUp (self):
-        ScratchAIMLTests.test_client = ScratchTestsClient()
+    def setUp(self):
+        client = ScratchTestsClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_response(self):
-        response = ScratchAIMLTests.test_client.bot.ask_question("testif", "ARE YOU FRED")
+        response = self._client_context.bot.ask_question(self._client_context, "ARE YOU FRED")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'RESULT 1')
+        self.assertEqual(response, 'RESULT 1.')
 
-        response = ScratchAIMLTests.test_client.bot.ask_question("testif", "ARE YOU FRED WEST")
+        response = self._client_context.bot.ask_question(self._client_context, "ARE YOU FRED WEST")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'RESULT 2')
+        self.assertEqual(response, 'RESULT 2.')
 
-        response = ScratchAIMLTests.test_client.bot.ask_question("testif", "ARE YOU WRITTEN IN C#")
+        response = self._client_context.bot.ask_question(self._client_context, "ARE YOU WRITTEN IN C#")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'RESULT 3')
+        self.assertEqual(response, 'RESULT 3.')
 

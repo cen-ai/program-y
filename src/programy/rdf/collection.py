@@ -1,21 +1,24 @@
-import logging
+"""
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+"""
+from programy.utils.logging.ylogger import YLogger
 
 from programy.mappings.base import BaseCollection
-from programy.utils.files.filefinder import FileFinder
+from programy.storage.factory import StorageFactory
 
-class RDFLoader(FileFinder):
-    def __init__(self, collection):
-        FileFinder.__init__(self)
-        self._collection = collection
-
-    def load_file_contents(self, filename):
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("Loading RDF File [%s]", filename)
-        try:
-            self._collection.load_from_filename(filename)
-        except Exception as excep:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("Failed to load RDF File [%s] - %s", filename, excep)
 
 class RDFEntity(object):
 
@@ -23,46 +26,61 @@ class RDFEntity(object):
         self._subject = subject
         self._predicates = {}
 
+
 class RDFCollection(BaseCollection):
 
+    RDFS = "rdfs"
 
     def __init__(self):
         BaseCollection.__init__(self)
         self._entities = {}
+        self._stores = {}
+        self._entities_to_ids = {}
+        self._entities_to_stores = {}
+    
+    def empty(self):
+        YLogger.debug(self, "Emptying RDF Collection")
+        self._entities.clear()
+        self._stores.clear()
+        self._entities_to_ids.clear()
+        self._entities_to_stores.clear()
 
-    def load(self, configuration):
-        loader = RDFLoader(self)
-        if configuration.files is not None:
-            files = []
-            for file in configuration.files:
-                files += loader.load_dir_contents(file, configuration.directories, configuration.extension)
-            return len(files)
-        return 0
+    def contains(self, rdfname):
+        return bool(rdfname.upper() in self._stores)
 
-    def split_line(self, line):
-        splits = self.split_line_by_char(line)
-        if len(splits) > 3:
-            return [splits[0], splits[1], self.get_split_char().join(splits[2:])]
-        return splits
+    def filename(self, rdfname):
+        return self._files[rdfname]
 
-    def get_split_char(self):
-        return ":"
+    def storename(self, mapname):
+        if mapname in self._stores:
+            return self._stores[mapname]
+        return None
 
-    def get_split_pattern(self):
-        return ".*"
+    def load(self, storage_factory):
+        YLogger.debug(self, "Loading RDF Collection")
+        if storage_factory.entity_storage_engine_available(StorageFactory.RDF) is True:
+            rdf_engine = storage_factory.entity_storage_engine(StorageFactory.RDF)
+            if rdf_engine:
+                try:
+                    rdfs_store = rdf_engine.rdf_store()
+                    rdfs_store.load_all(self)
+                except Exception as e:
+                    YLogger.exception(self, "Failed to load rdf from storage", e)
+        else:
+            YLogger.error(self, "No RDF Storage Engine [%s] in StorageFactory", StorageFactory.RDF)
 
-    def split_line_by_char(self, line):
-        splits = line.split(self.get_split_char())
-        return splits
-
-    def process_splits(self, splits):
-
-        subject = splits[0]
-        predicate = splits[1]
-        obj = splits[2]
-
-        self.add_entity(subject, predicate, obj)
-        return True
+    def reload(self, storage_factory, rdf_name):
+        YLogger.debug(self, "Reloading RDF [%s]", rdf_name)
+        if storage_factory.entity_storage_engine_available(StorageFactory.RDF) is True:
+            rdf_engine = storage_factory.entity_storage_engine(StorageFactory.RDF)
+            if rdf_engine:
+                try:
+                    rdfs_store = rdf_engine.rdf_store()
+                    rdfs_store.reload(self, rdf_name)
+                except Exception as e:
+                    YLogger.exception(self, "Failed to load rdf from storage", e)
+        else:
+            YLogger.error(self, "No RDF Storage Engine [%s] in StorageFactory", StorageFactory.RDF)
 
     def subjects(self):
         return self._entities.keys()
@@ -78,12 +96,24 @@ class RDFCollection(BaseCollection):
                 return [self._entities[subject]._predicates[predicate]]
         return []
 
-    def add_entity(self, subject, predicate, obj):
+    def add_entity(self, subject, predicate, obj, rdf_name, rdf_store=None, id=None):
+        YLogger.debug(self, "Adding RDF Entity [%s] [%s] [%s] [%s]", subject, predicate, obj, rdf_name)
+
         subject = subject.upper()
         predicate = predicate.upper()
 
         if subject not in self._entities:
-            self._entities[subject] = RDFEntity(subject)
+            the_subject = RDFEntity(subject)
+            self._entities[subject] = the_subject
+
+            if id is not None:
+                id = id.upper()
+                if id not in self._entities_to_ids:
+                    self._entities_to_ids[id] = []
+                self._entities_to_ids[id].append(the_subject)
+
+            self._stores[rdf_name] = rdf_store
+            self._entities_to_stores[subject] = rdf_name
 
         entity = self._entities[subject]
 
@@ -106,6 +136,7 @@ class RDFCollection(BaseCollection):
         return False
 
     def delete_entity(self, subject, predicate=None, obj=None):
+        YLogger.debug(self, "Deleting RDF Entity [%s] [%s] [%s]", subject, predicate, obj)
 
         if self.has_subject(subject):
             if predicate is None and obj is None:
@@ -136,6 +167,13 @@ class RDFCollection(BaseCollection):
         return all
 
     def remove(self, entities, subject=None, predicate=None, obj=None):
+        if predicate is None and obj is None:
+            YLogger.debug(self, "Removing subject=[%s]", subject)
+        elif obj is None:
+            YLogger.debug(self, "Removing subject=[%s], predicate=[%s]", subject, predicate)
+        else:
+            YLogger.debug(self, "Removing subject=[%s], predicate=[%s], object=[%s]", subject, predicate, obj)
+
         removes = []
         for entity in entities:
             if subject is not None:
@@ -167,6 +205,13 @@ class RDFCollection(BaseCollection):
         return [entity for entity in entities if entity not in removes]
 
     def match_to_vars(self, subject=None, predicate=None, obj=None):
+        if predicate is None and obj is None:
+            YLogger.debug(self, "Matching subject=[%s]", subject)
+        elif obj is None:
+            YLogger.debug(self, "Matching subject=[%s], predicate=[%s]", subject, predicate)
+        else:
+            YLogger.debug(self, "Matching subject=[%s], predicate=[%s], object=[%s]", subject, predicate, obj)
+
         results = []
         for entity_subject, entity in self._entities.items():
             subj_element = None
@@ -212,6 +257,12 @@ class RDFCollection(BaseCollection):
         return results
 
     def not_match_to_vars(self, subject=None, predicate=None, obj=None):
+        if predicate is None and obj is None:
+            YLogger.debug(self, "Not matching subject=[%s]", subject)
+        elif obj is None:
+            YLogger.debug(self, "Not matching subject=[%s], predicate=[%s]", subject, predicate)
+        else:
+            YLogger.debug(self, "Not matching subject=[%s], predicate=[%s], object=[%s]", subject, predicate, obj)
 
         if subject is not None and subject.startswith("?") is True:
             all_subject = subject
@@ -228,9 +279,6 @@ class RDFCollection(BaseCollection):
         all = self.match_to_vars(all_subject, all_predicate, all_obj)
         matched = self.match_to_vars(subject, predicate, obj)
 
-        #for atuple in matched:
-        #    print("Remove", atuple[0][1])
-
         to_remove =[]
         for entity in all:
            for atuple in matched:
@@ -241,6 +289,13 @@ class RDFCollection(BaseCollection):
         return [entity for entity in all if entity not in to_remove]
 
     def match_only_vars(self, subject=None, predicate=None, obj=None):
+        if predicate is None and obj is None:
+            YLogger.debug(self, "Matching only vars subject=[%s]", subject)
+        elif obj is None:
+            YLogger.debug(self, "Matching only vars subject=[%s], predicate=[%s]", subject, predicate)
+        else:
+            YLogger.debug(self, "Matching only vars subject=[%s], predicate=[%s], object=[%s]", subject, predicate, obj)
+
         results = self.match_to_vars(subject, predicate, obj)
         returns = []
         for atuple in results:
@@ -266,6 +321,8 @@ class RDFCollection(BaseCollection):
         return atuple
 
     def unify(self, vars, sets):
+        YLogger.debug(self, "Unifying Vars [%s]", vars)
+
         unifications = []
         if sets:
             # For each tuple in the first set
@@ -286,6 +343,8 @@ class RDFCollection(BaseCollection):
         return unifications
 
     def unify_set(self, num_set, sets, unified_vars, depth):
+        YLogger.debug(self, "Unifying Set")
+
         aset = sets[num_set]
         unified = False
         for atuple in aset:
@@ -295,9 +354,12 @@ class RDFCollection(BaseCollection):
                 unified = True
             if num_set < len(sets)-1:
                 return self.unify_set(num_set+1, sets, unified_vars, depth+1)
+
         return unified
 
     def unify_tuple(self, tuple, vars):
+        YLogger.debug(self, "Unifying Tuple")
+
         for name, value in tuple:
             if name in vars:
                 if vars[name] is None:
@@ -305,4 +367,5 @@ class RDFCollection(BaseCollection):
                 else:
                     if vars[name] != value:
                         return False
+
         return True

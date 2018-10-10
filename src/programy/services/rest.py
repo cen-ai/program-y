@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -14,11 +14,11 @@ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRI
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
-import logging
+from programy.utils.logging.ylogger import YLogger
 import requests
 
 from programy.services.service import Service
-from programy.config.sections.brain.service import BrainServiceConfiguration
+from programy.config.brain.service import BrainServiceConfiguration
 
 
 class RestAPI(object):
@@ -68,36 +68,35 @@ class GenericRESTService(Service):
         else:
             return host_port
 
-    def _format_payload(self, bot, clientid, question):
+    def _format_payload(self, client_context, question):
         return {}
 
-    def _format_get_url(self, url, bot, clientid, question):
+    def _format_get_url(self, url, client_context, question):
         return url
 
     def _parse_response(self, text):
         return text
 
-    def ask_question(self, bot, clientid: str, question: str):
+    def ask_question(self, client_context, question: str):
 
         try:
             url = self._format_url()
 
             if self.method == 'GET':
-                full_url = self._format_get_url(url, bot, clientid, question)
+                full_url = self._format_get_url(url, client_context, question)
                 response = self.api.get(full_url)
             elif self.method == 'POST':
-                payload = self._format_payload(bot, clientid, question)
+                payload = self._format_payload(client_context, question)
                 response = self.api.post(url, data=payload)
             else:
                 raise Exception("Unsupported REST method [%s]"%self.method)
 
             if response.status_code != 200:
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error("[%s] return status code [%d]", self.host, response.status_code)
+                YLogger.error(client_context, "[%s] return status code [%d]", self.host, response.status_code)
             else:
                 return self._parse_response(response.text)
 
         except Exception as excep:
-            logging.exception(excep)
+            YLogger.exception(client_context, "Failed to resolve", excep)
 
         return ""

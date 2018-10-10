@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -16,7 +16,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 """
 
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 import re
 
 from programy.processors.processing import PostProcessor
@@ -46,9 +46,8 @@ class FormatPunctuationProcessor(PostProcessor):
 
         return splits
 
-    def process(self, bot, clientid, word_string):
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("Formatting punctuation...")
+    def process(self, context, word_string):
+        YLogger.debug(context, "Formatting punctuation...")
 
         word_list = self.space_split(word_string)
         new_word_list = []

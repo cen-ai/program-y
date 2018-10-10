@@ -1,113 +1,117 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
 
-class BasicTestClient(TestClient):
+from programytest.client import TestClient
+
+
+class StarTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(BasicTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
+    def load_storage(self):
+        super(StarTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+
 
 class StarAIMLTests(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        StarAIMLTests.test_client = BasicTestClient()
-        StarAIMLTests.test_client.bot.brain.dynamics.add_dynamic_set('number', "programy.dynamic.sets.numeric.IsNumeric", None)
+    def setUp(self):
+        client = StarTestClient()
+        self._client_context = client.create_client_context("testid")
+
+        self._client_context.brain.dynamics.add_dynamic_set('number', "programy.dynamic.sets.numeric.IsNumeric", None)
 
     def test_star_first(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test",  "SAY HEY")
+        response = self._client_context.bot.ask_question(self._client_context,  "SAY HEY")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'STAR IS SAY')
+        self.assertEqual(response, 'STAR IS SAY.')
 
     def test_star_first_multi_words(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test",  "THE MAN SAYS HEY")
+        response = self._client_context.bot.ask_question(self._client_context,  "THE MAN SAYS HEY")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'STAR IS THE MAN SAYS')
+        self.assertEqual(response, 'STAR IS THE MAN SAYS.')
 
     def test_star_last(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test",  "HELLO KEIFFBOT")
+        response = self._client_context.bot.ask_question(self._client_context,  "HELLO KEIFFBOT")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'HI KEIFFBOT')
+        self.assertEqual(response, 'HI KEIFFBOT.')
 
     def test_star_last_multi_words(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test",  "HELLO KEIFFBOT MATE")
+        response = self._client_context.bot.ask_question(self._client_context,  "HELLO KEIFFBOT MATE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'HI KEIFFBOT MATE')
+        self.assertEqual(response, 'HI KEIFFBOT MATE.')
 
     def test_multi_star(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "WELL HI THERE")
+        response = self._client_context.bot.ask_question(self._client_context, "WELL HI THERE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'YOU SAID WELL AND THERE')
+        self.assertEqual(response, 'YOU SAID WELL AND THERE.')
 
     def test_multi_star_mulit_words(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "WELL THEN HI THERE MATE")
+        response = self._client_context.bot.ask_question(self._client_context, "WELL THEN HI THERE MATE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'YOU SAID WELL THEN AND THERE MATE')
+        self.assertEqual(response, 'YOU SAID WELL THEN AND THERE MATE.')
 
     def test_star_middle(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "GOODBYE KEIFF SEEYA")
+        response = self._client_context.bot.ask_question(self._client_context, "GOODBYE KEIFF SEEYA")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'LATER KEIFF')
+        self.assertEqual(response, 'LATER KEIFF.')
 
     def test_star_middle_mulit_words(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "GOODBYE KEIFF MATE SEEYA")
+        response = self._client_context.bot.ask_question(self._client_context, "GOODBYE KEIFF MATE SEEYA")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'LATER KEIFF MATE')
+        self.assertEqual(response, 'LATER KEIFF MATE.')
 
     def test_multiple_stars_2(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "MULTIPLE STARS MATCH THIS THAT")
+        response = self._client_context.bot.ask_question(self._client_context, "MULTIPLE STARS MATCH THIS THAT")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'YOU MATCHED FIRST AS THIS AND SECOND AS THAT')
+        self.assertEqual(response, 'YOU MATCHED FIRST AS THIS AND SECOND AS THAT.')
 
     def test_multiple_stars_4(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "MULTI STARS ONE TWO THREE FOUR")
+        response = self._client_context.bot.ask_question(self._client_context, "MULTI STARS ONE TWO THREE FOUR")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'FOUR THREE TWO ONE')
+        self.assertEqual(response, 'FOUR THREE TWO ONE.')
 
     def test_star_with_set(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "STAR WITH SET 666")
+        response = self._client_context.bot.ask_question(self._client_context, "STAR WITH SET 666")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'SET IS 666')
+        self.assertEqual(response, 'SET IS 666.')
 
     def test_multi_stars_with_set(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "STAR WITH SETS 666 999")
+        response = self._client_context.bot.ask_question(self._client_context, "STAR WITH SETS 666 999")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'SETS ARE 666 AND 999')
+        self.assertEqual(response, 'SETS ARE 666 AND 999.')
 
     def test_mixed_stars_and_sets(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "MIXED STARS AND SETS 11 22 33 44 55")
+        response = self._client_context.bot.ask_question(self._client_context, "MIXED STARS AND SETS 11 22 33 44 55")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'STARS ARE 11 AND 22 AND 33 AND 44 AND 55')
+        self.assertEqual(response, 'STARS ARE 11 AND 22 AND 33 AND 44 AND 55.')
 
     def test_recursion_one_star(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "RECURSIVE TEST")
+        response = self._client_context.bot.ask_question(self._client_context, "RECURSIVE TEST")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'ENDED')
+        self.assertEqual(response, 'ENDED.')
 
     def test_recursion_two_stars(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "RECURSIVE TEST THIS")
+        response = self._client_context.bot.ask_question(self._client_context, "RECURSIVE TEST THIS")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'RECURSED ENDED')
+        self.assertEqual(response, 'RECURSED ENDED.')
 
     def test_recursion_four_stars(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "RECURSIVE TEST THIS THAT OTHER")
+        response = self._client_context.bot.ask_question(self._client_context, "RECURSIVE TEST THIS THAT OTHER")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'RECURSED RECURSED RECURSED ENDED')
+        self.assertEqual(response, 'RECURSED RECURSED RECURSED ENDED.')
 
     def test_star_case(self):
-        response = StarAIMLTests.test_client.bot.ask_question("test", "STAR CASE TEST1")
+        response = self._client_context.bot.ask_question(self._client_context, "STAR CASE TEST1")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'TEST1')
+        self.assertEqual(response, 'TEST1.')
 
-        response = StarAIMLTests.test_client.bot.ask_question("test", "STAR CASE test2")
+        response = self._client_context.bot.ask_question(self._client_context, "STAR CASE test2")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'test2')
+        self.assertEqual(response, 'Test2.')
 
-        response = StarAIMLTests.test_client.bot.ask_question("test", "STAR CASE TesT3")
+        response = self._client_context.bot.ask_question(self._client_context, "STAR CASE TesT3")
         self.assertIsNotNone(response)
-        self.assertEqual(response, 'TesT3')
+        self.assertEqual(response, 'TesT3.')

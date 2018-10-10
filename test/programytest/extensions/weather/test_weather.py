@@ -1,11 +1,13 @@
 import os
 import unittest
 import json
+import unittest.mock
 
 from programy.extensions.weather.weather import WeatherExtension
-from programytest.aiml_tests.client import TestClient
 from programy.utils.weather.metoffice import MetOffice
 from programy.utils.geo.google import GoogleMaps
+
+from programytest.client import TestClient
 
 class MockGoogleMaps(GoogleMaps):
 
@@ -49,12 +51,14 @@ class MockWeatherExtension(WeatherExtension):
 class WeatherExtensionTests(unittest.TestCase):
 
     def setUp(self):
-        self.test_client = TestClient()
+        client = TestClient()
+        client.add_license_keys_store()
+        self.context = client.create_client_context("testid")
 
-        self.test_client.bot.license_keys.load_license_key_data("""
-        METOFFICE_API_KEY=TESTKEY
-        """)
-        self.clientid = "testid"
+        bot = unittest.mock.Mock()
+        self.context.bot = bot
+        self.context.brain = bot.brain
+
 
     def test_observation(self):
         latlong     = os.path.dirname(__file__) + os.sep + "google_latlong.json"
@@ -63,17 +67,17 @@ class WeatherExtensionTests(unittest.TestCase):
         weather = MockWeatherExtension(latlong, observation)
         self.assertIsNotNone(weather)
 
-        result = weather.execute(self.test_client.bot, self.clientid, "OBSERVATION LOCATION KY39UR WHEN NOW")
+        result = weather.execute(self.context, "OBSERVATION LOCATION KY39UR WHEN NOW")
         self.assertIsNotNone(result)
-        self.assertEquals("WEATHER Partly cloudy (day) TEMP 12 3 VISIBILITY V 35000 VF Very Good WIND D SW DF South West S 10 PRESSURE P 1017 PT F PTF Falling HUMIDITY 57 3", result)
+        self.assertEqual("WEATHER Partly cloudy (day) TEMP 12 3 VISIBILITY V 35000 VF Very Good WIND D SW DF South West S 10 PRESSURE P 1017 PT F PTF Falling HUMIDITY 57 3", result)
 
-        result = weather.execute(self.test_client.bot, self.clientid, "OBSERVATION OTHER KY39UR WHEN NOW")
+        result = weather.execute(self.context, "OBSERVATION OTHER KY39UR WHEN NOW")
         self.assertIsNone(result)
 
-        result = weather.execute(self.test_client.bot, self.clientid, "OBSERVATION LOCATION KY39UR OTHER NOW")
+        result = weather.execute(self.context, "OBSERVATION LOCATION KY39UR OTHER NOW")
         self.assertIsNone(result)
 
-        result = weather.execute(self.test_client.bot, self.clientid, "")
+        result = weather.execute(self.context, "")
         self.assertIsNone(result)
 
     def test_forecast5day(self):
@@ -83,9 +87,9 @@ class WeatherExtensionTests(unittest.TestCase):
         weather = MockWeatherExtension(latlong, forecast)
         self.assertIsNotNone(weather)
 
-        result = weather.execute(self.test_client.bot, self.clientid, "FORECAST5DAY LOCATION KY39UR WHEN 1")
+        result = weather.execute(self.context, "FORECAST5DAY LOCATION KY39UR WHEN 1")
         self.assertIsNotNone(result)
-        self.assertEquals("WEATHER TYPE Cloudy WINDDIR NW WINDGUST 7 WINDSPEED 4 TEMP 8 FEELS 8 HUMID 76 RAINPROB 8 VISTEXT Very good - Between 20-40 km WEATHER Cloudy", result)
+        self.assertEqual("WEATHER TYPE Cloudy WINDDIR NW WINDGUST 7 WINDSPEED 4 TEMP 8 FEELS 8 HUMID 76 RAINPROB 8 VISTEXT Very good - Between 20-40 km WEATHER Cloudy", result)
 
     def test_forecast24hour(self):
         latlong     = os.path.dirname(__file__) + os.sep + "google_latlong.json"
@@ -94,6 +98,6 @@ class WeatherExtensionTests(unittest.TestCase):
         weather = MockWeatherExtension(latlong, forecast)
         self.assertIsNotNone(weather)
 
-        result = weather.execute(self.test_client.bot, self.clientid, "FORECAST24HOUR LOCATION KY39UR WHEN 1")
+        result = weather.execute(self.context, "FORECAST24HOUR LOCATION KY39UR WHEN 1")
         self.assertIsNotNone(result)
-        self.assertEquals("WEATHER Overcast TEMP 10 FEELS 10 WINDDIR NW WINDDIRFULL North West WINDSPEED 4 VIS Very good - Between 20-40 km UVINDEX 0 UVGUIDE None RAINPROB 8 HUMIDITY 73", result)
+        self.assertEqual("WEATHER Overcast TEMP 10 FEELS 10 WINDDIR NW WINDDIRFULL North West WINDSPEED 4 VIS Very good - Between 20-40 km UVINDEX 0 UVGUIDE None RAINPROB 8 HUMIDITY 73", result)

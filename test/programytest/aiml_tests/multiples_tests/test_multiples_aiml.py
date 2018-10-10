@@ -1,27 +1,27 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
+
+from programytest.client import TestClient
+
 
 class MultiplesTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(MultiplesTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
+    def load_storage(self):
+        super(MultiplesTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+
 
 class MultiplesAIMLTests(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        MultiplesAIMLTests.test_client = MultiplesTestClient()
+    def setUp(self):
+        client = MultiplesTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_multiple_questionsn(self):
-        MultiplesAIMLTests.test_client.bot.brain.dump_tree()
-        response = MultiplesAIMLTests.test_client.bot.ask_question("test", "HELLO. HOW ARE YOU")
+        response = self._client_context.bot.ask_question(self._client_context, "HELLO. HOW ARE YOU")
         self.assertIsNotNone(response)
-        self.assertEqual("HI THERE. I AM WELL THANKS", response)
-
-
+        self.assertEqual("HI THERE. I AM WELL THANKS.", response)

@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.parser.template.nodes.base import TemplateNode
 from programy.parser.template.nodes.get import TemplateGetNode
@@ -66,9 +66,6 @@ class TemplateConditionListItemNode(TemplateConditionVariable):
     def is_default(self):
         return bool(self.value is None)
 
-    def resolve(self, bot, clientid):
-        pass
-
     def to_string(self):
         if self.name is not None:
             return "[CONDITIONLIST(%s=%s)]" % (self.name, self.value.to_string())
@@ -76,7 +73,7 @@ class TemplateConditionListItemNode(TemplateConditionVariable):
             return "[CONDITIONLIST(%s)]" % (self.value.to_string())
         return "[CONDITIONLIST]"
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
 
         xml = '<li'
         if self.name is not None:
@@ -94,10 +91,10 @@ class TemplateConditionListItemNode(TemplateConditionVariable):
 
         if self.value is not None:
             xml += '<value>'
-            xml += self.value.to_xml(bot, clientid)
+            xml += self.value.to_xml(client_context)
             xml += '</value>'
 
-        xml += self.children_to_xml(bot, clientid)
+        xml += self.children_to_xml(client_context)
 
         if self.loop is True:
             xml += "<loop />"
@@ -353,7 +350,7 @@ class TemplateConditionNode(TemplateConditionVariable):
         text += "]"
         return text
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = "<condition"
 
         if self.name is not None:
@@ -370,122 +367,116 @@ class TemplateConditionNode(TemplateConditionVariable):
 
         if self.value is not None:
             xml += '<value>'
-            xml += self.value.to_xml(bot, clientid)
+            xml += self.value.to_xml(client_context)
             xml += '</value>'
 
-        xml += self.children_to_xml(bot, clientid)
+        xml += self.children_to_xml(client_context)
 
         xml += "</condition>"
 
         return xml
 
-
-    def resolve(self, bot, clientid):
+    def resolve(self, client_context):
         if self._condition_type == TemplateConditionNode.BLOCK:
-            return self.resolve_type1_condition(bot, clientid)
+            return self.resolve_type1_condition(client_context)
         elif self._condition_type == TemplateConditionNode.SINGLE:
-            return self.resolve_type2_condition(bot, clientid)
+            return self.resolve_type2_condition(client_context)
         elif self._condition_type == TemplateConditionNode.MULTIPLE:
-            return self.resolve_type3_condition(bot, clientid)
+            return self.resolve_type3_condition(client_context)
         return None
 
-    def get_condition_variable_value(self, bot, clientid, var_type, name):
+    def get_condition_variable_value(self, client_context, var_type, name):
         if var_type == TemplateConditionVariable.GLOBAL:
-            return TemplateGetNode.get_property_value(bot, clientid, False, name)
+            return TemplateGetNode.get_property_value(client_context, False, name)
         elif var_type == TemplateConditionVariable.LOCAL:
-            return TemplateGetNode.get_property_value(bot, clientid, True, name)
+            return TemplateGetNode.get_property_value(client_context, True, name)
         elif var_type == TemplateConditionVariable.BOT:
-            return TemplateBotNode.get_bot_variable(bot, clientid, name)
+            return TemplateBotNode.get_bot_variable(client_context, name)
         else:
             return"unknown"
 
-    def resolve_type1_condition(self, bot, clientid):
+    def resolve_type1_condition(self, client_context):
         try:
-            value = self.get_condition_variable_value(bot, clientid, self.var_type, self.name)
-            condition_value = self.value.resolve(bot, clientid).upper()
+            value = self.get_condition_variable_value(client_context, self.var_type, self.name)
+            condition_value = self.value.resolve(client_context).upper()
 
             # Condition comparison is always case insensetive
             if value.upper() == condition_value:
-                resolved = bot.brain.tokenizer.words_to_texts([child.resolve(bot, clientid) for child in self.children])
+                resolved = client_context.brain.tokenizer.words_to_texts([child.resolve(client_context) for child in self.children])
             else:
                 resolved = ""
 
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+            YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
             return resolved
 
         except Exception as excep:
-            logging.exception(excep)
+            YLogger.exception(client_context, "Failed to resolve type1 condition", excep)
             return ""
 
-    def resolve_type2_condition(self, bot, clientid):
+    def resolve_type2_condition(self, client_context):
         try:
-            value = self.get_condition_variable_value(bot, clientid, self.var_type, self.name)
+            value = self.get_condition_variable_value(client_context, self.var_type, self.name)
 
             for condition in self.children:
                 if condition.is_default() is False:
-                    condition_value = condition.value.resolve(bot, clientid)
+                    condition_value = condition.value.resolve(client_context)
 
                     # Condition comparison is always case insensetive
-                    if bot.brain.tokenizer.compare(value.upper(), condition_value.upper()):
-                        resolved = bot.brain.tokenizer.words_to_texts([child_node.resolve(bot, clientid) for child_node in condition.children])
-                        if logging.getLogger().isEnabledFor(logging.DEBUG):
-                            logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+                    if client_context.brain.tokenizer.compare(value.upper(), condition_value.upper()):
+                        resolved = client_context.brain.tokenizer.words_to_texts([child_node.resolve(client_context) for child_node in condition.children])
+                        YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
 
                         if condition.loop is True:
-                            resolved = resolved.strip() + " " + self.resolve(bot, clientid)
+                            resolved = resolved.strip() + " " + self.resolve(client_context)
 
                         return resolved
 
             default = self.get_default()
             if default is not None:
-                resolved = bot.brain.tokenizer.words_to_texts([child_node.resolve(bot, clientid) for child_node in default.children])
+                resolved = client_context.brain.tokenizer.words_to_texts([child_node.resolve(client_context) for child_node in default.children])
 
                 if default.loop is True:
-                    resolved = resolved.strip() + " " + self.resolve(bot, clientid)
+                    resolved = resolved.strip() + " " + self.resolve(client_context)
             else:
                 resolved = ""
 
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+            YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
             return resolved
 
         except Exception as excep:
-            logging.exception(excep)
+            YLogger.exception(client_context, "Failed to resolve type2 condition", excep)
             return ""
 
-    def resolve_type3_condition(self, bot, clientid):
+    def resolve_type3_condition(self, client_context):
         try:
             for condition in self.children:
-                value = self.get_condition_variable_value(bot, clientid, condition.var_type, condition.name)
+                value = self.get_condition_variable_value(client_context, condition.var_type, condition.name)
                 if condition.value is not None:
-                    condition_value = condition.value.resolve(bot, clientid)
+                    condition_value = condition.value.resolve(client_context)
 
                     # Condition comparison is always case insensetive
                     if value.upper() == condition_value.upper():
-                        resolved = bot.brain.tokenizer.words_to_texts([child_node.resolve(bot, clientid) for child_node in condition.children])
-                        if logging.getLogger().isEnabledFor(logging.DEBUG):
-                            logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+                        resolved = client_context.brain.tokenizer.words_to_texts([child_node.resolve(client_context) for child_node in condition.children])
+                        YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
 
                         if condition.loop is True:
-                            resolved = resolved.strip() + " " + self.resolve(bot, clientid).strip()
+                            resolved = resolved.strip() + " " + self.resolve(client_context).strip()
 
                         return resolved
 
             default = self.get_default()
             if default is not None:
-                resolved = bot.brain.tokenizer.words_to_texts([child_node.resolve(bot, clientid) for child_node in default.children])
+                resolved = client_context.brain.tokenizer.words_to_texts([child_node.resolve(client_context) for child_node in default.children])
 
                 if default.loop is True:
-                    resolved = resolved.strip() + " " + self.resolve(bot, clientid).strip()
+                    resolved = resolved.strip() + " " + self.resolve(client_context).strip()
 
             else:
                 resolved = ""
 
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+            YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
             return resolved
 
         except Exception as excep:
-            logging.exception(excep)
+            YLogger.exception(client_context, "Failed to resolve type3 condition", excep)
             return ""

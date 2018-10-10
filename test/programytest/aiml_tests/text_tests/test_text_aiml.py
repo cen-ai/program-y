@@ -1,42 +1,45 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
 
-class BasicTestClient(TestClient):
+from programytest.client import TestClient
+
+
+class TextTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(BasicTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
+    def load_storage(self):
+        super(TextTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+
 
 class TextAIMLTests(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        TextAIMLTests.test_client = BasicTestClient()
+    def setUp(self):
+        client = TextTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_lowercase(self):
-        response = TextAIMLTests.test_client.bot.ask_question("test",  "MAKE LOWERCASE")
+        response = self._client_context.bot.ask_question(self._client_context,  "MAKE LOWERCASE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "hello world")
+        self.assertEqual(response, "Hello world.")
 
     def test_uppercase(self):
-        response = TextAIMLTests.test_client.bot.ask_question("test", "MAKE UPPERCASE")
+        response = self._client_context.bot.ask_question(self._client_context, "MAKE UPPERCASE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "HELLO WORLD")
+        self.assertEqual(response, "HELLO WORLD.")
 
 
     def test_sentence(self):
-        response = TextAIMLTests.test_client.bot.ask_question("test", "MAKE SENTENCE")
+        response = self._client_context.bot.ask_question(self._client_context, "MAKE SENTENCE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "Hello world")
+        self.assertEqual(response, "Hello world.")
 
 
     def test_formal(self):
-        response = TextAIMLTests.test_client.bot.ask_question("test", "MAKE FORMAL")
+        response = self._client_context.bot.ask_question(self._client_context, "MAKE FORMAL")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "Hello World")
+        self.assertEqual(response, "Hello World.")
 
