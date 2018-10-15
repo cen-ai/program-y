@@ -1,25 +1,28 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
 
-class BasicTestClient(TestClient):
+from programytest.client import TestClient
+
+
+class Person2TestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(BasicTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
-        self.configuration.brain_configuration.files._person2 = os.path.dirname(__file__)+ os.sep + "person2.txt"
+    def load_storage(self):
+        super(Person2TestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+        self.add_person2_store(os.path.dirname(__file__)+ os.sep + "person2.txt")
+
 
 class Person2AIMLTests(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        Person2AIMLTests.test_client = BasicTestClient()
+    def setUp(self):
+        client = Person2TestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_person2(self):
-        response = Person2AIMLTests.test_client.bot.ask_question("test",  "TEST PERSON2")
+        response = self._client_context.bot.ask_question(self._client_context,  "TEST PERSON2")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "he or she was going")
+        self.assertEqual(response, "He or she was going.")

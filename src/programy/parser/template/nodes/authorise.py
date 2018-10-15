@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.parser.template.nodes.base import TemplateNode
 from programy.parser.exceptions import ParserException
@@ -43,49 +43,40 @@ class TemplateAuthoriseNode(TemplateNode):
     def denied_srai(self, denied_srai):
         self._denied_srai = denied_srai
 
-    def resolve_to_string(self, bot, clientid):
+    def resolve_to_string(self, client_context):
         # Check if the user, role or group exists, assumption being, that if defined
         # in the tag and exists then we can execute the inner children
         # Assumption is that user has been authenticated and passed and is value
-        if bot.brain.authorisation is not None:
-            if bot.brain.authorisation.authorise(clientid, self.role) is False:
+        if client_context.brain.security.authorisation is not None:
+            if client_context.brain.security.authorisation.authorise(client_context.userid, self.role) is False:
                 if self._denied_srai is not None:
                     srai_text = self._denied_srai
                 else:
-                    srai_text = bot.brain.authorisation.get_default_denied_srai()
-                resolved = bot.ask_question(clientid, srai_text, srai=True)
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+                    srai_text = client_context.brain.security.authorisation.get_default_denied_srai()
+                resolved = client_context.bot.ask_question(client_context, srai_text, srai=True)
+                YLogger.debug(self, "[%s] resolved to [%s]", self.to_string(), resolved)
                 return resolved
 
         # Resolve afterwards, as pointless resolving before checking for authorisation
-        resolved = self.resolve_children_to_string(bot, clientid)
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+        resolved = self.resolve_children_to_string(client_context)
+        YLogger.debug(self, "[%s] resolved to [%s]", self.to_string(), resolved)
         return resolved
 
-    def resolve(self, bot, clientid):
-        try:
-            return self.resolve_to_string(bot, clientid)
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
-
     def to_string(self):
-        text = "AUTHORISE ("
+        text = "[AUTHORISE ("
         text += "role=%s"%self._role
         if self._denied_srai is not None:
             text += ", denied_srai=%s"%self._denied_srai
-        text += ")"
+        text += ")]"
         return text
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = '<authorise'
         xml += ' role="%s"' % self._role
         if self._denied_srai is not None:
             xml += ' denied_srai="%s"' % self._denied_srai
         xml += '>'
-        xml += self.children_to_xml(bot, clientid)
+        xml += self.children_to_xml(client_context)
         xml += '</authorise>'
         return xml
 

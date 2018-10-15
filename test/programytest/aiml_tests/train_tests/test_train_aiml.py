@@ -1,63 +1,62 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
+
 from programy.config.file.factory import ConfigurationFactory
-from programy.config.programy import ProgramyConfiguration
-from programy.config.sections.client.console import ConsoleConfiguration
+from programy.clients.events.console.config import ConsoleConfiguration
+
+from programytest.client import TestClient
+
 
 class TrainTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        self.configuration = ConfigurationFactory.load_configuration_from_file(ConsoleConfiguration(),
-                                                                               os.path.dirname(__file__)+ os.sep + "testconfig.yaml",
-                                                                               bot_root=os.path.dirname(__file__))
+    def load_storage(self):
+        super(TrainTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+        self.add_sets_store([os.path.dirname(__file__) + os.sep + "sets"])
+
 
 class TrainAIMLTests(unittest.TestCase):
 
-    def setUp(cls):
-        TrainAIMLTests.test_client = TrainTestClient()
+    def setUp(self):
+        client = TrainTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_train_noun(self):
-
-        TrainAIMLTests.test_client.bot.brain.dump_tree()
-
-        response = TrainAIMLTests.test_client.bot.ask_question("test", "jessica likes to smoke cigars")
+        response = self._client_context.bot.ask_question(self._client_context, "jessica likes to smoke cigars")
         self.assertIsNotNone(response)
         self.assertEqual("Do you smoke cigars too?", response)
 
-        response = TrainAIMLTests.test_client.bot.ask_question("test", "who likes to smoke cigars")
+        response = self._client_context.bot.ask_question(self._client_context, "who likes to smoke cigars")
         self.assertIsNotNone(response)
-        self.assertEqual("Jessica likes to smoke cigars", response)
+        self.assertEqual("Jessica likes to smoke cigars.", response)
 
-        response = TrainAIMLTests.test_client.bot.ask_question("test", "who likes to smoke cigars")
+        response = self._client_context.bot.ask_question(self._client_context, "who likes to smoke cigars")
         self.assertIsNotNone(response)
-        self.assertEqual("Jessica likes to smoke cigars", response)
+        self.assertEqual("Jessica likes to smoke cigars.", response)
 
-        response = TrainAIMLTests.test_client.bot.ask_question("test", "what does jessica like")
+        response = self._client_context.bot.ask_question(self._client_context, "what does jessica like")
         self.assertIsNotNone(response)
-        self.assertEqual("Jessica likes to smoke cigars", response)
+        self.assertEqual("Jessica likes to smoke cigars.", response)
 
-        response = TrainAIMLTests.test_client.bot.ask_question("test", "what does jessica smoke")
+        response = self._client_context.bot.ask_question(self._client_context, "what does jessica smoke")
         self.assertIsNotNone(response)
-        self.assertEqual("Jessica likes to smoke cigars", response)
+        self.assertEqual("Jessica likes to smoke cigars.", response)
 
-        response = TrainAIMLTests.test_client.bot.ask_question("test", "who smokes")
+        response = self._client_context.bot.ask_question(self._client_context, "who smokes")
         self.assertIsNotNone(response)
-        self.assertEqual("Jessica likes to smoke cigars", response)
+        self.assertEqual("Jessica likes to smoke cigars.", response)
 
     def test_train_pronoun(self):
-
-        TrainAIMLTests.test_client.bot.brain.dump_tree()
-
-        response = TrainAIMLTests.test_client.bot.ask_question("test", "mommy likes to smoke cigars")
+        response = self._client_context.bot.ask_question(self._client_context, "mommy likes to smoke cigars")
         self.assertIsNotNone(response)
 
-        self.assertEqual('Now you can ask me: "Who likes TO SMOKE CIGARS?" and "What does my mommy like?"', response)
+        self.assertEqual('Now you can ask me: " Who likes to smoke cigars ?" and " What does my mommy ?".', response)
 
-        response = TrainAIMLTests.test_client.bot.ask_question("test", "who likes to smoke cigars")
+        response = self._client_context.bot.ask_question(self._client_context, "who likes to smoke cigars")
         self.assertIsNotNone(response)
-        self.assertEqual("Your mommy", response)
+        self.assertEqual("Your mommy.", response)
 

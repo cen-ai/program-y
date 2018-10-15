@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -17,7 +17,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 This is an example extension that allow syou to call an external service to retreive the bank balance
 of the customer. Currently contains no authentication
 """
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.extensions.base import Extension
 
@@ -25,9 +25,8 @@ from programy.extensions.base import Extension
 class TelecomMinutesExtension(Extension):
 
     # execute() is the interface that is called from the <extension> tag in the AIML
-    def execute(self, bot, clientid, data):
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("Telecom Minutes - Calling external service for with extra data [%s]", data)
+    def execute(self, context, data):
+        YLogger.debug(context, "Telecom Minutes - Calling external service for with extra data [%s]", data)
 
         #
         # Add the logic to receive the phone minutes usage and format it into used and total

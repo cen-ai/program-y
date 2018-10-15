@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 """
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.extensions.base import Extension
 
@@ -23,14 +23,13 @@ from programy.extensions.base import Extension
 class RDFAdminExtension(Extension):
 
     # execute() is the interface that is called from the <extension> tag in the AIML
-    def execute(self, bot, clientid, data):
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("RDF Admin - [%s]", data)
+    def execute(self, client_context, data):
+        YLogger.debug(client_context, "RDF Admin - [%s]", data)
 
         rdf = ""
         segments = data.split()
         if segments[0] == 'SUBJECTS':
-            subjects = bot.brain.rdf.subjects()
+            subjects = client_context.brain.rdf.subjects()
             if segments[1] == 'LIST':
                 rdf += "<ul>"
                 for subject in subjects:
@@ -41,7 +40,7 @@ class RDFAdminExtension(Extension):
 
         elif segments[0] == "PREDICATES":
             subject = segments[1]
-            predicates = bot.brain.rdf.predicates(subject)
+            predicates = client_context.brain.rdf.predicates(subject)
             rdf += "<ul>"
             for predicate in predicates:
                 rdf += "<li>%s</li>" % predicate
@@ -50,7 +49,7 @@ class RDFAdminExtension(Extension):
         elif segments[0] == "OBJECT":
             subject = segments[1]
             predicate = segments[2]
-            objects =  bot.brain.rdf.objects(subject, predicate)
+            objects =  client_context.brain.rdf.objects(subject, predicate)
             rdf += "<ul>"
             for object in objects:
                 rdf += "<li>%s</li>" % object

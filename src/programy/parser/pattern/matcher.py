@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 import datetime
 
 class Match(object):
@@ -144,18 +144,18 @@ class MatchContext(object):
     def thatstar(self, index):
         return self._get_indexed_match_by_type(index, Match.THAT)
 
-    def list_matches(self, output_func=logging.debug, tabs="\t", include_template=True):
-        output_func("%sMatches..."%tabs)
+    def list_matches(self, client_context, output_func=YLogger.debug, tabs="\t", include_template=True):
+        output_func(client_context, "%sMatches..."%tabs)
         count = 1
         for match in self._matched_nodes:
-            output_func("%s\t%d - %s"%(tabs, count, match.to_string(self._tokenizer)))
+            output_func(client_context, "%s\t%d - %s"%(tabs, count, match.to_string(self._tokenizer)))
             count += 1
-        output_func("%sMatch score %.2f"%(tabs, self.calculate_match_score()))
+        output_func(client_context, "%sMatch score %.2f"%(tabs, self.calculate_match_score()))
         if include_template is True:
             if self.matched() is True:
-                output_func("%s\tT - %s"%(tabs, self._template_node.to_string()))
+                output_func(client_context, "%s\tT - %s"%(tabs, self._template_node.to_string()))
             else:
-                output_func("%s\tT - None"%tabs)
+                output_func(client_context, "%s\tT - None"%tabs)
 
     def calculate_match_score(self):
         wildcards = 0

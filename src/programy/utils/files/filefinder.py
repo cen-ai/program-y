@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 import os
 
 from abc import ABCMeta, abstractmethod
@@ -27,7 +27,7 @@ class FileFinder(object):
         pass
 
     @abstractmethod
-    def load_file_contents(self, filename):
+    def load_file_contents(self, id, filename, userid="*"):
         """
         Never Implemented
         """
@@ -45,37 +45,38 @@ class FileFinder(object):
                     for filename in [f for f in filenames if f.endswith(extension)]:
                         found_files.append((filename, os.path.join(dirpath, filename)))
         except FileNotFoundError:
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("No directory found [%s]", path)
+            YLogger.error(self, "No directory found [%s]", path)
 
         return sorted(found_files, key=lambda element: (element[1], element[0]))
 
-    def load_dir_contents(self, paths, subdir=False, extension=".txt"):
+    def load_dir_contents(self, paths, subdir=False, extension=".txt", filename_as_userid=False):
 
         files = self.find_files(paths, subdir, extension)
 
         collection = {}
+        file_maps = {}
         for file in files:
             just_filename = self.get_just_filename_from_filepath(file[0])
             try:
-                collection[just_filename] = self.load_file_contents(file[1])
+                if filename_as_userid is True:
+                    userid = just_filename
+                else:
+                    userid = "*"
+                collection[just_filename.upper()] = self.load_file_contents(just_filename, file[1], userid=userid)
+                file_maps[just_filename.upper()] = file[1]
             except Exception as excep:
-                logging.exception(excep)
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error("Failed to load file contents for file [%s]", file[1])
+                YLogger.exception(self, "Failed to load file contents for file [%s]", excep, file[1])
 
-        return collection
+        return collection, file_maps
 
     def load_single_file_contents(self, filename):
         just_filename = self.get_just_filename_from_filepath(filename)
 
         collection = {}
         try:
-            collection[just_filename] = self.load_file_contents(filename)
+            collection[just_filename] = self.load_file_contents(just_filename, filename)
         except Exception as excep:
-            logging.exception(excep)
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("Failed to load file contents for file [%s]", filename)
+            YLogger.exception(self, "Failed to load file contents for file [%s]", excep, filename)
 
         return collection
 
@@ -93,4 +94,4 @@ class FileFinder(object):
         else:
             filename = filename_ext
 
-        return filename.upper()
+        return filename

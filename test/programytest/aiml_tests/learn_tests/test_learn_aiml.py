@@ -1,56 +1,57 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
+
+from programytest.client import TestClient
+
 
 class LearnTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(LearnTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
+    def load_storage(self):
+        super(LearnTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+
 
 class LearnAIMLTests(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        LearnAIMLTests.test_client = LearnTestClient()
+    def setUp(self):
+        client = LearnTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_learn(self):
-        response = LearnAIMLTests.test_client.bot.ask_question("test", "MY NAME IS FRED")
+        response = self._client_context.bot.ask_question(self._client_context, "MY NAME IS FRED")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "OK, I will remember your name is FRED")
+        self.assertEqual(response, "OK, I will remember your name is FRED.")
 
-        response = LearnAIMLTests.test_client.bot.ask_question("test", "WHAT IS MY NAME")
+        response = self._client_context.bot.ask_question(self._client_context, "WHAT IS MY NAME")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "YOUR NAME IS FRED")
+        self.assertEqual(response, "YOUR NAME IS FRED.")
 
     def test_learn_x_is_y(self):
 
-        response = LearnAIMLTests.test_client.bot.ask_question("test", "LEARN THE SUN IS HOT")
+        response = self._client_context.bot.ask_question(self._client_context, "LEARN THE SUN IS HOT")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "OK, I will remember THE SUN is HOT")
+        self.assertEqual(response, "OK, I will remember THE SUN is HOT.")
 
-        response = LearnAIMLTests.test_client.bot.ask_question("test", "LEARN THE SKY IS BLUE")
+        response = self._client_context.bot.ask_question(self._client_context, "LEARN THE SKY IS BLUE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "OK, I will remember THE SKY is BLUE")
+        self.assertEqual(response, "OK, I will remember THE SKY is BLUE.")
 
-        response = LearnAIMLTests.test_client.bot.ask_question("test", "LEARN THE MOON IS GREY")
+        response = self._client_context.bot.ask_question(self._client_context, "LEARN THE MOON IS GREY")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "OK, I will remember THE MOON is GREY")
+        self.assertEqual(response, "OK, I will remember THE MOON is GREY.")
 
-        LearnAIMLTests.test_client.bot.brain.dump_tree()
-
-        response = LearnAIMLTests.test_client.bot.ask_question("test", "WHAT IS THE SUN")
+        response = self._client_context.bot.ask_question(self._client_context, "WHAT IS THE SUN")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "HOT")
+        self.assertEqual(response, "HOT.")
 
-        response = LearnAIMLTests.test_client.bot.ask_question("test", "WHAT IS THE SKY")
+        response = self._client_context.bot.ask_question(self._client_context, "WHAT IS THE SKY")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "BLUE")
+        self.assertEqual(response, "BLUE.")
 
-        response = LearnAIMLTests.test_client.bot.ask_question("test", "WHAT IS THE MOON")
+        response = self._client_context.bot.ask_question(self._client_context, "WHAT IS THE MOON")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "GREY")
+        self.assertEqual(response, "GREY.")

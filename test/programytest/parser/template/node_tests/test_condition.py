@@ -16,63 +16,63 @@ class TemplateConditionVariableTests(ParserTestsBaseClass):
         self.assertIsNotNone(var)
         self.assertIsNone(var.name)
         self.assertIsNone(var.value)
-        self.assertEquals(var.var_type, TemplateConditionVariable.GLOBAL)
+        self.assertEqual(var.var_type, TemplateConditionVariable.GLOBAL)
         self.assertFalse(var.loop)
 
     def test_init_global_as_default(self):
         var = TemplateConditionVariable(name="var1", value=TemplateWordNode("value1"))
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionVariable.GLOBAL)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionVariable.GLOBAL)
         self.assertFalse(var.loop)
 
     def test_init_global(self):
         var = TemplateConditionVariable(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionVariable.GLOBAL)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionVariable.GLOBAL)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionVariable.GLOBAL)
         self.assertFalse(var.loop)
 
     def test_init_global_with_loop(self):
         var = TemplateConditionVariable(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionVariable.GLOBAL,loop=True)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionVariable.GLOBAL)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionVariable.GLOBAL)
         self.assertTrue(var.loop)
 
     def test_init_local(self):
         var = TemplateConditionVariable(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionVariable.LOCAL)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionVariable.LOCAL)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionVariable.LOCAL)
         self.assertFalse(var.loop)
 
     def test_init_local_with_loop(self):
         var = TemplateConditionVariable(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionVariable.LOCAL, loop=True)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionVariable.LOCAL)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionVariable.LOCAL)
         self.assertTrue(var.loop)
 
     def test_init_bot(self):
         var = TemplateConditionVariable(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionVariable.BOT)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionVariable.BOT)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionVariable.BOT)
         self.assertFalse(var.loop)
 
     def test_init_bot_with_loop(self):
         var = TemplateConditionVariable(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionVariable.BOT, loop=True)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionVariable.BOT)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionVariable.BOT)
         self.assertTrue(var.loop)
 
 
@@ -83,88 +83,88 @@ class TemplateConditionListItemNodeTests(ParserTestsBaseClass):
         self.assertIsNotNone(var)
         self.assertIsNone(var.name)
         self.assertIsNone(var.value)
-        self.assertEquals(var.var_type, TemplateConditionListItemNode.GLOBAL)
+        self.assertEqual(var.var_type, TemplateConditionListItemNode.GLOBAL)
         self.assertFalse(var.loop)
         self.assertTrue(var.is_default())
-        self.assertEquals("[CONDITIONLIST]", var.to_string())
-        self.assertEquals("<li></li>", var.to_xml(self._bot, self._clientid))
+        self.assertEqual("[CONDITIONLIST]", var.to_string())
+        self.assertEqual("<li></li>", var.to_xml(self._client_context))
 
     def test_init_global_as_default(self):
         var = TemplateConditionListItemNode(name="var1", value=TemplateWordNode("value1"))
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionListItemNode.GLOBAL)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionListItemNode.GLOBAL)
         self.assertFalse(var.loop)
         self.assertFalse(var.is_default())
-        self.assertEquals("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
-        self.assertEquals('<li name="var1"><value>value1</value></li>', var.to_xml(self._bot, self._clientid))
+        self.assertEqual("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
+        self.assertEqual('<li name="var1"><value>value1</value></li>', var.to_xml(self._client_context))
 
     def test_init_global(self):
         var = TemplateConditionListItemNode(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionListItemNode.GLOBAL)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionListItemNode.GLOBAL)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionListItemNode.GLOBAL)
         self.assertFalse(var.loop)
         self.assertFalse(var.is_default())
-        self.assertEquals("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
-        self.assertEquals('<li name="var1"><value>value1</value></li>', var.to_xml(self._bot, self._clientid))
+        self.assertEqual("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
+        self.assertEqual('<li name="var1"><value>value1</value></li>', var.to_xml(self._client_context))
 
     def test_init_global_with_loop(self):
         var = TemplateConditionListItemNode(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionListItemNode.GLOBAL,loop=True)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionListItemNode.GLOBAL)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionListItemNode.GLOBAL)
         self.assertTrue(var.loop)
         self.assertFalse(var.is_default())
-        self.assertEquals("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
-        self.assertEquals('<li name="var1"><value>value1</value><loop /></li>', var.to_xml(self._bot, self._clientid))
+        self.assertEqual("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
+        self.assertEqual('<li name="var1"><value>value1</value><loop /></li>', var.to_xml(self._client_context))
 
     def test_init_local(self):
         var = TemplateConditionListItemNode(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionListItemNode.LOCAL)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionListItemNode.LOCAL)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionListItemNode.LOCAL)
         self.assertFalse(var.loop)
         self.assertFalse(var.is_default())
-        self.assertEquals("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
-        self.assertEquals('<li var="var1"><value>value1</value></li>', var.to_xml(self._bot, self._clientid))
+        self.assertEqual("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
+        self.assertEqual('<li var="var1"><value>value1</value></li>', var.to_xml(self._client_context))
 
     def test_init_local_with_loop(self):
         var = TemplateConditionListItemNode(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionListItemNode.LOCAL, loop=True)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionListItemNode.LOCAL)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionListItemNode.LOCAL)
         self.assertTrue(var.loop)
         self.assertFalse(var.is_default())
-        self.assertEquals("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
-        self.assertEquals('<li var="var1"><value>value1</value><loop /></li>', var.to_xml(self._bot, self._clientid))
+        self.assertEqual("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
+        self.assertEqual('<li var="var1"><value>value1</value><loop /></li>', var.to_xml(self._client_context))
 
     def test_init_bot(self):
         var = TemplateConditionListItemNode(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionListItemNode.BOT)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionListItemNode.BOT)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionListItemNode.BOT)
         self.assertFalse(var.loop)
         self.assertFalse(var.is_default())
-        self.assertEquals("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
-        self.assertEquals('<li bot="var1"><value>value1</value></li>', var.to_xml(self._bot, self._clientid))
+        self.assertEqual("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
+        self.assertEqual('<li bot="var1"><value>value1</value></li>', var.to_xml(self._client_context))
 
     def test_init_bot_with_loop(self):
         var = TemplateConditionListItemNode(name="var1", value=TemplateWordNode("value1"), var_type=TemplateConditionListItemNode.BOT, loop=True)
         self.assertIsNotNone(var)
-        self.assertEquals(var.name, "var1")
-        self.assertEquals(var.value.word, "value1")
-        self.assertEquals(var.var_type, TemplateConditionListItemNode.BOT)
+        self.assertEqual(var.name, "var1")
+        self.assertEqual(var.value.word, "value1")
+        self.assertEqual(var.var_type, TemplateConditionListItemNode.BOT)
         self.assertTrue(var.loop)
         self.assertFalse(var.is_default())
-        self.assertEquals("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
-        self.assertEquals('<li bot="var1"><value>value1</value><loop /></li>', var.to_xml(self._bot, self._clientid))
+        self.assertEqual("[CONDITIONLIST(var1=[WORD]value1)]", var.to_string())
+        self.assertEqual('<li bot="var1"><value>value1</value><loop /></li>', var.to_xml(self._client_context))
 
 
 class TemplateConditionNodeTests(ParserTestsBaseClass):
@@ -186,9 +186,9 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         root.append(node)
         self.assertEqual(len(root.children), 1)
 
-        self._bot.conversation(self._clientid).set_property('name1', "value1")
+        self._client_context.bot.conversation(self._client_context).set_property('name1', "value1")
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
         self.assertEqual(result, "Hello")
 
@@ -205,9 +205,9 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         root.append(node)
         self.assertEqual(len(root.children), 1)
 
-        self._bot.conversation(self._clientid).set_property('name1', "value2")
+        self._client_context.bot.conversation(self._client_context).set_property('name1', "value2")
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
         self.assertEqual(result, "")
 
@@ -217,7 +217,7 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         node.append(TemplateWordNode("Hello"))
         root.append(node)
 
-        xml = root.xml_tree(self._bot, self._clientid)
+        xml = root.xml_tree(self._client_context)
         self.assertIsNotNone(xml)
         xml_str = ET.tostring(xml, "utf-8").decode("utf-8")
         self.assertEqual('<template><condition name="name1"><value>value1</value>Hello</condition></template>', xml_str)
@@ -239,11 +239,11 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         root.append(node)
         self.assertEqual(len(root.children), 1)
 
-        question = Question.create_from_text(self._bot.brain.tokenizer, "Hello")
-        self._bot.conversation(self._clientid).record_dialog(question)
-        self._bot.conversation(self._clientid).current_question().set_property("var1", "value1")
+        question = Question.create_from_text(self._client_context, "Hello")
+        self._client_context.bot.conversation(self._client_context).record_dialog(question)
+        self._client_context.bot.conversation(self._client_context).current_question().set_property("var1", "value1")
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
         self.assertEqual(result, "Hello")
 
@@ -260,11 +260,11 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         root.append(node)
         self.assertEqual(len(root.children), 1)
 
-        question = Question.create_from_text(self._bot.brain.tokenizer, "Hello")
-        self._bot.conversation(self._clientid).record_dialog(question)
-        self._bot.conversation(self._clientid).current_question().set_property("var1", "value2")
+        question = Question.create_from_text(self._client_context, "Hello")
+        self._client_context.bot.conversation(self._client_context).record_dialog(question)
+        self._client_context.bot.conversation(self._client_context).current_question().set_property("var1", "value2")
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
         self.assertEqual(result, "")
 
@@ -274,7 +274,7 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         node.append(TemplateWordNode("Hello"))
         root.append(node)
 
-        xml = root.xml_tree(self._bot, self._clientid)
+        xml = root.xml_tree(self._client_context)
         self.assertIsNotNone(xml)
         xml_str = ET.tostring(xml, "utf-8").decode("utf-8")
         self.assertEqual('<template><condition var="name1"><value>value1</value>Hello</condition></template>', xml_str)
@@ -296,9 +296,9 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         root.append(node)
         self.assertEqual(len(root.children), 1)
 
-        self._bot.brain.properties.add_property('name1', "value1")
+        self._client_context.brain.properties.add_property('name1', "value1")
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
         self.assertEqual(result, "Hello")
 
@@ -315,9 +315,9 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         root.append(node)
         self.assertEqual(len(root.children), 1)
 
-        self._bot.brain.properties.add_property('name1', "value2")
+        self._client_context.brain.properties.add_property('name1', "value2")
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
         self.assertEqual(result, "")
 
@@ -327,7 +327,7 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         node.append(TemplateWordNode("Hello"))
         root.append(node)
 
-        xml = root.xml_tree(self._bot, self._clientid)
+        xml = root.xml_tree(self._client_context)
         self.assertIsNotNone(xml)
         xml_str = ET.tostring(xml, "utf-8").decode("utf-8")
         self.assertEqual('<template><condition bot="name1"><value>value1</value>Hello</condition></template>', xml_str)
@@ -357,13 +357,13 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         root.append(node)
         self.assertEqual(len(root.children), 1)
 
-        self._bot.conversation(self._clientid).set_property('cond1', "value2")
+        self._client_context.bot.conversation(self._client_context).set_property('cond1', "value2")
 
-        question = Question.create_from_text(self._bot.brain.tokenizer, "Hello")
-        self._bot.conversation(self._clientid).record_dialog(question)
-        self._bot.conversation(self._clientid).current_question().set_property("cond1", "value2")
+        question = Question.create_from_text(self._client_context, "Hello")
+        self._client_context.bot.conversation(self._client_context).record_dialog(question)
+        self._client_context.bot.conversation(self._client_context).current_question().set_property("cond1", "value2")
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
         self.assertEqual("Word2", result)
 
@@ -384,7 +384,7 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
 
         root.append(node)
 
-        xml = root.xml_tree(self._bot, self._clientid)
+        xml = root.xml_tree(self._client_context)
         self.assertIsNotNone(xml)
         xml_str = ET.tostring(xml, "utf-8").decode("utf-8")
         self.assertEqual('<template><condition name="cond1"><li><value>value1</value>Word1</li> <li><value>value2</value>Word2</li> <li>Word3</li></condition></template>', xml_str)
@@ -414,11 +414,11 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         root.append(node)
         self.assertEqual(len(root.children), 1)
 
-        question = Question.create_from_text(self._bot.brain.tokenizer, "Hello")
-        self._bot.conversation(self._clientid).record_dialog(question)
-        self._bot.conversation(self._clientid).current_question().set_property("var1", "value2")
+        question = Question.create_from_text(self._client_context, "Hello")
+        self._client_context.bot.conversation(self._client_context).record_dialog(question)
+        self._client_context.bot.conversation(self._client_context).current_question().set_property("var1", "value2")
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
         self.assertEqual("Word2", result)
 
@@ -442,7 +442,7 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
 
         root.append(node)
 
-        xml = root.xml_tree(self._bot, self._clientid)
+        xml = root.xml_tree(self._client_context)
         self.assertIsNotNone(xml)
         xml_str = ET.tostring(xml, "utf-8").decode("utf-8")
         self.assertEqual('<template><condition var="var1"><li><value>value1</value>Word1</li> <li><value>value2</value>Word2</li> <li>Word3</li></condition></template>', xml_str)
@@ -472,9 +472,9 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         root.append(node)
         self.assertEqual(len(root.children), 1)
 
-        self._bot.brain.properties.add_property('cond1', "value2")
+        self._client_context.brain.properties.add_property('cond1', "value2")
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
         self.assertEqual("Word2", result)
 
@@ -495,7 +495,7 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
 
         root.append(node)
 
-        xml = root.xml_tree(self._bot, self._clientid)
+        xml = root.xml_tree(self._client_context)
         self.assertIsNotNone(xml)
         xml_str = ET.tostring(xml, "utf-8").decode("utf-8")
         self.assertEqual('<template><condition bot="cond1"><li><value>value1</value>Word1</li> <li><value>value2</value>Word2</li> <li>Word3</li></condition></template>', xml_str)
@@ -531,17 +531,17 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
         root.append(node)
         self.assertEqual(len(root.children), 1)
 
-        self._bot.conversation(self._clientid).set_property('name1', "value1")
-        self._bot.brain.properties.add_property('name3', "value3")
+        self._client_context.bot.conversation(self._client_context).set_property('name1', "value1")
+        self._client_context.brain.properties.add_property('name3', "value3")
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
         self.assertEqual("Word1", result)
 
-        self._bot.conversation(self._clientid).set_property('name1', "value2")
+        self._client_context.bot.conversation(self._client_context).set_property('name1', "value2")
 
-        self._bot.brain.properties.add_property('name3', "value3")
-        result = root.resolve(self._bot, self._clientid)
+        self._client_context.brain.properties.add_property('name3', "value3")
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
         self.assertEqual("Word3", result)
 
@@ -569,7 +569,7 @@ class TemplateConditionNodeTests(ParserTestsBaseClass):
 
         root.append(node)
 
-        xml = root.xml_tree(self._bot, self._clientid)
+        xml = root.xml_tree(self._client_context)
         self.assertIsNotNone(xml)
         xml_str = ET.tostring(xml, "utf-8").decode("utf-8")
         self.assertEqual('<template><condition><li name="name1"><value>value1</value>Word1</li> <li var="name2"><value>value1</value>Word2</li> <li bot="name3"><value>value3</value>Word3</li> <li name="name4">Word4</li></condition></template>', xml_str)

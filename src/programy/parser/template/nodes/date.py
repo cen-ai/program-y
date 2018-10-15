@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 import datetime
 
 from programy.parser.exceptions import ParserException
@@ -31,31 +31,23 @@ class TemplateDateNode(TemplateAttribNode):
         else:
             self._format = date_format
 
-    def resolve_to_string(self, bot, clientid):
+    def resolve_to_string(self, client_context):
         time_now = datetime.datetime.now()
         resolved = time_now.strftime(self._format)
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+        YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
         return resolved
 
-    def resolve(self, bot, clientid):
-        try:
-            return self.resolve_to_string(bot, clientid)
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
-
     def to_string(self):
-        return "DATE format=%s" % (self._format)
+        return "[DATE format=%s]" % (self._format)
 
     def set_attrib(self, attrib_name, attrib_value):
         if attrib_name != 'format':
             raise ParserException("Invalid attribute name %s for this node" % (attrib_name))
         self._format = attrib_value
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = '<date format="%s" >' % self._format
-        xml += self.children_to_xml(bot, clientid)
+        xml += self.children_to_xml(client_context)
         xml += "</date>"
         return xml
 

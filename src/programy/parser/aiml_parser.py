@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -21,16 +21,14 @@ import re
 from programy.utils.parsing.linenumxml import LineNumberingParser
 import xml.etree.ElementTree as ET
 
+from programy.utils.logging.ylogger import YLogger
 from programy.parser.exceptions import ParserException, DuplicateGrammarException
-from programy.config.sections.brain.brain import BrainConfiguration
 from programy.parser.pattern.graph import PatternGraph
 from programy.parser.template.graph import TemplateGraph
 from programy.utils.files.filefinder import FileFinder
 from programy.dialog.dialog import Sentence
 from programy.parser.pattern.matcher import MatchContext
-from programy.utils.files.filewriter import ErrorsFileWriter
-from programy.utils.files.filewriter import DuplicatesFileWriter
-
+from programy.storage.factory import StorageFactory
 
 class AIMLLoader(FileFinder):
     
@@ -38,12 +36,11 @@ class AIMLLoader(FileFinder):
         FileFinder.__init__(self)
         self._aiml_parser = aiml_parser
 
-    def load_file_contents(self, filename):
+    def load_file_contents(self, id, filename, userid="*"):
         try:
-            return self._aiml_parser.parse_from_file(filename)
+            return self._aiml_parser.parse_from_file(filename, userid=userid)
         except Exception as excep:
-            logging.exception("Failed to load contents of file from [%s]", filename)
-            logging.exception(excep)
+            YLogger.exception(self, "Failed to load contents of file from [%s]", excep, filename)
 
 
 class AIMLParser(object):
@@ -52,18 +49,28 @@ class AIMLParser(object):
 
     def __init__(self, brain):
         self._brain = brain
-        self._pattern_parser = PatternGraph(aiml_parser=self)
-        self._template_parser = TemplateGraph(aiml_parser=self)
-        self._aiml_loader = AIMLLoader(self)
+        self._pattern_parser = self.create_pattern_graph()
+        self._template_parser = self.create_template_graph()
+        self._aiml_loader = self.create_aiml_loader()
         self._num_categories = 0
         self._duplicates = None
         self._errors = None
+
+    def create_pattern_graph(self):
+        return PatternGraph(aiml_parser=self)
+
+    def create_template_graph(self):
+        return TemplateGraph(aiml_parser=self)
+
+    def create_aiml_loader(self):
+        return AIMLLoader(self)
 
     def __getstate__(self):
         # We don't need to pickle the File Writes for duplicates and errors,
         # __getstate__ is called during the pickling process to determin whih
         # attributes to load, so we remove the ones we don't want pickling
         d = dict(self.__dict__)
+        del d['_brain']
         if '_errors' in d:
             del d['_errors']
         if '_duplicates' in d:
@@ -86,83 +93,64 @@ class AIMLParser(object):
     def template_parser(self):
         return self._template_parser
 
-    def create_debug_storage(self, brain_configuration):
-        if brain_configuration.files.aiml_files.errors is not None:
-            self._errors = ErrorsFileWriter(brain_configuration.files.aiml_files.errors)
-        if brain_configuration.files.aiml_files.duplicates is not None:
-            self._duplicates = DuplicatesFileWriter(brain_configuration.files.aiml_files.duplicates)
+    def load_files_from_directory(self, configuration):
 
-    def save_debug_files(self, brain_configuration):
-
-        if brain_configuration.files.aiml_files.errors is not None:
-            num_errors = self._errors.save_content()
-            if num_errors > 0:
-                print("WARNING:%d errors detected"%num_errors)
-                self._errors.print_content()
-
-        if brain_configuration.files.aiml_files.duplicates is not None:
-            num_dupes = self._duplicates.save_content()
-            if num_dupes > 0:
-                print("WARNING: %d duplicated grammars detected"%num_dupes)
-                self._duplicates.print_content()
-
-    def display_debug_info(self, brain_configuration):
-        if self._errors is not None:
-            self._errors.display_debug_info()
-        if self._duplicates is not None:
-            self._duplicates.display_debug_info()
-
-    def load_files_from_directory(self, brain_configuration):
         start = datetime.datetime.now()
         total_aimls_loaded = 0
-        for file in brain_configuration.files.aiml_files.files:
+
+        for file in configuration.files.aiml_files.files:
             aimls_loaded = self._aiml_loader.load_dir_contents(file,
-                                                               brain_configuration.files.aiml_files.directories,
-                                                               brain_configuration.files.aiml_files.extension)
+                                                               configuration.files.aiml_files.directories,
+                                                               configuration.files.aiml_files.extension,
+                                                               filename_as_userid=False)
             total_aimls_loaded = len(aimls_loaded)
+
         stop = datetime.datetime.now()
         diff = stop - start
-        if logging.getLogger().isEnabledFor(logging.INFO):
-            logging.info("Total processing time %.6f secs", diff.total_seconds())
-            logging.info("Loaded a total of %d aiml files with %d categories", total_aimls_loaded, self.num_categories)
+
+        YLogger.info(self, "Total processing time %.6f secs", diff.total_seconds())
+        YLogger.info(self, "Loaded a total of %d aiml files with %d categories", total_aimls_loaded, self.num_categories)
         if diff.total_seconds() > 0:
-            if logging.getLogger().isEnabledFor(logging.INFO):
-                logging.info("Thats approx %f aiml files per sec", total_aimls_loaded / diff.total_seconds())
+            YLogger.info(self, "Thats approx %f aiml files per sec", total_aimls_loaded / diff.total_seconds())
 
-    def load_single_file(self, brain_configuration):
+    def load_learnf_files_from_directory(self, configuration):
+
+        if configuration.defaults.learnf_path is not None:
+            aimls_loaded = self._aiml_loader.load_dir_contents(configuration.defaults.learnf_path,
+                                                               False,
+                                                               configuration.files.aiml_files.extension,
+                                                               filename_as_userid=True)
+            total_aimls_loaded = len(aimls_loaded)
+
+            YLogger.info(self, "Loaded a total of %d learnf aiml files", total_aimls_loaded)
+
+    def load_single_file(self, configuration):
         start = datetime.datetime.now()
-        self._aiml_loader.load_single_file_contents(brain_configuration.files.aiml_files.file)
+        self._aiml_loader.load_single_file_contents(configuration.files.aiml_files.file)
         stop = datetime.datetime.now()
         diff = stop - start
-        if logging.getLogger().isEnabledFor(logging.INFO):
-            logging.info("Total processing time %.6f secs", diff.total_seconds())
-            logging.info("Loaded a single aiml file with %d categories", self.num_categories)
+        YLogger.info(self, "Total processing time %.6f secs", diff.total_seconds())
+        YLogger.info(self, "Loaded a single aiml file with %d categories", self.num_categories)
 
-    def load_aiml(self, brain_configuration: BrainConfiguration):
+    def empty(self):
+        self._pattern_parser.empty()
 
-        if brain_configuration.files.aiml_files is not None:
+    def load_aiml(self):
 
-            self.create_debug_storage(brain_configuration)
+        self.create_debug_storage()
 
-            if brain_configuration.files.aiml_files.has_multiple_files():
-                self.load_files_from_directory(brain_configuration)
-
-            elif brain_configuration.files.aiml_files.has_single_file():
-                self.load_single_file(brain_configuration)
-
-            else:
-                if logging.getLogger().isEnabledFor(logging.INFO):
-                    logging.info("No AIML files or file defined in configuration to load")
-
-            self.save_debug_files(brain_configuration)
-
-            self.display_debug_info(brain_configuration)
-
+        if self.brain.bot.client.storage_factory.entity_storage_engine_available(StorageFactory.CATEGORIES) is True:
+            storage_engine = self.brain.bot.client.storage_factory.entity_storage_engine(StorageFactory.CATEGORIES)
+            category_store = storage_engine.category_store()
+            category_store.load_all(self)
         else:
-            if logging.getLogger().isEnabledFor(logging.INFO):
-                logging.info("No AIML files or file defined in configuration to load")
+            YLogger.error(None, "No category storage defined, no aiml loaded!")
 
-    def tag_and_namespace_from_text(self, text):
+        self.save_debug_files()
+        self.display_debug_info()
+
+    @staticmethod
+    def tag_and_namespace_from_text(text):
         # If there is a namespace, then it looks something like
         # {http://alicebot.org/2001/AIML}aiml
         if AIMLParser.RE_PATTERN_OF_TAG_AND_NAMESPACE_FROM_TEXT.match(text) is None:
@@ -177,16 +165,13 @@ class AIMLParser(object):
             return tag_name, namespace
         return None, None
 
-    def tag_from_text(self, text):
-        tag, _ = self.tag_and_namespace_from_text(text)
-        return tag
-
-    def check_aiml_tag(self, aiml, filename=None):
+    @staticmethod
+    def check_aiml_tag(aiml, filename=None):
         # Null check just to be sure
         if aiml is None:
             raise ParserException("Null root tag", filename=filename)
 
-        tag_name, namespace = self.tag_and_namespace_from_text(aiml.tag)
+        tag_name, namespace = AIMLParser.tag_and_namespace_from_text(aiml.tag)
 
         # Then if check is just <aiml>, thats OK
         if tag_name != 'aiml':
@@ -194,33 +179,28 @@ class AIMLParser(object):
 
         return tag_name, namespace
 
-    def parse_from_file(self, filename):
+    def parse_from_file(self, filename, userid="*"):
         """
         Parse an AIML file and return all the cateogeries found in the file
         :param filename: Name of file to parse
         :return list of categories parsed from file:
         """
-        if logging.getLogger().isEnabledFor(logging.INFO):
-            logging.info("Loading aiml file: " + filename)
+        YLogger.info(self, "Loading aiml file: " + filename)
 
         try:
             tree = ET.parse(filename, parser=LineNumberingParser())
             aiml = tree.getroot()
 
-            _, namespace = self.check_aiml_tag(aiml, filename=filename)
+            _, namespace = AIMLParser.check_aiml_tag(aiml, filename=filename)
 
             start = datetime.datetime.now()
-            num_categories = self.parse_aiml(aiml, namespace, filename)
+            num_categories = self.parse_aiml(aiml, namespace, filename, userid=userid)
             stop = datetime.datetime.now()
             diff = stop - start
-            if logging.getLogger().isEnabledFor(logging.INFO):
-                logging.info("Processed %s with %d categories in %f.2 secs", filename, num_categories, diff.total_seconds())
+            YLogger.info(self, "Processed %s with %d categories in %f.2 secs", filename, num_categories, diff.total_seconds())
 
         except Exception as excep:
-            logging.exception(excep)
-            if logging.getLogger().isEnabledFor(logging.ERROR):
-                logging.error("Failed to load contents of AIML file from [%s] - [%s]", filename, excep)
-
+            YLogger.exception(self, "Failed to load contents of AIML file from [%s]", excep, filename)
 
     def parse_from_text(self, text):
         """
@@ -231,7 +211,7 @@ class AIMLParser(object):
 
         aiml = ET.fromstring(text)
 
-        _, namespace = self.check_aiml_tag(aiml)
+        _, namespace = AIMLParser.check_aiml_tag(aiml)
 
         self.parse_aiml(aiml, namespace)
 
@@ -250,12 +230,37 @@ class AIMLParser(object):
     #   </aiml>
     #
 
+    def create_debug_storage(self):
+        if self.brain.configuration.debugfiles.save_errors is True:
+            self._errors = []
+        if self.brain.configuration.debugfiles.save_duplicates is True:
+            self._duplicates = []
+
+    def save_debug_files(self):
+        if self.brain.configuration.debugfiles.save_errors is True:
+            if self.brain.bot.client.storage_factory.entity_storage_engine_available(StorageFactory.ERRORS) is True:
+                storage_engine = self.brain.bot.client.storage_factory.entity_storage_engine(StorageFactory.ERRORS)
+                errors_store = storage_engine.errors_store()
+                errors_store.save_errors(self._errors)
+
+        if self.brain.configuration.debugfiles.save_duplicates is True:
+            if self.brain.bot.client.storage_factory.entity_storage_engine_available(StorageFactory.DUPLICATES) is True:
+                storage_engine = self.brain.bot.client.storage_factory.entity_storage_engine(StorageFactory.DUPLICATES)
+                duplicates_store = storage_engine.duplicates_store()
+                duplicates_store.save_duplicates(self._duplicates)
+
+    def display_debug_info(self):
+        if self._errors is not None:
+            print("Found a total of %d errors in your grammars, check your errors store" % len(self._errors))
+        if self._duplicates is not None:
+            print("Found a total of %d duplicates in your grammars, check your duplicates store" % len(self._duplicates))
+
     def handle_aiml_duplicate(self, dupe_excep, filename, expression):
         if self._duplicates is not None:
             if logging.getLogger().isEnabledFor(logging.ERROR):
                 dupe_excep.filename = filename
                 msg = dupe_excep.format_message()
-                logging.error(msg)
+                YLogger.error(self, msg)
 
             startline = None
             if hasattr(expression, "_start_line_number"):
@@ -265,14 +270,14 @@ class AIMLParser(object):
             if hasattr(expression, "_end_line_number"):
                 endline = str(expression._end_line_number)
 
-            self._duplicates.save_entry(dupe_excep.message, filename, startline, endline)
+            self._duplicates.append([dupe_excep.message, filename, startline, endline])
 
     def handle_aiml_error(self, parser_excep, filename, expression):
         if self._errors is not None:
             if logging.getLogger().isEnabledFor(logging.ERROR):
                 parser_excep.filename = filename
                 msg = parser_excep.format_message()
-                logging.error(msg)
+                YLogger.error(self, msg)
 
             startline = None
             if hasattr(expression, "_start_line_number"):
@@ -282,9 +287,9 @@ class AIMLParser(object):
             if hasattr(expression, "_end_line_number"):
                 endline = str(expression._end_line_number)
 
-            self._errors.save_entry(parser_excep.message, filename, startline, endline)
+            self._errors.append([parser_excep.message, filename, startline, endline])
 
-    def parse_aiml(self, aiml_xml, namespace, filename=None):
+    def parse_aiml(self, aiml_xml, namespace, filename=None, userid="*"):
         self.parse_version(aiml_xml)
 
         categories_found = False
@@ -305,7 +310,7 @@ class AIMLParser(object):
 
             elif tag_name == 'category':
                 try:
-                    self.parse_category(expression, namespace)
+                    self.parse_category(expression, namespace, userid=userid)
                     categories_found = True
                     num_category += 1
 
@@ -319,8 +324,7 @@ class AIMLParser(object):
                 raise ParserException("Unknown top level tag, %s" % expression.tag, xml_element=expression)
 
         if categories_found is False:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("no categories in aiml file")
+            YLogger.warning(self, "no categories in aiml file")
 
         return num_category
 
@@ -333,11 +337,9 @@ class AIMLParser(object):
         if 'version' in aiml.attrib:
             version = aiml.attrib['version']
             if version not in ['0.9', '1.0', '1.1', '2.0']:
-                if logging.getLogger().isEnabledFor(logging.WARNING):
-                    logging.warning("Version number not a supported version: %s", version)
+                YLogger.warning(self, "Version number not a supported version: %s", version)
         else:
-            if logging.getLogger().isEnabledFor(logging.WARNING):
-                logging.warning("No version info, defaulting to 2.0")
+            YLogger.warning(self, "No version info, defaulting to 2.0")
             version = "2.0"
         return version
 
@@ -364,8 +366,7 @@ class AIMLParser(object):
             if name is None or not name:
                 raise ParserException("Topic name empty or null", xml_element=topic_element)
             xml = "<topic>%s</topic>" % name
-            if logging.getLogger().isEnabledFor(logging.INFO):
-                logging.info("Topic attrib converted to %s", xml)
+            YLogger.info(self, "Topic attrib converted to %s", xml)
             topic_pattern = ET.fromstring(xml)
         else:
             raise ParserException("Missing name attribute for topic", xml_element=topic_element)
@@ -437,7 +438,7 @@ class AIMLParser(object):
         else:
             return patterns[0]
 
-    def parse_category(self, category_xml, namespace, topic_element=None, add_to_graph=True):
+    def parse_category(self, category_xml, namespace, topic_element=None, add_to_graph=True, userid="*"):
 
         topic_element = self.find_topic(category_xml, namespace, topic_element)
 
@@ -448,39 +449,37 @@ class AIMLParser(object):
         pattern = self.get_pattern(category_xml, namespace)
 
         if add_to_graph is True:
-            self._pattern_parser.add_pattern_to_graph(pattern, topic_element, that_element, template_graph_root)
+            self._pattern_parser.add_pattern_to_graph(pattern, topic_element, that_element, template_graph_root, userid=userid)
             self._num_categories += 1
 
         return (pattern, topic_element, that_element, template_graph_root)
 
-    def match_sentence(self, bot, clientid, pattern_sentence, topic_pattern, that_pattern):
+    def match_sentence(self, client_context, pattern_sentence, topic_pattern, that_pattern):
 
-        topic_sentence = Sentence(bot.brain.tokenizer, topic_pattern)
-        that_sentence = Sentence(bot.brain.tokenizer, that_pattern)
+        topic_sentence = Sentence(client_context.brain.tokenizer, topic_pattern)
+        that_sentence = Sentence(client_context.brain.tokenizer, that_pattern)
 
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("AIML Parser matching sentence [%s], topic=[%s], that=[%s] ",
+        YLogger.debug(client_context, "AIML Parser matching sentence [%s], topic=[%s], that=[%s] ",
                           pattern_sentence.text(), topic_pattern, that_pattern)
 
-        sentence = Sentence(bot.brain.tokenizer)
+        sentence = Sentence(client_context.brain.tokenizer)
         sentence.append_sentence(pattern_sentence)
         sentence.append_word('__TOPIC__')
         sentence.append_sentence(topic_sentence)
         sentence.append_word('__THAT__')
         sentence.append_sentence(that_sentence)
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("Matching [%s]", sentence.words_from_current_pos(0))
+        YLogger.debug(client_context, "Matching [%s]", sentence.words_from_current_pos(0))
 
-        context = MatchContext(max_search_depth=bot.configuration.max_search_depth,
-                               max_search_timeout=bot.configuration.max_search_timeout,
-                               tokenizer=bot.brain.tokenizer)
+        context = MatchContext(max_search_depth=client_context.bot.configuration.max_search_depth,
+                               max_search_timeout=client_context.bot.configuration.max_search_timeout,
+                               tokenizer=client_context.brain.tokenizer)
 
-        template = self._pattern_parser._root_node.match(bot, clientid, context, sentence)
+        template = self._pattern_parser._root_node.match(client_context, context, sentence)
 
         if template is not None:
             context._template_node = template
 
-            context.list_matches()
+            context.list_matches(client_context)
 
             # Save the matched context for the associated sentence
             pattern_sentence.matched_context = context

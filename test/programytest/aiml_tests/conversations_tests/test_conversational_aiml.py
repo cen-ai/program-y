@@ -1,27 +1,29 @@
 import unittest
 import os
 
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
+from programytest.client import TestClient
 
 class ConversationalTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(ConversationalTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
+    def load_storage(self):
+        super(ConversationalTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
+
 
 class ConversationalAIMLTests(unittest.TestCase):
 
     def setUp(self):
-        ConversationalAIMLTests.test_client = ConversationalTestClient()
+        client = ConversationalTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_basic_conversational(self):
-        response = ConversationalAIMLTests.test_client.bot.ask_question("test",  "HELLO")
-        self.assertEqual(response, 'HELLO, WORLD')
+        response = self._client_context.bot.ask_question(self._client_context,  "HELLO")
+        self.assertEqual(response, 'HELLO, WORLD.')
 
-        response = ConversationalAIMLTests.test_client.bot.ask_question("test", "GOODBYE")
-        self.assertEqual(response, 'SEE YA')
+        response = self._client_context.bot.ask_question(self._client_context, "GOODBYE")
+        self.assertEqual(response, 'SEE YA.')
 

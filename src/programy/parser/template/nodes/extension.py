@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.utils.classes.loader import ClassLoader
 from programy.parser.template.nodes.base import TemplateNode
@@ -39,32 +39,24 @@ class TemplateExtensionNode(TemplateNode):
     def path(self, path):
         self._path = path
 
-    def resolve_to_string(self, bot, clientid):
-        data = self.resolve_children_to_string(bot, clientid)
+    def resolve_to_string(self, client_context):
+        data = self.resolve_children_to_string(client_context)
 
         new_class = ClassLoader.instantiate_class(self._path)
         instance = new_class()
-        resolved = instance.execute(bot, clientid, data)
+        resolved = instance.execute(client_context, data)
 
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+        YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
         return resolved
 
-    def resolve(self, bot, clientid):
-        try:
-            return self.resolve_to_string(bot, clientid)
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
-
     def to_string(self):
-        return "EXTENSION (%s)" % self._path
+        return "[EXTENSION (%s)]" % self._path
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = '<extension'
         xml += ' path="%s"' % self._path
         xml += '>'
-        xml += self.children_to_xml(bot, clientid)
+        xml += self.children_to_xml(client_context)
         xml += '</extension>'
         return xml
 

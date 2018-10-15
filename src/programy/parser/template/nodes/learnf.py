@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,62 +15,39 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 import os
 import xml.etree.ElementTree as ET
 
 from programy.parser.template.nodes.learn import TemplateLearnNode
-
+from programy.storage.factory import StorageFactory
 
 class TemplateLearnfNode(TemplateLearnNode):
 
     def __init__(self):
         TemplateLearnNode.__init__(self)
 
-    def resolve_to_string(self, bot, clientid):
+    def resolve_to_string(self, client_context):
         for category in self.children:
-            new_node = self._create_new_category(bot, clientid, category)
-            self.write_learnf_to_file(bot, clientid, new_node)
+            new_node = self._create_new_category(client_context, category)
+            self.save_learnf(client_context, new_node)
         return ""
 
-    def resolve(self, bot, clientid):
-        try:
-            return self.resolve_to_string(bot, clientid)
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
-
     def to_string(self):
-        return "LEARNF"
+        return "[LEARNF]"
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = "<learnf>"
-        xml += self.children_to_xml(bot, clientid)
+        xml += self.children_to_xml(client_context)
         xml += "</learnf>"
         return xml
 
-    def write_learnf_to_file(self, bot, clientid, category):
-        learnf_path = bot.brain.configuration.defaults.learn_filename
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("Writing learnf to %s", learnf_path)
+    def save_learnf(self, client_context, category):
 
-        if os.path.isfile(learnf_path) is False:
-            file = open(learnf_path, "w+", encoding="utf-8")
-            file.write('<?xml version="1.0" encoding="UTF-8"?>\n')
-            file.write('<aiml>\n')
-            file.write('</aiml>\n')
-            file.close()
+        if client_context.bot.client.storage_factory.entity_storage_engine_available(StorageFactory.LEARNF) is True:
+            YLogger.info(self, "Saving binary brain to [%s]", StorageFactory.LEARNF)
 
-        tree = ET.parse(learnf_path)
-        root = tree.getroot()
+            storage_engine = client_context.bot.client.storage_factory.entity_storage_engine(StorageFactory.LEARNF)
+            learnf_storage = storage_engine.learnf_soteage()
 
-        # Add our new element
-        child = ET.Element("category")
-        child.append(category.pattern)
-        child.append(category.topic)
-        child.append(category.that)
-        child.append(category.template.xml_tree(bot, clientid))
-
-        root.append(child)
-
-        tree.write(learnf_path, method="xml")
+            learnf_storage.save_learnf(self, client_context, category)

@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.parser.template.nodes.triple import TemplateTripleNode
 from programy.parser.exceptions import ParserException
@@ -26,30 +26,22 @@ class TemplateDeleteTripleNode(TemplateTripleNode):
     def __init__(self, subj=None, pred=None, obj=None):
         TemplateTripleNode.__init__(self, node_name="deletetriple", subj=subj, pred=pred, obj=obj)
 
-    def resolve_to_string(self, bot, clientid):
-        rdf_subject = self._subj.resolve(bot, clientid)
-        rdf_predicate = self._pred.resolve(bot, clientid)
-        rdf_object = self._obj.resolve(bot, clientid)
+    def resolve_to_string(self, client_context):
+        rdf_subject = self._subj.resolve(client_context)
+        rdf_predicate = self._pred.resolve(client_context)
+        rdf_object = self._obj.resolve(client_context)
 
         resolved = ""
-        bot.brain.rdf.delete_entity(rdf_subject, rdf_predicate, rdf_object)
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("[%s] resolved to [%s]", self.to_string(), resolved)
+        client_context.brain.rdf.delete_entity(rdf_subject, rdf_predicate, rdf_object)
+        YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
         return resolved
 
-    def resolve(self, bot, clientid):
-        try:
-            return self.resolve_to_string(bot, clientid)
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
-
     def to_string(self):
-        return "DELETETRIPLE"
+        return "[DELETETRIPLE]"
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = "<deletetriple>"
-        xml += self.children_to_xml(bot, clientid)
+        xml += self.children_to_xml(client_context)
         xml += "</deletetriple>"
         return xml
 
@@ -63,9 +55,7 @@ class TemplateDeleteTripleNode(TemplateTripleNode):
             raise ParserException("<%s> node missing subject attribue/element"%self.node_name)
 
         if  self._pred is None:
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("<%s> node missing predicate attribue/element"%self.node_name)
+            YLogger.debug(self, "<%s> node missing predicate attribue/element", self.node_name)
 
         if self._obj is None:
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("<%s> node missing object attribue/element"%self.node_name)
+            YLogger.debug(self, "<%s> node missing object attribue/element", self.node_name)

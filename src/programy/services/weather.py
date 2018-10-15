@@ -16,7 +16,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 """
 import logging
 from programy.services.service import Service
-from programy.config.sections.brain.service import BrainServiceConfiguration
+from programy.config.brain.service import BrainServiceConfiguration
 from programy.services.requestsapi import RequestsAPI
 import json
 

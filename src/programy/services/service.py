@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,10 +15,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 from abc import ABCMeta, abstractmethod
 from programy.utils.classes.loader import ClassLoader
-from programy.config.sections.brain.service import BrainServiceConfiguration
+from programy.config.brain.service import BrainServiceConfiguration
 
 
 class Service(object):
@@ -35,7 +35,7 @@ class Service(object):
         pass
 
     @abstractmethod
-    def ask_question(self, bot, clientid: str, question: str):
+    def ask_question(self, client_context, question: str):
         """
         Never knowingly Implemented
         """
@@ -51,8 +51,7 @@ class ServiceFactory(object):
         for service_name in services_config.services():
             name = service_name.upper()
             service_config = services_config.service(service_name)
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("Preloading service [%s] -> [%s]", name, service_config.classname)
+            YLogger.debug(None, "Preloading service [%s] -> [%s]", name, service_config.classname)
             meta_class = loader.instantiate_class(service_config.classname)
             new_class = meta_class(service_config)
             ServiceFactory.services[name] = new_class

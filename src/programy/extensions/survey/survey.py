@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -17,20 +17,18 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 This is an example extension that allow you to call an external service to save the results of a survey
 Currently contains no authentication
 """
-import logging
+from programy.utils.logging.ylogger import YLogger
 from programy.extensions.base import Extension
 
 
 class SurveyExtension(Extension):
 
     # execute() is the interface that is called from the <extension> tag in the AIML
-    def execute(self, bot, clientid, data):
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("Survey Storage - Storing data [%s]", data)
+    def execute(self, context, data):
+        YLogger.debug(context, "Survey Storage - Storing data [%s]", data)
 
         # Data is bar delimited, so you could write to a file, add to a database, or send to another REST service
         for answer in data.split("|"):
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("Answer = %s", answer.strip())
+            YLogger.debug(context, "Answer = %s", answer.strip())
 
         return "OK"

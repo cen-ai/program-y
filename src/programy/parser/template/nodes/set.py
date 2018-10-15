@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.parser.template.nodes.base import TemplateNode
 from programy.parser.exceptions import ParserException
@@ -44,57 +44,45 @@ class TemplateSetNode(TemplateNode):
     def local(self, local):
         self._local = local
 
-    def resolve_children(self, bot, clientid):
+    def resolve_children(self, client_context):
         if self._children:
-            return self.resolve_children_to_string(bot, clientid)
+            return self.resolve_children_to_string(client_context)
         return ""
 
-    def resolve_to_string(self, bot, clientid):
-        name = self.name.resolve(bot, clientid)
-        value = self.resolve_children(bot, clientid)
+    def resolve_to_string(self, client_context):
+
+        conversation = client_context.bot.get_conversation(client_context)
+        name = self.name.resolve(client_context)
+        value = self.resolve_children(client_context)
 
         if self.local is True:
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                logging.debug("[%s] resolved to local: [%s] => [%s]", self.to_string(), name, value)
-            bot.get_conversation(clientid).current_question().set_property(name, value)
+            YLogger.debug(client_context, "[%s] resolved to local: [%s] => [%s]", self.to_string(), name, value)
+            conversation.current_question().set_property(name, value)
         else:
-            if bot.override_properties is False and bot.brain.properties.has_property(name):
-                if logging.getLogger().isEnabledFor(logging.ERROR):
-                    logging.error("Global property already exists for name [%s], ignoring set!", name)
-                value = bot.brain.properties.property(name)
+            if client_context.bot.override_properties is False and client_context.brain.properties.has_property(name):
+                YLogger.error(client_context, "Global property already exists for name [%s], ignoring set!", name)
+                value = client_context.brain.properties.property(name)
             else:
-                if bot.brain.properties.has_property(name):
-                    if logging.getLogger().isEnabledFor(logging.WARNING):
-                        logging.warning("Global property already exists for name [%s], over writing!", name)
-                if logging.getLogger().isEnabledFor(logging.DEBUG):
-                    logging.debug("[%s] resolved to global: [%s] => [%s]", self.to_string(), name, value)
-                bot.get_conversation(clientid).set_property(name, value)
+                if client_context.brain.properties.has_property(name):
+                    YLogger.warning(client_context, "Global property already exists for name [%s], over writing!", name)
+                YLogger.debug(client_context, "[%s] resolved to global: [%s] => [%s]", self.to_string(), name, value)
+                conversation.set_property(name, value)
 
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("[%s] resolved to [%s]", self.to_string(), value)
+        YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), value)
 
         return value
-
-    def resolve(self, bot, clientid):
-        try:
-            str = self.resolve_to_string(bot, clientid)
-            bot.save_conversation(clientid)
-            return str
-        except Exception as excep:
-            logging.exception(excep)
-            return ""
 
     def to_string(self):
         return "[SET [%s] - %s]" % ("Local" if self.local else "Global", self.name.to_string())
 
-    def to_xml(self, bot, clientid):
+    def to_xml(self, client_context):
         xml = "<set"
         if self.local:
-            xml += ' var="%s"' % self.name.resolve(bot, clientid)
+            xml += ' var="%s"' % self.name.resolve(client_context)
         else:
-            xml += ' name="%s"' % self.name.resolve(bot, clientid)
+            xml += ' name="%s"' % self.name.resolve(client_context)
         xml += ">"
-        xml += self.children_to_xml(bot, clientid)
+        xml += self.children_to_xml(client_context)
         xml += "</set>"
         return xml
 

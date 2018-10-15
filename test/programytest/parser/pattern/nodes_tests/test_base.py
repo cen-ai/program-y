@@ -2,10 +2,10 @@ import unittest.mock
 
 from programytest.parser.base import ParserTestsBaseClass
 
+from programy.parser.template.nodes.base import TemplateNode
 from programy.parser.pattern.nodes.base import PatternNode
 from programy.parser.pattern.nodes.word import PatternWordNode
 from programy.parser.pattern.nodes.priority import PatternPriorityWordNode
-from programy.parser.pattern.nodes.template import PatternTemplateNode
 from programy.parser.pattern.nodes.topic import PatternTopicNode
 from programy.parser.pattern.nodes.that import PatternThatNode
 from programy.parser.pattern.nodes.oneormore import PatternOneOrMoreWildCardNode
@@ -14,6 +14,8 @@ from programy.parser.pattern.nodes.set import PatternSetNode
 from programy.parser.pattern.nodes.iset import PatternISetNode
 from programy.parser.pattern.nodes.bot import PatternBotNode
 from programy.parser.pattern.nodes.regex import PatternRegexNode
+from programy.parser.pattern.nodes.template import PatternTemplateNode
+
 
 
 class PatternBotNodeTests(ParserTestsBaseClass):
@@ -25,7 +27,7 @@ class PatternBotNodeTests(ParserTestsBaseClass):
 
         self.assertFalse(node.is_root())
 
-        self.assertEquals(0, len(node.priority_words))
+        self.assertEqual(0, len(node.priority_words))
         self.assertFalse(node.has_priority_words())
         self.assertFalse(node.is_priority())
 
@@ -45,7 +47,7 @@ class PatternBotNodeTests(ParserTestsBaseClass):
         self.assertFalse(node.is_zero_or_more())
         self.assertFalse(node.is_one_or_more())
 
-        self.assertEquals(0, len(node.children))
+        self.assertEqual(0, len(node.children))
         self.assertFalse(node.has_children())
         self.assertFalse(node.has_nodes())
 
@@ -65,53 +67,50 @@ class PatternBotNodeTests(ParserTestsBaseClass):
 
         self.assertFalse(node.is_bot())
 
-        self.assertEquals("P(0)^(0)#(0)C(0)_(0)*(0)To(0)Th(0)Te(0)", node._child_count(verbose=True))
-        self.assertEquals("", node._child_count(verbose=False))
+        self.assertEqual("P(0)^(0)#(0)C(0)_(0)*(0)To(0)Th(0)Te(0)", node._child_count(verbose=True))
+        self.assertEqual("", node._child_count(verbose=False))
 
-        self.assertEquals("NODE [P(0)^(0)#(0)C(0)_(0)*(0)To(0)Th(0)Te(0)]", node.to_string(verbose=True))
-        self.assertEquals("NODE", node.to_string(verbose=False))
+        self.assertEqual("NODE [*] [P(0)^(0)#(0)C(0)_(0)*(0)To(0)Th(0)Te(0)]", node.to_string(verbose=True))
+        self.assertEqual("NODE", node.to_string(verbose=False))
 
-
-        self.assertEquals("", node.to_xml(None, "testid"))
-        self.assertEquals("", node.to_xml(None, "testid"))
+        self.assertEqual("", node.to_xml(self._client_context))
+        self.assertEqual("", node.to_xml(self._client_context))
 
     def test_get_tabs(self):
         node = PatternNode()
         self.assertIsNotNone(node)
 
-        bot = unittest.mock.Mock()
-        bot.configuration = unittest.mock.Mock()
-        bot.configuration.tab_parse_output = True
+        self._client_context.bot.configuration._tab_parse_output = True
 
-        self.assertEquals("", node.get_tabs(bot, 0))
-        self.assertEquals("  ", node.get_tabs(bot, 1))
-        self.assertEquals("          ", node.get_tabs(bot, 5))
+        self.assertEqual("", node.get_tabs(self._client_context, 0))
+        self.assertEqual("  ", node.get_tabs(self._client_context, 1))
+        self.assertEqual("          ", node.get_tabs(self._client_context, 5))
 
-        bot.configuration.tab_parse_output = False
+        self._client_context.bot.configuration._tab_parse_output = False
 
-        self.assertEquals("", node.get_tabs(bot, 0))
-        self.assertEquals("", node.get_tabs(bot, 1))
-        self.assertEquals("", node.get_tabs(bot, 5))
+        self.assertEqual("", node.get_tabs(self._client_context, 0))
+        self.assertEqual("", node.get_tabs(self._client_context, 1))
+        self.assertEqual("", node.get_tabs(self._client_context, 5))
 
     def test_equals_ignore_case(self):
 
         node = PatternNode()
         self.assertIsNotNone(node)
 
-        self.assertTrue(node.equals_ignore_case(self._bot, "testid", "", ""))
+        self.assertTrue(node.equals_ignore_case("", ""))
 
-        self.assertTrue(node.equals_ignore_case(self._bot, "testid", "test", "test"))
-        self.assertTrue(node.equals_ignore_case(self._bot, "testid", "Test", "test"))
-        self.assertTrue(node.equals_ignore_case(self._bot, "testid", "test", "Test"))
-        self.assertTrue(node.equals_ignore_case(self._bot, "testid", "TEST", "test"))
-        self.assertTrue(node.equals_ignore_case(self._bot, "testid", "test", "TEST"))
+        self.assertTrue(node.equals_ignore_case("test", "test"))
+        self.assertTrue(node.equals_ignore_case("Test", "test"))
+        self.assertTrue(node.equals_ignore_case("test", "Test"))
+        self.assertTrue(node.equals_ignore_case("TEST", "test"))
+        self.assertTrue(node.equals_ignore_case("test", "TEST"))
 
-        self.assertFalse(node.equals_ignore_case(self._bot, "testid", "test", "TESTX"))
-        self.assertFalse(node.equals_ignore_case(self._bot, "testid", "testX", "TEST"))
+        self.assertFalse(node.equals_ignore_case("test", "TESTX"))
+        self.assertFalse(node.equals_ignore_case("testX", "TEST"))
 
-        self.assertFalse(node.equals_ignore_case(self._bot, "testid", None, "TEST"))
-        self.assertFalse(node.equals_ignore_case(self._bot, "testid", "testX", None))
-        self.assertFalse(node.equals_ignore_case(self._bot, "testid", None, None))
+        self.assertFalse(node.equals_ignore_case(None, "TEST"))
+        self.assertFalse(node.equals_ignore_case("testX", None))
+        self.assertFalse(node.equals_ignore_case(None, None))
 
     def test_nodes(self):
 
@@ -245,10 +244,10 @@ class PatternBotNodeTests(ParserTestsBaseClass):
         node.add_topic(topic1)
         new_node = node._node_exists(topic1)
         self.assertIsNotNone(new_node)
-        self.assertEquals(new_node, topic1)
+        self.assertEqual(new_node, topic1)
         new_node = node.add_topic(topic2)
         self.assertIsNotNone(new_node)
-        self.assertEquals(new_node, topic1)
+        self.assertEqual(new_node, topic1)
 
         that1 = PatternThatNode()
         that2 = PatternThatNode()
@@ -256,10 +255,10 @@ class PatternBotNodeTests(ParserTestsBaseClass):
         node.add_that(that1)
         new_node = node._node_exists(that1)
         self.assertIsNotNone(new_node)
-        self.assertEquals(new_node, that1)
+        self.assertEqual(new_node, that1)
         new_node = node.add_that(that2)
         self.assertIsNotNone(new_node)
-        self.assertEquals(new_node, that1)
+        self.assertEqual(new_node, that1)
 
         template1 = PatternTemplateNode(None)
         template2 = PatternTemplateNode(None)
@@ -267,14 +266,12 @@ class PatternBotNodeTests(ParserTestsBaseClass):
         node.add_template(template1)
         new_node = node._node_exists(template1)
         self.assertIsNotNone(new_node)
-        self.assertEquals(new_node, template1)
+        self.assertEqual(new_node, template1)
         new_node = node.add_template(template2)
         self.assertIsNotNone(new_node)
-        self.assertEquals(new_node, template1)
+        self.assertEqual(new_node, template1)
 
-        node.dump("")
-
-        self.assertEqual(node.to_xml(None, None), """<priority word="priority"></priority>
+        test_result = """<priority word="priority"></priority>
 <zerormore wildcard="^">
 </zerormore>
 <zerormore wildcard="#">
@@ -292,7 +289,11 @@ class PatternBotNodeTests(ParserTestsBaseClass):
 </bot><iset words="WORD1 WORD2"></iset>
 <regex pattern="^LEGION$"></regex>
 <regex template="LEGION"></regex>
-""")
+"""
+
+        generated_xml = node.to_xml(self._client_context)
+
+        self.assertEqual(generated_xml, test_result)
 
     def assert_child_node_exists(self, base_node, first_node, second_node, child_equal=True):
         self.assertIsNone(base_node._node_exists(first_node))
@@ -300,8 +301,251 @@ class PatternBotNodeTests(ParserTestsBaseClass):
         if child_equal is True:
             new_node = base_node._node_exists(first_node)
             self.assertIsNotNone(new_node)
-            self.assertEquals(new_node, first_node)
+            self.assertEqual(new_node, first_node)
             new_node = base_node._node_exists(second_node)
             self.assertIsNotNone(new_node)
-            self.assertEquals(new_node, first_node)
+            self.assertEqual(new_node, first_node)
 
+    def test_priority_node_exists(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        new_node1 = PatternPriorityWordNode("test")
+
+        self.assertIsNone(node._priority_node_exist(new_node1))
+        node.add_child(new_node1)
+        self.assertIsNotNone(node._priority_node_exist(new_node1))
+
+        new_node2 = PatternPriorityWordNode("test", userid="testid2")
+
+        self.assertIsNone(node._priority_node_exist(new_node2))
+        node.add_child(new_node2)
+        self.assertIsNotNone(node._priority_node_exist(new_node2))
+
+    def test_zero_or_more_node_exists(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        new_node1 = PatternZeroOrMoreWildCardNode("^")
+
+        self.assertIsNone(node._zero_or_more_node_exist(new_node1))
+        node.add_child(new_node1)
+        self.assertIsNotNone(node._zero_or_more_node_exist(new_node1))
+
+        new_node2 = PatternZeroOrMoreWildCardNode("^", userid="testid2")
+
+        self.assertIsNone(node._zero_or_more_node_exist(new_node2))
+        node.add_child(new_node2)
+        self.assertIsNotNone(node._zero_or_more_node_exist(new_node2))
+
+    def test_one_or_more_node_exists(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        new_node1 = PatternOneOrMoreWildCardNode("*")
+
+        self.assertIsNone(node._one_or_more_node_exist(new_node1))
+        node.add_child(new_node1)
+        self.assertIsNotNone(node._one_or_more_node_exist(new_node1))
+
+        new_node2 = PatternOneOrMoreWildCardNode("*", userid="testid2")
+
+        self.assertIsNone(node._one_or_more_node_exist(new_node2))
+        node.add_child(new_node2)
+        self.assertIsNotNone(node._one_or_more_node_exist(new_node2))
+
+    def test_topic_node_exists(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        new_node1 = PatternTopicNode()
+
+        self.assertIsNone(node._topic_node_exist(new_node1))
+        node.add_topic(new_node1)
+        self.assertIsNotNone(node._topic_node_exist(new_node1))
+
+        new_node2 = PatternTopicNode(userid="testid2")
+
+        self.assertIsNotNone(node._topic_node_exist(new_node2))
+        node.add_topic(new_node2)
+        self.assertIsNotNone(node._topic_node_exist(new_node2))
+
+    def test_that_node_exists(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        new_node1 = PatternThatNode()
+
+        self.assertIsNone(node._that_node_exist(new_node1))
+        node.add_that(new_node1)
+        self.assertIsNotNone(node._that_node_exist(new_node1))
+
+        new_node2 = PatternThatNode(userid="testid2")
+
+        self.assertIsNotNone(node._that_node_exist(new_node2))
+        node.add_that(new_node2)
+        self.assertIsNotNone(node._that_node_exist(new_node2))
+
+    def test_template_node_exists(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        new_node1 = PatternTemplateNode(TemplateNode())
+
+        self.assertIsNone(node._template_node_exist(new_node1))
+        node.add_template(new_node1)
+        self.assertIsNotNone(node._template_node_exist(new_node1))
+
+        new_node2 = PatternTemplateNode(TemplateNode(), userid="testid2")
+
+        self.assertIsNotNone(node._template_node_exist(new_node2))
+        node.add_template(new_node2)
+        self.assertIsNotNone(node._template_node_exist(new_node2))
+
+    def test_iset_node_exists(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        new_node1 = PatternISetNode([], "test")
+
+        self.assertIsNone(node._iset_node_exist(new_node1))
+        node.add_child(new_node1)
+        self.assertIsNotNone(node._iset_node_exist(new_node1))
+
+        new_node2 = PatternISetNode([], "test", userid="testid2")
+
+        self.assertIsNone(node._iset_node_exist(new_node2))
+        node.add_child(new_node2)
+        self.assertIsNotNone(node._iset_node_exist(new_node2))
+
+    def test_set_node_exists(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        new_node1 = PatternSetNode([], "test")
+
+        self.assertIsNone(node._set_node_exist(new_node1))
+        node.add_child(new_node1)
+        self.assertIsNotNone(node._set_node_exist(new_node1))
+
+        new_node2 = PatternSetNode([], "test", userid="testid2")
+
+        self.assertIsNone(node._set_node_exist(new_node2))
+        node.add_child(new_node2)
+        self.assertIsNotNone(node._set_node_exist(new_node2))
+
+    def test_bot_node_exists(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        new_node1 = PatternBotNode([], "test")
+
+        self.assertIsNone(node._bot_node_exist(new_node1))
+        node.add_child(new_node1)
+        self.assertIsNotNone(node._bot_node_exist(new_node1))
+
+        new_node2 = PatternBotNode([], "test", userid="testid2")
+
+        self.assertIsNone(node._bot_node_exist(new_node2))
+        node.add_child(new_node2)
+        self.assertIsNotNone(node._bot_node_exist(new_node2))
+
+    def test_regex_node_exists(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        new_node1 = PatternRegexNode([], "test")
+
+        self.assertIsNone(node._regex_node_exist(new_node1))
+        node.add_child(new_node1)
+        self.assertIsNotNone(node._regex_node_exist(new_node1))
+
+        new_node2 = PatternRegexNode([], "test", userid="testid2")
+
+        self.assertIsNone(node._regex_node_exist(new_node2))
+        node.add_child(new_node2)
+        self.assertIsNotNone(node._regex_node_exist(new_node2))
+
+    def test_word_node_exists(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        new_node1 = PatternWordNode("test")
+
+        self.assertIsNone(node._word_node_exist(new_node1))
+        node.add_child(new_node1)
+        self.assertIsNotNone(node._word_node_exist(new_node1))
+
+        new_node2 = PatternWordNode("test", userid="testid2")
+
+        self.assertIsNone(node._word_node_exist(new_node2))
+        node.add_child(new_node2)
+        self.assertIsNotNone(node._word_node_exist(new_node2))
+
+    def test_remove_priority_node(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        child_node = PatternPriorityWordNode("test")
+        node.add_child(child_node)
+        self.assertEqual(1, len(node.priority_words))
+
+        node._remove_node(child_node)
+        self.assertEqual(0, len(node.priority_words))
+
+    def test_remove_zeroormore_arrow_node(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        child_node = PatternZeroOrMoreWildCardNode("^")
+        node.add_child(child_node)
+        self.assertIsNotNone(node._0ormore_arrow)
+
+        node._remove_node(child_node)
+        self.assertIsNone(node._0ormore_arrow)
+
+    def test_remove_zeroormore_hash_node(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        child_node = PatternZeroOrMoreWildCardNode("#")
+        node.add_child(child_node)
+        self.assertIsNotNone(node._0ormore_hash)
+
+        node._remove_node(child_node)
+        self.assertIsNone(node._0ormore_hash)
+
+    def test_remove_oneormore_underline_node(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        child_node = PatternOneOrMoreWildCardNode("_")
+        node.add_child(child_node)
+        self.assertIsNotNone(node._1ormore_underline)
+
+        node._remove_node(child_node)
+        self.assertIsNone(node._1ormore_underline)
+
+    def test_remove_oneormore_star_node(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        child_node = PatternOneOrMoreWildCardNode("*")
+        node.add_child(child_node)
+        self.assertIsNotNone(node._1ormore_star)
+
+        node._remove_node(child_node)
+        self.assertIsNone(node._1ormore_star)
+
+    def test_remove_word_node(self):
+        node = PatternNode()
+        self.assertIsNotNone(node)
+
+        child_node = PatternWordNode("test")
+        node.add_child(child_node)
+        self.assertEqual(1, len(node.children))
+        self.assertEqual(1, len(node._children_words))
+
+        node._remove_node(child_node)
+        self.assertEqual(0, len(node.children))
+        self.assertEqual(0, len(node._children_words))

@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.dynamic.maps.map import DynamicMap
 
@@ -34,7 +34,7 @@ class PluralMap(DynamicMap):
             return PluralMap.STATICS[value]
         return None
 
-    def map_value(self, bot, clientid, input_value):
+    def map_value(self, client_context, input_value):
         plural_value = self.static_map(input_value)
         if plural_value is None:
             if input_value.endswith('Y'):
@@ -42,6 +42,5 @@ class PluralMap(DynamicMap):
             else:
                 plural_value = input_value + "S"
 
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("PluralMap converted %s to %s", input_value, plural_value)
+        YLogger.debug(client_context, "PluralMap converted %s to %s", input_value, plural_value)
         return plural_value

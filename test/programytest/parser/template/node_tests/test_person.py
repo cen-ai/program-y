@@ -11,7 +11,7 @@ class MockTemplatePersonNode(TemplatePersonNode):
     def __init__(self):
         TemplatePersonNode.__init__(self)
 
-    def resolve_to_string(self, bot, clientid):
+    def resolve_to_string(self, context):
         raise Exception("This is an error")
 
 class TemplatePersonNodeTests(ParserTestsBaseClass):
@@ -28,10 +28,6 @@ class TemplatePersonNodeTests(ParserTestsBaseClass):
         root.append(node)
         self.assertEqual(len(root.children), 1)
 
-        node.append(TemplateWordNode("me"))
-        self._bot.brain.persons.process_splits(["me","you"])
-
-        self.assertEqual(root.resolve(self._bot, self._clientid), "you")
 
     def test_to_xml(self):
         root = TemplateNode()
@@ -39,7 +35,7 @@ class TemplatePersonNodeTests(ParserTestsBaseClass):
         root.append(node)
         node.append(TemplateWordNode("Test"))
 
-        xml = root.xml_tree(self._bot, self._clientid)
+        xml = root.xml_tree(self._client_context)
         self.assertIsNotNone(xml)
         xml_str = ET.tostring(xml, "utf-8").decode("utf-8")
         self.assertEqual("<template><person>Test</person></template>", xml_str)
@@ -49,6 +45,6 @@ class TemplatePersonNodeTests(ParserTestsBaseClass):
         node = MockTemplatePersonNode()
         root.append(node)
 
-        result = root.resolve(self._bot, self._clientid)
+        result = root.resolve(self._client_context)
         self.assertIsNotNone(result)
-        self.assertEquals("", result)
+        self.assertEqual("", result)

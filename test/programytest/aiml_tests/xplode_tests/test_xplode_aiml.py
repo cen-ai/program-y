@@ -1,39 +1,42 @@
 import unittest
 import os
-from programytest.aiml_tests.client import TestClient
-from programy.config.sections.brain.file import BrainFileConfiguration
 
-class BasicTestClient(TestClient):
+from programytest.client import TestClient
+
+
+class ExplodeTestClient(TestClient):
 
     def __init__(self):
         TestClient.__init__(self)
 
-    def load_configuration(self, arguments):
-        super(BasicTestClient, self).load_configuration(arguments)
-        self.configuration.brain_configuration.files.aiml_files._files = [os.path.dirname(__file__)]
+    def load_storage(self):
+        super(ExplodeTestClient, self).load_storage()
+        self.add_default_stores()
+        self.add_categories_store([os.path.dirname(__file__)])
 
-class XPlodeAIMLTests(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        XPlodeAIMLTests.test_client = BasicTestClient()
+class ExlodeAIMLTests(unittest.TestCase):
+
+    def setUp(self):
+        client = ExplodeTestClient()
+        self._client_context = client.create_client_context("testid")
 
     def test_explode(self):
-        response = XPlodeAIMLTests.test_client.bot.ask_question("test",  "MAKE EXPLODE")
+        response = self._client_context.bot.ask_question(self._client_context,  "MAKE EXPLODE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "h e l l o w o r l d")
+        self.assertEqual(response, "H e l l o w o r l d.")
 
     def test_implode(self):
-        response = XPlodeAIMLTests.test_client.bot.ask_question("test", "MAKE IMPLODE")
+        response = self._client_context.bot.ask_question(self._client_context, "MAKE IMPLODE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "helloworld")
+        self.assertEqual(response, "Helloworld.")
 
     def test_nested_explode_implode(self):
-        response = XPlodeAIMLTests.test_client.bot.ask_question("test", "NESTED EXPLODE IMPLODE")
+        response = self._client_context.bot.ask_question(self._client_context, "NESTED EXPLODE IMPLODE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "helloworld")
+        self.assertEqual(response, "Helloworld.")
 
     def test_nested_implode_explode(self):
-        response = XPlodeAIMLTests.test_client.bot.ask_question("test", "NESTED IMPLODE EXPLODE")
+        response = self._client_context.bot.ask_question(self._client_context, "NESTED IMPLODE EXPLODE")
         self.assertIsNotNone(response)
-        self.assertEqual(response, "h e l l o w o r l d")
+        self.assertEqual(response, "H e l l o w o r l d.")

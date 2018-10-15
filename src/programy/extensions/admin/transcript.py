@@ -1,5 +1,5 @@
 """
-Copyright (c) 2016-17 Keith Sterling http://www.keithsterling.com
+Copyright (c) 2016-2018 Keith Sterling http://www.keithsterling.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -15,7 +15,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 """
-import logging
+from programy.utils.logging.ylogger import YLogger
 
 from programy.extensions.base import Extension
 
@@ -23,16 +23,15 @@ from programy.extensions.base import Extension
 class TranscriptAdminExtension(Extension):
 
     # execute() is the interface that is called from the <extension> tag in the AIML
-    def execute(self, bot, clientid, data):
-        if logging.getLogger().isEnabledFor(logging.DEBUG):
-            logging.debug("Transcript Admin - [%s]", data)
+    def execute(self, client_context, data):
+        YLogger.debug(client_context, "Transcript Admin - [%s]", data)
 
-        show_props = True if data == "PROPERTUES" else False
+        show_props = True if data == "PROPERTIES" else False
 
         transcript = ""
 
-        if bot.has_conversation(clientid):
-            conversation = bot.conversation(clientid)
+        if client_context.bot.has_conversation(client_context):
+            conversation = client_context.bot.conversation(client_context)
 
             transcript += "Questions:<br /><ul>"
             for question in conversation.questions:

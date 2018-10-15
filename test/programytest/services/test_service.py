@@ -1,16 +1,17 @@
 import unittest
 
 from programy.services.service import Service, ServiceFactory
-from programy.config.sections.brain.brain import BrainConfiguration
-from programy.config.sections.brain.service import BrainServiceConfiguration
+from programy.config.brain.brain import BrainConfiguration
+from programy.config.brain.service import BrainServiceConfiguration
 
 class MockService(Service):
 
     def __init__(self, config):
         Service.__init__(self, config)
 
-    def ask_question(self, bot, clientid: str, question: str):
+    def ask_question(self, context: str, question: str):
         return "asked"
+
 
 class ServiceFactoryTests(unittest.TestCase):
 
@@ -24,5 +25,7 @@ class ServiceFactoryTests(unittest.TestCase):
 
         ServiceFactory.preload_services(brain_config.services)
 
-        self.assertIsNotNone(ServiceFactory.get_service("mock"))
-        self.assertIsInstance(ServiceFactory.get_service("mock"), MockService)
+        mock_service = ServiceFactory.get_service("mock")
+        print(mock_service)
+        self.assertIsNotNone(mock_service)
+        self.assertIsInstance(mock_service, Service)
