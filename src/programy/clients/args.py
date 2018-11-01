@@ -68,14 +68,16 @@ class CommandLineClientArguments(ClientArguments):
 
         ClientArguments.__init__(self, client)
         if parser is None:
-            self.parser = argparse.ArgumentParser(description=client.get_description())
+            self.parser = argparse.ArgumentParser()
         else:
             self.parser = parser
+
         self.parser.add_argument('--bot_root', dest='bot_root', help='root folder for all bot configuration data')
         self.parser.add_argument('--config', dest='config', help='configuration file location')
         self.parser.add_argument('--cformat', dest='cformat', help='configuration file format (yaml|json|ini)')
         self.parser.add_argument('--logging', dest='logging', help='logging configuration file')
         self.parser.add_argument('--noloop', dest='noloop', action='store_true', help='do not enter conversation loop')
+
         client.add_client_arguments(self.parser)
 
     def parse_args(self, client):

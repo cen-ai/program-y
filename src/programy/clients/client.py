@@ -31,7 +31,6 @@ from programy.scheduling.scheduler import ProgramyScheduler
 from programy.clients.render.text import TextRenderer
 from programy.utils.classes.loader import ClassLoader
 from programy.storage.factory import StorageFactory
-from programy.storage.factory import StorageFactory
 
 class ResponseLogger(object):
 
@@ -161,8 +160,11 @@ class BotClient(ResponseLogger):
         return self._renderer
 
     def get_description(self):
-        raise NotImplementedError("You must override this and return a client description")
-
+        if self.configuration is not None:
+            if self.configuration.client_configuration is not None:
+                return self.configuration.client_configuration.description
+        return "Bot Client"
+    
     def add_client_arguments(self, parser=None):
         # Nothing to add
         return
@@ -238,6 +240,8 @@ class BotClient(ResponseLogger):
         self._storage = StorageFactory()
         if self.configuration.client_configuration.storage is not None:
             self._storage.load_engines_from_config(self.configuration.client_configuration.storage)
+        else:
+            print("No storage defined!")
 
     def create_client_context(self, userid):
         client_context = ClientContext(self, userid)
