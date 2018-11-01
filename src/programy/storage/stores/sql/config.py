@@ -18,6 +18,7 @@ from programy.utils.logging.ylogger import YLogger
 
 from programy.config.base import BaseConfigurationData
 from programy.storage.stores.sql.engine import SQLStorageEngine
+from programy.storage.stores.file.store.config import FileStoreConfiguration
 
 class SQLStorageConfiguration(BaseConfigurationData):
 
@@ -29,6 +30,7 @@ class SQLStorageConfiguration(BaseConfigurationData):
         self._encoding = 'utf-8'
         self._create_db = True
         self._drop_all_first = True
+        self._braintree_storage = FileStoreConfiguration(file="/tmp/braintree/braintree.xml", format="xml", encoding="utf-8", delete_on_start=False)
 
     @property
     def url(self):
@@ -50,6 +52,10 @@ class SQLStorageConfiguration(BaseConfigurationData):
     def drop_all_first(self):
         return self._drop_all_first
 
+    @property
+    def braintree_storage(self):
+        return self._braintree_storage
+
     def load_config_section(self, configuration_file, configuration, bot_root):
         storage = configuration_file.get_section(self._section_name, configuration)
         if storage is not None:
@@ -60,6 +66,7 @@ class SQLStorageConfiguration(BaseConfigurationData):
             self._encoding = configuration_file.get_option(storage, "encoding")
             self._create_db = configuration_file.get_option(storage, "create_db")
             self._drop_all_first = configuration_file.get_option(storage, "drop_all_first")
+            self._braintree_storage = FileStoreConfiguration(file="/tmp/braintree/braintree.xml", format="xml", encoding="utf-8", delete_on_start=False)
 
         else:
             YLogger.error(None, "'config' section missing from storage config")

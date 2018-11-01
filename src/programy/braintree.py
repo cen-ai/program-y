@@ -36,4 +36,5 @@ class BraintreeManager(object):
             if client_context.client.storage_factory.entity_storage_engine_available(StorageFactory.BRAINTREE) is True:
                 storage_engine = client_context.client.storage_factory.entity_storage_engine(StorageFactory.BRAINTREE)
                 braintree_storage = storage_engine.braintree_storage()
-                braintree_storage.save_braintree(client_context)
+                pattern_graph = client_context.brain.aiml_parser.pattern_parser
+                braintree_storage.save_braintree(client_context,pattern_graph)
