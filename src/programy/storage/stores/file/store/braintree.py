@@ -30,14 +30,17 @@ class FileBraintreeStore(FileStore, BraintreeStore):
     def _get_storage_path(self):
         return self.storage_engine.configuration.braintree_storage.file
 
-    def save_braintree(self, client_context, pattern_graph):
+    def save_braintree(self, client_context, pattern_graph=None):
 
         try:
             braintree_fullpath = self.storage_engine.configuration.braintree_storage.file
+            YLogger.info(self, "Saving braintree to %s", braintree_fullpath)
+
             braintree_dirpath = self._get_dir_from_path(braintree_fullpath)
             self._ensure_dir_exists(braintree_dirpath)
 
             format = self.storage_engine.configuration.braintree_storage.format
+            print("Nitin "+str(format))
             encoding = self.storage_engine.configuration.braintree_storage.encoding
 
             if format == FileStore.TEXT_FORMAT:
@@ -57,4 +60,3 @@ class FileBraintreeStore(FileStore, BraintreeStore):
 
         except Exception as exc:
             YLogger.exception(client_context, "Failed to save Braintree", exc)
-

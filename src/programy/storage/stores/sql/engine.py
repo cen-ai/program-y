@@ -25,7 +25,7 @@ from programy.storage.stores.sql.base import Base
 from programy.storage.stores.sql.store.users import SQLUserStore
 from programy.storage.stores.sql.store.linkedaccounts import SQLLinkedAccountStore
 from programy.storage.stores.sql.store.links import SQLLinkStore
-
+from programy.storage.stores.file.store.braintree import FileBraintreeStore
 from programy.storage.stores.sql.store.properties import SQLPropertyStore
 from programy.storage.stores.sql.store.properties import SQLRegexStore
 from programy.storage.stores.sql.store.properties import SQLDefaultVariableStore
@@ -89,10 +89,8 @@ class SQLStorageEngine(StorageEngine):
 
     def user_store(self):
         return SQLUserStore(self)
-
     def linked_account_store(self):
         return SQLLinkedAccountStore(self)
-
     def link_store(self):
         return SQLLinkStore(self)
 
@@ -149,6 +147,9 @@ class SQLStorageEngine(StorageEngine):
     def template_nodes_store(self):
         return SQLTemplateNodesStore(self)
 
+    def braintree_storage(self):
+        return FileBraintreeStore(self)
+
     def preprocessors_store(self):
         return SQLPreProcessorsStore(self)
     def postprocessors_store(self):
@@ -156,4 +157,3 @@ class SQLStorageEngine(StorageEngine):
 
     def usergroups_store(self):
         return SQLUserGroupStore(self)
-
