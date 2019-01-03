@@ -31,7 +31,7 @@ from programy.parser.pattern.matcher import MatchContext
 from programy.storage.factory import StorageFactory
 
 class AIMLLoader(FileFinder):
-    
+
     def __init__(self, aiml_parser):
         FileFinder.__init__(self)
         self._aiml_parser = aiml_parser
@@ -135,17 +135,36 @@ class AIMLParser(object):
     def empty(self):
         self._pattern_parser.empty()
 
+    def __str__(self):
+        return str(self.__class__) + ": " + str(self.__dict__)
+
     def load_aiml(self):
 
         self.create_debug_storage()
-
+        # print("Nitin111.1")
+        #print(self.brain.bot.client.storage_factory)
         if self.brain.bot.client.storage_factory.entity_storage_engine_available(StorageFactory.CATEGORIES) is True:
             storage_engine = self.brain.bot.client.storage_factory.entity_storage_engine(StorageFactory.CATEGORIES)
             category_store = storage_engine.category_store()
             category_store.load_all(self)
         else:
             YLogger.error(None, "No category storage defined, no aiml loaded!")
+        # print("Nitin111.2")
+        self.save_debug_files()
+        self.display_debug_info()
 
+    def update_aiml(self):
+
+        self.create_debug_storage()
+        # print("Nitin111.1")
+        #print(self.brain.bot.client.storage_factory)
+        if self.brain.bot.client.storage_factory.entity_storage_engine_available(StorageFactory.CATEGORIES) is True:
+            storage_engine = self.brain.bot.client.storage_factory.entity_storage_engine(StorageFactory.CATEGORIES)
+            category_store = storage_engine.category_store()
+            category_store.update_all(self)
+        else:
+            YLogger.error(None, "No category storage defined, no aiml loaded!")
+        # print("Nitin111.2")
         self.save_debug_files()
         self.display_debug_info()
 
@@ -438,8 +457,7 @@ class AIMLParser(object):
         else:
             return patterns[0]
 
-    def parse_category(self, category_xml, namespace, topic_element=None, add_to_graph=True, userid="*"):
-
+    def parse_category(self, category_xml, namespace, topic_element=None, add_to_graph=True, userid="*",update=False):
         topic_element = self.find_topic(category_xml, namespace, topic_element)
 
         that_element = self.find_that(category_xml, namespace)
@@ -449,7 +467,7 @@ class AIMLParser(object):
         pattern = self.get_pattern(category_xml, namespace)
 
         if add_to_graph is True:
-            self._pattern_parser.add_pattern_to_graph(pattern, topic_element, that_element, template_graph_root, userid=userid)
+            self._pattern_parser.add_pattern_to_graph(pattern, topic_element, that_element, template_graph_root, userid=userid,update=update)
             self._num_categories += 1
 
         return (pattern, topic_element, that_element, template_graph_root)

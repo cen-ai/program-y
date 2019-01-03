@@ -28,5 +28,4 @@ class Corpus(Base):
     word = Column(String(56))
 
     def __repr__(self):
-        return "<Corpus(id='%s', word='%s'>" % (DAOUtils.valid_id(self.id), self.word)
-
+        return "<Corpus(id='%s', word='%s')>" % (DAOUtils.valid_id(self.id), self.word)

@@ -67,7 +67,7 @@ class CategoryStore(object):
             str = "*"
         return str
 
-    def _load_category(self, groupid, pattern, topic, that, template, parser):
+    def _load_category(self, groupid, pattern, topic, that, template, parser,update=False):
 
         text = \
 """<category>
@@ -76,10 +76,9 @@ class CategoryStore(object):
     <that>%s</that>
     <template>%s</template>
 </category>"""% (pattern, topic, that, template)
-
         try:
             xml = ET.fromstring(text)
-            parser.parse_category(xml, None)
+            parser.parse_category(xml, None,update=update)
 
         except DuplicateGrammarException as dupe_excep:
             parser.handle_aiml_duplicate(dupe_excep, groupid, xml)

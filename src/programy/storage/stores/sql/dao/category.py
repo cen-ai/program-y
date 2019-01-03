@@ -31,9 +31,8 @@ class Category(Base):
     that = Column(String(512), nullable=True)
     pattern = Column(String(512))
     template = Column(TEXT)
+    loadagain= Column(Integer, onupdate=1)
 
     def __repr__(self):
-        return "<Category(id='%s', groupid='%s', userid='%s', topic='%s', that='%s', pattern='%s', template='%s'>" % \
-               (DAOUtils.valid_id(self.id), self.groupid, self.userid, self.topic, self.that, self.pattern, self.template)
-
-
+        return "<Category(id='%s', groupid='%s', userid='%s', topic='%s', that='%s', pattern='%s', template='%s' ,loadagain ='%s')>" % \
+               (DAOUtils.valid_id(self.id), self.groupid, self.userid, self.topic, self.that, self.pattern, self.template,self.loadagain)

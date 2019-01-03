@@ -45,6 +45,16 @@ class SQLCategoryStore(CategoryStore, SQLStore):
                                 category.template.strip(),
                                 parser)
 
+    def update_all(self, parser):
+        categories = self._storage_engine.session.query(Category).filter(Category.loadagain==1)
+        for category in categories:
+            self._load_category(category.groupid,
+                                category.pattern.strip(),
+                                category.topic.strip(),
+                                category.that.strip(),
+                                category.template.strip(),
+                                parser,update=True)
+
     def load_categories(self, groupid, parser):
         categories = self._storage_engine.session.query(Category).filter(Category.groupid==groupid)
         for category in categories:
@@ -54,4 +64,3 @@ class SQLCategoryStore(CategoryStore, SQLStore):
                                 category.that.strip(),
                                 category.template.strip(),
                                 parser)
-

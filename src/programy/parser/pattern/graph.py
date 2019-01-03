@@ -213,7 +213,7 @@ class PatternGraph(object):
         current_node = current_node.add_child(template_node, replace_existing=True)
         return current_node
 
-    def add_pattern_to_graph(self, pattern_element, topic_element, that_element, template_graph_root, learn=False, userid="*"):
+    def add_pattern_to_graph(self, pattern_element, topic_element, that_element, template_graph_root, learn=False, userid="*",update=False):
 
         pattern_node = self.add_pattern_to_node(pattern_element, userid=userid)
 
@@ -223,7 +223,9 @@ class PatternGraph(object):
 
         if that_node.has_template() is True:
             if learn is False:
-                if pattern_element.text is not None:
+                if update is True:
+                    self.add_template_to_node(template_graph_root, that_node)
+                elif pattern_element.text is not None:
                     raise DuplicateGrammarException("Dupicate grammar tree found [%s]"%(pattern_element.text.strip()))
                 else:
                     raise DuplicateGrammarException("Dupicate grammar tree found for bot/set")
@@ -253,4 +255,3 @@ class PatternGraph(object):
     def dump(self, output_func=YLogger.debug, eol="", verbose=True):
         self.root.dump("", output_func, eol, verbose)
         output_func(self, "")
-

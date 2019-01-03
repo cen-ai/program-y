@@ -35,7 +35,7 @@ class Conversation(Base):
     response = Column(String(512))
 
     def __repr__(self):
-        return "<Conversation(id='%s', clientid='%s', userid='%s', botid='%s', brainid='%s', question='%s', sentence='%s', response='%s'>" % \
+        return "<Conversation(id='%s', clientid='%s', userid='%s', botid='%s', brainid='%s', question='%s', sentence='%s', response='%s')>" % \
                (DAOUtils.valid_id(self.id),
                 self.clientid,
                 self.userid,
@@ -44,4 +44,3 @@ class Conversation(Base):
                 self.question,
                 self.sentence,
                 self.response)
-

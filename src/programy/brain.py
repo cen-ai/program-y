@@ -192,6 +192,10 @@ class Brain(object):
         YLogger.info(self, "Loading aiml source brain")
         self._aiml_parser.load_aiml()
 
+    def update_aiml(self):
+        YLogger.info(self, "Updating aiml source brain")
+        self._aiml_parser.update_aiml()
+
     def reload_aimls(self):
         YLogger.info(self, "Loading aiml source brain")
         self._aiml_parser.empty()
@@ -384,4 +388,3 @@ class Brain(object):
                 return self.resolve_matched_template(client_context, match_context)
 
         return None
-

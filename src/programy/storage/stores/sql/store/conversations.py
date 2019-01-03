@@ -57,14 +57,12 @@ class SQLConversationStore(SQLStore, ConversationStore):
         db_conversations = self._storage_engine.session.query(Conversation).filter(Conversation.clientid==client_context.client.id, Conversation.userid==client_context.userid)
         question = Question()
         conversation.questions.append(question)
-
         current_question = 0
-        for conversation in db_conversations:
-
-            if conversation.question != current_question:
+        for cconversation in db_conversations:
+            if cconversation.question != current_question:
                 question = Question ()
                 conversation.questions.append(question)
 
-            sentence = Sentence(client_context.bot.brain.tokenizer, conversation.sentence)
-            sentence.response = conversation.response
+            sentence = Sentence(client_context.bot.brain.tokenizer, cconversation.sentence)
+            sentence.response = cconversation.response
             question.sentences.append(sentence)
