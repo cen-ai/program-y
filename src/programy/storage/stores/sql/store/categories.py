@@ -54,6 +54,8 @@ class SQLCategoryStore(CategoryStore, SQLStore):
                                 category.that.strip(),
                                 category.template.strip(),
                                 parser,update=True)
+        self._storage_engine.session.query(Category).update({"loadagain":0})
+        self._storage_engine.session.commit();
 
     def load_categories(self, groupid, parser):
         categories = self._storage_engine.session.query(Category).filter(Category.groupid==groupid)
