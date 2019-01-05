@@ -35,7 +35,6 @@ class CenAdminExtension(Extension):
 
     # execute() is the interface that is called from the <extension> tag in the AIML
     def execute(self, client_context, data):
-        print("YODA2")
         YLogger.debug(client_context, "Cen Admin - [%s]", data)
         try:
             commands = CenAdminExtension.split_into_commands(data)
@@ -61,7 +60,6 @@ class CenAdminExtension(Extension):
                 raise Exception ("Unknown reload command [%s]"%commands[0])
 
         except Exception as e:
-            print(e)
             YLogger.exception(client_context, "Failed to execute cen extension", e)
 
         return "Cen Admin Error"

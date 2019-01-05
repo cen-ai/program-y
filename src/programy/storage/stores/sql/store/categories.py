@@ -66,8 +66,8 @@ class SQLCategoryStore(CategoryStore, SQLStore):
                                 category.that.strip(),
                                 category.template.strip(),
                                 parser)
-        # self._storage_engine.session.query(Category).filter(Category.markfordelete==1).delete()
-        # self._storage_engine.session.commit();
+        self._storage_engine.session.query(Category).filter(Category.markfordelete==1).delete()
+        self._storage_engine.session.commit();
 
     def load_categories(self, groupid, parser):
         categories = self._storage_engine.session.query(Category).filter(Category.groupid==groupid)
