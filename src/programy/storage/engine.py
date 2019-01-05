@@ -99,7 +99,7 @@ class StorageEngine(object):
     def template_nodes_store(self):
         raise NotImplementedError("Engine does not support template nodes storage")
 
-    def binaries_store(self):
+    def binaries_storage(self):
         raise NotImplementedError("Engine does not support binaries storage")
 
     def braintree_store(self):

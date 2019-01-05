@@ -24,16 +24,15 @@ class BinariesManager(object):
         assert (binaries_configuration is not None)
 
         self._configuration = binaries_configuration
+        self._aiml_parser= None
 
     def load_binary(self, storage_factory):
         YLogger.info(self, "Loading binary brain from [%s]", StorageFactory.BINARIES)
         try:
-
-            storage_engine = storage_factory.entity_storage_engine(self._configuration.storage)
+            storage_engine = storage_factory.entity_storage_engine(StorageFactory.BINARIES)
             binaries_storage = storage_engine.binaries_storage()
             self._aiml_parser = binaries_storage.load_binary()
-
-            return False   # Tell caller, load succeeded and skip aiml load
+            return self._aiml_parser # Tell caller, load succeeded and skip aiml load
 
         except Exception as excep:
             YLogger.exception(self, "Failed to load binary file", excep)
@@ -42,15 +41,15 @@ class BinariesManager(object):
             else:
                 raise excep
 
-    def save_binary(self, storage_factory):
+    def save_binary(self, storage_factory,parser=None):
         try:
             if storage_factory.entity_storage_engine_available(StorageFactory.BINARIES) is True:
                 YLogger.info(self, "Saving binary brain to [%s]", StorageFactory.BINARIES)
-
                 storage_engine = storage_factory.entity_storage_engine(StorageFactory.BINARIES)
                 binaries_storage = storage_engine.binaries_storage()
+                if self._aiml_parser is None:
+                    if parser is not None:
+                        self._aiml_parser = parser
                 binaries_storage.save_binary(self._aiml_parser)
-
         except Exception as failure:
             YLogger.info(self, "Failed to save binary [%s]", failure)
-
