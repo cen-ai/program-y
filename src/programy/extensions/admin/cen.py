@@ -24,25 +24,33 @@ class CenAdminExtension(Extension):
 
 
     def update_aiml(self, client_context):
-        YLogger.debug(client_context, "Hot reloading all AIML files")
+        YLogger.debug(client_context, "Updating all AIML ")
         client_context.brain.update_aiml()
+        return 'CENADMIN OK'
+
+    def delete_aiml(self, client_context):
+        YLogger.debug(client_context, "Deleting Unwanted AIML")
+        client_context.brain.delete_aiml()
         return 'CENADMIN OK'
 
     # execute() is the interface that is called from the <extension> tag in the AIML
     def execute(self, client_context, data):
         print("YODA2")
         YLogger.debug(client_context, "Cen Admin - [%s]", data)
-
         try:
             commands = CenAdminExtension.split_into_commands(data)
-
             if commands[0] == 'UPDATE':
-
                 entity = commands[1]
-
                 if entity in ['AIML']:
                     if entity == 'AIML':
                             return self.update_aiml(client_context)
+                else:
+                    raise Exception ("Unknown reload entity [%s]"%entity)
+            elif commands[0] == 'DELETE':
+                entity = commands[1]
+                if entity in ['AIML']:
+                    if entity == 'AIML':
+                            return self.delete_aiml(client_context)
                 else:
                     raise Exception ("Unknown reload entity [%s]"%entity)
 

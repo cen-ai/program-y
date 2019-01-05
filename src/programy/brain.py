@@ -196,6 +196,10 @@ class Brain(object):
         YLogger.info(self, "Updating aiml source brain")
         self._aiml_parser.update_aiml()
 
+    def delete_aiml(self):
+        YLogger.info(self, "Deleting aiml from source brain")
+        self._aiml_parser.delete_aiml()
+
     def reload_aimls(self):
         YLogger.info(self, "Loading aiml source brain")
         self._aiml_parser.empty()

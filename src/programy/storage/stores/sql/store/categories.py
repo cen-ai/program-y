@@ -57,6 +57,18 @@ class SQLCategoryStore(CategoryStore, SQLStore):
         self._storage_engine.session.query(Category).update({"loadagain":0})
         self._storage_engine.session.commit();
 
+    def delete_all(self, parser):
+        categories = self._storage_engine.session.query(Category).filter(Category.markfordelete==1)
+        for category in categories:
+            self._delete_category(category.groupid,
+                                category.pattern.strip(),
+                                category.topic.strip(),
+                                category.that.strip(),
+                                category.template.strip(),
+                                parser)
+        # self._storage_engine.session.query(Category).filter(Category.markfordelete==1).delete()
+        # self._storage_engine.session.commit();
+
     def load_categories(self, groupid, parser):
         categories = self._storage_engine.session.query(Category).filter(Category.groupid==groupid)
         for category in categories:

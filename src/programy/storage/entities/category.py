@@ -67,6 +67,24 @@ class CategoryStore(object):
             str = "*"
         return str
 
+    def _delete_category(self, groupid, pattern, topic, that, template, parser):
+        text = \
+"""<category>
+    <pattern>%s</pattern>
+    <topic>%s</topic>
+    <that>%s</that>
+    <template>%s</template>
+</category>"""% (pattern, topic, that, template)
+        try:
+            xml = ET.fromstring(text)
+            parser.delete_category(xml, None)
+
+        except ParserException as parser_excep:
+            parser.handle_aiml_error(parser_excep, groupid, xml)
+
+        except Exception as excep:
+            print("Error loading category from db", excep)
+
     def _load_category(self, groupid, pattern, topic, that, template, parser,update=False):
 
         text = \

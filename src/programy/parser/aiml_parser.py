@@ -141,30 +141,36 @@ class AIMLParser(object):
     def load_aiml(self):
 
         self.create_debug_storage()
-        # print("Nitin111.1")
-        #print(self.brain.bot.client.storage_factory)
         if self.brain.bot.client.storage_factory.entity_storage_engine_available(StorageFactory.CATEGORIES) is True:
             storage_engine = self.brain.bot.client.storage_factory.entity_storage_engine(StorageFactory.CATEGORIES)
             category_store = storage_engine.category_store()
             category_store.load_all(self)
         else:
             YLogger.error(None, "No category storage defined, no aiml loaded!")
-        # print("Nitin111.2")
         self.save_debug_files()
         self.display_debug_info()
 
     def update_aiml(self):
 
         self.create_debug_storage()
-        # print("Nitin111.1")
-        #print(self.brain.bot.client.storage_factory)
         if self.brain.bot.client.storage_factory.entity_storage_engine_available(StorageFactory.CATEGORIES) is True:
             storage_engine = self.brain.bot.client.storage_factory.entity_storage_engine(StorageFactory.CATEGORIES)
             category_store = storage_engine.category_store()
             category_store.update_all(self)
         else:
             YLogger.error(None, "No category storage defined, no aiml loaded!")
-        # print("Nitin111.2")
+        self.save_debug_files()
+        self.display_debug_info()
+
+    def delete_aiml(self):
+
+        self.create_debug_storage()
+        if self.brain.bot.client.storage_factory.entity_storage_engine_available(StorageFactory.CATEGORIES) is True:
+            storage_engine = self.brain.bot.client.storage_factory.entity_storage_engine(StorageFactory.CATEGORIES)
+            category_store = storage_engine.category_store()
+            category_store.delete_all(self)
+        else:
+            YLogger.error(None, "No category storage defined, no aiml loaded!")
         self.save_debug_files()
         self.display_debug_info()
 
@@ -456,6 +462,21 @@ class AIMLParser(object):
             raise ParserException("Multiple <pattern> nodes found in category", xml_element=category_xml)
         else:
             return patterns[0]
+
+    def delete_category(self, category_xml, namespace, topic_element=None, delete_from_graph=True, userid="*"):
+        topic_element = self.find_topic(category_xml, namespace, topic_element)
+
+        that_element = self.find_that(category_xml, namespace)
+
+        template_graph_root = self.get_template(category_xml, namespace)
+
+        pattern = self.get_pattern(category_xml, namespace)
+
+        if delete_from_graph is True:
+            self._pattern_parser.delete_pattern_from_graph(pattern, topic_element, that_element, template_graph_root, userid=userid)
+            self._num_categories -= 1
+
+        return (pattern, topic_element, that_element, template_graph_root)
 
     def parse_category(self, category_xml, namespace, topic_element=None, add_to_graph=True, userid="*",update=False):
         topic_element = self.find_topic(category_xml, namespace, topic_element)

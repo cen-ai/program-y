@@ -40,7 +40,6 @@ class FileBraintreeStore(FileStore, BraintreeStore):
             self._ensure_dir_exists(braintree_dirpath)
 
             format = self.storage_engine.configuration.braintree_storage.format
-            print("Nitin "+str(format))
             encoding = self.storage_engine.configuration.braintree_storage.encoding
 
             if format == FileStore.TEXT_FORMAT:
