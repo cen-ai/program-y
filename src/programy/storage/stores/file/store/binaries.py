@@ -40,13 +40,11 @@ class FileBinariesStore(FileStore, BinariesStore):
             bin_file_path = self._get_storage_path()
             YLogger.info(self, "Saving binary brain to [%s]", bin_file_path)
             bin_file_dir = self._get_dir_from_path(bin_file_path)
-
             self._ensure_dir_exists(bin_file_dir)
             start = datetime.datetime.now()
-
-            with open(bin_file_path, "wb") as bin_file:
-                pickle.dump(aiml_parser, bin_file)
-                bin_file.close()
+            pickle_out = open(bin_file_path,"wb")
+            pickle.dump(aiml_parser,pickle_out )
+            pickle_out.close();
 
             stop = datetime.datetime.now()
             diff = stop - start
@@ -62,11 +60,8 @@ class FileBinariesStore(FileStore, BinariesStore):
 
             start = datetime.datetime.now()
             gc.disable()
-
-            with open(bin_file_path, "rb") as bin_file:
-                aiml_parser = pickle.load(bin_file)
-                bin_file.close()
-
+            pickle_in = open(bin_file_path,"rb")
+            aiml_parser = pickle.load(pickle_in)
             gc.enable()
 
             stop = datetime.datetime.now()
@@ -76,5 +71,4 @@ class FileBinariesStore(FileStore, BinariesStore):
 
         except Exception as excep:
             YLogger.exception(self, "Failed to load binary file", excep)
-            return None
-
+            raise excep

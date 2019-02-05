@@ -213,7 +213,17 @@ class PatternGraph(object):
         current_node = current_node.add_child(template_node, replace_existing=True)
         return current_node
 
-    def add_pattern_to_graph(self, pattern_element, topic_element, that_element, template_graph_root, learn=False, userid="*"):
+    def delete_pattern_from_graph(self, pattern_element, topic_element, that_element, template_graph_root, learn=False, userid="*"):
+        pattern_node = self.add_pattern_to_node(pattern_element, userid=userid)
+        if pattern_element.text is None:
+            raise ParserException("That node text is empty", xml_element=pattern_element)
+        topic_node = self.add_topic_to_node(topic_element, pattern_node, userid=userid)
+        that_node = self.add_that_to_node(that_element, topic_node, userid=userid)
+        template_node = self._pattern_factory.new_node_class('template')(template_graph_root, userid)
+        that_node._remove_node(template_node)
+        return that_node
+
+    def add_pattern_to_graph(self, pattern_element, topic_element, that_element, template_graph_root, learn=False, userid="*",update=False):
 
         pattern_node = self.add_pattern_to_node(pattern_element, userid=userid)
 
@@ -223,7 +233,9 @@ class PatternGraph(object):
 
         if that_node.has_template() is True:
             if learn is False:
-                if pattern_element.text is not None:
+                if update is True:
+                    self.add_template_to_node(template_graph_root, that_node)
+                elif pattern_element.text is not None:
                     raise DuplicateGrammarException("Dupicate grammar tree found [%s]"%(pattern_element.text.strip()))
                 else:
                     raise DuplicateGrammarException("Dupicate grammar tree found for bot/set")
@@ -253,4 +265,3 @@ class PatternGraph(object):
     def dump(self, output_func=YLogger.debug, eol="", verbose=True):
         self.root.dump("", output_func, eol, verbose)
         output_func(self, "")
-

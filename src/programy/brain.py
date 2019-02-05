@@ -14,6 +14,7 @@ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRI
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
+import datetime
 from programy.utils.logging.ylogger import YLogger
 
 try:
@@ -192,22 +193,40 @@ class Brain(object):
         YLogger.info(self, "Loading aiml source brain")
         self._aiml_parser.load_aiml()
 
+    def update_aiml(self):
+        YLogger.info(self, "Updating aiml source brain")
+        self._aiml_parser.update_aiml()
+
+    def delete_aiml(self):
+        YLogger.info(self, "Deleting aiml from source brain")
+        self._aiml_parser.delete_aiml()
+
     def reload_aimls(self):
         YLogger.info(self, "Loading aiml source brain")
         self._aiml_parser.empty()
         self._aiml_parser.load_aiml()
 
     def load(self, configuration: BrainConfiguration):
+        load_aiml = False
 
-        load_aiml = True
         if self.configuration.binaries.load_binary is True:
+            start = datetime.datetime.now()
             load_aiml = self._binaries.load_binary(self.bot.client.storage_factory)
+            stop = datetime.datetime.now()
+            diff = stop - start
+            print("Total processing time %.6f secs for loading aiml from binary", diff.total_seconds())
 
         if load_aiml is True:
+            start = datetime.datetime.now()
             self.load_aiml()
+            stop = datetime.datetime.now()
+            diff = stop - start
+            print("Total processing time %.6f secs for loading aiml", diff.total_seconds())
 
-        if configuration.binaries.save_binary is True:
-            self._binaries.save_binary(self.bot.client.storage_factory)
+            if configuration.binaries.save_binary is True:
+                self._binaries.save_binary(self.bot.client.storage_factory,parser=self._aiml_parser)
+        else:
+            self._aiml_parser=load_aiml
 
         YLogger.info(self, "Loading collections")
         self.load_collections()
@@ -384,4 +403,3 @@ class Brain(object):
                 return self.resolve_matched_template(client_context, match_context)
 
         return None
-

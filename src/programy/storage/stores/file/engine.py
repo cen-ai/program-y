@@ -107,7 +107,7 @@ class FileStorageEngine(StorageEngine):
     def template_nodes_store(self):
         return FileTemplateNodeStore(self)
 
-    def binaries_store(self):
+    def binaries_storage(self):
         return FileBinariesStore(self)
 
     def braintree_store(self):
